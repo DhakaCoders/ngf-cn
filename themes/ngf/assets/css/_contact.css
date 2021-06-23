@@ -57,14 +57,14 @@
 	padding-right: 105px;
 }
 .error-msg{
-	background:#D9534F;
+	background:#D61D1D;
 	padding: 25px 15px;
     margin-bottom: 28px;
 }
-.boek-je-form-sec-wrp .error-msg,
+/*.boek-je-form-sec-wrp .error-msg,
 .contact-form-sec-wrp .error-msg{
     display: none;
-}
+}*/
 .error-msg span {
     color: #fff;
     margin-bottom: 0;
