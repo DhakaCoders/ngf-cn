@@ -33,7 +33,6 @@
 }
 .default-page-con h2{
 	letter-spacing: -0.02em;
-	/*padding-top: 15px;*/
 	margin-bottom: 20px;
 }
 .default-page-con h4{
@@ -46,6 +45,10 @@
 	margin-bottom: 30px;
 	font-weight: 700;
 	display: block;
+}
+
+.dfp-plate-one-img-bx{
+	padding-bottom: 60px;
 }
 
 .dfp-text-module{
