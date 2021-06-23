@@ -44,7 +44,7 @@
 	text-decoration: underline;
 }
 
-/* == pagination == */
+/* == pagination start design == */
 .fl-pagination-ctlr ul{
 	display: flex;
 	align-items: center;
@@ -66,6 +66,28 @@
 .fl-pagination-ctlr ul li a:hover{
 	color: #FFA800;
 }
+/* == pagination end design == */
+
+/* == page entry header start design */
+.page-entry-header{
+	display: flex;
+	align-items: center;
+	padding-bottom: 35px;
+	border-bottom: 2px solid #eff4f7;
+	margin-bottom: 100px;
+}
+.page-entry-header h1{
+	font-size: 80px;
+	margin-bottom: 0;
+	padding-right: 114px;
+}
+.page-entry-header p{
+	line-height: 1.88;
+}
+.page-entry-header p:last-of-type{
+	margin-bottom: 0;
+}
+/* == page entry header end design */
 
 /* == responsive == */
 @media (max-width: 1699px) {
@@ -74,6 +96,10 @@
 	}
 	.fl-pagination-ctlr ul li{
 		padding: 0 20px;
+	}
+	.page-entry-header h1{
+		font-size: 63px;
+		padding-right: 68px;
 	}	
 }
 
@@ -84,6 +110,10 @@
 	.fl-pagination-ctlr ul li{
 		padding: 0 17px;
 	}
+	.page-entry-header h1{
+		font-size: 55px;
+		padding-right: 54px;
+	}
 }
 
 @media (max-width: 1199px) {
@@ -92,17 +122,25 @@
 	}
 	.fl-pagination-ctlr ul li{
 		padding: 0 14px;
+	}.page-entry-header h1{
+		font-size: 66px;
 	}
 }
 
 @media (max-width: 991px) {
-	
+	.page-entry-header{
+		display: block;
+	}
 }
 
 @media (max-width: 767px) {
-	
+	.page-entry-header h1{
+		font-size: 45px;
+	}
 }
 
-@media (max-width: 1699px) {
-	
+@media (max-width: 575px) {
+	.page-entry-header h1{
+		font-size: 40px;
+	}
 }
