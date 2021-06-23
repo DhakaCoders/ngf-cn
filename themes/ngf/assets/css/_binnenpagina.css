@@ -624,6 +624,20 @@ Gallery design
 
 
 
+/*referentied details*/
+
+#referenties-details .dfp-full-img-module{
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+#referenties-details .dfp-cta-module{
+	margin-bottom: 65px;
+}
+#referenties-details .default-page-con{
+	padding-bottom: 90px;
+}
+
+
 /*news details */
 
 #news-details{
