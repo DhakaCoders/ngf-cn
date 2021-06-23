@@ -7,20 +7,26 @@ h1,h2,h3,h4,h5,h6{
 	margin-bottom: 20px;
 }
 h1,.fl-h1{
-	font-size: 35px;
+	font-size: 60px;
 }
 h2,.fl-h2{
-	font-size: 30px;
+	font-size: 40px;
 }
 h3,.fl-h3{
-	font-size: 28px;
+	font-size: 32px;
 }
 h4,.fl-h4{
 	font-size: 24px;
 }
 h5,.fl-h5{
-	font-size: 20px;
+	font-size: 16px;
 }
 h6,.fl-h6{
-	font-size: 18px;
+	font-size: 15px;
 }
+article.default-page-con h1,article.default-page-con .fl-h1,
+article.default-page-con h2,article.default-page-con .fl-h2,
+article.default-page-con h3,article.default-page-con .fl-h3{
+	text-transform: uppercase;
+}
+
