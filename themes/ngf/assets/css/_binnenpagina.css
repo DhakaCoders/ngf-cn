@@ -72,10 +72,10 @@ ul li::before {
 	position: absolute;
 	left: 0;
 	top: 0;
+	background: url('../images/list-icon.svg');
+	background-repeat: no-repeat!important;
 	width: 10px;
 	height: 10px;
-	background: #EE3E15;
-	border-radius: 100%;
 	margin-top: 10px;
 }
 ul li.refGridItem:before{
