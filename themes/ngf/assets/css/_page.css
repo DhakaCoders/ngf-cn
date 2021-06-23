@@ -78,11 +78,21 @@
 }
 
 @media (max-width: 1499px) {
-
+	.fl-pagination-ctlr ul{
+		margin: 0 -17px;
+	}
+	.fl-pagination-ctlr ul li{
+		padding: 0 17px;
+	}
 }
 
 @media (max-width: 1199px) {
-	
+	.fl-pagination-ctlr ul{
+		margin: 0 -14px;
+	}
+	.fl-pagination-ctlr ul li{
+		padding: 0 14px;
+	}
 }
 
 @media (max-width: 991px) {
