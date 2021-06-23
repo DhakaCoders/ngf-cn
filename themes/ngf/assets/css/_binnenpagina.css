@@ -638,6 +638,22 @@ Gallery design
 }
 
 
+/*coaching details*/
+
+#coaching-details .dfp-cta-module{
+	margin-bottom: 75px;
+}
+
+#coaching-details .dfp-testimonial-module{
+	margin-top: 0;
+	padding-top: 50px;
+	border-top: 4px solid #FAFBFB;
+	margin-bottom: 70px;
+}
+#coaching-details .default-page-con{
+	padding-bottom: 0;
+}
+
 /*news details */
 
 #news-details{
