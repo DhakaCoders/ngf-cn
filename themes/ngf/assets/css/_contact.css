@@ -57,8 +57,8 @@
 	padding-right: 105px;
 }
 .error-msg{
-	background:#D61D1D;
-	padding: 25px 15px;
+	background: #D61D1D;
+    padding: 30px 18px;
     margin-bottom: 28px;
 }
 /*.boek-je-form-sec-wrp .error-msg,
@@ -121,32 +121,34 @@
     margin: 0;
     font-size: 16px;
     line-height: 1;
-    font-weight: 700;
-    color: #2C113E;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 11px;
+    letter-spacing: normal;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.NameField {
     padding-top: 30px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
 	width: 100%;
-	max-width: 100%;
-	height: 48px;
-	background: #fff;
-    border: 1px solid #ECF1F4;
-	box-sizing: border-box;
-	padding: 15px 15px 16px;
-	color: #909BA5;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	border-radius: 3px;
-	box-shadow: none !important;
+    max-width: 100%;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #E7EAEC;
+    box-sizing: border-box;
+    padding: 15px 15px 16px;
+    color: #000000;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
     text-transform: capitalize;
+    box-shadow: inset 0px 2px 2px -1px rgb(74 74 104 / 10%);
+    -webkit-box-shadow: inset 0px 2px 2px -1px rgb(74 74 104 / 10%);
+    -moz-box-shadow: inset 0px 2px 2px -1px rgb(74 74 104 / 10%);
+    letter-spacing: -0.02em;
 }
 .wpforms-container .wpforms-datepicker-wrap .wpforms-datepicker-clear{
     right:20px!important;
