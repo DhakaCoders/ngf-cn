@@ -24,3 +24,9 @@ h5,.fl-h5{
 h6,.fl-h6{
 	font-size: 15px;
 }
+article.default-page-con h1,article.default-page-con .fl-h1,
+article.default-page-con h2,article.default-page-con .fl-h2,
+article.default-page-con h3,article.default-page-con .fl-h3{
+	text-transform: uppercase;
+}
+
