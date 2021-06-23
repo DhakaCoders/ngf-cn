@@ -1,0 +1,41 @@
+.referenties-overview-sec-grid-innr{
+	padding-bottom: 40px;
+}
+.referenties-overview-sec-grid-innr ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -12px;
+	margin-right: -12px;
+
+}
+.referenties-overview-sec-grid-innr ul li{
+	width: 50%;
+	text-align: center;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 120px;
+}
+.referenties-overview-grid-img{
+	padding-bottom: 44px;
+}
+ .referenties-overview-grid-title{
+ 	margin-bottom: 24px;
+ }
+.referenties-overview-grid-img i{
+	border-radius: 50% 50%;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.referenties-overview-grid-brief {
+	padding-bottom: 42px;
+}
+.referenties-overview-grid-brief p{
+	font-weight: 300;
+	font-style: italic;
+	line-height: 36px;
+	letter-spacing: -2%;
+	font-size: 24px;
+}
+.referenties-overview-grid-brief p:last-of-type{
+	margin-bottom: 0;
+}
