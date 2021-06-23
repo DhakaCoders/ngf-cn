@@ -585,6 +585,44 @@ Gallery design
 
 
 
+/*blog details*/
+
+#blog-details .dfp-cat-date{
+	display: flex;
+	align-items: center;
+	padding-bottom: 40px;
+}
+#blog-details .dfp-cat-date a{
+	display: inline-block;
+	vertical-align: baseline;
+	background: #FFA800;
+	border: 2px solid #FFA800;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 6px 6px;
+	min-width: 110px;
+	text-align: center;
+}
+#blog-details .dfp-cat-date span{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-left: 28px;
+	font-size: 18px;
+	color: #C4C4C4;
+	letter-spacing: -0.02em;
+	font-weight: 400;
+}
+
+
+#blog-details .default-page-con{
+	padding-bottom: 0;
+}
+
+
 
 /*news details */
 
