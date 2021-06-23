@@ -184,6 +184,9 @@ a.fl-read-more-btn i {
 	.blog-grid-des .bgi-title{
 		font-size: 20px;
 	}
+	.blog-grid-img{
+		height: 290px;
+	}
 }
 
 @media (max-width: 1499px) {
@@ -192,6 +195,9 @@ a.fl-read-more-btn i {
 	}
 	.blog-grid-items ul li{
 		padding: 0 10px 76px!important;
+	}
+	.blog-grid-img{
+		height: 280px;
 	}
 }
 
