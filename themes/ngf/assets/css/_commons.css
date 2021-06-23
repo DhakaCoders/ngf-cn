@@ -14,17 +14,28 @@ a, a:hover, a:focus, button:hover, button:focus{
 	text-decoration: none;
 	outline: 0;
 }
-
+a{
+	color:#000;
+}
+a:hover{
+	color:#FFA800;
+}
 body {
     background: #ffffff;
     color: #000000;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.3;
     font-family: 'Poppins', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	/*font-family: 'Work Sans', sans-serif;*/
 }
 p{
-	line-height: 1.2;
+	line-height: 1.87;
 	margin-bottom: 15px;
+}
+strong,b{
+	font-weight:600;
 }
 ::selection {
   color: #fff;
@@ -94,7 +105,8 @@ Containers
 	
 }
 .container-lg{
-
+	max-width: 1580px;
+	width: 100%;
 }
 .container{
 	max-width: 1315px;
@@ -347,4 +359,63 @@ form
 
 .hmProdctGrdsSlider.slick-initialized .hmProdctGrdsSlideItme{
 	display: block;
+}
+
+/*common button */
+
+.fl-transparent-btn{
+	background: transparent;
+	color: #000000;
+	border: 2px solid #000000;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 12.5px 30px;
+	min-width: 242px;
+	text-align: center;
+}
+.fl-transparent-btn:hover{
+	background: #FFA800;
+	color: #fff;
+	border-color:#FFA800;
+}
+
+.fl-black-btn{
+	background: #000000;
+	color: #fff;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	font-weight: 500;
+	border: 2px solid #000000;
+	padding: 12.5px 30px;
+	min-width: 242px;
+	text-align: center;
+}
+.fl-black-btn:hover{
+	background: transparent;
+	color: #FFA800;
+	border-color:#FFA800;
+}
+
+.fl-orange-btn{
+	background: #FFA800;
+	color: #fff;
+	border: 2px solid #FFA800;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 12.5px 30px;
+	min-width: 242px;
+	text-align: center;
+}
+.fl-orange-btn:hover{
+	background: #000;
+	color: #fff;
+	border-color:#000;
 }
