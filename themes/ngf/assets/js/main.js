@@ -227,30 +227,30 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-/*start-rannojit-vai*/
+/*start of Rannojit*/
 
 
 
-/*start-niaz-morshad*/
+/*start of Niaz Morshad*/
 
 
 
-/*start-sabbir-hossain*/
+/*start of Sabbir Hossain*/
 
 
 
-/*start-monirul-islam*/
+/*start of Monirul Islam*/
 
 
 
-/*start-shariful-islam*/
+/*start of Shariful Islam*/
 
 
 
-/*start-jahir*/
+/*start of Jahir*/
 
 
 
-/*start-momin*/
+/*start of Momin*/
 
 })(jQuery);
