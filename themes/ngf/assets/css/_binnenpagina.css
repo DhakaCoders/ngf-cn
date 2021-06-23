@@ -592,7 +592,8 @@ Gallery design
 	align-items: center;
 	padding-bottom: 40px;
 }
-#blog-details .dfp-cat-date a{
+#blog-details .dfp-cat-date a,
+#faq-details .dfp-cat-date a{
 	display: inline-block;
 	vertical-align: baseline;
 	background: #FFA800;
@@ -652,6 +653,21 @@ Gallery design
 }
 #coaching-details .default-page-con{
 	padding-bottom: 0;
+}
+
+
+
+/*faq details*/
+
+#faq-details.innerpage-con-wrap{
+	margin-top: 0;
+}
+
+#faq-details .dfp-cat-date{
+	margin-bottom: 50px;
+}
+#faq-details .default-page-con{
+	padding-bottom: 38px;
 }
 
 /*news details */
