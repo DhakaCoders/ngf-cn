@@ -122,8 +122,6 @@
 	}
 	.fl-pagination-ctlr ul li{
 		padding: 0 14px;
-	}.page-entry-header h1{
-		font-size: 66px;
 	}
 }
 
@@ -131,11 +129,21 @@
 	.page-entry-header{
 		display: block;
 	}
+	.page-entry-header h1{
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
 }
 
 @media (max-width: 767px) {
+	.page-entry-header{
+		margin-bottom: 0;
+		border-bottom: none;
+		padding-bottom: 44px;
+	}
 	.page-entry-header h1{
 		font-size: 45px;
+		padding-bottom: 23px;
 	}
 }
 
