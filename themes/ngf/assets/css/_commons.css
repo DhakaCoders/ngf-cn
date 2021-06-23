@@ -18,9 +18,9 @@ a, a:hover, a:focus, button:hover, button:focus{
 body {
     background: #ffffff;
     color: #000000;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
-     font-family: 'Candara';
+    font-family: 'Poppins', sans-serif;
 }
 p{
 	line-height: 1.2;
@@ -28,7 +28,8 @@ p{
 }
 ::selection {
   color: #fff;
-  background: #512C36;
+  background: #FFA800
+;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
@@ -96,7 +97,7 @@ Containers
 
 }
 .container{
-	max-width: 1200px;
+	max-width: 1315px;
 	width: 100%;
 }
 .container-md{
