@@ -136,8 +136,14 @@
 }
 
 @media (max-width: 767px) {
+	.page-entry-header{
+		margin-bottom: 0;
+		border-bottom: none;
+		padding-bottom: 44px;
+	}
 	.page-entry-header h1{
 		font-size: 45px;
+		padding-bottom: 23px;
 	}
 }
 
