@@ -3,7 +3,10 @@ font-style: normal;
 font-size: 80px;
 padding-bottom: 20px;
 }
-.fo-grid-item-heading{
+.faq-grid-innr {
+    padding-top: 65px;
+}
+.faq-grid-item-heading{
 	padding-bottom: 5px;
 }
 .faq-grid-sec{
