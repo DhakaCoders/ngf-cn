@@ -14,8 +14,11 @@ a, a:hover, a:focus, button:hover, button:focus{
 	text-decoration: none;
 	outline: 0;
 }
-a, a:hover{
-
+a{
+	color:#000;
+}
+a:hover{
+	color:#FFA800;
 }
 body {
     background: #ffffff;
@@ -32,7 +35,7 @@ p{
 	margin-bottom: 15px;
 }
 strong,b{
-	font-weight:700;
+	font-weight:600;
 }
 ::selection {
   color: #fff;
