@@ -145,7 +145,6 @@
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
-    text-transform: capitalize;
     letter-spacing: -0.02em;
 }
 .wpforms-container .wpforms-datepicker-wrap .wpforms-datepicker-clear{
@@ -494,9 +493,9 @@ Contact info
 }
 
 .contact-form-info-cntlr {
-    padding: 53px 18px 50px 27px;
+    padding: 53px 18px 45px 27px;
     background: #FFA800;
-    border-radius: 3px;
+    position: relative;
 }
 .fl-h6.contact-form-info-title{
     font-size: 18px;
@@ -507,6 +506,18 @@ Contact info
     letter-spacing: -0.02em;
     margin-bottom: 20px;
 
+}
+.contact-form-info-cntlr i.contact-form-info-round-bg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contact-form-info-cntlr i.contact-form-info-line-bg{
+    display: inline-block;
+    position:absolute;
+    bottom:0;
+    left:0;
 }
 .contact-form-info  ul li{
 	display: block;
