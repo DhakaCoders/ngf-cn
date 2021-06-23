@@ -1,0 +1,27 @@
+.faq-heading{
+font-style: normal;
+font-size: 80px;
+padding-bottom: 20px;
+}
+.faq-grid-innr {
+    padding-top: 65px;
+}
+.faq-grid-item-heading{
+	padding-bottom: 5px;
+}
+.faq-grid-sec{
+	background: rgba(231, 234, 236, 0.2);
+}
+.faq-grid-innr ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -24px;
+}
+.faq-grid-innr ul li{
+	width: 50%;
+	padding: 30px 24px ;
+}
+.faq-grid-item-cntlr{
+	background-color: #fff;
+	padding: 35px ;
+}
