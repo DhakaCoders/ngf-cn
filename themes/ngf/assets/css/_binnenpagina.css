@@ -39,7 +39,7 @@
 	letter-spacing: -0.02em;
 }
 .dfp-promo-module-title{
-	color: #2C113E;
+	color: #000000;
 	text-transform: uppercase;
 	letter-spacing: -0.02em;
 	margin-bottom: 30px;
@@ -49,6 +49,10 @@
 
 .dfp-plate-one-img-bx{
 	padding-bottom: 60px;
+}
+.dfp-promo-module p{
+	font-size: 26px;
+	margin-bottom: 40px;
 }
 
 .dfp-text-module{
@@ -64,7 +68,7 @@ ul{
 }
 .default-page-con ul li,
 ul li {
-	padding: 5px 0 8px 22px;
+	padding: 2px 0 6px 22px;
 	position: relative;
 	line-height: 22px;
 }
@@ -278,7 +282,6 @@ Gallery design
 }
 .has-inline-bg .gallery-icon-img{
 	height: 412px;
-	border-radius: 3px;
 	display: block;
 }
 
@@ -287,7 +290,6 @@ Gallery design
 }
 .gallery-item img {
 	width: 100%;
-	border-radius: 3px;
 }
 .top-gallery-module .gallery-item img{
 	border-radius: 0;
