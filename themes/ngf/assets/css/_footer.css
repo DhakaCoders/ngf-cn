@@ -1,6 +1,14 @@
 .footer-wrp{
 	position: relative;
 }
+.ftr-white-skew{
+    border-top: 235px solid #fff;
+    border-right: 1920px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 .ftr-right-angle-line{
     position: absolute;
     top: -14px;

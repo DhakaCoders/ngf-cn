@@ -43,3 +43,56 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+
+/* == pagination == */
+.fl-pagination-ctlr ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 -23px;
+}
+.fl-pagination-ctlr ul li{
+	padding: 0 23px;
+	line-height: 1.3;
+}
+.fl-pagination-ctlr ul li a,
+.fl-pagination-ctlr ul li span{
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	line-height: 1.3;
+}
+.fl-pagination-ctlr ul li span.current,
+.fl-pagination-ctlr ul li a:hover{
+	color: #FFA800;
+}
+
+/* == responsive == */
+@media (max-width: 1699px) {
+	.fl-pagination-ctlr ul{
+		margin: 0 -20px;
+	}
+	.fl-pagination-ctlr ul li{
+		padding: 0 20px;
+	}	
+}
+
+@media (max-width: 1499px) {
+
+}
+
+@media (max-width: 1199px) {
+	
+}
+
+@media (max-width: 991px) {
+	
+}
+
+@media (max-width: 767px) {
+	
+}
+
+@media (max-width: 1699px) {
+	
+}
