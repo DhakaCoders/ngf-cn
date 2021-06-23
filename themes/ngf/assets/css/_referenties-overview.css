@@ -1,0 +1,33 @@
+.referenties-overview-sec-grid-innr ul{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.referenties-overview-sec-grid-innr ul li{
+	width: 50%;
+	text-align: center;
+}
+.referenties-overview-grid-img{
+	padding-bottom: 44px;
+}
+ .referenties-overview-grid-title{
+ 	margin-bottom: 24px;
+ }
+.referenties-overview-grid-img i{
+	border-radius: 50% 50%;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.referenties-overview-grid-brief {
+	margin-bottom: 45px;
+}
+.referenties-overview-grid-brief p{
+	font-weight: 300;
+	font-style: italic;
+	line-height: 36px;
+	letter-spacing: -2%;
+	font-size: 24px;
+}
+.referenties-overview-grid-brief p:last-of-type{
+	margin-bottom: 0;
+}
