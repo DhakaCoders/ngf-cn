@@ -1,11 +1,16 @@
 .referenties-overview-sec-grid-innr ul{
 	display: flex;
 	flex-wrap: wrap;
+	margin-left: -12px;
+	margin-right: -12px;
 
 }
 .referenties-overview-sec-grid-innr ul li{
 	width: 50%;
 	text-align: center;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 120px;
 }
 .referenties-overview-grid-img{
 	padding-bottom: 44px;
@@ -19,7 +24,7 @@
 	vertical-align: baseline;
 }
 .referenties-overview-grid-brief {
-	margin-bottom: 45px;
+	margin-bottom: 42px;
 }
 .referenties-overview-grid-brief p{
 	font-weight: 300;
