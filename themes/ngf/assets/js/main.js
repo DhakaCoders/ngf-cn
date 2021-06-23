@@ -225,4 +225,32 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
     new WOW().init();
 
+
+
+/*start-rannojit-vai*/
+
+
+
+/*start-niaz-morshad*/
+
+
+
+/*start-sabbir-hossain*/
+
+
+
+/*start-monirul-islam*/
+
+
+
+/*start-shariful-islam*/
+
+
+
+/*start-jahir*/
+
+
+
+/*start-momin*/
+
 })(jQuery);
