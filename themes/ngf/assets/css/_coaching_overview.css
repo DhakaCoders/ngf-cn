@@ -72,25 +72,26 @@
 	margin-bottom: 0;
 }
 a.fl-read-more-btn{
-	letter-spacing: -0.02em;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 16px;
-}
-a.fl-read-more-btn{
 	padding-right: 26px;
     position: relative;
     display: inline-block;
+    vertical-align: baseline;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.25;
 }
+a.fl-read-more-btn span{
+	display: inline-block;
+	vertical-align: baseline;
+}
 a.fl-read-more-btn i {
     position: absolute;
     width: 12px;
-    height: 11px;
+    height: 12px;
     background-size: contain;
-    margin-top: -6px;
+    margin-top: -5px;
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
@@ -120,9 +121,6 @@ a.fl-read-more-btn:hover i{
 	.gift-card .breadcrumb-sec,
 	.archive .breadcrumb-sec{
 		margin-bottom: 43px;
-	}
-	.blog-grid-items ul{
-		margin: 0 -12px!important;
 	}
 	.blog-grid-items ul li{
 		padding: 0 12px 86px!important;
