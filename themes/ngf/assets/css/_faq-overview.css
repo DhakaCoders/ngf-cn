@@ -1,7 +1,6 @@
-.faq-heading{
+.faq-heading-cntlr h1{
 font-style: normal;
-font-size: 80px;
-padding-bottom: 20px;
+padding-bottom: 19px;
 }
 .faq-grid-innr {
     padding-top: 85px;
@@ -29,5 +28,12 @@ padding-bottom: 20px;
 	padding-right: 35px;
 	padding-top: 35px;
 	padding-bottom: 29px;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-ms-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+}
+.faq-grid-item .fl-grid-tag{
+	padding-bottom: 15px;
 }
 
