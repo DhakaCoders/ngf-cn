@@ -7,6 +7,9 @@ h1,h2,h3,h4,h5,h6{
 	margin-bottom: 20px;
 	font-weight:700;
 }
+.fl-h1-80{
+	font-size: 80px;
+}
 h1,.fl-h1{
 	font-size: 60px;
 }
