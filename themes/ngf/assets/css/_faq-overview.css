@@ -1,7 +1,6 @@
-.faq-heading{
+.faq-heading-cntlr h1{
 font-style: normal;
-font-size: 80px;
-padding-bottom: 20px;
+padding-bottom: 19px;
 }
 .faq-grid-innr {
     padding-top: 85px;
