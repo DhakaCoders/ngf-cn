@@ -15,7 +15,7 @@
 	position: relative;
 }
 .default-page-con {
-	padding-bottom: 65px;
+	/*padding-bottom: 65px;*/
 	padding-top: 0;
 }
 
@@ -31,13 +31,13 @@
 	margin-bottom: 20px;
 	line-height: 1.1;
 }
-.default-page-con h2{
+/*.default-page-con h2{
 	letter-spacing: -0.02em;
 	margin-bottom: 20px;
-}
-.default-page-con h4{
+}*/
+/*.default-page-con h4{
 	letter-spacing: -0.02em;
-}
+}*/
 .dfp-promo-module-title{
 	color: #000000;
 	text-transform: uppercase;
@@ -100,15 +100,15 @@ ul li.refGridItem:before{
 	counter-increment: my-awesome-counter;
 	-ms-counter-increment: my-awesome-counter;
 	-webkit-counter-increment: my-awesome-counter;
-	padding: 2px 0 4px 20px;
+	padding: 2px 0 6px 20px;
 	line-height: 24px;
 	position: relative;
 }
 .default-page-con ol li::before,
 ol li::before {
 	content: counter(my-awesome-counter) ".";
-	color: #EE3E15;
-	font-weight: 700;
+	color: #FFA800;
+	font-weight: 600;
 	text-align: center;
 	font-size: 16px;
 	line-height: 16px;
@@ -122,13 +122,6 @@ ol li::before {
     margin-bottom: 25px;
 }
 
-hr{
-	margin-top: 0;
-	padding-top: 15px;
-	margin-bottom: 40px;
-	border-top: none;
-	border-bottom: 1px solid #ECF1F4;
-}
 
 
 
@@ -136,46 +129,6 @@ hr{
 	width: 100%;
 }
 
-
-.fl-fancy-module{
-	overflow: hidden;
-	max-width: 100%;
-    width: 100%;
-    height: 600px;
-    position: relative;
-    margin-bottom: 45px;
-    border-radius: 3px;
-}
-.fl-fancy-img{
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	
-}
-.fl-fancy-module:hover .fl-fancy-img{
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-.fl-video-play-cntlr{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    color: #fff;
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    line-height: 1;
-}
 
 
 
@@ -253,8 +206,8 @@ Gallery design
 */
 
 .gallery-wrap{
-	padding-top: 7px;
-	padding-bottom: 25px;
+	padding-top: 0px;
+	padding-bottom: 10px;
 }
 .gallery {
 	margin-left: -12px;
@@ -351,9 +304,6 @@ Gallery design
 
 
 
-.top-gallery-module .gallery-wrap {
-    padding-bottom: 15px;
-}
 
 
 
@@ -363,72 +313,65 @@ Gallery design
 .cta-ctlr{
 	text-align: center;
 	color: #fff;
-	padding: 55px 20px 60px 20px;
-	background: #1DB4B2;
-	border-radius: 3px;
+	padding: 65px 20px 45px 20px;
+	background: #FFA800;
+	position: relative;
 }
-.orange .cta-ctlr{
-	background: #FDCA35;
+.cta-big-line{
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
+.cta-small-line{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.cta-big-circle{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.cta-small-circle{
+	position: absolute;
+	top: 48px;
+	right: 13px;
+}
+
 .cta-title{
 	color: #fff!important;
 	margin-bottom: 12px!important;
 	text-transform: uppercase;
 }
 .dfp-cta-module p{
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 	max-width: 700px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
-.cta-btn .fl-transparent-btn{
-	border: 2px solid #fff;
-	padding: 16px 20px;
+.cta-btn a{
 	color: #fff;
-	border-radius: 3px;
-	min-width: 200px;
-	font-weight: 900;
-	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	padding-right: 22px;
+	position: relative;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-ms-transition: all 0.3s;
 }
-.cta-btn .fl-transparent-btn:hover{
-	background: #fff;
-	color: #1DB4B2;
+.cta-btn a:hover{
+	color: #000;
 }
-.dfp-twogrd-module .dfp-gift-grd-ctlr .cta-btn .fl-transparent-btn:hover{
-	background: #fff;
-	color: #FDCA35;
+.cta-btn a i{
+	position: absolute;
+	top: 1px;
+	right: 0;
 }
-.orange .cta-btn .fl-transparent-btn:hover,
-.dfp-gift-ctlr .cta-btn .fl-transparent-btn:hover{
-	background: #fff;
-	color: #FDCA35;
+.cta-btn a:hover svg{
+	fill: #000;
 }
-
-.dfp-cta-module{
-	margin-bottom: 50px;
-}
-
-
-.dfp-cta-module.orange{
-	margin-bottom: 35px;
-}
-
-
-.dfp-two-des-module{
-	margin-left: -10px;
-	margin-right: -10px;
-}
-.dfp-des-col{
-	float: left;
-	width: 50%;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-
-
-
 
 
 
@@ -436,12 +379,12 @@ Gallery design
 
 .dfp-tbl-wrap{
 	padding-top: 50px;
-	margin-bottom: 60px;
+	margin-bottom: 70px;
 	border-top: 2px solid #ECF1F4;
 }
 
-.dfp-tbl-wrap h6{
-	color: #2C113E;
+.dfp-tbl-wrap h5{
+	color: #000;
 	margin-bottom: 7px;
 }
 
@@ -462,21 +405,17 @@ Gallery design
 	width: 100%;
 }
 .table-dsc::-webkit-scrollbar {
-  height: 6px;
+  height: 4px;
 }
 .table-dsc::-webkit-scrollbar-thumb {
-  background: #A8DADC;
+  background: #ECF1F4;
   border-radius: 4px;
 }
 
-/*.table-dsc table tbody tr td:last-child{
-	padding-left: 0;
-	padding-right: 36px;
-}*/
 
 .table-dsc table tbody tr td:first-child,
 .table-dsc table tbody tr td:last-child{
-	color: #909BA5;
+	color: #000;
 }
 
 .table-dsc table{
@@ -489,10 +428,6 @@ Gallery design
 
 }
 
-/*.table-dsc table tr th:last-child,
-.table-dsc table tr td:last-child{
-    padding-left: 0;
-}*/
 .table-dsc table tr th:last-child span{
 	border-right: none;
 }
@@ -504,7 +439,7 @@ Gallery design
 	border-right: none;
 }
 .table-dsc table tbody tr td:first-child span{
-	font-weight: 700;
+	font-weight: 600;
 	border-bottom: none;
 }
 .table-dsc table thead tr th:first-child,
@@ -517,20 +452,21 @@ Gallery design
 
 .table-dsc table tr th {
 	border: none;
-	color: #909BA5;
-	font-weight: 700;
+	color: #000;
+	font-weight: 600;
 	padding: 18px 0 14px;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 18px;
 }
 .table-dsc table tr th span{
 	display: block;
 }
 .table-dsc table thead th span{
-	font-weight: 700;
-	font-size: 16px;
+	font-weight: 600;
+	font-size: 14px;
 	line-height: 18px;
-	color: #909BA5;
+	color: #000000;
+	letter-spacing: -0.02em;
 }
 .table-dsc table thead tr th,
 .table-dsc table tbody tr td{
@@ -543,7 +479,7 @@ Gallery design
 .table-dsc table thead tr td:first-child{
 	padding-left: 15px;
 	padding-right: 15px;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 
@@ -573,8 +509,8 @@ Gallery design
 
 
 .dfp-btn-module{
-	margin-left: -12px;
-	margin-right: -12px;
+	margin-left: -9px;
+	margin-right: -9px;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -582,98 +518,156 @@ Gallery design
 .fl-btn{
 	display: inline-block;
 	vertical-align: baseline;
-	padding-left: 12px;
-	padding-right: 12px;
+	padding-left: 9px;
+	padding-right: 9px;
 	margin-bottom: 20px;
 }
-
-
-
-.full-img-module{
-	padding-bottom: 35px;
+.fl-btn a.fl-black-btn,
+.fl-btn a.fl-orange-btn,
+.fl-btn a.fl-transparent-btn{
+	min-width: 270px;
 }
 
-.full-img img{
-	border-radius: 3px;
+.dfp-testimonial-module{
+	margin-top: 65px;
+	margin-bottom: 78px;
 }
-
-.dfp-grd-module{
-	padding-bottom: 15px;
-	border-bottom: 2px solid #ECF1F4;
-	margin-bottom: 55px;
-}
-.dfp-grd-module .dfp-grd-items ul{
-	margin-left: -12px;
-	margin-right: -12px;
-	padding-left: 0;
-}
-.dfp-grd-module .dfp-grd-items ul li{
-	float: left;
-	width: 50%;
-	padding-left: 12px;
-	padding-right: 12px;
-	padding-bottom: 25px;
-}
-
-
-.dfp-twogrd-module{
-	margin-left: -12px;
-	margin-right: -12px;
-	margin-bottom: 60px;
-}
-.booking-btm-img{
-	position: absolute;
-	bottom: -36px;
-	left: -52px;
-}
-.booking-top-img{
-	position: absolute;
-	top: -115px;
-	right: -100px;
-}
-.xs-booking-top-rgt-img{
-	position: absolute;
-	top: -95px;
-    right: -78px;
-}
-.xs-booking-btm-lft-img{
-	position: absolute;
-	top: -75px;
-    left: -77px;
-}
-.dfp-booking-grd-ctlr{
-	float: left;
-	width: 50%;
-	padding-left: 12px;
-	padding-right: 12px;
-}
-.dfp-gift-grd-ctlr{
-	float: left;
-	width: 50%;
-	padding-left: 12px;
-	padding-right: 12px;
-}
-
-.dfp-booking-grd{
-	background: #1DB4B2;
-	border-radius: 3px;
-	padding: 60px 30px 60px;
+.sec-entry-hdr h3{
+	font-weight: 700;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
 	text-align: center;
-	position: relative;
 }
-.dfp-gift-grd{
-	background: #FDCA35;
-	border-radius: 3px;
-	padding: 60px 30px 60px;
+
+
+.testimonial-grds{
+	padding-bottom: 10px;
+}
+.testimonial-grd-item-ctlr{
 	text-align: center;
-	position: relative;
 }
-.dfp-booking-grd p,
-.dfp-gift-grd p{
+.testimonial-grd-item-img i{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-bottom: 30px;
+}
+.testimonial-grd-item-des blockquote{
+	font-size: 30px;
+	letter-spacing: -0.02em;
+	font-weight: 200;
+}
+.testimonial-grd-item-des blockquote p{
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+.testimonial-grd-item-des blockquote em{
+	font-style: italic;
+}
+
+.dfpTestimonialSlider .testimonial-grd-item{
+	display: none;
+}
+.dfpTestimonialSlider .testimonial-grd-item:first-child{
+	display: block;
+}
+.dfpTestimonialSlider.slick-initialized .testimonial-grd-item{
+	display: block;
+}
+
+.testimonial-btn{
+	text-align: center;
+}
+.testimonial-btn a.fl-black-btn{
+	padding: 13.5px 30px;
+}
+
+
+
+/*blog details*/
+
+#blog-details .dfp-cat-date{
+	display: flex;
+	align-items: center;
+	padding-bottom: 40px;
+}
+#blog-details .dfp-cat-date a,
+#faq-details .dfp-cat-date a{
+	display: inline-block;
+	vertical-align: baseline;
+	background: #FFA800;
+	border: 2px solid #FFA800;
 	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 6px 6px;
+	min-width: 110px;
+	text-align: center;
+}
+#blog-details .dfp-cat-date span{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-left: 28px;
+	font-size: 18px;
+	color: #C4C4C4;
+	letter-spacing: -0.02em;
+	font-weight: 400;
 }
 
 
+#blog-details .default-page-con{
+	padding-bottom: 0;
+}
+
+
+
+/*referentied details*/
+
+#referenties-details .dfp-full-img-module{
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+#referenties-details .dfp-cta-module{
+	margin-bottom: 65px;
+}
+#referenties-details .default-page-con{
+	padding-bottom: 90px;
+}
+
+
+/*coaching details*/
+
+#coaching-details .dfp-cta-module{
+	margin-bottom: 75px;
+}
+
+#coaching-details .dfp-testimonial-module{
+	margin-top: 0;
+	padding-top: 50px;
+	border-top: 4px solid #FAFBFB;
+	margin-bottom: 70px;
+}
+#coaching-details .default-page-con{
+	padding-bottom: 0;
+}
+
+
+
+/*faq details*/
+
+#faq-details.innerpage-con-wrap{
+	margin-top: 0;
+}
+
+#faq-details .dfp-cat-date{
+	margin-bottom: 50px;
+}
+#faq-details .default-page-con{
+	padding-bottom: 38px;
+}
 
 /*news details */
 

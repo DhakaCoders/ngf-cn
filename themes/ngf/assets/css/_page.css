@@ -43,3 +43,226 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+
+/* == pagination start design == */
+.fl-pagination-ctlr ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 -23px;
+}
+.fl-pagination-ctlr ul li{
+	padding: 0 23px;
+	line-height: 1.3;
+}
+.fl-pagination-ctlr ul li a,
+.fl-pagination-ctlr ul li span{
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	line-height: 1.3;
+}
+.fl-pagination-ctlr ul li span.current,
+.fl-pagination-ctlr ul li a:hover{
+	color: #FFA800;
+}
+/* == pagination end design == */
+
+/* == page entry header start design */
+.page-entry-header{
+	display: flex;
+	align-items: center;
+	padding-bottom: 35px;
+	border-bottom: 2px solid #eff4f7;
+	margin-bottom: 59px;
+}
+.page-entry-header h1{
+	font-size: 80px;
+	margin-bottom: 0;
+	padding-right: 114px;
+	text-transform: uppercase;
+}
+.page-entry-header p{
+	line-height: 1.88;
+}
+.page-entry-header p:last-of-type{
+	margin-bottom: 0;
+}
+/* == page entry header end design == */
+
+/* == section header design start == */
+.sec-header .sec-title{
+	text-transform: uppercase;
+	margin-bottom: 39px;
+}
+/* == section header design end == */
+
+/* == fl category design start == */
+.fl-grid-category ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 -25px;
+}
+.page-heading{
+	padding-bottom: 34px;
+}
+.fl-grid-category ul li{
+	padding: 0 25px;
+	margin-bottom: 15px;
+	line-height: 1.2;
+}
+.fl-grid-category ul li a {
+	position: relative;
+}
+.fl-grid-category ul li a:after{
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 2px;
+	background-color: #FFA800;
+	top: 100%;
+	left: 0;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.fl-grid-category ul li.active a,
+.fl-grid-category ul li.active a:after {
+	color: #FFA800;
+	width: 100%;
+}
+.fl-grid-category ul li a:hover,
+.fl-grid-category ul li a:hover:after{
+	color: #FFA800;
+	width: 100%;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.fl-grid-category ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #000000;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+/* == fl category design end == */
+
+
+
+/*sky-bg-cntlr*/
+body.sky-btm-bg-cntlr{
+	background: rgba(231, 234, 236, 0.2);
+}
+body.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew{
+	border-top-color:#fafafb;
+} 
+
+
+/*sky-top-bg-cntlr*/
+body.sky-top-bg-cntlr header.header .hdr-white-skew{
+	border-bottom-color:#fafafb;
+}
+
+
+/*black-bg-cntlr*/
+body.black-bg-cntlr{
+	background:#0D0D0D;
+	color:#fff;
+}
+body.black-bg-cntlr header.header .hdr-white-skew{
+	border-bottom-color:#000000;
+}
+body.black-bg-cntlr .footer-wrp .ftr-white-skew{
+	border-top-color:#0D0D0D;
+}
+
+/* == responsive == */
+@media (max-width: 1699px) {
+	.fl-pagination-ctlr ul{
+		margin: 0 -20px;
+	}
+	.fl-pagination-ctlr ul li{
+		padding: 0 20px;
+	}
+	.page-entry-header h1{
+		font-size: 63px;
+		padding-right: 68px;
+	}
+	.fl-grid-category ul{
+		margin: 0 -23px;
+	}	
+	.fl-grid-category ul li{
+		padding: 0 23px;
+	}
+}
+
+@media (max-width: 1499px) {
+	.fl-pagination-ctlr ul{
+		margin: 0 -17px;
+	}
+	.fl-pagination-ctlr ul li{
+		padding: 0 17px;
+	}
+	.page-entry-header h1{
+		font-size: 55px;
+		padding-right: 54px;
+	}
+	.fl-grid-category ul{
+		margin: 0 -21px;
+	}	
+	.fl-grid-category ul li{
+		padding: 0 21px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.fl-pagination-ctlr ul{
+		margin: 0 -14px;
+	}
+	.fl-pagination-ctlr ul li{
+		padding: 0 14px;
+	}
+	.fl-grid-category ul{
+		margin: 0 -19px;
+	}	
+	.fl-grid-category ul li{
+		padding: 0 19px;
+	}
+}
+
+@media (max-width: 991px) {
+	.page-entry-header{
+		display: block;
+	}
+	.page-entry-header h1{
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+	.fl-grid-category ul{
+		margin: 0 -14px;
+	}	
+	.fl-grid-category ul li{
+		padding: 0 14px;
+	}
+}
+
+@media (max-width: 767px) {
+	.page-entry-header{
+		margin-bottom: 0;
+		border-bottom: none;
+		padding-bottom: 44px;
+	}
+	.page-entry-header h1{
+		font-size: 45px;
+		padding-bottom: 23px;
+	}
+}
+
+@media (max-width: 575px) {
+	.page-entry-header h1{
+		font-size: 40px;
+	}
+}
+*/

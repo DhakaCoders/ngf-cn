@@ -7,7 +7,6 @@
 @import url('_home.css');
 @import url('_contact.css');
 @import url('_footer.css');
-@import url('_news_overview.css');
 @import url('_order-receive.css');
 @import url('_wc_common.css');
 @import url('_woocommerce.css');
@@ -27,11 +26,12 @@
 
 
 /*start of Niaz Morshad*/
-
+@import url('_extra-form.css');
 
 
 /*start of Sabbir Hossain*/
 @import url('_coaching_overview.css');
+@import url('_blog-overview.css');
 
 
 /*start of Monirul Islam*/
@@ -46,10 +46,12 @@
 
 /*start of Jahir*/
 @import url('_over-ons.css');
+@import url('_werkwijze.css');
 
 
 /*start of Momin*/
 
+@import url('_referenties-overview.css');
 
 
 /*start of Kashob*/

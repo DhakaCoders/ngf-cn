@@ -3,9 +3,7 @@
  Contact Css
 ------------------
 */
-.contact-form-sec-wrp{
-	padding-bottom: 320px;
-}
+
 .contact-white-sky-bg-cntlr{
     position: relative;
 }
@@ -29,7 +27,7 @@
     position: absolute;
 }
 
-.page-entry-header{
+/*.page-entry-header{
 	border-bottom: 1px solid#f4f8f9;
 	margin-bottom: 60px;
 }
@@ -49,17 +47,17 @@
 }
 .page-entry-header p{
 	margin-bottom: 30px;
-}
+}*/
 
 .contact-form-lft{
-	width: 73%;
-	float: left;
-	padding-right: 105px;
+	width: 74.5%;
+    float: left;
+    padding-right: 109px;
 }
 .error-msg{
 	background: #D61D1D;
     padding: 30px 18px;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 }
 /*.boek-je-form-sec-wrp .error-msg,
 .contact-form-sec-wrp .error-msg{
@@ -101,7 +99,7 @@
 	width: 50%;
 	float: left;
 	padding: 0 12px;
-	margin-bottom: 23px;
+	margin-bottom: 28px;
 	position: relative;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea,
@@ -127,7 +125,7 @@
     letter-spacing: normal;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.NameField {
-    padding-top: 30px;
+    padding-top: 29px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
 	width: 100%;
@@ -145,7 +143,6 @@
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
-    text-transform: capitalize;
     letter-spacing: -0.02em;
 }
 .wpforms-container .wpforms-datepicker-wrap .wpforms-datepicker-clear{
@@ -297,6 +294,7 @@
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	resize: none;
+    display: block;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea:focus,
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:focus{
@@ -332,7 +330,7 @@
     line-height: 1;
     color: #000000;
     margin-bottom: 5px;
-    padding-top: 20px !important;
+    padding-top: 28px !important;
     letter-spacing: -0.02em;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description p a{
@@ -489,14 +487,14 @@ Contact info
 ---------------
 */
 .contact-form-rgt{
-	width: 27%;
-	float: right;
+	width: 25.5%;
+    float: right;
 }
 
 .contact-form-info-cntlr {
-    padding: 53px 18px 50px 27px;
+    padding: 53px 18px 45px 27px;
     background: #FFA800;
-    border-radius: 3px;
+    position: relative;
 }
 .fl-h6.contact-form-info-title{
     font-size: 18px;
@@ -508,6 +506,18 @@ Contact info
     margin-bottom: 20px;
 
 }
+.contact-form-info-cntlr i.contact-form-info-round-bg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contact-form-info-cntlr i.contact-form-info-line-bg{
+    display: inline-block;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
 .contact-form-info  ul li{
 	display: block;
 	position: relative;
@@ -518,19 +528,21 @@ Contact info
 .contact-form-info  ul li span,
 .contact-form-info  ul li a{
 	display: inline-block;
-	vertical-align: baseline;
-	text-decoration: none;
-	font-size: 16px;
-	line-height: 30px;
-	color:#fff; 
-	font-weight: 400;
-	letter-spacing: 0.02em;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
 }
 .contact-form-info  ul li span a{
 	text-decoration: underline;
 }
 .contact-form-info ul li span a svg{
     margin-right: 7px;
+    margin-top: -3px;
+    position: relative;
 }
 .contact-form-info ul li a:hover{
 	opacity: .9;
@@ -660,9 +672,9 @@ boek-je-form-sec-wrp
 	.page-entry-header .fl-h1 span{
 		font-size: 19px;
 	}
-	.contact-form-sec-wrp {
+/*	.contact-form-sec-wrp {
 	    padding-bottom: 240px;
-	}
+	}*/
     .contact-form-info ul li span,
     .contact-form-info ul li a{
         font-size: 15px;
@@ -680,6 +692,9 @@ boek-je-form-sec-wrp
     }
     .wpforms-container .wpforms-datepicker-wrap .wpforms-datepicker-clear{
         background-position: 50% 46%!important;    
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.NameField{
+        padding-top:28px;
     }
 }
 
@@ -716,9 +731,9 @@ boek-je-form-sec-wrp
 	    width: 60px;
 	    height: 75px;
 	}
-	.contact-form-sec-wrp {
+/*	.contact-form-sec-wrp {
 	    padding-bottom: 260px;
-	}
+	}*/
 	.contact-google-map-sec-wrp {
 	    padding-bottom: 65px;
 	}
@@ -733,7 +748,7 @@ boek-je-form-sec-wrp
 	.contact-form-info ul li a br{
 		display: none;
 	}
-	.page-entry-header {
+	/*.page-entry-header {
 	    margin-bottom: 50px;
 	}
 	.boek-je-form-sec-wrp .page-entry-header .fl-h1 span {
@@ -743,7 +758,7 @@ boek-je-form-sec-wrp
 	}
 	.page-entry-header .fl-h1 span{
 		font-size: 18px;
-	}
+	}*/
     .boek-je-form-sec-wrp .contact-form-info-cntlr {
         padding: 50px 30px 40px 30px;
     }
@@ -756,9 +771,9 @@ boek-je-form-sec-wrp
 	.contact-google-map-sec-wrp {
 	    padding-bottom: 45px;
 	}
-	.contact-form-sec-wrp {
+/*	.contact-form-sec-wrp {
 	    padding-bottom: 200px;
-	}
+	}*/
 	.contact-form-lft {
 	    width: 65%;
 	    padding-right: 30px;
@@ -778,9 +793,9 @@ boek-je-form-sec-wrp
     .boek-je-form-sec-wrp .contact-form-info-cntlr {
         padding: 40px 30px 35px 30px;
     }
-    .page-entry-header .fl-h1 span{
+    /*.page-entry-header .fl-h1 span{
     	font-size: 17px;
-    }
+    }*/
 	
 }
 
@@ -788,9 +803,9 @@ boek-je-form-sec-wrp
 	.contact-google-map-sec-wrp {
 	    padding-bottom: 0;
 	}
-	.page-entry-header {
+	/*.page-entry-header {
 	    margin-bottom: 40px;
-	}
+	}*/
 	.contact-form-lft {
 	    width: 100%;
 	    padding-right: 0;
@@ -802,18 +817,17 @@ boek-je-form-sec-wrp
 	.contact-parachute-icon{
 		display: none;
 	}
-	.contact-form-sec-wrp {
+	/*.contact-form-sec-wrp {
 	    padding-bottom: 30px;
-	}
-	.contact-form-sec-wrp .page-entry-header p {
+	}*/
+	/*.contact-form-sec-wrp .page-entry-header p {
 	    margin-bottom: 45px;
-	}
+	}*/
 	.error-msg {
         padding: 15px 15px;
         margin-bottom: 40px;
     }
 	.contact-form-sec-wrp .contact-form-lft{
-		padding-bottom: 150px;
 		position: relative;
 	    z-index: 2;
 	}
@@ -823,9 +837,9 @@ boek-je-form-sec-wrp
 	.contact-google-map{
 		margin: 0 -20px -10px;
 	}
-	.boek-je-form-sec-wrp .page-entry-header .fl-h1{
+/*	.boek-je-form-sec-wrp .page-entry-header .fl-h1{
 		line-height: 1.2;
-	}
+	}*/
 	.boek-je-form-sec-wrp .contact-form-lft{
 		padding-bottom: 48px;
 		border-bottom: 1px solid#ECF1F4;
