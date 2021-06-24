@@ -17,7 +17,7 @@
     height: 560px;
 }
 .default-page-con {
-	/*padding-bottom: 65px;*/
+	padding-bottom: 65px;
 	padding-top: 0;
 }
 
@@ -38,14 +38,22 @@
 	color: #000000;
 	text-transform: uppercase;
 	letter-spacing: -0.02em;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	font-weight: 700;
 	display: block;
 }
 
 .dfp-promo-module-des p{
 	font-size: 26px;
-	margin-bottom: 40px!important;
+	margin-bottom: 35px!important;
+}
+
+.dfp-promo-module .bnr-bg-overly-module {
+    margin-bottom: 55px;
+}
+
+#blog-details .dfp-promo-module .bnr-bg-overly-module {
+    margin-bottom: 45px;
 }
 
 .dfp-text-module{
@@ -200,7 +208,7 @@ Gallery design
 
 .gallery-wrap{
 	padding-top: 0px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 .gallery {
 	margin-left: -12px;
@@ -350,9 +358,9 @@ Gallery design
 	letter-spacing: -0.02em;
 	padding-right: 22px;
 	position: relative;
-	transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	-ms-transition: all 0.3s;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
 }
 .cta-btn a:hover{
 	color: #000;
@@ -580,6 +588,8 @@ Gallery design
 .dfp-grd-module{
 	margin-left: -12px;
 	margin-right: -12px;
+	padding-top: 10px;
+	padding-bottom: 25px;
 }
 .dfp-grd-module .dfp-grd-item{
 	float: left;
@@ -589,14 +599,38 @@ Gallery design
 	padding-bottom: 25px;
 }
 
+.dfp-grd-module .blog-grid-des{
+	padding-top: 28px;
+}
+
 
 
 /*blog details*/
 
+.blog-details-related-sec{
+	background: rgba(231, 234, 236, 0.2);
+	padding-top: 115px;
+}
+
+.bdr-grds{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.bdr-grds .bdr-grd-item{
+	float: left;
+	width: 33.3333%;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 40px;
+}
+.bdr-grds .blog-grid-des{
+	padding-top: 22px;
+}
+
 #blog-details .dfp-cat-date{
 	display: flex;
 	align-items: center;
-	padding-bottom: 40px;
+	padding-bottom: 35px;
 }
 #blog-details .dfp-cat-date a,
 #faq-details .dfp-cat-date a{
@@ -642,6 +676,33 @@ Gallery design
 }
 #referenties-details .default-page-con{
 	padding-bottom: 90px;
+}
+
+#referenties-details .bnr-grd{
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 60px;
+	border-bottom: 2px solid #EFF4F7;
+	margin-bottom: 60px;
+}
+#referenties-details .bnr-grd-img{
+	width:  32.6848%;
+}
+#referenties-details .bnr-grd-des{
+	width: 67.3151%;
+	padding-left: 100px;
+	padding-bottom: 30px;
+}
+
+#referenties-details .bnr-grd-des p{
+	font-size: 30px;
+	font-weight: 200;
+	margin-bottom: 15px;
+	line-height: 1.2;
+}
+
+#referenties-details .dfp-promo-module{
+	margin-top: -200px;
 }
 
 
