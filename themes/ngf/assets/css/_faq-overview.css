@@ -85,6 +85,12 @@
 	.faq-grid-item-col{
 		width: 100%;
 	}
+	.faq-grid-item-col{
+		padding: 14px 9px;
+	}
+	.faq-grid-item{
+		padding: 28px 28px 21px 28px;
+	}
 }
 @media(max-width: 575px){
 
