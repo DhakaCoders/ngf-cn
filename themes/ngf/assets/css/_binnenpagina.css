@@ -617,18 +617,18 @@ Gallery design
 	padding-top: 115px;
 }
 
-.bdr-grds{
+.blog-details-grds{
 	margin-left: -12px;
 	margin-right: -12px;
 }
-.bdr-grds .bdr-grd-item{
+.blogDetialsSlideItem{
 	float: left;
 	width: 33.3333%;
 	padding-left: 12px;
 	padding-right: 12px;
 	padding-bottom: 40px;
 }
-.bdr-grds .blog-grid-des{
+.blog-details-grds .blog-grid-des{
 	padding-top: 22px;
 }
 
