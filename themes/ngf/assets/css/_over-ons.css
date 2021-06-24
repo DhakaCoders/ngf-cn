@@ -1,7 +1,7 @@
 
 .ovo-two-grds-des-module-sec{
 	padding-top: 135px;
-	padding-bottom: 105px;
+	padding-bottom: 90px;
 
 }
 .ovo-two-grds-des-module-cntlr{
@@ -34,20 +34,75 @@
 .ovo-full-width-img-sec{
 	min-height: 750px;
 }
-.ovo-full-width-img-cntlr{
-	min-width: 725px;
+.ovo-full-width-img-inr{
+	/*max-width: 740px;*/
 }
 .ovo-full-width-img-heading{
 	font-size: 80px;
-	/*line-height: 80px;*/
+	line-height: 80px;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	/*position: relative;*/
 }
-
-
-
-
+.ovo-full-width-img-iner-heading {
+    position: relative;
+    padding-top: 405px;
+    z-index: 2;
+}
+span.ovo-abs-img-four {
+    position: absolute;
+    right: 41%;
+    top: 72%;
+    z-index: 1;
+}
+span.ovo-abs-img-three {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    z-index: 2;
+}
+.ovo-full-width-img-sec{
+	position: relative;
+}
+.ovo-abs-img-one {
+    position: absolute;
+    right: 100px;
+    top: -55px;
+}
+.ovo-abs-img-two {
+    position: absolute;
+    right: 0;
+    top: -60px;
+}
+.ovo-full-width-bg-des{
+	padding-top: 140px;
+	 padding-bottom: 125px;
+	 background-color: #fbfbfb;
+}
+.block-750{
+	max-width: 750px;
+	margin: 0 auto;
+}
+.ovo-full-width-bg-des-cntlr p{
+	font-style: italic;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 44px;
+	letter-spacing: -0.02em;
+	color: #000000;
+}
+.fancy-vedeo-items-sec-cntlr ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.fancy-vedeo-items-sec-cntlr ul li {
+    max-width: 50%;
+    width: 100%;
+}
+.fl-fancy-img{
+	min-height: 450px;
+}
 
 
 
