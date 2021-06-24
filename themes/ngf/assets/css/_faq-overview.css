@@ -28,6 +28,10 @@ padding-bottom: 19px;
 	padding-right: 35px;
 	padding-top: 35px;
 	padding-bottom: 29px;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-ms-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
 }
 .faq-grid-item .fl-grid-tag{
 	padding-bottom: 15px;
