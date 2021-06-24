@@ -6,7 +6,7 @@
     padding-bottom: 55px;
 }
 .fgi-title{
-	margin-bottom: 27px;
+	margin-bottom: 28px;
 	line-height: 1.2;
 	font-weight: 600;
 }
@@ -35,4 +35,6 @@
 .faq-grid-item .fl-grid-tag{
 	padding-bottom: 19px;
 }
+
+@media(max-width)
 
