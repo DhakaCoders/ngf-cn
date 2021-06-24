@@ -165,7 +165,7 @@
 
 
 
-/*sky-bg-cntlr*/
+/*sky-btm-bg-cntlr*/
 body.sky-btm-bg-cntlr{
 	background: rgba(231, 234, 236, 0.2);
 }
@@ -273,4 +273,3 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		font-size: 40px;
 	}
 }
-*/
