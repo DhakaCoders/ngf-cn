@@ -143,3 +143,27 @@
 	}
 }
 
+@media(max-width: 1199px){
+	.ref-ov-page-cntnt-sec .fl-grid-category{
+		padding-bottom: 42px;
+
+	}
+	.ropgd{
+		padding-bottom: 14px;
+	}
+	.ref-ov-page-grid-item p{
+		font-size: 20px;
+
+	}
+	.ref-ov-page-grid-item > i{
+		margin-bottom: 30px;
+
+	}
+	.ref-ov-grd-title{
+		margin-bottom: 22px;
+
+	}
+	.ref-ov-page-grid-item-cntlr ul li {
+		padding-bottom: 70px;
+    }
+}
