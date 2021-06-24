@@ -17,7 +17,7 @@
     height: 560px;
 }
 .default-page-con {
-	/*padding-bottom: 65px;*/
+	padding-bottom: 65px;
 	padding-top: 0;
 }
 
@@ -38,14 +38,18 @@
 	color: #000000;
 	text-transform: uppercase;
 	letter-spacing: -0.02em;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	font-weight: 700;
 	display: block;
 }
 
 .dfp-promo-module-des p{
 	font-size: 26px;
-	margin-bottom: 40px!important;
+	margin-bottom: 35px!important;
+}
+
+.dfp-promo-module .bnr-bg-overly-module {
+    margin-bottom: 55px;
 }
 
 .dfp-text-module{
@@ -200,7 +204,7 @@ Gallery design
 
 .gallery-wrap{
 	padding-top: 0px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 .gallery {
 	margin-left: -12px;
@@ -350,9 +354,9 @@ Gallery design
 	letter-spacing: -0.02em;
 	padding-right: 22px;
 	position: relative;
-	transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	-ms-transition: all 0.3s;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
 }
 .cta-btn a:hover{
 	color: #000;
@@ -580,6 +584,8 @@ Gallery design
 .dfp-grd-module{
 	margin-left: -12px;
 	margin-right: -12px;
+	padding-top: 10px;
+	padding-bottom: 25px;
 }
 .dfp-grd-module .dfp-grd-item{
 	float: left;
@@ -587,6 +593,10 @@ Gallery design
 	padding-left: 12px;
 	padding-right: 12px;
 	padding-bottom: 25px;
+}
+
+.dfp-grd-module .blog-grid-des{
+	padding-top: 28px;
 }
 
 

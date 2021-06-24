@@ -2,7 +2,7 @@
 	background: #fbfbfb;
 }
 .ref-ov-page-entry-hdr-sec .page-entry-header{
-	padding-bottom: 36px;
+	padding-bottom: 38px;
 	border: initial;
 	margin-bottom: 0;
 }
@@ -13,13 +13,13 @@
 }
 
 .ref-ov-page-cntnt-sec{
-	padding-top: 55px;
+	padding-top: 49px;
 }
 .ref-ov-page-cntnt-sec .fl-grid-category{
-	padding-bottom: 78px;
+	padding-bottom: 72px;
 }
 .ref-ov-page-grid-item-cntlr{
-	padding-bottom: 35px;
+	padding-bottom: 30px;
 }
 .ref-ov-page-grid-item-cntlr ul{
 	display: flex;
@@ -33,26 +33,34 @@
 	text-align: center;
 	padding-left: 12px;
 	padding-right: 12px;
-	padding-bottom: 125px;
+	padding-bottom: 123px;
 }
  .ref-ov-grd-title{
- 	margin-bottom: 38px;
+ 	margin-bottom: 34px;
  }
 .ref-ov-page-grid-item > i{
 	border-radius: 50% 50%;
-	display: inline-block;
+	display: table;
 	vertical-align: baseline;
-	padding-bottom: 45px;
+	margin-bottom: 44px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 120px;
+	width: 120px;
+}
+.ref-ov-page-grid-item > i img{
+	width: 100%;
+	height: 100%;
 }
 .ropgd{
-	padding-bottom: 27px;
+	padding-bottom: 22px;
 }
 .ref-ov-page-grid-item p{
-	margin-bottom: 27px;
+	margin-bottom: 22px;
 	font-weight: 300;
 	font-style: italic;
-	line-height: 36px;
-	/*letter-spacing: -2em;*/
+	line-height: 1.5s;
+	letter-spacing: -0.02em;
 	font-size: 24px;
 }
 
