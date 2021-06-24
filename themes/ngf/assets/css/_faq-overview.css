@@ -36,5 +36,40 @@
 	padding-bottom: 19px;
 }
 
-@media(max-width)
+/*responsive-start*/
+
+@media(max-width: 1699px){
+
+
+}
+@media(max-width: 1499px){
+
+
+}
+@media(max-width: 1299px){
+
+}
+@media(max-width: 1199px){
+
+}
+@media(max-width: 991px){
+
+}
+@media(max-width: 767px){
+
+}
+@media(max-width: 575px){
+
+}
+@media(max-width: 489px){
+
+}
+@media(max-width: 369px){
+
+}
+
+
+
+/*responsive-end*/
+
 

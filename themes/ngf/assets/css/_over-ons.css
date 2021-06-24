@@ -91,11 +91,11 @@ span.ovo-abs-img-three {
 }
 .ovo-fancy-vedeo-items-sec{
 	padding: 95px 0;
+    background-color: #fff;
 }
 .fancy-vedeo-items-sec-cntlr {
     border-bottom: 2px solid #EFF4F7;
     padding-bottom: 20px;
-    padding-top: 90px;
 }
 .fancy-vedeo-items-sec-cntlr ul {
     display: flex;
@@ -154,6 +154,35 @@ span.fl-video-play-icon-cntlr{
     font-size: 20px;
     line-height: 1;
 }
-.ovo-testimonial{
+.ovo-testimonial {
     margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 90px;
+}
+.ovo-testimonial-slider-sec {
+    background: #fff;
+}
+.ovo-testimonial-grd-item-inr{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ove-grids-cntlr{
+    padding-bottom: 20px!important;
+    padding-top: 0!important;
+
+}
+.ovo-faq-slider-entry-heading{
+
+}
+.ovo-faq-slider-heading{
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px!important;
+}
+.ovo-faq-slider-sec {
+    padding-top: 110px;
 }
