@@ -261,6 +261,7 @@ if( $('.wpforms-error').length ){
 
   $(".hdr-white-skew").css('border-left-width', windowWidth);
   $(".ftr-white-skew").css('border-right-width', windowWidth);
+  $(".page-bnr-skew").css('border-right-width', windowWidth);
   
   $(window).resize(function() { 
     var window2Width = $(window).width();
@@ -271,6 +272,7 @@ if( $('.wpforms-error').length ){
 
     $(".hdr-white-skew").css('border-left-width', window2Width);
     $(".ftr-white-skew").css('border-right-width', window2Width);
+    $(".page-bnr-skew").css('border-right-width', window2Width);
   });
 
 
@@ -286,6 +288,17 @@ if( $('.dfpTestimonialSlider').length ){
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 1,
+      slidesToScroll: 1
+    });
+}
+if( $('.bdrSlider').length ){
+    $('.bdrSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 3,
       slidesToScroll: 1
     });
 }

@@ -661,35 +661,35 @@ boek-je-form-sec-wrp
 ---------------------
 */
 
-@media (max-width: 1699px){
-	.contact-form-lft {
-		width: 68%;
+@media (max-width:1699px){
+	.contact-form-lft{
+		width: 71%;
 	    padding-right: 80px;
 	}
-	.contact-form-rgt {
-	    width: 32%;
+	.contact-form-rgt{
+	    width: 29%;
 	}
-	.page-entry-header .fl-h1 span{
-		font-size: 19px;
-	}
-/*	.contact-form-sec-wrp {
-	    padding-bottom: 240px;
-	}*/
     .contact-form-info ul li span,
     .contact-form-info ul li a{
         font-size: 15px;
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
+        font-size: 15px;
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label{
+        font-size:15px;
+    }
+    .wpforms-container .wpforms-datepicker-wrap .wpforms-datepicker-clear{
+        background-position: 50% 46%!important;    
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.NameField{
+        padding-top:28px;
     }
     
 }
 
 
 @media (max-width: 1499px) {
-	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label{
-        font-size: 15px;
-    }
-    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
-        font-size: 15px;
-    }
     .wpforms-container .wpforms-datepicker-wrap .wpforms-datepicker-clear{
         background-position: 50% 46%!important;    
     }
