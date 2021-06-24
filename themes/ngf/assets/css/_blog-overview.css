@@ -1,6 +1,6 @@
 .blog-page-heading {}
 .blog-page-heading .sec-header{
-	
+
 }
 .blog-page-sec{
 	background-color: #fbfbfb;
@@ -9,6 +9,12 @@
 .blog-page-sec .blog-grid-items ul li{
 	padding: 0 12px 40px!important;
 }
+.blog-grid-item{
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-ms-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+}
+
 .blog-page-sec .fl-grid-tag{
 	margin-top: -16px;
     margin-left: 27px;
@@ -27,9 +33,6 @@
 	vertical-align: baseline;
 	line-height: 1;
 }
-.blog-page-sec .blog-grid-des{
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
-	-ms-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
-	-webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+.blog-grid-des{
 	padding: 0 29px 37px;
 }

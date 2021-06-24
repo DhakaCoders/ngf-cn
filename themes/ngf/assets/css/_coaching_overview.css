@@ -19,9 +19,10 @@
 .blog-page-sec .blog-grid-items{
 	padding-bottom: 20px;
 }
-.blog-grid-item{
+.coaching-sec  .blog-grid-item{
 	background: #fff;
 	position: relative;
+	box-shadow: none;
 }
 .blog-grid-items .slick-track .blog-grid-des.mHc{
 	height: auto!important;
@@ -48,6 +49,9 @@
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.coaching-sec .blog-grid-des{
+	padding: 0;
+} 
 .blog-grid-des .bgi-title{
 	line-height: 1.25;
 	font-weight: 600;
