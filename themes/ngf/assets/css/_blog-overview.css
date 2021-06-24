@@ -1,9 +1,6 @@
 
 .fl-grid-tag{
-	position: absolute;
-	bottom: 0;
-	left: 28px;
-	z-index: 2;
+
 }
 .fl-grid-tag span{
 	padding: 10px 18px 7px;
