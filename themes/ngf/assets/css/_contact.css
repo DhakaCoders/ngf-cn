@@ -50,9 +50,9 @@
 }*/
 
 .contact-form-lft{
-	width: 73%;
-	float: left;
-	padding-right: 105px;
+	width: 74.5%;
+    float: left;
+    padding-right: 109px;
 }
 .error-msg{
 	background: #D61D1D;
@@ -486,8 +486,8 @@ Contact info
 ---------------
 */
 .contact-form-rgt{
-	width: 27%;
-	float: right;
+	width: 25.5%;
+    float: right;
 }
 
 .contact-form-info-cntlr {
@@ -527,19 +527,21 @@ Contact info
 .contact-form-info  ul li span,
 .contact-form-info  ul li a{
 	display: inline-block;
-	vertical-align: baseline;
-	text-decoration: none;
-	font-size: 16px;
-	line-height: 30px;
-	color:#fff; 
-	font-weight: 400;
-	letter-spacing: 0.02em;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
 }
 .contact-form-info  ul li span a{
 	text-decoration: underline;
 }
 .contact-form-info ul li span a svg{
     margin-right: 7px;
+    margin-top: -3px;
+    position: relative;
 }
 .contact-form-info ul li a:hover{
 	opacity: .9;

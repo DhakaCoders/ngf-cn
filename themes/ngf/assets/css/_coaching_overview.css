@@ -51,32 +51,11 @@
 	padding: 0 12px 96px!important;
 	width: 33.3333%!important;	
 }
-.blog-grid-tag, .onsale-tag{
-	position: absolute;
-	z-index: 2;
-	top: 10px;
-	left: 10px;
-}
-.spotlight .blog-grid-tag span, .spotlight .onsale-tag span{
-	background-color: #fdc935;
-}
-.blog-grid-tag span, .onsale-tag span{
-	padding: 7px 11px;
-	background-color: #e70048;
-	font-size: 13px;
-	font-weight: 500;
-	border-radius: 3px;
-	color: #fff;
-	display: inline-block;
-	vertical-align: baseline;
-	line-height: 1.1;
-}
 .blog-page-sec .blog-grid-items{
 	padding-bottom: 20px;
 }
 .blog-grid-item{
 	background: #fff;
-	overflow: hidden;
 	position: relative;
 }
 .blog-grid-items .slick-track .blog-grid-des.mHc{
