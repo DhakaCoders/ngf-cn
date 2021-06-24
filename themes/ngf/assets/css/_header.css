@@ -7,8 +7,8 @@
 	bottom: -27px;
 	left: 142px;
 	margin-left: -45px;
-	height: 92px;
-	width: 92px;
+	height: 112px;
+	width: 112px;
 	border-radius: 50% 50%;
 	border: 20px solid #FFA800;
 }
@@ -25,6 +25,7 @@
 	left: 35px;
 	bottom: 55px;
 	padding-top: 73px;
+	z-index: 2;
 }
 .hdr-lft-line-icon{
 	position: absolute;
@@ -43,6 +44,9 @@
 .hdr-socials ul li a,
 .hdr-socials ul li a i{
 	display: inline-block;
+}
+.hdr-socials ul li a:hover i svg{
+	fill: #FFA800;
 }
 .header-cntlr{
 	display: flex;
@@ -88,10 +92,15 @@
 .hdr-cart{
 	padding-left: 14px;
 }
+.hdr-user a,
 .hdr-cart a,
 .hdr-cart a i,
-.hdr-cart a i{
+.hdr-user a i{
 	display: inline-block;
+}
+.hdr-cart a:hover i svg,
+.hdr-user a:hover i svg{
+	fill: #fff;
 }
 .hdr-cart a{
 	position: relative;
@@ -111,6 +120,13 @@
 	line-height: 1;
 	border-radius: 50% 50%;
 	font-size: 11px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.hdr-cart a:hover span{
+	background: #fff;
+	color: #FFA800;
 }
 .fl-language-cntlr{
 	margin-left: 27px;
@@ -164,9 +180,13 @@
 	text-transform: uppercase;
 	
 }
+
 .fl-lang ul li.lang-active a:hover, 
 .fl-lang ul li a:hover{
 	color: #FFA800;
+}
+.fl-lang ul li a:hover{
+	color: #000;
 }
 .fl-lang-cntlr:after{
 	background-image: url('../images/down-arrow.svg');
@@ -269,6 +289,11 @@ nav.main-nav > ul > li > a{
 	color: #FFFFFF;
 	padding-bottom: 15px;
 	display: inline-block;
+}
+nav.main-nav > ul > li.menu-item-has-children:hover > a,
+nav.main-nav > ul > li > a:hover,
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover a{
+	color: #FFA800;
 }
 
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
