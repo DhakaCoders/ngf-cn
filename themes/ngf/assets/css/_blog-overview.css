@@ -1,4 +1,6 @@
-
+.blog-page-sec{
+	background-color: #fbfbfb;
+}
 .blog-page-sec .fl-grid-tag{
 	margin-top: -16px;
     margin-left: 27px;
@@ -16,4 +18,9 @@
 	display: inline-block;
 	vertical-align: baseline;
 	line-height: 1;
+}
+.blog-page-sec .blog-grid-des{
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-ms-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
 }
