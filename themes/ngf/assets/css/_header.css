@@ -272,19 +272,6 @@
 .fl-lang-cntlr li.lang-active a{
 	font-size: 14px;
 }
-
-
-
-
-nav.main-nav ul{
-	
-}
-nav.main-nav ul li{
-	
-}
-nav.main-nav ul li a{
-	
-}
 nav.main-nav > ul{
 	display: flex;
 	align-items: center;
@@ -381,4 +368,43 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after{
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	height: 100%;
     opacity: 1;
+}
+
+
+
+/*responsive*/
+@media(max-width: 1799px){
+
+}
+@media(max-width: 1699px){
+	nav.main-nav > ul{
+		margin: 0 -8px;
+	}
+	nav.main-nav > ul > li{
+		padding: 0 8px;
+	}
+}
+@media(max-width: 1799px){
+	
+}
+@media(max-width: 1799px){
+	
+}
+@media(max-width: 1799px){
+	
+}
+@media(max-width: 1799px){
+	
+}
+@media(max-width: 1799px){
+	
+}
+@media(max-width: 1799px){
+	
+}
+@media(max-width: 1799px){
+	
+}
+@media(max-width: 1799px){
+	
 }
