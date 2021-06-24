@@ -80,6 +80,7 @@
 	font-size: 80px;
 	margin-bottom: 0;
 	padding-right: 114px;
+	text-transform: uppercase;
 }
 .page-entry-header p{
 	line-height: 1.88;
@@ -87,7 +88,48 @@
 .page-entry-header p:last-of-type{
 	margin-bottom: 0;
 }
-/* == page entry header end design */
+/* == page entry header end design == */
+
+/* == section header design start == */
+
+/* == section header design end == */
+
+/* == fl category design start == */
+.fl-grid-category ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 -15px;
+}
+.fl-grid-category ul li{
+	padding: 0 15px;
+	margin-bottom: 15px;
+	line-height: 1.2;
+}
+.fl-grid-category ul li a {
+	position: relative;
+}
+.fl-grid-category ul li a.active:after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #FFA800;
+	top: 100%;
+	left: 0;
+}
+.fl-grid-category ul li.active a,
+.fl-grid-category ul li a:after:hover{
+	color: #FFA800;
+}
+.fl-grid-category ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #000000;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+/* == fl category design end == */
 
 /* == responsive == */
 @media (max-width: 1699px) {

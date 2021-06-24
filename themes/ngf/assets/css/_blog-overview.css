@@ -1,5 +1,13 @@
+.blog-page-heading {}
+.blog-page-heading .sec-header{
+	
+}
 .blog-page-sec{
 	background-color: #fbfbfb;
+	padding-top: 78px;
+}
+.blog-page-sec .blog-grid-items ul li{
+	padding: 0 12px 40px!important;
 }
 .blog-page-sec .fl-grid-tag{
 	margin-top: -16px;
@@ -23,4 +31,5 @@
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
 	-ms-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
 	-webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	padding: 0 29px 37px;
 }

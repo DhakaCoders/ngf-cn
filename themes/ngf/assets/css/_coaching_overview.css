@@ -7,39 +7,6 @@
 .coaching-sec .blog-grids-cntrl{
 	padding-top: 41px;
 }
-.fl-grid-category ul{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	margin: 0 -15px;
-}
-.fl-grid-category ul li{
-	padding: 0 15px;
-	margin-bottom: 15px;
-	position: relative;
-	line-height: 1.2;
-}
-.fl-grid-category ul li:not(:last-child):after{
-	position: absolute;
-	content: "/";
-	color: #ECF1F4;
-	right: 0;
-	top: 50%;
-	transform: translate(50%, -50%);
-	-webkit-transform: translate(50%, -50%);
-	-ms-transform: translate(50%, -50%);
-}
-.fl-grid-category ul li.active a,
-.fl-grid-category ul li a:hover{
-	color: #EE3E15;
-}
-.fl-grid-category ul li a{
-	display: inline-block;
-	vertical-align: baseline;
-	color: #2C113E;
-	font-weight: 700;
-	text-transform: capitalize;
-}
 
 .blog-grid-items ul{
 	display: flex;
@@ -51,6 +18,7 @@
 	padding: 0 12px 96px!important;
 	width: 33.3333%!important;	
 }
+.coaching-sec .blog-grid-items,
 .blog-page-sec .blog-grid-items{
 	padding-bottom: 20px;
 }
