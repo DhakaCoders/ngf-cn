@@ -191,8 +191,8 @@ span.fl-video-play-icon-cntlr{
     position: absolute;
     width: 831.36px;
     height: 6.11px;
-    left: -234.15px;
-    top: 332px;
+    left: -231.15px;
+    top: 326px;
     background: #FFA800;
     transform: rotate(-45deg);
 }
@@ -202,6 +202,15 @@ span.fl-video-play-icon-cntlr{
     height: 67.71px;
     left: -145.46px;
     top: 510px;
+    background: #FFA800;
+    transform: rotate(-45deg);
+}
+.ovo-abs-line-three {
+    position: absolute;
+    width: 301.3px;
+    height: 6.11px;
+    left: -135.32px;
+    top: 644px;
     background: #FFA800;
     transform: rotate(-45deg);
 }
