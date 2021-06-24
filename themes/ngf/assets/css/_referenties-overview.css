@@ -1,7 +1,23 @@
+.ref-ov-page-entry-hdr-sec{
+	background: #fbfbfb;
+}
+.ref-ov-page-entry-hdr-sec .page-entry-header{
+	padding-bottom: 36px;
+	border: initial;
+	margin-bottom: 0;
+}
+.ref-ov-page-entry-hdr-sec .page-entry-header h1{
+	padding-right: 65px;
+    padding-top: 8px;
 
+}
 
-
-
+.ref-ov-page-cntnt-sec{
+	padding-top: 55px;
+}
+.ref-ov-page-cntnt-sec .fl-grid-category{
+	padding-bottom: 78px;
+}
 .ref-ov-page-grid-item-cntlr{
 	padding-bottom: 35px;
 }
@@ -28,17 +44,15 @@
 	vertical-align: baseline;
 	padding-bottom: 45px;
 }
-.ref-ov-page-grid-des > div{
-	padding-bottom: 55px;
+.ropgd{
+	padding-bottom: 27px;
 }
-.ref-ov-page-grid-item > div p{
-	margin-bottom: 57px;
+.ref-ov-page-grid-item p{
+	margin-bottom: 27px;
 	font-weight: 300;
 	font-style: italic;
 	line-height: 36px;
 	/*letter-spacing: -2em;*/
 	font-size: 24px;
 }
-.ref-ov-page-grid-item > div p:last-of-type{
-	margin-bottom: 0;
-}
+

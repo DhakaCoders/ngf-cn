@@ -1,29 +1,27 @@
-.faq-heading-cntlr h1{
-/*font-style: normal;
-padding-bottom: 19px;*/
+.page-heading{
+	background: #fff;
 }
 .faq-grid-innr {
     padding-top: 85px;
     padding-bottom: 55px;
 }
-.faq-grid-item-heading{
-	margin-bottom: 27px;
+.fgi-title{
+	margin-bottom: 28px;
 	line-height: 1.2;
 	font-weight: 600;
 }
-.faq-grid-sec{
-	background: rgba(231, 234, 236, 0.2);
-}
-.faq-grid-innr ul{
+.faq-grids-cntlr{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -12px;
+	padding-top: 85px;
+    padding-bottom: 59px;
 }
-.faq-grid-innr ul li{
+.faq-grid-item-col{
 	width: 50%;
 	padding: 15px 12px ;
 }
-.faq-grid-item-cntlr{
+.faq-grid-item{
 	background-color: #fff;
 	padding-left: 35px;
 	padding-right: 35px;
@@ -37,4 +35,6 @@ padding-bottom: 19px;*/
 .faq-grid-item .fl-grid-tag{
 	padding-bottom: 19px;
 }
+
+@media(max-width)
 
