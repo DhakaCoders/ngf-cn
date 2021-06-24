@@ -185,4 +185,24 @@ span.fl-video-play-icon-cntlr{
 }
 .ovo-faq-slider-sec {
     padding-top: 110px;
+    position: relative;
 }
+.ovo-abs-line-one {
+    position: absolute;
+    width: 831.36px;
+    height: 6.11px;
+    left: -234.15px;
+    top: 332px;
+    background: #FFA800;
+    transform: rotate(-45deg);
+}
+.ovo-abs-line-two {
+    position: absolute;
+    width: 395.43px;
+    height: 67.71px;
+    left: -145.46px;
+    top: 510px;
+    background: #FFA800;
+    transform: rotate(-45deg);
+}
+

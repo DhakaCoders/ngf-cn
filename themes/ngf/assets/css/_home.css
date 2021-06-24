@@ -50,3 +50,12 @@
 	-webkit-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 }
+.page-bnr-skew{
+	border-top: 235px solid #000;
+	border-right: 1920px solid transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
