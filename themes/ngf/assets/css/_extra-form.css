@@ -61,9 +61,12 @@
     margin-bottom: 15px;
 }
 
-@media(max-width: 1499px){
+@media(max-width: 1699px){
     .fl-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-description{
         font-size:15px;
+    }
+    .fl-form-block-cntlr-des{
+        margin-bottom: 50px;
     }
 }
 @media(max-width: 575px){
