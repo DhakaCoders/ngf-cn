@@ -1,25 +1,25 @@
-.referenties-overview-sec-grid-innr{
-	padding-bottom: 40px;
+.referenties-overview-sec-grid-items{
+	padding-bottom: 35px;
 }
-.referenties-overview-sec-grid-innr ul{
+.referenties-overview-sec-grid-items ul{
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -12px;
 	margin-right: -12px;
 
 }
-.referenties-overview-sec-grid-innr ul li{
+.referenties-overview-sec-grid-items ul li{
 	width: 50%;
 	text-align: center;
 	padding-left: 12px;
 	padding-right: 12px;
-	padding-bottom: 120px;
+	padding-bottom: 125px;
 }
 .referenties-overview-grid-img{
-	padding-bottom: 44px;
+	padding-bottom: 45px;
 }
  .referenties-overview-grid-title{
- 	margin-bottom: 24px;
+ 	margin-bottom: 38px;
  }
 .referenties-overview-grid-img i{
 	border-radius: 50% 50%;
@@ -27,7 +27,7 @@
 	vertical-align: baseline;
 }
 .referenties-overview-grid-brief {
-	padding-bottom: 42px;
+	padding-bottom: 57px;
 }
 .referenties-overview-grid-brief p{
 	font-weight: 300;
