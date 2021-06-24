@@ -91,7 +91,10 @@
 /* == page entry header end design == */
 
 /* == section header design start == */
-
+.sec-header .sec-title{
+	text-transform: uppercase;
+	margin-bottom: 39px;
+}
 /* == section header design end == */
 
 /* == fl category design start == */
@@ -99,28 +102,43 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	margin: 0 -15px;
+	margin: 0 -25px;
+}
+.fl-grid-category{
+	padding-bottom: 34px;
 }
 .fl-grid-category ul li{
-	padding: 0 15px;
+	padding: 0 25px;
 	margin-bottom: 15px;
 	line-height: 1.2;
 }
 .fl-grid-category ul li a {
 	position: relative;
 }
-.fl-grid-category ul li a.active:after{
+.fl-grid-category ul li a:after{
 	position: absolute;
 	content: "";
-	width: 100%;
+	width: 0;
 	height: 2px;
 	background-color: #FFA800;
 	top: 100%;
 	left: 0;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .fl-grid-category ul li.active a,
-.fl-grid-category ul li a:after:hover{
+.fl-grid-category ul li.active a:after {
 	color: #FFA800;
+	width: 100%;
+}
+.fl-grid-category ul li a:hover,
+.fl-grid-category ul li a:hover:after{
+	color: #FFA800;
+	width: 100%;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .fl-grid-category ul li a{
 	display: inline-block;
