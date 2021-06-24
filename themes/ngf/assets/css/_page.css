@@ -220,6 +220,9 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	.fl-pagination-ctlr ul li{
 		padding: 0 17px;
 	}
+	.fl-pagination-ctlr ul li a, .fl-pagination-ctlr ul li span{
+		font-size: 17px;
+	}
 	.page-entry-header h1{
 		font-size: 55px;
 		padding-right: 54px;
@@ -241,6 +244,9 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	}
 	.fl-pagination-ctlr ul li{
 		padding: 0 14px;
+	}
+	.fl-pagination-ctlr ul li a, .fl-pagination-ctlr ul li span{
+		font-size: 16px;
 	}
 	.fl-grid-category ul{
 		margin: 0 -14px;
