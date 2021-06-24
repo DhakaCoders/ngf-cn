@@ -678,6 +678,33 @@ Gallery design
 	padding-bottom: 90px;
 }
 
+#referenties-details .bnr-grd{
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 60px;
+	border-bottom: 2px solid #EFF4F7;
+	margin-bottom: 60px;
+}
+#referenties-details .bnr-grd-img{
+	width:  32.6848%;
+}
+#referenties-details .bnr-grd-des{
+	width: 67.3151%;
+	padding-left: 100px;
+	padding-bottom: 30px;
+}
+
+#referenties-details .bnr-grd-des p{
+	font-size: 30px;
+	font-weight: 200;
+	margin-bottom: 15px;
+	line-height: 1.2;
+}
+
+#referenties-details .dfp-promo-module{
+	margin-top: -200px;
+}
+
 
 /*coaching details*/
 
