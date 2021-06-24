@@ -672,9 +672,9 @@ boek-je-form-sec-wrp
 	.page-entry-header .fl-h1 span{
 		font-size: 19px;
 	}
-	.contact-form-sec-wrp {
+/*	.contact-form-sec-wrp {
 	    padding-bottom: 240px;
-	}
+	}*/
     .contact-form-info ul li span,
     .contact-form-info ul li a{
         font-size: 15px;
@@ -731,9 +731,9 @@ boek-je-form-sec-wrp
 	    width: 60px;
 	    height: 75px;
 	}
-	.contact-form-sec-wrp {
+/*	.contact-form-sec-wrp {
 	    padding-bottom: 260px;
-	}
+	}*/
 	.contact-google-map-sec-wrp {
 	    padding-bottom: 65px;
 	}
@@ -771,9 +771,9 @@ boek-je-form-sec-wrp
 	.contact-google-map-sec-wrp {
 	    padding-bottom: 45px;
 	}
-	.contact-form-sec-wrp {
+/*	.contact-form-sec-wrp {
 	    padding-bottom: 200px;
-	}
+	}*/
 	.contact-form-lft {
 	    width: 65%;
 	    padding-right: 30px;
@@ -817,9 +817,9 @@ boek-je-form-sec-wrp
 	.contact-parachute-icon{
 		display: none;
 	}
-	.contact-form-sec-wrp {
+	/*.contact-form-sec-wrp {
 	    padding-bottom: 30px;
-	}
+	}*/
 	/*.contact-form-sec-wrp .page-entry-header p {
 	    margin-bottom: 45px;
 	}*/
@@ -828,7 +828,6 @@ boek-je-form-sec-wrp
         margin-bottom: 40px;
     }
 	.contact-form-sec-wrp .contact-form-lft{
-		padding-bottom: 150px;
 		position: relative;
 	    z-index: 2;
 	}
