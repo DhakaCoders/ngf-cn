@@ -205,10 +205,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding-right: 68px;
 	}
 	.fl-grid-category ul{
-		margin: 0 -23px;
+		margin: 0 -22px;
 	}	
 	.fl-grid-category ul li{
-		padding: 0 23px;
+		padding: 0 22px;
 	}
 }
 
@@ -224,10 +224,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding-right: 54px;
 	}
 	.fl-grid-category ul{
-		margin: 0 -21px;
+		margin: 0 -19px;
 	}	
 	.fl-grid-category ul li{
-		padding: 0 21px;
+		padding: 0 19px;
 	}
 }
 
@@ -239,10 +239,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding: 0 14px;
 	}
 	.fl-grid-category ul{
-		margin: 0 -19px;
+		margin: 0 -14px;
 	}	
 	.fl-grid-category ul li{
-		padding: 0 19px;
+		padding: 0 14px;
 	}
 }
 
@@ -253,12 +253,6 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	.page-entry-header h1{
 		padding-right: 0;
 		padding-bottom: 30px;
-	}
-	.fl-grid-category ul{
-		margin: 0 -14px;
-	}	
-	.fl-grid-category ul li{
-		padding: 0 14px;
 	}
 }
 
