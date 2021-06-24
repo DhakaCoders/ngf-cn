@@ -72,6 +72,8 @@
 	height: 294px;
 	overflow: hidden;
 	position: relative;
+}
+.coaching-sec .blog-grid-img{
 	margin-bottom: 24px;
 }
 .bgi-img{
@@ -166,7 +168,7 @@ a.fl-read-more-btn:hover i{
 	a.fl-read-more-btn{
 		font-size: 15px;
 	}
-	.blog-page-sec .blog-grid-items{
+	.coaching-sec .blog-grid-items{
 		padding-bottom: 17px;
 	}	
 }
@@ -184,7 +186,7 @@ a.fl-read-more-btn:hover i{
 	.blog-grid-des .bgi-title{
 		line-height: 1.45;
 	}
-	.blog-page-sec .blog-grid-items{
+	.coaching-sec .blog-grid-items{
 		padding-bottom: 15px;
 	}
 }
@@ -200,7 +202,7 @@ a.fl-read-more-btn:hover i{
 	.blog-grid-img{
 		height: 270px;
 	}
-	.blog-page-sec .blog-grid-items{
+	.coaching-sec .blog-grid-items{
 		padding-bottom: 12px;
 	}
 }
@@ -215,7 +217,7 @@ a.fl-read-more-btn:hover i{
 	.blog-grid-des .bgi-title{
 		font-size: 19px;
 	}
-	.blog-page-sec .blog-grid-items{
+	.coaching-sec .blog-grid-items{
 		padding-bottom: 10px;
 	}
 }
@@ -234,7 +236,7 @@ a.fl-read-more-btn:hover i{
 	.bgi-des p{
 		line-height: 1.6;
 	}
-	.blog-page-sec .blog-grid-items{
+	.coaching-sec .blog-grid-items{
 		padding-bottom: 8px;
 	}
 	.coaching-sec .fl-pagination-blog-cntrl{
@@ -268,7 +270,7 @@ a.fl-read-more-btn:hover i{
 	.bgi-des p{
 		line-height: 1.7;
 	}
-	.blog-page-sec .blog-grid-items{
+	.coaching-sec .blog-grid-items{
 		padding-bottom: 6px;
 	}
 }

@@ -1,9 +1,14 @@
-
-.fl-grid-tag{
-
+.blog-page-sec{
+	background-color: #fbfbfb;
+}
+.blog-page-sec .fl-grid-tag{
+	margin-top: -16px;
+    margin-left: 27px;
+    position: relative;
+    padding-bottom: 23px;
 }
 .fl-grid-tag span{
-	padding: 10px 18px 7px;
+	padding: 8px 18px;
 	background-color: #ffa800;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
@@ -13,4 +18,9 @@
 	display: inline-block;
 	vertical-align: baseline;
 	line-height: 1;
+}
+.blog-page-sec .blog-grid-des{
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-ms-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+	-webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
 }
