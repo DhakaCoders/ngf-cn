@@ -1,10 +1,6 @@
-.blog-page .header{
-	margin-bottom: 0;
-}
 .coaching-sec .blog-grids-cntrl{
 	padding-top: 41px;
 }
-
 .blog-grid-items ul{
 	display: flex;
 	flex-wrap: wrap;
@@ -158,10 +154,6 @@ a.fl-read-more-btn:hover i{
 	.coaching-sec .blog-grid-items{
 		padding-bottom: 15px;
 	}
-}
-
-@media (max-width: 1299px) {
-	
 }
 
 @media (max-width: 1199px) {
