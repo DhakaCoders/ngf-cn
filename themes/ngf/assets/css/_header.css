@@ -11,6 +11,7 @@
 	width: 112px;
 	border-radius: 50% 50%;
 	border: 20px solid #FFA800;
+	z-index: 2;
 }
 .hdr-white-skew{
 	border-bottom: 235px solid #fff;
@@ -26,6 +27,21 @@
 	bottom: 55px;
 	padding-top: 73px;
 	z-index: 2;
+}
+.has-banner .header-cntlr{
+	padding-bottom: 42px;
+}
+.has-banner .header .hdr-socials,
+.has-banner .header .hdr-circle-icon,
+.has-banner .header .hdr-white-skew{
+	display: none;
+}
+.has-banner .hdr-circle-icon{
+	bottom: 0;
+	transform: translateY(50%);
+	-ms-transform: translateY(50%);
+	-webkit-transform: translateY(50%);
+	-o-transform: translateY(50%);
 }
 .hdr-lft-line-icon{
 	position: absolute;
