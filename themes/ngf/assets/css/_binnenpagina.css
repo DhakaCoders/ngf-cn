@@ -560,10 +560,15 @@ Gallery design
 }
 .testimonial-grd-item-des blockquote p{
 	line-height: 1.2;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 .testimonial-grd-item-des blockquote em{
 	font-style: italic;
+}
+
+.testimonial-grd-item-des blockquote strong{
+	font-size: 16px;
+	text-transform: capitalize;
 }
 
 .dfpTestimonialSlider .testimonial-grd-item{
@@ -709,7 +714,7 @@ Gallery design
 /*coaching details*/
 
 #coaching-details .dfp-cta-module{
-	margin-bottom: 75px;
+	margin-bottom: 70px;
 }
 
 #coaching-details .dfp-testimonial-module{
@@ -720,6 +725,19 @@ Gallery design
 }
 #coaching-details .default-page-con{
 	padding-bottom: 0;
+}
+
+#coaching-details .dfp-promo-module .bnr-bg-overly-module {
+    margin-bottom: 48px;
+}
+
+/*#coaching-details .dfp-promo-module-des{
+	padding-bottom: 70px;
+}*/
+
+#coaching-details .gallery-wrap{
+	padding-top: 70px;
+	padding-bottom: 30px;
 }
 
 
