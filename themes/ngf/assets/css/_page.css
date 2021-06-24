@@ -1,4 +1,4 @@
-*.slick-slider ul.slick-dots{
+.slick-slider ul.slick-dots{
 	position: static;
 	line-height: 0;
 	padding: 0 20px!important;
