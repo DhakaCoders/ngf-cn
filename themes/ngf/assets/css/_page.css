@@ -160,7 +160,13 @@
 	.page-entry-header h1{
 		font-size: 63px;
 		padding-right: 68px;
+	}
+	.fl-grid-category ul{
+		margin: 0 -23px;
 	}	
+	.fl-grid-category ul li{
+		padding: 0 23px;
+	}
 }
 
 @media (max-width: 1499px) {
@@ -174,6 +180,12 @@
 		font-size: 55px;
 		padding-right: 54px;
 	}
+	.fl-grid-category ul{
+		margin: 0 -21px;
+	}	
+	.fl-grid-category ul li{
+		padding: 0 21px;
+	}
 }
 
 @media (max-width: 1199px) {
@@ -182,6 +194,12 @@
 	}
 	.fl-pagination-ctlr ul li{
 		padding: 0 14px;
+	}
+	.fl-grid-category ul{
+		margin: 0 -19px;
+	}	
+	.fl-grid-category ul li{
+		padding: 0 19px;
 	}
 }
 
@@ -192,6 +210,12 @@
 	.page-entry-header h1{
 		padding-right: 0;
 		padding-bottom: 30px;
+	}
+	.fl-grid-category ul{
+		margin: 0 -14px;
+	}	
+	.fl-grid-category ul li{
+		padding: 0 14px;
 	}
 }
 
