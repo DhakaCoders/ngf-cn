@@ -3,8 +3,8 @@
 	.container { 
 		max-width: 1160px;
 	}
-	.block-1440{
-		max-width: 1240px;
+	.container-lg{
+		max-width: 1340px;
 	}
 	.fl-h1-80{
 		font-size: 75px;
@@ -37,8 +37,8 @@
 	.container { 
 		max-width: 1100px;
 	}
-	.block-1440{
-		max-width: 1140px;
+	.container-lg{
+		max-width: 1200px;
 	}
 	.fl-h1-80{
 		font-size: 70px;
