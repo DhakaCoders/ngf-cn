@@ -4,6 +4,9 @@
 .fl-grid-category{
 	padding-bottom: 20px;
 }
+.coaching-sec .blog-grids-cntrl{
+	padding-top: 41px;
+}
 .fl-grid-category ul{
 	display: flex;
 	flex-wrap: wrap;
