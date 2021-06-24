@@ -294,6 +294,17 @@ if( $('.dfpTestimonialSlider').length ){
 
 /*start of Jahir*/
 
+if( $('.faqSlider').length ){
+    $('.faqSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+}
 
 
 /*start of Momin*/
