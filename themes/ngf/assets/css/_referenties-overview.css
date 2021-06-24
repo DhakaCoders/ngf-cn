@@ -28,10 +28,10 @@
 	vertical-align: baseline;
 	padding-bottom: 45px;
 }
-.ref-ov-page-grid-des > div{
-	padding-bottom: 55px;
+.ropgd{
+	padding-bottom: 1px;
 }
-.ref-ov-page-grid-item > div p{
+.ref-ov-page-grid-item p{
 	margin-bottom: 57px;
 	font-weight: 300;
 	font-style: italic;
@@ -39,6 +39,7 @@
 	/*letter-spacing: -2em;*/
 	font-size: 24px;
 }
-.ref-ov-page-grid-item > div p:last-of-type{
+/*.ref-ov-page-grid-item p:last-of-type{
 	margin-bottom: 0;
 }
+*/
