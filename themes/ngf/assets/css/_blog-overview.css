@@ -101,10 +101,10 @@
 
 @media (max-width: 575px) {
 	.blog-grid-des {
-    	padding: 0 28px 31px;
+    	padding: 0 26px 31px;
 	}
 	.blog-page-sec .fl-grid-tag{
-		margin-left: 28px;
+		margin-left: 26px;
 		padding-bottom: 13px;
 	}
 	.fl-grid-tag span{
