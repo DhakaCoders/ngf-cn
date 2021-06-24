@@ -223,9 +223,6 @@
 .ftr-top-col-socials ul li a:hover i svg{
     fill: #fff;
 }
-.ftr-top-col-socials ul li:first-child a:hover i svg{
-    fill: #FFA800;
-}
 
 .ftr-btm-wrap{
     background: #fff;
@@ -294,7 +291,9 @@
     display: inline-block;
     color: #ffa800;
 }
-
+.ftr-developed-by p a:hover{
+    color: #000;
+}
 .ftr-btm-menu ul li a:hover,
 .ftr-top-col-menu ul li a:hover,
 .breadcrumb-cntlr ul li a:hover, 

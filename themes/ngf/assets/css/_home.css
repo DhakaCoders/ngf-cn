@@ -9,7 +9,7 @@
 	left: 0;
 	z-index: 1;
 }
-.page-bnr-cntlr{
+.page-bnr-desc-cntlr{
 	position: relative;
 	z-index: 3;
 	min-height: 840px;
@@ -20,7 +20,7 @@
 .page-bnr-desc{
 	position: relative;
 }
-.pg-bnr-title.fl-h1{
+.pg-bnr-title.fl-h1-80{
 	font-size: 80px;
 	line-height: 1.1;
 	color: #fff;
@@ -58,4 +58,7 @@
 	left: 0;
 	right: 0;
 	z-index: 2;
+}
+.page-bnr-no-skew .page-bnr-skew{
+	display: none;
 }
