@@ -1,31 +1,45 @@
+/*common-slider-dots*/
 .slick-slider ul.slick-dots{
 	position: static;
 	line-height: 0;
 	padding: 0 20px!important;
 }
 .slick-slider .slick-dots li{
-	width: 47px!important;
-	height: 3px!important;
 	position: static;
-	background: #595959!important;
-	margin: 0 6px;
+	margin:0;
 	padding: 0!important;
-}
-.slick-slider .slick-dots li.slick-active{
-	background: #FFA800!important;
-	height:5px;
+	margin-bottom:5px;
+	height:initial;
+	width:initial;
 }
 .slick-slider .slick-dots li:before,
 .slick-slider .slick-dots li button:before{
-	content: none!important;
+	content:none!important;
+}
+.slick-slider .slick-dots li button:before{
+	content:""!important;
+	width:47px;
+	height:2px;
+	position: absolute;
+	top:-2px;
+	left:0;
+	background: #FFA800!important;
+	opacity:0;
+}
+.slick-slider .slick-dots li.slick-active button:before{
+	opacity:1;
+	transition: all 0.5s;
 }
 .slick-slider .slick-dots li button{
 	padding: 0;
-	width: 47px;
-	height: 3px;
+	width: 47px!important;
+	height: 3px!important;
+	background: #595959!important;
+	margin: 0 6px;
+	position: relative;
 }
 .slick-slider .slick-dots li.slick-active button{
-	height: 5px;
+	background: #FFA800!important;
 }
 
 
@@ -191,10 +205,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding-right: 68px;
 	}
 	.fl-grid-category ul{
-		margin: 0 -23px;
+		margin: 0 -22px;
 	}	
 	.fl-grid-category ul li{
-		padding: 0 23px;
+		padding: 0 22px;
 	}
 }
 
@@ -210,10 +224,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding-right: 54px;
 	}
 	.fl-grid-category ul{
-		margin: 0 -21px;
+		margin: 0 -19px;
 	}	
 	.fl-grid-category ul li{
-		padding: 0 21px;
+		padding: 0 19px;
 	}
 }
 
@@ -225,10 +239,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding: 0 14px;
 	}
 	.fl-grid-category ul{
-		margin: 0 -19px;
+		margin: 0 -14px;
 	}	
 	.fl-grid-category ul li{
-		padding: 0 19px;
+		padding: 0 14px;
 	}
 }
 
@@ -239,12 +253,6 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	.page-entry-header h1{
 		padding-right: 0;
 		padding-bottom: 30px;
-	}
-	.fl-grid-category ul{
-		margin: 0 -14px;
-	}	
-	.fl-grid-category ul li{
-		padding: 0 14px;
 	}
 }
 
