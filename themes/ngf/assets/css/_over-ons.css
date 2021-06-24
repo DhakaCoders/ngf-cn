@@ -75,7 +75,6 @@ span.ovo-abs-img-three {
 .ovo-full-width-bg-des{
 	padding-top: 140px;
 	 padding-bottom: 125px;
-	 background-color: #fbfbfb;
 }
 .block-850{
 	max-width: 850px;
@@ -170,7 +169,6 @@ span.fl-video-play-icon-cntlr{
 .ove-grids-cntlr{
     padding-bottom: 20px!important;
     padding-top: 0!important;
-
 }
 .ovo-faq-slider-entry-heading{
 
@@ -184,15 +182,16 @@ span.fl-video-play-icon-cntlr{
     margin-bottom: 20px!important;
 }
 .ovo-faq-slider-sec {
-    padding-top: 110px;
+    padding-top: 115px;
     position: relative;
+    z-index: 2;
 }
 .ovo-abs-line-one {
     position: absolute;
     width: 831.36px;
     height: 6.11px;
-    left: -231.15px;
-    top: 326px;
+    left: -255.15px;
+    top: 335px;
     background: #FFA800;
     transform: rotate(-45deg);
 }
@@ -201,7 +200,7 @@ span.fl-video-play-icon-cntlr{
     width: 395.43px;
     height: 67.71px;
     left: -145.46px;
-    top: 510px;
+    top: 490px;
     background: #FFA800;
     transform: rotate(-45deg);
 }
@@ -209,9 +208,11 @@ span.fl-video-play-icon-cntlr{
     position: absolute;
     width: 301.3px;
     height: 6.11px;
-    left: -135.32px;
-    top: 644px;
+    left: -142.32px;
+    top: 629px;
     background: #FFA800;
     transform: rotate(-45deg);
 }
-
+.ovo-grid-item-col{
+    padding: 20px 15px!important;
+}

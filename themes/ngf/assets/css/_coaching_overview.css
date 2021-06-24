@@ -131,6 +131,7 @@ a.fl-read-more-btn:hover i{
 	.blog-grid-des .bgi-title{
 		font-size: 20px;
 		line-height: 1.35;
+		margin-bottom: 10px;
 	}
 	a.fl-read-more-btn{
 		font-size: 15px;
@@ -152,6 +153,7 @@ a.fl-read-more-btn:hover i{
 	}
 	.blog-grid-des .bgi-title{
 		line-height: 1.45;
+		margin-bottom: 8px;
 	}
 	.coaching-sec .blog-grid-items{
 		padding-bottom: 15px;
@@ -230,6 +232,7 @@ a.fl-read-more-btn:hover i{
 	.blog-grid-des .bgi-title{
 		font-size: 18px;
 		line-height: 1.6;
+		margin-bottom: 6px;
 	}
 	a.fl-read-more-btn{
 		font-size: 14px;
