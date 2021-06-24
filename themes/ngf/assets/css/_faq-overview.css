@@ -2,6 +2,9 @@
 /*font-style: normal;
 padding-bottom: 19px;*/
 }
+.page-heading{
+	background: #fff;
+}
 .faq-grid-innr {
     padding-top: 85px;
     padding-bottom: 55px;
@@ -10,9 +13,6 @@ padding-bottom: 19px;*/
 	margin-bottom: 27px;
 	line-height: 1.2;
 	font-weight: 600;
-}
-.faq-grid-sec{
-	background: rgba(231, 234, 236, 0.2);
 }
 .faq-grid-innr ul{
 	display: flex;
