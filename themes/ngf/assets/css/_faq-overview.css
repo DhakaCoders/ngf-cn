@@ -122,8 +122,10 @@
 @media(max-width: 489px){
 
 }
-@media(max-width: 369px){
-
+@media(max-width: 359px){
+	.faq-grid-item{
+		padding: 28px 24px 21px 24px;
+	}
 }
 
 
