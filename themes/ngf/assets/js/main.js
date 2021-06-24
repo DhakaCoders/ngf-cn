@@ -310,6 +310,7 @@ if( $('.bdrSlider').length ){
 if( $('.faqSlider').length ){
     $('.faqSlider').slick({
       dots: true,
+      arrows:false,
       infinite: false,
       autoplay: false,
       autoplaySpeed: 4000,
