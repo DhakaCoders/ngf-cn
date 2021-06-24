@@ -291,6 +291,17 @@ if( $('.dfpTestimonialSlider').length ){
       slidesToScroll: 1
     });
 }
+if( $('.bdrSlider').length ){
+    $('.bdrSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
+}
 
 
 
