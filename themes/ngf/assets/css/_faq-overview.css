@@ -7,7 +7,7 @@
 }
 .fgi-title{
 	margin-bottom: 28px;
-	line-height: 1.2;
+	line-height: 1.3;
 	font-weight: 600;
 }
 .faq-grids-cntlr{
@@ -90,6 +90,9 @@
 	}
 	.faq-grid-item{
 		padding: 28px 28px 21px 28px;
+	}
+	.fgi-title{
+		line-height: 1.6;
 	}
 }
 @media(max-width: 575px){
