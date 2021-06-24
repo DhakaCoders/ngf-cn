@@ -560,10 +560,15 @@ Gallery design
 }
 .testimonial-grd-item-des blockquote p{
 	line-height: 1.2;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 .testimonial-grd-item-des blockquote em{
 	font-style: italic;
+}
+
+.testimonial-grd-item-des blockquote strong{
+	font-size: 16px;
+	text-transform: capitalize;
 }
 
 .dfpTestimonialSlider .testimonial-grd-item{
