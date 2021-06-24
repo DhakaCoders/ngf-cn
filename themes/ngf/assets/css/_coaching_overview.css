@@ -1,18 +1,6 @@
 .blog-page .header{
 	margin-bottom: 0;
 }
-.blog-page-sec{
-	padding-bottom: 35px;
-}
-.blog-page-sec .fl-pagination-ctlr{
-	padding-bottom: 35px;
-}
-.news-overview-page-entry-hdr .page-entry-header{
-	margin-bottom: 34px;
-}
-.news-overview-page-entry-hdr .page-entry-header p{
-	margin-bottom: 34px;
-}
 .fl-grid-category{
 	padding-bottom: 20px;
 }
@@ -81,7 +69,7 @@
 	line-height: 1.1;
 }
 .blog-page-sec .blog-grid-items{
-	padding-bottom: 12px;
+	padding-bottom: 20px;
 }
 .blog-grid-item{
 	background: #fff;
@@ -156,14 +144,19 @@ a.fl-read-more-btn i {
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -o-transform: translateY(-50%);
+
+    transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;
+}
+a.fl-read-more-btn:hover i{
+	right: -5px;
+    transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;	
 }
 .fl-pagi-blog-cntrl{
-	padding-top: 56px;
-	border-top: 1px solid #ECF1F4;	
-}
-.blog-page-sec .fl-pagi-cntlr,
-.product-page-cntlr .fl-pagi-cntlr{
-	padding-bottom: 34px;
+
 }
 
 
@@ -181,12 +174,19 @@ a.fl-read-more-btn i {
 	.blog-grid-items ul li{
 		padding: 0 12px 86px!important;
 	}
-	.blog-grid-des .bgi-title{
-		font-size: 20px;
-	}
 	.blog-grid-img{
 		height: 290px;
 	}
+	.blog-grid-des .bgi-title{
+		font-size: 20px;
+		line-height: 1.35;
+	}
+	a.fl-read-more-btn{
+		font-size: 15px;
+	}
+	.blog-page-sec .blog-grid-items{
+		padding-bottom: 17px;
+	}	
 }
 
 @media (max-width: 1499px) {
@@ -199,6 +199,12 @@ a.fl-read-more-btn i {
 	.blog-grid-img{
 		height: 280px;
 	}
+	.blog-grid-des .bgi-title{
+		line-height: 1.45;
+	}
+	.blog-page-sec .blog-grid-items{
+		padding-bottom: 15px;
+	}
 }
 
 @media (max-width: 1299px) {
@@ -209,17 +215,48 @@ a.fl-read-more-btn i {
 	.blog-grid-items ul li{
 		padding: 0 10px 70px!important;
 	}
+	.blog-grid-img{
+		height: 270px;
+	}
+	.blog-page-sec .blog-grid-items{
+		padding-bottom: 12px;
+	}
 }
 
 @media (max-width: 991px) {
 	.blog-grid-items ul li{
 		padding: 0 10px 60px!important;
 	}
+	.blog-grid-img{
+		height: 260px;
+	}
+	.blog-grid-des .bgi-title{
+		font-size: 19px;
+	}
+	.blog-page-sec .blog-grid-items{
+		padding-bottom: 10px;
+	}
 }
 
 @media (max-width: 767px) {
+	.blog-grid-items ul{
+		margin: 0 -8px!important;
+	}
 	.blog-grid-items ul li{
-		padding: 0 10px 50px!important;
+		width: 50%!important;
+		padding: 0 8px 50px!important;
+	}
+	.blog-grid-img{
+		height: 250px;
+	}
+	.bgi-des p{
+		line-height: 1.6;
+	}
+	.blog-page-sec .blog-grid-items{
+		padding-bottom: 8px;
+	}
+	.coaching-sec .fl-pagination-blog-cntrl{
+		display: none;
 	}
 }
 
@@ -228,8 +265,29 @@ a.fl-read-more-btn i {
 }
 
 @media (max-width: 575px) {
+	.blog-grid-items ul{
+		margin: 0!important;
+	}
 	.blog-grid-items ul li{
-		padding: 0 10px 40px!important;
+		width: 100%!important;
+		max-width: 360px;
+		padding: 0 0 40px!important;
+	}
+	.blog-grid-img{
+		height: 240px;
+	}
+	.blog-grid-des .bgi-title{
+		font-size: 18px;
+		line-height: 1.6;
+	}
+	a.fl-read-more-btn{
+		font-size: 14px;
+	}
+	.bgi-des p{
+		line-height: 1.7;
+	}
+	.blog-page-sec .blog-grid-items{
+		padding-bottom: 6px;
 	}
 }
 

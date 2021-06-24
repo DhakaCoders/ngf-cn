@@ -236,11 +236,13 @@ form .bootstrap-select{
 }
 form .bootstrap-select button{
 	background: transparent;
-	border: 0;
-	color: #000;
-	text-transform: uppercase;
-	font-size: 16px;
-	border: 1px solid #f7f7f7;
+    border: 0;
+    color: #000;
+    font-size: 14px;
+    border: 1px solid #E7EAEC;
+    font-weight: 300;
+    border-radius:0!important;
+    padding: 13px 15px 16px;
 }
 form .bootstrap-select .caret{
 	border: 0;
@@ -257,15 +259,18 @@ form .bootstrap-select .caret{
 .dropdown-toggle{
 	position: relative;
 	background: transparent!important;
-	min-height: 40px;
+	min-height: 48px;
 }
 .dropdown-toggle::after{
 	content: none;
 }
 .dropdown-toggle::before{
-	content: "\f107"!important;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 600;
+	content: ""!important;
+    content: "";
+    background-image: url(../images/select-down-arrow.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 8px;
     text-decoration: inherit;
     color: #1E1E1E;
     font-size: 17px;
@@ -279,7 +284,8 @@ form .bootstrap-select .caret{
     line-height: 15px;
 }
 .bootstrap-select.show .dropdown-toggle::before{
-	content: "\f106"!important;
+	transform: rotate(-180deg);
+    margin-top: -4px;
 }
 
 .btn-light.focus, 
@@ -311,7 +317,7 @@ form .bootstrap-select .dropdown-toggle:focus{
 }
 form .dropdown-menu{
     margin: 0;
-    background-color: #ccc;
+    background-color: #000;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -332,10 +338,16 @@ form .dropdown-menu li a{
 form 
 .dropdown-menu > .active > a, 
 .dropdown-menu > .active > a:focus, 
-.dropdown-menu > .active > a:hover{
-	background-color: #242424;
+.dropdown-menu > .active > a:hover,
+.dropdown-item:focus{
+	background-color: #FFA800;
+	color:#fff;
 }
-
+.bootstrap-select .dropdown-menu li a{
+	font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
 .bootstrap-select .dropdown-toggle:focus{
 	outline: none!important;
 }
@@ -377,6 +389,7 @@ form
 	padding: 12.5px 30px;
 	min-width: 242px;
 	text-align: center;
+	display: inline-block;
 }
 .fl-transparent-btn:hover{
 	background: #FFA800;
@@ -396,6 +409,7 @@ form
 	padding: 12.5px 30px;
 	min-width: 242px;
 	text-align: center;
+	display: inline-block;
 }
 .fl-black-btn:hover{
 	background: transparent;
@@ -415,6 +429,7 @@ form
 	padding: 12.5px 30px;
 	min-width: 242px;
 	text-align: center;
+	display: inline-block;
 }
 .fl-orange-btn:hover{
 	background: #000;

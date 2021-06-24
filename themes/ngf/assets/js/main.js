@@ -232,7 +232,19 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Niaz Morshad*/
+// contact form-val
+if( $('.contact-form-wrp').length ){
+  $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
+    $('.wpforms-field').addClass('wpforms-has-error');
+  });
+}
 
+
+if( $('.wpforms-error').length ){
+  $('.wpforms-error').on('click', function(){
+    $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
+  });
+}
 
 
 /*start of Sabbir Hossain*/
@@ -240,10 +252,43 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Monirul Islam*/
+  var windowLength = $(window).width();
+  var conW = $('.container-lg').width();
+  var mainW = windowLength - conW;
+  var leftW = mainW / 2;
+  $(".hdr-circle-icon").css('left', leftW);
+
+
+  $(".hdr-white-skew").css('border-left-width', windowWidth);
+  $(".ftr-white-skew").css('border-right-width', windowWidth);
+  
+  $(window).resize(function() { 
+    var window2Width = $(window).width();
+    var conW = $('.container-lg').width();
+    var mainW = window2Width - conW;
+    var leftW = mainW / 2;
+    $(".hdr-circle-icon").css('left', leftW);
+
+    $(".hdr-white-skew").css('border-left-width', window2Width);
+    $(".ftr-white-skew").css('border-right-width', window2Width);
+  });
+
 
 
 
 /*start of Shariful Islam*/
+
+if( $('.dfpTestimonialSlider').length ){
+    $('.dfpTestimonialSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+}
 
 
 
