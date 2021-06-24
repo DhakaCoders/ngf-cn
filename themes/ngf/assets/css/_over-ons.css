@@ -52,8 +52,8 @@
 }
 span.ovo-abs-img-four {
     position: absolute;
-    right: 41%;
-    top: 72%;
+    right: 43%;
+    top: 73%;
     z-index: 1;
 }
 span.ovo-abs-img-three {
@@ -91,6 +91,9 @@ span.ovo-abs-img-three {
 	line-height: 44px;
 	letter-spacing: -0.02em;
 	color: #000000;
+}
+.ovo-fancy-vedeo-items-sec{
+	padding: 95px 0;
 }
 .fancy-vedeo-items-sec-cntlr {
     border-bottom: 2px solid #EFF4F7;
