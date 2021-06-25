@@ -1,11 +1,112 @@
+.fl-products-cntlr > ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px!important;
+    padding-bottom: 40px;
+}
+.fl-products-cntlr > ul.products > li {
+    width: 33.3333%!important;
+    padding: 0 12px 40px!important;
+    margin: 0!important;
+}
+/* .fl-products-cntlr ul.products > li:before{
+    content: none;
+} */
+.fl-pro-tag{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+.fl-pro-tag span{
+    background-color: #FFA800;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.9;
+    min-width: 100px;
+    padding: 11px 10px 10px;
+    display: inline-block;
+    vertical-align: baseline;
+}
 .fl-product-grd {
     background: #fff;
     position: relative;
 }
+.fl-pro-grd-img-cntlr {
+    position: relative;
+    height: 294px;
+    width: auto;
+    overflow: hidden;
+}
 .fl-pro-grid-img{
-    height: 278px;
+    height: 100%;
     width: auto;
     transition: all .5s;
-	-ms-transition: all .5s;
-	-webkit-transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.fl-pro-grd-img-cntlr img{
+    height: 100%;
+    width: auto;
+    display: none;
+}
+.fl-product-grd-inr:hover .fl-pro-grd-img-cntlr .fl-pro-grid-img{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.fl-pro-grd-des {
+    padding: 25px 23px 35px;
+}
+.fl-pro-grd-title{
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+.fl-product-grd .fl-pro-grd-des .fl-pro-grd-price{
+    padding-bottom: 10px;
+}
+/* == price design == */
+span.amount bdi, span.amount bdi span.woocommerce-Price-currencySymbol, 
+ins span.amount bdi, ins span.amount bdi span.woocommerce-Price-currencySymbol,
+del span.amount bdi, del span.amount bdi span.woocommerce-Price-currencySymbol {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+del span.amount bdi, del span.amount bdi span.woocommerce-Price-currencySymbol{
+    color: #B0B0B0;
+    position: relative;
+}
+del span.amount{
+    margin-right: 6px;
+}
+del span.amount bdi:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #B0B0B0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+/* == price design end */
+.fl-pro-grd-details {}
+.fl-pro-grd-details p {
+    line-height: 1.9;
+}
+.fl-buy-now-btn{
+    width: 100%;
 }
