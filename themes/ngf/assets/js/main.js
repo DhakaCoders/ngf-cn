@@ -277,6 +277,22 @@ if( $('.wpforms-error').length ){
 
 
 /*start of Monirul Islam*/
+
+if( $('.hamburger-cntlr').length ){
+  $('.hamburger-cntlr').click(function(){
+    $('body').toggleClass('allWork');
+  });
+}
+if( $('li.menu-item-has-children > a').length ){
+  $('li.menu-item-has-children > a').click(function(e){
+   event.preventDefault();
+   $(this).next().slideToggle(300);
+   $(this).parent().toggleClass('sub-menu-arrow');
+ });
+}
+
+
+
   var windowLength = $(window).width();
   var conW = $('.container-lg').width();
   var mainW = windowLength - conW;
