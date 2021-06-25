@@ -1,6 +1,6 @@
 .home-messege{
     padding: 18px 0;
-    background: #FDCA35;
+    background: #FFA800;
 }
 
 .home-messege-inr{
@@ -9,11 +9,14 @@
 }
 .home-messege-inr p{
     margin-bottom: 0;
+    color:#fff;
 }
 .home-messege-inr p strong{
     display: inline-block;
     vertical-align: baseline;
     margin-right: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:600;
 }
 
 
@@ -111,4 +114,9 @@
 }
 .latest-news-grid-item .blog-grid-des .bgi-des{
 	padding-bottom:30px;
+}
+.latest-news-sec .latest-nws-circle-bg{
+    position: absolute;
+    bottom: -33px;
+    right: 0;
 }
