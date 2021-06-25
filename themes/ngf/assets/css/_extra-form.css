@@ -29,7 +29,7 @@
     width:100%;
     margin:0 auto;
 }
-.fl-form-block-cntlr-des{
+.fl-form-block-des-cntlr{
     margin-bottom: 60px;
 }
 .fl-form-block .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
@@ -68,7 +68,7 @@
     .fl-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-description{
         font-size:15px;
     }
-    .fl-form-block-cntlr-des{
+    .fl-form-block-des-cntlr{
         margin-bottom: 50px;
     }
 }
