@@ -29,6 +29,9 @@
 .faq-grid-item .fl-grid-tag{
 	padding-bottom: 19px;
 }
+.faq-grid-sec{
+	padding-bottom: 18px;
+}
 
 /*responsive-start*/
 
@@ -107,6 +110,7 @@
 }
 @media(max-width: 639px){
 	.faq-grids-cntlr {
+		margin: 0;
     	padding-bottom: 13px;
 	}
 	.faq-grid-item-col{
