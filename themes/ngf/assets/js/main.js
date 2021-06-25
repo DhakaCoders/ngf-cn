@@ -237,6 +237,7 @@ if( $('.plansGrdsSlider').length ){
     $('.plansGrdsSlider').slick({
       dots: true,
       infinite: false,
+      arrows:false,
       autoplay: false,
       autoplaySpeed: 4000,
       speed: 700,
@@ -250,6 +251,7 @@ if( $('.latestNewsGrdsSlider').length ){
       dots: true,
       infinite: false,
       autoplay: false,
+      arrows:false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 3,
@@ -399,7 +401,19 @@ if( $('.faqSlider').length ){
 if( $('.ovomblfvSlider').length ){
     $('.ovomblfvSlider').slick({
       dots: true,
-      arrows:true,
+      arrows:false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+}
+if( $('.werkmsgSlider').length ){
+    $('.werkmsgSlider').slick({
+      dots: true,
+      arrows:false,
       infinite: false,
       autoplay: false,
       autoplaySpeed: 4000,

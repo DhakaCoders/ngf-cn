@@ -1,11 +1,122 @@
-.plans-grid-slider-item{
+.home-messege{
+    padding: 18px 0;
+    background: #FFA800;
+}
+
+.home-messege-inr{
+    text-align: center;
+    color: #2C113E;
+}
+.home-messege-inr p{
+    margin-bottom: 0;
+    color:#fff;
+}
+.home-messege-inr p strong{
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:600;
+}
+
+
+
+
+.plans-grid-slider-item,
+.latest-news-grid-slider-item{
 	padding:0 12px;
 }
-.plans-sec-grids{
+.plans-sec-cntlr{
+	position: relative;
+}
+.plans-sec-cntlr .plan-circle-bg {
+    position: absolute;
+    right: -51px;
+    top: 4px;
+}
+.plans-sec-grids,
+.latest-news-sec-grids{
 	margin:0 -12px;
 }
 .home-testimonial-grd-item-inr{
 	max-width: 850px;
     margin: 0 auto;
     text-align: center;
+}
+.latest-news-sec{
+	padding-top: 120px;
+	padding-bottom:120px;
+    background: rgba(231, 234, 236, 0.2);
+    position: relative;
+}
+.plans-sec{
+	padding-bottom:120px;
+	padding-top:64px;
+}
+.latest-news-sec-cntlr .latest-news-sec-grids ul.slick-dots{
+	margin-top:39px;
+}
+.latest-news-sec-grids,
+.plans-sec-grids{
+	margin-bottom:47px!important;
+}
+.latest-news-button,
+.plans-button{
+	text-align: center;
+}
+.latest-news-bg{
+    position: absolute;
+    left: 0;
+    bottom: 240px;
+}
+.plans-grid-item .blog-grid-des{
+	text-align: center;
+}
+.plans-grid-item .fl-pro-grd-price{
+    margin-bottom: 27px;
+}
+.plans-grid-item .bgi-des{
+	padding-bottom:35px;
+}
+.plans-grid-item.blog-grid-item{
+	box-shadow:none;
+}
+.home-slogan-cntlr{
+    max-width: 834px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: relative;
+}
+.home-slogan-cntlr p{
+    font-size: 26px;
+    text-align: center;
+    font-weight: 400;
+}
+.home-slogan-cntlr:after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #595959;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+
+/*latest-news*/
+.latest-news-grid-item .blog-grid-des{
+	padding: 30px 28px 48px;
+}
+.latest-news-grid-item .blog-grid-des .bgi-title{
+	margin-bottom:28px;
+}
+.latest-news-grid-item .blog-grid-des .bgi-des{
+	padding-bottom:30px;
+}
+.latest-news-sec .latest-nws-circle-bg{
+    position: absolute;
+    bottom: -33px;
+    right: 0;
 }
