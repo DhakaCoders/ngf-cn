@@ -1,3 +1,24 @@
+.home-messege{
+    padding: 18px 0;
+    background: #FDCA35;
+}
+
+.home-messege-inr{
+    text-align: center;
+    color: #2C113E;
+}
+.home-messege-inr p{
+    margin-bottom: 0;
+}
+.home-messege-inr p strong{
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 10px;
+}
+
+
+
+
 .plans-grid-slider-item,
 .latest-news-grid-slider-item{
 	padding:0 12px;
