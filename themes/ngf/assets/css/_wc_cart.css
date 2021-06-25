@@ -478,21 +478,6 @@ body.woocommerce-cart.woocommerce-page .woocommerce .cart_totals > h2{
 body.woocommerce-cart.woocommerce-page .cart-total-crtl .cart_totals table.shop_table_responsive th{
 	width: 50%;
 }
-.woocommerce-Price-amount bdi,
-body.woocommerce-cart.woocommerce-page .product-price .woocommerce-Price-amount.amount bdi,
-body.woocommerce-cart.woocommerce-page .product-price .woocommerce-Price-amount.amount bdi span,
-body.woocommerce-cart .cart_totals .woocommerce-Price-amount bdi {
-	color: #1DB4B2;
-	font-weight: 500!important;
-	font-size: 16px!important;
-	text-transform: uppercase;
-}
-.cart_totals .woocommerce-Price-amount bdi,
-body.woocommerce-cart.woocommerce-page .cart_totals .product-price .woocommerce-Price-amount.amount bdi,
-body.woocommerce-cart.woocommerce-page .cart_totals .product-price .woocommerce-Price-amount.amount bdi span,
-body.woocommerce-cart .cart_totals .woocommerce-Price-amount bdi{
-	font-size: 18px!important;
-}
 .product-name span.cart-instock {
     color: #EE3E15;
     font-size: 12px;
@@ -500,17 +485,8 @@ body.woocommerce-cart .cart_totals .woocommerce-Price-amount bdi{
     text-transform: uppercase;
     display: block;
 }
-body.woocommerce-cart.woocommerce-page .product-price del bdi,
-body.woocommerce-cart.woocommerce-page .product-price del bdi span{
-	font-size: 14px!important;
-}
 body.woocommerce-cart.woocommerce-page .product-price .woocommerce-price-suffix{
 	font-size: 10px!important;
-}
-body.woocommerce-cart.woocommerce-page .product-price > del,
-body.woocommerce-cart.woocommerce-page .product-price > ins{
-	position: relative;
-	top: 2px;
 }
 body.woocommerce-cart.woocommerce-page .product-price > small{
 	position: relative;
