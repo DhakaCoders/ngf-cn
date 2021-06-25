@@ -249,7 +249,7 @@
 		width: 105px;
 
 	}
-	.fl-pagination-blog-cntrl{
+	.fl-pagination-ref-ov-cntrl{
 		display: none;
 
 	}
@@ -288,6 +288,10 @@
 		margin-bottom: 14px;
 
 	}
+	.ref-ov-page-grid-item-cntlr ul li:last-child{
+		padding-bottom: 30px;
+
+	}
 }
 
 @media(max-width: 575px){
@@ -313,7 +317,7 @@
 	}
 	
 }
-@media(max-width: 379px){
+@media(max-width: 359px){
 
 	
 	.ref-ov-page-cntnt-sec .fl-grid-category{
@@ -340,8 +344,5 @@
 		margin-bottom: 21px;
 
 	}
-	.ref-ov-page-grid-item-cntlr ul li:last-child{
-		padding-bottom: 30px;
-
-	}
+	
 }
