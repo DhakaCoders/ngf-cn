@@ -211,9 +211,6 @@ a.fl-read-more-btn:hover i{
 	.coaching-sec .blog-grid-items{
 		padding-bottom: 8px;
 	}
-	.coaching-sec .fl-pagination-blog-cntrl{
-		display: none;
-	}
 }
 
 @media (max-width: 639px) {	
