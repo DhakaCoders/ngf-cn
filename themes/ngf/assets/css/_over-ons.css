@@ -34,6 +34,7 @@
 	color: #FFFFFF;
 	position: relative;
     z-index: 2;
+    /*display: inline;*/
 }
 .ovo-full-width-bg-des-heading {
     position: absolute;
