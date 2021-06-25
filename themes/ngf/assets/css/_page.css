@@ -105,12 +105,18 @@
 }
 /* == page entry header end design == */
 
+
 /* == section header design start == */
+.sec-heading{
+	padding-top: 11px;
+}
 .sec-header .sec-title{
 	text-transform: uppercase;
 	margin-bottom: 39px;
+	font-size: 80px;
 }
 /* == section header design end == */
+
 
 /* == fl category design start == */
 .fl-grid-category ul{
@@ -119,7 +125,7 @@
 	align-items: center;
 	margin: 0 -25px;
 }
-.page-heading{
+.sec-heading{
 	padding-bottom: 34px;
 }
 .fl-grid-category ul li{
@@ -201,6 +207,14 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding-bottom: 33px;
 		margin-bottom: 50px;
 	}
+	.sec-heading{
+		padding-top: 15px;
+		padding-bottom: 31px;
+	}
+	.sec-header .sec-title{
+		margin-bottom: 36px;
+		font-size: 73px;
+	}
 	.fl-pagination-ctlr ul{
 		margin: 0 -20px;
 	}
@@ -224,6 +238,14 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding-top: 19px;
 		padding-bottom: 32px;
 		margin-bottom: 40px;
+	}
+	.sec-heading{
+		padding-top: 19px;
+		padding-bottom: 28px;
+	}
+	.sec-header .sec-title{
+		margin-bottom: 33px;
+		font-size: 66px;
 	}
 	.fl-pagination-ctlr ul{
 		margin: 0 -17px;
@@ -254,6 +276,14 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding-top: 21px;
 		margin-bottom: 30px;
 	}
+	.sec-heading{
+		padding-top: 21px;
+		padding-bottom: 25px;
+	}
+	.sec-header .sec-title{
+		margin-bottom: 30px;
+		font-size: 59px;
+	}
 	.fl-pagination-ctlr ul{
 		margin: 0 -14px;
 	}
@@ -275,8 +305,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 }
 
 @media (max-width: 991px) {
-	.page-entry-header{
+	.page-entry-header,
+	.sec-heading{
 		padding-top: 25px;
+		padding-bottom: 22px;
 	}
 	.page-entry-header{
 		display: block;
@@ -284,6 +316,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	.page-entry-header h1{
 		padding-right: 0;
 		padding-bottom: 30px;
+	}
+	.sec-header .sec-title{
+		margin-bottom: 27px;
+		font-size: 52px;
 	}
 }
 
@@ -297,13 +333,21 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		font-size: 45px;
 		padding-bottom: 23px;
 	}
+	.sec-heading{
+		padding-bottom: 19px;
+	}
+	.sec-header .sec-title{
+		margin-bottom: 23px;
+		font-size: 45px;
+	}
 }
 
 @media (max-width: 575px) {
-	/* .page-entry-header{
-		padding-bottom: 23px;
-	} */
 	.page-entry-header h1{
 		font-size: 40px;
+	}
+	.sec-header .sec-title{
+		font-size: 36px;
+		line-height: 1.1;
 	}
 }
