@@ -1,3 +1,16 @@
+/* == sec-heading design start == */
+.sec-hdr-cntrl{
+    display: flex;
+    align-items: flex-end;
+}
+.sec-hdr-lft, .sec-hdr-rgt{
+    width: 50%;
+}
+.sec-hdr-cntrl .fl-secrh form input{
+    padding: 13px 44px 11px 16px;
+}
+/* == sec-heading design end== */
+
 .fl-products-cntlr > ul.products {
     display: flex;
     flex-wrap: wrap;
@@ -103,9 +116,16 @@ del span.amount bdi:after{
     -webkit-transform: translateY(-50%);
 }
 /* == price design end */
-.fl-pro-grd-details {}
+.fl-pro-grd-details {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eff4f7;
+    margin-bottom: 22px;
+}
 .fl-pro-grd-details p {
     line-height: 1.9;
+}
+.fl-pro-grd-details p:last-of-type{
+    margin-bottom: 0;
 }
 .fl-buy-now-btn{
     width: 100%;
