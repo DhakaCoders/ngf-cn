@@ -117,7 +117,7 @@
     	margin: 0 auto;
 	}
 	.faq-grid-item-col{
-		margin-bottom: 30px;
+		padding-bottom: 30px;
 	}
 }
 @media(max-width: 575px){
