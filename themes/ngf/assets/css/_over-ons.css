@@ -6,6 +6,7 @@
 }
 .ovo-two-grds-des-module-cntlr{
 	display: flex;
+    flex-wrap: wrap;
 }
 .ovo-grds-des-lft {
     padding-right: 35px;
@@ -458,11 +459,24 @@ span.fl-video-play-icon-cntlr{
         min-height: 300px;
     }
 
-
-
-
 }
 @media(max-width: 767px){
+    .ovo-grds-des-lft, .ovo-grds-des-rgt{
+        max-width: 100%;
+    }
+    .ovo-full-width-img-sec {
+        height: 420px;
+    }
+    h2.ovo-full-width-bg-heading {
+        line-height: 50px;
+    }
+    .ovo-full-width-bg-des-cntlr p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    
+
+
 }
 @media(max-width: 575px){
 }
