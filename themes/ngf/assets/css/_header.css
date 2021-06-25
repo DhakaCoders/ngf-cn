@@ -454,11 +454,6 @@ body.allWork {
     padding-top: 247px;
     padding-bottom: 295px;
 
-
-    right: 0;
-    opacity: 1;
-    z-index: 99999;
-    width: 100%;
 }
 .allWork .xs-mobile-menu {
     right: 0;
@@ -478,6 +473,13 @@ body.allWork {
     left: 0;
     z-index: 3;
 }
+.allWork .hamburger-icon{
+	display: none;
+}	
+.allWork .cross-icon{
+	display: block;
+}
+
 .xs-menu-hdr .hdr-white-skew{
 	border-bottom: 200px solid #fff;
 }
@@ -728,6 +730,8 @@ body.allWork {
 		margin-left: initial;
 		padding-left: 0;
 		width: 100%;
+		position: relative;
+		z-index: ;
 	}
 	.hdr-icons-cntlr{
 		margin-left: 0;
@@ -749,12 +753,12 @@ body.allWork {
 		top: -21px;
 	}
 	nav.main-nav > ul{
-		margin: -14px 0;
+		margin: -16px 0;
 		padding: 0;
 		display: block;
 	}
 	nav.main-nav > ul > li{
-		padding: 14px 0;
+		padding: 16px 0;
 		text-align: center;
 	}
 	nav.main-nav > ul > li > a{
@@ -766,6 +770,7 @@ body.allWork {
 		text-transform: uppercase;
 		color: #000000;
 		padding-bottom: 0;
+		display: block;
 	}
 	.fl-language-cntlr{
 		padding-left: 0;
@@ -777,9 +782,9 @@ body.allWork {
 	.fl-language-cntlr:after{
 		content: none;
 	}
-	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
+	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 		width: 100%;
-		margin-top: 25px;
+		margin-top: 10px;
 		padding: 0 15px 0 15px;
 		transition: initial;
 		-ms-transition: initial;
@@ -794,14 +799,49 @@ body.allWork {
 		box-shadow: initial;
 		-ms-box-shadow: initial;
 		-webkit-box-shadow: initial;
-		position: absolute;
+		position: static;
 		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		background: transparent;
 		margin-top: 0;
-		padding-top: 90px;
+		padding-top: 15px;
+	}
+	nav.main-nav > ul > li > ul.sub-menu li a{
+		font-size: 14px;
+		color: #000;
+		text-transform: uppercase;
+	}
+	nav.main-nav > ul > li > a{
+		position: relative;
+	}
+	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li {
+		padding: 8px 0 8px 8px;
+		line-height: 1;
+		display: block;
+		position: relative;
+		border-bottom: none;
+	}
+	nav.main-nav > ul > li.menu-item-has-children > a:after {
+		position: absolute;
+		content: "\f078";
+		font-size: 15px;
+		font-weight: 600;
+		font-family: 'Font Awesome 5 Free';
+		top: 50%;
+		margin-top: -8px;
+		right: 0;
+	}
+	nav.main-nav > ul > li.menu-item-has-children.sub-menu-arrow > a:after {
+		transform: rotate(
+			-180deg
+			);
+		-o-transform: rotate(-180deg);
+		-ms-transform: rotate(-180deg);
+		-webkit-transform: rotate(
+			-180deg
+			);
 	}
 }
 @media(max-width: 767px){
