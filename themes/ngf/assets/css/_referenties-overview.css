@@ -240,11 +240,6 @@
 		padding-right: 8px;
 
 	}
-	.ref-ov-page-grid-item > i{
-		height: 105px;
-		width: 105px;
-
-	}
 	
 }
 
@@ -288,6 +283,7 @@
 }
 
 @media(max-width: 575px){
+	
 	.fl-grid-category ul {
 		margin-left: -24px;
 		margin-right: -24px;

@@ -245,6 +245,18 @@ if( $('.plansGrdsSlider').length ){
     });
 }
 
+if( $('.latestNewsGrdsSlider').length ){
+    $('.latestNewsGrdsSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
+}
+
 // contact form-val
 if( $('.contact-form-wrp').length ){
   $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
@@ -365,7 +377,18 @@ if( $('.faqSlider').length ){
       slidesToScroll: 1
     });
 }
-
+if( $('.ovomblfvSlider').length ){
+    $('.ovomblfvSlider').slick({
+      dots: true,
+      arrows:true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+}
 
 
 /*start of Momin*/
