@@ -734,6 +734,9 @@ Gallery design
 	#referenties-details .default-page-con {
 	    padding-bottom: 80px;
 	}
+	#faq-details .dfp-cat-date {
+	    margin-bottom: 45px;
+	}
 
 }
 
@@ -790,6 +793,9 @@ Gallery design
 	}
 	#coaching-details .dfp-cta-module {
 	    margin-bottom: 60px;
+	}
+	#faq-details .dfp-cat-date {
+	    margin-bottom: 40px;
 	}
 	
 
@@ -925,6 +931,9 @@ Gallery design
 	}
 	#coaching-details .dfp-cta-module {
 	    margin-bottom: 50px;
+	}
+	#faq-details .dfp-cat-date {
+	    margin-bottom: 35px;
 	}
 
 }
@@ -1133,6 +1142,13 @@ Gallery design
 	#coaching-details .dfp-cta-module {
 	    margin-bottom: 40px;
 	}
+	#faq-details .dfp-promo-module-title {
+	    margin-bottom: 15px;
+	}
+	#faq-details .dfp-cat-date {
+	    margin-bottom: 30px;
+	}
+
 }
 
 
@@ -1302,6 +1318,9 @@ Gallery design
 	}
 	#coaching-details .dfp-cta-module {
 	    margin-bottom: 30px;
+	}
+	#faq-details .dfp-cat-date {
+	    margin-bottom: 25px;
 	}
 
 }
