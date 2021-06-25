@@ -238,6 +238,14 @@
 }
 
 @media(max-width: 639px){
+	.fl-grid-category ul {
+		margin-left: -24px;
+		margin-right: -24px;
+	}
+	.fl-grid-category ul li{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
 
 	.ref-ov-page-grid-item-cntlr ul li{
 		width: 336px;
