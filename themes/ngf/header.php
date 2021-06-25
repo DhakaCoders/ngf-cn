@@ -12,22 +12,22 @@
   <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
   <?php } ?> -->
 
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
+  <link rel="stylesheet" href="<?php echo THEME_URI; ?>/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo THEME_URI; ?>/assets/css/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/fonts/font-awesome/font-awesome.css">
   
-  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-  <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
-  <link rel="stylesheet" type="text/css" href="assets/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/fancybox3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/slick.slider/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/slick.slider/slick.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/swiper/swiper-bundle.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/style.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/css/responsive.css">
 
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -224,7 +224,7 @@
         <div class="header-cntlr">
           <div class="hdr-logo">
             <div class="logo">
-              <a href="#"><img src="assets/images/logo.svg" alt=""></a>
+              <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg" alt=""></a>
             </div>
           </div>
           <div class="hdr-lft hide-md">
@@ -313,7 +313,7 @@
     <span class="hdr-white-skew"></span>
     <div class="hdr-logo">
       <div class="logo">
-        <a href="#"><img src="assets/images/logo.svg" alt=""></a>
+        <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg" alt=""></a>
       </div>
     </div>
     <div class="hdr-rgt">
