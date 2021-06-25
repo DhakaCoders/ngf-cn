@@ -12,7 +12,7 @@ span.werk-abs-img-two {
 	padding: 90px 0;
 }
 .werk-steps-grid-sec-cntlr{
-	padding-bottom: 90px;
+	padding-bottom: 80px;
 	border-bottom:  2px solid #EFF4F7;
 }
 .step-heading{
@@ -36,7 +36,10 @@ span.werk-abs-img-two {
 .werk-inline-bg{
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 50px;
+	margin-bottom: 55px;
+}
+.werk-inline-bg img{
+	display: none;
 }
 .werk-grid-inline-bg{
 	min-height: 294px;
@@ -49,7 +52,7 @@ span.werk-abs-img-two {
 }
 .abs-numbering {
     position: absolute;
-    bottom: 31%;
+    bottom: 28%;
     left: 50%;
     transform: translateX(-50%);
     background: #FFA800;
@@ -75,9 +78,25 @@ span.werk-abs-img-two {
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	color: #000000;
-	margin-bottom: 10px;
+	margin-bottom: 18px;
 }
 .werk-testimonial{
 	margin-top: 0;
 }
-
+.ovo-testimonial-grds-slider{
+	margin-bottom: 0!important;
+}
+.werk-testimonial{
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+.werk-abs-round-two {
+    top: 550px;
+}
+body.werk-bdff .footer-wrp .ftr-white-skew {
+    border-top-color: #fff;
+}
+body.werk-bdff.sky-btm-bg-cntlr {
+    background: rgb(255 255 255 / 20%);
+}

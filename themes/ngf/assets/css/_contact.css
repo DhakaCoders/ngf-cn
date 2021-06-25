@@ -759,8 +759,9 @@ boek-je-form-sec-wrp
 	    width: 100%;
 	    padding-right: 0;
 	}
-	.contact-form-rgt {
+	.contact-form-rgt{
 	    width: 100%;
+        margin-bottom:39px;
 	}
 	.contact-google-parachute,
 	.contact-parachute-icon{
@@ -803,7 +804,7 @@ boek-je-form-sec-wrp
         padding: 50px 35px 50px 35px;
     }
     .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea{
-        margin-bottom: 20px;
+        margin-bottom:17px;
     }
     .error-msg{
         margin-bottom: 19px;
@@ -822,13 +823,18 @@ boek-je-form-sec-wrp
     .contact-form-info ul li:nth-child(1){
         padding-bottom: 10px;
     }
+    .bnr-bg-249 .bnr-bg-overly{
+        height: 120px!important;
+    }
+    /*bootstrap-select*/
+    
     .dropdown-toggle::before{
         width:14px;
         height:7px;
         background-size:cover!important;
     }
-    .bnr-bg-249 .bnr-bg-overly{
-        height: 120px!important;
+    .bootstrap-select .dropdown-menu li a{
+        font-size:13px;
     }
 }
 
@@ -879,8 +885,9 @@ boek-je-form-sec-wrp
 		justify-content: left;
 		align-items: center;
 	}
+}
+@media(max-width: 359px){
     .contact-form-info-cntlr{
         padding: 50px 15px 50px 25px;
     }
-
 }

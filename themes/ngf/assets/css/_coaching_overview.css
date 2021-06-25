@@ -105,10 +105,6 @@ a.fl-read-more-btn:hover i{
     -ms-transition: all .5s;
     -webkit-transition: all .5s;	
 }
-.fl-pagi-blog-cntrl{
-
-}
-
 
 /* == responsive == */
 
@@ -117,6 +113,9 @@ a.fl-read-more-btn:hover i{
 	.gift-card .breadcrumb-sec,
 	.archive .breadcrumb-sec{
 		margin-bottom: 43px;
+	}
+	.coaching-sec .blog-grids-cntrl{
+		padding-top: 35px;
 	}
 	.blog-grid-items ul li{
 		padding: 0 12px 86px!important;
@@ -138,6 +137,9 @@ a.fl-read-more-btn:hover i{
 }
 
 @media (max-width: 1499px) {
+	.coaching-sec .blog-grids-cntrl{
+		padding-top: 30px;
+	}
 	.blog-grid-items ul{
 		margin: 0 -10px!important;
 	}
@@ -157,6 +159,9 @@ a.fl-read-more-btn:hover i{
 }
 
 @media (max-width: 1199px) {
+	.coaching-sec .blog-grids-cntrl{
+		padding-top: 24px;
+	}
 	.blog-grid-items ul li{
 		padding: 0 10px 70px!important;
 	}
@@ -169,6 +174,9 @@ a.fl-read-more-btn:hover i{
 }
 
 @media (max-width: 991px) {
+	.coaching-sec .blog-grids-cntrl{
+		padding-top: 18px;
+	}
 	.blog-grid-items ul li{
 		padding: 0 10px 60px!important;
 	}
@@ -184,6 +192,9 @@ a.fl-read-more-btn:hover i{
 }
 
 @media (max-width: 767px) {
+	.coaching-sec .blog-grids-cntrl{
+		padding-top: 12px;
+	}
 	.blog-grid-items ul{
 		margin: 0 -8px!important;
 	}
@@ -199,9 +210,6 @@ a.fl-read-more-btn:hover i{
 	}
 	.coaching-sec .blog-grid-items{
 		padding-bottom: 8px;
-	}
-	.coaching-sec .fl-pagination-blog-cntrl{
-		display: none;
 	}
 }
 
