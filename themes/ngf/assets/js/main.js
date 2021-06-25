@@ -334,15 +334,34 @@ if( $('.dfpTestimonialSlider').length ){
       slidesToScroll: 1
     });
 }
-if( $('.bdrSlider').length ){
-    $('.bdrSlider').slick({
+if( $('.blogDetailsSlider').length ){
+    $('.blogDetailsSlider').slick({
       dots: true,
       infinite: false,
       autoplay: false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
 }
 
@@ -382,7 +401,19 @@ if( $('.faqSlider').length ){
 if( $('.ovomblfvSlider').length ){
     $('.ovomblfvSlider').slick({
       dots: true,
-      arrows:true,
+      arrows:false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+}
+if( $('.werkmsgSlider').length ){
+    $('.werkmsgSlider').slick({
+      dots: true,
+      arrows:false,
       infinite: false,
       autoplay: false,
       autoplaySpeed: 4000,
