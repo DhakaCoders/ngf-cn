@@ -17,49 +17,49 @@
             </div>
 
             <div class="ftr-logo">
-              <a href="#"><img src="assets/images/ftr-logo.svg" alt=""></a>
+              <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/ftr-logo.svg" alt=""></a>
             </div>
 
             <div class="client-logo-cntlr">
               <ul class="reset-list">
                 <li>
                   <div class="client-logo">
-                    <img src="assets/images/client-logo-001.png" alt="">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-001.png" alt="">
                   </div>
                 </li>
                 <li>
                   <div class="client-logo">
-                    <img src="assets/images/client-logo-002.png" alt="">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-002.png" alt="">
                   </div>
                 </li>
                 <li>
                   <div class="client-logo">
-                    <img src="assets/images/client-logo-003.png" alt="">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-003.png" alt="">
                   </div>
                 </li>
                 <li>
                   <div class="client-logo">
-                    <img src="assets/images/client-logo-001.png" alt="">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-001.png" alt="">
                   </div>
                 </li>
                 <li>
                   <div class="client-logo">
-                    <img src="assets/images/client-logo-002.png" alt="">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-002.png" alt="">
                   </div>
                 </li>
                 <li>
                   <div class="client-logo">
-                    <img src="assets/images/client-logo-003.png" alt="">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-003.png" alt="">
                   </div>
                 </li>
                 <li>
                   <div class="client-logo">
-                    <img src="assets/images/client-logo-001.png" alt="">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-001.png" alt="">
                   </div>
                 </li>
                 <li>
                   <div class="client-logo">
-                    <img src="assets/images/client-logo-002.png" alt="">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-002.png" alt="">
                   </div>
                 </li>
               </ul>
@@ -195,18 +195,18 @@
 
 <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-select.min.js"></script>
-<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
-<script src="assets/slick.slider/slick.js"></script>
-<script src="assets/swiper/swiper-bundle.min.js"></script>
+<script src="<?php echo THEME_URI; ?>/assets/js/popper.min.js"></script>
+<script src="<?php echo THEME_URI; ?>/assets/js/bootstrap.min.js"></script>
+<script src="<?php echo THEME_URI; ?>/assets/js/bootstrap-select.min.js"></script>
+<script src="<?php echo THEME_URI; ?>/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="<?php echo THEME_URI; ?>/assets/fancybox3/dist/jquery.fancybox.min.js"></script>
+<script src="<?php echo THEME_URI; ?>/assets/slick.slider/slick.js"></script>
+<script src="<?php echo THEME_URI; ?>/assets/swiper/swiper-bundle.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
-<script src="assets/js/jquery.matchHeight-min.js"></script>
-<script src="assets/js/app.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="<?php echo THEME_URI; ?>/assets/js/jquery.matchHeight-min.js"></script>
+<script src="<?php echo THEME_URI; ?>/assets/js/app.js"></script>
+<script src="<?php echo THEME_URI; ?>/assets/js/wow.min.js"></script>
+<script src="<?php echo THEME_URI; ?>/assets/js/main.js"></script>
 
 </body>
 </html>
