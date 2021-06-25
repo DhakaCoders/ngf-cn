@@ -232,8 +232,6 @@ span.fl-video-play-icon-cntlr{
 }
 
 
-
-
 @media (max-width: 1699px){
     .ovo-grds-des-lft p{
         font-size: 25px;
@@ -293,7 +291,7 @@ span.fl-video-play-icon-cntlr{
     .ovo-grid-item-col {
         padding-bottom: 30px!important;
     }
-    
+
 }
 
 @media (max-width: 1499px) {
