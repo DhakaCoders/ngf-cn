@@ -88,8 +88,8 @@
 @media(max-width: 767px){
 	.faq-grids-cntlr {
 		margin: 0 -8px;
-    	padding-top: 70px;
-    	padding-bottom: 20px;
+    	padding-top: 49px;
+    	padding-bottom: 21px;
 	}
 	.faq-grid-item-col{
 		padding: 0px 8px;
@@ -106,24 +106,22 @@
 	}
 }
 @media(max-width: 639px){
+	.faq-grids-cntlr {
+    	padding-bottom: 13px;
+	}
 	.faq-grid-item-col{
 		width: 100%;
 		padding-left: 0;
     	padding-right: 0;
+    	padding-bottom: 30px;
 	}
 	.faq-grid-item{
     	max-width: 350px;
     	width: 100%;
     	margin: 0 auto;
 	}
-	.faq-grid-item-col{
-		padding-bottom: 30px;
-	}
 }
 @media(max-width: 575px){
-	.faq-grids-cntlr {
-    	padding-top: 50px;
-	}
 	.fgi-title{
 	    margin-bottom: 16px;
 		line-height: 1.6;

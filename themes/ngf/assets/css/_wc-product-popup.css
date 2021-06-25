@@ -290,21 +290,6 @@ h3.pro-item-desc-title {
     margin-bottom: 8px!important;
     border-bottom: 1px solid #ecf1f4!important;
 }
-.product-price span.amount bdi,
-.product-price span.amount bdi span.woocommerce-Price-currencySymbol{
-	color: #1DB4B2;
-	font-weight: 500!important;
-	font-size: 16px!important;
-	text-transform: uppercase
-}
-del span.amount bdi,
-del span.amount bdi sapn.woocommerce-Price-currencySymbol{
-	color: #909BA5;
-	font-weight: 500;
-	font-size: 16px;
-	text-decoration-line: none!important;
-	text-transform: uppercase;	
-}
 .flex-fill > div:nth-child(2) a {
     color: #0275D8;
     font-size: 12px;
@@ -433,16 +418,6 @@ h3.pro-item-desc-title{
 }
 .single-price-total .price del{
     opacity: 1!important;
-}
-.product-price del span,
-.xoo-cp-pprice del span,
-.fl-pro-grd-price del span,
-.loggedin-winkelmandje-crtl .woocommerce-mini-cart-item .quantity del span,
-.loggedin-winkelmandje-crtl .woocommerce-mini-cart-item .quantity del span bdi{
-    color: #909BA5!important;
-    font-size: 16px;
-    margin-right: 0;
-    font-weight: 500;
 }
 .cart .qty-price-wrap del span{
 	font-size:20px;
