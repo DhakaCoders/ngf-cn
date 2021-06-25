@@ -551,13 +551,6 @@ h3.pro-item-desc-title{
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a{
 	    font-size: 18px;
 	}
-	.woocommerce-Price-amount bdi,
-	.single-product .single-price-total del span.woocommerce-Price-amount bdi, 
-	.single-product .single-price-total del span.woocommerce-Price-amount bdi span, 
-	.single-product .single-price-total ins span.woocommerce-Price-amount bdi, 
-	.single-product .single-price-total ins span.woocommerce-Price-amount bdi span {
-	    font-size: 16px!important;
-	}
 	.popup-bottom-btn{
 		max-width: 265px;
 	}
@@ -670,13 +663,6 @@ h3.pro-item-desc-title{
 	}
 	.spotlight-popup-cntlr .spotlight-popup{
 		padding-bottom: 0;
-	}
-	.woocommerce-Price-amount bdi,
-	.single-product .single-price-total del span.woocommerce-Price-amount bdi, 
-	.single-product .single-price-total del span.woocommerce-Price-amount bdi span, 
-	.single-product .single-price-total ins span.woocommerce-Price-amount bdi, 
-	.single-product .single-price-total ins span.woocommerce-Price-amount bdi span {
-	    font-size: 14px!important;
 	}
 	.xoo-cp-content .single-shortdetails{
 		font-size: 14px;
