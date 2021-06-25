@@ -232,6 +232,19 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Niaz Morshad*/
+
+if( $('.plansGrdsSlider').length ){
+    $('.plansGrdsSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
+}
+
 // contact form-val
 if( $('.contact-form-wrp').length ){
   $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
