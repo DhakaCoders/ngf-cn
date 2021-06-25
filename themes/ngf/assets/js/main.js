@@ -237,6 +237,7 @@ if( $('.plansGrdsSlider').length ){
     $('.plansGrdsSlider').slick({
       dots: true,
       infinite: false,
+      arrows:false,
       autoplay: false,
       autoplaySpeed: 4000,
       speed: 700,
@@ -250,6 +251,7 @@ if( $('.latestNewsGrdsSlider').length ){
       dots: true,
       infinite: false,
       autoplay: false,
+      arrows:false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 3,
@@ -343,6 +345,23 @@ if( $('.bdrSlider').length ){
       slidesToScroll: 1
     });
 }
+
+
+ if (windowWidth <= 639) {
+  
+    if( $('.dfpBlogSlider').length ){
+        $('.dfpBlogSlider').slick({
+          dots: true,
+          infinite: false,
+          autoplay: false,
+          autoplaySpeed: 4000,
+          speed: 700,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        });
+    }
+
+ }
 
 
 

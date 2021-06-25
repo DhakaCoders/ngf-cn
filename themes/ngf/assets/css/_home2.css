@@ -1,11 +1,33 @@
-.plans-grid-slider-item{
+.plans-grid-slider-item,
+.latest-news-grid-slider-item{
 	padding:0 12px;
 }
-.plans-sec-grids{
+.plans-sec-grids,
+.latest-news-sec-grids{
 	margin:0 -12px;
 }
 .home-testimonial-grd-item-inr{
 	max-width: 850px;
     margin: 0 auto;
     text-align: center;
+}
+.latest-news-sec{
+	padding-top: 120px;
+	padding-bottom:120px;
+    background: rgba(231, 234, 236, 0.2);
+    position: relative;
+}
+.latest-news-sec-cntlr .latest-news-sec-grids ul.slick-dots{
+	margin-top:39px;
+}
+.latest-news-sec-grids{
+	margin-bottom:47px!important;
+}
+.latest-news-button{
+	text-align: center;
+}
+.latest-news-bg{
+    position: absolute;
+    left: 0;
+    bottom: 325px;
 }
