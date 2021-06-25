@@ -675,7 +675,7 @@ Gallery design
 #coaching-details .dfp-testimonial-module{
 	margin-top: 0;
 	padding-top: 50px;
-	border-top: 4px solid #FAFBFB;
+	border-top: 2px solid #EFF4F7;
 	margin-bottom: 70px;
 }
 #coaching-details .default-page-con{
@@ -781,6 +781,15 @@ Gallery design
 	}
 	#referenties-details .default-page-con {
 	    padding-bottom: 70px;
+	}
+	#coaching-details .dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 40px;
+	}
+	#coaching-details .gallery-wrap {
+	    padding-top: 60px;
+	}
+	#coaching-details .dfp-cta-module {
+	    margin-bottom: 60px;
 	}
 	
 
@@ -907,6 +916,15 @@ Gallery design
 	}
 	#referenties-details .default-page-con {
 	    padding-bottom: 60px;
+	}
+	#coaching-details .dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 35px;
+	}
+	#coaching-details .gallery-wrap {
+	    padding-top: 50px;
+	}
+	#coaching-details .dfp-cta-module {
+	    margin-bottom: 50px;
 	}
 
 }
@@ -1106,6 +1124,15 @@ Gallery design
 	#referenties-details .default-page-con {
 	    padding-bottom: 50px;
 	}
+	#coaching-details .dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 30px;
+	}
+	#coaching-details .gallery-wrap {
+	    padding-top: 40px;
+	}
+	#coaching-details .dfp-cta-module {
+	    margin-bottom: 40px;
+	}
 }
 
 
@@ -1264,6 +1291,17 @@ Gallery design
 	}
 	#referenties-details .default-page-con {
 	    padding-bottom: 40px;
+	}
+	#coaching-details .dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 25px;
+	}
+	#coaching-details .gallery-wrap {
+	    padding-top: 30px;
+	    padding-bottom: 20px;
+	    border-top: 2px solid #EFF4F7;
+	}
+	#coaching-details .dfp-cta-module {
+	    margin-bottom: 30px;
 	}
 
 }
