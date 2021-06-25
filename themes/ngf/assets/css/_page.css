@@ -300,9 +300,9 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 }
 
 @media (max-width: 575px) {
-	.page-entry-header{
+	/* .page-entry-header{
 		padding-bottom: 23px;
-	}
+	} */
 	.page-entry-header h1{
 		font-size: 40px;
 	}
