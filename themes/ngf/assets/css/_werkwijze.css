@@ -181,15 +181,31 @@ body.werk-bdff.sky-btm-bg-cntlr {
 	    bottom: 30%;
 	    min-width: 45px;
 	    height: 45px;
+	    font-size: 26px;
 	}
+	.werk-abs-round-two {
+	    top: 0;
+	}
+	.werk-mbl-grid-slider-iner  ul.slick-dots{
+		padding-top: 30px!important;
+	}
+
 
 }
 @media(max-width: 575px){
+	.abs-numbering{
+		bottom: 32%;
+	}
 
 }
 @media(max-width: 479px){
-
+	.abs-numbering {
+	    bottom: 35%;
+	}
 }
 @media(max-width: 359px){
+	.abs-numbering {
+	    bottom: 36%;
+	}
 
 }
