@@ -6,6 +6,9 @@
 .sec-hdr-lft, .sec-hdr-rgt{
     width: 50%;
 }
+.sec-hdr-cntrl .fl-secrh form input{
+    padding: 13px 44px 11px 16px;
+}
 /* == sec-heading design end== */
 
 .fl-products-cntlr > ul.products {
