@@ -9,15 +9,18 @@
 .sec-hdr-cntrl .fl-secrh form input{
     padding: 13px 44px 11px 16px;
 }
+.sec-hdr-cntrl .fl-secrh form button i svg:hover{
+    fill: red!important;
+}
 /* == sec-heading design end== */
 
-.fl-products-cntlr > ul.products {
-    display: flex;
-    flex-wrap: wrap;
+.fl-products-cntlr ul.products{
+    display: flex!important;
     margin: 0 -12px!important;
-    padding-bottom: 40px;
+    flex-wrap: wrap!important;
+    padding-bottom: 40px!important;
 }
-.fl-products-cntlr > ul.products > li {
+.fl-products-cntlr > ul.products > li{
     width: 33.3333%!important;
     padding: 0 12px 40px!important;
     margin: 0!important;
