@@ -84,7 +84,7 @@ ul li::before {
 	background-repeat: no-repeat!important;
 	width: 10px;
 	height: 10px;
-	margin-top: 10px;
+	margin-top: 7px;
 }
 ul li.refGridItem:before{
 	display: none;
@@ -96,6 +96,7 @@ ul li.refGridItem:before{
 	-ms-counter-reset: my-awesome-counter;
 	-webkit-counter-reset: my-awesome-counter;
 	padding-left: 18px;
+	margin-bottom: 0;
 }
 .default-page-con ol li ,ol li {
 	counter-increment: my-awesome-counter;
@@ -131,75 +132,6 @@ ol li::before {
 }
 
 
-
-
-.fl-dft-lftimg-rgtdes {
-	margin: 0 0;
-	padding-bottom: 35px;
-	display: flex;
-	align-items: center;
-}
-.fl-dft-lftimg-rgtdes-lft{
-	min-height: 275px;
-	border-radius: 3px;
-}
-.fl-dft-lftimg-rgtdes-lft-img-scale{
-	position: relative;
-	overflow: hidden;
-}
-.fl-dft-lftimg-rgtdes-lft-img-inr{
-	width: 100%;
-	height: 100%;
-	background-size: cover!important;
-	background-repeat: no-repeat!important;
-	background-position: center center!important;
-}
-.fl-dft-lftimg-rgtdes-lft,
-.fl-dft-lftimg-rgtdes-rgt {
-	width: 50%;
-	position: relative;
-}
-.fl-dft-lftimg-rgtdes-rgt {
-	padding-left: 25px;
-	padding-bottom: 5px;
-	padding-top: 0;
-}
-.fl-dft-lftimg-rgtdes-rgt p:last-child{
-	margin-bottom: 0;
-}
-.fl-dft-lftimg-rgtdes-lft,
-.fl-dft-testi-controller{
-	background-size: cover !important;
-	background-repeat: no-repeat !important;
-	background-position: center center !important;
-}
-
-.fl-dft-lftimg-rgtdes-lft img,
-.fl-dft-testi-controller img{
-	display: none;
-}
-
-
-
-/*-- left des right img customize---*/
-.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
-	padding-top: 10px;
-}
-.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-lft{
-	float: right;
-	order: 2;
-}
-.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
-	float: left;
-	padding-left: 0;
-	padding-right: 42px;
-}
-
-
-
-.dft-2grd-img-con-item{
-	position: relative;
-}
 
 
 /*
@@ -710,6 +642,29 @@ Gallery design
 	margin-top: -200px;
 }
 
+.referenties-detials-related-sec{
+	background: rgba(231, 234, 236, 0.2);
+	padding-top: 100px;
+}
+.referenties-details-grds{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.referenties-details-grds .referentiesDetailsSliderItem{
+	float: left;
+	width: 50%;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 25px;
+}
+
+.referntiesDetailsSlider .ref-ov-page-grid-des{
+	text-align: center;
+}
+.refernties-details-related-sec-inr .sec-entry-hdr{
+	padding-bottom: 20px;
+}
+
 
 /*coaching details*/
 
@@ -720,7 +675,7 @@ Gallery design
 #coaching-details .dfp-testimonial-module{
 	margin-top: 0;
 	padding-top: 50px;
-	border-top: 4px solid #FAFBFB;
+	border-top: 2px solid #EFF4F7;
 	margin-bottom: 70px;
 }
 #coaching-details .default-page-con{
@@ -731,9 +686,6 @@ Gallery design
     margin-bottom: 48px;
 }
 
-/*#coaching-details .dfp-promo-module-des{
-	padding-bottom: 70px;
-}*/
 
 #coaching-details .gallery-wrap{
 	padding-top: 70px;
@@ -755,274 +707,6 @@ Gallery design
 	padding-bottom: 38px;
 }
 
-/*news details */
-
-#news-details{
-	padding-bottom: 240px;
-	position: relative;
-}
-#news-details:after{
-	background: linear-gradient(180deg, #FFFFFF 5.99%, #F1F5F8 100%), #F8FAFB;
-    opacity: 0.7;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 743px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-}
-
-.news-details .white-sky-bg{
-	top: -360px;
-}
-#news-details .default-page-con{
-	padding-bottom: 0;
-	position: relative;
-	z-index: 11;
-}
-#news-details .dfp-promo-module-title{
-	margin-bottom: 15px;
-}
-#news-details .top-gallery-module {
-    padding-bottom: 25px;
-}
-#news-details .default-page-con h5{
-	font-size: 22px;
-	margin-bottom: 25px;
-	color: #EE3E15;
-	text-transform: uppercase;
-}
-#news-details .social-media{
-	text-align: right;
-	padding-top: 45px;
-	border-top: 2px solid #ECF1F4;
-	display: flex;
-	align-items: center;
-}
-#news-details .social-media-inr{
-	margin-left: auto;
-}
-#news-details .social-media span{
-	display: inline-block;
-	vertical-align: baseline;
-	margin-right: 15px;
-	color: #909BA5;
-}
-#news-details .social-media ul{
-	display: inline-block;
-	vertical-align: baseline;
-	margin-left: -8px;
-	margin-right: -8px;
-	padding-bottom: 0;
-}
-#news-details .social-media ul li{
-	display: inline-block;
-	vertical-align: baseline;
-	padding: 0;
-	padding-left: 8px;
-	padding-right: 8px;
-}
-#news-details .social-media ul li a,
-#news-details .social-media ul li a i{
-	display: inline-block;
-	vertical-align: baseline;
-}
-
-#news-details .social-media ul li a:hover svg{
-	fill: #EE3E15;
-    color: #fff;
-}
-
-.sec-entry-header {
-    border-bottom: none;
-    margin-bottom: 0;
-    max-width: 787px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-.sec-entry-header h3{
-	text-align: center;
-	margin-bottom: 35px;
-	text-transform: uppercase;
-}
-
-.news-details .blog-grds-item-ctlr{
-	margin-left: -12px;
-	margin-right: -12px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-.news-details .blog-grds-item{
-	float: left;
-	width: 33.3333%;
-	padding-left: 12px;
-	padding-right: 12px;
-	padding-bottom: 25px;
-}
-.news-details .blog-grds-item:nth-child(3n+1){
-	clear: left;
-}
-/*#news-details .default-page-con{
-	padding-bottom: 230px;
-}*/
-
-#news-details .blog-grds-inr{
-	position: relative;
-}
-.blog-grds-sec{
-	position: relative;
-}
-.news-details .blog-grd-top-img{
-	position: absolute;
-	top: -350px;
-	right: -200px;
-}
-.news-details .xs-blog-grd-top-img{
-	position: absolute;
-	top: -140px;
-	right: -20px;
-}
-
-.news-details{
-	padding-bottom: 85px;
-}
-
-
-
-#news-details .gallery-wrap {
-    padding-bottom: 10px;
-}
-#news-details .fl-fancy-ctlr{
-	padding-top: 10px;
-}
-#news-details .fl-fancy-module{
-	margin-bottom: 50px;
-}
-
-.news-details a.red-color-arrow-btn i{
-	margin-top: -4px;
-}
-.news-details a.red-color-arrow-btn i svg{
-	width: 7px;
-	height: 11px;
-}
-
-.news-details .blog-grds-inr{
-	position: relative;
-}
-.news-details .blog-grd-top-lft-img{
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: -50px;
-}
-
-#news-details .post-date{
-	margin-bottom: 15px;
-}
-
-
-
-/*ballonvaren voor bedrijven*/
-
-.dft-blockquote{
-	padding-bottom: 55px;
-	margin-bottom: 55px;
-	border-bottom: 2px solid #ECF1F4;
-}
-.dft-blockquote blockquote{
-	padding-left: 45px;
-	border-left: 6px solid #C1E2C4;
-	color: #909BA5;
-	font-style: italic;
-	margin-bottom: 0;
-}
-.dft-blockquote blockquote em{
-	font-style: italic;
-	display: inline-block;
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
-#ballonvaren-voor-bedrijven .ac-fancy-module{
-	padding-top: 30px;
-}
-
-#ballonvaren-voor-bedrijven .default-page-con h4{
-	margin-bottom: 35px;
-	font-size: 32px;
-	color: #2C113E;
-}
-#ballonvaren-voor-bedrijven .full-img-module {
-    padding-bottom: 50px;
-}
-
-.ballon-rides-module{
-	position: relative;
-	margin-top: 45px;
-}
-.ballon-rides-lft-top-img{
-	position: absolute;
-	top: -125px;
-	left: -140px;
-}
-
-#ballonvaren-voor-bedrijven .dfp-cta-module.orange {
-    margin-bottom: 90px;
-}
-.exprns-ovrvw-grid-module .exprns-ovrvw-grid-ctlr{
-	margin-left: -12px;
-	margin-right: -12px;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-.exprns-ovrvw-grid-module .exprns-ovrvw-grid-ctlr .exprns-ovrvw-item-wrap{
-	width: 50%;
-	padding-left: 12px;
-	padding-right: 12px;
-	margin-bottom: 25px;
-}
-
-#ballonvaren-voor-bedrijven .default-page-con{
-	padding-bottom: 75px;
-}
-
-#ballonvaren-voor-bedrijven .top-gallery-module .gallery-wrap {
-    padding-bottom: 25px;
-    padding-top: 0;
-}
-
-
-
-
-
-#ballonvaren-voor-bedrijven .default-page-con p {
-    margin-bottom: 55px;
-}
-#ballonvaren-voor-bedrijven .dfp-cta-module p{
-	margin-bottom: 20px;
-}
-
-.dft-blockquote blockquote > p{
-	margin-bottom: 0!important;
-}
-
-
-
-/*vip*/
-
-#vip .ballon-rides-module {
-    margin-top: 35px;
-}
-
-#vip .dfp-text-module p:last-child{
-	margin-bottom: 55px;
-}
 
 
 
@@ -1030,53 +714,36 @@ Gallery design
 /*responsive*/
 
 @media(max-width: 1699px){
-	#ballonvaren-voor-bedrijven .default-page-con h4{
-		font-size: 31px;
+	.dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 50px;
 	}
-	.news-details .blog-grd-top-img {
-	    right: -160px;
-	    top: -300px;
+	.dfp-promo-module-des p {
+	    font-size: 24px;
+	    line-height: 1.6;
 	}
-	.dfp-grd-module .blog-grid-img {
-	    height: 278px;
+	.testimonial-grd-item-des blockquote{
+		font-size: 24px;
+		line-height: 1.6;
 	}
-	.news-details .white-sky-bg {
-	    top: -298px;
+	.blog-details-related-sec{
+		padding-top: 105px;
 	}
-	.ballon-rides-lft-top-img {
-	    top: -70px;
-	    left: -140px;
+	.referenties-detials-related-sec{
+		padding-top: 90px;
+	}
+	#referenties-details .default-page-con {
+	    padding-bottom: 80px;
+	}
+	#faq-details .dfp-cat-date {
+	    margin-bottom: 45px;
 	}
 
 }
 
 @media(max-width: 1599px){
 	
-	#news-details .blog-grd-top-img {
-	    top: -240px;
-	    right: -118px;
-	}
-	#news-details .blog-grd-top-img img{
-		max-width: 170px;
-	}
-	#news-details .news-details-btm-bg{
-		bottom: 540px;
-	}
-	.news-details a.red-color-arrow-btn i {
-	    margin-top: -3px;
-	}
-	#ballonvaren-voor-bedrijven .default-page-con p {
-	    margin-bottom: 50px;
-	}
-	#ballonvaren-voor-bedrijven .dfp-cta-module p {
-	    margin-bottom: 20px;
-	}
-	#vip .dfp-text-module p:last-child {
-	    margin-bottom: 50px;
-	}
-	.dfp-grd-module .blog-grid-img {
-	    height: 278px;
-	}
+	
+
 }
 
 @media(max-width: 1499px){
@@ -1084,84 +751,53 @@ Gallery design
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	#ballonvaren-voor-bedrijven .default-page-con h4{
-		font-size: 30px;
-	}
-	#news-details {
-	    padding-bottom: 200px;
-	}
-	.news-details .white-sky-bg {
-	    top: -270px;
-	}
-	.news-details .blog-grd-top-img {
-	    top: -295px;
-	    right: -130px;
-	}
-	#vip .dfp-text-module p:last-child {
-	    margin-bottom: 45px;
-	}
-	.dfp-grd-module .blog-grid-img {
-	    height: 278px;
-	}
+	
+	
 	
 }
 @media(max-width: 1399px){
 	.dfp-promo-module-title{
 		margin-bottom: 25px;
 	}
-	.booking-btm-img {
-	    bottom: -38px;
-	    left: -60px;
-	}
-	.booking-top-img {
-	    top: -70px;
-	    right: -65px;
-	    max-width: 100px;
-	}
-	#news-details .blog-grd-top-img {
-	    top: -215px;
-	    right: -73px;
-	}
-	#news-details .blog-grd-top-img img {
-	    max-width: 150px;
-	}
-	.ballon-rides-lft-top-img {
-	    top: -70px;
-	    left: -112px;
-	}
-	.ballon-rides-lft-top-img img{
-		max-width: 200px;
-	}
-	#ballonvaren-voor-bedrijven .default-page-con h4{
-		font-size: 29px;
-	}
 
-	.news-details .blog-grd-top-img {
-	    top: -228px;
-	    right: -55px;
+	.bnr-bg-560 .bnr-bg-overly {
+	    height: 500px;
 	}
-	.news-details .blog-grd-top-img img{
-		max-width: 160px;
-	}
-	.fl-video-play-cntlr, .fl-video-play-cntlr i svg {
-	    width: 80px;
-	    height: 80px;
-	}
-	.news-details a.red-color-arrow-btn i {
-	    margin-top: -2px;
-	}
-	#ballonvaren-voor-bedrijven .default-page-con p {
+	.dfp-promo-module .bnr-bg-overly-module {
 	    margin-bottom: 45px;
 	}
-	#ballonvaren-voor-bedrijven .dfp-cta-module p {
-	    margin-bottom: 20px;
+	.dfp-testimonial-module {
+	    margin-top: 60px;
+	    margin-bottom: 70px;
 	}
-	#vip .dfp-text-module p:last-child {
+	#blog-details .dfp-promo-module .bnr-bg-overly-module {
 	    margin-bottom: 40px;
 	}
-	.dfp-grd-module .blog-grid-img {
-	    height: 278px;
+	#blog-details .dfp-cat-date {
+	    padding-bottom: 30px;
 	}
+	.blog-details-related-sec{
+		padding-top: 95px;
+	}
+	.referenties-detials-related-sec{
+		padding-top: 80px;
+	}
+	#referenties-details .default-page-con {
+	    padding-bottom: 70px;
+	}
+	#coaching-details .dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 40px;
+	}
+	#coaching-details .gallery-wrap {
+	    padding-top: 60px;
+	}
+	#coaching-details .dfp-cta-module {
+	    margin-bottom: 60px;
+	}
+	#faq-details .dfp-cat-date {
+	    margin-bottom: 40px;
+	}
+	
 
 
 }
@@ -1175,91 +811,32 @@ Gallery design
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	.top-gallery-module {
-	    padding-bottom: 0;
-	}
 	.default-page-con h2{
 		padding-top: 0;
 	}
-	.fl-fancy-module{
-		margin-bottom: 35px;
-		height: 550px;
-	}
-	.dfp-cta-module {
-	    margin-bottom: 40px;
-	}
-	.grd-module .blg-grds-item ul li{
-		padding-bottom: 80px;
-	}
-	.booking-btm-img {
-	    bottom: -25px;
-	    left: -22px;
-	    max-width: 80px;
-	}
-	.booking-top-img {
-	    top: -50px;
-	    right: -15px;
-	    max-width: 80px;
-	}
-	.dfp-twogrd-module {
-	    margin-bottom: 45px;
-	}
-	.dfp-book-ctlr,
-	.dfp-gift-ctlr{
-		padding-left: 6px;
-		padding-right: 6px;
-	}
+	
 	.default-page-con {
 	    padding-bottom: 60px;
 	}
-	#news-details .blog-grd-top-img {
-	    top: -170px;
-	    right: -25px;
+	.bnr-bg-560 .bnr-bg-overly {
+	    height: 450px;
 	}
-	#news-details .blog-grd-top-img img {
-	    max-width: 125px;
-	}
-	#news-details .news-details-btm-bg {
-	    bottom: 570px;
-	}
-	.news-details .white-sky-bg {
-	    top: -255px;
-	}
-	.news-details .blog-grd-top-img {
-	    top: -160px;
-	    right: -10px;
-	}
-	.news-details .blog-grd-top-img img {
-	    max-width: 120px;
-	}
-	.news-details a.red-color-arrow-btn i {
-	    margin-top: -3px;
-	}
-	.ballon-rides-lft-top-img {
-	    top: -95px;
-	    left: -30px;
-	}
-	.ballon-rides-lft-top-img img {
-	    max-width: 170px;
-	}
-	.news-details {
-	    padding-bottom: 60px;
-	}
-	#ballonvaren-voor-bedrijven .default-page-con p {
+	.dfp-promo-module .bnr-bg-overly-module {
 	    margin-bottom: 40px;
 	}
-	#ballonvaren-voor-bedrijven .dfp-cta-module p {
-	    margin-bottom: 20px;
+	.dfp-promo-module-des p {
+	    font-size: 23px;
+	    line-height: 1.5;
 	}
-	#vip .dfp-text-module p:last-child {
-	    margin-bottom: 35px;
+	.testimonial-grd-item-des blockquote{
+		font-size: 23px;
+		line-height: 1.5;
 	}
-	#vip .ballon-rides-module {
-	    margin-top: 30px;
+	.blog-details-related-sec{
+		padding-top: 85px;
 	}
-	#vip .ballon-rides-lft-top-img {
-	    top: -65px;
-	    left: -30px;
+	#referenties-details .dfp-promo-module {
+	    margin-top: -130px;
 	}
 
 }
@@ -1276,23 +853,11 @@ Gallery design
 	.glry-col-3 .gallery-icon-img {
 	    height: 240px;
 	}
-	.fl-fancy-module {
-	    margin-bottom: 30px;
-	    height: 480px;
-	}
-	.fl-video-play-cntlr,
-	.fl-video-play-cntlr i svg{
-		width: 75px;
-		height: 75px;
-	}
 	.cta-ctlr{
 		padding: 55px 20px 50px 20px;
 	}
 	.default-page-con h4{
 		margin-bottom: 30px;
-	}
-	.grd-module .blg-grds-item ul li {
-	    padding-bottom: 60px;
 	}
 	.dfp-tbl-wrap {
 	    padding-top: 40px;
@@ -1304,53 +869,6 @@ Gallery design
 	.gallery-wrap {
 	    padding-bottom: 15px;
 	}
-	#news-details .blog-grd-top-img {
-	    top: -150px;
-	    right: -25px;
-	}
-	#news-details .blog-grd-top-img img {
-	    max-width: 110px;
-	}
-	#news-details .blog-grds-item{
-		width: 50%;
-	}
-	#news-details {
-	    padding-bottom: 180px;
-	}
-	#news-details .news-details-btm-bg {
-	    bottom: 1080px;
-	}
-	#news-details .fl-fancy-module {
-	    margin-bottom: 42px;
-	}
-	.news-details .white-sky-bg {
-	    top: -195px;
-	}
-
-	.news-details .blog-grd-top-img {
-	    top: -145px;
-	    right: -10px;
-	}
-	.news-details .blog-grd-top-img img {
-	    max-width: 100px;
-	}
-	.news-details .blog-grds-item:nth-child(3n+1){
-		clear: none;
-	}
-	/*.news-details .blog-grds-item:nth-child(2n+1){
-		clear: left;
-	}*/
-	.news-details .blog-grds-item{
-		width: 50%;
-		padding-bottom: 35px;
-	}
-	.news-details .blog-grid-item{
-		padding-bottom: 35px;
-		border-bottom: 2px solid #ECF1F4;
-	}
-	.news-details {
-	    padding-bottom: 40px;
-	}
 	.has-inline-bg .gallery-icon-img {
 	    height: 350px;
 	}
@@ -1358,66 +876,64 @@ Gallery design
 	    padding-bottom: 42px;
 	    margin-bottom: 42px;
 	}
-	.dft-blockquote blockquote{
-		padding-left: 35px;
-	}
-	.dft-blockquote blockquote em {
-	    padding-top: 18px;
-	    padding-bottom: 18px;
-	}
-	#ballonvaren-voor-bedrijven .full-img-module {
-	    padding-bottom: 40px;
-	}
-	#ballonvaren-voor-bedrijven .default-page-con h4{
-		margin-bottom: 30px;
-		font-size: 28px;
-	}
-	.ballon-rides-module {
-	    margin-top: 35px;
-	}
-	.ballon-rides-lft-top-img {
-	    top: -70px;
-	    left: -25px;
-	}
-	.ballon-rides-lft-top-img img {
-	    max-width: 140px;
-	}
-	#ballonvaren-voor-bedrijven .dfp-cta-module.orange {
-	    margin-bottom: 70px;
-	}
-	#ballonvaren-voor-bedrijven .default-page-con {
-	    padding-bottom: 65px;
-	}
-	#ballonvaren-voor-bedrijven .default-page-con p {
-	    margin-bottom: 35px;
-	}
-	#ballonvaren-voor-bedrijven .dfp-cta-module p {
-	    margin-bottom: 20px;
-	}
-	#vip .dfp-text-module p:last-child {
-	    margin-bottom: 30px;
-	}
-	#vip .ballon-rides-module {
-	    margin-top: 25px;
-	}
-	#vip .ballon-rides-lft-top-img {
-	    top: -60px;
-	}
+	
 	.dfp-grd-module .blog-grid-img {
 	    height: 260px;
 	}
-	.dfp-booking-grd,
-	.dfp-gift-grd{
-		padding: 45px 30px 45px;
+	.bnr-bg-560 .bnr-bg-overly {
+	    height: 400px;
 	}
-	.dfpBlogSlider .blog-grds-item{
-		display: none;
+	.dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 35px;
 	}
-	.dfpBlogSlider .blog-grds-item:first-child{
-		display: block;
+	.dfp-promo-module-des p {
+	    font-size: 22px;
+	    margin-bottom: 30px!important;
+	    line-height: 1.4;
 	}
-	.dfpBlogSlider.slick-initialized .blog-grds-item:{
-		display: block;
+	.dfp-testimonial-module {
+	    margin-top: 55px;
+	    margin-bottom: 65px;
+	}
+	.testimonial-grd-item-des blockquote{
+		font-size: 22px;
+		line-height: 1.4;
+	}
+	#blog-details .dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 35px;
+	}
+	#blog-details .dfp-cat-date {
+	    padding-bottom: 25px;
+	}
+	.blog-details-related-sec{
+		padding-top: 75px;
+	}
+	.referenties-detials-related-sec{
+		padding-top: 70px;
+	}
+	.refernties-details-related-sec-inr .sec-entry-hdr {
+	    padding-bottom: 10px;
+	}
+	#referenties-details .dfp-promo-module {
+	    margin-top: -90px;
+	}
+	#referenties-details .dfp-cta-module {
+	    margin-bottom: 55px;
+	}
+	#referenties-details .default-page-con {
+	    padding-bottom: 60px;
+	}
+	#coaching-details .dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 35px;
+	}
+	#coaching-details .gallery-wrap {
+	    padding-top: 50px;
+	}
+	#coaching-details .dfp-cta-module {
+	    margin-bottom: 50px;
+	}
+	#faq-details .dfp-cat-date {
+	    margin-bottom: 35px;
 	}
 
 }
@@ -1448,16 +964,10 @@ Gallery design
 	.default-page-con{
 		padding-bottom: 20px;
 	}
-	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
-		padding-right: 20px;
-	}
 	.dfp-tbl-wrap{
 		margin-bottom: 20px;
 		padding-bottom: 20px;
-		padding-top: 30px;
-	}
-	.dft-cr-leg-post-grid-module.show-sm{
-		margin-bottom: 0;
+		padding-top: 0;
 	}
 	.default-page-con{
 		padding-top: 0;
@@ -1471,7 +981,6 @@ Gallery design
 	  height: 6px;
 	}
 	.table-dsc::-webkit-scrollbar-thumb {
-	  background: #A8DADC;
 	  border-radius: 4px;
 	}
 	.table-dsc table {
@@ -1490,19 +999,12 @@ Gallery design
 	.dfp-des-rgt{
 		padding-right: 20px;
 	}
-	/*.dfp-text-module{
-		padding-right: 10px;
-	}*/
 	.gallery-wrap{
 		padding-bottom: 0;
 	}
 	.fl-fancy-module{
 		height: 400px;
 		margin-bottom: 20px;
-	}
-	.default-page-con hr{
-		margin-bottom: 25px;
-		padding-top: 5px;
 	}
 	.cta-ctlr{
 		padding: 60px 20px;
@@ -1512,16 +1014,11 @@ Gallery design
 	}
 	.dfp-btn-module {
 	    margin-bottom: 30px;
-	    padding-top: 15px;
+	    padding-top: 0;
 	    justify-content: center;
 	}
 	.gallery-wrap{
-		padding-top: 0;
-	}
-	.fl-video-play-cntlr,
-	.fl-video-play-cntlr i svg{
-		width: 60px;
-    	height: 60px;
+		padding-top: 10px;
 	}
 	.cta-ctlr {
 	    padding: 40px 30px;
@@ -1543,9 +1040,7 @@ Gallery design
 	.glry-col-2 .gallery-icon-img {
 	    height: 180px;
 	}
-	.dfp-cta-module {
-	    margin-bottom: 30px;
-	}
+	
 	.dfp-cta-module.orange {
 	    margin-bottom: 25px;
 	}
@@ -1553,227 +1048,134 @@ Gallery design
 	    padding-bottom: 40px;
 	}
 	
-	.dfp-twogrd-module{
-		margin-left: 0;
-		margin-right: 0;
-	}
-	.dfp-booking-grd-ctlr,
-	.dfp-gift-grd-ctlr{
-	    width: 100%;
-	    padding-left: 0;
-	    padding-right: 0;
-	    padding-bottom: 15px;
-	}
-	.booking-top-img {
-	    top: -95px;
-	    right: -74px;
-	    max-width: 150px;
-	}
-	.booking-btm-img {
-	    left: -72px;
-	    max-width: 115px;
-	}
-	.fl-dft-lftimg-rgtdes-rgt{
-		padding-left: 15px;
-	}
-	.fl-dft-lftimg-rgtdes{
-		padding-bottom: 25px;
-	}
+	
 	.btn-module{
 		justify-content: center;
 	}
-	#news-details .blog-grd-top-img {
-	    top: -140px;
-	    right: -35px;
-	}
-	#news-details .blog-grd-top-img img {
-	    max-width: 100px;
-	}
-	#news-details .blog-grds-item{
-		width: 100%;
-		padding-left: 0;
-		padding-right: 0;
-		padding-bottom: 32px;
-	}
-	#news-details .blog-grds-item-ctlr {
-	    margin-left: 0;
-	    margin-right: 0;
-	}
-	#news-details .blog-grds-item .blog-grd-itm{
-		max-width: 335px;
-		width: 100%;
-		margin: 0 auto;
-	}
-	#news-details .post-date{
-		margin-bottom: 25px;
-	}
-	#news-details .blog-grid-item{
-		max-width: 335px;
-		width: 100%;
-		margin: 0 auto;
-		padding-bottom: 35px;
-		border-bottom: 1px solid #ECF1F4;
-	}
-	.news-details .slick-slider .slick-dots li{
-		width: 12px!important;
-	    height: 12px!important;
-	    background: #ECF1F4!important;
-	}
-	.news-details .slick-slider .slick-dots li.slick-active {
-	    background: #EE3E15!important;
-	}
-	#news-details {
-	    padding-bottom: 165px;
-	}
-	#news-details .news-details-btm-bg {
-	    bottom: 680px;
-	}
-	#news-details .fl-fancy-module {
-	    margin-bottom: 35px;
-	}
-	#news-details .dfp-promo-module-title br{
-		display: none;
-	}
-	.news-details .white-sky-bg{
-		top: -170px;
-	}
-	.news-details .blog-grd-top-img{
-		top: -140px;
-		right: -40px;
-	}
-	.news-details .blog-grd-top-img img{
-		max-width: 105px;
-	}
-	.news-details .blog-grds-item:nth-child(2n+1){
-		clear: none;
-	}
-	.news-details .blog-grds-item-ctlr{
-		margin-left: 0;
-		margin-right: 0;
-	}
-	.news-details .blog-grds-item{
-		width: 100%;
-		padding-left: 0;
-		padding-right: 0;
-		padding-bottom: 32px;
-	}
-	.news-details .blog-grid-item{
-		padding-bottom: 35px;
-		border-bottom: 2px solid #ECF1F4;
-		max-width: 350px;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.news-details .blog-grds-item-ctlr{
-		display: block;
-	}
-	.news-details {
-	    padding-bottom: 10px;
-	}
 	.has-inline-bg .gallery-icon-img {
 	    height: 250px;
-	}
-
-	#news-details .dfp-promo-module-title,
-	#vip .dfp-promo-module-title,
-	#vip .cta-title,
-	#ballonvaren-voor-bedrijven .cta-title{
-		text-transform: inherit;
-	}
-
-	#ballonvaren-voor-bedrijven .top-gallery-module .gallery-wrap {
-	    padding-bottom: 15px;
 	}
 	.dft-blockquote {
 	    padding-bottom: 32px;
 	    margin-bottom: 32px;
 	}
-	.dft-blockquote blockquote{
-		padding-left: 28px;
+	
+
+	.bnr-bg-560 .bnr-bg-overly {
+	    height: 350px;
 	}
-	.dft-blockquote blockquote em {
-	    padding-top: 10px;
-	    padding-bottom: 10px;
+	.dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 30px;
 	}
-	#ballonvaren-voor-bedrijven .full-img-module {
-	    padding-bottom: 30px;
+	.dfp-promo-module-des p {
+	    font-size: 20px;
+	    margin-bottom: 25px!important;
+	    line-height: 1.35;
 	}
-	#ballonvaren-voor-bedrijven .default-page-con h4{
+	.dfp-testimonial-module {
+	    margin-top: 50px;
+	    margin-bottom: 60px;
+	}
+	.testimonial-grd-item-img i{
 		margin-bottom: 25px;
-		font-size: 27px;
 	}
-	.ballon-rides-module {
-	    margin-top: 30px;
+	.testimonial-grd-item-des blockquote{
+		font-size: 20px;
+		line-height: 1.35;
 	}
-	#vip .ballon-rides-lft-top-img,
-	.ballon-rides-lft-top-img {
-	    top: inherit;
-	    left: -65px;
-	    bottom: -38px;
+	#blog-details .dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 30px;
 	}
-	.ballon-rides-lft-top-img img {
-	    max-width: 112px;
+	#blog-details .dfp-cat-date {
+	    padding-bottom: 20px;
 	}
-	#ballonvaren-voor-bedrijven .dfp-cta-module.orange {
-	    margin-bottom: 55px;
-	}
-	.exprns-ovrvw-grid-module .exprns-ovrvw-grid-ctlr{
+
+	.blog-details-grds {
 	    margin-left: 0;
 	    margin-right: 0;
 	}
-	.exprns-ovrvw-grid-module .exprns-ovrvw-grid-ctlr .exprns-ovrvw-item-wrap{
-	    width: 100%;
-	    padding-left: 0;
-	    padding-right: 0;
-	    margin-bottom: 15px;
+	.blogDetialsSlideItem{
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 28px;
 	}
-	#ballonvaren-voor-bedrijven .default-page-con {
-	    padding-bottom: 55px;
+	.blogDetailsSlider .blog-grid-item{
+		max-width: 350px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.exprns-ovrvw-grid-module .exprns-ovrvw-item {
-	    max-width: 412px;
-	    width: 100%;
-	    margin-left: auto;
-	    margin-right: auto;
+	.blog-details-related-sec{
+		padding-top: 65px;
 	}
-	#ballonvaren-voor-bedrijven .default-page-con p {
-	    margin-bottom: 25px;
+	.referenties-details-grds{
+		margin-left: 0;
+		margin-right: 0;
 	}
-	#ballonvaren-voor-bedrijven .dfp-cta-module p {
-	    margin-bottom: 20px;
+	.referenties-details-grds .referentiesDetailsSliderItem{
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 25px;
 	}
-	#vip .dfp-text-module p:last-child {
-	    margin-bottom: 20px;
+	.referenties-detials-related-sec{
+		padding-top: 60px;
 	}
-	#vip .ballon-rides-module {
-	    margin-top: 20px;
+	.refernties-details-related-sec-inr .sec-entry-hdr {
+	    padding-bottom: 0;
 	}
-	#vip .dfp-cta-module.orange {
-	    margin-bottom: 40px;
-	}
-	#vip .default-page-con {
+	#referenties-details .dfp-full-img-module {
+	    padding-top: 15px;
 	    padding-bottom: 40px;
 	}
-	.news-details .sec-entry-header h3{
-		margin-bottom: 28px;
-		text-transform: capitalize;
+	#referenties-details .dfp-cta-module {
+	    margin-bottom: 45px;
 	}
-	.dfp-grd-module .blog-grid-img {
-	    height: 226px;
+	#referenties-details .default-page-con {
+	    padding-bottom: 50px;
 	}
-	.dfp-booking-grd, .dfp-gift-grd {
-	    padding: 28px 30px 28px;
+	#coaching-details .dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 30px;
 	}
-	.dfp-grd-module {
-	    border-bottom: none;
-	    margin-bottom: 0;
+	#coaching-details .gallery-wrap {
+	    padding-top: 40px;
 	}
+	#coaching-details .dfp-cta-module {
+	    margin-bottom: 40px;
+	}
+	#faq-details .dfp-promo-module-title {
+	    margin-bottom: 15px;
+	}
+	#faq-details .dfp-cat-date {
+	    margin-bottom: 30px;
+	}
+
 }
 
 
 
 @media(max-width: 639px){
+	.dfp-grd-module {
+	    margin-left: 0;
+	    margin-right: 0;
+	    padding-top: 10px;
+	    padding-bottom: 15px;
+	}
+	.dfp-grd-module .dfp-grd-item{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 28px;
+	}
+	.dfpBlogSlider .blog-grid-item{
+		max-width: 350px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.dfp-testimonial-module {
+	    margin-top: 45px;
+	    margin-bottom: 55px;
+	}
 	
 	
 }
@@ -1794,6 +1196,7 @@ Gallery design
 	.default-page-con ul,
 	ol,ul{
 		padding-left: 18px;
+		padding-bottom: 0;
 
 	}
 	.default-page-con ol li, ol li {
@@ -1806,14 +1209,10 @@ Gallery design
 	    min-height: 240px;
 	}
 	.default-page-con p {
-	    margin-bottom: 20px;
-	}
-	.default-page-con ul li, ul li {
-	    padding: 2px 0 8px 20px;
-	    line-height: 18px;
+	    margin-bottom: 15px;
 	}
 	.default-page-con ul li::before, ul li::before{
-		margin-top: 5px;
+		margin-top: 8px;
 	}
 	.default-page-con h1, .default-page-con h2, .default-page-con h3, .default-page-con h4, .default-page-con h5 {
 	    margin-bottom: 20px;
@@ -1821,66 +1220,9 @@ Gallery design
 	.dfp-plate-one-img-bx .dft-blog-item-des-date{
 		display: none;
 	}
-	.fl-dft-lftimg-rgtdes-lft i svg{
-		width: 50px!important;
-		height: 50px!important;
-	}
-	.fl-dft-lftimg-rgtdes-lft span svg{
-		width: 30px!important;
-		height: 31px!important;
-	}
-	.fl-dft-lftimg-rgtdes-lft {
-	    min-height: 200px;
-	}
-	.dfp-cta-module {
-	    margin-bottom: 20px;
-	}
-	.fl-fancy-module{
-		height: 300px;
-	}
-	.fl-video-play-cntlr,
-	.fl-video-play-cntlr i svg {
-	    height: 54px;
-	    width: 54px;
-	}
-	.default-page-con hr{
-		margin-bottom: 25px;
-		padding-top: 5px;
-		border-bottom: 2px solid #ECF1F4;
-	}
-	.fl-dft-lftimg-rgtdes-rgt{
-		padding-left: 15px;
-	}
-	.dfp-des-lft,
-	.dfp-des-rgt{
-		padding-right: 10px;
-	}
+	
 	.cta-ctlr {
-	    padding: 40px 25px 35px;
-	}
-	.fl-dft-lftimg-rgtdes{
-		display: block;
-	}
-	.fl-dft-lftimg-rgtdes-lft, 
-	.fl-dft-lftimg-rgtdes-rgt{
-		width: 100%;
-		margin-bottom: 20px;
-	}
-	.fl-dft-lftimg-rgtdes-lft, 
-	.fl-dft-lftimg-rgtdes-rgt{
-		width: 100%;
-		padding-left: 0;
-		background-image: none!important;
-		min-height: auto;
-	}
-	.fl-dft-lftimg-rgtdes-lft img, 
-	.fl-dft-lftimg-rgtdes-rgt img{
-		display: block;
-		width: 100%;
-		border-radius: 3px;
-	}
-	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
-		padding-right: 0;
+	    padding: 48px 20px 40px;
 	}
 	.gallery-icon-img {
 	    height: 200px;
@@ -1894,21 +1236,6 @@ Gallery design
 	.fl-dft-lftimg-rgtdes{
 		padding-bottom: 0;
 	}
-	/*.top-gallery-module .gallery-columns-2 .gallery-item .gallery-icon-img{
-		height: 225px;
-	}*/
-	.top-gallery-module .gallery-wrap {
-	    padding-bottom: 0;
-	}
-	.top-gallery-module {
-	    padding-bottom: 0;
-	}
-	.top-gallery-module{
-		padding-bottom: 0;
-	}
-	/*.has-inline-bg .gallery-item img {
-	    display: block;
-	}*/
 	.full-img-module {
 	    padding-bottom: 20px;
 	}
@@ -1930,119 +1257,77 @@ Gallery design
 		width: 100%;
 		margin: 0 auto;
 	}
-	#news-details .top-gallery-module {
-	    padding-bottom: 0;
-	}
-	#news-details .fancy-module{
-		padding-top: 15px;
-		margin-bottom: 28px;
-	}
-	#news-details .social-media {
-	    padding-top: 30px;
-	}
-	#news-details {
-	    padding-bottom: 150px;
-	}
-	#news-details .social-media span{
-		margin-right: 7px;
-	}
-	#news-details .default-page-con h5 {
-	    margin-bottom: 30px;
-	}
-	#news-details .fl-fancy-module {
-	    margin-bottom: 30px;
-	}
-	.news-details .white-sky-bg{
-		top: -155px;
-	}
 	.has-inline-bg .gallery-icon-img {
 	    height: 160px;
 	    display: block;
 	}
 	.default-page-con h2 {
 	    margin-bottom: 15px;
-	}
-	.top-gallery-module .gallery-item img{
-		border-radius: 0;
-	}
-	.news-details .sec-entry-header h3{
-		margin-bottom: 28px;
-	}
-
-	#ballonvaren-voor-bedrijven .top-gallery-module .gallery-wrap {
-	    padding-bottom: 0;
+	    font-size: 24px;
 	}
 	.dft-blockquote {
 	    padding-bottom: 22px;
 	    margin-bottom: 22px;
 	}
-	.dft-blockquote blockquote{
-		padding-left: 20px;
+	
+	.bnr-bg-560 .bnr-bg-overly {
+	    height: 275px;
 	}
-	.dft-blockquote blockquote em {
-	    padding-top: 0;
-	    padding-bottom: 0;
-	    font-size: 14px;
+	.dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 25px;
 	}
-	#ballonvaren-voor-bedrijven .fl-fancy-module {
-	    padding-top: 0;
+	.dfp-promo-module-des p {
+	    font-size: 18px;
+	    margin-bottom: 20px!important;
+	    line-height: 1.3;
 	}
-	#ballonvaren-voor-bedrijven .full-img-module {
-	    padding-bottom: 20px;
+	.dfp-testimonial-module {
+	    margin-top: 40px;
+	    margin-bottom: 50px;
 	}
-	#ballonvaren-voor-bedrijven .default-page-con h4{
-		margin-bottom: 20px;
-		font-size: 26px;
-	}
-	.ballon-rides-module {
-	    margin-top: 25px;
+	.testimonial-grd-item-des blockquote{
+		font-size: 18px;
+		line-height: 1.3;
 	}
 	
-	#ballonvaren-voor-bedrijven .cta-ctlr {
-	    padding: 40px 25px 35px;
+	#blog-details .dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 25px;
 	}
-	#ballonvaren-voor-bedrijven .dfp-cta-module.orange {
-	    margin-bottom: 40px;
+	#blog-details .dfp-cat-date {
+	    padding-bottom: 15px;
 	}
-	#ballonvaren-voor-bedrijven .default-page-con {
-	    padding-bottom: 45px;
+	.blog-details-related-sec{
+		padding-top: 55px;
 	}
-	#ballonvaren-voor-bedrijven .default-page-con p {
-	    margin-bottom: 20px;
+	.referenties-detials-related-sec{
+		padding-top: 50px;
 	}
-	#ballonvaren-voor-bedrijven .dfp-cta-module p {
-	    margin-bottom: 15px;
+	#referenties-details .dfp-cta-module {
+	    margin-bottom: 35px;
 	}
-	.exprns-ovrvw-grid-module .exprns-ovrvw-item-desc {
+	#referenties-details .default-page-con {
+	    padding-bottom: 40px;
+	}
+	#coaching-details .dfp-promo-module .bnr-bg-overly-module {
+	    margin-bottom: 25px;
+	}
+	#coaching-details .gallery-wrap {
+	    padding-top: 30px;
+	    padding-bottom: 20px;
+	    border-top: 2px solid #EFF4F7;
+	}
+	#coaching-details .dfp-cta-module {
 	    margin-bottom: 30px;
 	}
-	#vip .dfp-text-module p:last-child {
-	    margin-bottom: 15px;
-	}
-	#vip .ballon-rides-module {
-	    margin-top: 15px;
-	}
-	#vip .default-page-con h2{
-		font-size: 26px;
-	}
-	.news-details .xs-blog-grd-top-img {
-	    top: -120px;
-	}
-	.news-details .xs-blog-grd-top-img img{
-		max-width: 90px;
-	}
-
-	.cta-btn .fl-transparent-btn{
-		padding: 15px 20px;
+	#faq-details .dfp-cat-date {
+	    margin-bottom: 25px;
 	}
 
 }
 
 
 @media(max-width: 479px){
-	.fl-fancy-module{
-		height: 225px;
-	}
+	
 	.gallery-icon-img {
 	    height: 149px;
 	}
@@ -2052,10 +1337,6 @@ Gallery design
 	.glry-col-2 .gallery-icon-img {
 	    height: 100px;
 	}
-	#news-details .news-details-btm-bg {
-	    bottom: 760px;
-	}
-
 	.dfp-btn-module {
 	    margin-left: 0;
 	    margin-right: 0;
@@ -2065,25 +1346,21 @@ Gallery design
 		display: block;
 		padding-left: 0;
 		padding-right: 0;
-	}
-	.fl-btn a.fl-red-btn,
-	.fl-btn a.fl-navyblue-btn,
-	.fl-btn a.fl-cyan-btn{
-		min-width: 100%;
-		width: 100%;
+		margin-bottom: 12px;
 	}
 	.dfp-grd-module .blog-grid-des .bgi-title {
 	    margin-bottom: 25px;
 	}
-	.news-details .blog-grd-top-img {
-	    top: -125px;
-	    right: -40px;
+	
+	.bnr-bg-560 .bnr-bg-overly {
+	    height: 225px;
 	}
-	.news-details .blog-grd-top-img img {
-	    max-width: 90px;
-	}
-	.news-details .xs-blog-grd-top-img {
-	    top: -130px;
+	.fl-btn a.fl-black-btn, 
+	.fl-btn a.fl-orange-btn, 
+	.fl-btn a.fl-transparent-btn {
+	    min-width: auto;
+	    max-width: 100%;
+	    width: 100%;
 	}
 	
 }
