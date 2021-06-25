@@ -8,12 +8,34 @@
 }
 .sec-hdr-cntrl .fl-secrh form input{
     padding: 13px 44px 11px 16px;
+    border-radius: 3px;
 }
-.sec-hdr-cntrl .fl-secrh form button i svg.search-icon-black:hover{
-    fill: #FFA800
+.sec-hdr-cntrl .fl-secrh form input::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #9B9B9B;
+}
+.sec-hdr-cntrl .fl-secrh form input:-ms-input-placeholder {
+    font-size: 16px;
+    color: #9B9B9B;
+    opacity: 1;
+}
+
+.sec-hdr-cntrl .fl-secrh form input::-ms-input-placeholder {
+    font-size: 16px;
+    color: #9B9B9B;
+    opacity: 1;
 }
 /* == sec-heading design end== */
 
+/* == product-page design start == */
+.product-page{
+    background-color: rgba(231, 234, 236, 0.2);
+    padding-top: 100px;
+    padding-bottom: 16px;
+}
 .fl-products-cntlr ul.products{
     display: flex!important;
     margin: 0 -12px!important;
@@ -22,12 +44,9 @@
 }
 .fl-products-cntlr > ul.products > li{
     width: 33.3333%!important;
-    padding: 0 12px 40px!important;
+    padding: 0 12px 48px!important;
     margin: 0!important;
 }
-/* .fl-products-cntlr ul.products > li:before{
-    content: none;
-} */
 .fl-pro-tag{
     position: absolute;
     top: 10px;
@@ -51,6 +70,9 @@
 .fl-product-grd {
     background: #fff;
     position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+    -ms-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
 }
 .fl-pro-grd-img-cntlr {
     position: relative;
@@ -133,3 +155,4 @@ del span.amount bdi:after{
 .fl-buy-now-btn{
     width: 100%;
 }
+/* == product-page design end == */
