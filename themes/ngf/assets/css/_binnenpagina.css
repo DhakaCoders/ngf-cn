@@ -642,6 +642,29 @@ Gallery design
 	margin-top: -200px;
 }
 
+.referenties-detials-related-sec{
+	background: rgba(231, 234, 236, 0.2);
+	padding-top: 100px;
+}
+.referenties-details-grds{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.referenties-details-grds .referentiesDetailsSliderItem{
+	float: left;
+	width: 50%;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 25px;
+}
+
+.referntiesDetailsSlider .ref-ov-page-grid-des{
+	text-align: center;
+}
+.refernties-details-related-sec-inr .sec-entry-hdr{
+	padding-bottom: 20px;
+}
+
 
 /*coaching details*/
 
@@ -705,6 +728,12 @@ Gallery design
 	.blog-details-related-sec{
 		padding-top: 105px;
 	}
+	.referenties-detials-related-sec{
+		padding-top: 90px;
+	}
+	#referenties-details .default-page-con {
+	    padding-bottom: 80px;
+	}
 
 }
 
@@ -747,6 +776,12 @@ Gallery design
 	.blog-details-related-sec{
 		padding-top: 95px;
 	}
+	.referenties-detials-related-sec{
+		padding-top: 80px;
+	}
+	#referenties-details .default-page-con {
+	    padding-bottom: 70px;
+	}
 	
 
 
@@ -784,6 +819,9 @@ Gallery design
 	}
 	.blog-details-related-sec{
 		padding-top: 85px;
+	}
+	#referenties-details .dfp-promo-module {
+	    margin-top: -130px;
 	}
 
 }
@@ -854,6 +892,21 @@ Gallery design
 	}
 	.blog-details-related-sec{
 		padding-top: 75px;
+	}
+	.referenties-detials-related-sec{
+		padding-top: 70px;
+	}
+	.refernties-details-related-sec-inr .sec-entry-hdr {
+	    padding-bottom: 10px;
+	}
+	#referenties-details .dfp-promo-module {
+	    margin-top: -90px;
+	}
+	#referenties-details .dfp-cta-module {
+	    margin-bottom: 55px;
+	}
+	#referenties-details .default-page-con {
+	    padding-bottom: 60px;
 	}
 
 }
@@ -1009,6 +1062,7 @@ Gallery design
 	#blog-details .dfp-cat-date {
 	    padding-bottom: 20px;
 	}
+
 	.blog-details-grds {
 	    margin-left: 0;
 	    margin-right: 0;
@@ -1026,6 +1080,31 @@ Gallery design
 	}
 	.blog-details-related-sec{
 		padding-top: 65px;
+	}
+	.referenties-details-grds{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.referenties-details-grds .referentiesDetailsSliderItem{
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 25px;
+	}
+	.referenties-detials-related-sec{
+		padding-top: 60px;
+	}
+	.refernties-details-related-sec-inr .sec-entry-hdr {
+	    padding-bottom: 0;
+	}
+	#referenties-details .dfp-full-img-module {
+	    padding-top: 15px;
+	    padding-bottom: 40px;
+	}
+	#referenties-details .dfp-cta-module {
+	    margin-bottom: 45px;
+	}
+	#referenties-details .default-page-con {
+	    padding-bottom: 50px;
 	}
 }
 
@@ -1054,6 +1133,7 @@ Gallery design
 	    margin-top: 45px;
 	    margin-bottom: 55px;
 	}
+	
 	
 }
 
@@ -1175,6 +1255,15 @@ Gallery design
 	}
 	.blog-details-related-sec{
 		padding-top: 55px;
+	}
+	.referenties-detials-related-sec{
+		padding-top: 50px;
+	}
+	#referenties-details .dfp-cta-module {
+	    margin-bottom: 35px;
+	}
+	#referenties-details .default-page-con {
+	    padding-bottom: 40px;
 	}
 
 }
