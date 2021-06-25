@@ -161,8 +161,6 @@ span.fl-video-play-icon-cntlr{
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     color: #fff;
-    width: 70px;
-    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -287,11 +285,53 @@ span.fl-video-play-icon-cntlr{
         left: -178.32px;
         top: 576px;
     }
-
-
 }
+
 @media (max-width: 1499px) {
+    .ovo-grds-des-lft p {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .ovo-grds-text-module p{
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+    .ovo-full-width-bg-heading{
+        line-height: 70px;
+    }
+    .ovo-full-width-img-sec {
+        height: 720px;
+    }
+    .ovo-full-width-bg-des {
+        padding-top: 90px;
+        padding-bottom: 70px;
+    }
+    .ovo-full-width-bg-des-cntlr p {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .ovo-fancy-vedeo-items-sec {
+        padding: 70px 0;
+    }
+    .fl-fancy-inline-bg-img {
+        min-height: 380px;
+    }
+    .ofmi-heading {
+        margin-bottom: 10px;
+    }
+    .ovo-fancy-modl-item-para {
+        margin-bottom: 15px;
+    }
+    .fancy-vedeo-items-sec-cntlr ul li {
+        padding-bottom: 40px;
+    }
+    .ovo-faq-slider-sec {
+        padding-top: 65px;
+    }
+    
+
 }
+
 @media(max-width: 1299px){
 }
 @media(max-width: 1199px){
@@ -305,6 +345,6 @@ span.fl-video-play-icon-cntlr{
 @media(max-width: 479px){
 }
 @media(max-width: 359px){
-    
+
 }
 
