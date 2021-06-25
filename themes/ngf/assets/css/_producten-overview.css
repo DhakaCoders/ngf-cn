@@ -3,28 +3,51 @@
     display: flex;
     align-items: flex-end;
 }
+.sec-hdr-lft{
+    padding-right: 20px;
+}
 .sec-hdr-lft, .sec-hdr-rgt{
     width: 50%;
 }
 .sec-hdr-cntrl .fl-secrh form input{
     padding: 13px 44px 11px 16px;
+    border-radius: 3px;
+}
+.sec-hdr-cntrl .fl-secrh form input::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #9B9B9B;
+}
+.sec-hdr-cntrl .fl-secrh form input:-ms-input-placeholder {
+    font-size: 16px;
+    color: #9B9B9B;
+    opacity: 1;
+}
+
+.sec-hdr-cntrl .fl-secrh form input::-ms-input-placeholder {
+    font-size: 16px;
+    color: #9B9B9B;
+    opacity: 1;
 }
 /* == sec-heading design end== */
 
-.fl-products-cntlr > ul.products {
-    display: flex;
-    flex-wrap: wrap;
+/* == product-page design start == */
+.product-page{
+    background-color: rgba(231, 234, 236, 0.2);
+    padding-top: 100px;
+    padding-bottom: 16px;
+}
+.fl-products-cntlr ul.products{
+    display: flex!important;
     margin: 0 -12px!important;
-    padding-bottom: 40px;
+    flex-wrap: wrap!important;
 }
-.fl-products-cntlr > ul.products > li {
+.fl-products-cntlr > ul.products > li{
     width: 33.3333%!important;
-    padding: 0 12px 40px!important;
-    margin: 0!important;
+    padding: 0 12px 48px!important;
 }
-/* .fl-products-cntlr ul.products > li:before{
-    content: none;
-} */
 .fl-pro-tag{
     position: absolute;
     top: 10px;
@@ -48,6 +71,9 @@
 .fl-product-grd {
     background: #fff;
     position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+    -ms-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
 }
 .fl-pro-grd-img-cntlr {
     position: relative;
@@ -129,4 +155,119 @@ del span.amount bdi:after{
 }
 .fl-buy-now-btn{
     width: 100%;
+}
+/* == product-page design end == */
+
+/* == responsive == */
+
+@media (max-width: 1699px) {
+    .fl-pro-tag span{
+        font-size: 12px;
+        line-height: 2;
+        min-width: 90px;
+        padding: 7px 10px 6px;
+    }
+    span.amount bdi, span.amount bdi span.woocommerce-Price-currencySymbol, 
+    ins span.amount bdi, ins span.amount bdi span.woocommerce-Price-currencySymbol, 
+    del span.amount bdi, del span.amount bdi span.woocommerce-Price-currencySymbol{
+        font-size: 19px;
+        line-height: 1.57;
+    }
+}
+
+@media (max-width: 1499px) {
+    .fl-pro-tag span{
+        min-width: 80px;
+    }
+    .fl-products-cntlr > ul.products{
+        margin: 0 -10px!important;
+    }
+    .fl-products-cntlr > ul.products > li{
+        padding: 0 10px 48px!important;
+    }
+    .fl-pro-grd-des .fl-pro-grd-title{
+        line-height: 1.36;
+    }
+}
+
+@media (max-width: 1199px) {
+    .fl-pro-tag span{
+        min-width: 70px;
+        font-size: 11px;
+        line-height: 2.1;
+        padding: 6px 10px 5px;
+    }
+    .fl-pro-grd-des .fl-pro-grd-title{
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 991px) {
+    .fl-pro-grd-des {
+        padding: 25px 20px 35px;
+    }
+    .fl-product-grd .fl-pro-grd-title{
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .fl-black-btn{
+        min-width: 222px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sec-hdr-cntrl{
+        display: block;
+    }
+    .sec-hdr-lft{
+        padding-right: 0;
+    }
+    .sec-hdr-lft, .sec-hdr-rgt{
+        width: 100%;
+    }
+    .sec-hdr-rgt{
+        display: none;
+    }
+    .fl-products-cntlr > ul.products{
+        margin: 0 -8px!important;
+    }
+    .fl-products-cntlr > ul.products > li{
+        width: 50%!important;
+        padding: 0 8px 48px!important;
+    }    
+}
+
+@media (max-width: 575px) {
+     .fl-pro-tag span{
+        min-width: 65px;
+        font-size: 10px;
+        line-height: 2.4;
+        padding: 3px 10px 2px;
+    }
+    .fl-products-cntlr > ul.products{
+        margin: 0!important;
+    }
+    .fl-products-cntlr > ul.products > li{
+        width: 100%!important;
+        padding: 0 0 48px!important;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .fl-pro-grd-des{
+        padding: 25px 23px 35px;
+    }
+    span.amount bdi, span.amount bdi span.woocommerce-Price-currencySymbol, 
+    ins span.amount bdi, ins span.amount bdi span.woocommerce-Price-currencySymbol, 
+    del span.amount bdi, del span.amount bdi span.woocommerce-Price-currencySymbol{
+        font-size: 19px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 479px) {
+    
+}
+
+@media (max-width: 375px) {
+    
 }
