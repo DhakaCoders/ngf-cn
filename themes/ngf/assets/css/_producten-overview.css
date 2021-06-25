@@ -9,8 +9,8 @@
 .sec-hdr-cntrl .fl-secrh form input{
     padding: 13px 44px 11px 16px;
 }
-.sec-hdr-cntrl .fl-secrh form button i svg:hover{
-    fill: red!important;
+.sec-hdr-cntrl .fl-secrh form button i svg.search-icon-black:hover{
+    fill: #FFA800
 }
 /* == sec-heading design end== */
 
