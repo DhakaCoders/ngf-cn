@@ -120,3 +120,12 @@
     bottom: -33px;
     right: 0;
 }
+
+@media(max-width:1699px){
+    .home-slogan-cntlr{
+        padding-bottom: 35px;
+    }
+    .plans-sec{
+        padding-top:55px;
+    }
+}
