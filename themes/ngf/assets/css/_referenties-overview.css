@@ -238,6 +238,14 @@
 }
 
 @media(max-width: 639px){
+	.fl-grid-category ul {
+		margin-left: -24px;
+		margin-right: -24px;
+	}
+	.fl-grid-category ul li{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
 
 	.ref-ov-page-grid-item-cntlr ul li{
 		width: 336px;
@@ -267,8 +275,25 @@
 	.ref-ov-page-grid-item-cntlr ul li{
 		padding: 0 0 55px 0;
 	}
+	.fl-grid-category ul{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.fl-grid-category ul li{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 @media(max-width: 379px){
+
+	.fl-grid-category ul{
+		margin-left: -16px;
+		margin-right: -6px;
+	}
+	.fl-grid-category ul li{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
 	.ref-ov-page-cntnt-sec .fl-grid-category{
 		padding-bottom: 14px;
 	}
