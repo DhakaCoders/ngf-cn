@@ -1,0 +1,7 @@
+.fl-pro-grid-img{
+    height: 278px;
+    width: auto;
+    transition: all .5s;
+	-ms-transition: all .5s;
+	-webkit-transition: all .5s;
+}
