@@ -505,6 +505,13 @@ span.fl-video-play-icon-cntlr{
     .ovo-abs-round-three, .ovo-abs-line-four{
         display: none;
     }
+    .ovo-grds-des-lft {
+        padding-right: 0;
+    }
+    .ovo-grds-des-lft p {
+        font-size: 18px;
+        line-height: 26px;
+    }
 
 
 
