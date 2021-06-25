@@ -400,14 +400,6 @@ h3.pro-item-desc-title{
 .product-quantity form .product-order-btn{
     margin-top: 18px;
 }
-.product-price ins span,
-.xoo-cp-pprice ins span,
-.fl-pro-grd-price ins span{
-    color: #31304F;
-    font-size: 14px;
-    font-weight: 500;
-    margin-right: 0!important;
-}
 
 .product-price span bdi span{
 	margin-right: 0!important;
