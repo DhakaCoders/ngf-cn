@@ -331,7 +331,8 @@ if( $('.dfpTestimonialSlider').length ){
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      arrows:false
     });
 }
 if( $('.blogDetailsSlider').length ){
