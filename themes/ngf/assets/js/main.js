@@ -232,6 +232,31 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Niaz Morshad*/
+
+if( $('.plansGrdsSlider').length ){
+    $('.plansGrdsSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
+}
+
+if( $('.latestNewsGrdsSlider').length ){
+    $('.latestNewsGrdsSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
+}
+
 // contact form-val
 if( $('.contact-form-wrp').length ){
   $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
@@ -252,6 +277,22 @@ if( $('.wpforms-error').length ){
 
 
 /*start of Monirul Islam*/
+
+if( $('.hamburger-cntlr').length ){
+  $('.hamburger-cntlr').click(function(){
+    $('body').toggleClass('allWork');
+  });
+}
+if( $('li.menu-item-has-children > a').length ){
+  $('li.menu-item-has-children > a').click(function(e){
+   event.preventDefault();
+   $(this).next().slideToggle(300);
+   $(this).parent().toggleClass('sub-menu-arrow');
+ });
+}
+
+
+
   var windowLength = $(window).width();
   var conW = $('.container-lg').width();
   var mainW = windowLength - conW;
