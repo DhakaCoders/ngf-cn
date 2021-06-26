@@ -190,6 +190,9 @@
     .home-slogan-cntlr p{
         line-height: 1.4;
     }
+    .home-slogan{
+        padding-top: 25px;
+    }
 }
 @media(max-width:767px){
     .home-slogan-cntlr p{
@@ -246,6 +249,9 @@
     }
     .latest-nws-xs-bg{
         bottom: 188px;
+    }
+    .latest-news-grid-slider-item .blog-grid-item{
+        box-shadow:none;
     }
 @media(max-width:575px){
     .home-slogan-cntlr p{
