@@ -188,6 +188,15 @@ body.werk-bdff.sky-btm-bg-cntlr {
 	.werk-mbl-grid-slider-iner  ul.slick-dots{
 		padding-top: 30px!important;
 	}
+	.mbl-step-ttl{
+		font-size: 24px;
+		text-align: center;
+		margin-bottom: 35px!important;
+		margin-top: 40px;
+	}
+	.werk-steps-grid-sec{
+		padding-top: 0;
+	}
 	.werk-two-grds-sec{
 		background-color: #fff;
 	}

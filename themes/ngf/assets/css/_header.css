@@ -731,7 +731,7 @@ body.allWork {
 		padding-left: 0;
 		width: 100%;
 		position: relative;
-		z-index: ;
+		z-index: 2;
 	}
 	.hdr-icons-cntlr{
 		margin-left: 0;
