@@ -242,7 +242,26 @@ if( $('.plansGrdsSlider').length ){
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
 }
 
@@ -255,14 +274,34 @@ if( $('.latestNewsGrdsSlider').length ){
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint:992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
 }
 
 // contact form-val
 if( $('.contact-form-wrp').length ){
   $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
-    $('.wpforms-field').addClass('wpforms-has-error');
+    $('.wpforms-field input[required]').parent().addClass('wpforms-has-error');
+    $('.wpforms-field input[required]').addClass('wpforms-error');
   });
 }
 

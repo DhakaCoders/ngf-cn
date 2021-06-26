@@ -53,6 +53,7 @@
 .plans-sec{
 	padding-bottom:120px;
 	padding-top:64px;
+    overflow: hidden;
 }
 .latest-news-sec-cntlr .latest-news-sec-grids ul.slick-dots{
 	margin-top:39px;
@@ -167,6 +168,23 @@
         font-size: 22px;
         line-height: 1.5;
     }
+    .plans-grid-item .fl-pro-grd-price{
+        margin-bottom: 15px;
+    }
+    .plans-grid-item .bgi-des {
+        padding-bottom: 23px;
+    }
+    .plans-grid-item .blog-grid-des{
+        padding: 25px 10px 33px;
+    }
+    .plans-sec-grids, 
+    .latest-news-sec-grids{
+        margin:0 -8px;
+    }
+    .plans-grid-slider-item, 
+    .latest-news-grid-slider-item{
+        padding: 0 8px;
+    }
 }
 @media(max-width:991px){
     .home-slogan-cntlr p{
@@ -179,7 +197,14 @@
         line-height: 1.35;
     }
     .home-slogan-cntlr{
-        padding: 0px 20px;
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .plans-sec-cntlr,
+    .latest-news-sec-cntlr{
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 @media(max-width:575px){
