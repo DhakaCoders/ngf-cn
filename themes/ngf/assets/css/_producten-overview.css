@@ -259,7 +259,7 @@ del span.amount bdi:after{
     span.amount bdi, span.amount bdi span.woocommerce-Price-currencySymbol, 
     ins span.amount bdi, ins span.amount bdi span.woocommerce-Price-currencySymbol, 
     del span.amount bdi, del span.amount bdi span.woocommerce-Price-currencySymbol{
-        font-size: 19px;
+        font-size: 18px;
         line-height: 1.6;
     }
 }
