@@ -195,6 +195,9 @@
     }
 }
 @media(max-width:767px){
+    .home-testimonial-slider-cntlr{
+        padding-bottom: 60px;
+    }
     .home-slogan-cntlr p{
         font-size: 20px;
         line-height: 1.35;
