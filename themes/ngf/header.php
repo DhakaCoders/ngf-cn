@@ -177,7 +177,7 @@
   </svg>
 
 </head>
-<body class="">
+<body <?php body_class(); ?>>
 <div class="bdoverlay"></div>
 <header class="header">
   <span class="hdr-white-skew"></span>

@@ -59,8 +59,7 @@ if ( woocommerce_product_loop() ) {
 	woocommerce_product_loop_start();
 
 	if ( wc_get_loop_prop( 'total' ) ) {
-		$total = wc_get_loop_prop( 'total' );
-		$i = 1;
+		wc_get_loop_prop( 'total' );
 		while ( have_posts() ) {
 			the_post();
 
@@ -70,11 +69,6 @@ if ( woocommerce_product_loop() ) {
 			do_action( 'woocommerce_shop_loop' );
 
 			wc_get_template_part( 'content', 'product' );
-			if($i == 3 && $total > 3){
-				wc_get_template_part( 'shop', 'cta' );
-			}
-
-		$i++;
 		}
 	}
 

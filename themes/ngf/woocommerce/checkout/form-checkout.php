@@ -52,8 +52,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 	<?php 
 	if ( $checkout->get_checkout_fields() ) :
-		$hdNo_3 = '2';
-		$hdNo_4 = '3';
+
 	?>
 
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
@@ -69,7 +68,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 						<div class="payment-method-crtl">
 							<div id="order_review" class="woocommerce-checkout-review-order">
 							<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>	
-							<h3><?php echo '2'; ?>. <?php esc_html_e( 'Bezorgmethode', 'woocommerce' ); ?></h3>
+							<h3><?php esc_html_e( 'Bezorgmethode', 'woocommerce' ); ?></h3>
 							<div class="shipping-methods">
 								<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
 
@@ -78,10 +77,8 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 								<?php do_action( 'woocommerce_review_order_after_shipping' ); ?>
 							</div>
 							<?php 
-								$hdNo_3 = '3';
-								$hdNo_4 = '4';
 							endif; ?>
-							    <h3><?php echo $hdNo_3; ?> .<?php esc_html_e( 'Betaalmethode', 'woocommerce' ); ?></h3>
+							    <h3><?php esc_html_e( 'Payment method', 'woocommerce' ); ?></h3>
 								<?php do_action( 'woocommerce_checkout_order_review' ); ?>
 							</div>
 							<div class="woocommerce-additional-fields extra-info">	
@@ -95,7 +92,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 								<?php if ( apply_filters( 'woocommerce_enable_order_notes_field', 'yes' === get_option( 'woocommerce_enable_order_comments', 'yes' ) ) ) : ?>
 
-									<h3><?php echo $hdNo_4; ?>. <?php esc_html_e( 'Extra Info', 'woocommerce' ); ?></h3>
+									<h3><?php esc_html_e( 'Extra Info', 'woocommerce' ); ?></h3>
 
 									<div class="woocommerce-additional-fields__field-wrapper">
 										<?php foreach ( $checkout->get_checkout_fields( 'order' ) as $key => $field ) : ?>
@@ -111,9 +108,6 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 							
 							</div>
-							<div class="custom-checkout-btn">
-								<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="Afrekenen" data-value="Afrekenen"><?php esc_html_e( 'Afrekenen', 'woocommerce' ); ?></button>
-							</div>
 						</div>
 						<!-- end payment method -->
 					<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
@@ -122,7 +116,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 			<div class="col-2">
 				
 				<div class="custom-checkout-order-review">
-					<h3 class="order-review-title">5. <?php esc_html_e( 'Overzicht', 'woocommerce' ); ?></h3>
+					<h3 class="order-review-title"><?php esc_html_e( 'Overzicht', 'woocommerce' ); ?></h3>
 					<?php 
 						wc_get_template_part('checkout/review-order');
 						wc_get_template_part('checkout/cbv-form-coupon');
@@ -133,12 +127,13 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 							<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
 							<input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="accept_condition" id="accept_condition" required/>
 								<span class="woocommerce-terms-and-conditions-checkbox-text">
-									Ik geef toestemming voor de verwerking van mijn persoonsgegevens
+									<?php esc_html_e('I consent to the processing of my personal data', 'woocommerce'); ?>
 								</span>
 							</label>
 						</p>
 					</div>
-					<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="Afrekenen" data-value="Afrekenen"><?php esc_html_e( 'Afrekenen', 'woocommerce' ); ?></button>
+					<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="Checkout" data-value="Checkout"><?php esc_html_e( 'Checkout', 'woocommerce' ); ?></button>
+					<p><?php esc_html_e( 'Buy safe & secure', 'woocommerce' ); ?></p>
 				</div>
 			</div>
 		</div>
