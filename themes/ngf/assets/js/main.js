@@ -293,6 +293,29 @@ if( $('li.menu-item-has-children > a').length ){
  });
 }
 
+if(windowWidth <=768){
+  if( $('.clientLogoSlider').length ){
+    $('.clientLogoSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: true,
+      arrows:false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
+  }
+}
+if (windowWidth <= 767) {
+  $('.ftr-top-col h6').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).parent().siblings().find('h6').removeClass('active');
+    $(this).parent().find('.ftr-top-col-menu').slideToggle(300);
+    $(this).parent().siblings().find('.ftr-top-col-menu').slideUp(300);
+  });
+
+}
 
 
   var windowLength = $(window).width();
