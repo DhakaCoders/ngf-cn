@@ -991,6 +991,9 @@ Gallery design
 	#faq-details .dfp-cat-date {
 	    margin-bottom: 35px;
 	}
+	#faq-details .dfp-promo-module {
+	    margin-top: -80px;
+	}
 
 }
 
@@ -1205,6 +1208,9 @@ Gallery design
 	#faq-details .dfp-cat-date {
 	    margin-bottom: 30px;
 	}
+	.back-btn {
+	    padding-bottom: 40px;
+	}
 
 }
 
@@ -1418,6 +1424,11 @@ Gallery design
 	    min-width: auto;
 	    max-width: 100%;
 	    width: 100%;
+	}
+	.back-btn a{
+		min-width: auto;
+		max-width: 100%;
+		width: 100%;
 	}
 	
 }
