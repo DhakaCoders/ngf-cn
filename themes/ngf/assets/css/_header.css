@@ -881,5 +881,7 @@ body.allWork {
 	}
 }
 @media(max-width: 575px){
-	
+	.xs-menu-hdr .hdr-white-skew{
+	    border-bottom: 123px solid #fff;
+	}
 }
