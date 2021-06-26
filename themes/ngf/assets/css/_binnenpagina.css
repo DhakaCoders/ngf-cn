@@ -503,13 +503,19 @@ Gallery design
 	text-transform: capitalize;
 }
 
-.dfpTestimonialSlider .testimonial-grd-item{
+.dfpTestimonialSlider .testimonial-grd-item,
+.dfpBlogSlider .dfp-grd-item,
+.blogDetailsSlider .blogDetialsSlideItem{
 	display: none;
 }
-.dfpTestimonialSlider .testimonial-grd-item:first-child{
+.dfpTestimonialSlider .testimonial-grd-item:first-child,
+.dfpBlogSlider .dfp-grd-item:first-child,
+.blogDetailsSlider .blogDetialsSlideItem:first-child{
 	display: block;
 }
-.dfpTestimonialSlider.slick-initialized .testimonial-grd-item{
+.dfpTestimonialSlider.slick-initialized .testimonial-grd-item,
+.dfpBlogSlider.slick-initialized .dfp-grd-item,
+.blogDetailsSlider.slick-initialized .blogDetialsSlideItem{
 	display: block;
 }
 
@@ -584,6 +590,11 @@ Gallery design
 	padding: 6px 6px;
 	min-width: 110px;
 	text-align: center;
+}
+#blog-details .dfp-cat-date a:hover,
+#faq-details .dfp-cat-date a:hover{
+	background: #000;
+	border-color: #000;
 }
 #blog-details .dfp-cat-date span{
 	display: inline-block;
