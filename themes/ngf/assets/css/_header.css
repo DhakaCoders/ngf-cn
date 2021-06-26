@@ -35,7 +35,7 @@
 .has-banner .header .hdr-socials,
 .has-banner .header .hdr-circle-icon,
 .has-banner .header .hdr-white-skew{
-	display: none;
+	display: none!important;
 }
 .has-banner .hdr-circle-icon{
 	bottom: 0;
@@ -678,6 +678,12 @@ body.allWork {
 		padding-top: 2px;
 		font-size: 10px;
 	}
+	.hdr-circle-icon{
+		height: 90px;
+		width: 90px;
+		border: 15px solid #FFA800;
+		bottom: -11px;
+	}
 }
 @media(max-width: 1399px){
 	.hdr-circle-icon{
@@ -722,6 +728,12 @@ body.allWork {
 	.fl-language-cntlr {
 		margin-left: 10px;
 		padding-left: 5px;
+	}
+	.hdr-circle-icon{
+		height: 83px;
+		width: 83px;
+		border: 12px solid #FFA800;
+		bottom: -11px;
 	}
 	
 	
@@ -869,5 +881,7 @@ body.allWork {
 	}
 }
 @media(max-width: 575px){
-	
+	.xs-menu-hdr .hdr-white-skew{
+	    border-bottom: 123px solid #fff;
+	}
 }
