@@ -330,7 +330,7 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding-bottom: 28px;
 	}
 	.page-entry-header h1{
-		font-size: 45px;
+		font-size: 40px;
 		padding-bottom: 23px;
 	}
 	.sec-heading{
@@ -344,7 +344,7 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 
 @media (max-width: 575px) {
 	.page-entry-header h1{
-		font-size: 40px;
+		font-size: 36px;
 	}
 	.sec-header .sec-title{
 		font-size: 36px;
