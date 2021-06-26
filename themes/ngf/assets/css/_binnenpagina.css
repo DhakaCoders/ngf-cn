@@ -611,6 +611,39 @@ Gallery design
 	padding-bottom: 0;
 }
 
+.blog-details-related-sec,
+.referenties-detials-related-sec{
+	position: relative;
+}
+
+.big-line{
+	position: absolute;
+    width: 831.36px;
+    height: 8px;
+    left: -255.15px;
+    top: 355px;
+    background: #FFA800;
+    transform: rotate(-45deg);
+}
+.mid-line{
+	position: absolute;
+    width: 395.43px;
+    height: 70px;
+    left: -145.46px;
+    top: 505px;
+    background: #FFA800;
+    transform: rotate(-45deg);
+}
+.small-line{
+	position: absolute;
+    width: 301.3px;
+    height: 7px;
+    left: -142.32px;
+    top: 642px;
+    background: #FFA800;
+    transform: rotate(-45deg);
+}
+
 
 
 /*referentied details*/
@@ -759,6 +792,8 @@ Gallery design
 #faq-details .dfp-promo-module{
 	margin-top: -112px;
 }
+
+
 
 
 
