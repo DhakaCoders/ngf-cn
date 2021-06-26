@@ -9,12 +9,9 @@ add_action('woocommerce_before_main_content', 'get_custom_wc_output_content_wrap
 add_action('woocommerce_after_main_content', 'get_custom_wc_output_content_wrapper_end', 9);
 add_filter( 'woocommerce_show_page_title', '__return_false' );
 function get_custom_wc_output_content_wrapper(){
-
     if(is_shop() OR is_product_category()){ 
         get_template_part('templates/breadcrumbs');
-        echo '<section class="product-page-cntlr"><div class="product-category"><div class="container"><div class="row"><div class="col-md-12">';
-        get_template_part('templates/shop', 'top');
-        echo '<div class="fl-products-cntlr"><div class="fl-product-top">';
+        get_template_part('templates/shop/wrap', 'start');
     }
 
 
@@ -22,9 +19,7 @@ function get_custom_wc_output_content_wrapper(){
 
 function get_custom_wc_output_content_wrapper_end(){
   if(is_shop() OR is_product_category()){
-    echo '</div></div>';
-    echo '</div></div></div></div></section>';
-    get_template_part('templates/shop', 'bottom');
+    get_template_part('templates/shop/wrap', 'end');
   }
 
 }
@@ -690,7 +685,7 @@ include_once(THEME_DIR .'/inc/wc-manage-fields.php');
 /* Custom conditional tag*/
 
 function is_wc_page(){
-    return is_checkout() || is_account_page();
+    return is_checkout() || is_account_page() || is_cart();
 }
 function is_breadcrumbs(){
     return is_checkout() || is_account_page() || is_cart();
