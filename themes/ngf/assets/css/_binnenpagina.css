@@ -254,6 +254,7 @@ Gallery design
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	z-index: 1;
 }
 .cta-small-line{
 	position: absolute;
@@ -282,6 +283,8 @@ Gallery design
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+	z-index: 111;
 }
 .cta-btn a{
 	color: #fff;
@@ -616,7 +619,7 @@ Gallery design
 	position: relative;
 }
 
-.big-line{
+/*.big-line{
 	position: absolute;
     width: 831.36px;
     height: 8px;
@@ -642,7 +645,7 @@ Gallery design
     top: 642px;
     background: #FFA800;
     transform: rotate(-45deg);
-}
+}*/
 
 
 
