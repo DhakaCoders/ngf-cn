@@ -125,7 +125,9 @@ ol li::before {
 }
 
 
-.dfp-text-module p a{
+.dfp-text-module p a,
+.default-page-con ul li a,
+.default-page-con ol li a{
 	text-decoration: underline;
 }
 
@@ -293,6 +295,7 @@ Gallery design
 .cta-btn a{
 	color: #fff;
 	text-transform: uppercase;
+	text-decoration: none;
 	font-weight: 600;
 	letter-spacing: -0.02em;
 	padding-right: 22px;
@@ -595,6 +598,7 @@ Gallery design
 	padding: 6px 6px;
 	min-width: 110px;
 	text-align: center;
+	text-decoration: none;
 }
 #blog-details .dfp-cat-date a:hover,
 #faq-details .dfp-cat-date a:hover{
@@ -773,6 +777,7 @@ Gallery design
 	min-width: 336px;
 	padding-left: 58px;
 	position: relative;
+	text-decoration: none;
 }
 .back-btn a i{
 	position: absolute;
@@ -901,6 +906,13 @@ Gallery design
 	}
 
 
+}
+
+@media(max-width: 1299px){
+	.block-1285{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 @media(max-width: 1199px){

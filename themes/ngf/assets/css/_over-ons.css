@@ -36,6 +36,9 @@
     z-index: 2;
     /*display: inline;*/
 }
+.ovo-grds-des-lft strong {
+    display: inline-block;
+}
 .ovo-full-width-bg-des-heading {
     position: absolute;
     left: 0;
@@ -389,9 +392,6 @@ span.fl-video-play-icon-cntlr{
     .ovo-abs-line-three {
         left: -216.32px;
         top: 452px;
-    }
-    .ovo-faq-slider-heading {
-        margin-bottom: 20px!important;
     }
     .ovo-two-grds-des-module-sec {
         padding-top: 90px;
