@@ -3,7 +3,40 @@
 .home-banner{
 	position: relative;
 	background: #000;
+}
+.hm-rgt-line-cntlr{
+	position: absolute;
+	right: 0;
+	width: 898.45px;
+	height: 100%;
+	
 	overflow: hidden;
+}
+.hm-rgt-xs-line{
+	position: absolute;
+	background: #FFA800;
+	width: 120px;
+	height: 13.81px;
+	right: -24px;
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	top: 110px;
+}
+.hm-rgt-lg-line{
+	position: absolute;
+	width: 898.45px;
+	height: 13.81px;
+	background: #FFA800;
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+
+	top: 288px;
+	right: -163px;
+	
 }
 .home-banner-cntlr{
 	height: 863px;
@@ -18,6 +51,7 @@
     left: 0;
     right: 0;
     z-index: 2;
+    margin-bottom: -1px;
 }
 .hm-bnr-bg-cntlr{
 	width: 729px;
@@ -25,6 +59,7 @@
 	top: 0;
 	right: -282px;
 	bottom: -50px;
+
 }
 .hm-bnr-circle-bg-cntlr{
 	width: 729px;

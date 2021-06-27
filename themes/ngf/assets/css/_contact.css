@@ -284,6 +284,7 @@
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description p a:hover{
 	color: #FFA800;
+    text-decoration: none;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text{
 	width: 100%!important;

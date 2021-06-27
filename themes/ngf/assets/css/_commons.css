@@ -400,6 +400,7 @@ form
 	min-width: 242px;
 	text-align: center;
 	display: inline-block;
+	text-decoration: none;
 }
 .fl-transparent-btn:hover{
 	background: #000000;
@@ -420,6 +421,7 @@ form
 	min-width: 242px;
 	text-align: center;
 	display: inline-block;
+	text-decoration: none;
 }
 .fl-black-btn:hover{
 	background: transparent;
@@ -440,6 +442,7 @@ form
 	min-width: 242px;
 	text-align: center;
 	display: inline-block;
+	text-decoration: none;
 }
 .fl-orange-btn:hover{
 	background: transparent;
