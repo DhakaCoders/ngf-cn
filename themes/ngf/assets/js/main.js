@@ -339,6 +339,8 @@ if (windowWidth <= 767) {
   $(".hdr-white-skew").css('border-left-width', windowWidth);
   $(".ftr-white-skew").css('border-right-width', windowWidth);
   $(".page-bnr-skew").css('border-right-width', windowWidth);
+  $(".hm-bnr-skew").css('border-left-width', windowWidth);
+
   
   $(window).resize(function() { 
     var window2Width = $(window).width();
@@ -350,6 +352,8 @@ if (windowWidth <= 767) {
     $(".hdr-white-skew").css('border-left-width', window2Width);
     $(".ftr-white-skew").css('border-right-width', window2Width);
     $(".page-bnr-skew").css('border-right-width', window2Width);
+    $(".hm-bnr-skew").css('border-left-width', window2Width);
+
   });
 
 
