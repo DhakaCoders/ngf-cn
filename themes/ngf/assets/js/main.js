@@ -300,8 +300,8 @@ if( $('.latestNewsGrdsSlider').length ){
 // contact form-val
 if( $('.contact-form-wrp').length ){
   $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
-    $('.wpforms-field input[required]').parent().addClass('wpforms-has-error');
-    $('.wpforms-field input[required]').addClass('wpforms-error');
+    $('.wpforms-field input[required],.wpforms-field select[required]').parents('.wpforms-field').addClass('wpforms-has-error');
+    $('.wpforms-field input[required],.wpforms-field select[required]').addClass('wpforms-error');
   });
 }
 
