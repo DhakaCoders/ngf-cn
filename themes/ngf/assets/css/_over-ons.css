@@ -199,7 +199,7 @@ span.fl-video-play-icon-cntlr{
     margin: 0 auto;
     text-align: center;
 }
-.ove-grids-cntlr{
+.ovo-grids-cntlr{
     padding-bottom: 20px!important;
     padding-top: 0!important;
 }
@@ -536,8 +536,8 @@ span.fl-video-play-icon-cntlr{
     .ovo-grds-des-rgt {
         padding-left: 0;
     }
-    .ove-grids-cntlr{
-        justify-content: center;
+    .ovo-grids-cntlr{
+       justify-content: center;
     }
     .ovo-full-width-img-sec img{
         display: block;
@@ -585,8 +585,8 @@ span.fl-video-play-icon-cntlr{
     .ovo-full-width-img-sec {
         height: 240px;
     }
-    .ove-grids-cntlr .ovo-grid-item-col{
-        width: 100%;
+    .ovo-grids-cntlr .ovo-grid-item-col{
+     o  width: 100%;
     }
 
 
@@ -613,6 +613,10 @@ span.fl-video-play-icon-cntlr{
     .ovo-full-width-img-sec {
         height: 240px;
     }
+    .ovo-grid-item-col .faq-grid-item {
+        padding: 28px 16px 21px 15px;
+    }
+    
 
 
 

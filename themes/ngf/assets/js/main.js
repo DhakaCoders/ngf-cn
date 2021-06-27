@@ -143,34 +143,7 @@ if( $('.responsive-slider').length ){
 }
 
 
-var swiper = new Swiper('.catagorySlider', {
-    slidesPerView: 1,
-    loop: true,
-    navigation: {
-      nextEl: '.catagorySlider-arrows .swiper-button-next',
-      prevEl: '.catagorySlider-arrows .swiper-button-prev',
-    },
-    breakpoints: {
-       639: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      991: {
-        slidesPerView: 3,
-        spaceBetween: 0,
-      },
-      1199: {
-        loop: false,
-        slidesPerView: 4,
-        spaceBetween: 0,
-      },
-      1920: {
-        loop: false,
-        slidesPerView: 4,
-        spaceBetween: 0,
-      },
-    }
-  });
+
 
 if( $('#mapID').length ){
 var latitude = $('#mapID').data('latitude');
@@ -402,6 +375,7 @@ if( $('.blogDetailsSlider').length ){
       dots: true,
       infinite: false,
       autoplay: false,
+      arrows: false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 3,
@@ -436,6 +410,7 @@ if( $('.blogDetailsSlider').length ){
           dots: true,
           infinite: false,
           autoplay: false,
+          arrows: false,
           autoplaySpeed: 4000,
           speed: 700,
           slidesToShow: 1,
@@ -450,6 +425,7 @@ if( $('.blogDetailsSlider').length ){
       dots: true,
       infinite: false,
       autoplay: false,
+      arrows: false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 2,

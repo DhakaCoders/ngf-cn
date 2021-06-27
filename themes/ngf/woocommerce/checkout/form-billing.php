@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php else : ?>
 
-		<h3>1. <?php esc_html_e( 'Persoonlijke gegevens', 'woocommerce' ); ?></h3>
+		<h3><?php esc_html_e( 'Personal details', 'woocommerce' ); ?></h3>
 
 	<?php endif; ?>
 
