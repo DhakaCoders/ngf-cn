@@ -11,6 +11,8 @@ body.woocommerce-checkout #vat_number_field,
 .custom-checkout-order-review .form-row{
     padding-left:0px!important;
     padding-right:0px!important;
+    padding-top:0!important;
+    padding-bottom:0!important;
 }
 
 body.woocommerce-account .woocommerce form .form-row-first,
@@ -49,7 +51,7 @@ body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#b
 body.woocommerce-account .woocommerce form .form-row,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
 body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 body.woocommerce-account .woocommerce input[type="number"]::palcholder,
@@ -102,18 +104,9 @@ body.woocommerce-account .woocommerce form .form-row label,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label,
 body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row label,
 body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper label{
-    padding-bottom: 12px;
-    display: inline-block;
-    text-transform: uppercase;
+    color:#000000;
 }
 
-body.woocommerce-account .woocommerce form .form-row label, 
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label,
-body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row label,
-body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper label{
-    color: #2C113E;
-    font-weight:700;
-}
 /*  ----------------------- checkbox-desigh -----------------------------  */
 
 
@@ -265,7 +258,26 @@ body.woocommerce-account .woocommerce button[type=submit],
 body.woocommerce-account .woocommerce button[type=button]{
     line-height: 1;
 }
+
+/* ------------------------- All Heading Design ------------------------------------*/
+body.woocommerce-account .woocommerce .u-column1 h4, body.woocommerce-account .woocommerce .u-column2 h4{
+    text-transform:uppercase;
+    font-size:40px;
+    line-height:1.15;
+}
+
+
+
+
 /* ---------------------- my account login ragister page---------------------------*/
+body.woocommerce-account .page-title h1{
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid #ECF1F4;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+    display:none;
+}
 body.account-login-page #login_register #customer_login{
     display: flex;
     width: 100%;
@@ -281,13 +293,13 @@ body.woocommerce-account .woocommerce .u-column2.col-2{
 body.account-login-page #login_register #customer_login .u-column1{
     flex: initial;
     order: 2;
-    width:49%!important;
+    width: 42.5%!important;
 }
 body.account-login-page #login_register #customer_login .u-column2{
     flex: initial;
     order: 1;
-    padding-right: 25px;
-    width:51%!important;
+    padding-right: 152px;
+    width: 57.5%!important;
 }
 body.account-login-page #login_register #customer_login .u-column1 h4 + div{
     padding-bottom: 33px;
@@ -309,14 +321,38 @@ body.woocommerce-account .login-register-wrap a:hover{
     color: #D9534F;
 }
 body.woocommerce-account #login_register #customer_login .u-column2 .signup-notification p{
-    margin-bottom: 24px;
+    margin-bottom: 21px;
+    line-height: 1.5;
 }
-body.woocommerce-account .woocommerce .u-column1 h4, body.woocommerce-account .woocommerce .u-column2 h4{
-    text-transform:uppercase;
+body.woocommerce-account .woocommerce-form{
+       border: none;
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0;
+    padding-top: 0;
+    border-radius: 0px;
 }
-
-
-
+body.woocommerce-account .woocommerce button[type=submit].woocommerce-form-register__submit,
+body.woocommerce-account .woocommerce button[type=submit].woocommerce-form-login__submit{
+    margin-top:16px;
+}
+body.woocommerce-account .woocommerce-form .woocommerce-LostPassword{
+    display:none;
+}
+.woocommerce form .show-password-input,.woocommerce-page form .show-password-input{
+    width: 16px;
+    height: 25px;
+    margin-top: 0!important;
+    top: 11px;
+    right: 12px;
+    display: inline-block;
+}
+.woocommerce form .show-password-input:after, 
+.woocommerce-page form .show-password-input:after{
+    left: 0!important;
+    top: 0!important;
+    margin-left: 0!important;
+}
 
 
 
@@ -399,15 +435,7 @@ body.woocommerce-checkout .checkout-page-title h1{
 body.woocommerce-account .register-field-error{
     margin-bottom:50px;
 }
-body.woocommerce-account .woocommerce-form{
-    border:none;
-    margin:0;
-    border-top: 1px solid #ECF1F4;
-    padding-left:0px;
-    padding-right: 0;
-    padding-top:22px;
-    border-radius:0px;
-}
+
 
 .woocommerce-billing-fields__field-wrapper .form-row#billing_salutation_field,
 .woocommerce-billing-fields__field-wrapper .form-row#billing_order_type_field{
@@ -464,21 +492,13 @@ body.woocommerce-account .login-info-crtl .login-info-inr .loginInfoSlideItem .l
 body.woocommerce-account .default-page-con p{
     margin-bottom:15px;
 }
-body.woocommerce-account .woocommerce-form .woocommerce-LostPassword{
-    padding-left: 3px;
-}
+
 body.woocommerce-account .woocommerce .u-column1.col-1, 
 body.woocommerce-account .woocommerce .u-column2.col-2{
     padding-right: 0;
     padding-left:0;
 }
-body.woocommerce-account .page-title h1{
-    text-transform: uppercase;
-    letter-spacing: -0.02em;
-    border-bottom: 1px solid #ECF1F4;
-    padding-bottom: 30px;
-    margin-bottom: 70px;
-}
+
 
 body.account-login-page .login-btm-section{
     position: relative;
@@ -520,9 +540,7 @@ body.woocommerce-orders .page-grd-sec-wrp{
 .woocommerce form .form-row .required{
     font-size: 13px;
 }
-.woocommerce form .show-password-input,.woocommerce-page form .show-password-input{
-    margin-top: 3px;
-}
+
 .woocommerce-password-strength.bad {
     background-color: #D9534F;
     border-color: #D9534F;

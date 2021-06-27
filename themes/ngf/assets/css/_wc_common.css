@@ -1,4 +1,4 @@
-/* wc-all-buttom-design */
+/* -----------------wc-all-buttom-design ---------------------- */
 .woocommerce .checkout-button.button,
 .woocommerce #respond input#submit, 
 .woocommerce a.button, 
@@ -52,6 +52,14 @@ body.single-product .pro-cart-btn button:hover svg{
 	fill: #F3BF00!important;
 }
 
+/*  -------------------------- All Wc label Design ------------------------------- */
+.woocommerce form .form-row label{
+    line-height: 1.4;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #000000;
+}
 /*.woocommerce #respond input#submit, 
 .woocommerce a.button, 
 .woocommerce button.button, 
@@ -594,12 +602,7 @@ input.select2-search__field{
 	width: 50%!important;
 	max-width: 100%;
 }
-.woocommerce form .form-row label{
-    line-height: 1.2;
-    font-size: 16px;
-    padding-bottom: 5px;
-    margin-bottom: 0;
-}
+
 .u-column2.col-2.woocommerce-Address{
 
 }

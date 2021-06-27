@@ -111,6 +111,9 @@ body.werk-bdff.sky-btm-bg-cntlr {
 .dn{
 	/*display: none!important;*/
 }
+.werk-grid-itm-heading a{
+	text-decoration: none;
+}
 
 
 
@@ -120,18 +123,12 @@ body.werk-bdff.sky-btm-bg-cntlr {
 
 
 @media (max-width: 1699px){
-	.werk-two-grds-sec {
-	    padding: 55px 0;
-	}
 	.werk-one-grds-sec {
 	    padding: 60px 0;
 	}
 
 }
 @media (max-width: 1499px){
-	.werk-two-grds-sec {
-	    padding: 40px 0;
-	}
 	.werk-steps-grid-sec {
 	    padding: 70px 0;
 	}
