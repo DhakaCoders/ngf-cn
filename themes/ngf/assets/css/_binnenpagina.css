@@ -905,6 +905,13 @@ Gallery design
 
 }
 
+@media(max-width: 1299px){
+	.block-1285{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
 @media(max-width: 1199px){
 	.block-850{
 		padding-left: 15px;
