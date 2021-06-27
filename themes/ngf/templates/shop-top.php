@@ -1,4 +1,3 @@
-      
 <div class="ballonvaarten-overzicht-page-entry-hdr">
   <div class="contact-form-dsc-wrp">
     <div class="page-entry-header"> 
