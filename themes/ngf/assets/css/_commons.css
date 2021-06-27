@@ -366,15 +366,21 @@ form
 
 /*slider break fix*/
 
-.hmProdctGrdsSlider .hmProdctGrdsSlideItme{
+.hmProdctGrdsSlider .hmProdctGrdsSlideItme,
+.plansGrdsSlider .plans-grid-slider-item,
+.latestNewsGrdsSlider .latest-news-grid-slider-item{
 	display: none;
 }
 
-.hmProdctGrdsSlider .hmProdctGrdsSlideItme:first-child{
+.hmProdctGrdsSlider .hmProdctGrdsSlideItme:first-child,
+.plansGrdsSlider .plans-grid-slider-item:first-child,
+.latestNewsGrdsSlider .latest-news-grid-slider-item:first-child{
 	display: none;
 }
 
-.hmProdctGrdsSlider.slick-initialized .hmProdctGrdsSlideItme{
+.hmProdctGrdsSlider.slick-initialized .hmProdctGrdsSlideItme,
+.plansGrdsSlider.slick-initialized .plans-grid-slider-item,
+.latestNewsGrdsSlider.slick-initialized .latest-news-grid-slider-item{
 	display: block;
 }
 
