@@ -449,6 +449,7 @@ Gallery design
 	margin-right: -9px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 .fl-btn{
@@ -507,17 +508,14 @@ Gallery design
 }
 
 .dfpTestimonialSlider .testimonial-grd-item,
-.dfpBlogSlider .dfp-grd-item,
 .blogDetailsSlider .blogDetialsSlideItem{
 	display: none;
 }
 .dfpTestimonialSlider .testimonial-grd-item:first-child,
-.dfpBlogSlider .dfp-grd-item:first-child,
 .blogDetailsSlider .blogDetialsSlideItem:first-child{
 	display: block;
 }
 .dfpTestimonialSlider.slick-initialized .testimonial-grd-item,
-.dfpBlogSlider.slick-initialized .dfp-grd-item,
 .blogDetailsSlider.slick-initialized .blogDetialsSlideItem{
 	display: block;
 }
