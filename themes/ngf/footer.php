@@ -1,6 +1,23 @@
+<?php 
+  $logoObj = get_field('ftlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+  $address = get_field('address', 'options');
+  $gmurl = get_field('url', 'options');
+  $telefoon = get_field('telefoon', 'options');
+  $email = get_field('emailadres', 'options');
+  $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
+  $smedias = get_field('social_media', 'options');
+  $ftgalerij = get_field('ft_galerij', 'options');
+  $copyright_text = get_field('copyright_text', 'options');
+  $usps = get_field('usps', 'options');
+?>
 <footer class="footer-wrp">
   <span class="ftr-white-skew"></span>
-  <span class="ftr-right-angle-line">
+  <span class="ftr-right-angle-line hide-sm">
     <i>
       <svg class="frt-rt-line-icon" width="73" height="95" viewBox="0 0 73 95" fill="#FFA800">
       <use xlink:href="#frt-rt-line-icon"></use> </svg>
@@ -17,55 +34,23 @@
             </div>
 
             <div class="ftr-logo">
-              <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/ftr-logo.svg" alt=""></a>
+              <a href="<?php echo esc_url(home_url('/')); ?>">
+                <?php echo $logo_tag; ?>
+              </a>
             </div>
-
-            <div class="client-logo-cntlr">
-              <ul class="reset-list">
-                <li>
-                  <div class="client-logo">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-001.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-002.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-003.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-001.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-002.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-003.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-001.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-002.png" alt="">
-                  </div>
-                </li>
-              </ul>
+            <?php if( $ftgalerij ): ?>
+            <div class="client-logo-cntlr clientLogoSlider">
+              <?php foreach( $ftgalerij as $ftgalID ): ?>
+              <div class="client-logo-item">
+                <div class="client-logo">
+                  <?php echo cbv_get_image_tag($ftgalID); ?>
+                </div>
+              </div>
+              <?php endforeach; ?>
             </div>
+            <?php endif; ?>
 
-            <div class="breadcrumb-cntlr">
+            <div class="breadcrumb-cntlr hide-sm">
               <ul class="reset-list clearfix">
                 <li>
                   <a href="#">
@@ -84,76 +69,83 @@
             <div class="ftr-top-col-cnlr clearfix">
 
               <div class="ftr-top-col ftr-top-col-1">
-                <h6 class="ftr-top-col-title fl-h6">NAVIGATION</h6>
+                <h6 class="ftr-top-col-title fl-h6"><?php _e( 'NAVIGATION', 'ngf' ); ?></h6>
                 <div class="ftr-top-col-menu">
-                  <ul class="reset-list">
-                    <li><a href="#">Webshop</a></li>
-                    <li><a href="#">Over ons</a></li>
-                    <li><a href="#">Online coaching</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Werkwijze</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Transformaties</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
+                  <?php 
+                    $fmenuOptions1 = array( 
+                        'theme_location' => 'cbv_fta_menu', 
+                        'menu_class' => 'reset-list',
+                        'container' => '',
+                        'container_class' => ''
+                      );
+                    wp_nav_menu( $fmenuOptions1 );
+                  ?>
                 </div>
               </div>
 
               <div class="ftr-top-col ftr-top-col-2">
-                <h6 class="ftr-top-col-title fl-h6">NAVIGATION</h6>
+                <h6 class="ftr-top-col-title fl-h6"><?php _e( 'NAVIGATION', 'ngf' ); ?></h6>
                 <div class="ftr-top-col-menu">
-                  <ul class="reset-list">
-                    <li><a href="#">Coaching</a></li>
-                    <li><a href="#">Comboschema</a></li>
-                    <li><a href="#">Trainingsschema</a></li>
-                    <li><a href="#">Vrijblijvend gesprek</a></li>
-                    <li><a href="#">Voedingsschema</a></li>
-                  </ul>
+                  <?php 
+                    $fmenuOptions2 = array( 
+                        'theme_location' => 'cbv_ftb_menu', 
+                        'menu_class' => 'reset-list',
+                        'container' => '',
+                        'container_class' => ''
+                      );
+                    wp_nav_menu( $fmenuOptions2 );
+                  ?>
                 </div>
               </div>
 
               <div class="ftr-top-col ftr-top-col-3">
-                <h6 class="ftr-top-col-title fl-h6">CONTACT</h6>
+                <h6 class="ftr-top-col-title fl-h6 hide-sm"><?php _e( 'CONTACT', 'ngf' ); ?></h6>
                 <div class="ftr-top-col-desc">
-                  <div class="ftr-top-col-tell">
-                    <a href="tel: +33877554332">+33 877 554 332</a>
-                  </div>
-                  <div class="ftr-top-col-mail">
-                    <a href="mailto: info@naturalgrindersfitness.com">info@naturalgrindersfitness.com</a>
-                  </div>
-                  <div class="ftr-top-col-socials">
+                  <?php 
+                    if( !empty($telefoon) ) printf('<div class="ftr-top-col-tell"><a href="tel:%s">%s</a></div>', phone_preg($telefoon),  $telefoon); 
+                    if( !empty($email) ) printf('<div class="ftr-top-col-mail"><a href="mailto:%s">%s</a></div> ', $email, $email);  
+                  ?>
+                  <div class="ftr-top-col-socials hide-sm">
                     <ul class="reset-list">
+                      <?php if( !empty($smedias['facebook_url']) ): ?>
                       <li>
-                        <a target="_blank" href="#">
+                        <a target="_blank" href="<?php echo $smedias['facebook_url']; ?>">
                           <i>
                             <svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
                             <use xlink:href="#facebook-icon"></use> </svg>
                           </i>
                         </a>
                       </li>
+                      <?php endif; ?>
+                      <?php if( !empty($smedias['twitter_url']) ): ?>
                       <li>
-                        <a target="_blank" href="#">
+                        <a target="_blank" href="<?php echo $smedias['twitter_url']; ?>">
                           <i>
                             <svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
                             <use xlink:href="#twiter-icon"></use> </svg>
                           </i>
                         </a>
                       </li>
+                      <?php endif; ?>
+                      <?php if( !empty($smedias['linkedin_url']) ): ?>
                       <li>
-                        <a target="_blank" href="#">
+                        <a target="_blank" href="<?php echo $smedias['linkedin_url']; ?>">
                           <i>
                             <svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
                             <use xlink:href="#linkden-icon"></use> </svg>
                           </i>
                         </a>
                       </li>
+                      <?php endif; ?>
+                      <?php if( !empty($smedias['instagram_url']) ): ?>
                       <li>
-                        <a target="_blank" href="#">
+                        <a target="_blank" href="<?php echo $smedias['instagram_url']; ?>">
                           <i><svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
                             <use xlink:href="#instagram-icon"></use></svg>
                           </i>
                         </a>
                       </li>
+                      <?php endif; ?>
                     </ul>
                   </div>
                 </div>
@@ -171,16 +163,19 @@
       <div class="col-md-12">
         <div class="ftr-btm-cntlr">
           <div class="ftr-copyright">
-            <p>Copyright © 2021 Natural Grinders Fitness</p>
+            <?php if( !empty( $copyright_text ) ) printf( '<p>%s</p>', $copyright_text); ?> 
           </div>
 
           <div class="ftr-btm-menu">
-            <ul class="reset-list">
-              <li><a href="#">Sitemap</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">Algemene voorwaarden</a></li>
-            </ul>
+            <?php 
+              $copyrightmenu = array( 
+                  'theme_location' => 'cbv_copyright_menu', 
+                  'menu_class' => 'reset-list',
+                  'container' => '',
+                  'container_class' => ''
+                );
+              wp_nav_menu( $copyrightmenu );
+            ?> 
           </div>
 
           <div class="ftr-developed-by">
@@ -192,21 +187,6 @@
     </div> 
   </div> 
 </footer>
-
-<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/popper.min.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/bootstrap.min.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/bootstrap-select.min.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/fancybox3/dist/jquery.fancybox.min.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/slick.slider/slick.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/swiper/swiper-bundle.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/jquery.matchHeight-min.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/app.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/wow.min.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/main.js"></script>
-
+<?php wp_footer(); ?>
 </body>
 </html>

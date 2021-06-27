@@ -10,7 +10,6 @@ add_action('woocommerce_after_main_content', 'get_custom_wc_output_content_wrapp
 add_filter( 'woocommerce_show_page_title', '__return_false' );
 function get_custom_wc_output_content_wrapper(){
     if(is_shop() OR is_product_category()){ 
-        get_template_part('templates/breadcrumbs');
         get_template_part('templates/shop/wrap', 'start');
     }
 
@@ -62,12 +61,6 @@ if (!function_exists('add_shorttext_below_title_loop')) {
     function add_shorttext_below_title_loop() {
         get_template_part('templates/shop/loop');  
     }
-}
-//add_filter( 'woocommerce_get_price_html', 'njengah_text_before_price' );
-function njengah_text_before_price($price){
-    $text_to_add_before_price  = 'VANAF'; //change text in bracket to your preferred text         
-    return $text_to_add_before_price . $price   ;
-          
 }
 function loop_qty_input(){
 
@@ -179,16 +172,16 @@ function bryce_id_add_to_cart_text( $default ) {
           $label  = __('Reserveer uw vlucht', 'woocommerce');
       break;
       default :
-          $label  = __('In Winkelmand', 'woocommerce');
+          $label  = __('BUY NOW', 'woocommerce');
       break;
       }
     return __( $label, THEME_NAME );
 }
 add_action( 'cbv_related_product', 'woocommerce_output_related_products');
-//add_action( 'cbv_product_review', 'get_review_form');
+add_action( 'cbv_product_review', 'get_review_form');
 function get_review_form( $default ) {
     //wc_get_template_part('single-product/review');
-    get_template_part('templates/wc', 'review');
+    get_template_part('templates/customer', 'review');
 }
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');
 function misha_adv_product_options(){

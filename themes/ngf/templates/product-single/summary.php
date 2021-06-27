@@ -11,6 +11,9 @@
         <div class="fl-pro-grd-price">
             <?php echo $product->get_price_html(); ?>                                                     
         </div>
+        <div class="price-quentity-ctrl">
+          <?php woocommerce_template_single_add_to_cart();?>
+        </div>
         <?php if( !empty($long_desc) ){ ?>
             <div class="long-desc">
             <h2>Beschrijving</h2>';
@@ -20,8 +23,5 @@
     </div>
     <div class="meta-crtl">
 
-    </div>
-    <div class="price-quentity-ctrl">
-      <?php woocommerce_template_single_add_to_cart();?>
     </div>
 </div>
