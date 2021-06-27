@@ -18,6 +18,11 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+
+
+<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
   <svg style="display: none;">
     <!-- <svg class="id-name" width="16" height="16" viewBox="0 0 16 16" fill="#FF5C26">
       <use xlink:href="#id-name"></use> </svg> -->
@@ -189,10 +194,7 @@
 
 
   </svg>
-
-<?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
+  
 <section class="home-messege">
 <div class="container">
   <div class="row">
