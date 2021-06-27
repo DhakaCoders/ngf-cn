@@ -326,6 +326,9 @@
 	color: #e48aa4;
 }
 
+
+
+
 /*
 ------------------
  Error Text Css
@@ -388,6 +391,14 @@
 
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-field-label{
     color:#D61D1D!important;
+}
+
+form .bootstrap-select .wpforms-error + button{
+    border-color:#D61D1D!important;
+    color:#D61D1D!important;
+}
+form .bootstrap-select .wpforms-error + button.dropdown-toggle::before{
+        background-image: url(../images/select-down-arrow-val.svg);
 }
 /*
 placeholder
