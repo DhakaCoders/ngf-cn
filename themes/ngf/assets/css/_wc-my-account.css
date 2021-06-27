@@ -1,4 +1,7 @@
 
+/*wc-page-input-field-design*/
+
+
 body.woocommerce-account .woocommerce form .form-row,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
 body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row,
@@ -9,6 +12,258 @@ body.woocommerce-checkout #vat_number_field,
     padding-left:0px!important;
     padding-right:0px!important;
 }
+
+body.woocommerce-account .woocommerce form .form-row-first,
+body.woocommerce-account .woocommerce form .form-row-last, 
+body.woocommerce-account .woocommerce-page form .form-row-first,
+body.woocommerce-account .woocommerce-page form .form-row-last,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-first,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-last,
+body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row-first,
+body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row-last{
+    width: 50%;
+}
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_postcode_field,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_city_field,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_address_1_field,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_house_field{
+    width: 50%;
+    float: left;
+    clear: none;
+}
+
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_city_field,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_house_field{
+    padding-left: 13px!important;
+}
+body.woocommerce-account .woocommerce form .form-row-first,
+body.woocommerce-account .woocommerce-page form .form-row-first
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-first,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_first_name_field,
+body.woocommerce-checkout .woocommerce-shipping-fields .form-row-first,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_postcode_field,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_address_1_field{
+    padding-right: 13px!important;
+}
+
+body.woocommerce-account .woocommerce form .form-row,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
+body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
+    margin-bottom: 14px;
+}
+
+/*body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]::placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]::placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]::placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]::placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]::placeholder{
+    color:#9EA5AB!important;
+    opacity: 1;
+}
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]::-webkit-input-placeholder{
+    color:#9EA5AB!important;
+    opacity: 1;
+}
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]::-moz-placeholder{
+    color:#9EA5AB!important;
+    opacity: 1;
+}
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]:-ms-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]:-ms-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]:-ms-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]:-ms-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]:-ms-input-placeholder{
+    color:#9EA5AB!important;
+    opacity: 1;
+}
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]:-moz-placeholder{
+    color:#9EA5AB!important;
+    opacity: 1;
+}*/
+body.woocommerce-account .woocommerce input[type="number"]::palcholder,
+body.woocommerce-account .woocommerce input[type="text"]::placeholder, 
+body.woocommerce-account .woocommerce input[type="email"]::placeholder,
+body.woocommerce-account .woocommerce input[type="tel"]::placeholder, 
+body.woocommerce-account .woocommerce input[type="password"]::placeholder, 
+body.woocommerce-account .woocommerce textarea::placeholder{
+    color:#909BA5!important;
+    opacity:1;
+    text-transform: capitalize;
+}
+body.woocommerce-account .woocommerce input[type="text"]:-moz-placeholder, 
+body.woocommerce-account .woocommerce input[type="number"]:-moz-placeholder, 
+body.woocommerce-account .woocommerce input[type="email"]:-moz-placeholder,
+body.woocommerce-account .woocommerce input[type="tel"]:-moz-placeholder, 
+body.woocommerce-account .woocommerce input[type="password"]:-moz-placeholder, 
+body.woocommerce-account .woocommerce textarea:-moz-placeholder{
+    color:#909BA5!important;
+    opacity:1;
+    text-transform: capitalize;
+}
+body.woocommerce-account .woocommerce input[type="text"]:-ms-input-placeholder, 
+body.woocommerce-account .woocommerce input[type="number"]:-ms-input-placeholder, 
+body.woocommerce-account .woocommerce input[type="email"]:-ms-input-placeholderr,
+body.woocommerce-account .woocommerce input[type="tel"]:-ms-input-placeholder, 
+body.woocommerce-account .woocommerce input[type="password"]:-ms-input-placeholder, 
+body.woocommerce-account .woocommerce textarea:-ms-input-placeholderr{
+    color:#909BA5!important;
+    opacity:1;
+    text-transform: capitalize;
+}
+body.woocommerce-account .woocommerce input[type="text"]::-moz-placeholder, 
+body.woocommerce-account .woocommerce input[type="number"]::-moz-placeholder, 
+body.woocommerce-account .woocommerce input[type="email"]::-moz-placeholder,
+body.woocommerce-account .woocommerce input[type="tel"]::-moz-placeholder, 
+body.woocommerce-account .woocommerce input[type="password"]::-moz-placeholder, 
+body.woocommerce-account .woocommerce textarea::-moz-placeholder{
+    color:#909BA5!important;
+    opacity:1;
+    text-transform: capitalize;
+}
+body.woocommerce-account .woocommerce input[type="text"]::-webkit-input-placeholder,
+body.woocommerce-account .woocommerce input[type="number"]::-webkit-input-placeholder, 
+body.woocommerce-account .woocommerce input[type="email"]::-webkit-input-placeholder,
+body.woocommerce-account .woocommerce input[type="tel"]::-webkit-input-placeholder,
+body.woocommerce-account .woocommerce input[type="password"]::-webkit-input-placeholder,
+body.woocommerce-account .woocommerce textarea::-webkit-input-placeholder{
+    color:#909BA5!important;
+    opacity:1;
+    text-transform: capitalize;
+}
+/*body.account-login-page .woocommerce input[type="text"],
+body.account-login-page .woocommerce input[type="email"], 
+body.account-login-page .woocommerce input[type="tel"], 
+body.account-login-page .woocommerce input[type="password"], 
+body.account-login-page .woocommerce textarea{
+    border-radius:3px;
+}*/
+
+
+/* checkbox-desigh */
+
+
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before,
+.shipping-methods .woocommerce-shipping-methods li label:before,
+#billing_order_type_field span.woocommerce-input-wrapper label:before,
+#billing_salutation_field span.woocommerce-input-wrapper label:before{
+    left: 23px;
+    background: #1DB4B2!important;
+}
+#billing_order_type_field span.woocommerce-input-wrapper label:before,
+#billing_salutation_field span.woocommerce-input-wrapper label:before{
+    background-color:#AC6008!important;
+}
+.woocommerce-input-wrapper span .radio-custom:after,
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before,
+.shipping-methods .woocommerce-shipping-methods li label:before,
+#billing_order_type_field span.woocommerce-input-wrapper label:before,
+#billing_salutation_field span.woocommerce-input-wrapper label:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: none;
+    top:23px; 
+}
+.shipping-methods .woocommerce-shipping-methods li input[type=hidden] + label:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block!important;
+}
+.shipping-methods .woocommerce-shipping-methods li input[type=hidden] + label:after{
+    border-color: #2285E3!important;
+}
+
+
+.woocommerce .woocommerce-widget-layered-nav-list .radio-btn.woocommerce-widget-layered-nav-list__item--chosen a::after{
+    display: none;
+}
+
+
+
+
+/* radio-button-design */
+
+.woocommerce-input-wrapper span .radio-custom:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #1DB4B2;
+    border-radius: 50%;
+    display: none;
+    left:3px;
+    top:3px;
+}
+.radio-custom,
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:after,
+.shipping-methods .woocommerce-shipping-methods li label:after,
+#billing_order_type_field span.woocommerce-input-wrapper label:after,
+#billing_salutation_field span.woocommerce-input-wrapper label:after,
+#billing_salutation_field span.woocommerce-input-wrapper label:after{
+    height: 18px;
+    position: absolute;
+    width: 18px;
+    border-radius: 50%;
+    border: 1px solid #BFBFBF;;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    margin-top: -1px;
+}
+.container input[type=radio]:checked + .radio-custom{
+    border: 1px solid #1DB4B2!important;
+}
+.woocommerce-input-wrapper span input[type=radio]:checked ~ .radio-custom:after{
+    display: block;
+}
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input[type=radio],
+.shipping-methods .woocommerce-shipping-methods li input[type=radio]{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+    margin:0!important;
+}
+.woocommerce-input-wrapper span input[type=radio]:checked + .radio-custom:after,
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input[type=radio]:checked ~  label:before,
+body.woocommerce-checkout .shipping-methods .woocommerce-shipping-methods li input[type=radio]:checked ~ label:before,
+#billing_order_type_field span.woocommerce-input-wrapper input[type="radio"]:checked + label:before,
+#billing_salutation_field span.woocommerce-input-wrapper input[type="radio"]:checked + label:before{
+    display: block!important;
+}
+
+
+
+
+
+
+
+
 .woocommerce-account .breadcrumb-sec,
 .woocommerce-checkout .breadcrumb-sec{
     display: none;
@@ -32,7 +287,12 @@ body.woocommerce-checkout #vat_number_field,
 body.woocommerce-checkout .custom-checkout-order-review table.shop_table{
     margin-bottom: 12px;
 }
+
+
+
 /* ------------------- my account  deshboard-----------------------*/
+
+
 body.woocommerce-account.loggedin-deshboard-crtl .deshboard-inner img{
     border-radius: 3px;
 }
@@ -54,9 +314,7 @@ body.woocommerce-account .account-page-title h1 + p{
 body.woocommerce-account .woocommerce-account-grds-cntlr{
     margin-bottom: 75px;
 }
-/*body.woocommerce-orders .woocommerce-account-grds-cntlr{*/
-/*    margin-bottom:0px;*/
-/*}*/
+
 body.woocommerce-account .woocommerce-account-grds-cntlr .woocommerce-notices-wrapper{
     display: none;
 }
@@ -426,46 +684,7 @@ body.woocommerce-edit-account .woocommerce-EditAccountForm > p button[type="subm
     content: "";
     clear: both;
 }
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]::placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]::placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]::placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]::placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]::placeholder{
-    color:#9EA5AB!important;
-    opacity: 1;
-}
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]::-webkit-input-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]::-webkit-input-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]::-webkit-input-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]::-webkit-input-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]::-webkit-input-placeholder{
-    color:#9EA5AB!important;
-    opacity: 1;
-}
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]::-moz-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]::-moz-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]::-moz-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]::-moz-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]::-moz-placeholder{
-    color:#9EA5AB!important;
-    opacity: 1;
-}
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]:-ms-input-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]:-ms-input-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]:-ms-input-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]:-ms-input-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]:-ms-input-placeholder{
-    color:#9EA5AB!important;
-    opacity: 1;
-}
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]:-moz-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]:-moz-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]:-moz-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]:-moz-placeholder,
-body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]:-moz-placeholder{
-    color:#9EA5AB!important;
-    opacity: 1;
-}
+
 /* ---------------------- my account login ragister page---------------------------*/
 body.woocommerce-account #login_register #customer_login .u-column1{
     flex: initial;
@@ -520,11 +739,7 @@ body.woocommerce-account .woocommerce-form{
     padding-top:22px;
     border-radius:0px;
 }
-body.woocommerce-account .woocommerce form .form-row,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
-body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
-    margin-bottom: 14px;
-}
+
 .woocommerce-billing-fields__field-wrapper .form-row#billing_salutation_field,
 .woocommerce-billing-fields__field-wrapper .form-row#billing_order_type_field{
     margin-bottom:6px!important;
@@ -532,58 +747,7 @@ body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
 .woocommerce-billing-fields__field-wrapper .form-row#billing_salutation_field .woocommerce-input-wrapper label:first-of-type {
     margin-right: 39px;
 }
-body.woocommerce-account .woocommerce input[type="text"]::placeholder, 
-body.woocommerce-account .woocommerce input[type="email"]::placeholder,
-body.woocommerce-account .woocommerce input[type="tel"]::placeholder, 
-body.woocommerce-account .woocommerce input[type="password"]::placeholder, 
-body.woocommerce-account .woocommerce textarea::placeholder{
-    color:#909BA5!important;
-    opacity:1;
-    text-transform: capitalize;
-}
-body.woocommerce-account .woocommerce input[type="text"]:-moz-placeholder, 
-body.woocommerce-account .woocommerce input[type="email"]:-moz-placeholder,
-body.woocommerce-account .woocommerce input[type="tel"]:-moz-placeholder, 
-body.woocommerce-account .woocommerce input[type="password"]:-moz-placeholder, 
-body.woocommerce-account .woocommerce textarea:-moz-placeholder{
-    color:#909BA5!important;
-    opacity:1;
-    text-transform: capitalize;
-}
-body.woocommerce-account .woocommerce input[type="text"]:-ms-input-placeholder, 
-body.woocommerce-account .woocommerce input[type="email"]:-ms-input-placeholderr,
-body.woocommerce-account .woocommerce input[type="tel"]:-ms-input-placeholder, 
-body.woocommerce-account .woocommerce input[type="password"]:-ms-input-placeholder, 
-body.woocommerce-account .woocommerce textarea:-ms-input-placeholderr{
-    color:#909BA5!important;
-    opacity:1;
-    text-transform: capitalize;
-}
-body.woocommerce-account .woocommerce input[type="text"]::-moz-placeholder, 
-body.woocommerce-account .woocommerce input[type="email"]::-moz-placeholder,
-body.woocommerce-account .woocommerce input[type="tel"]::-moz-placeholder, 
-body.woocommerce-account .woocommerce input[type="password"]::-moz-placeholder, 
-body.woocommerce-account .woocommerce textarea::-moz-placeholder{
-    color:#909BA5!important;
-    opacity:1;
-    text-transform: capitalize;
-}
-body.woocommerce-account .woocommerce input[type="text"]::-webkit-input-placeholder 
-body.woocommerce-account .woocommerce input[type="email"]::-webkit-input-placeholder,
-body.woocommerce-account .woocommerce input[type="tel"]::-webkit-input-placeholder,
-body.woocommerce-account .woocommerce input[type="password"]::-webkit-input-placeholder,
-body.woocommerce-account .woocommerce textarea::-webkit-input-placeholder{
-    color:#909BA5!important;
-    opacity:1;
-    text-transform: capitalize;
-}
-body.account-login-page .woocommerce input[type="text"], 
-body.account-login-page .woocommerce input[type="email"], 
-body.account-login-page .woocommerce input[type="tel"], 
-body.account-login-page .woocommerce input[type="password"], 
-body.account-login-page .woocommerce textarea{
-    border-radius:3px;
-}
+
 body.woocommerce-account .login-register-wrap a{
     color: #909BA5;
     text-decoration: underline;
@@ -798,136 +962,8 @@ body.hide-account-title .type-order-format .woocommerce-input-wrapper {
     display: flex;
     width: 273px;
 }
-.radio-custom,
-body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:after,
-.shipping-methods .woocommerce-shipping-methods li label:after,
-#billing_order_type_field span.woocommerce-input-wrapper label:after,
-#billing_salutation_field span.woocommerce-input-wrapper label:after,
-#billing_salutation_field span.woocommerce-input-wrapper label:after{
-    height: 18px;
-    position: absolute;
-    width: 18px;
-    border-radius: 50%;
-    border: 1px solid #BFBFBF;;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    margin-top: -1px;
-}
-body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before,
-.shipping-methods .woocommerce-shipping-methods li label:before,
-#billing_order_type_field span.woocommerce-input-wrapper label:before,
-#billing_salutation_field span.woocommerce-input-wrapper label:before{
-    left: 23px;
-    background: #1DB4B2!important;
-}
-#billing_order_type_field span.woocommerce-input-wrapper label:before,
-#billing_salutation_field span.woocommerce-input-wrapper label:before{
-    background-color:#AC6008!important;
-}
-.woocommerce-input-wrapper span .radio-custom:after,
-body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before,
-.shipping-methods .woocommerce-shipping-methods li label:before,
-#billing_order_type_field span.woocommerce-input-wrapper label:before,
-#billing_salutation_field span.woocommerce-input-wrapper label:before{
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: none;
-    top:23px; 
-}
-.shipping-methods .woocommerce-shipping-methods li input[type=hidden] + label:before{
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: block!important;
-}
-.shipping-methods .woocommerce-shipping-methods li input[type=hidden] + label:after{
-    border-color: #2285E3!important;
-}
-.woocommerce-input-wrapper span input[type=radio]:checked + .radio-custom:after,
-body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input[type=radio]:checked ~  label:before,
-body.woocommerce-checkout .shipping-methods .woocommerce-shipping-methods li input[type=radio]:checked ~ label:before,
-#billing_order_type_field span.woocommerce-input-wrapper input[type="radio"]:checked + label:before,
-#billing_salutation_field span.woocommerce-input-wrapper input[type="radio"]:checked + label:before{
-    display: block!important;
-}
-body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input[type=radio],
-.shipping-methods .woocommerce-shipping-methods li input[type=radio]{
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    z-index: 1;
-    margin:0!important;
-}
-.woocommerce .woocommerce-widget-layered-nav-list .radio-btn.woocommerce-widget-layered-nav-list__item--chosen a::after{
-    display: none;
-}
-.container input[type=radio]:checked + .radio-custom{
-    border: 1px solid #1DB4B2!important;
-}
-.woocommerce-input-wrapper span input[type=radio]:checked ~ .radio-custom:after{
-    display: block;
-}
-.woocommerce-input-wrapper span .radio-custom:after{
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #1DB4B2;
-    border-radius: 50%;
-    display: none;
-    left:3px;
-    top:3px;
-}
-body.woocommerce-account .woocommerce form .form-row-first,
-body.woocommerce-account .woocommerce form .form-row-last, 
-body.woocommerce-account .woocommerce-page form .form-row-first,
-body.woocommerce-account .woocommerce-page form .form-row-last,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-first,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-last,
-body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row-first,
-body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row-last{
-    width: 50%;
-}
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_postcode_field,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_city_field,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_address_1_field,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_house_field{
-    width: 50%;
-    float: left;
-    clear: none;
-}
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_postcode_field,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_address_1_field,{
-    padding-right: 13px!important;
-}
 
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_city_field,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_house_field{
-    padding-left: 13px!important;
-}
-body.woocommerce-account .woocommerce form .form-row-first,
-body.woocommerce-account .woocommerce-page form .form-row-first
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-first,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_first_name_field,
-body.woocommerce-checkout .woocommerce-shipping-fields .form-row-first,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_postcode_field,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_address_1_field{
-    padding-right: 13px!important;
-}
+
 body.woocommerce-checkout .checkout-terms{
     border-top: 1px solid #ECEEEF;
     padding-top: 20px;
@@ -949,20 +985,7 @@ body.woocommerce-checkout  .woocommerce-shipping-fields__field-wrapper .form-row
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_btw_nummer_field{
     padding-left: 13px!important;
 }
-body.woocommerce-account .woocommerce form .form-row select, 
-body.woocommerce-account  .woocommerce-page form .form-row select,
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .selection .select2-selection,
-body.woocommerce-checkout .woocommerce-shipping-fields .selection .select2-selection,
-body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .selection .select2-selection{
-    width: 100%;
-    height: 50px!important;
-    border: 1px solid #ECF1F4!important;
-    color: #707C88;
-    padding: 5px 15px 5px;
-    font-size: 16px;
-    background: #fff;
-    border-radius:6px!important;
-}
+
 body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .select2.select2-container.select2-container--default{
     width:100%!important;
 }

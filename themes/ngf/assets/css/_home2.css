@@ -17,7 +17,7 @@
     vertical-align: baseline;
     margin-right: 10px;
     font-family: 'Work Sans', sans-serif;
-    font-weight:600;
+    font-weight:700;
 }
 
 
@@ -69,7 +69,7 @@
 .latest-news-bg{
     position: absolute;
     left: 0;
-    bottom: 240px;
+    top:46px;
 }
 .plans-grid-item .blog-grid-des{
 	text-align: center;
@@ -147,7 +147,7 @@
     }*/
     
     .latest-news-bg {
-        bottom: 217px;
+        left: -35px;
     }
     .latest-nws-bg {
         width: 450px;
@@ -156,7 +156,7 @@
 }
 @media(max-width:1499px){
     .latest-news-bg {
-        bottom: 275px;
+        left:-64px;
     }
     .latest-nws-bg{
         width: 420px;
@@ -185,13 +185,25 @@
     .latest-news-grid-slider-item{
         padding: 0 8px;
     }
+    .latest-news-bg{
+        left:-95px;
+    }
 }
 @media(max-width:991px){
     .home-slogan-cntlr p{
         line-height: 1.4;
     }
+    .home-slogan{
+        padding-top: 25px;
+    }
+    .latest-news-bg{
+        left:-150px;
+    }
 }
 @media(max-width:767px){
+    .home-testimonial-slider-cntlr{
+        padding-bottom: 60px;
+    }
     .home-slogan-cntlr p{
         font-size: 20px;
         line-height: 1.35;
@@ -206,12 +218,58 @@
         width: 100%;
         margin: 0 auto;
     }
-}
+    .plans-grid-item .blog-grid-des{
+        padding: 30px 10px 44px;
+    }
+    .plans-grid-item .blog-grid-des .bgi-title{
+        margin-bottom:11px;
+    }
+    .plans-grid-item .fl-pro-grd-price{
+        margin-bottom: 10px;
+    }
+    .plans-grid-item .bgi-des{
+        padding-bottom: 27px;
+    }
+    .plans-sec-grids{
+        margin-bottom: 40px!important;
+    }
+    .plans-sec {
+        padding-top: 55px;
+        padding-bottom: 60px;
+    }
+    .latest-news-grid-item .blog-grid-des .bgi-title{
+        margin-bottom: 20px;
+    }
+    .latest-news-grid-item .blog-grid-des .bgi-des{
+        padding-bottom: 23px;
+    }
+    .latest-news-grid-item .blog-grid-des {
+        padding: 30px 28px 35px;
+    }
+    .latest-news-sec-grids{
+        margin-bottom: 27px!important;
+    }
+    .latest-news-sec-cntlr .latest-news-sec-grids ul.slick-dots{
+        margin-top: 28px;
+    }
+    .latest-news-sec{
+        padding-top: 57px;
+        padding-bottom: 60px;
+    }
+    .latest-nws-xs-bg{
+        top:-14px;
+        left:0;
+    }
+    .latest-news-grid-slider-item .blog-grid-item{
+        box-shadow:none;
+    }
 @media(max-width:575px){
     .home-slogan-cntlr p{
         font-size: 18px;
         line-height: 1.3;
     }
 }
-@media(max-width:1199px){}
-@media(max-width:1199px){}
+@media(max-width:479px){
+
+}
+

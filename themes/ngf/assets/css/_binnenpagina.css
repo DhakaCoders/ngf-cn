@@ -118,7 +118,7 @@ ol li::before {
 	position: absolute;
 	left: 0;
 	top: 0;
-	margin-top: 5px;
+	margin-top: 6px;
 }
 .default-page-con p {
     margin-bottom: 25px;
@@ -254,6 +254,7 @@ Gallery design
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	z-index: 1;
 }
 .cta-small-line{
 	position: absolute;
@@ -282,6 +283,8 @@ Gallery design
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+	z-index: 111;
 }
 .cta-btn a{
 	color: #fff;
@@ -446,6 +449,7 @@ Gallery design
 	margin-right: -9px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 .fl-btn{
@@ -503,13 +507,16 @@ Gallery design
 	text-transform: capitalize;
 }
 
-.dfpTestimonialSlider .testimonial-grd-item{
+.dfpTestimonialSlider .testimonial-grd-item,
+.blogDetailsSlider .blogDetialsSlideItem{
 	display: none;
 }
-.dfpTestimonialSlider .testimonial-grd-item:first-child{
+.dfpTestimonialSlider .testimonial-grd-item:first-child,
+.blogDetailsSlider .blogDetialsSlideItem:first-child{
 	display: block;
 }
-.dfpTestimonialSlider.slick-initialized .testimonial-grd-item{
+.dfpTestimonialSlider.slick-initialized .testimonial-grd-item,
+.blogDetailsSlider.slick-initialized .blogDetialsSlideItem{
 	display: block;
 }
 
@@ -585,6 +592,11 @@ Gallery design
 	min-width: 110px;
 	text-align: center;
 }
+#blog-details .dfp-cat-date a:hover,
+#faq-details .dfp-cat-date a:hover{
+	background: #000;
+	border-color: #000;
+}
 #blog-details .dfp-cat-date span{
 	display: inline-block;
 	vertical-align: baseline;
@@ -599,6 +611,39 @@ Gallery design
 #blog-details .default-page-con{
 	padding-bottom: 0;
 }
+
+.blog-details-related-sec,
+.referenties-detials-related-sec{
+	position: relative;
+}
+
+/*.big-line{
+	position: absolute;
+    width: 831.36px;
+    height: 8px;
+    left: -255.15px;
+    top: 355px;
+    background: #FFA800;
+    transform: rotate(-45deg);
+}
+.mid-line{
+	position: absolute;
+    width: 395.43px;
+    height: 70px;
+    left: -145.46px;
+    top: 505px;
+    background: #FFA800;
+    transform: rotate(-45deg);
+}
+.small-line{
+	position: absolute;
+    width: 301.3px;
+    height: 7px;
+    left: -142.32px;
+    top: 642px;
+    background: #FFA800;
+    transform: rotate(-45deg);
+}*/
 
 
 
@@ -707,6 +752,50 @@ Gallery design
 	padding-bottom: 38px;
 }
 
+.back-btn{
+	padding-bottom: 60px;
+}
+.back-btn a{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: 600;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	background: #FFA800;
+	padding: 22px 10px;
+	min-width: 336px;
+	padding-left: 58px;
+	position: relative;
+}
+.back-btn a i{
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	margin-top: -2px;
+}
+/*.back-btn a:hover{
+	background: #000;
+	color: #fff;
+}
+.back-btn a:hover svg{
+	fill: #fff;
+}*/
+.back-btn a:hover i{
+	margin-left: -5px;
+}
+
+#faq-details .dfp-promo-module{
+	margin-top: -112px;
+}
+
+
+
 
 
 
@@ -737,6 +826,9 @@ Gallery design
 	#faq-details .dfp-cat-date {
 	    margin-bottom: 45px;
 	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 28px;
+	}
 
 }
 
@@ -750,6 +842,9 @@ Gallery design
 	.block-1440{
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	.default-page-con h4{
+		font-size: 24px;
 	}
 	
 	
@@ -797,7 +892,9 @@ Gallery design
 	#faq-details .dfp-cat-date {
 	    margin-bottom: 40px;
 	}
-	
+	#referenties-details .bnr-grd-des p{
+		font-size: 27px;
+	}
 
 
 }
@@ -837,6 +934,9 @@ Gallery design
 	}
 	#referenties-details .dfp-promo-module {
 	    margin-top: -130px;
+	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 26px;
 	}
 
 }
@@ -935,6 +1035,31 @@ Gallery design
 	#faq-details .dfp-cat-date {
 	    margin-bottom: 35px;
 	}
+	#faq-details .dfp-promo-module {
+	    margin-top: -80px;
+	}
+	#referenties-details .bnr-grd{
+		display: block;
+		padding-bottom: 45px;
+	    margin-bottom: 40px;
+	}
+	#referenties-details .bnr-grd-img {
+	    width: 100%;
+	    display: flex;
+	    align-items: flex-end;
+	}
+	#referenties-details .bnr-grd-img i{
+		margin-right: 40px;
+	}
+	#referenties-details .bnr-grd-des{
+		width: 100%;
+		padding-left: 0;
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 24px;
+	}
 
 }
 
@@ -968,6 +1093,7 @@ Gallery design
 		margin-bottom: 20px;
 		padding-bottom: 20px;
 		padding-top: 0;
+		border-top: none;
 	}
 	.default-page-con{
 		padding-top: 0;
@@ -1148,6 +1274,12 @@ Gallery design
 	#faq-details .dfp-cat-date {
 	    margin-bottom: 30px;
 	}
+	.back-btn {
+	    padding-bottom: 40px;
+	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 22px;
+	}
 
 }
 
@@ -1322,6 +1454,9 @@ Gallery design
 	#faq-details .dfp-cat-date {
 	    margin-bottom: 25px;
 	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 20px;
+	}
 
 }
 
@@ -1361,6 +1496,14 @@ Gallery design
 	    min-width: auto;
 	    max-width: 100%;
 	    width: 100%;
+	}
+	.back-btn a{
+		min-width: auto;
+		max-width: 100%;
+		width: 100%;
+	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 18px;
 	}
 	
 }

@@ -154,11 +154,11 @@
 
 </head>
 <body class="werk-bdff has-banner sky-btm-bg-cntlr">
-
-<header class="header dn">
+<div class="bdoverlay"></div>
+<header class="header">
   <span class="hdr-white-skew"></span>
-  <span class="hdr-circle-icon"></span>
-  <div class="hdr-socials">
+  <span class="hdr-circle-icon hide-md"></span>
+  <div class="hdr-socials hide-md">
     <span class="hdr-lft-line-icon">
       <i><svg class="hdr-line-icon" width="58" height="95" viewBox="0 0 58 95" fill="#FFA800">
       <use xlink:href="#hdr-line-icon"></use> </svg></i>
@@ -203,7 +203,7 @@
               <a href="#"><img src="assets/images/logo.svg" alt=""></a>
             </div>
           </div>
-          <div class="hdr-lft">
+          <div class="hdr-lft hide-md">
             <nav class="main-nav">
               <ul class="reset-list clearfix">
                 <li class="current-menu-item"><a href="#">Webshop</a></li>
@@ -221,7 +221,7 @@
             </nav>
           </div>
           <div class="hdr-rgt">
-            <nav class="main-nav">
+            <nav class="main-nav hide-md">
               <ul class="reset-list clearfix">
                 <li><a href="#">Over ons</a></li>
                 <li class="menu-item-has-children">
@@ -237,7 +237,7 @@
               </ul>
             </nav>
             <div class="hdr-icons-cntlr">
-              <div class="hdr-user">
+              <div class="hdr-user hide-md">
                 <a href="#">
                   <i><svg class="user-icon" width="24" height="25" viewBox="0 0 24 25" fill="#FFA800">
                     <use xlink:href="#user-icon"></use> </svg>
@@ -249,20 +249,31 @@
                   <i><svg class="cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
                     <use xlink:href="#cart-icon"></use> </svg>
                   </i>
-                  <span>99</span>
+                  <span class="cart-number">99</span>
+                  <strong class="cart-title show-md">CART</strong>
                 </a>
               </div>
             </div>
-            <div class="fl-language-cntlr">
+            <div class="fl-language-cntlr hide-md">
               <div class="fl-lang reset-slect">
                 <div class="fl-lang-cntlr">
-                  <ul class="reset-list hide-sm">
+                  <ul class="reset-list">
                     <li  class="lang-active"><a href="#">EN</a></li>
                     <li><a href="#">NL</a></li>
                     <li><a href="#">FN</a></li>
                   </ul>
                 </div>
               </div>
+            </div>
+            <div class="hamburger-cntlr show-md">
+              <div class="hamburger-icon">
+                <i>
+                  <svg class="hamburger-icon" width="32" height="32" viewBox="0 0 32 32" fill="#FFA800">
+                  <use xlink:href="#hamburger-icon"></use> </svg>
+                </i>
+              </div>
+              
+              <strong class="hamburger-title">MENU</strong>
             </div>
           </div>
         </div>
@@ -271,8 +282,150 @@
   </div>
 </header>
 
+<!-- fixed mobile menu -->
+<div class="xs-mobile-menu">
 
-<section class="page-banner  dn">
+  <div class="xs-menu-hdr">
+    <span class="hdr-white-skew"></span>
+    <div class="hdr-logo">
+      <div class="logo">
+        <a href="#"><img src="assets/images/logo.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="hdr-rgt">
+      <div class="hdr-icons-cntlr">
+        <div class="hdr-cart">
+          <a href="#">
+            <i><svg class="cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
+              <use xlink:href="#cart-icon"></use> </svg>
+            </i>
+            <span class="cart-number">99</span>
+            <strong class="cart-title show-md">CART</strong>
+          </a>
+        </div>
+      </div>
+      <div class="hamburger-cntlr show-md">
+        <div class="hamburger-icon">
+          <i>
+            <svg class="hamburger-icon" width="32" height="32" viewBox="0 0 32 32" fill="#FFA800">
+              <use xlink:href="#hamburger-icon"></use> </svg>
+            </i>
+          </div>
+          <div class="cross-icon">
+            <i>
+              <svg class="cross-icon" width="32" height="32" viewBox="0 0 32 32" fill="#FFA800">
+              <use xlink:href="#cross-icon"></use> </svg>
+            </i>
+          </div>
+          <strong class="hamburger-title">MENU</strong>
+        </div>
+    </div>
+  </div>
+
+  <div class="xs-menu-cntlr">
+    <div class="xs-menu">
+      <nav class="main-nav">
+        <ul class="reset-list clearfix">
+          <li class="current-menu-item"><a href="#">Webshop</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Online coaching</a>
+            <ul class="sub-menu">
+              <li><a href="#">sub menu</a></li>
+              <li><a href="#">sub menu</a></li>
+              <li><a href="#">sub menu</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Werkwijze</a></li>
+          <li><a href="#">Transformaties</a></li>
+          <li><a href="#">Over ons</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Blog</a>
+            <ul class="sub-menu">
+              <li><a href="#">sub menu</a></li>
+              <li><a href="#">sub menu</a></li>
+              <li><a href="#">sub menu</a></li>
+            </ul>
+          </li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+  <div class="xs-mbl-footer">
+
+    <div class="fl-language-cntlr">
+      <div class="fl-lang reset-slect">
+        <div class="fl-lang-cntlr">
+          <ul class="reset-list">
+            <li  class="lang-active"><a href="#">EN</a></li>
+            <li><a href="#">NL</a></li>
+            <li><a href="#">FN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="fl-search-cntlr">
+      <div class="fl-secrh">
+        <form action="">
+          <input type="text" placeholder="Zoeken">
+          <button>
+            <i>
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="#C5C6C7">
+              <use xlink:href="#search-icon"></use> </svg>
+            </i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="xs-hdr-sociala">
+      <ul class="reset-list">
+        <li>
+          <a target="_blank" href="#">
+            <i><svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
+              <use xlink:href="#facebook-icon"></use> </svg>
+            </i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="#">
+            <i><svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
+              <use xlink:href="#twiter-icon"></use> </svg>
+            </i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="#">
+            <i><svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
+              <use xlink:href="#linkden-icon"></use> </svg>
+            </i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="#">
+            <i><svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
+              <use xlink:href="#instagram-icon"></use> </svg>
+            </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="xs-hdr-btn-cntlr">
+      <div class="xs-hdr-btn">
+        <a class="" href="#">MY ACCOUNT</a>
+      </div>
+      <div class="xs-hdr-btn xs-hdr-btn-2">
+        <a class="" href="#">CONTACT</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<section class="page-banner  page-bnr-no-skew dn">
   <span class="page-bnr-skew"></span>
   <span class="hdr-circle-icon"></span>
   <div class="hdr-socials">
@@ -379,7 +532,7 @@
 </div>
 
 <div class="ovo-full-width-img-dsc-module-sec">
-  <section class="ovo-full-width-img-sec  inline-bg"  style="background-image: url(assets/images/ov-full-width-img.jpg);">
+  <section class="ovo-full-width-img-sec  inline-bg"  style="background-image: url(assets/images/werk-full-inline-bg-img.jpg);">
     <div class="ovo-full-width-img-fmbl  inline-bg  hide-md  show-sm" style="background-image: url(assets/images/werk-in-mobile-full-inline-bg.jpg);"></div>
     <!-- <img src="assets/images/ovo-mbl-full-bg.jpg" alt=""> -->
     <!-- <span class="ovo-abs-round-one"><img src="assets/images/ov-abs-img-1.svg"></span> -->
@@ -597,9 +750,10 @@
   </div>
 </section>
 
-<footer class="footer-wrp dn">
+
+<footer class="footer-wrp">
   <span class="ftr-white-skew"></span>
-  <span class="ftr-right-angle-line">
+  <span class="ftr-right-angle-line hide-sm">
     <i>
       <svg class="frt-rt-line-icon" width="73" height="95" viewBox="0 0 73 95" fill="#FFA800">
       <use xlink:href="#frt-rt-line-icon"></use> </svg>
@@ -610,63 +764,59 @@
       <div class="row">
         <div class="col-md-12">
           <div class="ftr-top">
-            <div class="ftr-round-icon">
-              <i>
-                <svg class="ftr-round-icon" width="81" height="81" viewBox="0 0 81 81" fill="#FFA800">
-                <use xlink:href="#ftr-round-icon"></use> </svg>
-              </i>
+            <div class="ftr-round-icon-cntlr">
+              <span class="ftr-round-sm-icon"></span>
+              <span class="ftr-round-lg-icon"></span>
             </div>
 
             <div class="ftr-logo">
               <a href="#"><img src="assets/images/ftr-logo.svg" alt=""></a>
             </div>
 
-            <div class="client-logo-cntlr">
-              <ul class="reset-list">
-                <li>
-                  <div class="client-logo">
-                    <img src="assets/images/client-logo-001.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="assets/images/client-logo-002.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="assets/images/client-logo-003.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="assets/images/client-logo-001.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="assets/images/client-logo-002.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="assets/images/client-logo-003.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="assets/images/client-logo-001.png" alt="">
-                  </div>
-                </li>
-                <li>
-                  <div class="client-logo">
-                    <img src="assets/images/client-logo-002.png" alt="">
-                  </div>
-                </li>
-              </ul>
+            <div class="client-logo-cntlr clientLogoSlider">
+              <div class="client-logo-item">
+                <div class="client-logo">
+                  <img src="assets/images/client-logo-001.png" alt="">
+                </div>
+              </div>
+              <div class="client-logo-item">
+                <div class="client-logo">
+                  <img src="assets/images/client-logo-002.png" alt="">
+                </div>
+              </div>
+              <div class="client-logo-item">
+                <div class="client-logo">
+                  <img src="assets/images/client-logo-003.png" alt="">
+                </div>
+              </div>
+              <div class="client-logo-item">
+                <div class="client-logo">
+                  <img src="assets/images/client-logo-001.png" alt="">
+                </div>
+              </div>
+              <div class="client-logo-item">
+                <div class="client-logo">
+                  <img src="assets/images/client-logo-002.png" alt="">
+                </div>
+              </div>
+              <div class="client-logo-item">
+                <div class="client-logo">
+                  <img src="assets/images/client-logo-003.png" alt="">
+                </div>
+              </div>
+              <div class="client-logo-item">
+                <div class="client-logo">
+                  <img src="assets/images/client-logo-001.png" alt="">
+                </div>
+              </div>
+              <div class="client-logo-item">
+                <div class="client-logo">
+                  <img src="assets/images/client-logo-002.png" alt="">
+                </div>
+              </div>
             </div>
 
-            <div class="breadcrumb-cntlr">
+            <div class="breadcrumb-cntlr hide-sm">
               <ul class="reset-list clearfix">
                 <li>
                   <a href="#">
@@ -684,7 +834,7 @@
 
             <div class="ftr-top-col-cnlr clearfix">
 
-              <div class="ftr-top-col ftr-top-col1">
+              <div class="ftr-top-col ftr-top-col-1">
                 <h6 class="ftr-top-col-title fl-h6">NAVIGATION</h6>
                 <div class="ftr-top-col-menu">
                   <ul class="reset-list">
@@ -700,7 +850,7 @@
                 </div>
               </div>
 
-              <div class="ftr-top-col ftr-top-col2">
+              <div class="ftr-top-col ftr-top-col-2">
                 <h6 class="ftr-top-col-title fl-h6">NAVIGATION</h6>
                 <div class="ftr-top-col-menu">
                   <ul class="reset-list">
@@ -713,8 +863,8 @@
                 </div>
               </div>
 
-              <div class="ftr-top-col ftr-top-col3">
-                <h6 class="ftr-top-col-title fl-h6">CONTACT</h6>
+              <div class="ftr-top-col ftr-top-col-3">
+                <h6 class="ftr-top-col-title fl-h6 hide-sm">CONTACT</h6>
                 <div class="ftr-top-col-desc">
                   <div class="ftr-top-col-tell">
                     <a href="tel: +33877554332">+33 877 554 332</a>
@@ -722,54 +872,55 @@
                   <div class="ftr-top-col-mail">
                     <a href="mailto: info@naturalgrindersfitness.com">info@naturalgrindersfitness.com</a>
                   </div>
-                  <div class="ftr-top-col-socials">
-                   <ul class="reset-list">
-                     <li>
-                      <a target="_blank" href="#">
-                        <i><svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
-                          <use xlink:href="#facebook-icon"></use> </svg>
-                        </i>
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="#">
-                        <i><svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
-                          <use xlink:href="#twiter-icon"></use> </svg>
-                        </i>
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="#">
-                        <i><svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
-                          <use xlink:href="#linkden-icon"></use> </svg>
-                        </i>
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="#">
-                        <i><svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
-                          <use xlink:href="#instagram-icon"></use> </svg>
-                        </i>
-                      </a>
-                    </li>
-                  </ul>
+                  <div class="ftr-top-col-socials hide-sm">
+                    <ul class="reset-list">
+                      <li>
+                        <a target="_blank" href="#">
+                          <i>
+                            <svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
+                            <use xlink:href="#facebook-icon"></use> </svg>
+                          </i>
+                        </a>
+                      </li>
+                      <li>
+                        <a target="_blank" href="#">
+                          <i>
+                            <svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
+                            <use xlink:href="#twiter-icon"></use> </svg>
+                          </i>
+                        </a>
+                      </li>
+                      <li>
+                        <a target="_blank" href="#">
+                          <i>
+                            <svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
+                            <use xlink:href="#linkden-icon"></use> </svg>
+                          </i>
+                        </a>
+                      </li>
+                      <li>
+                        <a target="_blank" href="#">
+                          <i><svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
+                            <use xlink:href="#instagram-icon"></use></svg>
+                          </i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
-    </div>
-  </div> 
-</div>
-<div class="ftr-btm-wrap dn">
-  <div class="container">
+    </div> 
+  </div>
+
+  <div class="ftr-btm-wrap">
+    <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="ftr-btm-cntlr">
-
           <div class="ftr-copyright">
             <p>Copyright © 2021 Natural Grinders Fitness</p>
           </div>
@@ -786,15 +937,11 @@
           <div class="ftr-developed-by">
             <p>Website laten maken door <a target="_blank" href="#">conversal</a></p>
           </div>
-
         </div>
+      </div>
     </div>
-  </div>
-</div> 
-</div>
-</div>
-</div>
-</div> 
+    </div> 
+  </div> 
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.0.0.js"></script>

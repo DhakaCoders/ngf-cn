@@ -827,9 +827,7 @@ boek-je-form-sec-wrp
     .contact-form-info ul li:nth-child(1){
         padding-bottom: 10px;
     }
-    .bnr-bg-249 .bnr-bg-overly{
-        height: 120px!important;
-    }
+    
     /*bootstrap-select*/
     
     .dropdown-toggle::before{

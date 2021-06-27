@@ -1,4 +1,4 @@
-#wccart-wrapper #respond input#submit.alt, 
+/*#wccart-wrapper #respond input#submit.alt, 
 #wccart-wrapper a.button.alt, 
 #wccart-wrapper button.button.alt, 
 #wccart-wrapper input.button.alt,
@@ -11,15 +11,15 @@
 	line-height: 16px;
 	text-align: center;
 	text-transform: uppercase;
-}
-#wccart-wrapper #respond input#submit.alt:hover, 
+}*/
+/*#wccart-wrapper #respond input#submit.alt:hover, 
 #wccart-wrapper a.button.alt:hover, 
 #wccart-wrapper button.button.alt:hover, 
 #wccart-wrapper input.button.alt:hover,
 #wccart-wrapper .coupon .button:hover,
 .woocommerce table.cart td.actions .button:hover{
 	background: #3f3f3f!important;
-}
+}*/
 #wccart-wrapper .coupon button.button,
 .woocommerce table.cart td.actions .button{
 	font-size: 14px;

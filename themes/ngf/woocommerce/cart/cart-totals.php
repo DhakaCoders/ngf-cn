@@ -108,12 +108,10 @@ defined( 'ABSPATH' ) || exit;
 		
 
 	</table>
-<?php //do_action( 'woocommerce_giftcard_form' ); ?>
-	<div id="giftcard-here"></div>
 	<div class="wc-proceed-to-checkout">
 		<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
 	</div>
-	<div class="add-more-product"><a href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' ) );?>"><?php esc_html_e( 'Meer producten toevoegen', 'woocommerce' ); ?></a></div>
+	<div class="add-more-product"><a href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' ) );?>"><?php esc_html_e( 'Add more products', 'woocommerce' ); ?></a></div>
 
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>
 
