@@ -301,18 +301,18 @@
 	
 }
 
-@media(max-width: 479px){
+/*@media(max-width: 479px){
 	.ref-ov-page-entry-hdr .page-entry-header h1{
 		font-size: 36px;
 	}
-}
+}*/
 
 @media(max-width: 359px){
 
-	.ref-ov-page-entry-hdr .page-entry-header h1{
+	/*.ref-ov-page-entry-hdr .page-entry-header h1{
 		font-size: 33px;
 	}
-
+*/
 	.ref-ov-page-cntnt-sec .fl-grid-category{
 		padding-bottom: 14px;
 
