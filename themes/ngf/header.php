@@ -178,6 +178,17 @@
 
 </head>
 <body <?php body_class(); ?>>
+<section class="home-messege">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="home-messege-inr">
+        <p><strong>08/06/2021:</strong>Wij zijn gesloten van 08/06/2021 tot en met 22/06/2021</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 <div class="bdoverlay"></div>
 <header class="header">
   <span class="hdr-white-skew"></span>
