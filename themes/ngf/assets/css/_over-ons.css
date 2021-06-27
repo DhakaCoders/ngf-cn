@@ -252,13 +252,18 @@ span.fl-video-play-icon-cntlr{
 .ovo-grid-item-col{
     padding-bottom: 40px!important;
 }
-
-
-
-
-
-
-
+.ovo-fancy-module-item-des  .ofmi-heading a{
+    text-decoration: none;
+}
+.ovo-grid-item-col .faq-grid-item a{
+    text-decoration: none;
+}
+.ovo-full-width-img-dp{
+    display: none;
+}
+.fl-fancy-inline-bg-extra{
+    display: none;
+}
 
 
 @media (max-width: 1699px){
