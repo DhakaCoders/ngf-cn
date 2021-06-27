@@ -559,7 +559,10 @@ if( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false && is_account_page
         $classes[]='woo-page';
      }
      if ( is_account_page() && is_user_logged_in() ){
-        $classes[]='black-bg-wc';
+        $classes[]='black-bg-cntlr';
+     }
+     if ( is_product_category() || is_product() || is_shop() ){
+        $classes[]='sky-btm-bg-cntlr';
      }
     return $classes;
 }
