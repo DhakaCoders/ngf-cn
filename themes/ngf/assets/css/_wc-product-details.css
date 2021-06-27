@@ -703,7 +703,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 .single-product .long-desc h2{
 	display: none!important;
 }
-
+.quantity label {
+    display: none;
+}
 /* ================= */
 /* == responsive == */
 /* =============== */

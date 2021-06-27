@@ -26,10 +26,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
 				<thead>
 					<tr>
-						<th class="product-name"><strong><?php esc_html_e( 'Producten', 'woocommerce' ); ?></strong></th>
-						<th class="product-price"><?php esc_html_e( 'Prijs', 'woocommerce' ); ?></th>
-						<th class="product-weight"><?php esc_html_e( 'Gewicht', 'woocommerce' ); ?></th>
-						<th class="product-quantity"><?php esc_html_e( 'Hoeveelheid', 'woocommerce' ); ?></th>
+						<th class="product-name"><strong><?php esc_html_e( 'Product', 'woocommerce' ); ?></strong></th>
+						<th class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
+						<th class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
 						<th class="product-remove">&nbsp;</th>
 					</tr>
 				</thead>
@@ -63,7 +62,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 								}
 								?>
 									<div class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
-									<span class="cart-instock">Op voorraad</span>
 									<?php
 									$exp_title = explode('-', $_product->get_name());
 									if(!empty($exp_title)){
@@ -88,6 +86,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 										echo wp_kses_post( apply_filters( 'woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>', $product_id ) );
 									}
 									?>
+									<p>Volutpat sagittis, consequat nibh.</p>
 									</div>
 								</td>
 
@@ -95,11 +94,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 									<?php
 										echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 									?>
-								</td>
-								<td class="product-weight">
-									<div>
-									100g-losse-tea
-									</div>
 								</td>
 
 								<td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
@@ -148,7 +142,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 					<?php do_action( 'woocommerce_cart_contents' ); ?>
 
-					<tr>
+					<tr style="display:none;">
 						<td colspan="6" class="actions">
 
 							<?php if ( wc_coupons_enabled() ) { ?>
@@ -171,7 +165,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			</table>
 			<?php do_action( 'woocommerce_after_cart_table' ); ?>
 		</form>
-		<div class="empty-cart-btn"><a href="<?php echo esc_url( wc_get_cart_url() ); ?>?clear-cart=yes"><?php esc_html_e( 'Winkelmand legen', 'woocommerce' ); ?></a></div>
+		<div class="empty-cart-btn"><a href="<?php echo esc_url( wc_get_cart_url() ); ?>?clear-cart=yes"><?php esc_html_e( 'Empty cart', 'woocommerce' ); ?></a></div>
         <?php do_action('cbv_wc_cross_sell_display'); ?>
 </div>
 	<?php do_action( 'woocommerce_before_cart_collaterals' ); ?>

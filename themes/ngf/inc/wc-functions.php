@@ -145,43 +145,17 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_r
 add_action('woocommerce_single_product_summary', 'add_custom_box_product_summary', 5);
 if (!function_exists('add_custom_box_product_summary')) {
     function add_custom_box_product_summary() {
-        global $product, $woocommerce, $post;
-        $sh_desc = $product->get_short_description();
-        $long_desc = $product->get_description();
-        $product_usps = get_field('product_usps', 'options' );
-        $sh_desc = !empty($sh_desc)?$sh_desc:'';
-
-            echo '<div class="summary-ctrl">';
-            echo '<div class="summary-hdr">';
-            echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
-            echo '<div class="fl-pro-grd-price">';
-            echo '<span class="Vanaf">Vanaf</span>';
-            echo $product->get_price_html();                                                         
-            echo '</div>';
-            if( !empty($long_desc) ){
-                echo '<div class="long-desc">';
-                echo '<h2>Beschrijving</h2>';
-                echo wpautop( $long_desc, true );
-                echo '</div>';
-            }
-            echo '</div>';
-            echo '<div class="meta-crtl">';
-
-            echo '</div>';
-            echo '<div class="price-quentity-ctrl">';
-              woocommerce_template_single_add_to_cart();
-            echo '</div>';
-            echo '</div>';
+        get_template_part('templates/product-single/summary');
 
     }
 }
 
-add_action('woocommerce_before_add_to_cart_quantity', 'cbv_start_div_single_price', 99);
+//add_action('woocommerce_before_add_to_cart_quantity', 'cbv_start_div_single_price', 99);
 function cbv_start_div_single_price(){
     echo '<div class="cartbtn-wrap clearfix"><strong>Aantal</strong><div class="cart-btn-qty">';
     echo '<div class="quantity qty"><span class="minus">-</span>';
 }
-add_action('woocommerce_after_add_to_cart_quantity', 'cbv_get_single_price');
+//add_action('woocommerce_after_add_to_cart_quantity', 'cbv_get_single_price');
 function cbv_get_single_price(){
     global $product;
     echo '<span class="plus">+</span></div>';
@@ -211,7 +185,7 @@ function bryce_id_add_to_cart_text( $default ) {
     return __( $label, THEME_NAME );
 }
 add_action( 'cbv_related_product', 'woocommerce_output_related_products');
-add_action( 'cbv_product_review', 'get_review_form');
+//add_action( 'cbv_product_review', 'get_review_form');
 function get_review_form( $default ) {
     //wc_get_template_part('single-product/review');
     get_template_part('templates/wc', 'review');
@@ -406,8 +380,8 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
                 'Couponcode'
             ),
             array( 
-                'ik ga bestellen', 
-                'Ballonvaarten', 
+                'Order now', 
+                'PRODUCTEN', 
                 'Persoonlijke gegevens', 
                 'Overzicht', 
                 'Afrekenen',
@@ -415,9 +389,9 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
                 'Subtotaal',
                 'Totaal',
                 'Bedrag',
-                'VERZILVER',
+                'ApPly',
                 'Heb je een kortingscode?',
-                'VERZILVER',
+                'ApPly',
                 'Heb je een kortingscode?'
             ),
             $translated
@@ -469,7 +443,7 @@ add_action( 'woocommerce_cart_is_empty', 'woo_if_cart_empty' );
 function woo_if_cart_empty(){
     echo '<div class="cart-is-emtpy">';
         echo '<div class="cie-icon"><img src="'.THEME_URI.'/assets/images/bag-icon.svg"/></div>';
-        echo '<strong>'.__('Uw winkelwagen is leeg!', 'ballonvaren').'</strong>';
+        echo '<strong>'.__('your Shopping cart is empty', 'ballonvaren').'</strong>';
         echo '<p>'.__('Je hebt geen artikelen in je winkelwagen.', 'ballonvaren').'</p>';
     echo '</div>';
 }
@@ -515,10 +489,10 @@ function misha_remove_my_account_links( $menu_links ){
     unset( $menu_links['edit-account'] ); // Remove Account details tab
     unset( $menu_links['customer-logout'] ); // Remove Logout link
 
-    $menu_links['orders'] = 'Geboekte vluchten';
-    $menu_links['winkelmandje'] = 'Winkelmandje';
+    $menu_links['orders'] = 'your orders';
+    $menu_links['winkelmandje'] = 'Shopping cart';
     $menu_links['edit-account'] = 'ACCOUNT info';
-    $menu_links['customer-logout'] = 'Uitloggen';
+    $menu_links['customer-logout'] = 'Sign out';
     return $menu_links;
  
 }
@@ -692,20 +666,6 @@ function is_breadcrumbs(){
 }
 
 
-add_action( 'in_admin_footer', 'load_custom_script' );
-function load_custom_script() {
-?>
-<script type="text/javascript">
-    jQuery(document).ready( function() {
-        jQuery('#product-type').on('change', function(){
-            var productType = jQuery("#product-type option:selected").val();
-            if( productType == 'pw-gift-card' ){
-                jQuery("#giftcard-manage").show();
-            }else{
-                jQuery("#giftcard-manage").hide();
-            }
-        });
-    });
-</script>
-<?php
+function is_wc_page_heading(){
+    return is_checkout() || is_cart();
 }
