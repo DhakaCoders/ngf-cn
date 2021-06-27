@@ -47,6 +47,7 @@
 .fl-products-cntlr > ul.products > li{
     width: 33.3333%!important;
     padding: 0 12px 48px!important;
+    margin: 0!important;
 }
 .fl-pro-tag{
     position: absolute;

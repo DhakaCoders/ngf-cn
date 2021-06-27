@@ -287,7 +287,33 @@ if( $('.wpforms-error').length ){
 
 /*start of Sabbir Hossain*/
 
+if( $('.main-img-crtl').length ){
+   $('.main-img-crtl').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    autoplay:true,
+    adaptiveHeight: true,
+    asNavFor: '.thumbnails-cntlr .thumbnails',
+     prevArrow: $('.fl-singgle-pro-prev'),
+    nextArrow: $('.fl-singgle-pro-next'),
+  });
+}
 
+
+if( $('.thumbnails-cntlr .thumbnails').length ){
+  $('.thumbnails-cntlr .thumbnails').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.main-img-crtl',
+    dots: false,
+    arrows: false,
+    infinite:true,
+    autoplay:true,
+    focusOnSelect: true
+  });
+}
 
 /*start of Monirul Islam*/
 
