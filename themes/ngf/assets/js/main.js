@@ -293,7 +293,7 @@ if( $('.main-img-crtl').length ){
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    autoplay:true,
+    autoplay:false,
     adaptiveHeight: true,
     asNavFor: '.thumbnails-cntlr .thumbnails',
      prevArrow: $('.fl-singgle-pro-prev'),
@@ -310,8 +310,8 @@ if( $('.thumbnails-cntlr .thumbnails').length ){
     dots: false,
     arrows: false,
     infinite:true,
-    autoplay:true,
-    focusOnSelect: true
+    autoplay:false,
+    focusOnSelect: true,
   });
 }
 
