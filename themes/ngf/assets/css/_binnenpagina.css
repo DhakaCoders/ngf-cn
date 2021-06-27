@@ -125,7 +125,9 @@ ol li::before {
 }
 
 
-.dfp-text-module p a{
+.dfp-text-module p a,
+.default-page-con ul li a,
+.default-page-con ol li a{
 	text-decoration: underline;
 }
 
