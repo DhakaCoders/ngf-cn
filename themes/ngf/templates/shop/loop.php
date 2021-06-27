@@ -20,7 +20,7 @@
 </div>
 <div class="fl-product-grd-inr">
   <div class="fl-pro-grd-img-cntlr">
-    <a href="<?php echo get_permalink( $product->get_id(); ?>" class="overlay-link"></a>
+    <a href="<?php echo get_permalink( $product->get_id()); ?>" class="overlay-link"></a>
     <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/pro-grid-img-01.jpg');"></div>
   </div>
   <div class="fl-pro-grd-des mHc1">
@@ -43,7 +43,7 @@
         <li>Tortor orci turpis nunc.</li>
     </ul>
     <div class="fl-pro-grd-btn">
-      <a class="fl-read-more-btn" href="<?php echo get_permalink( $product->get_id(); ?>">
+      <a class="fl-read-more-btn" href="<?php echo get_permalink( $product->get_id()); ?>">
         <span>READ MORE</span>
         <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
         <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
@@ -52,7 +52,7 @@
     </div>
   </div>
   <div>
-    <a class="fl-black-btn fl-buy-now-btn" href="<?php echo get_permalink( $product->get_id(); ?>">BUY NOW</a>
+    <a class="fl-black-btn fl-buy-now-btn" href="<?php echo get_permalink( $product->get_id()); ?>">BUY NOW</a>
   </div>                      
 </div>
 </div>
