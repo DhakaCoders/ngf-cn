@@ -161,6 +161,9 @@ del span.amount bdi:after{
 /* == responsive == */
 
 @media (max-width: 1699px) {
+    .product-page{
+        padding-top: 90px;
+    }
     .fl-pro-tag span{
         font-size: 12px;
         line-height: 2;
@@ -176,6 +179,9 @@ del span.amount bdi:after{
 }
 
 @media (max-width: 1499px) {
+    .product-page{
+        padding-top: 80px;
+    }
     .fl-pro-tag span{
         min-width: 80px;
     }
@@ -191,6 +197,9 @@ del span.amount bdi:after{
 }
 
 @media (max-width: 1199px) {
+    .product-page{
+        padding-top: 70px;
+    }
     .fl-pro-tag span{
         min-width: 70px;
         font-size: 11px;
@@ -203,6 +212,9 @@ del span.amount bdi:after{
 }
 
 @media (max-width: 991px) {
+    .product-page{
+        padding-top: 60px;
+    }
     .fl-pro-grd-des {
         padding: 25px 20px 35px;
     }
@@ -216,6 +228,9 @@ del span.amount bdi:after{
 }
 
 @media (max-width: 767px) {
+    .product-page{
+        padding-top: 50px;
+    }
     .sec-hdr-cntrl{
         display: block;
     }
@@ -238,6 +253,9 @@ del span.amount bdi:after{
 }
 
 @media (max-width: 575px) {
+     .product-page{
+        padding-top: 48px;
+    }
      .fl-pro-tag span{
         min-width: 65px;
         font-size: 10px;
