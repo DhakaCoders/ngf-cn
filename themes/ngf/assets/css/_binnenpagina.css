@@ -125,6 +125,10 @@ ol li::before {
 }
 
 
+.dfp-text-module p a{
+	text-decoration: underline;
+}
+
 
 
 .dfp-plate-one-img-bx img{
