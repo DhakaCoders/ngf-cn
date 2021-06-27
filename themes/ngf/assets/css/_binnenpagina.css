@@ -125,6 +125,10 @@ ol li::before {
 }
 
 
+.dfp-text-module p a{
+	text-decoration: underline;
+}
+
 
 
 .dfp-plate-one-img-bx img{
@@ -254,6 +258,7 @@ Gallery design
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	z-index: 1;
 }
 .cta-small-line{
 	position: absolute;
@@ -282,6 +287,8 @@ Gallery design
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+	z-index: 111;
 }
 .cta-btn a{
 	color: #fff;
@@ -446,6 +453,7 @@ Gallery design
 	margin-right: -9px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 .fl-btn{
@@ -504,17 +512,14 @@ Gallery design
 }
 
 .dfpTestimonialSlider .testimonial-grd-item,
-.dfpBlogSlider .dfp-grd-item,
 .blogDetailsSlider .blogDetialsSlideItem{
 	display: none;
 }
 .dfpTestimonialSlider .testimonial-grd-item:first-child,
-.dfpBlogSlider .dfp-grd-item:first-child,
 .blogDetailsSlider .blogDetialsSlideItem:first-child{
 	display: block;
 }
 .dfpTestimonialSlider.slick-initialized .testimonial-grd-item,
-.dfpBlogSlider.slick-initialized .dfp-grd-item,
 .blogDetailsSlider.slick-initialized .blogDetialsSlideItem{
 	display: block;
 }
@@ -616,7 +621,7 @@ Gallery design
 	position: relative;
 }
 
-.big-line{
+/*.big-line{
 	position: absolute;
     width: 831.36px;
     height: 8px;
@@ -642,7 +647,7 @@ Gallery design
     top: 642px;
     background: #FFA800;
     transform: rotate(-45deg);
-}
+}*/
 
 
 
@@ -825,6 +830,9 @@ Gallery design
 	#faq-details .dfp-cat-date {
 	    margin-bottom: 45px;
 	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 28px;
+	}
 
 }
 
@@ -888,7 +896,9 @@ Gallery design
 	#faq-details .dfp-cat-date {
 	    margin-bottom: 40px;
 	}
-	
+	#referenties-details .bnr-grd-des p{
+		font-size: 27px;
+	}
 
 
 }
@@ -928,6 +938,9 @@ Gallery design
 	}
 	#referenties-details .dfp-promo-module {
 	    margin-top: -130px;
+	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 26px;
 	}
 
 }
@@ -1028,6 +1041,28 @@ Gallery design
 	}
 	#faq-details .dfp-promo-module {
 	    margin-top: -80px;
+	}
+	#referenties-details .bnr-grd{
+		display: block;
+		padding-bottom: 45px;
+	    margin-bottom: 40px;
+	}
+	#referenties-details .bnr-grd-img {
+	    width: 100%;
+	    display: flex;
+	    align-items: flex-end;
+	}
+	#referenties-details .bnr-grd-img i{
+		margin-right: 40px;
+	}
+	#referenties-details .bnr-grd-des{
+		width: 100%;
+		padding-left: 0;
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 24px;
 	}
 
 }
@@ -1246,6 +1281,9 @@ Gallery design
 	.back-btn {
 	    padding-bottom: 40px;
 	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 22px;
+	}
 
 }
 
@@ -1420,6 +1458,9 @@ Gallery design
 	#faq-details .dfp-cat-date {
 	    margin-bottom: 25px;
 	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 20px;
+	}
 
 }
 
@@ -1464,6 +1505,9 @@ Gallery design
 		min-width: auto;
 		max-width: 100%;
 		width: 100%;
+	}
+	#referenties-details .bnr-grd-des p{
+		font-size: 18px;
 	}
 	
 }
