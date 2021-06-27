@@ -1,6 +1,6 @@
 .footer-wrp{
 	position: relative;
-    overflow: hidden;
+  
 }
 .ftr-white-skew{
     border-top: 235px solid #fff;
@@ -9,10 +9,11 @@
     top: 0;
     left: 0;
     right: 0;
+    margin-top: -1px;
 }
 .ftr-right-angle-line{
     position: absolute;
-    top: -14px;
+    top: -15px;
     right: 0;
     z-index: 2;
 }
@@ -305,6 +306,13 @@
 .breadcrumb-cntlr ul li span:hover, 
 .breadcrumb-cntlr ul li a span:hover{
     color: #FFA800;
+}
+.ftr-top-col-menu ul li a,
+.ftr-btm-menu ul li a,
+.ftr-top-col-tell a, 
+.ftr-top-col-mail a,
+.ftr-developed-by p a{
+    text-decoration: none;
 }
 
 /*responsive*/

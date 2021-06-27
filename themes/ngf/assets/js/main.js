@@ -287,7 +287,33 @@ if( $('.wpforms-error').length ){
 
 /*start of Sabbir Hossain*/
 
+if( $('.main-img-crtl').length ){
+   $('.main-img-crtl').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    autoplay:false,
+    adaptiveHeight: true,
+    asNavFor: '.thumbnails-cntlr .thumbnails',
+     prevArrow: $('.fl-singgle-pro-prev'),
+    nextArrow: $('.fl-singgle-pro-next'),
+  });
+}
 
+
+if( $('.thumbnails-cntlr .thumbnails').length ){
+  $('.thumbnails-cntlr .thumbnails').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.main-img-crtl',
+    dots: false,
+    arrows: false,
+    infinite:true,
+    autoplay:false,
+    focusOnSelect: true,
+  });
+}
 
 /*start of Monirul Islam*/
 
@@ -329,11 +355,11 @@ if (windowWidth <= 767) {
 }
 
 
-  var windowLength = $(window).width();
+/*  var windowLength = $(window).width();
   var conW = $('.container-lg').width();
   var mainW = windowLength - conW;
   var leftW = mainW / 2;
-  $(".hdr-circle-icon").css('left', leftW);
+  $(".hdr-circle-icon").css('left', leftW);*/
 
 
   $(".hdr-white-skew").css('border-left-width', windowWidth);
@@ -344,10 +370,10 @@ if (windowWidth <= 767) {
   
   $(window).resize(function() { 
     var window2Width = $(window).width();
-    var conW = $('.container-lg').width();
+   /* var conW = $('.container-lg').width();
     var mainW = window2Width - conW;
     var leftW = mainW / 2;
-    $(".hdr-circle-icon").css('left', leftW);
+    $(".hdr-circle-icon").css('left', leftW);*/
 
     $(".hdr-white-skew").css('border-left-width', window2Width);
     $(".ftr-white-skew").css('border-right-width', window2Width);

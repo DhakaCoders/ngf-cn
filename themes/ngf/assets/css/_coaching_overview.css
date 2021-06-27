@@ -1,3 +1,6 @@
+.coaching-sec a,  .sec-heading a, .blog-page-sec a, .product-page a{
+	text-decoration: none;
+}
 .coaching-sec .blog-grids-cntrl{
 	padding-top: 41px;
 }
@@ -43,7 +46,7 @@
 	-webkit-transition: all 0.5s;
 }
 .coaching-sec .blog-grid-des{
-	padding: 0;
+	padding: 25px 0 0;
 } 
 .blog-grid-des .bgi-title{
 	line-height: 1.25;
