@@ -306,6 +306,13 @@
 .breadcrumb-cntlr ul li a span:hover{
     color: #FFA800;
 }
+.ftr-top-col-menu ul li a,
+.ftr-btm-menu ul li a,
+.ftr-top-col-tell a, 
+.ftr-top-col-mail a,
+.ftr-developed-by p a{
+    text-decoration: none;
+}
 
 /*responsive*/
 @media(max-width: 1699px){
