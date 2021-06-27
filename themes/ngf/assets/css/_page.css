@@ -221,6 +221,7 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 }
 .page-bnr-desc{
 	position: relative;
+	display: inline-block;
 }
 .pg-bnr-title.fl-h1-80{
 	font-size: 80px;

@@ -1,5 +1,69 @@
 
 /*home banner*/
+.home-banner{
+	position: relative;
+	background: #000;
+}
+.home-banner-cntlr{
+	height: 863px;
+	position: relative;
+	padding-top: 240px;
+}
+.hm-bnr-skew{
+	bottom: 0;
+	border-bottom: 235px solid #fff;
+    border-left: 1920px solid transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+.hm-bnr-desc p{
+	font-size: 18px;
+	color: #fff;
+}
+.hm-bnr-desc-btn-cntlr{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+.hm-bnr-desc-btns{
+	padding: 0 10px;
+}
+.hm-bnr-desc-btn{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	color: #FFFFFF;
+	display: inline-block;
+	padding: 12px 65px 12px 48px;
+	position: relative;
+	border: 3px solid #FFFFFF;
+	text-transform: uppercase;
+}
+.hm-bnr-desc-btn i{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	right: 34px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.hm-bnr-desc-btn:hover i{
+	right: 30px;
+}
+.hm-bnr-desc-btn:hover{
+	border-color: #FFA800;
+	color: #FFA800;
+}
 
 /*responsive*/
 @media(max-width: 1799px){
