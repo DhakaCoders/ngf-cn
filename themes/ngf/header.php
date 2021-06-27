@@ -1,33 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>> 
 <head>
-	<title>Home</title>
-  <meta charset="utf-8">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content="#EE3E15">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-  <!--   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
+  <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
   <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
-  <?php } ?> -->
-
-  <link rel="stylesheet" href="<?php echo THEME_URI; ?>/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?php echo THEME_URI; ?>/assets/css/bootstrap-select.min.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/fonts/font-awesome/font-awesome.css">
-  
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/css/animate.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/fancybox3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/slick.slider/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/slick.slider/slick.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/swiper/swiper-bundle.min.css">
-
+  <?php } ?>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/style.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/css/responsive.css">
 
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -130,6 +114,10 @@
         <path d="M11.9268 5.82336L7.1769 1.07344C6.6659 0.562436 5.83442 0.562436 5.32342 1.07344C4.81242 1.58443 4.81242 2.41591 5.32342 2.92691L7.14638 4.74987H1.24997C0.560991 4.74987 0 5.31086 0 5.99987C0 6.68887 0.560991 7.24984 1.24997 7.24984H7.14638L5.32342 9.0728C4.81242 9.5838 4.81242 10.4153 5.32342 10.9263C5.57891 11.1818 5.91441 11.3098 6.2504 11.3098C6.5864 11.3098 6.92138 11.1823 7.17739 10.9263L11.9273 6.17635C12.0243 6.07885 12.0243 5.92086 11.9268 5.82336Z" fill="#FFA800"/>
       </symbol>
 
+      <symbol id="search-icon-black" width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.6874 16.1825L14.2273 12.7224C15.2759 11.3496 15.8511 9.68447 15.8513 7.92741C15.8513 5.80998 15.0266 3.81914 13.5291 2.32191C12.0319 0.824676 10.0413 0 7.92364 0C5.8062 0 3.81536 0.824676 2.31813 2.32191C-0.772711 5.41301 -0.772711 10.4423 2.31813 13.5329C3.81536 15.0304 5.8062 15.8551 7.92364 15.8551C9.6807 15.8549 11.3458 15.2797 12.7186 14.2311L16.1787 17.6912C16.3869 17.8996 16.6601 18.0038 16.9331 18.0038C17.2061 18.0038 17.4793 17.8996 17.6874 17.6912C18.1042 17.2747 18.1042 16.599 17.6874 16.1825ZM3.82682 12.0242C1.56795 9.76535 1.56821 6.08974 3.82682 3.8306C4.9211 2.73659 6.37613 2.13384 7.92364 2.13384C9.4714 2.13384 10.9262 2.73659 12.0204 3.8306C13.1147 4.92487 13.7175 6.37991 13.7175 7.92741C13.7175 9.47518 13.1147 10.93 12.0204 12.0242C10.9262 13.1185 9.4714 13.7212 7.92364 13.7212C6.37613 13.7212 4.9211 13.1185 3.82682 12.0242Z" fill="black"/>
+      </symbol>
+
     <!-- start of Niaz -->
     <symbol id="error-msg-icon-svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M13.6044 16.909C13.359 16.9319 13.1127 16.8766 12.9007 16.7508C12.7458 16.5918 12.6716 16.3711 12.6989 16.1508C12.7046 15.9675 12.7265 15.7849 12.7644 15.6054C12.801 15.3994 12.8483 15.1955 12.9062 14.9945L13.5498 12.7799C13.6162 12.5613 13.66 12.3365 13.6807 12.109C13.6807 11.8636 13.7134 11.6944 13.7134 11.5963C13.7271 11.1588 13.5403 10.739 13.2062 10.4563C12.7951 10.1407 12.2832 9.9856 11.7662 10.0199C11.3956 10.0255 11.0279 10.0861 10.6752 10.1999C10.2898 10.3199 9.88431 10.4635 9.45888 10.6308L9.27344 11.3508C9.39887 11.3072 9.55164 11.2581 9.72616 11.2036C9.89266 11.1542 10.0653 11.1285 10.2389 11.1272C10.4824 11.1008 10.7276 11.1606 10.9316 11.2963C11.0702 11.4616 11.1352 11.6764 11.1116 11.8908C11.111 12.0743 11.0909 12.2571 11.0516 12.4363C11.0134 12.6272 10.9643 12.829 10.9043 13.0417L10.2552 15.2671C10.2029 15.474 10.1611 15.6833 10.1298 15.8944C10.1043 16.0751 10.0915 16.2574 10.0916 16.4399C10.0889 16.8803 10.2903 17.2973 10.637 17.5689C11.0544 17.8894 11.5736 18.0483 12.0988 18.0162C12.4687 18.0238 12.8373 17.9704 13.1898 17.858C13.4988 17.7526 13.9116 17.6017 14.428 17.4053L14.6025 16.718C14.4626 16.7761 14.3186 16.8234 14.1716 16.8598C13.9857 16.9023 13.7948 16.9188 13.6044 16.909Z"/>
@@ -155,6 +143,27 @@
     <rect x="-166" y="350.344" width="346.807" height="6.11052" transform="rotate(-60 -166 350.344)" fill="white"/>
     </symbol>
 
+    <symbol id="latest-nws-bg" width="484" height="727" viewBox="0 0 484 727" xmlns="http://www.w3.org/2000/svg">
+    <rect x="-109.151" y="587.858" width="831.358" height="6.11052" transform="rotate(-45 -109.151 587.858)" fill="#FFA800"/>
+    <rect x="-91.3223" y="722.095" width="301.296" height="6.11052" transform="rotate(-45 -91.3223 722.095)" fill="#FFA800"/>
+    <rect x="-103.538" y="626.016" width="395.434" height="67.7141" transform="rotate(-45 -103.538 626.016)" fill="#FFA800"/>
+    </symbol>
+
+    <symbol id="plans-sec-circle-bg" width="108" height="91" viewBox="0 0 108 91" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="67.5" cy="50.5" r="30.5" stroke="#FFA800" stroke-width="20"/>
+    <circle cx="10.5" cy="10.5" r="7.5" stroke="#FFA800" stroke-width="6"/>
+    </symbol>
+
+    <symbol id="latest-news-circle-bg" width="82" height="112" viewBox="0 0 82 112" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="56" cy="56" r="46" stroke="#FFA800" stroke-width="20"/>
+    </symbol>
+
+    <symbol id="latest-news-xs-bg"width="146" height="598" viewBox="0 0 146 598" xmlns="http://www.w3.org/2000/svg">
+    <rect x="-71" y="300.344" width="346.807" height="6.11052" transform="rotate(-60 -71 300.344)" fill="#FFA800"/>
+    <rect x="-18" y="478.116" width="53.2499" height="6.11052" transform="rotate(-60 -18 478.116)" fill="#FFA800"/>
+    <rect x="-149" y="567.355" width="485.496" height="59.9679" transform="rotate(-60 -149 567.355)" fill="#FFA800"/>
+    </symbol>
+
     <!-- start of Jahir -->
     <symbol id="ov-vedeo-play-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0)">
@@ -174,8 +183,14 @@
 
     <!-- start of Shariful -->
 
+    <symbol id="rgt-btn-white-icon-svg" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.9268 5.82336L7.1769 1.07344C6.6659 0.562436 5.83442 0.562436 5.32342 1.07344C4.81242 1.58443 4.81242 2.41591 5.32342 2.92691L7.14638 4.74987H1.24997C0.560991 4.74987 0 5.31086 0 5.99987C0 6.68887 0.560991 7.24984 1.24997 7.24984H7.14638L5.32342 9.0728C4.81242 9.5838 4.81242 10.4153 5.32342 10.9263C5.57891 11.1818 5.91441 11.3098 6.2504 11.3098C6.5864 11.3098 6.92138 11.1823 7.17739 10.9263L11.9273 6.17635C12.0243 6.07885 12.0243 5.92086 11.9268 5.82336Z"/>
+    </symbol>
+
+
   </svg>
 
+<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <section class="home-messege">
@@ -189,6 +204,15 @@
   </div>
 </div>
 </section>
+<?php 
+$logoObj = get_field('hdlogo', 'options');
+if( is_array($logoObj) ){
+  $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+}else{
+  $logo_tag = '';
+}
+$smedias = get_field('social_media', 'options')
+?> 
 <div class="bdoverlay"></div>
 <header class="header">
   <span class="hdr-white-skew"></span>
@@ -199,34 +223,42 @@
       <use xlink:href="#hdr-line-icon"></use> </svg></i>
     </span>
     <ul class="reset-list">
+      <?php if( !empty($smedias['facebook_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['facebook_url']; ?>">
           <i><svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#facebook-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['twitter_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['twitter_url']; ?>">
           <i><svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#twiter-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['linkedin_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['linkedin_url']; ?>">
           <i><svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#linkden-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['instagram_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['instagram_url']; ?>">
           <i><svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#instagram-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
     </ul>
   </div>
   <div class="container-lg">
@@ -234,9 +266,13 @@
       <div class="col-md-12">
         <div class="header-cntlr">
           <div class="hdr-logo">
+            <?php if( !empty($logo_tag) ): ?>
             <div class="logo">
-              <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg" alt=""></a>
+              <a href="<?php echo esc_url(home_url('/')); ?>">
+                <?php echo $logo_tag; ?>
+              </a>
             </div>
+            <?php endif; ?>
           </div>
           <div class="hdr-lft hide-md">
             <nav class="main-nav">
@@ -323,9 +359,13 @@
   <div class="xs-menu-hdr">
     <span class="hdr-white-skew"></span>
     <div class="hdr-logo">
+      <?php if( !empty($logo_tag) ): ?>
       <div class="logo">
-        <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg" alt=""></a>
+        <a href="<?php echo esc_url(home_url('/')); ?>">
+          <?php echo $logo_tag; ?>
+        </a>
       </div>
+      <?php endif; ?>
     </div>
     <div class="hdr-rgt">
       <div class="hdr-icons-cntlr">
