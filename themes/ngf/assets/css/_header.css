@@ -115,6 +115,11 @@
 .hdr-user a i{
 	display: inline-block;
 }
+.hdr-cart a i svg{
+	max-width: 24px!important;
+	width: 100%!important;
+	height: auto!important;
+}
 .hdr-cart a:hover i svg,
 .hdr-user a:hover i svg{
 	fill: #fff;
@@ -159,7 +164,7 @@
 }
 .fl-language-cntlr{
 	margin-left: 27px;
-	padding-left: 27px;
+	padding-left: 13px;
 	position: relative;
 }
 .fl-language-cntlr:after,
@@ -176,6 +181,9 @@
 	left: 0;
 	background: rgba(255, 255, 255, 0.21);;
 }
+.fl-language-cntlr:after{
+	margin-top: 2px;
+}
 /*language*/
 
 
@@ -188,8 +196,9 @@
 .fl-lang-cntlr{
 	position: relative;
     min-height: 30px;
-    padding: 0px 23px 0 15px;
-    min-width: 40px;
+    padding: 2px 23px 0 15px;
+    min-width: 50px;
+    margin-right: 2px;
 }
 .fl-lang ul li.lang-active{
 	position: relative;
@@ -240,7 +249,7 @@
 	background-size: contain;
     padding-right: 0;
     position: absolute;
-    top: 8px;
+    top: 10px;
     right: 0;
     margin-right: -3px;
     z-index: 21;
@@ -263,7 +272,7 @@
 .fl-lang-cntlr ul{
 	position: absolute;
 	left: 0;
-	right: 4px;
+	right: 0;
 	z-index: 20;
 	padding: 0 0 5px 0;	
 }
@@ -303,11 +312,12 @@ nav.main-nav > ul{
 	display: flex;
 	align-items: center;
 	margin: 0 -21px;
-	padding-top: 15px;
+	padding-top: 14px;
 }
 nav.main-nav > ul > li{
 	padding: 0 21px;
 	position: relative;
+	line-height: 1;
 }
 nav.main-nav ul li a,
 .fl-lang ul li a{
@@ -618,9 +628,12 @@ body.allWork {
 	nav.main-nav > ul > li{
 		padding: 0 10px;
 	}
-	/*.hdr-circle-icon{
-		margin-left: 0;
-	}*/
+	.hdr-circle-icon{
+		height: 92px;
+		width: 92px;
+		border: 15px solid #FFA800;
+		left: 120px;
+	}
 }
 @media(max-width: 1699px){
 	/*.hdr-circle-icon{
@@ -644,6 +657,10 @@ body.allWork {
 	.logo a{
 		max-width: 185px;
 		width: 100%;
+	}
+	.fl-lang ul li.lang-active a,
+	.fl-lang ul li a{
+		font-size: 15px;
 	}
 	nav.main-nav > ul{
 		margin: 0 -8px;
@@ -673,20 +690,22 @@ body.allWork {
 	}
 	.hdr-cart a i svg, 
 	.hdr-user a i svg{
-		max-width: 20px;
+		max-width: 20px!important;
+		width: 100%!important;
 		height: auto;
 	}
-	.hdr-cart a span.cart-number{
-		width: 20px;
-		height: 20px;
-		padding-top: 2px;
-		font-size: 10px;
+	.hdr-cart a span.cart-number {
+		width: 18px;
+		height: 18px;
+		padding-top: 1px;
+		font-size: 9px;
+		right: -10px;
 	}
 	.hdr-circle-icon{
-		height: 90px;
-		width: 90px;
-		border: 15px solid #FFA800;
-		/*bottom: -11px;*/
+		height: 80px;
+		width: 80px;
+		border: 12px solid #FFA800;
+		left: 120px;
 	}
 	.hdr-socials ul{
 		margin: -7px 0;
@@ -696,12 +715,29 @@ body.allWork {
 	}
 }
 @media(max-width: 1399px){
-	/*.hdr-circle-icon{
-		margin-left: 0;
-	}*/
+	.hdr-socials{
+		padding-top: 55px;
+	}
+	.hdr-lft-line-icon i svg{
+		max-width: 45px;
+	}
+	.hdr-socials{
+		left: 22px;
+		bottom: 45px;
+	} 
+	.hdr-circle-icon {
+		height: 65px;
+		width: 66px;
+		border: 9px solid #FFA800;
+		left: 80px;
+	}
 }
 @media(max-width: 1299px){
-	
+	.hdr-circle-icon{
+		bottom: -22px;
+		height: 50px;
+		width: 50px;
+	}
 }
 @media(max-width: 1199px){
 	.hdr-logo{
@@ -712,10 +748,10 @@ body.allWork {
 		width: 100%;
 	}
 	nav.main-nav > ul{
-		margin: 0 -5px;
+		margin: 0 -6px;
 	}
 	nav.main-nav > ul > li{
-		padding: 0 5px;
+		padding: 0 6px;
 	}
 	nav.main-nav > ul > li > a{
 		font-size: 12.5px;
@@ -734,14 +770,8 @@ body.allWork {
 		padding-left: 5px;
 	}
 	.fl-language-cntlr {
-		margin-left: 10px;
-		padding-left: 5px;
-	}
-	.hdr-circle-icon{
-		height: 83px;
-		width: 83px;
-		border: 12px solid #FFA800;
-		/*bottom: -11px;*/
+		margin-left: 15px;
+		padding-left: 0px;
 	}
 	.hdr-socials{
 		padding-top: 55px;
@@ -752,9 +782,14 @@ body.allWork {
 	.hdr-socials ul li{
 		padding: 5px 0;
 	}
-	
-	
-	
+}
+@media(max-width: 1023px){
+	nav.main-nav > ul{
+		margin: 0 -5px;
+	}
+	nav.main-nav > ul > li{
+		padding: 0 5px;
+	}
 }
 @media(max-width: 991px){
 	.header-cntlr{
@@ -804,6 +839,7 @@ body.allWork {
 	nav.main-nav > ul > li{
 		padding: 16px 0;
 		text-align: center;
+		line-height: 1;
 	}
 	nav.main-nav > ul > li > a{
 		font-weight: 600;
@@ -890,6 +926,17 @@ body.allWork {
 	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
 		font-size: 14px;
 	}
+	.hdr-cart a i svg{
+		max-width: 32px!important;
+		width: 100%!important;
+		height: auto!important;
+	}
+	.hdr-cart a span.cart-number{
+		top: -16px;
+		right: -13px;
+		height: 20px;
+		width: 20px;
+	}
 }
 @media(max-width: 767px){
 	.header-cntlr {
@@ -899,6 +946,7 @@ body.allWork {
 	.hdr-white-skew {
 		border-bottom: 120px solid #fff;
 	}
+
 }
 @media(max-width: 575px){
 	.xs-menu-hdr .hdr-white-skew{

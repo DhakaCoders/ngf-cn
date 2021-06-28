@@ -436,7 +436,7 @@ add_action( 'woocommerce_cart_is_empty', 'woo_if_cart_empty' );
 function woo_if_cart_empty(){
     echo '<div class="cart-is-emtpy">';
         echo '<div class="cie-icon"><img src="'.THEME_URI.'/assets/images/bag-icon.svg"/></div>';
-        echo '<strong>'.__('your Shopping cart is empty', 'ballonvaren').'</strong>';
+        echo '<strong>'.__('your <br> Shopping cart is empty', 'ballonvaren').'</strong>';
         echo '<p>'.__('Je hebt geen artikelen in je winkelwagen.', 'ballonvaren').'</p>';
     echo '</div>';
 }

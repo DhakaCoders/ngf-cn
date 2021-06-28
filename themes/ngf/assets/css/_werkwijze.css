@@ -44,7 +44,7 @@ span.werk-abs-img-two {
 .werk-stp-ibg {
     overflow: hidden;
 }
-.werk-inline-bg img{
+.werk-grid-inline-bg img{
 	display: none;
 }
 .werk-grid-inline-bg{
@@ -140,6 +140,9 @@ body.werk-bdff.sky-btm-bg-cntlr {
 	    width: 55px;
 	    height: 55px;
 	}
+	.werk-grid-inline-bg img{
+		min-height: 250px;
+	}
 
 
 
@@ -148,8 +151,8 @@ body.werk-bdff.sky-btm-bg-cntlr {
 
 }
 @media(max-width: 1199px){
-	.werk-one-grds-sec {
-	    padding: 40px 0;
+	.werk-inline-bg {
+	    margin-bottom: 40px;
 	}
 
 }
@@ -169,6 +172,16 @@ body.werk-bdff.sky-btm-bg-cntlr {
 	.werk-steps-grid-sec-cntlr {
 	    padding-bottom: 0;
 	}
+	.werk-grid-inline-bg img{
+	    min-height: 240px;
+	}
+	.werk-grid-itm-heading{
+		margin-bottom: 12px;
+	}
+	.werk-inline-bg {
+	    margin-bottom: 35px;
+	}
+
 
 
 
@@ -206,6 +219,9 @@ body.werk-bdff.sky-btm-bg-cntlr {
 	}
 	.werk-one-grds-sec {
 	    padding: 30px 0;
+	}
+	.werk-grid-itm-heading{
+		font-size: 24px!important;
 	}
 
 

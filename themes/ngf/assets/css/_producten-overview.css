@@ -42,7 +42,7 @@
 .fl-products-cntlr ul.products{
     display: flex!important;
     margin: 0 -12px!important;
-    flex-wrap: wrap!important;
+    flex-wrap: wrap!important;    
 }
 .fl-products-cntlr > ul.products > li{
     width: 33.3333%!important;
@@ -112,7 +112,7 @@
     margin-bottom: 6px;
 }
 .fl-product-grd .fl-pro-grd-des .fl-pro-grd-price{
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 /* == price design == */
 span.amount bdi, span.amount bdi span.woocommerce-Price-currencySymbol, 
@@ -144,15 +144,20 @@ del span.amount bdi:after{
 }
 /* == price design end */
 .fl-pro-grd-details {
-    padding-bottom: 20px;
-    border-bottom: 2px solid #eff4f7;
-    margin-bottom: 22px;
+    padding-bottom: 27px;
 }
 .fl-pro-grd-details p {
     line-height: 1.9;
 }
 .fl-pro-grd-details p:last-of-type{
     margin-bottom: 0;
+}
+.fl-pro-grd-details > ul{
+    margin-bottom: 0!important;
+    padding-top: 20px!important;
+    border-top: 2px solid #eff4f7;
+    margin-top: 20px!important;
+    padding-left: 16px!important;
 }
 .fl-buy-now-btn{
     width: 100%;
@@ -274,7 +279,7 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
         width: 100%!important;
         padding: 0 0 48px!important;
         max-width: 360px;
-        margin: 0 auto;
+        margin: 0 auto!important;
     }
     .fl-pro-grd-des{
         padding: 25px 23px 35px;

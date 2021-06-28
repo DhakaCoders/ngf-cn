@@ -16,7 +16,7 @@
         </div>
         <?php if( !empty($long_desc) ){ ?>
             <div class="long-desc">
-            <h2>Beschrijving</h2>';
+            <h2>Beschrijving</h2>
                 <?php echo wpautop( $long_desc, true ); ?>
             </div>
         <?php } ?>

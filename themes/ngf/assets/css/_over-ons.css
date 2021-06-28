@@ -192,7 +192,7 @@ span.fl-video-play-icon-cntlr{
 .ovo-testimonial {
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 90px;
+    padding-bottom: 40px;
 }
 .ovo-testimonial-slider-sec {
     background: #fff;
@@ -264,6 +264,9 @@ span.fl-video-play-icon-cntlr{
 .fl-fancy-inline-bg-img img{
     display: none;
 }
+.ovoTestimonialSlider.slick-slider{
+    margin-bottom: 0;
+}
 
 
 @media (max-width: 1699px){
@@ -295,12 +298,6 @@ span.fl-video-play-icon-cntlr{
     }
     .ofmi-heading {
         margin-bottom: 15px;
-    }
-    .fancy-vedeo-items-sec-cntlr ul li{
-        padding-bottom: 50px;
-    }
-    .ovo-testimonial{
-        padding-bottom: 70px;
     }
     .ovo-faq-slider-sec{
         padding-top: 90px;
@@ -370,9 +367,6 @@ span.fl-video-play-icon-cntlr{
     .ovo-fancy-modl-item-para {
         margin-bottom: 15px;
     }
-    .fancy-vedeo-items-sec-cntlr ul li {
-        padding-bottom: 40px;
-    }
     .ovo-faq-slider-sec {
         padding-top: 65px;
     }
@@ -400,7 +394,6 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-two-grds-des-module-sec {
         padding-top: 90px;
-        padding-bottom: 75px;
     }
     span.fl-video-play-icon-cntlr i svg{
         height: 60px;
@@ -423,7 +416,7 @@ span.fl-video-play-icon-cntlr{
         line-height: 33px;
     }
     .ovo-grds-des-rgt {
-        padding-left: 35px;
+        padding-left: 10px;
     }
     .ovo-grds-text-module p {
         line-height: 1.5;
@@ -433,7 +426,6 @@ span.fl-video-play-icon-cntlr{
         height: 600px;
     }
     .ovo-full-width-bg-des {
-        padding-top: 70px;
         padding-bottom: 50px;
     }
     .ovo-fancy-vedeo-items-sec {
@@ -447,7 +439,7 @@ span.fl-video-play-icon-cntlr{
         min-height: 340px;
     }
     .ovo-fancy-module-item-des {
-        padding: 30px 20px 0 20px;
+        padding: 20px 20px 0 20px;
     }
     .ovo-fancy-modl-item-para p{
         line-height: 20px;
@@ -491,8 +483,8 @@ span.fl-video-play-icon-cntlr{
 }
 @media(max-width: 991px){
     .ovo-two-grds-des-module-sec {
-        padding-top: 60px;
-        padding-bottom: 75px;
+        padding-top: 80px;
+        padding-bottom: 70px;
     }
     .ovo-grds-des-lft p {
         font-size: 20px;
@@ -505,7 +497,6 @@ span.fl-video-play-icon-cntlr{
         line-height: 55px;
     }
     .ovo-full-width-bg-des {
-        padding-top: 50px;
         padding-bottom: 25px;
     }
     .ovo-full-width-bg-des-cntlr p {
