@@ -1,6 +1,4 @@
-/*.checkout-sec{
-	padding-top: 99px;
-}*/
+
 .woocommerce-order-received .innerpage-con-wrap{
 	padding-top: 100px!important;
 	padding-bottom: 0!important;
@@ -95,9 +93,6 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 .srv-cont{
 	width: 33%;
 }
-/*.chk-acc{
-	padding-bottom: 23px;
-}*/
 .chk-acc-tp-cntrl{
 	padding-bottom: 30px;
 }
@@ -115,12 +110,6 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 .woocommerce-order-received .chk-acc-btm p{
 	margin-bottom: 0;
 }
-/*.woocommerce-order-received .chk-acc-btm p{
-	max-width: 280px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}*/
 .chk-acc-tp img , .chk-acc-btm img{
 	margin-bottom: 10px;
 }
@@ -166,9 +155,6 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	-ms-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 }
-/*.chkout-scl{
-	padding-top: 5px;
-}*/
 .chk-scl-blg{
 	display: flex;
 	flex-wrap: wrap;
@@ -245,15 +231,6 @@ body.woocommerce-order-received .sec-header .sec-title{
 /* =============== */
 
 @media (max-width: 1699px) {
-	.chkout-logo{
-		padding-bottom: 46px;
-	}
-	/*.checkout-sec{
-		padding-top: 94px;
-	}*/
-	.checkout-hdr{
-		padding-bottom: 40px;
-	}
 	.checkout-hdr .chkout-title{
 		font-size: 44px;
 		margin-bottom: 24px;
@@ -262,38 +239,21 @@ body.woocommerce-order-received .sec-header .sec-title{
 		padding: 31px 20px;
 	}
 	.chkout-service{
-		padding-bottom: 110px;
+		padding-bottom: 50px;
 	}
 
 }
-/* 
-@media (max-width: 1599px) {
-	
-}
-
-@media (max-width: 1499px) {
-
-}
-
-@media (max-width: 1399px) {
-
-} */
 
 @media (max-width: 1199px) {
-
-	.chkout-logo{
-		padding-bottom: 38px;
-	}
 	.woocommerce-order-received .innerpage-con-wrap{
 		padding-top: 80px!important;
 		padding-bottom: 0!important;
 	}
 	.checkout-hdr .chkout-title{
 		font-size: 40px;
-		margin-bottom: 20px;
 	}
 	.chkout-service{
-		padding-bottom: 100px;
+		padding-bottom: 40px;
 	}
 	.srv-cont {
     	width: 33%;
@@ -309,12 +269,6 @@ body.woocommerce-order-received .sec-header .sec-title{
 @media (max-width: 991px) {
 	.woocommerce-order-received .checkout-cntrl{
 		margin: 0;
-	}
-	.chkout-logo{
-		padding-bottom: 30px;
-	}
-	.chkout-service{
-		padding-bottom: 90px;
 	}
 	.srv-fea-img-cntrl{
 		margin-right: 15px;
@@ -332,7 +286,7 @@ body.woocommerce-order-received .sec-header .sec-title{
 	.srv-fea-img-cntrl{
 		width: 100%;
 		margin-right: 0;
-		margin-bottom: 30px;
+		margin-bottom: 32px;
 	}
 	.srv-cont{
 		margin: auto;
@@ -341,7 +295,10 @@ body.woocommerce-order-received .sec-header .sec-title{
 	}
 	.chkout-service{
 		display: block;
-		padding-bottom: 80px;
+		padding-bottom: 30px;
+	}
+	.chk-acc-tp-cntrl {
+	    padding-bottom: 20px;
 	}
 }
 
@@ -359,27 +316,15 @@ body.woocommerce-order-received .sec-header .sec-title{
 	}
 	.checkout-hdr .chkout-title{
 		font-size: 32px;
-		margin-bottom: 12px;
 	}
-	
-	
 	.chk-acc-tp-cntrl{
 		padding-bottom: 20px;
 	}
 	.chk-acc-tp, .chk-acc-btm{
-		padding: 35px 20px;
-	}
-	.checkout-hdr{
-		padding-bottom: 20px;
-		border-bottom: 2px solid #ECEEEF;
-		margin-bottom: 28px;
+		padding: 40px 20px;
 	}
 	.chkout-logo{
-		padding-bottom: 32px;
-	}
-	
-	.chk-acc{
-		padding-bottom: 50px;	
+		padding-bottom: 25px;
 	}
 	.chk-acc-bg{
 		padding: 55px 42px 23px 40px;
@@ -394,7 +339,7 @@ body.woocommerce-order-received .sec-header .sec-title{
 		text-align: center;
 	}
 	.checkout-sec{
-		padding-top: 80px;
+		padding-top: 45px;
 	}
 	body.woocommerce-order-received .page-grd-sec-wrp {
 	    padding-top: 0!important;
@@ -408,9 +353,6 @@ body.woocommerce-order-received .sec-header .sec-title{
 	.woocommerce-order-received .chk-acc-tp p{
 		padding-bottom: 6px;
 	}
-	.chkout-service{
-		padding-bottom: 70px;
-	}
 }
 
 @media (max-width: 575px) {
@@ -423,9 +365,6 @@ body.woocommerce-order-received .sec-header .sec-title{
 	}
 	.checkout-hdr .chkout-title span {
     	display: inline-block;
-	}
-	.chkout-service{
-		padding-bottom: 60px;
 	}
 }
 
