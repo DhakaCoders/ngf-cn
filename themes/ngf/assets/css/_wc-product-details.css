@@ -69,7 +69,6 @@ span.single-price-total{
 	clear: both;
 	display: table;
 }
-
 .main-img-crtl .woocommerce-product-gallery__image{
 /*	height: 436px;*/
 	background: #fff;
@@ -150,6 +149,15 @@ span.single-price-total{
 	position: absolute;
 	bottom: 29px;
 }
+.single-product .quantity{
+	display: none;
+}
+.single-product .price-quentity-ctrl{
+	padding-bottom: 26px;list-right-mark.svg
+}
+/* .single-product .long-desc ~ ul li:before{
+	background: url('../images/list-right-mark.svg')!important;
+} */
 /* == review sec == */
 .single-product .woocommerce-Reviews h2{
 	display: none;
@@ -189,7 +197,7 @@ span.single-price-total{
 }
 .woocommerce div.product div.summary{
 	width: 51%!important;
-	padding-left: 120px;
+	padding-left: 108px;
 }
 .single-product figure.woocommerce-product-gallery-wrap, 
 .single-product .woocommerce .fl-product div.product div.images{
@@ -199,9 +207,12 @@ span.single-price-total{
 	width: 49%;
 }
 .woocommerce div.product .product_title{
-	font-size: 30px;
+	font-size: 60px;
 	letter-spacing: -0.02em;
-	margin-bottom: 17px;
+	margin-bottom: 10px;
+	line-height: 1.3;
+	text-transform: uppercase;
+	margin-top: -17px;
 }
 
 .long-desc{
@@ -489,11 +500,6 @@ body.woocommerce-cart .product-quantity .quantity{
 .our-services-grid.OurServicesSlider.slick-initialized .our-services-item-wrap{
 	display: block;
 }
-/*.related.products ul li{*/
-/*	width: 25%!important;*/
-/*	padding: 0 12px 0!important;*/
-/*	margin: 0!important;*/
-/*}*/
 .woocommerce .related.products li.first, .woocommerce-page ul.products li.first{
 	clear: initial!important;
 }
@@ -506,18 +512,19 @@ body.woocommerce-cart .product-quantity .quantity{
 }
 
 body.single-product div.product form.cart .button{
-	background: #1DB4B2!important;
+	background: #000000!important;
 	min-width: 337px;
 	padding: 17px 10px 13px;
 	position: relative;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid #1DB4B2!important;
+	border: 2px solid #000000!important;
 	margin-left: 0!important;
 }
 body.single-product div.product form.cart .button:hover{
-    background: #D9534F!important;
-    border-color: #D9534F!important;
+    background: #FFA800!important;
+    border-color: #FFA800!important;
+    color: #fff!important;
 }
 .single-product .fl-pro-grid-img{
 	transition: all .5s;
@@ -546,9 +553,6 @@ body.single-product div.product form.cart .button:hover{
 	color: #243444;
 	text-align: center;
 	margin-bottom: 55px;
-}
-.fl-product .summary-ctrl{
-   margin-top: 27px; 
 }
 .summary-ctrl .qty-price-wrap{
 	padding-bottom: 21px;
