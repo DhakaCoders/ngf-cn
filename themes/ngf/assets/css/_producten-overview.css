@@ -157,6 +157,7 @@ del span.amount bdi:after{
     padding-top: 20px!important;
     border-top: 2px solid #eff4f7;
     margin-top: 20px!important;
+    padding-left: 16px!important;
 }
 .fl-buy-now-btn{
     width: 100%;
