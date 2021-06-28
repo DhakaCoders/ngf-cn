@@ -164,6 +164,7 @@ body.woocommerce-edit-account .woocommerce input[type="password"],
 body.woocommerce-edit-account .woocommerce textarea{
     border-radius:0px!important;
     border: 1px solid rgba(231, 234, 236, 0.1);
+    color:#909BA5;
 }
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
