@@ -509,6 +509,17 @@
     .ftr-copyright p, .ftr-developed-by p, .ftr-btm-menu ul li a {
         font-size: 14px;
     }
+    .client-logo{
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .client-logo img{
+        max-height: 45px;
+        width: auto;
+    }
 }
 @media(max-width: 575px){
     
