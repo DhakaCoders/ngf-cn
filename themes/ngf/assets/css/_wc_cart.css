@@ -98,9 +98,9 @@ body.woocommerce-cart .product-quantity .quantity a:hover{
 }
 body.woocommerce-cart .product-quantity .quantity input{
 	background: transparent;
-	font-weight: 700;
-	font-size: 14px;
-	color: #2C113E;
+	font-weight: 600;
+	font-size: 18px;
+	color: #000;
 	width:35px;
 }
 body.woocommerce-cart .cart-btn-qty .quantity.qty span, 
@@ -795,7 +795,7 @@ body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
 	    padding-top: 35px;
 	}
 	.cart-crtl{
-		padding-bottom: 60px;
+		padding-bottom: 40px;
 	}
 }
 
@@ -928,7 +928,7 @@ body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
 	}
 	body.woocommerce-cart .cart-table-crtl table.shop_table tbody tr td.product-remove > a {
 	    position: absolute;
-	    bottom: 18px;
+	    bottom: 20px;
 	    left: auto;
 	    right: 0;
 	    z-index: 10!important;
@@ -942,7 +942,7 @@ body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
 		border-bottom: none!important;
 	}
 	body.woocommerce-cart .cart-crtl .cart-table-crtl form.woocommerce-cart-form{
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 	body.woocommerce-cart .empty-cart-btn{
 		display: block;
@@ -950,8 +950,8 @@ body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
 		margin-top: 0;
 	}	
 	body.woocommerce-cart .empty-cart-btn a{				
-		font-weight: 500;
-		font-size: 12px;
+		font-weight: 300;
+		font-size: 14px;
 	}
 	body.woocommerce-cart .cart_totals table.shop_table td{
 		padding: 0 0 10px!important;
@@ -972,9 +972,10 @@ body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
 		display: none;
 	}
 	.cart-crtl .cart-total-crtl .shop_table tr:not(.giftcard) td:before {
-	    font-weight: 400;
+	    font-weight: 300;
 	    float: left;
 	    font-size: 14px;
+	    color: #9B9B9B;
 	}
 	body.woocommerce-page.woocommerce-checkout  .default-page-con{
 		padding-top: 0;
@@ -1003,6 +1004,9 @@ body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
 		display: flex;
 		flex-direction: column;
 	}
+	body.woocommerce-cart .woocommerce-cart-form__cart-item .product-name p{
+		margin-bottom: 0;
+	}
 	body.woocommerce-cart .woocommerce table.shop_table tr:first-child td {
 	    padding-top: 0!important;
 	}
@@ -1010,23 +1014,23 @@ body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
 	    padding-top: 0;
 	}
 	.woocommerce-cart .page-grd-sec-wrp {
-	    padding-top: 20px;
+	    padding-top: 15px;
 	}
 	body.woocommerce-cart .woocommerce table.shop_table tr td.product-quantity{
 		padding-top: 5px!important;
 	}
 	body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon {
-	    padding-bottom: 25px;
+	    padding-bottom: 30px;
 	}
 	.cart-crtl {
-	    padding-bottom: 50px;
+	    padding-bottom: 30px;
 	}
 	body.woocommerce-cart .page-heading{
 		padding-top: 7px;
 	}
 	body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button{
 		font-size: 14px!important;
-		font-weight: 900;
+		font-weight: 500;
 		padding: 15px 15px!important;
 	}
 	body.woocommerce-cart .cart-crtl .cart-total-crtl{
@@ -1079,6 +1083,21 @@ body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
 	body.empty-cart .page-grd-sec-wrp{
 		padding-top: 0;
 	}
+	body.woocommerce-cart .sec-heading {
+	    padding-top: 15px;
+	}
+	body.woocommerce-cart span.amount bdi, 
+	body.woocommerce-cart span.amount bdi span.woocommerce-Price-currencySymbol, 
+	body.woocommerce-cart ins span.amount bdi, 
+	body.woocommerce-cart ins span.amount bdi span.woocommerce-Price-currencySymbol, 
+	body.woocommerce-cart del span.amount bdi, 
+	body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
+		font-size: 14px!important;
+	}
+	body.woocommerce-cart .add-more-product a{
+		font-weight: 300;
+		font-weight: 14px!important;
+	}
 }
 
 @media(max-width: 575px){
@@ -1123,6 +1142,9 @@ body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
 	body.empty-cart .innerpage-con-wrap .woocommerce {
 	    padding-bottom: 55px;
 	}
+	.woocommerce-cart .page-grd-sec-wrp {
+	    padding-top: 0;
+	}
 }
 @media(max-width: 479px){
 	body.woocommerce-cart .innerpage-con-wrap .default-page-con {
@@ -1144,7 +1166,9 @@ body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
         font-size: 12px!important;
     }
     body.woocommerce-cart.woocommerce-page .product-name a{
-		font-size: 16px;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 1.5;
 	}
 	body.empty-cart .innerpage-con-wrap .woocommerce {
 	    padding-bottom: 35px;
