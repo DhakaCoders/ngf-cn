@@ -142,6 +142,17 @@ del span.amount bdi:after{
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
+.single-product .fl-pro-grd-price{
+    padding-bottom: 32px;
+}
+.single-product span.amount{
+    display: inline-block;
+    vertical-align: baseline;
+}
+.single-product span.amount bdi, .single-product span.amount bdi span.woocommerce-Price-currencySymbol{
+    font-size: 30px;
+    line-height: 1;
+}
 /* == price design end */
 .fl-pro-grd-details {
     padding-bottom: 27px;
