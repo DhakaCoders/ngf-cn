@@ -43,7 +43,7 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
         <div class="chkout-logo">
           <img src="<?php echo THEME_URI; ?>/assets/images/checkout-logo.svg" alt="">
         </div>
-        <h3 class="fl-h1 chkout-title"><?php esc_html_e( 'Bedankt', 'woocommerce' ); ?> <span><?php echo $order->get_billing_first_name(); ?></span>.<br><?php esc_html_e( 'Je bent klaar om te vliegen!', 'woocommerce' ); ?></h3>
+        <h3 class="fl-h2 chkout-title"><?php esc_html_e( 'Bedankt', 'woocommerce' ); ?> <span><?php echo $order->get_billing_first_name(); ?></span>.<br><?php esc_html_e( 'Je bent klaar om te vliegen!', 'woocommerce' ); ?></h3>
         <p><?php esc_html_e( 'Een bevestigingsmail komt zodadelijk jouw richting uit.', 'woocommerce' ); ?></p>
       </div>
     <?php 
