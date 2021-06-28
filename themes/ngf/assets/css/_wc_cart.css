@@ -1151,6 +1151,10 @@ body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
 	    margin-bottom: 30px;
 	    font-size: 18px;
 	}
+	body.empty-cart .cart-is-emtpy{
+		max-width: 100%;
+		width: 100%;
+	}
 }
 
 @media(max-width: 575px){
