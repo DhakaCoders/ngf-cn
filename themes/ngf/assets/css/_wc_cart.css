@@ -469,12 +469,19 @@ body.woocommerce-cart .woocommerce table.shop_table tr.cart-gift-card td.product
 /**
 Empty cart
 */
+body.woocommerce-cart.empty-cart .sec-header .sec-title{
+	display: none;
+}
 body.empty-cart .page-grd-sec-wrp{
     padding-bottom: 100px;
     padding-top: 30px;
 }
-.cart-is-emtpy{
+body.empty-cart .cart-is-emtpy{
 	padding-top: 70px;
+	max-width: 800px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .cart-is-emtpy,
 .cart-is-emtpy + .return-to-shop{
@@ -485,27 +492,58 @@ body.empty-cart .page-grd-sec-wrp{
 	text-align: center;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 48px;
-	line-height: 1;
-	color: #243444;
-	margin-top: 45px;
-	margin-bottom: 20px;
+	font-size: 60px;
+	line-height: 1.3;
+	color: #000;
+	margin-top: 35px;
+	margin-bottom: 45px;
 	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	padding-bottom: 35px;
+	position: relative;
+}
+.cart-is-emtpy strong:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	width: 67%;
+	height: 2px;
+	background: #ECEEEF;
+}
+.cart-is-emtpy > p{
+	margin-bottom: 40px;
 }
 .cart-is-emtpy + .return-to-shop a {
     display: inline-block;
     text-align: center;
     margin: 0;
-    padding: 15px 30px;
-    min-width: 342px;
+    padding: 14px 30px;
+    min-width: 336px;
 }
 body.empty-cart .woocommerce a{
 	margin-left: 12px;
 	margin-right: 12px;
 }
-body.empty-cart .woocommerce a:last-child{
-	background: #FDCA35!important;
-	border-color: #FDCA35!important;
+body.empty-cart.woocommerce-cart .return-to-shop a{
+	font-size: 16px!important;
+}
+body.empty-cart.woocommerce-cart .return-to-shop a.cart-empty-btn-1{
+	background: #FFA800!important;
+	border-color: #FFA800!important;
+}
+body.empty-cart.woocommerce-cart .return-to-shop a.cart-empty-btn-1:hover{
+	background: #000!important;
+	border-color: #000!important;
+	color: #fff!important;
+}
+body.empty-cart.woocommerce-cart .return-to-shop a.cart-empty-btn-2:hover{
+	background: #FFA800!important;
+	border-color: #FFA800!important;
+	color: #fff!important;
 }
 body.empty-cart .woocommerce a:last-child:hover{
 	background: #D9534F!important;
@@ -529,6 +567,11 @@ body.empty-cart .woocommerce-cart .page-grd-sec-wrp {
 body.woocommerce-cart.woocommerce-page .woocommerce-shipping-totals.shipping{
 	display: none;
 }
+
+
+
+
+
 /**
 Cart gift cart
 */
