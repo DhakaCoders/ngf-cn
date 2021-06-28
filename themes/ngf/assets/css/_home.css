@@ -70,7 +70,7 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	bottom: -25px;
+	bottom: 0;
 	overflow: hidden;
 
 }
@@ -78,13 +78,13 @@
 	width: 729px;
 	height: 729px;
 	right: -45px;
-	bottom: 0;
+	bottom: -25px;
 	position: absolute;
 }
 .hm-bnr-person-img{
 	position: absolute;
 	left: -28px;
-    bottom: 75px;
+    bottom: 50px;
 	z-index: 1;
 }
 .hm-bnr-bg-circle{
@@ -320,7 +320,7 @@
 	}
 	.hm-bnr-person-img{
 		left: 299px;
-		bottom: 50px;
+		bottom: 25px;
 	}
 	.hm-bnr-person-img img{
 		max-width: 400px;
@@ -429,8 +429,8 @@
 		border-bottom: 142px solid #fff;
 	}
 	.hm-bnr-desc {
-		padding-bottom: 15px;
-		margin-bottom: 22px;
+		padding-bottom: 20px;
+		margin-bottom: 25px;
 		max-width: 195px;
 		width: 100%;
 	}
@@ -458,7 +458,7 @@
 	.hm-bnr-person-img{
 		left: initial;
 		right: 0;
-		bottom: 40px;
+		bottom: 15px;
 	}
 	.hm-bnr-person-img img{
 		max-width: initial;
@@ -474,6 +474,10 @@
 	.hm-rgt-xs-line {
 		width: 50px;
 		top: 66px;
+	}
+	.hm-bnr-desc:after{
+		width: 33px;
+		height: 2px;
 	}
 
 }
