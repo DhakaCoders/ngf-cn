@@ -84,7 +84,12 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
             </div> 
             <?php endif; ?> 
           </div>
-          <div class="chkout-scl">
+          
+      		<?php endif; ?>
+        </div>
+
+      </div>
+      <div class="chkout-scl">
             <div class="chkout-scl-hdr">
               <?php 
                 if( $socialinfo =  $thankyou['socialinfo'] ):
@@ -121,10 +126,6 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
             </div>
             <?php endif; ?>
           </div>
-      		<?php endif; ?>
-        </div>
-
-      </div>
     </div>
 </div>
 <?php endif; ?>
