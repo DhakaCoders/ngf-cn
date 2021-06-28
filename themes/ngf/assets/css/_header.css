@@ -115,6 +115,11 @@
 .hdr-user a i{
 	display: inline-block;
 }
+.hdr-cart a i svg{
+	max-width: 24px!important;
+	width: 100%!important;
+	height: auto!important;
+}
 .hdr-cart a:hover i svg,
 .hdr-user a:hover i svg{
 	fill: #fff;
@@ -159,7 +164,7 @@
 }
 .fl-language-cntlr{
 	margin-left: 27px;
-	padding-left: 27px;
+	padding-left: 13px;
 	position: relative;
 }
 .fl-language-cntlr:after,
@@ -192,7 +197,7 @@
 	position: relative;
     min-height: 30px;
     padding: 2px 23px 0 15px;
-    min-width: 40px;
+    min-width: 50px;
     margin-right: 2px;
 }
 .fl-lang ul li.lang-active{
@@ -307,11 +312,12 @@ nav.main-nav > ul{
 	display: flex;
 	align-items: center;
 	margin: 0 -21px;
-	padding-top: 15px;
+	padding-top: 14px;
 }
 nav.main-nav > ul > li{
 	padding: 0 21px;
 	position: relative;
+	line-height: 1;
 }
 nav.main-nav ul li a,
 .fl-lang ul li a{
@@ -683,11 +689,12 @@ body.allWork {
 		max-width: 20px;
 		height: auto;
 	}
-	.hdr-cart a span.cart-number{
-		width: 20px;
-		height: 20px;
-		padding-top: 2px;
-		font-size: 10px;
+	.hdr-cart a span.cart-number {
+		width: 18px;
+		height: 18px;
+		padding-top: 1px;
+		font-size: 9px;
+		right: -10px;
 	}
 	.hdr-circle-icon{
 		height: 80px;
@@ -736,10 +743,10 @@ body.allWork {
 		width: 100%;
 	}
 	nav.main-nav > ul{
-		margin: 0 -5px;
+		margin: 0 -6px;
 	}
 	nav.main-nav > ul > li{
-		padding: 0 5px;
+		padding: 0 6px;
 	}
 	nav.main-nav > ul > li > a{
 		font-size: 12.5px;
@@ -758,8 +765,8 @@ body.allWork {
 		padding-left: 5px;
 	}
 	.fl-language-cntlr {
-		margin-left: 10px;
-		padding-left: 5px;
+		margin-left: 15px;
+		padding-left: 0px;
 	}
 	.hdr-socials{
 		padding-top: 55px;
@@ -770,9 +777,14 @@ body.allWork {
 	.hdr-socials ul li{
 		padding: 5px 0;
 	}
-	
-	
-	
+}
+@media(max-width: 1023px){
+	nav.main-nav > ul{
+		margin: 0 -5px;
+	}
+	nav.main-nav > ul > li{
+		padding: 0 5px;
+	}
 }
 @media(max-width: 991px){
 	.header-cntlr{
@@ -822,6 +834,7 @@ body.allWork {
 	nav.main-nav > ul > li{
 		padding: 16px 0;
 		text-align: center;
+		line-height: 1;
 	}
 	nav.main-nav > ul > li > a{
 		font-weight: 600;
@@ -908,6 +921,17 @@ body.allWork {
 	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
 		font-size: 14px;
 	}
+	.hdr-cart a i svg{
+		max-width: 32px!important;
+		width: 100%!important;
+		height: auto!important;
+	}
+	.hdr-cart a span.cart-number{
+		top: -16px;
+		right: -13px;
+		height: 20px;
+		width: 20px;
+	}
 }
 @media(max-width: 767px){
 	.header-cntlr {
@@ -917,6 +941,7 @@ body.allWork {
 	.hdr-white-skew {
 		border-bottom: 120px solid #fff;
 	}
+
 }
 @media(max-width: 575px){
 	.xs-menu-hdr .hdr-white-skew{
