@@ -229,10 +229,9 @@ body.woocommerce-cart .empty-cart-btn{
 
 }
 body.woocommerce-cart .empty-cart-btn a{
-	color: #EE3E15;
+	color: #D61D1D;
 	text-decoration: none!important;
-	font-weight: 400;
-	font-size: 14px
+	font-weight: 300;
 }
 body.woocommerce-cart .empty-cart-btn a:hover{
 	color: #1eb4b3;
@@ -244,7 +243,7 @@ body.woocommerce-cart.woocommerce-page .product-name a:hover,
 	color: #FFA800;
 }
 body.woocommerce-cart .empty-cart-btn a:hover{
-	color: #1DB4B2;
+	color: #FFA800;
 }
 body.woocommerce-cart .add-more-product a:hover:after{
 	left:-5px;
@@ -311,7 +310,7 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-f
 	font-weight: 300;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code:focus{
-	border-color: #1DB4B2!important;
+	border-color: #FFA800!important;
 }
 
 
@@ -354,7 +353,7 @@ body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[ty
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button:hover,
 body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[type=button]:hover{
-    color: #000!important;
+    color: #D61D1D!important;
     background: initial!important;
     border: none!important;
 }
@@ -653,7 +652,7 @@ body.woocommerce-cart .sec-heading{
 }
 body.woocommerce-cart .sec-header .sec-title{
 	padding-bottom: 30px;
-	border-bottom: 2px solid red;
+	border-bottom: 2px solid #ECF1F4;
 	margin-bottom: 20px;
 }
 body.woocommerce-cart .cart-btn-qty .quantity.qty span, 
@@ -680,7 +679,7 @@ body.woocommerce-cart .popup-bottom-btn a:hover,
 body.woocommerce-cart .cart-btn-qty .quantity.qty span.plus:hover, 
 body.woocommerce-cart .cart-btn-qty .quantity.qty span:hover, 
 body.woocommerce-cart .contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button:hover{
-	background-color: #000!important;
+	background-color: #D61D1D!important;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button:hover{
 	background-color: #FFA800!important;
