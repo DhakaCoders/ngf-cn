@@ -658,6 +658,10 @@ body.allWork {
 		max-width: 185px;
 		width: 100%;
 	}
+	.fl-lang ul li.lang-active a,
+	.fl-lang ul li a{
+		font-size: 15px;
+	}
 	nav.main-nav > ul{
 		margin: 0 -8px;
 	}
@@ -686,7 +690,8 @@ body.allWork {
 	}
 	.hdr-cart a i svg, 
 	.hdr-user a i svg{
-		max-width: 20px;
+		max-width: 20px!important;
+		width: 100%!important;
 		height: auto;
 	}
 	.hdr-cart a span.cart-number {
