@@ -35,7 +35,7 @@ if (isset( $_POST["account_email"] ) && isset($_POST['user_id'])) {
 		<input type="hidden" name="user_id" value="<?php echo $user->ID; ?>">
 		<?php do_action( 'woocommerce_edit_account_form_start' ); ?>
 		<fieldset>
-			<legend><?php esc_html_e( 'Contactpersoon', 'woocommerce' ); ?></legend>
+			<legend><?php esc_html_e( 'Contact Person', 'woocommerce' ); ?></legend>
 		<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
 			<label for="account_first_name"><?php esc_html_e( 'Name', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
 			<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_first_name" placeholder="First Name"  id="account_first_name" autocomplete="given-name" value="<?php echo esc_attr( $user->first_name ); ?>" />
