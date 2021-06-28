@@ -6,11 +6,10 @@
 	padding-bottom: 0!important;
 }
 body.woocommerce-order-received .page-grd-sec-wrp{
-	padding-top: 98px!important;
+	padding-top: 60px!important;
 }
 .woocommerce-order-received .checkout-cntrl .checkout-hdr h3{
 	border-bottom: none!important;
-	padding-bottom: 0!important;
 }
 .woocommerce-order-received .checkout-cntrl{
 	margin: 0 -20px;
@@ -19,19 +18,33 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	text-align: center;
 }
 .chkout-logo {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     max-width: 554px;
     height: auto;
     margin: auto;
 }
 .checkout-hdr{
-	padding-bottom: 48px;
+	padding-bottom: 30px;
 }
 .checkout-hdr .chkout-title{
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
 	line-height: 1.1;
 	margin-bottom: 30px;
+	padding-bottom: 18px!important;
+	position: relative;
+}
+.checkout-hdr .chkout-title:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	width: 26%;
+	height: 2px;
+	background: #EFF4F7;
 }
 .pwoocommerce-order-received .default-page-con h3{
 	border-bottom: none!important;
@@ -214,6 +227,23 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	color: #fff;
 	text-transform: capitalize;
 }
+
+
+body.woocommerce-order-received .sec-heading{
+	padding-bottom: 0;
+}
+body.woocommerce-order-received .sec-hdr-lft, 
+body.woocommerce-order-received .sec-hdr-rgt{
+	width: 100%;
+	padding-right: 0;
+}
+
+body.woocommerce-order-received .sec-header .sec-title{
+	padding-bottom: 20px;
+	border-bottom: 2px solid #ECF1F4;
+	margin-bottom: 0;
+}
+
 
 /* ================= */
 /* == responsive == */
