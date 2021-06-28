@@ -318,7 +318,10 @@ body.woocommerce-order-received h2.woocommerce-column__title {
 }
 .woocommerce-account .woocommerce-address-fields__field-wrapper,
 .woocommerce-account .woocommerce-EditAccountForm fieldset{
-    padding-bottom: 40px;
+    padding-bottom: 60px;
+}
+.woocommerce-account .woocommerce-EditAccountForm fieldset:last-of-type{
+    padding-bottom: 28px;
 }
 .woocommerce-account .select2-container .select2-selection--single,
 .woocommerce-account .select2-container--default .select2-selection--single .select2-selection__arrow{
