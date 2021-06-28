@@ -42,7 +42,7 @@
 .fl-products-cntlr ul.products{
     display: flex!important;
     margin: 0 -12px!important;
-    flex-wrap: wrap!important;
+    flex-wrap: wrap!important;    
 }
 .fl-products-cntlr > ul.products > li{
     width: 33.3333%!important;
@@ -153,6 +153,9 @@ del span.amount bdi:after{
 }
 .fl-pro-grd-details p:last-of-type{
     margin-bottom: 0;
+}
+.fl-pro-grd-details > ul{
+    margin-bottom: 0!important;
 }
 .fl-buy-now-btn{
     width: 100%;
