@@ -286,7 +286,7 @@ body.woocommerce-cart .cart_totals table tr.order-total .woocommerce-Price-amoun
 }
 body.woocommerce-cart .cart_totals tbody tr td:last-child,
 body.woocommerce-checkout .custom-checkout-order-review tbody tr td:last-child,
-body.woocommerce-checkout .custom-checkout-order-review tbody tr:last-child{
+body.woocommerce-checkout .custom-checkout-order-review tfoot tr:last-child{
 	padding-right: 0;
 	text-align: right;
 }
