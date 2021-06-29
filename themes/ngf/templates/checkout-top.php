@@ -2,7 +2,7 @@
 <?php if( is_checkout() && strpos($_SERVER['REQUEST_URI'], "order-received") !== false ): ?>
 
 <div class="order-sec bnr-back-btn-cntlr">
-	<div class="back-to-dashboard-btn">
+	<div class="back-to-dashboard-btn-cntlr">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -62,7 +62,7 @@
 
 
 <div class="bnr-back-btn-cntlr"> 
-	<div class="back-to-dashboard-btn">
+	<div class="back-to-dashboard-btn-cntlr">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
