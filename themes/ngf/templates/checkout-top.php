@@ -17,7 +17,7 @@
 				<div class="col-md-12">
 					<div class="checkout-page-title clearfix">
 					<div class="checkoutpt-left">
-						<h1><?php the_title(); ?></h1>
+						<h1 class="fl-h2"><?php the_title(); ?></h1>
 					</div>
 						<div class="checkoutpt-right">
 							<div class="checkout-page-bar-crtl">
@@ -77,7 +77,7 @@
 				<div class="col-md-12">
 					<div class="checkout-page-title clearfix">
 					<div class="checkoutpt-left">
-						<h1><?php the_title(); ?></h1>
+						<h1 class="fl-h2"><?php the_title(); ?></h1>
 					</div>
 						<div class="checkoutpt-right">
 							<div class="checkout-page-bar-crtl">
