@@ -1,7 +1,7 @@
-.thank-you-bnnr-bg-cntlr .bnr-bg-overly-module{
+.thank-you-bnnr-cntlr .bnr-bg-overly-module{
     margin-bottom: 83px;
 }
-.thank-you-entry-heading h1{
+.thank-you-entry-header h1{
     line-height: 1;
     text-align: center;
     margin-bottom: 12px;
@@ -32,9 +32,13 @@
 .thank-you-des-cntlr {
     border-top: 2px solid #EFF4F7;
 }
-.thank-you-page-sec .bnr-bg-overly-module{
+.thank-you-page-content .bnr-bg-overly-module{
     margin-bottom: 0;
 }
-.thank-you-bnnr-bg-cntlr .bnr-bg-560 .bnr-bg-overly{
+.thank-you-page-content {
+    position: relative;
+    z-index: 99;
+}
+.thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
     height: 570px;
 }
