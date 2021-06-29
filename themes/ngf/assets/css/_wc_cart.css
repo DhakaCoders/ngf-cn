@@ -247,7 +247,8 @@ body.woocommerce-cart .cart_totals h2{
 	margin-bottom: 30px;
 }
 body.woocommerce-cart .cart_totals tbody tr th:first-child,
-body.woocommerce-checkout .custom-checkout-order-review tbody tr th:first-child{
+body.woocommerce-checkout .custom-checkout-order-review tbody tr th:first-child,
+body.woocommerce-checkout .custom-checkout-order-review tfoot tr th:first-child{
 	padding-left: 0;
 	border-bottom: 0!important;
 	border-top: 0!important;
