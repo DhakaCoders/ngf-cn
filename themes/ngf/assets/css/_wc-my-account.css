@@ -1393,7 +1393,9 @@ body.woocommerce-checkout .woocommerce-shipping-fields .selection .select2-selec
 body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .selection .select2-selection{
     border-radius:0!important;
 }
-
+body.woocommerce-checkout .custom-checkout-order-review .coupon-full-width #coupon_code_enter{
+    margin-bottom:5px!important;
+}
 
 
 
@@ -1635,14 +1637,23 @@ body.woocommerce-checkout form .form-row .woocommerce-input-wrapper .description
 }
 body.woocommerce-checkout .custom-checkout-order-review button.button.alt{
     width: 100%;
-    background: #1DB4B2!important;
-    border-color: #1DB4B2!important;
+    background: #000000!important;
+    border-color: #000000!important;
     padding: 16px 15px;
     margin-left: 0;
+    margin-bottom:10px;
 }
-span.woocommerce-terms-and-conditions-checkbox-text{
-    font-weight: 500;
-    color: #909BA5;
+body.woocommerce-checkout .checkout-terms +button + p {
+    color: #9B9B9B;
+    font-size: 14px;
+    text-align: center;
+}
+span.woocommerce-terms-and-conditions-checkbox-text,
+span.woocommerce-terms-and-conditions-checkbox-text > a{
+    font-weight: 300;
+    color: #9B9B9B;
+    letter-spacing: -0.02em;
+    font-size: 14px;
 }
 body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] {
     background: #1DB4B2!important;
