@@ -89,20 +89,33 @@
 }
 .circle-animate{
 	animation: circleAnimate 1.5s infinite;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	border-color: linear-gradient(to bottom, #FFA800 0%, #f0b543 100%)!important;
 	
 }
 @keyframes circleAnimate {
 	0% {
 		transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
 		
 	}
 	50% {
 		transform: rotate(180deg);
-		border-color: #ffba35;
+		-ms-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		filter: grayscale(50%);
 	}
 	100% {
 		transform: rotate(360deg);
-		border-color: #cd8907;
+		-ms-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		filter: grayscale(0%);
 	}
 }
 
