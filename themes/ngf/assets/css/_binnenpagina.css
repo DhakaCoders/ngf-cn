@@ -256,7 +256,17 @@ Gallery design
 	background: #FFA800;
 	position: relative;
 }
-.cta-big-line{
+.cta-ctlr i.contact-form-info-round-bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.cta-ctlr i.contact-form-info-line-bg{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+/*.cta-big-line{
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -276,7 +286,7 @@ Gallery design
 	position: absolute;
 	top: 48px;
 	right: 13px;
-}
+}*/
 
 .cta-title{
 	color: #fff!important;

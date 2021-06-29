@@ -709,9 +709,6 @@ boek-je-form-sec-wrp
     .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field{
         margin-bottom:22px;
     }
-    .bnr-bg-249 .bnr-bg-overly{
-        height: 185px!important;
-    }
 }
 
 @media(max-width: 991px){
