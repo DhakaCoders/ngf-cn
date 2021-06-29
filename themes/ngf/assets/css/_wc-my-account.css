@@ -1547,9 +1547,9 @@ body.woocommerce-checkout .custom-checkout-order-review table td strong{
     text-transform: uppercase;
     font-size: 18px;
 }*/
-body.woocommerce-checkout .custom-checkout-order-review table.shop_table td span bdi span{
+/*body.woocommerce-checkout .custom-checkout-order-review table.shop_table td span bdi span{
     margin-right: 5px;
-}
+}*/
 body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[type=button] {
     font-size: 14px!important;
 }
