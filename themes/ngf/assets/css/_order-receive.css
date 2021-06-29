@@ -109,6 +109,19 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	background-color: #000;
 }
 
+.chk-acc-btm-cntrl{
+	position: relative;
+}
+.chk-acc-btm-cntrl i.contact-form-info-round-bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.chk-acc-btm-cntrl i.contact-form-info-line-bg{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
 .chk-acc-btm{
 	background-color: #FFA800;
 }
