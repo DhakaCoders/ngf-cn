@@ -429,7 +429,8 @@ form
 	border-color:#000000;
 }
 
-.fl-orange-btn{
+.fl-orange-btn,
+body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a{
 	background: #FFA800;
 	color: #fff;
 	border: 2px solid #FFA800;
@@ -444,7 +445,8 @@ form
 	display: inline-block;
 	text-decoration: none;
 }
-.fl-orange-btn:hover{
+.fl-orange-btn:hover,
+body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a{
 	background: transparent;
 	color: #FFA800;
 	border-color:#FFA800;
