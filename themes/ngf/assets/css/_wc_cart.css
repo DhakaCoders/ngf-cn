@@ -50,7 +50,8 @@ body.woocommerce-cart .bn-page-entry-hdr-cntlr h1{
 .cart-crtl .cart-total-crtl{
 	width: 31.68%;
 }
-body.woocommerce-cart .woocommerce table.shop_table{
+body.woocommerce-cart .woocommerce table.shop_table,
+body.woocommerce-checkout .woocommerce table.shop_table{
 	border: none;
 }
 body.woocommerce-cart .cart_totals{
