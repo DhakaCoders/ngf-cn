@@ -390,7 +390,7 @@ body.woocommerce-checkout #payment div.payment_box {
 #billing_salutation_field span.woocommerce-input-wrapper input[type="radio"]:checked + label:before/*,
 body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input[type=radio]:checked ~  label:before,
 body.woocommerce-checkout .shipping-methods .woocommerce-shipping-methods li input[type=radio]:checked ~ label:before,
-/{
+*/{
     display: block!important;
 }
 
@@ -453,12 +453,11 @@ body.woocommerce-page .wc-template-crtl {
     font-weight: 600;
     text-transform: capitalize;
 }
-.back-to-dashboard-btn a:hover{
-    color: #D9534F;
+.back-to-dashboard-btn:hover a{
+    opacity:.7;
 }
-.back-to-dashboard-btn a:hover:after{
+.back-to-dashboard-btn:hover a:after{
     left: -3px;
-    background: url(../images/deshbord-btn-cntlr-arrow-hover.svg);
 }
 .back-to-dashboard-btn a:after{
     content: "";
