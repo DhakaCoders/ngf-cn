@@ -84,6 +84,9 @@
     }
 }
 @media(max-width:767px){
+    .bnr-bg-249 .bnr-bg-overly {
+        height: 190px;
+    }
     .fl-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-description{
         font-size:14px;
     }
