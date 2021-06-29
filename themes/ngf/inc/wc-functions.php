@@ -434,7 +434,7 @@ function cbv_display_some_product_attributes(){
 remove_action( 'woocommerce_cart_is_empty', 'wc_empty_cart_message');
 add_action( 'woocommerce_cart_is_empty', 'woo_if_cart_empty' );
 function woo_if_cart_empty(){
-   echo '<div class="empty-cart-back-btn"><div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="'.get_permalink(get_option( 'woocommerce_shop_page_id' )).'">'.__( 'Back to overview', 'woocommerce' ).'</a></div></div>';
+   echo '<div class="empty-cart-back-btn"><div class="back-to-dashboard-btn"><a class="backshop-cart" href="'.get_permalink(get_option( 'woocommerce_shop_page_id' )).'">'.__( 'Back to overview', 'woocommerce' ).'</a></div></div>';
     echo '<div class="cart-is-emtpy">';
         echo '<div class="cie-icon"><img src="'.THEME_URI.'/assets/images/bag-icon.svg"/></div>';
         echo '<strong>'.__('your <br> Shopping cart is empty', 'ballonvaren').'</strong>';
