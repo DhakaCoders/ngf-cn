@@ -56,6 +56,10 @@
     left: 0;
     right: 0;
 }
+.ovo-full-width-bg-heading-inner {
+    position: relative;
+    display: inline-block;
+}
 .ovo-full-width-img-sec img{
     display: none;
 }
@@ -86,9 +90,10 @@
 }
 .ovo-abs-line-four {
     position: absolute;
-    height: 11px;
-    width: 100px;
-    left: 50%;
+    height: 13px;
+    width: 120px;
+    right: -30px;
+    top: 127px;
     transform: rotate(-45deg);
     bottom: 127px;
     background: #fea700;
@@ -100,8 +105,8 @@ span.ovo-abs-round-three {
     height: 30px;
     width: 30px;
     border-radius: 100%;
-    top: 0;
-    left: 0;
+    top: -2px;
+    left: -13px;
     z-index: 2;
 }
 .ovo-abs-img-three{
@@ -398,6 +403,10 @@ span.fl-video-play-icon-cntlr{
     span.fl-video-play-icon-cntlr i svg{
         height: 60px;
         width: 60px;
+    }
+    .ovo-abs-line-four {
+        top: 92px;
+        width: 110px;
     }
 
 
