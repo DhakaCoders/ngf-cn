@@ -1,8 +1,3 @@
-<?php 
-  if( is_checkout() ){
-    get_template_part('templates/checkout', 'top');
-  }
-?>
 <section class="sec-heading">
   <div class="container">
     <div class="row">

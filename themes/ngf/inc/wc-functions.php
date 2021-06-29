@@ -666,5 +666,11 @@ function is_breadcrumbs(){
 
 
 function is_wc_page_heading(){
-    return is_checkout() || is_cart();
+    return is_cart();
+}
+function is_wc_template(){
+    if( is_shop() || is_product_category() || is_product_tag() || is_product() || is_cart() || is_checkout() || is_account_page() ){
+        return true;
+    }
+    return false;
 }
