@@ -224,12 +224,12 @@ span.single-price-total{
 .long-desc p:last-of-type{
 	margin-bottom: 0;
 }
-.long-desc h2{
+.long-desc h2,
+.long-desc h4{
+	font-weight: 300;
 	font-size: 26px;
-	font-weight: 700;
-	letter-spacing: -0.02em;
-	color: #fff;
-	margin-bottom: 15px;
+	line-height: 42px;
+	color: #000000;
 }
 .short-desc{
 	padding-bottom: 15px;
@@ -268,7 +268,6 @@ span.single-price-total{
 .meta-crtl{
 	font-weight: 700;
 	color: #707C88;
-	border-bottom: 2px solid #f5f6f8;
 	margin-bottom: 15px;
 	padding-bottom: 30px;
 }
@@ -690,12 +689,15 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 }
 
 /*.single-product .summary-hdr .product_title,*/
-.single-product .long-desc h2{
-	display: none!important;
-}
+
 .quantity label {
     display: none;
 }
+/**/
+.pro-single-testimonial-slider-sec .pro-single-testimonial-slider-cntlr{
+	border-top:  2px solid #EFF4F7;
+}
+
 
 /* related product */
 .related-product-sec{

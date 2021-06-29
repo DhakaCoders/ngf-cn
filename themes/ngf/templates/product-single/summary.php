@@ -14,14 +14,24 @@
         <div class="price-quentity-ctrl">
           <?php woocommerce_template_single_add_to_cart();?>
         </div>
-        <?php if( !empty($long_desc) ){ ?>
-            <div class="long-desc">
-            <h2>Beschrijving</h2>
-                <?php echo wpautop( $long_desc, true ); ?>
-            </div>
-        <?php } ?>
+        <div class="summary-hdr-des">
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
     </div>
+
+    <?php if( !empty($long_desc) ){ ?>
+    <div class="long-desc">
+        <h4>We are <strong>dedicated</strong> and <strong>committed</strong> to support our clients in attaining their personal <strong>potential!</strong></h4>
+        <?php echo wpautop( $long_desc, true ); ?>
+    </div>
+    <?php } ?>
+
     <div class="meta-crtl">
 
     </div>
 </div>
+
