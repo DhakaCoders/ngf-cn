@@ -417,26 +417,30 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
 
 
 /* -------------- back-button ----------------*/
-.back-to-dashboard-btn-cntlr a{
+
+.back-to-dashboard-btn {
+    padding: 21px 24px;
+    background: #FFA800;
+    min-width: 336px;
+    display: inline-block;
+}
+.back-to-dashboard-btn a{
     position: relative;
     text-decoration: none;
     display: inline-block;
     vertical-align: baseline;
-    padding-left:16px;
+    padding-left: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
-.back-to-dashboard-btn-cntlr a:hover{
+.back-to-dashboard-btn a:hover{
     color: #D9534F;
 }
-.back-to-dashboard-btn-cntlr a:hover:after{
+.back-to-dashboard-btn a:hover:after{
     left: -3px;
     background: url(../images/deshbord-btn-cntlr-arrow-hover.svg);
 }
-.back-to-dashboard-btn-cntlr{
-    margin-bottom: 95px;
-    background-color: #F8FAFB;
-    padding: 20px 0;
-}
-.back-to-dashboard-btn-cntlr a:after{
+.back-to-dashboard-btn a:after{
     content: "";
     position: absolute;
     font-family: 'Font Awesome 5 free';
@@ -450,8 +454,8 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
     transition:all .5s;
     -ms-transition:all .5s;
     -webkit-transition:all .5s;
-    width: 8px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
 }
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 

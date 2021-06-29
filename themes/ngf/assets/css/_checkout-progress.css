@@ -19,7 +19,7 @@
 .checkout-progress-bar{
 	position: absolute;
 	content: "";
-	background: #ECE9E9;
+	background: #ECF1F4;
 	border-radius: 1px;
 	height: 4px;
 	left: 10px;
@@ -30,7 +30,7 @@
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	margin-top: -9px;
-	border: 1px solid #C6DDF0;
+	border: 1px solid #ECF1F4;
 }
 .checkout-progress-bar .ckour-pro-bar-active{
 	position: absolute;
@@ -85,7 +85,8 @@
 	text-align: center;
 }
 .chckout-prgrs-col.active .chckout-prgrs-number{
-	color: #1DB4B2;
+	color: #000000;
+	font-weight:900;
 }
 .checkout-page-title .checkoutpt-left{
     /*float: left;*/
