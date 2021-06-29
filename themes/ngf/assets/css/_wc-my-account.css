@@ -1556,10 +1556,10 @@ body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[ty
 /*body.woocommerce-checkout .custom-checkout-order-review table td.product-name strong{
     display: none;
  }*/
-body.woocommerce-checkout .custom-checkout-order-review table td,
+/*body.woocommerce-checkout .custom-checkout-order-review table td,
 body.woocommerce-checkout .custom-checkout-order-review table th{
     padding: 3px 0px;
-}
+}*/
 body.woocommerce-checkout .custom-checkout-order-review table tr.order-total th, 
 body.woocommerce-checkout .custom-checkout-order-review table tr.order-total td {
     padding-top: 20px!important;
