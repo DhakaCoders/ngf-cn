@@ -45,33 +45,45 @@ $attachment_ids = $product->get_gallery_image_ids();
 ?>
 <div class="<?php echo $typeClass; ?><?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
 	<figure class="woocommerce-product-gallery-wrap">
-		<div class="main-img-crtl">
-		<?php
-		if ( $product->get_image_id() ) {
-			$imgurl = wp_get_attachment_image_url( $product->get_image_id(), 'full' );
-			$thumimgtag = wp_get_attachment_image( $product->get_image_id(), 'full' );
-			echo '<div class="woocommerce-product-gallery__image">';
-            echo '<a class="woocommerce-main-image fancybox" data-fancybox="gallery" href="'.$imgurl.'">';
-            echo $thumimgtag;
-            echo '</a>';
-            echo '</div>';
-		} else {
-			echo '<div class="woocommerce-product-gallery__image--placeholder">';
-			echo sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
-			echo '</div>';
-		}
-		if ( $attachment_ids && $product->get_image_id() ) {
-			foreach ( $attachment_ids as $attachment_id ) {
-				$thumimgurl = wp_get_attachment_image_url( $attachment_id, 'full' );
-				$thumimgtag = wp_get_attachment_image( $attachment_id, 'full' );
+		<div class="fl-pro-single-main-img-parent">
+			<div class="fl-pro-single-main-img-arrows">
+				<div class="fl-pro-single-prv-nxt fpsprv">
+					<i class="lft-pro-arrow"><svg class="single-pro-left-arrow" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+	    		<use xlink:href="#single-pro-left-arrow"></use> </svg></i>
+				</div>
+				<div class="fl-pro-single-prv-nxt fpsnxt">
+					<i class="rgt-pro-arrow"><svg class="single-pro-right-arrow" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+	    		<use xlink:href="#single-pro-right-arrow"></use> </svg></i>
+				</div>
+			</div>
+			<div class="main-img-crtl">
+			<?php
+			if ( $product->get_image_id() ) {
+				$imgurl = wp_get_attachment_image_url( $product->get_image_id(), 'full' );
+				$thumimgtag = wp_get_attachment_image( $product->get_image_id(), 'full' );
 				echo '<div class="woocommerce-product-gallery__image">';
-	            echo '<a class="woocommerce-main-image fancybox" data-fancybox="gallery" href="'.$thumimgurl.'">';
+	            echo '<a class="woocommerce-main-image fancybox" data-fancybox="gallery" href="'.$imgurl.'">';
 	            echo $thumimgtag;
 	            echo '</a>';
 	            echo '</div>';
+			} else {
+				echo '<div class="woocommerce-product-gallery__image--placeholder">';
+				echo sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+				echo '</div>';
 			}
-		}
-		?>
+			if ( $attachment_ids && $product->get_image_id() ) {
+				foreach ( $attachment_ids as $attachment_id ) {
+					$thumimgurl = wp_get_attachment_image_url( $attachment_id, 'full' );
+					$thumimgtag = wp_get_attachment_image( $attachment_id, 'full' );
+					echo '<div class="woocommerce-product-gallery__image">';
+		            echo '<a class="woocommerce-main-image fancybox" data-fancybox="gallery" href="'.$thumimgurl.'">';
+		            echo $thumimgtag;
+		            echo '</a>';
+		            echo '</div>';
+				}
+			}
+			?>
+			</div>
 		</div>
 		<?php
 		//echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped

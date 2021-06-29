@@ -297,7 +297,7 @@ if( $('.main-img-crtl').length ){
    $('.main-img-crtl').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     fade: true,
     autoplay:false,
     adaptiveHeight: true,
@@ -314,7 +314,7 @@ if( $('.thumbnails-cntlr .thumbnails').length ){
     slidesToScroll: 1,
     asNavFor: '.main-img-crtl',
     dots: false,
-    arrows: false,
+    arrows: true,
     infinite:true,
     autoplay:false,
     focusOnSelect: true,
