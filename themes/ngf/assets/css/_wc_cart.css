@@ -467,7 +467,8 @@ body.woocommerce-cart.woocommerce-page .woocommerce .cart_totals > h2{
 }
 body.woocommerce-cart.woocommerce-page .cart-total-crtl .cart_totals table.shop_table_responsive th,
 body.woocommerce-checkout .custom-checkout-order-review tfoot tr th,
-body.woocommerce-checkout .custom-checkout-order-review tbody tr th{
+body.woocommerce-checkout .custom-checkout-order-review tbody tr th,
+body.woocommerce-checkout .custom-checkout-order-review tbody tr td:first-child{
 	width: 50%;
 	color: #9B9B9B;
 	font-weight: 300!important;
