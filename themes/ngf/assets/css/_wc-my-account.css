@@ -1071,6 +1071,9 @@ body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img{
     height: auto;
     margin-bottom: 24px;
 }
+body.woocommerce-orders .order-comment p{
+    font-size:14px;
+}
 body.woocommerce-orders .order-comment p:last-child{
     margin-bottom: 0;
 }
@@ -1262,53 +1265,6 @@ body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-it
     -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
 }
-
-
-
-
-
-.type-order-format .woocommerce-input-wrapper span{
-    position: relative;
-    padding-left:25px;
-    width:50%;
-}
-body.hide-account-title .type-order-format .woocommerce-input-wrapper {
-    display: flex;
-    width: 273px;
-}
-
-
-body.woocommerce-checkout .checkout-terms{
-    border-top: 1px solid #ECEEEF;
-    padding-top: 20px;
-}
-body.woocommerce-checkout .checkout-terms span.required{
-    display: none;
-}
-body.woocommerce-checkout  .payment-method-crtl .woocommerce-additional-fields.extra-info,
-body.woocommerce-checkout .payment-method-crtl{
-    padding-top: 47px;
-}
-body.woocommerce-checkout .payment-method-crtl .woocommerce-additional-fields.extra-info h3{
-    margin-bottom: 15px;
-}
-
-
-body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .select2.select2-container.select2-container--default{
-    width:100%!important;
-}
-
-body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
-    width: 100%!important;
-}
-
-
-
-
-
-body.woocommerce-account.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr{
-    margin-bottom: 100px;
-}
 body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li:before{
     content: none;
 }
@@ -1335,9 +1291,16 @@ body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_bu
 body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_button + a img {
     order: 2;
 }
-body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_button + a span {
+body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_button + a span{
     order: 1;
     margin-right:5px;
+    color:#fff;
+    transition:all 0.5s;
+    -ms-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_button + a span:hover{
+    color: #ffa800;
 }
 body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_button + a img{
     width: 150px;
@@ -1375,6 +1338,63 @@ body.loggedin-winkelmandje-crtl .myaccount-cart-crtl .woocommerce-mini-cart + p{
 body.loggedin-winkelmandje-crtl .myaccount-cart-crtl .woocommerce-mini-cart + p > strong {
     padding-right: 5px;
 }
+.type-order-format .woocommerce-input-wrapper span{
+    position: relative;
+    padding-left:25px;
+    width:50%;
+}
+body.hide-account-title .type-order-format .woocommerce-input-wrapper{
+    display: flex;
+    width: 273px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.woocommerce-checkout .checkout-terms{
+    border-top: 1px solid #ECEEEF;
+    padding-top: 20px;
+}
+body.woocommerce-checkout .checkout-terms span.required{
+    display: none;
+}
+body.woocommerce-checkout  .payment-method-crtl .woocommerce-additional-fields.extra-info,
+body.woocommerce-checkout .payment-method-crtl{
+    padding-top: 47px;
+}
+body.woocommerce-checkout .payment-method-crtl .woocommerce-additional-fields.extra-info h3{
+    margin-bottom: 15px;
+}
+
+
+body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .select2.select2-container.select2-container--default{
+    width:100%!important;
+}
+
+body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
+    width: 100%!important;
+}
+
+
+
+
+
+body.woocommerce-account.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr{
+    margin-bottom: 100px;
+}
+
 /* ---------------------------- checkout page ----------------------------------*/
 body.woocommerce-checkout .woocommerce-billing-fields h3,
 body.woocommerce-checkout .woocommerce-checkout-review-order h3,
