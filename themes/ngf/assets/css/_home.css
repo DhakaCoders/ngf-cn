@@ -87,6 +87,51 @@
     bottom: 50px;
 	z-index: 1;
 }
+.circle-animate{
+	animation: circleAnimate 1.5s infinite;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	border-color: linear-gradient(to bottom, #FFA800 0%, #f0b543 100%)!important;
+	
+}
+@keyframes circleAnimate {
+	0% {
+		transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		
+	}
+	50% {
+		transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		filter: grayscale(50%);
+	}
+	100% {
+		transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		filter: grayscale(0%);
+	}
+}
+
+.btn-animation:hover{
+	-webkit-mask-image: linear-gradient(-75deg,rgba(162,29,29,.6) 30%,#000 50%,rgba(162,29,29,.6) 70%);
+	-webkit-mask-size: 200%;
+	animation: menushine 1s infinite;
+}
+@-webkit-keyframes menushine{
+	from{-webkit-mask-position:150%}
+	to{-webkit-mask-position:-50%}
+}
+@keyframes menushine{
+	from{-webkit-mask-position:150%}
+	to{-webkit-mask-position:-50%}
+}
 .hm-bnr-bg-circle{
 	border: 90px solid #FFA800;
 	width: 729px;
