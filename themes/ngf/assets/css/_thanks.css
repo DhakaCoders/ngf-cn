@@ -1,5 +1,5 @@
-.thank-you-bnnr-bg-cntlr {
-    padding-bottom: 83px;
+.thank-you-bnnr-bg-cntlr .bnr-bg-overly-module{
+    margin-bottom: 83px;
 }
 .thank-you-entry-heading h1{
     line-height: 1;
@@ -26,9 +26,15 @@
     text-align: center;
     margin: 0;
 }
+.thank-you-btn {
+    text-align: center;
+}
 .thank-you-des-cntlr {
     border-top: 2px solid #EFF4F7;
 }
 .thank-you-page-sec .bnr-bg-overly-module{
     margin-bottom: 0;
+}
+.thank-you-bnnr-bg-cntlr .bnr-bg-560 .bnr-bg-overly{
+    height: 570px;
 }
