@@ -32,18 +32,18 @@
 									      </div>
 									      <div class="chckout-prgrs-col chckout-prgrs-col-1 ">
 									        <strong class="chckout-prgrs-number">1</strong> 
-									        <h6 class="chckout-prgrs-title"><?php esc_html_e( 'Winkelmandje', 'woocommerce' ); ?></h6>
+									        <h6 class="chckout-prgrs-title"><?php esc_html_e( 'Shopping Cart', 'woocommerce' ); ?></h6>
 									      </div>
 
 									      <div class="chckout-prgrs-col chckout-prgrs-col-2 active">
 									        <strong class="chckout-prgrs-number">2</strong> 
-									        <h6 class="chckout-prgrs-title"> <?php esc_html_e( 'Klantgegevens', 'woocommerce' ); ?><br>
-									        <?php esc_html_e( 'en Betaling', 'woocommerce' ); ?></h6>
+									        <h6 class="chckout-prgrs-title"> <?php esc_html_e( 'Customer data and Payment', 'woocommerce' ); ?>
+									        <!-- <?php esc_html_e( 'en Betaling', 'woocommerce' ); ?> --></h6>
 									      </div>
 
 									      <div class="chckout-prgrs-col chckout-prgrs-col-3">
 									        <strong class="chckout-prgrs-number">3</strong> 
-									        <h6 class="chckout-prgrs-title"><?php esc_html_e( 'Bevestiging', 'woocommerce' ); ?></h6>
+									        <h6 class="chckout-prgrs-title"><?php esc_html_e( 'Confirmation', 'woocommerce' ); ?></h6>
 									      </div>
 
 									    </div>
@@ -92,18 +92,18 @@
 									      </div>
 									      <div class="chckout-prgrs-col chckout-prgrs-col-1 ">
 									        <strong class="chckout-prgrs-number">1</strong> 
-									        <h6 class="chckout-prgrs-title"><?php esc_html_e( 'Winkelmandje', 'woocommerce' ); ?></h6>
+									        <h6 class="chckout-prgrs-title"><?php esc_html_e( 'Shopping Cart', 'woocommerce' ); ?></h6>
 									      </div>
 
 									      <div class="chckout-prgrs-col chckout-prgrs-col-2 active">
 									        <strong class="chckout-prgrs-number">2</strong> 
-									        <h6 class="chckout-prgrs-title"> <?php esc_html_e( 'Klantgegevens', 'woocommerce' ); ?><br>
-									        <?php esc_html_e( 'en Betaling', 'woocommerce' ); ?></h6>
+									        <h6 class="chckout-prgrs-title"> <?php esc_html_e( 'Customer data and Payment', 'woocommerce' ); ?>
+									        <!-- <?php esc_html_e( 'en Betaling', 'woocommerce' ); ?> --></h6>
 									      </div>
 
 									      <div class="chckout-prgrs-col chckout-prgrs-col-3">
 									        <strong class="chckout-prgrs-number">3</strong> 
-									        <h6 class="chckout-prgrs-title"><?php esc_html_e( 'Bevestiging', 'woocommerce' ); ?></h6>
+									        <h6 class="chckout-prgrs-title"><?php esc_html_e( 'Confirmation', 'woocommerce' ); ?></h6>
 									      </div>
 
 									    </div>
