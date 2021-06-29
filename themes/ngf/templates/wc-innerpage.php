@@ -1,7 +1,5 @@
 <?php 
-  if( is_checkout() ){
-    get_template_part('templates/checkout', 'top');
-  }
+  get_template_part('templates/back', 'btn');
 	if( is_wc_page_heading()){
 		get_template_part('templates/page', 'heading');
 	}
