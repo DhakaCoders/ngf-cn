@@ -1,4 +1,7 @@
 /* == sec-heading design start == */
+.post-type-archive-product .wc-template-crtl{
+    margin-top: 0!important;
+}
 .sec-hdr-cntrl{
     display: flex;
     align-items: flex-end;
@@ -197,6 +200,9 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
         font-size: 19px;
         line-height: 1.57;
     }
+    .single-product span.amount bdi, .single-product span.amount bdi span.woocommerce-Price-currencySymbol{
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 1499px) {
@@ -215,6 +221,10 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
     .fl-pro-grd-des .fl-pro-grd-title{
         line-height: 1.36;
     }
+    .single-product span.amount bdi, .single-product span.amount bdi span.woocommerce-Price-currencySymbol{
+        font-size: 26px;
+        line-height: 1.1;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -229,6 +239,10 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
     }
     .fl-pro-grd-des .fl-pro-grd-title{
         line-height: 1.4;
+    }
+    .single-product span.amount bdi, .single-product span.amount bdi span.woocommerce-Price-currencySymbol{
+        font-size: 24px;
+        line-height: 1.25;
     }
 }
 
@@ -245,6 +259,10 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
     }
     .fl-black-btn{
         min-width: 222px;
+    }
+    .single-product span.amount bdi, .single-product span.amount bdi span.woocommerce-Price-currencySymbol{
+        font-size: 22px;
+        line-height: 1.3;
     }
 }
 
@@ -270,6 +288,10 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
     .fl-products-cntlr > ul.products > li{
         width: 50%!important;
         padding: 0 8px 48px!important;
+    }
+    .single-product span.amount bdi, .single-product span.amount bdi span.woocommerce-Price-currencySymbol{
+        font-size: 20px;
+        line-height: 1.5;
     }    
 }
 
@@ -297,10 +319,11 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
     }
     span.amount bdi, span.amount bdi span.woocommerce-Price-currencySymbol, 
     ins span.amount bdi, ins span.amount bdi span.woocommerce-Price-currencySymbol, 
-    del span.amount bdi, del span.amount bdi span.woocommerce-Price-currencySymbol{
+    del span.amount bdi, del span.amount bdi span.woocommerce-Price-currencySymbol,
+    .single-product span.amount bdi, .single-product span.amount bdi span.woocommerce-Price-currencySymbol{
         font-size: 18px;
         line-height: 1.6;
-    }
+    }    
 }
 
 @media (max-width: 479px) {
