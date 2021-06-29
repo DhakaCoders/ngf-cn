@@ -21,11 +21,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); 
 ?>
-<section class="checkout-backbtn-sec show-sm">
+<section class="checkout-backbtn-sec">
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' )); ?>"><?php esc_html_e( 'Terug naar overzicht', 'woocommerce' ); ?></a></div>
+			<div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' )); ?>"><?php esc_html_e( 'Back to overview', 'woocommerce' ); ?></a></div>
 		</div>	
 	</div>
 </div>
