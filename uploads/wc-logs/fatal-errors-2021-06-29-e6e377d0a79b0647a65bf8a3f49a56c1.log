@@ -14,3 +14,5 @@ Stack trace:
 #7 {main}
   thrown in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\header.php on line 518
 
+2021-06-29T07:37:00+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\woocommerce\includes\rest-api\Controllers\Version2\class-wc-rest-shipping-zone-methods-v2-controller.php on line 542
+
