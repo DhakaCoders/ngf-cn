@@ -1,3 +1,4 @@
+<?php if(is_wc_template()) echo '</div>'; ?>
 <?php 
   $logoObj = get_field('ftlogo', 'options');
   if( is_array($logoObj) ){
