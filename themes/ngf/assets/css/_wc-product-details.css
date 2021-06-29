@@ -233,9 +233,9 @@ span.single-price-total{
 	display: block;
 	text-transform: capitalize;
 }
-/*.single-product .breadcrumb-sec{
+/* .single-product .breadcrumb-sec{
 	margin-bottom: 45px;
-}*/
+}
 .single-product .woocommerce-notices-wrapper,
 .archive .woocommerce-notices-wrapper{
 	margin-bottom: 0!important;
@@ -286,8 +286,15 @@ span.single-price-total{
 
 .fl-product .price-quentity-ctrl form .variations tbody tr td  .bootstrap-select .dropdown-toggle .filter-option-inner{
 	color: #909BA5!important;
+} */
+/* == clinet option design start == */
+.single-product .dfp-testimonial-module{
+	margin-top: 100px;
 }
-
+.single-product .sec-entry-hdr h3{
+	margin-bottom: 30px;
+}
+/* == clinet option design end == */
 .cartbtn-wrap{
 	display: flex;
 	flex-direction: column;
