@@ -287,7 +287,7 @@ if( $('.wpforms-error').length ){
 $(".type-order-format .woocommerce-input-wrapper span").each(function(){
       $(this).append('<div class="radio-custom"></div>')
 });
-$(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox,#billing_personal_recom .woocommerce-input-wrapper,#billing_acttion_insp .woocommerce-input-wrapper").each(function(){
+$(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,#billing_personal_recom .woocommerce-input-wrapper,#billing_acttion_insp .woocommerce-input-wrapper").each(function(){
       $(this).append('<div class="checkbox-custom"></div>')
 });
 

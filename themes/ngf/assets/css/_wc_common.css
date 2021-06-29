@@ -430,8 +430,11 @@ body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .selecti
     border-radius:6px!important;
 }
 
-
-
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .selection .select2-selection,
+body.woocommerce-checkout .woocommerce-shipping-fields .selection .select2-selection,
+body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .selection .select2-selection{
+	border-radius:0!important;
+}
 
 
 

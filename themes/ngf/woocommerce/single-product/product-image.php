@@ -48,11 +48,11 @@ $attachment_ids = $product->get_gallery_image_ids();
 		<div class="fl-pro-single-main-img-parent">
 			<div class="fl-pro-single-main-img-arrows">
 				<div class="fl-pro-single-prv-nxt fpsprv">
-					<i class="lft-pro-arrow"><svg class="single-pro-left-arrow" width="24" height="21" viewBox="0 0 24 21" fill="#fff">
+					<i class="lft-pro-arrow"><svg class="single-pro-left-arrow" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
 	    		<use xlink:href="#single-pro-left-arrow"></use> </svg></i>
 				</div>
 				<div class="fl-pro-single-prv-nxt fpsnxt">
-					<i class="rgt-pro-arrow"><svg class="single-pro-right-arrow" width="24" height="21" viewBox="0 0 24 21" fill="#fff">
+					<i class="rgt-pro-arrow"><svg class="single-pro-right-arrow" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
 	    		<use xlink:href="#single-pro-right-arrow"></use> </svg></i>
 				</div>
 			</div>
