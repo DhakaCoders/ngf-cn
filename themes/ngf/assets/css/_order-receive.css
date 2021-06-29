@@ -4,7 +4,7 @@
 	padding-bottom: 0!important;
 }
 body.woocommerce-order-received .page-grd-sec-wrp{
-	padding-top: 60px!important;
+	padding-top: 45px!important;
 }
 .woocommerce-order-received .checkout-cntrl .checkout-hdr h3{
 	border-bottom: none!important;
@@ -29,7 +29,7 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	text-transform: uppercase;
 	line-height: 1.1;
 	margin-bottom: 30px;
-	padding-bottom: 18px!important;
+	padding-bottom: 40px!important;
 	position: relative;
 }
 .checkout-hdr .chkout-title:after{

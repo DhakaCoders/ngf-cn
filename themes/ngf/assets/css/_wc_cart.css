@@ -27,6 +27,10 @@ body.woocommerce-cart .page-title h1{
 	color: #243444;
 }
 
+body.woocommerce-page.woocommerce-cart .wc-template-crtl{
+	margin-top: 0;
+}
+
 body.woocommerce-cart .bn-page-entry-hdr-cntlr h1{
 	margin-bottom: 0;
 	padding-bottom: 30px;
