@@ -42,3 +42,65 @@
 .thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
     height: 570px;
 }
+
+
+
+/*responsive-start*/
+@media (max-width: 1699px){
+
+
+}
+
+@media (max-width: 1499px){
+
+    .thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
+        height: 550px;
+    }
+}
+@media (max-width: 1399px){
+    .thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
+        height: 500px;
+    }
+
+}
+@media (max-width: 1199px){
+    .thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
+        height: 450px;
+    }
+
+}
+@media (max-width: 991px){
+    .thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
+        height: 400px;
+    }
+
+}
+@media (max-width: 767px){
+    .thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
+        height: 350px;
+    }
+
+}
+@media (max-width: 639px){
+    .thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
+        height: 300px;
+    }
+
+}
+@media (max-width: 575px){
+    .thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
+        height: 280px;
+    }
+
+}
+@media (max-width: 479px){
+
+
+}
+@media (max-width: 359px){
+
+
+}
+
+
+/*responsive-end*/
