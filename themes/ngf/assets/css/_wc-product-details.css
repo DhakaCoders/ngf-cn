@@ -1,5 +1,8 @@
 /* == single product page == */
-
+.single-product .product-details-page{
+	background-color: #fff;
+	padding-top: 40px;
+}
 .single-product table.variations{
 	margin-bottom: 20px!important;
 }
