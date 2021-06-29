@@ -125,7 +125,8 @@ body.woocommerce-cart .xoo-cp-container .quantity.qty span{
     top: 5px!important;
 }
 
-body.woocommerce-cart .woocommerce table.shop_table td{
+body.woocommerce-cart .woocommerce table.shop_table td,
+body.woocommerce-checkout .custom-checkout-order-review tfoot tr td{
 	border: none;
 	padding: 20px 10px 20px 0!important;
 }
