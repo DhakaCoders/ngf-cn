@@ -180,6 +180,14 @@ if ( $customer_orders ) :
 </div>
 <?php endif; ?>
     <div class="back-to-dashboard-btn-cntlr">
-        <a class="backshop-cart" href="javascript: history.go(-1)">terug naar dashboard</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="back-to-dashboard-btn">
+                        <a class="backshop-cart" href="javascript: history.go(-1)">terug naar dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

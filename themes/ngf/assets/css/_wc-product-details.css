@@ -1061,7 +1061,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
     .fltr-prdt-title{
     	margin-left: 20px;
     }
-    .single-product .back-to-dashboard-btn-cntlr{
+    .single-product .back-to-dashboard-btn{
 		display: none;
 	}
 	.review-position-bg{
@@ -1076,7 +1076,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.single-product .faq-detials-sec{
 		padding: 60px 0 45px;
 	}
-	.single-product .back-to-dashboard-btn-cntlr{
+	.single-product .back-to-dashboard-btn{
 		padding: 0 20px;
 		margin: 0 -20px!important;
 	}

@@ -1,4 +1,0 @@
-2021-06-27T09:16:48+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\june\ngf\wp-includes\Requests\IRI.php on line 66
-
-2021-06-27T12:45:02+00:00 CRITICAL syntax error, unexpected token ";", expecting ")" in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\templates\shop\loop.php on line 23
-
