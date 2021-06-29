@@ -12,7 +12,7 @@
                 <div class="testimonial-grd-item">
                   <div class="testimonial-grd-item-inr  home-testimonial-grd-item-inr">
                     <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/testimonial-img-01.svg"></i>
+                      <i><img src="<?php echo THEME_URI; ?><?php echo THEME_URI; ?>/assets/images//testimonial-img-01.svg"></i>
                     </div>
                     <div class="testimonial-grd-item-des">
                       <blockquote>
@@ -25,7 +25,7 @@
                 <div class="testimonial-grd-item">
                   <div class="testimonial-grd-item-inr  ovo-testimonial-grd-item-inr">
                     <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/testimonial-img-01.svg"></i>
+                      <i><img src="<?php echo THEME_URI; ?><?php echo THEME_URI; ?>/assets/images//testimonial-img-01.svg"></i>
                     </div>
                     <div class="testimonial-grd-item-des">
                       <blockquote>
@@ -38,7 +38,7 @@
                 <div class="testimonial-grd-item">
                   <div class="testimonial-grd-item-inr  ovo-testimonial-grd-item-inr">
                     <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/testimonial-img-01.svg"></i>
+                      <i><img src="<?php echo THEME_URI; ?><?php echo THEME_URI; ?>/assets/images//testimonial-img-01.svg"></i>
                     </div>
                     <div class="testimonial-grd-item-des">
                       <blockquote>
@@ -62,7 +62,7 @@
 
 
 
-<section class="related-product-sec">
+<section class="related-product-sec" style="display:none">
   <span class="latest-news-bg hide-sm"><svg class="latest-nws-bg" width="484" height="727" viewBox="0 0 484 727" fill="#FFA800">
       <use xlink:href="#latest-nws-bg"></use> </svg>
   </span>
@@ -86,7 +86,7 @@
                 <div class="fl-product-grd-inr">
                   <div class="fl-pro-grd-img-cntlr">
                     <a href="#" class="overlay-link"></a>
-                    <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/pro-grid-img-01.jpg');"></div>
+                    <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?><?php echo THEME_URI; ?>/assets/images//pro-grid-img-01.jpg');"></div>
                   </div>
                   <div class="fl-pro-grd-des mHc1">
                     <h4 class="fl-h4 fl-pro-grd-title"><a href="#">Customized Training And Nutrition Plan</a></h4>
@@ -126,7 +126,7 @@
                 <div class="fl-product-grd-inr">
                   <div class="fl-pro-grd-img-cntlr">
                     <a href="#" class="overlay-link"></a>
-                    <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/pro-grid-img-01.jpg');"></div>
+                    <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?><?php echo THEME_URI; ?>/assets/images//pro-grid-img-01.jpg');"></div>
                   </div>
                   <div class="fl-pro-grd-des mHc1">
                     <h4 class="fl-h4 fl-pro-grd-title"><a href="#">Customized Training And Nutrition Plan</a></h4>
@@ -166,7 +166,7 @@
                 <div class="fl-product-grd-inr">
                   <div class="fl-pro-grd-img-cntlr">
                     <a href="#" class="overlay-link"></a>
-                    <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/pro-grid-img-01.jpg');"></div>
+                    <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?><?php echo THEME_URI; ?>/assets/images//pro-grid-img-01.jpg');"></div>
                   </div>
                   <div class="fl-pro-grd-des mHc1">
                     <h4 class="fl-h4 fl-pro-grd-title"><a href="#">Customized Training And Nutrition Plan</a></h4>
@@ -206,7 +206,7 @@
                 <div class="fl-product-grd-inr">
                   <div class="fl-pro-grd-img-cntlr">
                     <a href="#" class="overlay-link"></a>
-                    <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/pro-grid-img-01.jpg');"></div>
+                    <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?><?php echo THEME_URI; ?>/assets/images//pro-grid-img-01.jpg');"></div>
                   </div>
                   <div class="fl-pro-grd-des mHc1">
                     <h4 class="fl-h4 fl-pro-grd-title"><a href="#">Customized Training And Nutrition Plan</a></h4>

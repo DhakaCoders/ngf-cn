@@ -522,4 +522,7 @@ $smedias = get_field('social_media', 'options')
   </div>
 
 </div>
-<?php if(is_wc_template()) echo '<div class="wc-template-crtl">'; ?>
+<?php 
+  if(is_wc_template()) echo '<div class="wc-template-crtl">'; 
+  get_template_part('templates/back', 'btn');
+?>

@@ -20,50 +20,46 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( $related_products ) : ?>
-<section class="related-products">
-	<div class="related-grd-top-lft-img show-sm">
-    <img src="<?php echo THEME_URI; ?>/assets/images/nd-top-lft-img.png">
-  </div>
-  <div class="related-grd-top-rgt-img show-sm">
-    <img src="<?php echo THEME_URI; ?>/assets/images/single-related-grd-top-rgt-img.svg">
-  </div>
-  
-	<div class="white-sky-bg">
-    <span class="white-sky-inline-bg hide-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/white-sky-bg.png');"></span>
-    <span class="white-sky-inline-bg show-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/xs-white-sky-bg.png');"></span>
-  </div>
+<section class="related-product-sec">
+  <span class="latest-news-bg hide-sm"><svg class="latest-nws-bg" width="484" height="727" viewBox="0 0 484 727" fill="#FFA800">
+      <use xlink:href="#latest-nws-bg"></use> </svg>
+  </span>
+  <span class="latest-news-bg latest-nws-xs-bg show-sm">
+    <svg class="latest-news-xs-bg" width="146" height="598" viewBox="0 0 146 598" fill="#FFA800">
+      <use xlink:href="#latest-news-xs-bg"></use> </svg>
+  </span>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-	<div class="related products related-pro-crtl">
+				<div class="related-product-sec-cntlr">
 
-			<?php
-			$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Gerelateerde Producten', 'woocommerce' ) );
+						<?php
+						$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'gerelateerd producten', 'woocommerce' ) );
 
-			if ( $heading ) :
-				?>
-				<h2><?php echo esc_html( $heading ); ?></h2>
-			<?php endif; ?>
-			
-			<?php //woocommerce_product_loop_start(); ?>
-	        <div class="hasRelatedProduct-cntlr">
-	        	<div class="hasRelatedProduct">
-							<?php foreach ( $related_products as $related_product ) : ?>
+						if ( $heading ) :
+							?>
+							<div class="sec-entry-hdr">
+								<h3 class="fl-h3"><?php echo esc_html( $heading ); ?></h3>
+							</div>
+						<?php endif; ?>
+						
+						<?php //woocommerce_product_loop_start(); ?>
+								<div class="related-product-sec-grids relatedProGrdsSlider">
+									<?php foreach ( $related_products as $related_product ) : ?>
 
-									<?php
-									$post_object = get_post( $related_product->get_id() );
+											<?php
+											$post_object = get_post( $related_product->get_id() );
 
-									setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
+											setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
 
-									wc_get_template_part( 'related', 'product-content' );
-									?>
+											wc_get_template_part( 'related', 'product-content' );
+											?>
 
-							<?php endforeach; ?>
-				        </div>
-	        </div>
-			<?php //woocommerce_product_loop_end(); ?>
+									<?php endforeach; ?>
+			        </div>
+						<?php //woocommerce_product_loop_end(); ?>
 
-	</div>
+				</div>
         </div>
       </div>
     </div>
