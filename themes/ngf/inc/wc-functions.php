@@ -666,5 +666,5 @@ function is_breadcrumbs(){
 
 
 function is_wc_page_heading(){
-    return is_checkout() || is_cart();
+    return is_cart();
 }
