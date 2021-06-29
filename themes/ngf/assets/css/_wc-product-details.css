@@ -352,12 +352,12 @@ body.woocommerce-cart .product-quantity .quantity{
 .single-product .related-product-sec .slick-slider ul.slick-dots{
 	bottom: -96px;
 }
+
+/* if has */
 .related-products{
 	display: none;
 }
-
-/* if has */
-.single-product #reviews #comments ol.commentlist li{
+/* .single-product #reviews #comments ol.commentlist li{
 	display: none;
 }
 .single-product #reviews #comments ol.commentlist li:nth-last-child(1),
@@ -389,7 +389,7 @@ body.woocommerce-cart .product-quantity .quantity{
 .single-product .fl-product{
 	padding-bottom: 114px;
 	position: relative;
-}
+} */
 
 /* if has end */
 
