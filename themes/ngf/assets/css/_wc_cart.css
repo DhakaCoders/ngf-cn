@@ -27,6 +27,10 @@ body.woocommerce-cart .page-title h1{
 	color: #243444;
 }
 
+body.woocommerce-page.woocommerce-cart .wc-template-crtl{
+	margin-top: 0;
+}
+
 body.woocommerce-cart .bn-page-entry-hdr-cntlr h1{
 	margin-bottom: 0;
 	padding-bottom: 30px;
@@ -477,7 +481,7 @@ body.empty-cart .page-grd-sec-wrp{
     padding-top: 0;
 }
 body.empty-cart .cart-is-emtpy{
-	padding-top: 40px;
+	padding-top: 35px;
 	max-width: 800px;
 	width: 100%;
 	margin-left: auto;
@@ -566,6 +570,11 @@ body.empty-cart .woocommerce-cart .page-grd-sec-wrp {
 
 
 body.woocommerce-cart.woocommerce-page .woocommerce-shipping-totals.shipping{
+	display: none;
+}
+
+body.empty-cart .sec-heading,
+body.empty-cart .woocommerce-notices-wrapper{
 	display: none;
 }
 

@@ -4,7 +4,7 @@
 	padding-bottom: 0!important;
 }
 body.woocommerce-order-received .page-grd-sec-wrp{
-	padding-top: 60px!important;
+	padding-top: 45px!important;
 }
 .woocommerce-order-received .checkout-cntrl .checkout-hdr h3{
 	border-bottom: none!important;
@@ -29,7 +29,7 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	text-transform: uppercase;
 	line-height: 1.1;
 	margin-bottom: 30px;
-	padding-bottom: 18px!important;
+	padding-bottom: 40px!important;
 	position: relative;
 }
 .checkout-hdr .chkout-title:after{
@@ -61,13 +61,21 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 }
 .chkout-service{
 	display: flex;
-	width: 100%;
+	width: auto;
 	padding-bottom: 60px;
+	margin-left: -12px;
+	margin-right: -12px;
 }
 .srv-fea-img-cntrl{
-	width: 67%;
+	width: 50%;
 	overflow: hidden;
-	margin-right: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.srv-cont{
+	width: 50%;
+	padding-left: 12px;
+	padding-right: 12px;
 }
 .srv-fea-img{
 	width: 100%;
@@ -90,9 +98,7 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	width: 100%;
 	height: 100%;	
 }
-.srv-cont{
-	width: 33%;
-}
+
 .chk-acc-tp-cntrl{
 	padding-bottom: 30px;
 }
@@ -103,6 +109,19 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	background-color: #000;
 }
 
+.chk-acc-btm-cntrl{
+	position: relative;
+}
+.chk-acc-btm-cntrl i.contact-form-info-round-bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.chk-acc-btm-cntrl i.contact-form-info-line-bg{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
 .chk-acc-btm{
 	background-color: #FFA800;
 }

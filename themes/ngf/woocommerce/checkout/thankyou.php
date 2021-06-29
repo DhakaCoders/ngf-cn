@@ -74,6 +74,14 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
             <?php endif; ?>
       	    <?php if($blok2 = $thankyou['blok_2']): ?>
             <div class="chk-acc-btm-cntrl">
+              <i class="contact-form-info-round-bg">
+                <svg class="contact-from-info-rnd-bg" width="35" height="61" viewBox="0 0 35 61" fill="transparent">
+                <use xlink:href="#contact-from-info-rnd-bg"></use> </svg>
+              </i>
+              <i class="contact-form-info-line-bg">
+                <svg class="contact-form-info-ln-bg" width="23" height="70" viewBox="0 0 23 70" fill="transparent">
+                <use xlink:href="#contact-from-info-line-bg"></use> </svg>
+              </i>
               <div class="chk-acc-btm">
                 <img src="<?php echo THEME_URI; ?>/assets/images/srv&cont-2.svg" alt="">
                 <?php 
