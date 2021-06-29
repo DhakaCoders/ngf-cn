@@ -1,4 +1,7 @@
 /* == sec-heading design start == */
+.post-type-archive-product .wc-template-crtl{
+    margin-top: 0!important;
+}
 .sec-hdr-cntrl{
     display: flex;
     align-items: flex-end;
