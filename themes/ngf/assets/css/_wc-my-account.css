@@ -1352,16 +1352,7 @@ body.hide-account-title .type-order-format .woocommerce-input-wrapper{
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* ---------------------------- WC Checkout Page ---------------------------------- */
 
 body.woocommerce-checkout .checkout-terms{
     border-top: 1px solid #ECEEEF;
@@ -1395,7 +1386,7 @@ body.woocommerce-account.loggedin-winkelmandje-crtl .woocommerce-account-grds-cn
     margin-bottom: 100px;
 }
 
-/* ---------------------------- checkout page ----------------------------------*/
+
 body.woocommerce-checkout .woocommerce-billing-fields h3,
 body.woocommerce-checkout .woocommerce-checkout-review-order h3,
 body.woocommerce-checkout .woocommerce-additional-fields h3{

@@ -429,8 +429,7 @@ form
 	border-color:#000000;
 }
 
-.fl-orange-btn,
-body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a{
+.fl-orange-btn{
 	background: #FFA800;
 	color: #fff;
 	border: 2px solid #FFA800;
@@ -445,8 +444,7 @@ body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a{
 	display: inline-block;
 	text-decoration: none;
 }
-.fl-orange-btn:hover,
-body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a{
+.fl-orange-btn:hover{
 	background: transparent;
 	color: #FFA800;
 	border-color:#FFA800;
