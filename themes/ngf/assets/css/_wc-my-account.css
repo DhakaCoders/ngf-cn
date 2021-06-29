@@ -636,8 +636,11 @@ body.hide-account-title .register-btn .reg-btn-crtl{
 body.hide-account-title .woocommerce-notices-wrapper{
     margin-bottom:0px;
 }
-
-body.hide-account-title span.woocommerce-input-wrapper span {
+body.hide-account-title .type-order-format .woocommerce-input-wrapper{
+    display: flex;
+    width: 273px;
+}
+body.hide-account-title span.woocommerce-input-wrapper span{
     font-size: 14px;
     color: #9b9b9b;
     letter-spacing: -0.02em;
@@ -1343,11 +1346,9 @@ body.loggedin-winkelmandje-crtl .myaccount-cart-crtl .woocommerce-mini-cart + p 
     padding-left:25px;
     width:50%;
 }
-body.hide-account-title .type-order-format .woocommerce-input-wrapper{
-    display: flex;
-    width: 273px;
+body.woocommerce-account.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr{
+    margin-bottom: 100px;
 }
-
 
 
 
@@ -1382,9 +1383,12 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
 
 
 
-body.woocommerce-account.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr{
-    margin-bottom: 100px;
-}
+
+
+
+
+
+
 
 
 body.woocommerce-checkout .woocommerce-billing-fields h3,
