@@ -405,7 +405,7 @@ span.fl-video-play-icon-cntlr{
         width: 60px;
     }
     .ovo-abs-line-four {
-        top: 92px;
+        top: 106px;
         width: 110px;
     }
 
@@ -417,6 +417,10 @@ span.fl-video-play-icon-cntlr{
 @media(max-width: 1299px){
     .ovo-full-width-bg-heading {
         line-height: 60px;
+    }
+    .ovo-abs-line-four {
+        top: 92px;
+        width: 110px;
     }
 }
 @media(max-width: 1199px){
