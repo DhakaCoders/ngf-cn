@@ -733,9 +733,16 @@ body.woocommerce-cart span.amount bdi span.woocommerce-Price-currencySymbol,
 body.woocommerce-cart ins span.amount bdi, 
 body.woocommerce-cart ins span.amount bdi span.woocommerce-Price-currencySymbol, 
 body.woocommerce-cart del span.amount bdi, 
-body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol{
+body.woocommerce-cart del span.amount bdi span.woocommerce-Price-currencySymbol,
+body.woocommerce-checkout span.amount bdi, 
+body.woocommerce-checkout span.amount bdi span.woocommerce-Price-currencySymbol, 
+body.woocommerce-checkout ins span.amount bdi, 
+body.woocommerce-checkout ins span.amount bdi span.woocommerce-Price-currencySymbol, 
+body.woocommerce-checkout del span.amount bdi, 
+body.woocommerce-checkout del span.amount bdi span.woocommerce-Price-currencySymbol{
 	font-weight: 500;
 	font-family: 'Roboto', sans-serif;
+	margin-right: 5px!important;
 }
 
 
