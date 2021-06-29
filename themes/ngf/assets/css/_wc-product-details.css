@@ -696,6 +696,13 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 .quantity label {
     display: none;
 }
+
+/* related product */
+.related-product-sec{
+	position: relative;
+}
+
+
 /* ================= */
 /* == responsive == */
 /* =============== */
