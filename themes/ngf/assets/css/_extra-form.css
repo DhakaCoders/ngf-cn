@@ -82,6 +82,9 @@
     .bnr-bg-overly-module{
         margin-top: -130px;
     }
+    .bnr-bg-overly-module{
+        margin-bottom: 30px;
+    }
 }
 @media(max-width:767px){
     .bnr-bg-249 .bnr-bg-overly {

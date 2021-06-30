@@ -52,8 +52,15 @@
 	.blog-page-sec{
 		padding-top: 70px;
 	}
+	.blog-page-sec .blog-grid-item-inner{
+		padding-bottom: 48px;
+	}
 	.blog-grid-des {
-    	padding: 25px 26px 35px;
+    	padding: 25px 26px 0;
+	}
+	.blog-page-sec .fl-pro-grd-btn{
+		left: 26px;
+		bottom: 31px;
 	}
 	.fl-grid-tag span{
 		padding: 8px 16px;
@@ -68,13 +75,19 @@
 	.blog-page-sec .blog-grid-items ul li{
 		padding: 0 10px 40px!important;
 	}
+	.blog-page-sec .blog-grid-item-inner{
+		padding-bottom: 46px;
+	}
 	.blog-grid-des {
-    	padding: 25px 23px 33px;
+    	padding: 25px 23px 0;
+	}
+	.blog-page-sec .fl-pro-grd-btn{
+		left: 23px;
+		bottom: 29px;
 	}
 	.blog-page-sec .fl-grid-tag{
 		margin-top: -15px;
 		margin-left: 22px;
-		padding-bottom: 20px;
 	}
 	.fl-grid-tag span{
 		font-size: 12px;
@@ -92,13 +105,19 @@
 	.blog-page-sec{
 		padding-top: 48px;
 	}
+	.blog-page-sec .blog-grid-item-inner{
+		padding-bottom: 44px;
+	}
 	.blog-grid-des {
-    	padding: 25px 15px 31px;
+    	padding: 25px 15px 0;
+	}
+	.blog-page-sec .fl-pro-grd-btn{
+		left: 15px;
+		bottom: 28px;
 	}
 	.blog-page-sec .fl-grid-tag{
 		margin-top: -14px;
 		margin-left: 15px;
-		padding-bottom: 17px;
 	}
 	.fl-grid-tag span{
 		padding: 8px 14px 6px;
@@ -111,11 +130,13 @@
 		padding-top: 40px;
 	}
 	.blog-grid-des {
-    	padding: 25px 20px 31px;
+    	padding: 25px 20px 0;
+	}
+	.blog-page-sec .fl-pro-grd-btn{
+		left: 20px;
 	}
 	.blog-page-sec .fl-grid-tag{
 		margin-left: 20px;
-		padding-bottom: 13px;
 	}
 }
 
@@ -124,11 +145,13 @@
 		padding-top: 31px;
 	}
 	.blog-grid-des {
-    	padding: 25px 26px 31px;
+    	padding: 25px 26px 0;
+	}
+	.blog-page-sec .fl-pro-grd-btn{
+		left: 26px;
 	}
 	.blog-page-sec .fl-grid-tag{
 		margin-left: 26px;
-		padding-bottom: 13px;
 	}
 	.fl-grid-tag span{
 		padding: 7px 13px 6px;
