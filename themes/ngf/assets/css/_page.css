@@ -124,6 +124,7 @@
 	flex-wrap: wrap;
 	align-items: center;
 	margin: 0 -25px;
+	overflow: hidden;
 }
 .sec-heading{
 	padding-bottom: 34px;
