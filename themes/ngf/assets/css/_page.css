@@ -119,12 +119,15 @@
 
 
 /* == fl category design start == */
+.fl-grid-category{
+	overflow: hidden;	
+}
 .fl-grid-category ul{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	margin: 0 -25px;
-	overflow: hidden;
+
 }
 .sec-heading{
 	padding-bottom: 34px;
