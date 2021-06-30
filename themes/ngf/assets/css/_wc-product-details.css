@@ -87,7 +87,7 @@ span.single-price-total{
 	opacity: .7;
 }
 .main-img-crtl{
-	margin-bottom: 20px!important;
+	margin-bottom: 16px!important;
 }
 .thumbnails-cntlr{
 	
@@ -831,8 +831,15 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.fl-pro-single-prv-nxt.fpsnxt{
 		right: 20px;
 	}
+	.main-img-crtl{
+		margin-bottom: 18px!important;
+	}
+	.thumbnails-cntlr .thumb-bg > div{
+		height: 100px;
+	}
 	.thumbnails-cntlr .thumb-bg img{
 		max-height: 100px;
+		width: 100%!important;
 	}
 	.summary-ctrl .qty-price-wrap{
 		padding-bottom: 23px;
@@ -850,6 +857,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.woocommerce div.product div.summary{
 		padding-left:0px;
+		padding-top: 10px;
 	}
 	.custom-info-crtl,
 	.thumbnails-cntlr{
@@ -1024,6 +1032,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.main-img-crtl .woocommerce-product-gallery__image a img{
 		max-height: 260px;
 	}
+	.thumbnails-cntlr .thumb-bg > div{
+		height: 90px;
+	}
 	.thumbnails-cntlr .thumb-bg img{
 		max-height: 90px;
 	}
@@ -1171,6 +1182,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.main-img-crtl .woocommerce-product-gallery__image a img{
 		max-height: 240px;
+	}
+	.thumbnails-cntlr .thumb-bg img{
+		height: 80px;
 	}
 	.thumbnails-cntlr .thumb-bg img{
 		max-height: 80px;

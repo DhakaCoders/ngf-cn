@@ -67,6 +67,11 @@
 .bgi-des p:last-of-type{
 	margin-bottom: 0;
 }
+.fl-pro-grd-btn{
+	position: absolute;
+	left: 0;
+	bottom: -18px;
+}
 a.fl-read-more-btn{
 	padding-right: 26px;
     position: relative;

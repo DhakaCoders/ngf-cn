@@ -36,6 +36,11 @@
 .blog-grid-des{
 	padding: 25px 28px 37px;
 	background: #fff;
+	position: relative;
+}
+.blog-page-sec .fl-pro-grd-btn{
+	bottom: 37px;
+	left: 28px;
 }
 
 /* == responsive == */
