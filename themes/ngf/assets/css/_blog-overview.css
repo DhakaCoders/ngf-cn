@@ -34,13 +34,15 @@
 	line-height: 1;
 }
 .blog-grid-des{
-	padding: 25px 28px 37px;
 	background: #fff;
+}
+.blog-grid-des-inner{
+	padding: 25px 28px 50px;	
 	position: relative;
 }
-.blog-page-sec .fl-pro-grd-btn{
-	bottom: 37px;
-	left: 28px;
+.blog-page-sec .fl-pro-grd-btn {
+    bottom: 71px;
+    left: 39px;
 }
 
 /* == responsive == */
