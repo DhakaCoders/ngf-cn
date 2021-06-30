@@ -302,8 +302,8 @@ if( $('.main-img-crtl').length ){
     autoplay:false,
     adaptiveHeight: true,
     asNavFor: '.thumbnails-cntlr .thumbnails',
-     prevArrow: $('.fl-singgle-pro-prev'),
-    nextArrow: $('.fl-singgle-pro-next'),
+     prevArrow: $('.fpsprv'),
+    nextArrow: $('.fpsnxt'),
   });
 }
 
@@ -314,7 +314,7 @@ if( $('.thumbnails-cntlr .thumbnails').length ){
     slidesToScroll: 1,
     asNavFor: '.main-img-crtl',
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite:true,
     autoplay:false,
     focusOnSelect: true,
@@ -555,6 +555,19 @@ if( $('.werkmsgSlider').length ){
       slidesToScroll: 1
     });
 }
+if( $('.mobileImgSlider').length ){
+    $('.mobileImgSlider').slick({
+      dots: true,
+      arrows:false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+}
+
 
 
 /*start of Momin*/

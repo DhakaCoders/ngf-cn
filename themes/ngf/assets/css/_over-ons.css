@@ -272,6 +272,28 @@ span.fl-video-play-icon-cntlr{
 .ovoTestimonialSlider.slick-slider{
     margin-bottom: 0;
 }
+.hide{
+    display: none!important;
+}
+/*.instead-fancy-to-img-slider-inner{
+    display: none;!important;
+}
+.instead-fancy-to-img-slider-cntlr .instead-fancy-to-img-slider-inner{
+    display: none!important;
+}*/
+.have-no-fancy a{
+    display: none!important;
+}
+.have-no-fancy span.fl-video-play-icon-cntlr{
+    display: none!important;
+}
+
+
+
+
+
+
+
 
 
 @media (max-width: 1699px){
@@ -578,6 +600,9 @@ span.fl-video-play-icon-cntlr{
         top: 561px;
         transform: rotate(-60deg);
         height: 6px;
+    }
+    .instead-fancy-to-img-slider-cntlr .instead-fancy-to-img-slider-inner{
+        display: block!important;
     }
 
 
