@@ -106,8 +106,13 @@
     -ms-transition: all .5s;
     -webkit-transition: all .5s;
 }
+.fl-product-grd-inr-cntrl{
+    padding-bottom: 35px;
+    height: 100%;
+    position: relative;
+}
 .fl-pro-grd-des {
-    padding: 25px 23px 35px;
+    padding: 25px 23px 0;
     position: relative;
 }
 .fl-pro-grd-title{
@@ -173,6 +178,9 @@ del span.amount bdi:after{
     border-top: 2px solid #eff4f7;
     margin-top: 20px!important;
     padding-left: 16px!important;
+}
+.product-page .fl-pro-grd-btn{
+    left: 22px;
 }
 .fl-buy-now-btn{
     width: 100%;
