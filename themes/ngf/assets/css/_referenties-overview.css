@@ -53,6 +53,9 @@
 	height: 100%;
 	border-radius: 50% 50%;
 }
+.ref-ov-grd-title{
+	text-transform: uppercase;
+}
 .ropgd{
 	padding-bottom: 22px;
 }
@@ -258,6 +261,9 @@
 	}
 	.ref-ov-page-entry-hdr-sec .page-entry-header{
 		padding-bottom: 40px;
+	}
+	.ref-ov-page-grid-item-cntlr{
+		padding-top: 4px;
 	}
 }
 
