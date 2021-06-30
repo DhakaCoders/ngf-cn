@@ -106,8 +106,13 @@
     -ms-transition: all .5s;
     -webkit-transition: all .5s;
 }
+.fl-product-grd-inr-cntrl{
+    padding-bottom: 35px;
+    height: 100%;
+    position: relative;
+}
 .fl-pro-grd-des {
-    padding: 25px 23px 35px;
+    padding: 25px 23px 0;
     position: relative;
 }
 .fl-pro-grd-title{
@@ -173,6 +178,9 @@ del span.amount bdi:after{
     border-top: 2px solid #eff4f7;
     margin-top: 20px!important;
     padding-left: 16px!important;
+}
+.product-page .fl-pro-grd-btn{
+    left: 25px;
 }
 .fl-buy-now-btn{
     width: 100%;
@@ -244,7 +252,7 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
         padding-top: 60px;
     }
     .fl-pro-grd-des {
-        padding: 25px 20px 35px;
+        padding: 25px 20px 0;
     }
     .fl-product-grd .fl-pro-grd-title{
         font-size: 18px;
@@ -300,7 +308,7 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
         margin: 0 auto!important;
     }
     .fl-pro-grd-des{
-        padding: 25px 23px 35px;
+        padding: 25px 23px 0;
     }
     span.amount bdi, span.amount bdi span.woocommerce-Price-currencySymbol, 
     ins span.amount bdi, ins span.amount bdi span.woocommerce-Price-currencySymbol, 

@@ -709,7 +709,7 @@ Gallery design
 }
 
 .referenties-detials-related-sec{
-	background: rgba(231, 234, 236, 0.2);
+	background: #fafafb;
 	padding-top: 100px;
 }
 .referenties-details-grds{
@@ -729,6 +729,16 @@ Gallery design
 }
 .refernties-details-related-sec-inr .sec-entry-hdr{
 	padding-bottom: 20px;
+}
+
+.referntiesDetailsSlider .referentiesDetailsSliderItem{
+	display: none;
+}
+.referntiesDetailsSlider .referentiesDetailsSliderItem:first-child{
+	display: block;
+}
+.referntiesDetailsSlider.slick-initialized .referentiesDetailsSliderItem{
+	display: block;
 }
 
 
