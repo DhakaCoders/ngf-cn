@@ -21,16 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); 
 ?>
-<div class="back-to-dashboard-btn-cntlr">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="back-to-dashboard-btn"><a class="backshop-cart" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' )); ?>"><?php esc_html_e( 'Back to overview', 'woocommerce' ); ?></a></div>
-			</div>	
-		</div>
-	</div>
-</div>
-
 <section class="product-details-page">
   <div class="container">
     <div class="row">
