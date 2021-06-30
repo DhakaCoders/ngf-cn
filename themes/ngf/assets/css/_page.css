@@ -86,7 +86,7 @@
 .page-entry-header{
 	display: flex;
 	align-items: center;
-	padding-top: 11px;
+	padding-top: 0;
 	padding-bottom: 35px;
 	border-bottom: 2px solid #eff4f7;
 	margin-bottom: 59px;
@@ -94,7 +94,7 @@
 .page-entry-header h1{
 	font-size: 80px;
 	margin-bottom: 0;
-	padding-right: 114px;
+	padding-right: 85px;
 	text-transform: uppercase;
 }
 .page-entry-header p{
@@ -124,6 +124,7 @@
 	flex-wrap: wrap;
 	align-items: center;
 	margin: 0 -25px;
+	overflow: hidden;
 }
 .sec-heading{
 	padding-bottom: 34px;
@@ -269,7 +270,7 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 /* == responsive == */
 @media (max-width: 1699px) {
 	.page-entry-header{
-		padding-top: 15px;
+		padding-top: 0;
 		padding-bottom: 33px;
 		margin-bottom: 50px;
 	}
@@ -289,7 +290,7 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	}
 	.page-entry-header h1{
 		font-size: 63px;
-		padding-right: 68px;
+		padding-right: 65px;
 	}
 	.fl-grid-category ul{
 		margin: 0 -22px;
@@ -297,11 +298,14 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	.fl-grid-category ul li{
 		padding: 0 22px;
 	}
+	.page-entry-header h1{
+		padding-top: 7px;
+	}
 }
 
 @media (max-width: 1499px) {
 	.page-entry-header{
-		padding-top: 19px;
+		padding-top: 0;
 		padding-bottom: 32px;
 		margin-bottom: 40px;
 	}
@@ -324,7 +328,7 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	}
 	.page-entry-header h1{
 		font-size: 55px;
-		padding-right: 54px;
+		padding-right: 50px;
 	}
 	.fl-grid-category ul{
 		margin: 0 -19px;
@@ -353,6 +357,9 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 @media(max-width: 1299px){
 	.page-bnr-desc-cntlr{
 		padding-left: 120px;
+	}
+	.page-entry-header{
+		padding-top: 10px;
 	}
 }
 
@@ -440,7 +447,7 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	}
 	.page-entry-header h1{
 		font-size: 40px;
-		padding-bottom: 23px;
+		padding-bottom: 20px;
 	}
 	.sec-heading{
 		padding-bottom: 19px;
@@ -477,5 +484,12 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	}
 	.pg-bnr-title.fl-h1-80{
 		font-size: 35px;
+	}
+}
+
+
+@media(max-width: 359px){
+	.page-entry-header h1 {
+	    font-size: 30px;
 	}
 }
