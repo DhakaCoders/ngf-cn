@@ -54,7 +54,7 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
       	<?php if( $thankyou['afbeelding'] ): ?>
         <div class="srv-fea-img-cntrl">
           <div class="srv-fea-img">
-            <a><?php echo cbv_get_image_tag($thankyou['afbeelding'], 'thankyou'); ?></a>
+            <div class="thankyou-img" style="background-image:url('<?php echo cbv_get_image_src($thankyou['afbeelding'], 'thankyou'); ?>');"></div>
           </div>
         </div>  
 	<?php endif; ?>

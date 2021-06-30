@@ -30,6 +30,9 @@ body.woocommerce-cart .page-title h1{
 body.woocommerce-cart .wc-template-crtl{
 	margin-top: 0;
 }
+body.empty-cart .wc-template-crtl{
+	margin-top: -118px;
+}
 
 body.woocommerce-cart .bn-page-entry-hdr-cntlr h1{
 	margin-bottom: 0;
@@ -552,12 +555,14 @@ body.empty-cart .cart-is-emtpy{
     padding: 14px 30px;
     min-width: 336px;
 }
-body.empty-cart .woocommerce a{
+/*body.empty-cart .woocommerce a{
 	margin-left: 12px;
 	margin-right: 12px;
-}
+}*/
 body.empty-cart.woocommerce-cart .return-to-shop a{
 	font-size: 16px!important;
+	margin-left: 12px;
+	margin-right: 12px;
 }
 body.empty-cart.woocommerce-cart .return-to-shop a.cart-empty-btn-1{
 	background: #FFA800!important;
@@ -766,6 +771,9 @@ body.woocommerce-checkout del span.amount bdi span.woocommerce-Price-currencySym
 	body.empty-cart .cart-is-emtpy strong{
 		font-size: 58px!important;
 	}
+	body.empty-cart .wc-template-crtl{
+		margin-top: -110px;
+	}
 }
 
 @media(max-width: 1599px){
@@ -931,6 +939,9 @@ body.woocommerce-checkout del span.amount bdi span.woocommerce-Price-currencySym
 	}
 	body.empty-cart .cart-is-emtpy strong{
 		font-size: 42px!important;
+	}
+	body.empty-cart .wc-template-crtl{
+		margin-top: -88px;
 	}
 }
 
@@ -1123,9 +1134,9 @@ body.woocommerce-checkout del span.amount bdi span.woocommerce-Price-currencySym
 		max-width: 100%;
 		width: 100%;
 	}
-	body.empty-cart .woocommerce a{
+	/*body.empty-cart .woocommerce a{
 		margin-bottom: 20px;
-	}
+	}*/
 	body.empty-cart .return-to-shop{
 		margin-bottom: 0;
 	}
@@ -1219,13 +1230,13 @@ body.woocommerce-checkout del span.amount bdi span.woocommerce-Price-currencySym
 	.woocommerce-cart .page-grd-sec-wrp {
 	    padding-top: 0;
 	}
-	body.empty-cart .woocommerce a{
+	/*body.empty-cart .woocommerce a{
 		margin-left: 0;
 		margin-right: 0;
 		margin-bottom: 15px;
 		max-width: 100%;
 		min-width: 100%;
-	}
+	}*/
 	body.empty-cart .page-grd-sec-wrp {
 	    padding-bottom: 20px;
 	}
@@ -1233,6 +1244,7 @@ body.woocommerce-checkout del span.amount bdi span.woocommerce-Price-currencySym
 		min-width: 100%;
 		margin-left: 0!important;
 		margin-right: 0!important;
+		margin-bottom: 15px!important;
 	}
 	body.empty-cart .innerpage-con-wrap .woocommerce {
 	    padding-bottom: 55px;
