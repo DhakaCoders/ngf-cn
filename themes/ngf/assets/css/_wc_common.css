@@ -430,11 +430,7 @@ body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .selecti
     border-radius:6px!important;
 }
 
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .selection .select2-selection,
-body.woocommerce-checkout .woocommerce-shipping-fields .selection .select2-selection,
-body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .selection .select2-selection{
-	border-radius:0!important;
-}
+
 
 
 
@@ -694,7 +690,18 @@ input.select2-search__field{
     color: #D17181;
 }
 
-
+@media(max-width:1699px){
+	.woocommerce .checkout-button.button, 
+	.woocommerce #respond input#submit, 
+	.woocommerce a.button, 
+	.woocommerce button.button, 
+	.woocommerce input.button, 
+	.woocommerce button[type=submit], 
+	.woocommerce-orders .orders-crtl .contact-info a.order-contact-btn, 
+	body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-row-last button[type=submit]{
+		font-size:15px!important;
+	}
+}
 
 @media(max-width: 1199px){
 	body.woocommerce-order-received .woocommerce ul.order_details{

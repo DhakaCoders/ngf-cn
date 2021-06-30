@@ -110,7 +110,10 @@
 .home-testimonial{
     margin-bottom:0!important;
 }
-
+.home-testimonial-slider-sec{
+    position: relative;
+    z-index: 1;
+}
 /*latest-news*/
 .latest-news-grid-item .blog-grid-des{
 	padding: 30px 28px 48px;
