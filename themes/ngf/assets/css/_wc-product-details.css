@@ -161,6 +161,9 @@ span.single-price-total{
 	text-transform: uppercase;
 	margin-top: -17px;
 }
+.single-product .fl-pro-grd-price{
+    padding-bottom: 32px;
+}
 
 .long-desc{
 	color: #707C88;
@@ -670,14 +673,8 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.single-product .single-price-total span.woocommerce-Price-amount bdi{
 		font-size: 29px;
 	}
-	.single-product .review-sec{
-		padding-top: 74px;
-	}
-	.single-product .eveline-vernaeve-cntlr{
-		margin-bottom: 90px;
-	}
-	.single-product .cadeaubonnen-page-link{
-		padding-bottom: 267px;
+	.single-product .fl-pro-grd-price{
+    	padding-bottom: 30px;
 	}
 	.single-product .white-sky-bg{
 		top: -250px;
@@ -882,6 +879,11 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
         display: flex;
         align-items: center;
         justify-content: center;
+	}
+	.single-product .price-quentity-ctrl{
+		padding-bottom: 32px;
+		border-bottom: 2px solid #EFF4F7;
+		margin-bottom: 30px;
 	}	
 	.woocommerce div.product div.images{
 		margin-bottom:35px;
@@ -900,6 +902,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.summary-ctrl .qty-price-wrap > ins,
 	.summary-ctrl .qty-price-wrap > ins span bdi{
 		font-size:20px;
+	}
+	.single-product .fl-pro-grd-price{
+    	padding-bottom: 28px;
 	}
 	.related.products.related-pro-crtl h2{
 		font-size: 24px;
