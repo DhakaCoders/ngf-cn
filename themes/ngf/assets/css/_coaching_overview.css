@@ -22,10 +22,14 @@
 .blog-page-sec .blog-grid-items{
 	padding-bottom: 20px;
 }
-.coaching-sec  .blog-grid-item{
+.coaching-sec .blog-grid-item{
 	background: #fff;
-	position: relative;
 	box-shadow: none;
+}
+.coaching-sec .blog-grid-item-inner{
+	position: relative;
+	height: 100%;
+	padding-bottom: 17px;
 }
 .blog-grid-items .slick-track .blog-grid-des.mHc{
 	height: auto!important;
@@ -71,7 +75,6 @@
 .bgi-des p:last-of-type{
 	margin-bottom: 0;
 }
-
 
 /* == responsive == */
 
