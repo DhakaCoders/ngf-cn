@@ -410,7 +410,7 @@ if (windowWidth <= 767) {
 
   
   $(window).resize(function() { 
-    // var window2Width = $(window).width();
+    var window2Width = $(window).width();
     // var conW = $('.container-lg').width();
     // var mainW = window2Width - conW;
     // var leftW = mainW / 2;
