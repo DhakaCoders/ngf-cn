@@ -5,6 +5,8 @@
 }
 body.woocommerce-order-received .page-grd-sec-wrp{
 	padding-top: 45px!important;
+	position: relative;
+	z-index: 2;
 }
 .woocommerce-order-received .checkout-cntrl .checkout-hdr h3{
 	border-bottom: none!important;
