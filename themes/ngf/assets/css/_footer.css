@@ -71,11 +71,17 @@
     justify-content: center;
     /*margin: 0 -23px;*/
 }
-.client-logo-cntlr ul{
-	
+.client-logo a{
+    display: inline-block;
 }
-.client-logo-cntlr ul {
-
+.client-logo a img{
+    filter: grayscale(100%);
+}
+.client-logo a img:hover,
+.client-logo a:hover img,
+.client-logo img:hover{
+    filter: grayscale(0%);
+    opacity: 1;
 }
 .client-logo-item{
 	padding: 0 23px;
@@ -184,7 +190,7 @@
     margin-bottom: 24px;
 }
 .ftr-top-col-menu ul li:nth-child(2n+1){
-    padding-right: 5px;
+    padding-right: 10px;
 }
 .ftr-top-col-menu ul li a{
     font-size: 14px;

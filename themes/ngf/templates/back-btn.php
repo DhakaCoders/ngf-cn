@@ -11,20 +11,19 @@
 				</div>	
 			</div>
 		</div>
-	</div>';
+		</div>';
   }
-
 
   if( (is_account_page() && !is_user_logged_in() && isset($_GET['action'])) || (is_account_page() && is_user_logged_in()) ){
   	$cURL = wc_get_cart_url();
-	echo '<div class="back-to-dashboard-btn-cntlr">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="back-to-dashboard-btn"><a class="backshop-cart" href="'.$cURL.'">'.__( 'Back to SHOPPING CART', 'woocommerce' ).'</a></div>
-				</div>	
+		echo '<div class="back-to-dashboard-btn-cntlr">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="back-to-dashboard-btn"><a class="backshop-cart" href="'.$cURL.'">'.__( 'Back to SHOPPING CART', 'woocommerce' ).'</a></div>
+					</div>	
+				</div>
 			</div>
-		</div>
-	</div>';
+		</div>';
   }
 ?>
