@@ -121,6 +121,10 @@
     .thank-you-btn{
         padding-bottom: 32px;
     }
+    .thank-you-des-border{
+        width: 80%;
+        margin: auto;
+    }
 
 }
 @media (max-width: 639px){
@@ -147,10 +151,6 @@
     }
     .thank-you-des{
         padding-top: 40px;
-    }
-    .thank-you-des-border{
-        width: 291px;
-        margin: auto;
     }
 
 }
