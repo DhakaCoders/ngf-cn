@@ -35,6 +35,11 @@
 .fgi-title a{
 	text-decoration: none;
 }
+.faq-grid-item-inr{
+	position: relative;
+	padding-bottom: 21px;
+	height: 100%;
+}
 
 /*responsive-start*/
 
@@ -135,6 +140,9 @@
 	}
 	.faq-grid-item .fl-grid-tag {
     	padding-bottom: 6px;
+	}
+	.faq-grid-item-inr{
+		padding-bottom: 19px;
 	}
 }
 @media(max-width: 489px){

@@ -87,7 +87,7 @@ span.single-price-total{
 	opacity: .7;
 }
 .main-img-crtl{
-	margin-bottom: 20px!important;
+	margin-bottom: 16px!important;
 }
 .thumbnails-cntlr{
 	
@@ -831,16 +831,20 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.fl-pro-single-prv-nxt.fpsnxt{
 		right: 20px;
 	}
+	.main-img-crtl{
+		margin-bottom: 18px!important;
+	}
+	.thumbnails-cntlr .thumb-bg > div{
+		height: 100px;
+	}
 	.thumbnails-cntlr .thumb-bg img{
 		max-height: 100px;
+		width: 100%!important;
 	}
 	.summary-ctrl .qty-price-wrap{
 		padding-bottom: 23px;
 		border-bottom: 2px solid #f2f6f9;
 		margin-bottom: 23px;
-	}
-	.woocommerce .fl-product div.product div.images{
-		width:100%;
 	}
 	.fl-product .summary-ctrl {
         margin-top: 0;
@@ -850,6 +854,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.woocommerce div.product div.summary{
 		padding-left:0px;
+		padding-top: 10px;
 	}
 	.custom-info-crtl,
 	.thumbnails-cntlr{
@@ -879,7 +884,8 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
         justify-content: center;
 	}	
 	.woocommerce div.product div.images{
-		margin-bottom:30px;
+		margin-bottom:35px;
+		width: 100%!important;
 	}
 	.meta-crtl{
 		margin-bottom:25px;
@@ -887,9 +893,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.woocommerce div.product div.summary {
 	    margin-bottom: 13px;
 	}
-/* 	.related.products.related-pro-crtl{
-		padding-top:50px;
-	} */
 	.cart .qty-price-wrap del span,
 	.cart .qty-price-wrap del span bdi{
 		font-size:18px!important;
@@ -1012,9 +1015,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.woocommerce div.product .product_title{
 		display: block!important;
 	}
-	.woocommerce div.product div.images{
-		margin-bottom: 40px;
-	}
 	.woocommerce-product-gallery-wrap{
 		max-width: 400px;
 	}
@@ -1023,6 +1023,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.main-img-crtl .woocommerce-product-gallery__image a img{
 		max-height: 260px;
+	}
+	.thumbnails-cntlr .thumb-bg > div{
+		height: 90px;
 	}
 	.thumbnails-cntlr .thumb-bg img{
 		max-height: 90px;
@@ -1171,6 +1174,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.main-img-crtl .woocommerce-product-gallery__image a img{
 		max-height: 240px;
+	}
+	.thumbnails-cntlr .thumb-bg img{
+		height: 80px;
 	}
 	.thumbnails-cntlr .thumb-bg img{
 		max-height: 80px;
