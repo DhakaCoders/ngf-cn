@@ -5,6 +5,8 @@
 }
 body.woocommerce-order-received .page-grd-sec-wrp{
 	padding-top: 45px!important;
+	position: relative;
+	z-index: 2;
 }
 .woocommerce-order-received .checkout-cntrl .checkout-hdr h3{
 	border-bottom: none!important;
@@ -82,29 +84,40 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	height: 100%;
 	overflow: hidden;
 }
-.srv-fea-img a{
+.srv-fea-img .thankyou-img{
+	height: 100%;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center center!important;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+/*.srv-fea-img a{
 	display: inline-block;
 	vertical-align: baseline;
 	height: 100%;
 	width: 100%;
 	border-radius: 3px;
-}
-.srv-fea-img a:hover{
+}*/
+.srv-fea-img .thankyou-img:hover{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
 }
-.srv-fea-img img{
+/*.srv-fea-img img{
 	width: 100%;
 	height: 100%;	
-}
+}*/
 
 .chk-acc-tp-cntrl{
 	padding-bottom: 30px;
 }
 .chk-acc-tp, .chk-acc-btm{
-	padding: 36px 20px;
+	padding: 36px 30px;
 } 
 .chk-acc-tp{
 	background-color: #000;
@@ -255,7 +268,7 @@ body.woocommerce-order-received .sec-header .sec-title{
 		font-size: 44px;
 	}
 	.chk-acc-tp, .chk-acc-btm{
-		padding: 31px 20px;
+		padding: 31px 30px;
 	}
 	.chkout-service{
 		padding-bottom: 50px;
@@ -281,7 +294,7 @@ body.woocommerce-order-received .sec-header .sec-title{
 		font-size: 26px
 	}
 	.chk-acc-tp, .chk-acc-btm{
-		padding: 28px 15px;
+		padding: 28px 30px;
 	}
 }
 
@@ -309,6 +322,12 @@ body.woocommerce-order-received .sec-header .sec-title{
 		padding-right: 0;
 		margin-bottom: 32px;
 	}
+	.srv-fea-img{
+		height: 380px;
+	}
+	/*.srv-fea-img .thankyou-img{
+		background-size: auto 100%!important;
+	}*/
 	.srv-cont{
 		margin: auto;
 		max-width: 100%;
@@ -350,7 +369,7 @@ body.woocommerce-order-received .sec-header .sec-title{
 		padding-bottom: 20px;
 	}
 	.chk-acc-tp, .chk-acc-btm{
-		padding: 40px 20px;
+		padding: 40px 30px;
 	}
 	.chkout-logo{
 		padding-bottom: 25px;
@@ -387,6 +406,9 @@ body.woocommerce-order-received .sec-header .sec-title{
 	body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
 		padding-bottom: 0;
 	}
+	.srv-fea-img{
+		height: 340px;
+	}
 
 }
 
@@ -414,6 +436,9 @@ body.woocommerce-order-received .sec-header .sec-title{
 	.checkout-hdr .chkout-title:after{
 		width: 100%;
 	}
+	.srv-fea-img{
+		height: 300px;
+	}
 }
 
 
@@ -426,6 +451,9 @@ body.woocommerce-order-received .sec-header .sec-title{
 	}
 	.chkout-service{
 		padding-bottom: 50px;
+	}
+	.srv-fea-img{
+		height: 240px;
 	}
 }
 

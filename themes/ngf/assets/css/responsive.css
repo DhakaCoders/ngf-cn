@@ -220,11 +220,12 @@
 
 }
 
-@media(max-width: 479px){
+@media(max-width:375px){
 	.fl-transparent-btn,
 	.fl-black-btn,
 	.fl-orange-btn{
 		width:100%;
+		min-width:initial;
 	}
 
 }
