@@ -335,7 +335,8 @@ nav.main-nav > ul > li > a{
 	display: inline-block;
 	position: relative;
 }
-nav.main-nav > ul > li > a:before {
+nav.main-nav > ul > li > a:before,
+nav.main-nav > ul > li.menu-item-has-children:hover > a:before{
     content: '';
     position: absolute;
     left: 0;
@@ -352,8 +353,7 @@ nav.main-nav > ul > li > a:before {
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
-nav.main-nav > ul > li > a:hover:before,
-nav.main-nav > ul > li.menu-item-has-children:hover > a:before,
+nav.main-nav > ul > li:hover > a:before,
 nav.main-nav > ul > li.current-menu-item a:before{
 	-webkit-transform: scale(1,1);
     -ms-transform: scale(1,1);
