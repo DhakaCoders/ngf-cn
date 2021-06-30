@@ -26,11 +26,6 @@
 	background: #fff;
 	box-shadow: none;
 }
-.coaching-sec .blog-grid-item-inner{
-	position: relative;
-	height: 100%;
-	padding-bottom: 17px;
-}
 .blog-grid-items .slick-track .blog-grid-des.mHc{
 	height: auto!important;
 }
@@ -56,6 +51,11 @@
 .coaching-sec .blog-grid-des{
 	padding: 25px 0 0;
 } 
+.coaching-sec .blog-grid-des-inner{
+	position: relative;
+	height: 100%;
+	padding-bottom: 17px;
+}
 .blog-grid-des .bgi-title{
 	line-height: 1.25;
 	font-weight: 600;
