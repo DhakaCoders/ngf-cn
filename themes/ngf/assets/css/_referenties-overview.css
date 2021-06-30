@@ -35,7 +35,7 @@
 .ref-ov-page-grid-item-inr{
 	position: relative;
 	padding-bottom: 22px;
-	/*height: 100%;*/
+	height: 100%;
 }
  .ref-ov-grd-title{
  	margin-bottom: 34px;
@@ -258,7 +258,6 @@
 	.ref-ov-page-cntnt-sec .fl-grid-category li{
 		padding-left: 24px;
 		padding-right: 24px;
-
 	}
 	.ref-ov-page-grid-item-cntlr ul{
 		margin: 0;
