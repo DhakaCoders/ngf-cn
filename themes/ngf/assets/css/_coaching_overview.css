@@ -1,4 +1,8 @@
-.blog-grid-des .bgi-title a, .fl-pro-grd-btn a, .fl-pagination-ctlr ul li a, .fl-grid-category ul li a, .fl-pro-grd-des a{
+.blog-grid-des .bgi-title a, 
+.fl-pro-grd-btn a, 
+.fl-pagination-ctlr ul li a, 
+.fl-grid-category ul li a, 
+.fl-pro-grd-des a{
 	text-decoration: none;
 }
 .coaching-sec .blog-grids-cntrl{
@@ -67,49 +71,7 @@
 .bgi-des p:last-of-type{
 	margin-bottom: 0;
 }
-.fl-pro-grd-btn{
-	position: absolute;
-	left: 0;
-	bottom: -18px;
-}
-a.fl-read-more-btn{
-	padding-right: 26px;
-    position: relative;
-    display: inline-block;
-    vertical-align: baseline;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.4;
-}
-a.fl-read-more-btn span{
-	display: inline-block;
-	vertical-align: baseline;
-}
-a.fl-read-more-btn i {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background-size: contain;
-    margin-top: -6px;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
 
-    transition: all .5s;
-    -ms-transition: all .5s;
-    -webkit-transition: all .5s;
-}
-a.fl-read-more-btn:hover i{
-	right: -5px;
-    transition: all .5s;
-    -ms-transition: all .5s;
-    -webkit-transition: all .5s;	
-}
 
 /* == responsive == */
 
