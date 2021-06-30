@@ -197,6 +197,22 @@ body.woocommerce-edit-account .woocommerce form .form-row label{
 
 
 /*  ----------------------- checkbox-desigh -----------------------------  */
+.same-as-shipping-address input,
+/*.login-info p > input,
+.woocommerce-form .form-row .woocommerce-form__label-for-checkbox input,*/
+#billing_personal_recom input#personal_recom,
+#billing_acttion_insp input#acttion_insp{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 1;
+    height: 100%;
+}
 .checkbox-custom,
 .woocommerce-form__label-for-checkbox span:before{
     width: 18px;
@@ -260,26 +276,16 @@ body.woocommerce-edit-account .woocommerce form .form-row label{
     border-color:#FFA800;
 }
 
+
+
+
+
+
 /*.woocommerce .woocommerce-widget-layered-nav-list .radio-btn.woocommerce-widget-layered-nav-list__item--chosen a::after{
     display: none;
-}
-.same-as-shipping-address input,
-.login-info p > input,
-.woocommerce-form .form-row .woocommerce-form__label-for-checkbox input,
-#billing_personal_recom input#personal_recom,
-#billing_acttion_insp input#acttion_insp{
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    cursor: pointer;
-    z-index: 1;
-    height: 100%;
-}
-body.woocommerce-checkout #payment div.payment_box {
+}*/
+
+/*body.woocommerce-checkout #payment div.payment_box{
     left: 0;
     top: 100%;
     margin-top: 0;
@@ -412,19 +418,20 @@ body.woocommerce-page .wc-template-crtl {
 }
 
 .back-to-dashboard-btn {
-    padding: 21px 24px;
     background: #FFA800;
     min-width: 336px;
     display: inline-block;
 }
 .back-to-dashboard-btn a{
     position: relative;
-    text-decoration: none; 
-    display: inline-block;
+    text-decoration: none;
+    display: block;
     vertical-align: baseline;
     padding-left: 32px;
     font-weight: 600;
     text-transform: capitalize;
+    padding: 21px 24px;
+    padding-left: 56px;
 }
 .back-to-dashboard-btn:hover a{
     opacity:.7;
@@ -433,14 +440,14 @@ body.woocommerce-page .wc-template-crtl {
     color:#000;
 }
 .back-to-dashboard-btn:hover a:after{
-    left: -3px;
+    left: 19px;
 }
 .back-to-dashboard-btn a:after{
     content: "";
     position: absolute;
     font-family: 'Font Awesome 5 free';
     font-weight: 600;
-    left: 0;
+    left: 24px;
     top: 50%;
     background: url(../images/deshbord-btn-cntlr-arrow.svg);
     transform: translateY(-50%);
@@ -531,13 +538,13 @@ body.account-login-page #customer_login .u-column2.col-2 > h2{
     margin-bottom:25px;
 }
 body.woocommerce-account .login-register-wrap a{
-    color: #909BA5;
+    color: #000;
     text-decoration: underline;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
 }
 body.woocommerce-account .login-register-wrap a:hover{
-    color: #D9534F;
+    color: #FFA800;
 }
 body.woocommerce-account #login_register #customer_login .u-column2 .signup-notification p{
     margin-bottom: 21px;
@@ -552,12 +559,11 @@ body.woocommerce-account .woocommerce-form{
     border-radius: 0;
     padding-bottom: 0;
 }
-body.woocommerce-account .woocommerce button[type=submit].woocommerce-form-register__submit,
-body.woocommerce-account .woocommerce button[type=submit].woocommerce-form-login__submit{
+body.woocommerce-account .woocommerce button[type=submit].woocommerce-form-register__submitx{
     margin-top:16px;
 }
 body.woocommerce-account .woocommerce-form .woocommerce-LostPassword{
-    display:none;
+   
 }
 .woocommerce form .show-password-input,.woocommerce-page form .show-password-input{
     width: 16px;
@@ -578,9 +584,18 @@ body.woocommerce-account .woocommerce-notices-wrapper{
 }
 body.account-login-page .page-grd-sec-wrp{
     position: relative;
-    padding-bottom: 180px;
+    padding-bottom: 80px;
+    padding-top: 110px;
 }
 
+/*  ------------------------------ Forgot Password -------------------------------- */
+.woocommerce-lost-password form.woocommerce-ResetPassword.lost_reset_password{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.woocommerce-lost-password form.woocommerce-ResetPassword.lost_reset_password .form-row-first{
+    width:100%;
+}
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
@@ -613,7 +628,7 @@ body.hide-account-title.woocommerce-account .register-title h3{
 }
 body.hide-account-title .login-info #billing_email_field{
     border-top: 1px solid #ECE9E9;
-    padding-top:35px;
+    padding-top:35px!important;
 }
 body.hide-account-title .personal-info h3{
     margin-bottom:31px;
@@ -760,7 +775,8 @@ body.body.hide-account-title .page-grd-sec-wrp{
 body.hide-account-title .page-grd-sec-wrp,
 body.loggedin-deshboard-crtl .page-grd-sec-wrp,
 body.woocommerce-edit-account .page-grd-sec-wrp,
-body.woocommerce-orders .page-grd-sec-wrp{
+body.woocommerce-orders .page-grd-sec-wrp,
+body.loggedin-winkelmandje-crtl .page-grd-sec-wrp{
     padding-top:50px;
 }
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -1333,6 +1349,11 @@ body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-it
 }
 body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a{
  background:#FFA800!important;
+ border-color: #ffa800!important;
+}
+body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a:hover{
+    background: transparent!important;
+    color: #ffa800!important;
 }
 body.loggedin-winkelmandje-crtl .myaccount-cart-crtl .woocommerce-mini-cart + p{
     margin-bottom:25px;
@@ -1505,9 +1526,6 @@ body.woocommerce-checkout #customer_details .col-2{
     padding-right: 0;
 }
 
-body.woocommerce-checkout .custom-checkout-order-review table.shop_table tfoot .order-total{
-
-}
 body.woocommerce-checkout .woocommerce-additional-fields h3{
     border-bottom: 1px solid #ECEEEF;
     padding-bottom: 20px;
@@ -1520,21 +1538,11 @@ body.woocommerce-checkout .custom-checkout-order-review table tfoot,
 body.woocommerce-checkout .custom-checkout-order-review table tbody tr{
     width: 100%;
 }
-/*body.woocommerce-checkout .custom-checkout-order-review table tbody tr.cart_item{
-    display: none;
-}*/
+
 body.woocommerce-checkout form .form-row .woocommerce-input-wrapper .description#vat_number-description:visible{
     display: none!important;
     font-size: 10px;
 }
-/*body.woocommerce-checkout .custom-checkout-order-review table tr td{
-    width: 50%;
-    text-align: right;
-}*/
-/*body.woocommerce-checkout .custom-checkout-order-review table tr td.product-name{
-    text-align:left;
-}*/
-
 #billing_order_type_field span label,
 #billing_salutation_field span label{
     margin-left: 10px;
@@ -1543,10 +1551,6 @@ body.woocommerce-checkout form .form-row .woocommerce-input-wrapper .description
     font-weight: 300;
     font-size: 16px;
     color: #909BA5;
-}
-#ship-to-different-address label input {
-    vertical-align: middle;
-    margin-top: -6px;
 }
 #accept_condition ~ .checkbox-custom{
     display: none;
@@ -1598,8 +1602,7 @@ body .woocommerce-checkout .woocommerce-form__label .checkbox-custom{
 }
 body .woocommerce-checkout .woocommerce-form__label{
     display:inline-flex!important;
-    position: relative;
-    
+    position: relative;  
 }
 body .woocommerce-checkout .woocommerce-form__label span{
     padding-left:28px;
@@ -1614,10 +1617,6 @@ body .woocommerce-checkout .woocommerce-form__label input{
 body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label{
     font-size:16px;
 
-}
-body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label input#ship-to-different-address-checkbox{
-    margin-top:0px!important;
-    cursor: pointer;
 }
 body.woocommerce-checkout .default-page-con h3{
     font-size:24px;
@@ -1692,7 +1691,6 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
    height: 30px!important;
     width: auto     
 }
-
 #billing_order_type_field span.woocommerce-input-wrapper input[type=radio]#billing_order_type_Particulier,
 #billing_order_type_field span.woocommerce-input-wrapper input[type=radio]#billing_order_type_Zakelijk,
 #billing_salutation_field span.woocommerce-input-wrapper input[type=radio]#billing_salutation_Mevrouw,
@@ -1807,19 +1805,17 @@ body.woocommerce-checkout section.checkout-top-sec{
     display: flex;
     align-items: center;
 }
+
+
+
+/* --------------------------------------- RESPONSIVE --------------------------------------------------*/
+
 @media(max-width:1799px){
-    body.account-login-page .page-grd-sec-wrp{
-        position: relative;
-        padding-bottom: 150px;
-    }
     body.account-login-page .login-btm-section{
         margin-top:100px;
     }
 }
 @media(max-width:1699px){
-    body.woocommerce-account .woocommerce-notices-wrapper{
-        margin-bottom: 60px;
-    }
     body.hide-account-title .woocommerce-notices-wrapper{
         margin-bottom:0px;
     }
@@ -1829,11 +1825,20 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-checkout .checkout-page-title h1{
         font-size: 42px;
     }
-    body.account-login-page .page-grd-sec-wrp{
-        padding-bottom: 190px;
-    }
-    body.account-login-page .login-btm-section{
+     body.account-login-page .login-btm-section{
         margin-top:50px;
+    }
+    body.woocommerce-account .woocommerce .u-column1 h4, 
+    body.woocommerce-account .woocommerce .u-column2 h4, 
+    body.woocommerce-account .account-page-title h1, 
+    body.woocommerce-account .register-top-title h3, 
+    body.woocommerce-checkout .checkout-page-title h1{
+        font-size:37px;
+    }
+
+    /* ----------backbutton -------------------- */
+    body.woocommerce-page .wc-template-crtl{
+        margin-top:-110px;
     }
 
 }
@@ -1852,10 +1857,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea{
         min-height: 200px;
     }
-    body.account-login-page .page-grd-sec-wrp{
-        position: relative;
-        padding-bottom: 180px;
-    }
+
     .woocommerce form .form-row label,
     .woocommerce input[type="text"], 
     .woocommerce input[type="email"], 
@@ -1889,6 +1891,10 @@ body.woocommerce-checkout section.checkout-top-sec{
 
 }
 @media(max-width:1399px){
+    /* ------------------- register login --------------------- */
+    body.account-login-page #login_register #customer_login .u-column2{
+        padding-right:100px;
+    }
     body.woocommerce-orders .myac-pro-grd-item .myac-pro-grd-item-inr{
         padding-right: 20px;
     }
@@ -1896,22 +1902,21 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img{
         margin-right: 20px;
     }
-    .back-to-dashboard-btn-cntlr{
-        margin-bottom:80px;
-    }
+
 }
 @media(max-width:1199px){
-    .back-to-dashboard-btn-cntlr{
-        margin-bottom:70px;
-    }
     body.woocommerce-account .woocommerce button[type=submit],
     body.woocommerce-account .woocommerce button[type=button]{
         padding:13px 60px!important;
     }
-    body.woocommerce-account #login_register #customer_login{
-        padding-bottom:30px;
-    }
     /*  ----------------------------- myaccount login-register page ------------------------- */
+    body.woocommerce-account .woocommerce .u-column1 h4, 
+    body.woocommerce-account .woocommerce .u-column2 h4, 
+    body.woocommerce-account .account-page-title h1, 
+    body.woocommerce-account .register-top-title h3, 
+    body.woocommerce-checkout .checkout-page-title h1 {
+        font-size: 36px;
+    }
     body.woocommerce-account .register-btn button[type="submit"]{
         padding: 15px 15px!important;
     }
@@ -2007,6 +2012,10 @@ body.woocommerce-checkout section.checkout-top-sec{
 }
 
 @media(max-width: 991px){
+    /* ---------------- login register page ----------------*/
+    body.account-login-page #login_register #customer_login .u-column2{
+        padding-right: 60px;
+    }
     .woocommerce-account .register-title h3, 
     .login-info h3{
         font-size: 21px;
@@ -2020,11 +2029,11 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-checkout .checkout-page-title h1{
         font-size:28px;
     }
-    body.account-login-page .page-grd-sec-wrp{
-        padding-bottom:155px;
-    }
     body.woocommerce-account .woocommerce-notices-wrapper{
         margin-bottom: 0px;
+    }
+    body.woocommerce-page .wc-template-crtl {
+        margin-top: -88px;
     }
     /* ------------------ edit account page ------------------------ */
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
@@ -2112,13 +2121,32 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
 }
 @media(max-width: 767px){
+    /* ---------------------- login register page -----------------------*/
+    body.woocommerce-account .woocommerce .u-column1 h4, 
+    body.woocommerce-account .woocommerce .u-column2 h4, 
+    body.woocommerce-account .account-page-title h1, 
+    body.woocommerce-account .register-top-title h3, 
+    body.woocommerce-checkout .checkout-page-title h1
     body.woocommerce-checkout .checkout-page-title h1{
-        font-size: 30px;
+        border-bottom: 2px solid #EFF4F7;
+        padding-bottom: 17px;
+        margin-bottom: 27px;
+    }
+    body.woocommerce-account .woocommerce form .form-row label, 
+    body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label, 
+    body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row label, 
+    body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper label{
+        font-size: 16px;
     }
     .woocommerce-form__label-for-checkbox span:after{
         top:2px;    
     }
-    .woocommerce form .form-row label,
+     #register_next{
+        margin-top:6px!important;
+    }
+    body.woocommerce-account .woocommerce button[type=submit]{
+        margin-top:40px;
+    }
     .woocommerce input[type="text"], 
     .woocommerce input[type="email"], 
     .woocommerce input[type="tel"], 
@@ -2275,7 +2303,7 @@ body.woocommerce-checkout section.checkout-top-sec{
         margin-bottom: 43px;
     }
     body.woocommerce-account #login_register #customer_login .u-column1{
-        max-width: 100%!important;
+        width: 100%!important;
     }
     body.woocommerce-account .woocommerce form .form-row,
     body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
@@ -2283,18 +2311,8 @@ body.woocommerce-checkout section.checkout-top-sec{
         margin-bottom:10px;
     }
     body.woocommerce-account #login_register #customer_login .u-column2{
-        max-width: 100%!important;
+        width: 100%!important;
         padding-right: 0px;
-    }
-    body.woocommerce-account #login_register #customer_login .u-column2 h4,
-    body.woocommerce-account #login_register #customer_login .u-column1 h4{
-        font-size: 30px;
-        margin-bottom:13px;
-    }
-    .signup-notification,
-    body.woocommerce-account .woocommerce .u-column1 h4 + div,
-    .register-top-title{
-        border-bottom: 1px solid #ECF1F4;
     }
     body.woocommerce-account #login_register #customer_login .u-column1 h4 + div{
         padding-bottom: 5px;
@@ -2343,9 +2361,7 @@ body.woocommerce-checkout section.checkout-top-sec{
         border-top:none;
         padding-top: 0px;
     }
-    #register_next{
-        margin-top: 24px!important;
-    }
+   
     body.woocommerce-account #login_register #customer_login{
         padding-bottom:0px;
     }
@@ -2650,9 +2666,6 @@ body.woocommerce-checkout section.checkout-top-sec{
         font-size:22px;
         margin-bottom: 20px;
     }
-    .back-to-dashboard-btn-cntlr{
-        text-align: center;
-    }
     .back-to-dashboard-btn-cntlr a{    
         display: inline-block;      
     }
@@ -2818,9 +2831,6 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-checkout .default-page-con h3{
         font-size: 16px;
-    }
-    .woocommerce form .form-row label {
-        font-size: 14px;
     }
     body.woocommerce-checkout #customer_details .col-2{
         padding-left:0px;
@@ -3092,6 +3102,10 @@ body.woocommerce-checkout section.checkout-top-sec{
    
     p.woocommerce-mini-cart__buttons.buttons a{
         width: 50%!important;
+    }
+    /* ---------------------- backbutton ------------------------*/
+    .back-to-dashboard-btn {
+        width: 100%;
     }
 }
 @media(max-width:359px){
