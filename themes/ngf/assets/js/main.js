@@ -411,15 +411,15 @@ if (windowWidth <= 767) {
   
   $(window).resize(function() { 
     var window2Width = $(window).width();
-   /* var conW = $('.container-lg').width();
+    var conW = $('.container-lg').width();
     var mainW = window2Width - conW;
     var leftW = mainW / 2;
-    $(".hdr-circle-icon").css('left', leftW);*/
+    $(".hdr-circle-icon").css('left', leftW);
 
-    $(".hdr-white-skew").css('border-left-width', window2Width);
-    $(".ftr-white-skew").css('border-right-width', window2Width);
-    $(".page-bnr-skew").css('border-right-width', window2Width);
-    $(".hm-bnr-skew").css('border-left-width', window2Width);
+    // $(".hdr-white-skew").css('border-left-width', window2Width);
+    // $(".ftr-white-skew").css('border-right-width', window2Width);
+    // $(".page-bnr-skew").css('border-right-width', window2Width);
+    // $(".hm-bnr-skew").css('border-left-width', window2Width);
 
   });
 
