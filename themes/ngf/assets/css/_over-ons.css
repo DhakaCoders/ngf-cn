@@ -275,12 +275,12 @@ span.fl-video-play-icon-cntlr{
 .hide{
     display: none!important;
 }
-.instead-fancy-to-img-slider-inner{
+/*.instead-fancy-to-img-slider-inner{
     display: none;!important;
 }
 .instead-fancy-to-img-slider-cntlr .instead-fancy-to-img-slider-inner{
     display: none!important;
-}
+}*/
 .have-no-fancy a{
     display: none!important;
 }
