@@ -42,7 +42,6 @@
  }
 .ref-ov-page-grid-item-inr > i{
 	display: table;
-	vertical-align: baseline;
 	margin-bottom: 44px;
 	margin-left: auto;
 	margin-right: auto;
@@ -198,6 +197,9 @@
 		padding-left: 8px;
 		padding-right: 8px;
 	}
+	.ref-ov-page-entry-hdr-sec .page-entry-header{
+		padding-bottom: 48px;
+	}
 }
 
 @media(max-width: 639px){
@@ -253,6 +255,9 @@
 	}
 	.ref-ov-page-grid-item-cntlr ul{
 		margin: 0;
+	}
+	.ref-ov-page-entry-hdr-sec .page-entry-header{
+		padding-bottom: 40px;
 	}
 }
 
