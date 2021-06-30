@@ -246,10 +246,6 @@
 	.ref-ov-page-cntnt-sec{
 		padding-top: 31px;
 	}
-	.ref-ov-page-grid-item-inr{
-		position: relative;
-		padding-bottom: 19px;
-	}
 	.ref-ov-page-cntnt-sec .fl-grid-category ul {
 		margin-left: -24px;
 		margin-right: -24px;
@@ -258,6 +254,7 @@
 	.ref-ov-page-cntnt-sec .fl-grid-category li{
 		padding-left: 24px;
 		padding-right: 24px;
+
 	}
 	.ref-ov-page-grid-item-cntlr ul{
 		margin: 0;
