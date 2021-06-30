@@ -28,6 +28,10 @@
 	top: 25%;
 	z-index: 20;
 }
+.has-banner .hdr-socials{
+	top: initial;
+	top: 50%;
+}
 .has-banner .header-cntlr{
 	padding-bottom: 42px;
 }
