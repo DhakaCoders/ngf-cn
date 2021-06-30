@@ -141,6 +141,9 @@
 	.faq-grid-item .fl-grid-tag {
     	padding-bottom: 6px;
 	}
+	.faq-grid-item-inr{
+		padding-bottom: 19px;
+	}
 }
 @media(max-width: 489px){
 
