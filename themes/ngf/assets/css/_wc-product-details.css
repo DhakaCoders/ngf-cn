@@ -960,6 +960,12 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.sidebar-title .fl-h4{
 	    font-size: 26px;
 	}
+	.long-desc h2, .long-desc h4{
+		margin-bottom: 30px;
+	}
+	.single-product .long-desc p{
+		margin-bottom: 18px;
+	}
     body.term-geschenken .xs-filter-btn{
         display: none!important;
     }
