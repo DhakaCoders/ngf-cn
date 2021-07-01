@@ -697,6 +697,14 @@ Gallery design
 	padding-bottom: 30px;
 }
 
+#referenties-details .bnr-grd-img i{
+	display: inline-block;
+	vertical-align: baseline;
+}
+#referenties-details .bnr-grd-img i img{
+	border-radius: 100%;
+}
+
 #referenties-details .bnr-grd-des p{
 	font-size: 30px;
 	font-weight: 200;
