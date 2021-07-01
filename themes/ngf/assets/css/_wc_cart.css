@@ -1162,7 +1162,7 @@ body.woocommerce-checkout del span.amount bdi span.woocommerce-Price-currencySym
 		margin-right: 8px!important;
 	}
 	body.empty-cart .cart-is-emtpy {
-	    padding-top: 20px!important;
+	    padding-top: 60px!important;
 	}
 	body.empty-cart .innerpage-con-wrap .woocommerce {
 	    padding-bottom: 75px;
