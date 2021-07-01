@@ -507,10 +507,14 @@ Gallery design
 .testimonial-grd-item-img i{
 	display: inline-block;
 	vertical-align: baseline;
+	/*height: 120px;
+	width: 120px;*/
 	margin-bottom: 30px;
 }
 .testimonial-grd-item-img i img{
 	border-radius: 100%;
+	/*height: 100%;
+	width: 100%;*/
 }
 .testimonial-grd-item-des blockquote{
 	font-size: 30px;
@@ -599,6 +603,10 @@ Gallery design
 }
 .blog-details-grds .blog-grid-des{
 	padding-top: 22px;
+}
+
+.blog-details-grds .fl-btn-absolute{
+	bottom: 32px;
 }
 
 #blog-details .dfp-cat-date{
@@ -710,9 +718,13 @@ Gallery design
 #referenties-details .bnr-grd-img i{
 	display: inline-block;
 	vertical-align: baseline;
+	/*height: 412px;
+	width: 412px;*/
 }
 #referenties-details .bnr-grd-img i img{
 	border-radius: 100%;
+	/*height: 100%;
+	width: 100%;*/
 }
 
 #referenties-details .bnr-grd-des p{
