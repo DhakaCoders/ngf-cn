@@ -17,9 +17,9 @@ $terms = get_terms( 'referenties_cat', array(
 				<div class="ref-ov-page-entry-hdr">
 					<div class="page-entry-header">
 						<?php 
-				          if( !empty($page_title) ) printf( '<h1 class="fl-h1">%s</h1>', $page_title );
-				          if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] );
-				        ?>
+		          if( !empty($page_title) ) printf( '<h1 class="fl-h1">%s</h1>', $page_title );
+		          if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] );
+		        ?>
 					</div>
 				</div>
 			</div>
@@ -58,35 +58,35 @@ $terms = get_terms( 'referenties_cat', array(
 
 				<div class="ref-ov-page-grid-item-cntlr">
 					<ul class="reset-list">
-			            <?php 
-			                while($query->have_posts()): $query->the_post(); 
-			                global $post;
-			                $imgID = get_post_thumbnail_id(get_the_ID());
-			                $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): '';
-			            ?>			
-			            <li>
-			              <div class="ref-ov-page-grid-item mHc">
-			                <div class="ref-ov-page-grid-item-inr">
-			                  <i>
-			                    <?php echo $imgtag; ?>
-			                  </i>
-			                  <div class="ref-ov-page-grid-des mHc1">
-			                    <h3 class="fl-h3 ref-ov-grd-title"><?php the_title(); ?></h3>
-			                    <div class="ropgd mHc2">
-			                      <?php the_excerpt(); ?>
-			                    </div>
-			                    <div class="fl-pro-grd-btn fl-btn-absolute">
-			                      <a class="fl-read-more-btn" href="<?php the_permalink(); ?>">
-			                        <span><?php _e( 'READ MORE', 'ngf' ); ?></span>
-			                        <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-			                        <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-			                        </i>
-			                      </a>
-			                    </div>
-			                  </div>        
-			                </div>
-			              </div>
-			            </li>
+            <?php 
+                while($query->have_posts()): $query->the_post(); 
+                global $post;
+                $imgID = get_post_thumbnail_id(get_the_ID());
+                $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): '';
+            ?>			
+            <li>
+              <div class="ref-ov-page-grid-item mHc">
+                <div class="ref-ov-page-grid-item-inr">
+                  <i>
+                    <?php echo $imgtag; ?>
+                  </i>
+                  <div class="ref-ov-page-grid-des mHc1">
+                    <h3 class="fl-h3 ref-ov-grd-title"><?php the_title(); ?></h3>
+                    <div class="ropgd mHc2">
+                      <?php the_excerpt(); ?>
+                    </div>
+                    <div class="fl-pro-grd-btn fl-btn-absolute">
+                      <a class="fl-read-more-btn" href="<?php the_permalink(); ?>">
+                        <span><?php _e( 'READ MORE', 'ngf' ); ?></span>
+                        <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                        </i>
+                      </a>
+                    </div>
+                  </div>        
+                </div>
+              </div>
+            </li>
 						<?php endwhile; ?>
 				</ul>
 			</div>
