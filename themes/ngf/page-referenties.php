@@ -35,9 +35,7 @@ $terms = get_terms( 'referenties_cat', array(
 				<div class="fl-grid-category">
 		          <ul class="clearfix reset-list">
 		            <li class="active"><a href="<?php echo get_permalink($thisID); ?>"><?php _e( 'alle', 'ngf' ); ?></a></li>
-		            <?php 
-	                    foreach ( $terms as $term ) { 
-	                ?>
+		            <?php foreach ( $terms as $term ) { ?>
 		            <li><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
 		            <?php } ?>
 		          </ul>
