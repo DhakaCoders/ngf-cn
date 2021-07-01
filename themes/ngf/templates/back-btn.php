@@ -2,7 +2,7 @@
   if( is_checkout() ){
     get_template_part('templates/checkout', 'top');
   }
-  if( is_account_page() && !is_user_logged_in() && !isset($_GET['action']) ){
+  if( (is_account_page() && !is_user_logged_in() && !isset($_GET['action'])) || ( is_cart() && WC()->cart->cart_contents_count == 0 ) || is_product() ){
   	echo '<div class="back-to-dashboard-btn-cntlr">
 		<div class="container">
 			<div class="row">

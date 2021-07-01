@@ -509,6 +509,9 @@ Gallery design
 	vertical-align: baseline;
 	margin-bottom: 30px;
 }
+.testimonial-grd-item-img i img{
+	border-radius: 100%;
+}
 .testimonial-grd-item-des blockquote{
 	font-size: 30px;
 	letter-spacing: -0.02em;
@@ -695,6 +698,14 @@ Gallery design
 	width: 67.3151%;
 	padding-left: 100px;
 	padding-bottom: 30px;
+}
+
+#referenties-details .bnr-grd-img i{
+	display: inline-block;
+	vertical-align: baseline;
+}
+#referenties-details .bnr-grd-img i img{
+	border-radius: 100%;
 }
 
 #referenties-details .bnr-grd-des p{

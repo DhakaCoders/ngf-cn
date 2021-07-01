@@ -17,7 +17,7 @@ $terms = get_terms( 'product_cat', array(
             <div class="fl-grid-category">
               <ul class="clearfix reset-list">
                 <?php if( is_shop() ): ?>
-                <li class="active"><a href="<?php echo get_permalink($thisID); ?>"><?php _e( 'alle', 'ballonvaren' ); ?></a></li>
+                <li class="active"><a href="<?php echo get_permalink($thisID); ?>"><?php _e( 'alle', 'ngf' ); ?></a></li>
                 <?php 
                   foreach ( $terms as $term ) { 
                     if($term->slug !='uncategorized'):
@@ -28,7 +28,7 @@ $terms = get_terms( 'product_cat', array(
                 $queried_object = get_queried_object();
                 $current_id = $queried_object->term_id;
               ?>
-                  <li><a href="<?php echo get_permalink($thisID); ?>"><?php _e( 'alle', 'ballonvaren' ); ?></a></li>
+                  <li><a href="<?php echo get_permalink($thisID); ?>"><?php _e( 'alle', 'ngf' ); ?></a></li>
                   <?php 
                     foreach ( $terms as $term ) { 
                       if($term->slug !='uncategorized'):
