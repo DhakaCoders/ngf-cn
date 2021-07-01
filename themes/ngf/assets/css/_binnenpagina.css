@@ -509,6 +509,9 @@ Gallery design
 	vertical-align: baseline;
 	margin-bottom: 30px;
 }
+.testimonial-grd-item-img i img{
+	border-radius: 100%;
+}
 .testimonial-grd-item-des blockquote{
 	font-size: 30px;
 	letter-spacing: -0.02em;
