@@ -601,6 +601,10 @@ Gallery design
 	padding-top: 22px;
 }
 
+.blog-details-grds .fl-btn-absolute{
+	bottom: 32px;
+}
+
 #blog-details .dfp-cat-date{
 	display: flex;
 	align-items: center;
