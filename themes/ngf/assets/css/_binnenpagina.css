@@ -570,6 +570,13 @@ Gallery design
 	padding-top: 28px;
 }
 
+.dfp-grd-module .bgi-des{
+	padding-bottom: 25px;
+}
+.dfp-grd-module .fl-btn-absolute{
+	bottom: 30px;
+}
+
 
 
 /*blog details*/
