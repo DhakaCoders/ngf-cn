@@ -1312,11 +1312,20 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		margin: 0 auto;
 	} 
 	.single-product .related-product-sec .latest-news-bg{
-		bottom: 300px;
+		bottom: 285px;
+	}
+	.single-product .related-product-sec-grids{
+		margin: 0 0;
+	}
+	.single-product .relatedProGrdsSlideItem{
+		padding: 0 0;
 	}
 	.related-product-sec{
 		padding-top: 57px;
 		padding-bottom: 50px;
+	}
+	.single-product .sec-entry-hdr h3{
+		font-size: 23px;
 	}
 }
 
@@ -1373,6 +1382,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.cart-top-text{
 		text-align: center;
+	}
+	.single-product .related-product-sec .latest-news-bg{
+		bottom: 266px;
 	}
 }
 
