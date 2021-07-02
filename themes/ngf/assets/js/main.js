@@ -333,14 +333,14 @@ if( $('.relatedProGrdsSlider').length ){
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint:992,
+          breakpoint:768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1
           }
         },
         {
-          breakpoint: 768,
+          breakpoint: 575,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1

@@ -660,6 +660,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		margin-top: 90px;
 		margin-bottom: 90px;	
 	}
+	.single-product .related-product-sec .latest-news-bg{
+		bottom: -130px;
+	}
 }
 
 @media (max-width: 1599px){
@@ -1006,6 +1009,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		margin-top: 60px;
 		margin-bottom: 63px;	
 	}
+	.single-product .related-product-sec .latest-news-bg{
+		bottom: -110px;
+	}
 
 }
 
@@ -1140,6 +1146,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.single-product .dfp-testimonial-module{
 		margin-top: 50px;	
+	}
+	.single-product .related-product-sec .latest-news-bg{
+		bottom: -80px;
 	}
 }
 
@@ -1294,9 +1303,21 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.fl-product .price-quentity-ctrl form .variations tbody tr td .bootstrap-select > .dropdown-toggle{
 		padding: 12px 0 5px;
 	}
-	single-product .hasRelatedProduct div.product{
+	.single-product .hasRelatedProduct div.product{
 		padding-bottom: 98px;
+	}
+	.single-product .fl-product-grd{
+		max-width: 400px;
+		width: 100%;
+		margin: 0 auto;
 	} 
+	.single-product .related-product-sec .latest-news-bg{
+		bottom: 300px;
+	}
+	.related-product-sec{
+		padding-top: 57px;
+		padding-bottom: 50px;
+	}
 }
 
 @media(max-width: 479px){
