@@ -12,7 +12,7 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
             <div class="row">
               <div class="col-md-12">
                 <div class="bnr-bg-overly-cntlr">
-                  <div class="bnr-bg-overly inline-bg" style="background:url(assets/images/bnr-bg-overly4x.jpg)"></div>
+                  <div class="bnr-bg-overly inline-bg" style="background:url(<?php echo THEME_URI; ?>/assets/images/bnr-bg-overly4x.jpg)"></div>
                 </div>
               </div>
             </div>
@@ -20,7 +20,7 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
         </div>
         <div class="block-850">
           <div class="dfp-promo-module-des">
-            <strong class="dfp-promo-module-title fl-h1">pellentesque tempus posuere urna tortor, sed. lobortis.</strong>
+            <strong class="dfp-promo-module-title fl-h1"><?php the_title(); ?></strong>
           </div>
         </div>
       </div>
@@ -32,15 +32,15 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
         <div class="gallery gallery-columns-2">
           <figure class="gallery-item">
             <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-02.jpg');"></div>
-              <img src="assets/images/dfp-img-02.jpg">
+              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg');"></div>
+              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg">
             </div>
           </figure>
 
           <figure class="gallery-item">
             <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-03.jpg');"></div>
-              <img src="assets/images/dfp-img-03.jpg">
+              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg');"></div>
+              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg">
             </div>
           </figure>
         </div>
@@ -50,15 +50,15 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
         <div class="gallery gallery-columns-2">
           <figure class="gallery-item">
             <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-02.jpg');"></div>
-              <img src="assets/images/dfp-img-02.jpg">
+              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg');"></div>
+              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg">
             </div>
           </figure>
 
           <figure class="gallery-item">
             <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-03.jpg');"></div>
-              <img src="assets/images/dfp-img-03.jpg">
+              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg');"></div>
+              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg">
             </div>
           </figure>
         </div>
@@ -129,7 +129,7 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
             <div class="testimonial-grd-item">
               <div class="testimonial-grd-item-inr">
                 <div class="testimonial-grd-item-img">
-                  <i><img src="assets/images/dfp-img-013.jpg"></i>
+                  <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
                 </div>
                 <div class="testimonial-grd-item-des">
                   <blockquote>
@@ -142,7 +142,7 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
             <div class="testimonial-grd-item">
               <div class="testimonial-grd-item-inr">
                 <div class="testimonial-grd-item-img">
-                  <i><img src="assets/images/dfp-img-013.jpg"></i>
+                  <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
                 </div>
                 <div class="testimonial-grd-item-des">
                   <blockquote>
@@ -155,7 +155,7 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
             <div class="testimonial-grd-item">
               <div class="testimonial-grd-item-inr">
                 <div class="testimonial-grd-item-img">
-                  <i><img src="assets/images/dfp-img-013.jpg"></i>
+                  <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
                 </div>
                 <div class="testimonial-grd-item-des">
                   <blockquote>
