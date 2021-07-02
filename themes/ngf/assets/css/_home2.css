@@ -41,6 +41,9 @@
 .latest-news-sec-grids{
 	margin:0 -12px;
 }
+.plans-sec-grids ul.slick-dots{
+    padding-top: 36px!important;
+}
 .home-testimonial-grd-item-inr{
 	max-width: 850px;
     margin: 0 auto;
