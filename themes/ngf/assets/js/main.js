@@ -572,4 +572,29 @@ if( $('.mobileImgSlider').length ){
 
 /*start of Momin*/
 
+
+
+
+/*$('.relatedProGrdsSlider').each(function() {
+    var $this = $(this);
+    var count = this.find('.slick-dots').children().length;
+    //var count = this.find('ul.slick-dots').length;
+    if (count = 1) {
+      $('.slick-dots').hide();
+    }
+    alert(count);
+    if ($this.children().length > 1) {
+        $this.slick({
+           dots: false
+        });
+        alert()
+    }
+});*/
+
+var relatedProGrdsSliderCount = $('.dfpTestimonialSlider ul.slick-dots').children().length;
+if (relatedProGrdsSliderCount = 1) {
+      $('.dfpTestimonialSlider ul.slick-dots').addClass('tt');
+}
+
+
 })(jQuery);
