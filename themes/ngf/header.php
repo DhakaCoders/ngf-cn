@@ -242,11 +242,11 @@ $smedias = get_field('social_media', 'options')
 <header class="header">
   <span class="hdr-white-skew"></span>
   <span class="hdr-circle-icon hide-md"></span>
+  <span class="hdr-lft-line-icon hide-md">
+    <i><svg class="hdr-line-icon" width="58" height="95" viewBox="0 0 58 95" fill="#FFA800">
+    <use xlink:href="#hdr-line-icon"></use> </svg></i>
+  </span>
   <div class="hdr-socials hide-md">
-    <span class="hdr-lft-line-icon">
-      <i><svg class="hdr-line-icon" width="58" height="95" viewBox="0 0 58 95" fill="#FFA800">
-      <use xlink:href="#hdr-line-icon"></use> </svg></i>
-    </span>
     <ul class="reset-list">
       <?php if( !empty($smedias['facebook_url']) ): ?>
       <li>
