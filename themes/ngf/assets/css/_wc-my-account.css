@@ -2513,8 +2513,11 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.hide-account-title .register-pay-logo-wrap{
         padding-bottom: 27px;
-        height:104px;
-        padding-top:14px;
+        height: 70px;
+        padding-top: 0px;
+    }
+    body.hide-account-title .wc-template-crtl{
+        margin-bottom:0px;
     }
     .reg-btn-crtl .html-text span{
         font-size: 14px;
