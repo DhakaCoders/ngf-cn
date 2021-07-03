@@ -40,6 +40,16 @@ p{
 strong,b{
 	font-weight:600;
 }
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea{   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;    
+}
+
 ::selection {
   color: #fff;
   background: #FFA800
