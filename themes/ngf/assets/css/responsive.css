@@ -1,6 +1,7 @@
 
 @media (max-width: 1699px){
-	.container { 
+	.container,
+	.block-1285 { 
 		max-width: 1160px;
 	}
 	.container-lg{
@@ -40,7 +41,8 @@
 
 
 @media (max-width: 1499px) {
-	.container { 
+	.container,
+	.block-1285 { 
 		max-width: 1100px;
 	}
 	.container-lg{
@@ -220,7 +222,7 @@
 
 }
 
-@media(max-width:375px){
+@media(max-width:479px){
 	.fl-transparent-btn,
 	.fl-black-btn,
 	.fl-orange-btn{

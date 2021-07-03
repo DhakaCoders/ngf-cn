@@ -1,11 +1,11 @@
-2021-07-02T04:55:27+00:00 ERROR Error getting remote inbox notification data feed
-2021-07-02T04:55:27+00:00 ERROR WP_Error Object
+2021-07-01T14:19:08+00:00 ERROR Error getting remote inbox notification data feed
+2021-07-01T14:19:08+00:00 ERROR WP_Error Object
 (
     [errors] => Array
         (
             [http_request_failed] => Array
                 (
-                    [0] => cURL error 28: Operation timed out after 5000 milliseconds with 0 out of 0 bytes received
+                    [0] => cURL error 6: Could not resolve host: woocommerce.com
                 )
 
         )
@@ -20,14 +20,14 @@
 
 )
 
-2021-07-02T04:55:32+00:00 ERROR Error getting remote inbox notification data feed
-2021-07-02T04:55:32+00:00 ERROR WP_Error Object
+2021-07-01T14:19:08+00:00 ERROR Error getting remote inbox notification data feed
+2021-07-01T14:19:08+00:00 ERROR WP_Error Object
 (
     [errors] => Array
         (
             [http_request_failed] => Array
                 (
-                    [0] => cURL error 28: Connection timed out after 5005 milliseconds
+                    [0] => cURL error 6: Could not resolve host: woocommerce.com
                 )
 
         )

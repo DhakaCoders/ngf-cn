@@ -75,7 +75,7 @@
     width: auto;
     margin: 0;
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.2;
     font-weight: 600;
     color: #000000;
     margin-bottom: 11px;
@@ -896,6 +896,9 @@ boek-je-form-sec-wrp
 		justify-content: left;
 		align-items: center;
 	}
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button{
+        max-width: 100%;
+    }
 }
 @media(max-width: 359px){
     .contact-form-info-cntlr{

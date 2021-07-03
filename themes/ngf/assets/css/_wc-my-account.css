@@ -1898,7 +1898,7 @@ body.woocommerce-checkout section.checkout-top-sec{
         padding-top:50px;    
     }
     body.woocommerce-account .account-page-title h1 + p{
-        font-size:26px;
+        font-size:22px;
     }
     body.woocommerce-orders .orders-crtl .code-text{
         font-size:23px;
@@ -1974,9 +1974,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .account-page-title h1{
         margin-bottom:40px;
     }
-    body.woocommerce-account .account-page-title h1 + p{
-        font-size:28px;
-    }
+  
     body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr{
         padding-top:50px;
     }
@@ -2513,8 +2511,11 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.hide-account-title .register-pay-logo-wrap{
         padding-bottom: 27px;
-        height:104px;
-        padding-top:14px;
+        height: 70px;
+        padding-top: 0px;
+    }
+    body.hide-account-title .wc-template-crtl{
+        margin-bottom:0px;
     }
     .reg-btn-crtl .html-text span{
         font-size: 14px;
@@ -2664,23 +2665,22 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account.loggedin-deshboard-crtl  .account-page-title h1,
     body.woocommerce-edit-account .account-page-title h1{
         margin-bottom: 0px!important;
-        font-size: 30px;
         border-bottom: none!important;
         padding-bottom: 22px!important;
     }
     body.woocommerce-edit-account .account-page-title h1{
         padding-bottom: 58px!important;
     }
-    body.woocommerce-account .account-page-title h1 + p{
-        font-size:22px;
-        margin-bottom: 20px;
-    }
+   
     body.woocommerce-orders .account-page-title h1,
     body.loggedin-winkelmandje-crtl .default-page-con h1{
         margin-bottom: 40px;
         font-size: 30px;
         border: none;
         padding-bottom: 0;
+    }
+    body.woocommerce-account .account-page-title h1 + p{
+        font-size:24px;
     }
     body.woocommerce-orders .faq-accordion-wrp ul li .orders-crtl .my-ac-time{
         font-size:14px;
@@ -2774,7 +2774,6 @@ body.woocommerce-checkout section.checkout-top-sec{
         max-width: 500px;
         margin-left: auto;
         margin-right:auto;
-        text-align: center;
     }
     body.woocommerce-account .default-page-con h1 + p{
         font-size: 16px;

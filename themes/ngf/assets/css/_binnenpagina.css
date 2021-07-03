@@ -516,6 +516,12 @@ Gallery design
 	/*height: 100%;
 	width: 100%;*/
 }
+.testimonial-grd-item-des{
+	max-width: 845px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
 .testimonial-grd-item-des blockquote{
 	font-size: 30px;
 	letter-spacing: -0.02em;
