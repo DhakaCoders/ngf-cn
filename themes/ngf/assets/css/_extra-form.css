@@ -30,7 +30,7 @@
     margin:0 auto;
 }
 .fl-form-block-des-cntlr{
-    margin-bottom: 60px;
+    padding-bottom: 45px;
 }
 .fl-form-block .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
     border-radius:6px!important;
@@ -69,7 +69,7 @@
         font-size:15px;
     }
     .fl-form-block-des-cntlr{
-        margin-bottom: 50px;
+        padding-bottom: 40px;
     }
 }
 @media(max-width:1499px){
