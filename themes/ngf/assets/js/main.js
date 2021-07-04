@@ -529,7 +529,7 @@ if( $('.faqSlider').length ){
       speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1,
-
+      
     });
 }
 if( $('.ovomblfvSlider').length ){
