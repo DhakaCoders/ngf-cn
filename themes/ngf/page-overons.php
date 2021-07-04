@@ -509,7 +509,7 @@ get_header();
           <div class="sec-entry-hdr faq-slider-sec-hdr">
             <h3 class="fl-h3 fssh-title">gerelateerd FAQ</h3>
           </div>
-          <div class="hide-sm faq-slider-desktop">
+          <div class="faq-slider-desktop hide-sm">
             <div class="faq-slider faqSlider">
               <div class="faq-slide-item">
                 <div class="faq-grids-cntlr">
