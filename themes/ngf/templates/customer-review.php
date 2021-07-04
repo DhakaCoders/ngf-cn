@@ -75,7 +75,7 @@
       <div class="col-md-12">
         <div class="related-product-sec-cntlr">
           <div class="sec-entry-hdr">
-            <h3 class="fl-h3">gerelateerd producten</h3>
+            <h3 class="fl-h3">gerelateerd producten 1</h3>
           </div>
           <div class="related-product-sec-grids relatedProGrdsSlider">
             <div class="relatedProGrdsSlideItem">

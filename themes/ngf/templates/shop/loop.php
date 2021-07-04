@@ -21,13 +21,20 @@
     <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo  $gridsrc; ?>');"></div>
   </div>
   <div class="fl-pro-grd-des mHc1">
-    <h4 class="fl-h4 fl-pro-grd-title"><a href="<?php echo get_permalink( $product->get_id()); ?>"><?php echo get_the_title(); ?></a></h4>
+    <h4 class="fl-h4 fl-pro-grd-title mHc2"><a href="<?php echo get_permalink( $product->get_id()); ?>"><?php echo get_the_title(); ?></a></h4>
     <div class="fl-pro-grd-price"><?php echo $product->get_price_html(); ?></div>
     <div class="fl-pro-grd-details">
-      <?php 
-        if( !empty($short_desc1) ) echo wpautop($short_desc1); 
-        if( !empty($short_desc2) ) echo wpautop($short_desc2); 
-      ?>
+      <?php if( !empty($short_desc1) ):?>
+        <div class="mHc3 fl-pro-grd-des-1">
+          <?php echo wpautop($short_desc1); ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if( !empty($short_desc2) ):?>
+        <div class="fl-pro-grd-des-2">
+          <?php echo wpautop($short_desc2); ?>
+        </div>
+      <?php endif; ?>    
     </div>
     <div class="fl-pro-grd-btn">
       <a class="fl-read-more-btn" href="<?php echo get_permalink( $product->get_id()); ?>">
@@ -38,7 +45,7 @@
       </a>
     </div>
   </div>
-  <div>
+  <div class="fl-pro-grd-buy-now-btn">
     <?php
       $checkout_url = WC()->cart->get_checkout_url(); 
       if( $product->is_type( 'simple' ) ){ 
