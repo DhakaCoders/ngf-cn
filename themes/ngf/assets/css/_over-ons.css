@@ -604,6 +604,13 @@ span.fl-video-play-icon-cntlr{
     .instead-fancy-to-img-slider-cntlr .instead-fancy-to-img-slider-inner{
         display: block!important;
     }
+    .faq-slider-sec .faq-grids-cntlr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 
 
