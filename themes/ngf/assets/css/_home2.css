@@ -119,19 +119,22 @@
 }
 /*latest-news*/
 .latest-news-grid-item .blog-grid-des{
-	padding: 30px 28px 48px;
+	padding: 30px 28px 0;
 }
 .latest-news-grid-item .blog-grid-des .bgi-title{
 	margin-bottom:28px;
 }
-.latest-news-grid-item .blog-grid-des .bgi-des{
+/* .latest-news-grid-item .blog-grid-des .bgi-des{
 	padding-bottom:30px;
-}
+} */
 .latest-nws-circle-bg{
     position: absolute;
     bottom: -33px;
     right: 0;
     z-index: 2;
+}
+.latest-news-sec .fl-pro-grd-btn{
+    bottom: 30px;
 }
 
 @media(max-width:1699px){
