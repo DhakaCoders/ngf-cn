@@ -267,19 +267,6 @@ get_header();
         <div class="ovo-cta-module-mobile show-sm">
           <div class="dfp-cta-module clearfix">
             <div class="cta-ctlr">
-              <!-- <div class="cta-big-line">
-                <img src="<?php echo THEME_URI; ?>/assets/images/cta-btm-line-01.svg">
-              </div>
-              <div class="cta-small-line">
-                <img src="<?php echo THEME_URI; ?>/assets/images/cta-btm-line-02.svg">
-              </div>
-              <div class="cta-big-circle">
-                <img src="<?php echo THEME_URI; ?>/assets/images/cta-circle-01.svg">
-              </div>
-              <div class="cta-small-circle">
-                <img src="<?php echo THEME_URI; ?>/assets/images/cta-circle-02.svg">
-              </div> -->
-
               <i class="contact-form-info-round-bg">
                 <svg class="contact-from-info-rnd-bg" width="35" height="61" viewBox="0 0 35 61" fill="transparent">
                 <use xlink:href="#contact-from-info-rnd-bg"></use> </svg>
