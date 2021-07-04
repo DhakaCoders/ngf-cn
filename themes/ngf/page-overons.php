@@ -85,9 +85,9 @@ get_header();
 </div>
 
 <div class="ovo-full-width-img-dsc-module-sec">
-  <section class="ovo-full-width-img-sec  inline-bg"  style="background-image: url(assets/images/ov-full-width-img.jpg);">
-    <img src="assets/images/werk-full-inline-bg-img.jpg" alt="">
-    <div class="ovo-full-width-img-fmbl  inline-bg  show-sm" style="background-image: url(assets/images/ovo-mbl-full-bg.jpg);"></div>
+  <section class="ovo-full-width-img-sec  inline-bg"  style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-full-width-img.jpg);">
+    <img src="<?php echo THEME_URI; ?>/assets/images/werk-full-inline-bg-img.jpg" alt="">
+    <div class="ovo-full-width-img-fmbl  inline-bg  show-sm" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ovo-mbl-full-bg.jpg);"></div>
         
     <div class="ovo-abs-round">
       <span class="ovo-abs-round-two"></span>
@@ -133,8 +133,8 @@ get_header();
               <div class="fl-fancy-module  ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                   <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(assets/images/ov-fancy-img-1.jpg);">
-                      <img src="assets/images/ov-fancy-img-1.jpg" alt="">
+                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-1.jpg);">
+                      <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                     </div>
                     <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
                     <span class="fl-video-play-icon-cntlr">
@@ -166,8 +166,8 @@ get_header();
               <div class="fl-fancy-module  ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                   <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(assets/images/ov-fancy-img-2.jpg);">
-                      <img src="assets/images/ov-fancy-img-1.jpg" alt="">
+                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-2.jpg);">
+                      <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                     </div>
                     <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
                     <span class="fl-video-play-icon-cntlr">
@@ -199,8 +199,8 @@ get_header();
               <div class="fl-fancy-module  ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                   <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(assets/images/ov-fancy-img-1.jpg);">
-                      <img src="assets/images/ov-fancy-img-1.jpg" alt="">
+                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-1.jpg);">
+                      <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                     </div>
                     <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
                     <span class="fl-video-play-icon-cntlr">
@@ -232,8 +232,8 @@ get_header();
               <div class="fl-fancy-module  ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                   <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(assets/images/ov-fancy-img-2.jpg);">
-                      <img src="assets/images/ov-fancy-img-1.jpg" alt="">
+                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-2.jpg);">
+                      <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                     </div>
                     <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
                     <span class="fl-video-play-icon-cntlr">
@@ -268,16 +268,16 @@ get_header();
           <div class="dfp-cta-module clearfix">
             <div class="cta-ctlr">
               <!-- <div class="cta-big-line">
-                <img src="assets/images/cta-btm-line-01.svg">
+                <img src="<?php echo THEME_URI; ?>/assets/images/cta-btm-line-01.svg">
               </div>
               <div class="cta-small-line">
-                <img src="assets/images/cta-btm-line-02.svg">
+                <img src="<?php echo THEME_URI; ?>/assets/images/cta-btm-line-02.svg">
               </div>
               <div class="cta-big-circle">
-                <img src="assets/images/cta-circle-01.svg">
+                <img src="<?php echo THEME_URI; ?>/assets/images/cta-circle-01.svg">
               </div>
               <div class="cta-small-circle">
-                <img src="assets/images/cta-circle-02.svg">
+                <img src="<?php echo THEME_URI; ?>/assets/images/cta-circle-02.svg">
               </div> -->
 
               <i class="contact-form-info-round-bg">
@@ -313,8 +313,8 @@ get_header();
                   <div class="fl-fancy-module  ovo-fancy-module">
                     <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                       <div class="ovo-fancy-module-img   instead-fancy-of-ImgSlider   ">
-                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(assets/images/ov-fancy-img-1.jpg);">
-                          <img src="assets/images/ov-fancy-img-1.jpg" alt="">
+                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-1.jpg);">
+                          <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                         </div>
                         <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
                         <span class="fl-video-play-icon-cntlr">
@@ -350,8 +350,8 @@ get_header();
                   <div class="fl-fancy-module  ovo-fancy-module">
                     <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                       <div class="ovo-fancy-module-img   instead-fancy-of-ImgSlider   ">
-                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(assets/images/ov-fancy-img-2.jpg);">
-                          <img src="assets/images/ov-fancy-img-1.jpg" alt="">
+                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-2.jpg);">
+                          <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                         </div>
                         <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
                         <span class="fl-video-play-icon-cntlr">
@@ -387,8 +387,8 @@ get_header();
                   <div class="fl-fancy-module  ovo-fancy-module">
                     <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                       <div class="ovo-fancy-module-img   instead-fancy-of-ImgSlider   ">
-                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(assets/images/ov-fancy-img-1.jpg);">
-                          <img src="assets/images/ov-fancy-img-1.jpg" alt="">
+                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-1.jpg);">
+                          <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                         </div>
                         <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
                         <span class="fl-video-play-icon-cntlr">
@@ -439,7 +439,7 @@ get_header();
                 <div class="testimonial-grd-item">
                   <div class="testimonial-grd-item-inr">
                     <div class="testimonial-grd-item-img">
-                      <i><img src="assets/images/dfp-img-013.jpg"></i>
+                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
                     </div>
                     <div class="testimonial-grd-item-des">
                       <blockquote>
@@ -452,7 +452,7 @@ get_header();
                 <div class="testimonial-grd-item">
                   <div class="testimonial-grd-item-inr">
                     <div class="testimonial-grd-item-img">
-                      <i><img src="assets/images/dfp-img-013.jpg"></i>
+                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
                     </div>
                     <div class="testimonial-grd-item-des">
                       <blockquote>
@@ -465,7 +465,7 @@ get_header();
                 <div class="testimonial-grd-item">
                   <div class="testimonial-grd-item-inr">
                     <div class="testimonial-grd-item-img">
-                      <i><img src="assets/images/dfp-img-013.jpg"></i>
+                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
                     </div>
                     <div class="testimonial-grd-item-des">
                       <blockquote>
