@@ -55,6 +55,9 @@ body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
 body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
     margin-bottom: 14px;
 }
+body.woocommerce-account .woocommerce form .form-row{
+    margin-bottom: 30px;
+}
 body.woocommerce-account .woocommerce input[type="number"]::palcholder,
 body.woocommerce-account .woocommerce input[type="text"]::placeholder, 
 body.woocommerce-account .woocommerce input[type="email"]::placeholder,
@@ -484,7 +487,9 @@ body.woocommerce-checkout .checkout-page-title h1{
     font-size:40px;
     line-height:1.15;
 }
-
+body.woocommerce-account .woocommerce .u-column2 h4{
+    margin-bottom: 15px;
+}
 body.woocommerce-account .register-top-title h3{
     border-bottom: 1px solid #ECF1F4;
     padding-bottom: 18px;
