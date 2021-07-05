@@ -2,7 +2,7 @@
 get_header(); 
 $thisID = get_id_by_page_template('page-referenties.php'); 
 $intro = get_field('intro', $thisID);
-$page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title();
+$page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID);
 $terms = get_terms( 'referenties_cat', array(
   'hide_empty' => false,
 ) );

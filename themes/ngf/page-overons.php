@@ -1,6 +1,9 @@
 <?php 
 /*Template Name: Overons*/
 get_header();
+$thisID = get_the_ID();
+$intro = get_field('introsec', $thisID);
+$page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID);
 ?>
 
 <section class="page-banner page-bnr-no-skew">
@@ -63,12 +66,12 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="ovo-two-grds-des-module-cntlr  block-1255">
+        <div class="ovo-two-grds-des-module-cntlr block-1255">
           <div class="ovo-grds-des-lft">
             <p>We are <strong>dedicated</strong> and <strong>committed</strong> to support our clients in attaining their personal <strong>potential!</strong></p>
           </div>
           <div class="ovo-grds-des-rgt">
-            <div class="dfp-text-module  ovo-grds-text-module clearfix">
+            <div class="dfp-text-module ovo-grds-text-module">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed. </p>
               <ul>
                 <li>Lorem ipsum dolor sit amet.</li>
@@ -674,5 +677,3 @@ get_header();
 </section>
 
 <?php get_footer();?>
-
-
