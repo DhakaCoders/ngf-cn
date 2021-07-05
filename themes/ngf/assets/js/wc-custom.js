@@ -41,16 +41,12 @@ $("#private").on('change', function(){
 
 
 // shipping field show/hide
-
-$(".hide-account-title .show_shipping_fields input.input-text").prop('required', true);
 $("#is_shipping_address").on('change',function(){
    var ischecked= $(this).is(':checked');
     if(ischecked){
-      $(".hide-account-title .show_shipping_fields input.input-text").prop('required', false);
      $(".hide-account-title .show_shipping_fields").hide();
     }else{
       $(".hide-account-title .show_shipping_fields").show();
-      $(".hide-account-title .show_shipping_fields input.input-text").prop('required', true);
     }
  }); 
 
@@ -118,7 +114,106 @@ $("#apply_coupon_code").click(function(){
 
 });
 
+
+jQuery('body').on('wc_cart_emptied', function(){
+  location.reload();
+  //console.log('wc_cart_emptied triggered');
+});
+
+
+// Woocommerce form validation
+if( $("body.woocommerce-account.woocommerce-edit-address").length ){
+    $('body.woocommerce-account.woocommerce-edit-address form p.form-row.validate-required').addClass('required-field');
+}
+
+var txt1 = $('.register-nextstep form').find('span.error-valid').text();
+var txt2 = $('.woocommerce-edit-account-crtl form').find('span.error-valid').text();
+//$('.register-nextstep form').find('span.error-valid').parents('p.form-row').addClass('hasError');
+//$('.woocommerce-edit-account-crtl form').find('span.error-valid').parents('p.form-row').addClass('hasError');
+
+$('.register-nextstep form span.error-valid').each(function(){
+    if ($(this).is(':empty')){
+        $(this).parents('p.form-row').removeClass('hasError');
+    }else{
+        $(this).parents('p.form-row').addClass('hasError');
+    }
+});
+$('.woocommerce-edit-account-crtl form span.error-valid').each(function(){
+    if ($(this).is(':empty')){
+        $(this).parents('p.form-row').removeClass('hasError');
+    }else{
+        $(this).parents('p.form-row').addClass('hasError');
+    }
+});
+
+$('.woocommerce-edit-address form span.error-valid').each(function(){
+    if ($(this).is(':empty')){
+        $(this).parents('p.form-row').removeClass('hasError');
+    }else{
+        $(this).parents('p.form-row').addClass('hasError');
+    }
+});
+
+//$('.register-nextstep form input#is_shipping_address').trigger('click');
+$('.register-nextstep form p.form-row.required-field input,.woocommerce-edit-account-crtl form p.form-row.required-field input').blur(function(){
+    if( $(this).val().length === 0 ) {
+        $(this).parents('p.form-row').addClass('hasError');
+    }else{
+        $(this).parents('p.form-row').removeClass('hasError');
+    }
+});
+$('#review_form form input, #review_form form textarea').blur(function(){
+    if( $(this).val().length === 0 ) {
+        $(this).parent('p').addClass('hasError');
+    }else{
+        $(this).parent('p').removeClass('hasError');
+    }
+});
+
 })(jQuery);
+jQuery( function($){
+     /*global wc_single_product_params, wc_add_to_cart_variation_params*/
+    if( $('body.single-product').length ){
+        window.alert = function() {};
+    }
+    if ( typeof wc_add_to_cart_variation_params !== 'undefined' ) {
+        // Variation selection error message
+        $('#show_error').hide();
+        $('.single_add_to_cart_button').on('click',function(e){
+          if ( $( this ).is('.disabled') ) {
+            e.preventDefault();
+            if ( $( this ).is('.wc-variation-is-unavailable') ) {
+                $('#show_error').show();
+                $('#show_error').html(msgHtmlFormat(wc_add_to_cart_variation_params.i18n_unavailable_text));
+                $('html, body').animate({
+                  scrollTop: $('.header-inr').offset().top
+                }, 500);
+            }else if ( $( this ).is('.wc-variation-selection-needed') ) {
+                $('#show_error').show();
+                $('#show_error').html(msgHtmlFormat(wc_add_to_cart_variation_params.i18n_make_a_selection_text));
+                $('html, body').animate({
+                  scrollTop: $('.header-inr').offset().top
+                }, 500);
+              /*setTimeout(function () {
+                $('#show_error').hide();
+              }, 3000);*/
+            }
+            return false;
+          }
+        });
+    }
+    if ( typeof wc_single_product_params !== 'undefined' ) {
+
+
+    }
+
+ });
+ function msgHtmlFormat(text){
+    var htmlText = '<div class="register-field-error"><div class="error-msg"><span><i>'+
+            '<svg class="error-msg-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">'+
+            '<use xlink:href="#error-msg-icon-svg"></use> </svg></i>'+text+'</span></div></div>';
+    return htmlText;
+ }
 function isValidEmailAddress(emailAddress) {
     var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
     return pattern.test(emailAddress);

@@ -432,6 +432,7 @@
 		bottom: initial;
 		width: 329px;
 		height: 329px;
+		margin-top: -130px;
 	}
 	.hm-bnr-bg-cntlr{
 		width: 450px;
@@ -557,7 +558,7 @@
 	}
 	.hm-bnr-circle-bg-cntlr{
 		right: -81px;
-		margin-top: -46px;
+		margin-top: -148px;
 	}
 	.hm-rgt-lg-line {
 		width: 478.45px;
