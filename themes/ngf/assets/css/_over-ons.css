@@ -29,13 +29,12 @@
 }
 .ovo-full-width-bg-heading{
 	font-size: 80px;
-	line-height: 80px;
+	line-height: 1.0;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
 	color: #FFFFFF;
 	position: relative;
     z-index: 2;
-    /*display: inline;*/
 }
 .ovo-grds-des-lft strong {
     display: inline-block;
@@ -114,8 +113,7 @@ span.ovo-abs-round-three {
 
 }
 .ovo-full-width-bg-des{
-	padding-top: 140px;
-	 padding-bottom: 125px;
+    padding: 145px 0;
 }
 .block-850{
 	max-width: 850px;
@@ -125,12 +123,13 @@ span.ovo-abs-round-three {
 	font-style: italic;
 	font-weight: 300;
 	font-size: 30px;
-	line-height: 44px;
+	line-height: 1.5;
 	letter-spacing: -0.02em;
 	color: #000000;
+    margin-bottom: 0;
 }
 .ovo-fancy-vedeo-items-sec{
-	padding: 95px 0;
+	padding-bottom: 95px;
     background-color: #fff;
 }
 .fancy-vedeo-items-sec-cntlr {
@@ -145,7 +144,7 @@ span.ovo-abs-round-three {
 .fancy-vedeo-items-sec-cntlr ul li {
     max-width: 50%;
     width: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 75px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -220,7 +219,7 @@ span.fl-video-play-icon-cntlr{
     margin-bottom: 35px!important;
 }
 .faq-slider-sec {
-    padding-top: 115px;
+    padding-top: 120px;
     position: relative;
     z-index: 2;
 }
@@ -289,11 +288,18 @@ span.fl-video-play-icon-cntlr{
 
 /* faq slider  */
 .faq-slider-sec .faq-grids-cntlr{
-
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.faq-slider-sec .faq-grids-cntlr .faq-grid-item-col{
+    padding-bottom: 40px;
 }
 
 .faq-grid-item a{
     text-decoration: none;
+}
+.faq-slider-desktop .slick-dotted.slick-slider{
+    margin-bottom: 0;
 }
 
 
@@ -310,27 +316,26 @@ span.fl-video-play-icon-cntlr{
         padding-left: 55px;
     }
     .ovo-full-width-bg-des {
-        padding-top: 120px;
-        padding-bottom: 100px;
+        padding: 130px 0;
     }
     .ovo-full-width-bg-des-cntlr p {
         font-size: 29px;
-        line-height: 40px;
+        line-height: 1.4;
     }
     .ovo-fancy-vedeo-items-sec {
-        padding: 80px 0;
+        padding: 85px 0;
     }
     .fl-fancy-inline-bg-img {
         min-height: 420px;
     }
     .ovo-fancy-modl-item-para {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
     .ofmi-heading {
         margin-bottom: 15px;
     }
     .faq-slider-sec{
-        padding-top: 90px;
+        padding-top: 110px;
     }
     .ovo-abs-line-one {
         left: -350.15px;
@@ -362,6 +367,28 @@ span.fl-video-play-icon-cntlr{
     .fancy-vedeo-items-sec-cntlr{
         padding-bottom: 10px;
     }
+    .ovo-abs-round-two {
+        height: 95px;
+        width: 95px;
+        border: 23px solid#fea700;
+    }
+    .ovo-abs-round{
+        top: -55px;
+    }
+    .ovo-abs-round-one {
+        right: 80PX;
+        top: 5px;
+    }
+    .ovo-fancy-module-item-des {
+        padding: 25px 20px 0;
+    }
+    .fancy-vedeo-items-sec-cntlr ul li{
+        padding-bottom: 65px;
+    }
+    span.fl-video-play-icon-cntlr i svg {
+        height: 65px;
+        width: 65px;
+    }
 
 }
 
@@ -378,11 +405,10 @@ span.fl-video-play-icon-cntlr{
         height:650px;
     }
     .ovo-full-width-bg-des {
-        padding-top: 100px;
-        padding-bottom: 70px;
+        padding: 110px 0;
     }
     .ovo-full-width-bg-des-cntlr p {
-        line-height: 38px;
+        line-height: 1.2;
     }
     .ovo-fancy-vedeo-items-sec {
         padding: 70px 0;
@@ -439,9 +465,6 @@ span.fl-video-play-icon-cntlr{
 }
 
 @media(max-width: 1299px){
-    .ovo-full-width-bg-heading {
-        line-height: 1.0;
-    }
     .ovo-abs-line-four {
         top: 92px;
         width: 110px;
@@ -467,7 +490,6 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-full-width-bg-des-cntlr p {
         font-size: 25px;
-        line-height: 35px;
     }
     .fl-fancy-inline-bg-img {
         min-height: 340px;
