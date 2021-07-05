@@ -141,6 +141,12 @@ function custom_body_classes($classes){
     $classes[] = join(' ', array_filter($browsers, function ($browser) {
         return $GLOBALS[$browser];
     }));
+
+    if( is_front_page() ){
+        $classes[]='home';
+    }elseif( is_page_template('page-faq.php') ){
+        $classes[]='sky-btm-bg-cntlr';
+    }
     return $classes;
 }
 // call the filter for the body class
