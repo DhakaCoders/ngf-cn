@@ -171,6 +171,49 @@ $('#review_form form input, #review_form form textarea').blur(function(){
 });
 
 })(jQuery);
+jQuery( function($){
+     /*global wc_single_product_params, wc_add_to_cart_variation_params*/
+    if( $('body.single-product').length ){
+        window.alert = function() {};
+    }
+    if ( typeof wc_add_to_cart_variation_params !== 'undefined' ) {
+        // Variation selection error message
+        $('#show_error').hide();
+        $('.single_add_to_cart_button').on('click',function(e){
+          if ( $( this ).is('.disabled') ) {
+            e.preventDefault();
+            if ( $( this ).is('.wc-variation-is-unavailable') ) {
+                $('#show_error').show();
+                $('#show_error').html(msgHtmlFormat(wc_add_to_cart_variation_params.i18n_unavailable_text));
+                $('html, body').animate({
+                  scrollTop: $('.header-inr').offset().top
+                }, 500);
+            }else if ( $( this ).is('.wc-variation-selection-needed') ) {
+                $('#show_error').show();
+                $('#show_error').html(msgHtmlFormat(wc_add_to_cart_variation_params.i18n_make_a_selection_text));
+                $('html, body').animate({
+                  scrollTop: $('.header-inr').offset().top
+                }, 500);
+              /*setTimeout(function () {
+                $('#show_error').hide();
+              }, 3000);*/
+            }
+            return false;
+          }
+        });
+    }
+    if ( typeof wc_single_product_params !== 'undefined' ) {
+
+
+    }
+
+ });
+ function msgHtmlFormat(text){
+    var htmlText = '<div class="register-field-error"><div class="error-msg"><span><i>'+
+            '<svg class="error-msg-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">'+
+            '<use xlink:href="#error-msg-icon-svg"></use> </svg></i>'+text+'</span></div></div>';
+    return htmlText;
+ }
 function isValidEmailAddress(emailAddress) {
     var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
     return pattern.test(emailAddress);
