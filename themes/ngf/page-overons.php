@@ -46,7 +46,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
       </li>
     </ul>
   </div>
-  <div class="page-bnr-bg inline-bg" style="background: url('assets/images/has-transparent-bnr-img-001.jpg');"></div>
+  <div class="page-bnr-bg inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/has-transparent-bnr-img-001.jpg');"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -66,12 +66,12 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="ovo-two-grds-des-module-cntlr  block-1255">
+        <div class="ovo-two-grds-des-module-cntlr block-1255">
           <div class="ovo-grds-des-lft">
             <p>We are <strong>dedicated</strong> and <strong>committed</strong> to support our clients in attaining their personal <strong>potential!</strong></p>
           </div>
           <div class="ovo-grds-des-rgt">
-            <div class="dfp-text-module  ovo-grds-text-module clearfix">
+            <div class="dfp-text-module ovo-grds-text-module">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed. </p>
               <ul>
                 <li>Lorem ipsum dolor sit amet.</li>
@@ -88,9 +88,9 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
 </div>
 
 <div class="ovo-full-width-img-dsc-module-sec">
-  <section class="ovo-full-width-img-sec  inline-bg"  style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-full-width-img.jpg);">
+  <section class="ovo-full-width-img-sec  inline-bg"  style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-full-width-img.jpg);">
     <img src="<?php echo THEME_URI; ?>/assets/images/werk-full-inline-bg-img.jpg" alt="">
-    <div class="ovo-full-width-img-fmbl  inline-bg  show-sm" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ovo-mbl-full-bg.jpg);"></div>
+    <div class="ovo-full-width-img-fmbl  inline-bg  show-sm" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ovo-mbl-full-bg.jpg);"></div>
         
     <div class="ovo-abs-round">
       <span class="ovo-abs-round-two"></span>
@@ -136,7 +136,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
               <div class="fl-fancy-module  ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                   <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-1.jpg);">
+                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg);">
                       <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                     </div>
                     <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
@@ -169,7 +169,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
               <div class="fl-fancy-module  ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                   <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-2.jpg);">
+                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-2.jpg);">
                       <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                     </div>
                     <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
@@ -202,7 +202,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
               <div class="fl-fancy-module  ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                   <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-1.jpg);">
+                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg);">
                       <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                     </div>
                     <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
@@ -235,7 +235,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
               <div class="fl-fancy-module  ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                   <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-2.jpg);">
+                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-2.jpg);">
                       <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                     </div>
                     <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
@@ -303,7 +303,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
                   <div class="fl-fancy-module  ovo-fancy-module">
                     <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                       <div class="ovo-fancy-module-img   instead-fancy-of-ImgSlider   ">
-                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-1.jpg);">
+                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg);">
                           <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                         </div>
                         <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
@@ -340,7 +340,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
                   <div class="fl-fancy-module  ovo-fancy-module">
                     <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                       <div class="ovo-fancy-module-img   instead-fancy-of-ImgSlider   ">
-                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-2.jpg);">
+                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-2.jpg);">
                           <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                         </div>
                         <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
@@ -377,7 +377,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
                   <div class="fl-fancy-module  ovo-fancy-module">
                     <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                       <div class="ovo-fancy-module-img   instead-fancy-of-ImgSlider   ">
-                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>assets/images/ov-fancy-img-1.jpg);">
+                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg);">
                           <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                         </div>
                         <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
