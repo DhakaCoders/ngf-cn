@@ -2,8 +2,8 @@
 /*Template Name: Overons*/
 get_header();
 $thisID = get_the_ID();
-$intro = get_field('introsec', $thisID);
-$page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID);
+//$intro = get_field('introsec', $thisID);
+//$page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID);
 ?>
 
 <section class="page-banner page-bnr-no-skew">
@@ -46,7 +46,14 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
       </li>
     </ul>
   </div>
-  <div class="page-bnr-bg inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/has-transparent-bnr-img-001.jpg');"></div>
+
+<?php  
+  $ovbanner = get_field('bannersec', $thisID);
+  $page_title = !empty($ovbanner['titel']) ? $ovbanner['titel'] : get_the_title();
+  if($ovbanner):
+    $ovbannerposter = !empty($ovbanner['afbeelding'])? cbv_get_image_src( $ovbanner['afbeelding'], 'full' ): '';
+?>
+  <div class="page-bnr-bg inline-bg" style="background: url('<?php echo $ovbannerposter; ?>');"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -54,31 +61,33 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
           <div class="page-bnr-desc">
             <span class="pg-bnr-desc-line hide-sm"></span>
             <span class="pg-bnr-desc-circle hide-sm"></span>
-            <h1 class="fl-h1-80 pg-bnr-title">WHY<br> NATURAL<br> GRINDERS<br> FITNESS?</h1>
+           <?php if( !empty($page_title) ) printf( '<h1 class="fl-h1-80 pg-bnr-title">%s</h1>', $page_title ); ?>
           </div>
         </div>
       </div>
     </div>
   </div>
+<?php endif; ?>
 </section>
 
+<?php
+  $showhideintro = get_field('showhideintro', $thisID);
+  if($showhideintro): 
+  $intro = get_field('intro_sec', $thisID);
+    if($intro ):
+?>
 <div class="ovo-two-grds-des-module-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="ovo-two-grds-des-module-cntlr block-1255">
           <div class="ovo-grds-des-lft">
-            <p>We are <strong>dedicated</strong> and <strong>committed</strong> to support our clients in attaining their personal <strong>potential!</strong></p>
+            <?php if( !empty($intro['titel']) ) printf( '<p>%s</p>', $intro['titel'] ); ?>
           </div>
           <div class="ovo-grds-des-rgt">
+
             <div class="dfp-text-module ovo-grds-text-module">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed. </p>
-              <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Suspendisse faucibus.</li>
-                <li>Tortor orci turpis nunc.</li>
-              </ul>
-              <p>Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate.</p>
+              <?php if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] ); ?>
             </div>
           </div>
         </div>
@@ -86,45 +95,80 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
     </div>
   </div>
 </div>
+<?php endif; endif;?>
+
+
 
 <div class="ovo-full-width-img-dsc-module-sec">
-  <section class="ovo-full-width-img-sec  inline-bg"  style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-full-width-img.jpg);">
-    <img src="<?php echo THEME_URI; ?>/assets/images/werk-full-inline-bg-img.jpg" alt="">
-    <div class="ovo-full-width-img-fmbl  inline-bg  show-sm" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ovo-mbl-full-bg.jpg);"></div>
-        
-    <div class="ovo-abs-round">
-      <span class="ovo-abs-round-two"></span>
-      <span class="ovo-abs-round-one"></span>
-    </div>
 
-    <div class="ovo-full-width-bg-des-heading hide-sm">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="ovo-full-width-bg-heading-inner">
-                <h2 class="ovo-full-width-bg-heading  fl-h1-80">Integer laoreet  <br> enim  vitae  dolor <br> sagittis id.</h2>
-                <span class="ovo-abs-round-three"></span>
-                <span class="ovo-abs-line-four"></span>
+  <?php 
+    $showhideafbeelding = get_field('showhideafbeelding', $thisID);
+    if($showhideafbeelding): 
+  ?>
+  <div>
+    <?php $afbeelding_blok = get_field('afbeelding_blok', $thisID);
+      if($afbeelding_blok ):
+        $afbeelding_blok_poster = !empty($afbeelding_blok['afbeelding'])? cbv_get_image_src( $afbeelding_blok['afbeelding'], 'full' ): '';
+     ?>
+    <section class="ovo-full-width-img-sec inline-bg"  style="background-image: url(<?php echo $afbeelding_blok_poster?>);">
+      <img src="<?php echo $afbeelding_blok_poster?>" alt="">
+      <!-- <div class="ovo-full-width-img-fmbl  inline-bg  show-sm" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ovo-mbl-full-bg.jpg);"></div> -->
+          
+      <div class="ovo-abs-round">
+        <span class="ovo-abs-round-two"></span>
+        <span class="ovo-abs-round-one"></span>
+      </div>
+
+      <div class="ovo-full-width-bg-des-heading hide-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="ovo-full-width-bg-heading-inner">
+                  <?php if( !empty($afbeelding_blok['titel']) ) printf( '<h2 class="ovo-full-width-bg-heading fl-h1-80">%s</h2>', $afbeelding_blok['titel'] ); ?>
+                  <span class="ovo-abs-round-three"></span>
+                  <span class="ovo-abs-line-four"></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+     <?php endif;?>
+  </div>
+  <?php endif;?>
 
-  <section class="ovo-full-width-bg-des">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="ovo-full-width-bg-des-cntlr  block-850">
-            <p>In lacus, quam blandit at morbi dolor erat. Ipsum neque et pulvinar felis. Porttitor quam sit varius quisque lacus, maecenas ac et tellus.</p>
+  <?php 
+    $showhidetekst = get_field('showhidetekst', $thisID);
+    if($showhidetekst): 
+  ?>
+  <div>
+    <?php $tekst_blok = get_field('tekst_blok', $thisID);
+      if($tekst_blok ):
+     ?>
+    <section class="ovo-full-width-bg-des">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="ovo-full-width-bg-des-cntlr  block-850">
+              <?php if( !empty($tekst_blok['beschrijving']) ) echo wpautop($tekst_blok['beschrijving']); ?>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <?php endif;?>
+  </div>
+  <?php endif;?>
+  
 </div>
 
+
+<?php
+  $showhidevideoblok = get_field('showhidevideoblok', $thisID);
+  if($showhidevideoblok): 
+  $video_bloks = get_field('video_bloks', $thisID);
+    if($video_bloks ):
+?>
 <section class="ovo-fancy-vedeo-items-sec">
   <div class="container">
     <div class="row">
@@ -132,10 +176,11 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
         <!-- if want to use only Img instead fancy ,use this class "have-no-fancy" into "instead-fancy-to-Img   " -->
         <div class="fancy-vedeo-items-sec-cntlr  hide-sm">
           <ul class="reset-list  clearfix">
+            <?php foreach( $video_bloks as $video_blok ): ?>
             <li>
               <div class="fl-fancy-module  ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
-                  <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
+                  <div class="ovo-fancy-module-img  instead-fancy-to-Img ">
                     <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg);">
                       <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
                     </div>
@@ -149,23 +194,23 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
                     </span>
                   </div>
                   <div class="ovo-fancy-module-item-des">
-                    <h3 class="ofmi-heading mHc1"><a href="#">LOREM IPSUM</a></h3>
-                    <div class="ovo-fancy-modl-item-para">
-                      <p class="mHc2">Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
+                    <?php if( !empty($video_blok['titel']) ) printf( '<h3 class="ofmi-heading mHc1"><a href="%S">%s</a></h3>', $video_blok['titel'], $video_blok['titel'] ); ?>
+                    <!-- <h3 class="ofmi-heading mHc1"><a href="#">LOREM IPSUM</a></h3> -->
+                    <div class="ovo-fancy-modl-item-para mHc2">
+                      <?php if( !empty($video_blok['beschrijving']) ) echo wpautop($video_blok['beschrijving']); ?>
                     </div>
-                    <div class="fl-pro-grd-btn">
-                      <a class="fl-read-more-btn" href="#">
-                        <span>READ MORE</span>
-                        <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                        <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                        </i>
-                      </a>
-                    </div>
+
+                   <?php  $vbknop = $video_blok['knop'];
+                    if( is_array( $vbknop ) &&  !empty( $vbknop['url'] ) )
+                        printf('<div class="fl-pro-grd-btn"><a class="fl-read-more-btn" href="%s" target="%s"><span>%s</span><i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12"><use xlink:href="#dip-yellow-right-arrow"></use></svg></i></a></div>', $vbknop['url'], $vbknop['target'], $vbknop['title']); 
+                    ?>
+                    
                   </div>
                 </div>
               </div>
             </li>
-            <li>
+            <?php endforeach; ?>
+  <!--             <li>
               <div class="fl-fancy-module  ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                   <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
@@ -263,7 +308,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
                   </div>
                 </div>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
 
@@ -414,6 +459,8 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
     </div>
   </div>
 </section>
+
+<?php endif; endif;?>
 
 <section class="ovo-testimonial-slider-sec">
   <div class="container">
