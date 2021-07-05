@@ -528,7 +528,8 @@ if( $('.faqSlider').length ){
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      
     });
 }
 if( $('.ovomblfvSlider').length ){

@@ -389,7 +389,9 @@ body.woocommerce-cart .product-quantity .quantity{
 .single-product .related-product-sec .slick-slider ul.slick-dots{
 	bottom: -96px;
 }
-
+.single-product .ftr-white-skew{
+	
+}
 /* if has */
 .related-products{
 	display: none;

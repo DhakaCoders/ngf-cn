@@ -44,6 +44,9 @@
 .blog-page-sec .fl-pro-grd-btn {
     bottom: 32px;
 }
+.blog .ftr-white-skew{
+	border-top: 190px solid #fbfbfb;
+}
 
 /* == responsive == */
 
@@ -146,6 +149,9 @@
 	.fl-grid-tag span{
 		padding: 7px 13px 6px;
 		font-size: 10px;
+	}
+	.blog .fl-pagination-blog-cntrl{
+		padding-bottom: 28px;
 	}
 }
 
