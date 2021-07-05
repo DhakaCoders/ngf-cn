@@ -106,19 +106,20 @@
     -ms-transition: all .5s;
     -webkit-transition: all .5s;
 }
-.fl-product-grd-inr-cntrl{
-    padding-bottom: 35px;
-    height: 100%;
+.fl-pro-grd-des {
+    padding: 25px 23px 35px;
     position: relative;
 }
-.fl-pro-grd-des {
-    padding: 25px 23px 0;
+.fl-pro-grd-des-inner{
+    padding-bottom: 21px;
+    height: 100%;
     position: relative;
 }
 .fl-pro-grd-title{
     font-weight: 600;
     line-height: 1.3;
-    margin-bottom: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 0;
 }
 .fl-product-grd .fl-pro-grd-des .fl-pro-grd-price{
     padding-bottom: 5px;
@@ -151,28 +152,21 @@ del span.amount bdi:after{
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-.single-product .fl-pro-grd-price{
-    padding-bottom: 32px;
-}
 .single-product span.amount{
     display: inline-block;
     vertical-align: baseline;
 }
-.single-product span.amount bdi, .single-product span.amount bdi span.woocommerce-Price-currencySymbol{
-    font-size: 30px;
-    line-height: 1;
-}
 /* == price design end */
 .fl-pro-grd-details {
-    padding-bottom: 27px;
+    padding-bottom: 14px;
 }
-.fl-pro-grd-details p {
+.fl-pro-grd-des-1 p {
     line-height: 1.9;
 }
-.fl-pro-grd-details p:last-of-type{
+.fl-pro-grd-des-1 p:last-of-type{
     margin-bottom: 0;
 }
-.fl-pro-grd-details > ul{
+.fl-pro-grd-des-2 > ul{
     margin-bottom: 0!important;
     padding-top: 20px!important;
     border-top: 2px solid #eff4f7;
@@ -180,7 +174,8 @@ del span.amount bdi:after{
     padding-left: 16px!important;
 }
 .product-page .fl-pro-grd-btn{
-    left: 25px;
+    left: 0;
+    bottom: 0;
 }
 .fl-buy-now-btn{
     width: 100%;
@@ -252,7 +247,7 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
         padding-top: 60px;
     }
     .fl-pro-grd-des {
-        padding: 25px 20px 0;
+        padding: 25px 20px 35px;
     }
     .fl-product-grd .fl-pro-grd-title{
         font-size: 18px;
@@ -308,7 +303,7 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
         margin: 0 auto!important;
     }
     .fl-pro-grd-des{
-        padding: 25px 23px 0;
+        padding: 25px 23px 35px;
     }
     span.amount bdi, span.amount bdi span.woocommerce-Price-currencySymbol, 
     ins span.amount bdi, ins span.amount bdi span.woocommerce-Price-currencySymbol, 

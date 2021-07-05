@@ -211,10 +211,7 @@ span.fl-video-play-icon-cntlr{
     padding-bottom: 20px!important;
     padding-top: 0!important;
 }
-.ovo-faq-slider-entry-heading{
-
-}
-.ovo-faq-slider-heading{
+.faq-slider-sec-hdr .fssh-title{
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.04em;
@@ -222,7 +219,7 @@ span.fl-video-play-icon-cntlr{
     color: #000000;
     margin-bottom: 35px!important;
 }
-.ovo-faq-slider-sec {
+.faq-slider-sec {
     padding-top: 115px;
     position: relative;
     z-index: 2;
@@ -290,8 +287,14 @@ span.fl-video-play-icon-cntlr{
 
 
 
+/* faq slider  */
+.faq-slider-sec .faq-grids-cntlr{
 
+}
 
+.faq-grid-item a{
+    text-decoration: none;
+}
 
 
 
@@ -326,7 +329,7 @@ span.fl-video-play-icon-cntlr{
     .ofmi-heading {
         margin-bottom: 15px;
     }
-    .ovo-faq-slider-sec{
+    .faq-slider-sec{
         padding-top: 90px;
     }
     .ovo-abs-line-one {
@@ -394,7 +397,7 @@ span.fl-video-play-icon-cntlr{
     .ovo-fancy-modl-item-para {
         margin-bottom: 15px;
     }
-    .ovo-faq-slider-sec {
+    .faq-slider-sec {
         padding-top: 65px;
     }
     .ovo-testimonial-grd-item-inr {
@@ -601,6 +604,13 @@ span.fl-video-play-icon-cntlr{
     .instead-fancy-to-img-slider-cntlr .instead-fancy-to-img-slider-inner{
         display: block!important;
     }
+    .faq-slider-sec .faq-grids-cntlr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 
 

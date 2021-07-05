@@ -59,15 +59,16 @@
 .blog-grid-des .bgi-title{
 	line-height: 1.25;
 	font-weight: 600;
-	margin-bottom: 15px;
+	padding-bottom: 15px;
 	letter-spacing: -0.02em;
+	margin-bottom: 0;
 }
 .blog-grid-des .bgi-title a{
 	display: inline-block;
 	vertical-align: baseline;
 }
 .bgi-des{
-    padding-bottom: 16px;
+    padding-bottom: 25px;
 }
 .bgi-des p{
 	line-height: 1.5;
@@ -97,7 +98,7 @@
 	.blog-grid-des .bgi-title{
 		font-size: 20px;
 		line-height: 1.35;
-		margin-bottom: 10px;
+		padding-bottom: 10px;
 	}
 	a.fl-read-more-btn{
 		font-size: 15px;
@@ -123,7 +124,7 @@
 	}
 	.blog-grid-des .bgi-title{
 		line-height: 1.45;
-		margin-bottom: 8px;
+		padding-bottom: 8px;
 	}
 	.coaching-sec .blog-grid-items{
 		padding-bottom: 15px;
@@ -211,7 +212,7 @@
 	.blog-grid-des .bgi-title{
 		font-size: 18px;
 		line-height: 1.6;
-		margin-bottom: 6px;
+		padding-bottom: 6px;
 	}
 	a.fl-read-more-btn{
 		font-size: 14px;
