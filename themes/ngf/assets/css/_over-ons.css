@@ -129,7 +129,7 @@ span.ovo-abs-round-three {
     margin-bottom: 0;
 }
 .ovo-fancy-vedeo-items-sec{
-	padding: 95px 0;
+	padding-bottom: 95px;
     background-color: #fff;
 }
 .fancy-vedeo-items-sec-cntlr {
@@ -144,7 +144,7 @@ span.ovo-abs-round-three {
 .fancy-vedeo-items-sec-cntlr ul li {
     max-width: 50%;
     width: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 75px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -219,7 +219,7 @@ span.fl-video-play-icon-cntlr{
     margin-bottom: 35px!important;
 }
 .faq-slider-sec {
-    padding-top: 115px;
+    padding-top: 120px;
     position: relative;
     z-index: 2;
 }
@@ -288,11 +288,18 @@ span.fl-video-play-icon-cntlr{
 
 /* faq slider  */
 .faq-slider-sec .faq-grids-cntlr{
-
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.faq-slider-sec .faq-grids-cntlr .faq-grid-item-col{
+    padding-bottom: 40px;
 }
 
 .faq-grid-item a{
     text-decoration: none;
+}
+.faq-slider-desktop .slick-dotted.slick-slider{
+    margin-bottom: 0;
 }
 
 
@@ -322,13 +329,13 @@ span.fl-video-play-icon-cntlr{
         min-height: 420px;
     }
     .ovo-fancy-modl-item-para {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
     .ofmi-heading {
         margin-bottom: 15px;
     }
     .faq-slider-sec{
-        padding-top: 90px;
+        padding-top: 110px;
     }
     .ovo-abs-line-one {
         left: -350.15px;
@@ -371,6 +378,16 @@ span.fl-video-play-icon-cntlr{
     .ovo-abs-round-one {
         right: 80PX;
         top: 5px;
+    }
+    .ovo-fancy-module-item-des {
+        padding: 25px 20px 0;
+    }
+    .fancy-vedeo-items-sec-cntlr ul li{
+        padding-bottom: 65px;
+    }
+    span.fl-video-play-icon-cntlr i svg {
+        height: 65px;
+        width: 65px;
     }
 
 }
