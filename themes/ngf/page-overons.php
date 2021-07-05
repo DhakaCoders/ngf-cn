@@ -206,12 +206,14 @@ $thisID = get_the_ID();
                       <?php if( !empty($video_blok['beschrijving']) ) echo wpautop($video_blok['beschrijving']); ?>
                     </div>
 
-                   <?php 
-                      $vbknop = $video_blok['knop'];
-                      if( is_array( $vbknop ) &&  !empty( $vbknop['url'] ) ){
-                          printf('<div class="fl-pro-grd-btn"><a class="fl-read-more-btn" href="%s" target="%s"><span>%s</span><i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12"><use xlink:href="#dip-yellow-right-arrow"></use></svg></i></a></div>', $vbknop['url'], $vbknop['target'], $vbknop['title']); 
-                        }
+                    <?php 
+                        $vbknop = $video_blok['knop'];
+                        if( is_array( $vbknop ) &&  !empty( $vbknop['url'] ) ):
                     ?>
+                    <div class="fl-pro-grd-btn">
+                      <?php  printf('<a class="fl-read-more-btn" href="%s" target="%s"><span>%s</span><i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12"><use xlink:href="#dip-yellow-right-arrow"></use></svg></i></a>', $vbknop['url'], $vbknop['target'], $vbknop['title']); ?>
+                    </div>
+                    <?php endif; ?>
 
                   </div>
                 </div>
