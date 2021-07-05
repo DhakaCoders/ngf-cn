@@ -36,7 +36,7 @@
     border-radius:6px!important;
 }
 .fl-form-block .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field{
-    margin-bottom:37px;
+    margin-bottom:33px;
 }
 .bnr-bg-249 .bnr-bg-overly{
     height:249px;
@@ -84,6 +84,9 @@
     }
     .bnr-bg-overly-module{
         margin-bottom: 30px;
+    }
+    .fl-form-block-des-cntlr{
+        padding-bottom: 32px;
     }
 }
 @media(max-width:767px){
@@ -136,6 +139,9 @@
     }
     .bnr-bg-overly-module{
         margin-top:-75px;
+    }
+    .fl-form-block-des-cntlr{
+        padding-bottom: 25px;
     }
 }
 @media(max-width: 575px){
