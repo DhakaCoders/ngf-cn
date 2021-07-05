@@ -2,8 +2,6 @@
 .ovo-two-grds-des-module-sec{
 	padding-top: 135px;
 	padding-bottom: 105px;
-    background-color: #fff;
-
 }
 .ovo-two-grds-des-module-cntlr{
 	display: flex;
@@ -141,7 +139,7 @@ span.ovo-abs-round-three {
     flex-wrap: wrap;
     margin: 0 -10px;
 }
-.fancy-vedeo-items-sec-cntlr .fancy-vedeo-items-inner  .fancy-vedeo-item{
+.fancy-vedeo-items-sec-cntlr .fancy-vedeo-items-inner  .fl-fancy-module-col{
     max-width: 50%;
     width: 100%;
     padding-bottom: 75px;
@@ -307,6 +305,10 @@ span.fl-video-play-icon-cntlr{
 
 
 
+
+
+
+
 @media (max-width: 1699px){
     .ovo-grds-des-lft p{
         font-size: 25px;
@@ -381,7 +383,7 @@ span.fl-video-play-icon-cntlr{
     .ovo-fancy-module-item-des {
         padding: 25px 20px 0;
     }
-    .fancy-vedeo-items-sec-cntlr .fancy-vedeo-items-inner .fancy-vedeo-item{
+    .fancy-vedeo-items-sec-cntlr .fancy-vedeo-items-inner .fl-fancy-module-col{
         padding-bottom: 65px;
     }
     span.fl-video-play-icon-cntlr i svg {
@@ -394,6 +396,9 @@ span.fl-video-play-icon-cntlr{
     span.ovo-abs-round-three{
         top: -5px;
         left: -15px;
+    }
+    .ovo-fancy-vedeo-items-sec {
+        padding-top: 85px;
     }
 
 
@@ -470,10 +475,9 @@ span.fl-video-play-icon-cntlr{
         width: 85px;
         border: 21px solid#fea700;
     }
-
-
-
-
+    .ovo-fancy-vedeo-items-sec {
+        padding-top: 75px;
+    }
 
 
 }
@@ -550,10 +554,9 @@ span.fl-video-play-icon-cntlr{
     .ovo-full-width-bg-des {
         padding: 100px 0;
     }
-
-
-
-
+    .ovo-fancy-vedeo-items-sec {
+        padding-top: 65px;
+    }
 
 
 }
