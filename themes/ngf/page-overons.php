@@ -163,6 +163,45 @@ $thisID = get_the_ID();
 </div>
 
 
+
+<?php
+  $showhidecta = get_field('showhidecta', $thisID);
+  if($showhidecta): 
+  $cta_sec = get_field('cta_sec', $thisID);
+    if($cta_sec ):
+?>
+<section class="ovo-cta-module-mobile show-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="dfp-cta-module clearfix">
+            <div class="cta-ctlr">
+              <i class="contact-form-info-round-bg">
+                <svg class="contact-from-info-rnd-bg" width="35" height="61" viewBox="0 0 35 61" fill="transparent">
+                <use xlink:href="#contact-from-info-rnd-bg"></use> </svg>
+              </i>
+               <i class="contact-form-info-line-bg">
+                <svg class="contact-form-info-ln-bg" width="23" height="70" viewBox="0 0 23 70" fill="transparent">
+                <use xlink:href="#contact-from-info-line-bg"></use> </svg>
+              </i>
+              <?php 
+                  if( !empty($cta_sec['titel']) ) printf( '<h4 class="cta-title fl-h4">%s</h4>', $cta_sec['titel'] );
+                  if( !empty($cta_sec['beschrijving']) ) echo wpautop( $cta_sec['beschrijving'] ); 
+
+                  $cta_knop = $cta_sec['knop'];
+                  if( is_array( $cta_knop ) &&  !empty( $cta_knop['url'] ) ){
+                  printf('<div class="cta-btn"><a href="%s" target="%s">%s<i><svg class="rgt-btn-white-icon-svg" width="12" height="12" viewBox="0 0 12 12" fill="#FFF"> <use xlink:href="#rgt-btn-white-icon-svg"></use></svg></i></a></div>', $cta_knop['url'], $cta_knop['target'], $cta_knop['title']); 
+                }
+              ?>
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php endif; endif;?>
+
 <?php
   $showhidevideoblok = get_field('showhidevideoblok', $thisID);
   if($showhidevideoblok): 
@@ -173,7 +212,7 @@ $thisID = get_the_ID();
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="fancy-vedeo-items-sec-cntlr  hide-sm">
+        <div class="fancy-vedeo-items-sec-cntlr">
           <ul class="reset-list  clearfix">
             <?php 
               foreach( $video_bloks as $video_blok ): 
@@ -212,7 +251,7 @@ $thisID = get_the_ID();
                         if( $vbknop ):
                     ?>
                     <div class="fl-pro-grd-btn">
-                      <a class="fl-read-more-btn" target="_blank">  href="<?php echo esc_url( $vbknop ); ?>">
+                      <a class="fl-read-more-btn" target="_blank" href="<?php echo esc_url( $vbknop ); ?>">
                         <span>READ MORE</span>
                         <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
                         <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
@@ -227,33 +266,6 @@ $thisID = get_the_ID();
             </li>
             <?php endforeach; ?>
           </ul>
-        </div>
-
-        <div class="ovo-cta-module-mobile show-sm">
-          <div class="dfp-cta-module clearfix">
-            <div class="cta-ctlr">
-              <i class="contact-form-info-round-bg">
-                <svg class="contact-from-info-rnd-bg" width="35" height="61" viewBox="0 0 35 61" fill="transparent">
-                <use xlink:href="#contact-from-info-rnd-bg"></use> </svg>
-              </i>
-               <i class="contact-form-info-line-bg">
-                <svg class="contact-form-info-ln-bg" width="23" height="70" viewBox="0 0 23 70" fill="transparent">
-                <use xlink:href="#contact-from-info-line-bg"></use> </svg>
-              </i>
-              <h4 class="cta-title fl-h4">CTA</h4>
-              <p>Ut purus ipsum, interdum quis libero et, tincidunt tincidunt ante.</p>
-              <div class="cta-btn">
-                <a href="#">
-                  BUTTON
-                  <i>
-                    <svg class="rgt-btn-white-icon-svg" width="12" height="12" viewBox="0 0 12 12" fill="#FFF">
-                      <use xlink:href="#rgt-btn-white-icon-svg"></use>
-                    </svg>
-                  </i>
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
 
         <!-- if want to use only ImgSLider instead fancy ,use this class "have-no-fancy" into "instead-fancy-of-ImgSlider   " -->
