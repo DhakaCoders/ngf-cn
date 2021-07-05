@@ -160,13 +160,13 @@ del span.amount bdi:after{
 .fl-pro-grd-details {
     padding-bottom: 14px;
 }
-.fl-pro-grd-details p {
+.fl-pro-grd-des-1 p {
     line-height: 1.9;
 }
-.fl-pro-grd-details p:last-of-type{
+.fl-pro-grd-des-1 p:last-of-type{
     margin-bottom: 0;
 }
-.fl-pro-grd-details > ul{
+.fl-pro-grd-des-2 > ul{
     margin-bottom: 0!important;
     padding-top: 20px!important;
     border-top: 2px solid #eff4f7;
