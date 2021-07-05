@@ -156,7 +156,6 @@ span.ovo-abs-round-three {
 }
 .ovo-fancy-modl-item-para p{
 	font-weight: 300;
-	line-height: 30px;
 	letter-spacing: -0.02em;
 	color: #000000;
 }
@@ -485,7 +484,7 @@ span.fl-video-play-icon-cntlr{
         line-height: 33px;
     }
     .ovo-grds-des-rgt {
-        padding-left: 10px;
+        padding-left: 40px;
     }
     .ovo-grds-text-module p {
         line-height: 1.5;
@@ -504,7 +503,6 @@ span.fl-video-play-icon-cntlr{
         padding: 20px 20px 0 20px;
     }
     .ovo-fancy-modl-item-para p{
-        line-height: 20px;
         font-size: 14px;
     }
     .fl-fancy-module.ovo-fancy-module {
@@ -542,6 +540,11 @@ span.fl-video-play-icon-cntlr{
         width: 100px;
         top: 90px;
     }
+    .ovo-two-grds-des-module-sec {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
 
 
 
