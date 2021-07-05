@@ -6,7 +6,7 @@
 	margin-bottom: 0;
 }
 .single-product .fl-product{
-	padding-bottom: 114px;
+	padding-bottom: 34px;
 }
 .single-product .product-details-page{
 	background-color: #fff;
@@ -232,8 +232,11 @@ span.single-price-total{
 }
 
 /* == clinet option design start == */
+.single-product .pro-single-testimonial-slider-cntlr{
+	padding-top: 100px;
+	margin-top: 80px;
+}
 .single-product .dfp-testimonial-module{
-	margin-top: 100px;
 	margin-bottom: 100px;
 }
 .single-product .sec-entry-hdr h3{
@@ -644,7 +647,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		font-size: 52px;
 	}
 	.single-product .fl-product{
-		padding-bottom: 104px;
+		padding-bottom: 30px;
 	}
 	.single-product .single-price-total span.woocommerce-Price-amount bdi{
 		font-size: 29px;
@@ -658,8 +661,11 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.single-product .hasRelatedProduct div.product{
 		padding-bottom: 112px;
 	}
+	.single-product .pro-single-testimonial-slider-cntlr{
+		padding-top: 90px;
+		margin-top: 70px;
+	}
 	.single-product .dfp-testimonial-module{
-		margin-top: 90px;
 		margin-bottom: 90px;	
 	}
 	.single-product .related-product-sec .latest-news-bg{
@@ -711,14 +717,17 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.single-product .cadeaubonnen-page-link{
 		padding-bottom: 245px;
 	}
+	.single-product .pro-single-testimonial-slider-cntlr{
+		padding-top: 80px;
+		margin-top: 60px;
+	}
 	.single-product .dfp-testimonial-module{
-		margin-top: 80px;
 		margin-bottom: 80px;	
 	}
 }
 @media(max-width: 1399px){
 	.single-product .fl-product{
-		padding-bottom: 94px;
+		padding-bottom: 25px;
 	}
 	.review-position-bg{
 		top: -210px;
@@ -776,7 +785,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
         padding-top:0px;
     }
     .single-product .fl-product{
-		padding-bottom: 84px;
+		padding-bottom: 20px;
 	}
 	.review-position-bg{
 		top: -190px;
@@ -803,15 +812,18 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.single-product .hasRelatedProduct div.product{
 		padding-bottom: 108px;
 	}
+	.single-product .pro-single-testimonial-slider-cntlr{
+		padding-top: 70px;
+		margin-top: 50px;
+	}
 	.single-product .dfp-testimonial-module{
-		margin-top: 70px;
 		margin-bottom: 70px;	
 	}
 }
 
 @media(max-width: 991px){
 	.single-product .fl-product{
-		padding-bottom: 74px;
+		padding-bottom: 15px;
 	}
 	.fl-pro-single-prv-nxt.fpsprv{
 		left: 20px;
@@ -1007,8 +1019,11 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.single-product .hasRelatedProduct div.product{
 		padding-bottom: 106px;
 	}
+	.single-product .pro-single-testimonial-slider-cntlr{
+		padding-top: 60px;
+		margin-top: 40px;
+	}
 	.single-product .dfp-testimonial-module{
-		margin-top: 60px;
 		margin-bottom: 63px;	
 	}
 	.single-product .related-product-sec .latest-news-bg{
@@ -1022,7 +1037,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		font-size: 32px;
 	}
 	.single-product .fl-product{
-		padding-bottom: 64px;
+		padding-bottom: 10px;
 	}
 	.single-product .wc-product-title{
 		display: none!important;
@@ -1146,8 +1161,8 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	    left: 18px;
 	    z-index:3;
 	}
-	.single-product .dfp-testimonial-module{
-		margin-top: 50px;	
+	.single-product .pro-single-testimonial-slider-cntlr{
+		padding-top: 50px;
 	}
 	.single-product .related-product-sec .latest-news-bg{
 		bottom: -80px;
@@ -1176,9 +1191,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.fl-pro-single-prv-nxt.fpsnxt{
 		right: 10px;
-	}
-	.single-product .fl-product{
-		padding-bottom: 50px;
 	}
 	.single-product .related-pro-crtl .hasRelatedProduct .product{
 		max-width: 350px;
@@ -1329,6 +1341,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.single-product .sec-entry-hdr h3{
 		font-size: 23px;
 	}
+	.single-product .dfp-testimonial-module{
+		margin-top: 0;
+	}
 }
 
 @media(max-width: 479px){
@@ -1351,7 +1366,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
         margin-bottom: 25px;
     }
     .single-product .fl-pro-grd-des{
-    	padding: 34px 23px 9px;
+    	padding: 34px 23px 35px;
     }
     .main-img-crtl{
     	box-shadow: initial;
@@ -1386,7 +1401,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		text-align: center;
 	}
 	.single-product .related-product-sec .latest-news-bg{
-		bottom: 266px;
+		bottom: 280px;
 	}
 }
 
