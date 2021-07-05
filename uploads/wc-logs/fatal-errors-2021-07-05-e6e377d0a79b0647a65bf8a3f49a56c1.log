@@ -1,0 +1,9 @@
+2021-07-05T14:23:52+00:00 CRITICAL Uncaught ValueError: Unknown format specifier "S" in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\page-overons.php:205
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\page-overons.php(205): printf('<h3 class="ofmi...', 'Lorem ipsum', 'Lorem ipsum')
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\projects\2021\ngf\index.php(17): require('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\page-overons.php on line 205
+

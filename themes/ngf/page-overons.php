@@ -173,18 +173,23 @@ $thisID = get_the_ID();
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <!-- if want to use only Img instead fancy ,use this class "have-no-fancy" into "instead-fancy-to-Img   " -->
         <div class="fancy-vedeo-items-sec-cntlr  hide-sm">
           <ul class="reset-list  clearfix">
-            <?php foreach( $video_bloks as $video_blok ): ?>
+            <?php 
+              foreach( $video_bloks as $video_blok ): 
+                $video_blok_poster = !empty($video_blok['afbeelding'])? cbv_get_image_src( $video_blok['afbeelding'], 'full' ): '';
+            ?>
             <li>
               <div class="fl-fancy-module  ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                   <div class="ovo-fancy-module-img  instead-fancy-to-Img ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg);">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
+                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo $video_blok_poster; ?>);">
+                      <img src="<?php echo $video_blok_poster; ?>" alt="">
                     </div>
-                    <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
+                    <?php  
+                      if($video_blok['video_url']): 
+                          printf( ' <a class="overlay-link" data-fancybox="" href="%s"></a>', $video_blok['video_url'] );
+                      ?>
                     <span class="fl-video-play-icon-cntlr">
                       <i>
                         <svg class="play-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="#fff">
@@ -192,19 +197,22 @@ $thisID = get_the_ID();
                         </svg>
                       </i>
                     </span>
+                    <?php endif; ?>
+
                   </div>
                   <div class="ovo-fancy-module-item-des">
-                    <?php if( !empty($video_blok['titel']) ) printf( '<h3 class="ofmi-heading mHc1"><a href="%S">%s</a></h3>', $video_blok['titel'], $video_blok['titel'] ); ?>
-                    <!-- <h3 class="ofmi-heading mHc1"><a href="#">LOREM IPSUM</a></h3> -->
+                    <?php if( !empty($video_blok['titel']) ) printf( '<h3 class="ofmi-heading mHc1"><a href="%s">%s</a></h3>', $video_blok['knop'], $video_blok['titel'] ); ?>
                     <div class="ovo-fancy-modl-item-para mHc2">
                       <?php if( !empty($video_blok['beschrijving']) ) echo wpautop($video_blok['beschrijving']); ?>
                     </div>
 
-                   <?php  $vbknop = $video_blok['knop'];
-                    if( is_array( $vbknop ) &&  !empty( $vbknop['url'] ) )
-                        printf('<div class="fl-pro-grd-btn"><a class="fl-read-more-btn" href="%s" target="%s"><span>%s</span><i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12"><use xlink:href="#dip-yellow-right-arrow"></use></svg></i></a></div>', $vbknop['url'], $vbknop['target'], $vbknop['title']); 
+                   <?php 
+                      $vbknop = $video_blok['knop'];
+                      if( is_array( $vbknop ) &&  !empty( $vbknop['url'] ) ){
+                          printf('<div class="fl-pro-grd-btn"><a class="fl-read-more-btn" href="%s" target="%s"><span>%s</span><i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12"><use xlink:href="#dip-yellow-right-arrow"></use></svg></i></a></div>', $vbknop['url'], $vbknop['target'], $vbknop['title']); 
+                        }
                     ?>
-                    
+
                   </div>
                 </div>
               </div>
