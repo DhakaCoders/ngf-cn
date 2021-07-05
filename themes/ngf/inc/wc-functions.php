@@ -383,9 +383,9 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
                 'Totaal',
                 'Bedrag',
                 'ApPly',
-                'Heb je een kortingscode?',
+                'Have a discount code?',
                 'ApPly',
-                'Heb je een kortingscode?'
+                'Have a discount code?'
             ),
             $translated
         );

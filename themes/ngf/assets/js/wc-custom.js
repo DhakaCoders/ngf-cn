@@ -162,14 +162,22 @@ $('.register-nextstep form p.form-row.required-field input,.woocommerce-edit-acc
         $(this).parents('p.form-row').removeClass('hasError');
     }
 });
-$('#review_form form input, #review_form form textarea').blur(function(){
-    if( $(this).val().length === 0 ) {
-        $(this).parent('p').addClass('hasError');
+
+
+if($('#ship-to-different-address-checkbox').not(':checked').length){
+    $('body.woocommerce-checkout').find('.cbv_shipping_address').show();
+}else{
+    $('body.woocommerce-checkout').find('.cbv_shipping_address').hide();
+}
+$('#ship-to-different-address-checkbox').on('click', function() {
+    if( $(this).is(':checked') ){
+        $('body.woocommerce-checkout').find('.cbv_shipping_address').hide();
+        $(this).val(0);
     }else{
-        $(this).parent('p').removeClass('hasError');
+        $('body.woocommerce-checkout').find('.cbv_shipping_address').show();
+        $(this).val(1);
     }
 });
-
 })(jQuery);
 jQuery( function($){
      /*global wc_single_product_params, wc_add_to_cart_variation_params*/

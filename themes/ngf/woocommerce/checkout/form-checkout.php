@@ -67,7 +67,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 						<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 						<div class="payment-method-crtl">
 							<div id="order_review" class="woocommerce-checkout-review-order">
-							<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>	
+							<?php if ( WC()->cart->needs_shipping() && !WC()->cart->show_shipping() ) : ?>	
 							<h3><?php esc_html_e( 'Bezorgmethode', 'woocommerce' ); ?></h3>
 							<div class="shipping-methods">
 								<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>

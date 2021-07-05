@@ -74,6 +74,10 @@ function ajax_register_save(){
                $data_reg['ship_fname'] = __('Controleer dit veld', 'woocommerce');
                $error = true;
             }
+            if( isset($_POST['shipping_last_name']) && empty($_POST['shipping_last_name']) ){
+               $data_reg['ship_lname'] = __('Controleer dit veld', 'woocommerce');
+               $error = true;
+            }
             if( isset($_POST['shipping_postcode']) && empty($_POST['shipping_postcode']) ){
                $data_reg['ship_postcode'] = __('Controleer dit veld', 'woocommerce');
                $error = true;

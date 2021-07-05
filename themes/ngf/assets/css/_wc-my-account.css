@@ -1652,7 +1652,7 @@ body.woocommerce-checkout .custom-checkout-order-review .form-row-last{
     text-align:right;
     margin-bottom: 20px;
 }
-.woocommerce-info {
+.woocommerce-form-coupon-toggle {
     display: none;
 }
 body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[type=button]:hover,
@@ -1821,7 +1821,11 @@ body.woocommerce-checkout section.checkout-top-sec{
     align-items: center;
 }
 
-
+body .wc-template-crtl .success-msg {
+    background: #FFA800;
+    padding: 12px 17px;
+    margin-bottom: 28px;
+}
 
 /* --------------------------------------- RESPONSIVE --------------------------------------------------*/
 
