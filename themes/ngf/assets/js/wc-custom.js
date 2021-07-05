@@ -41,16 +41,12 @@ $("#private").on('change', function(){
 
 
 // shipping field show/hide
-
-$(".hide-account-title .show_shipping_fields input.input-text").prop('required', true);
 $("#is_shipping_address").on('change',function(){
    var ischecked= $(this).is(':checked');
     if(ischecked){
-      $(".hide-account-title .show_shipping_fields input.input-text").prop('required', false);
      $(".hide-account-title .show_shipping_fields").hide();
     }else{
       $(".hide-account-title .show_shipping_fields").show();
-      $(".hide-account-title .show_shipping_fields input.input-text").prop('required', true);
     }
  }); 
 
@@ -116,6 +112,62 @@ $("#apply_coupon_code").click(function(){
     $("body .checkout_coupon.woocommerce-form-coupon input#coupon_code").val(couponCode)
     $(".checkout_coupon button").submit();
 
+});
+
+
+jQuery('body').on('wc_cart_emptied', function(){
+  location.reload();
+  //console.log('wc_cart_emptied triggered');
+});
+
+
+// Woocommerce form validation
+if( $("body.woocommerce-account.woocommerce-edit-address").length ){
+    $('body.woocommerce-account.woocommerce-edit-address form p.form-row.validate-required').addClass('required-field');
+}
+
+var txt1 = $('.register-nextstep form').find('span.error-valid').text();
+var txt2 = $('.woocommerce-edit-account-crtl form').find('span.error-valid').text();
+//$('.register-nextstep form').find('span.error-valid').parents('p.form-row').addClass('hasError');
+//$('.woocommerce-edit-account-crtl form').find('span.error-valid').parents('p.form-row').addClass('hasError');
+
+$('.register-nextstep form span.error-valid').each(function(){
+    if ($(this).is(':empty')){
+        $(this).parents('p.form-row').removeClass('hasError');
+    }else{
+        $(this).parents('p.form-row').addClass('hasError');
+    }
+});
+$('.woocommerce-edit-account-crtl form span.error-valid').each(function(){
+    if ($(this).is(':empty')){
+        $(this).parents('p.form-row').removeClass('hasError');
+    }else{
+        $(this).parents('p.form-row').addClass('hasError');
+    }
+});
+
+$('.woocommerce-edit-address form span.error-valid').each(function(){
+    if ($(this).is(':empty')){
+        $(this).parents('p.form-row').removeClass('hasError');
+    }else{
+        $(this).parents('p.form-row').addClass('hasError');
+    }
+});
+
+//$('.register-nextstep form input#is_shipping_address').trigger('click');
+$('.register-nextstep form p.form-row.required-field input,.woocommerce-edit-account-crtl form p.form-row.required-field input').blur(function(){
+    if( $(this).val().length === 0 ) {
+        $(this).parents('p.form-row').addClass('hasError');
+    }else{
+        $(this).parents('p.form-row').removeClass('hasError');
+    }
+});
+$('#review_form form input, #review_form form textarea').blur(function(){
+    if( $(this).val().length === 0 ) {
+        $(this).parent('p').addClass('hasError');
+    }else{
+        $(this).parent('p').removeClass('hasError');
+    }
 });
 
 })(jQuery);
