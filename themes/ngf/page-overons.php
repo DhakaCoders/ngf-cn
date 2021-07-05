@@ -76,7 +76,7 @@ $thisID = get_the_ID();
   $intro = get_field('intro_sec', $thisID);
     if($intro ):
 ?>
-<div class="ovo-two-grds-des-module-sec">
+<div class="ovo-two-grds-des-module-sec" style="background-color: #fff;">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
