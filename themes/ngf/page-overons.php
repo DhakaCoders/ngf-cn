@@ -76,7 +76,7 @@ $thisID = get_the_ID();
   $intro = get_field('intro_sec', $thisID);
     if($intro ):
 ?>
-<div class="ovo-two-grds-des-module-sec">
+<div class="ovo-two-grds-des-module-sec" style="background-color: #fff;">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -163,6 +163,45 @@ $thisID = get_the_ID();
 </div>
 
 
+
+<?php
+  $showhidecta = get_field('showhidecta', $thisID);
+  if($showhidecta): 
+  $cta_sec = get_field('cta_sec', $thisID);
+    if($cta_sec ):
+?>
+<section class="ovo-cta-module-mobile show-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="dfp-cta-module clearfix">
+            <div class="cta-ctlr">
+              <i class="contact-form-info-round-bg">
+                <svg class="contact-from-info-rnd-bg" width="35" height="61" viewBox="0 0 35 61" fill="transparent">
+                <use xlink:href="#contact-from-info-rnd-bg"></use> </svg>
+              </i>
+               <i class="contact-form-info-line-bg">
+                <svg class="contact-form-info-ln-bg" width="23" height="70" viewBox="0 0 23 70" fill="transparent">
+                <use xlink:href="#contact-from-info-line-bg"></use> </svg>
+              </i>
+              <?php 
+                  if( !empty($cta_sec['titel']) ) printf( '<h4 class="cta-title fl-h4">%s</h4>', $cta_sec['titel'] );
+                  if( !empty($cta_sec['beschrijving']) ) echo wpautop( $cta_sec['beschrijving'] ); 
+
+                  $cta_knop = $cta_sec['knop'];
+                  if( is_array( $cta_knop ) &&  !empty( $cta_knop['url'] ) ){
+                  printf('<div class="cta-btn"><a href="%s" target="%s">%s<i><svg class="rgt-btn-white-icon-svg" width="12" height="12" viewBox="0 0 12 12" fill="#FFF"> <use xlink:href="#rgt-btn-white-icon-svg"></use></svg></i></a></div>', $cta_knop['url'], $cta_knop['target'], $cta_knop['title']); 
+                }
+              ?>
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php endif; endif;?>
+
 <?php
   $showhidevideoblok = get_field('showhidevideoblok', $thisID);
   if($showhidevideoblok): 
@@ -173,14 +212,14 @@ $thisID = get_the_ID();
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="fancy-vedeo-items-sec-cntlr  hide-sm">
-          <ul class="reset-list  clearfix">
+        <div class="fancy-vedeo-items-sec-cntlr">
+          <div class="ovomblfvSlider">
             <?php 
               foreach( $video_bloks as $video_blok ): 
                 $video_blok_poster = !empty($video_blok['afbeelding'])? cbv_get_image_src( $video_blok['afbeelding'], 'full' ): '';
             ?>
-            <li>
-              <div class="fl-fancy-module  ovo-fancy-module">
+            <div class="fl-fancy-module-col">
+              <div class="fl-fancy-module ovo-fancy-module">
                 <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
                   <div class="ovo-fancy-module-img  instead-fancy-to-Img ">
                     <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo $video_blok_poster; ?>);">
@@ -206,261 +245,26 @@ $thisID = get_the_ID();
                       <?php if( !empty($video_blok['beschrijving']) ) echo wpautop($video_blok['beschrijving']); ?>
                     </div>
 
-                   <?php 
-                      $vbknop = $video_blok['knop'];
-                      if( is_array( $vbknop ) &&  !empty( $vbknop['url'] ) ){
-                          printf('<div class="fl-pro-grd-btn"><a class="fl-read-more-btn" href="%s" target="%s"><span>%s</span><i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12"><use xlink:href="#dip-yellow-right-arrow"></use></svg></i></a></div>', $vbknop['url'], $vbknop['target'], $vbknop['title']); 
-                        }
+
+                    <?php 
+                        $vbknop = $video_blok['knop'];
+                        if( $vbknop ):
                     ?>
+                    <div class="fl-pro-grd-btn">
+                      <a class="fl-read-more-btn" target="_blank" href="<?php echo esc_url( $vbknop ); ?>">
+                        <span>READ MORE</span>
+                        <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                        </i>
+                      </a>
+                    </div>
+                    <?php endif; ?>
 
                   </div>
                 </div>
               </div>
-            </li>
+            </div>
             <?php endforeach; ?>
-  <!--             <li>
-              <div class="fl-fancy-module  ovo-fancy-module">
-                <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
-                  <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-2.jpg);">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
-                    </div>
-                    <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
-                    <span class="fl-video-play-icon-cntlr">
-                      <i>
-                        <svg class="play-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="#fff">
-                          <use xlink:href="#ov-vedeo-play-icon-svg"></use> 
-                        </svg>
-                      </i>
-                    </span>
-                  </div>
-                  <div class="ovo-fancy-module-item-des">
-                    <h3 class="ofmi-heading mHc1"><a href="#">LOREM IPSUM</a></h3>
-                    <div class="ovo-fancy-modl-item-para">
-                      <p class="mHc2">Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                    </div>
-                    <div class="fl-pro-grd-btn">
-                      <a class="fl-read-more-btn" href="#">
-                        <span>READ MORE</span>
-                        <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                        <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                        </i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="fl-fancy-module  ovo-fancy-module">
-                <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
-                  <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg);">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
-                    </div>
-                    <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
-                    <span class="fl-video-play-icon-cntlr">
-                      <i>
-                        <svg class="play-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="#fff">
-                          <use xlink:href="#ov-vedeo-play-icon-svg"></use> 
-                        </svg>
-                      </i>
-                    </span>
-                  </div>
-                  <div class="ovo-fancy-module-item-des">
-                    <h3 class="ofmi-heading mHc1"><a href="#">LOREM IPSUM</a></h3>
-                    <div class="ovo-fancy-modl-item-para">
-                      <p class="mHc2">Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                    </div>
-                    <div class="fl-pro-grd-btn">
-                      <a class="fl-read-more-btn" href="#">
-                        <span>READ MORE</span>
-                        <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                        <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                        </i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="fl-fancy-module  ovo-fancy-module">
-                <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
-                  <div class="ovo-fancy-module-img  instead-fancy-to-Img    ">
-                    <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-2.jpg);">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
-                    </div>
-                    <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
-                    <span class="fl-video-play-icon-cntlr">
-                      <i>
-                        <svg class="play-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="#fff">
-                          <use xlink:href="#ov-vedeo-play-icon-svg"></use> 
-                        </svg>
-                      </i>
-                    </span>
-                  </div>
-                  <div class="ovo-fancy-module-item-des">
-                    <h3 class="ofmi-heading mHc1"><a href="#">LOREM IPSUM</a></h3>
-                    <div class="ovo-fancy-modl-item-para">
-                      <p class="mHc2">Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                    </div>
-                    <div class="fl-pro-grd-btn">
-                      <a class="fl-read-more-btn" href="#">
-                        <span>READ MORE</span>
-                        <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                        <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                        </i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li> -->
-          </ul>
-        </div>
-
-        <div class="ovo-cta-module-mobile show-sm">
-          <div class="dfp-cta-module clearfix">
-            <div class="cta-ctlr">
-              <i class="contact-form-info-round-bg">
-                <svg class="contact-from-info-rnd-bg" width="35" height="61" viewBox="0 0 35 61" fill="transparent">
-                <use xlink:href="#contact-from-info-rnd-bg"></use> </svg>
-              </i>
-               <i class="contact-form-info-line-bg">
-                <svg class="contact-form-info-ln-bg" width="23" height="70" viewBox="0 0 23 70" fill="transparent">
-                <use xlink:href="#contact-from-info-line-bg"></use> </svg>
-              </i>
-              <h4 class="cta-title fl-h4">CTA</h4>
-              <p>Ut purus ipsum, interdum quis libero et, tincidunt tincidunt ante.</p>
-              <div class="cta-btn">
-                <a href="#">
-                  BUTTON
-                  <i>
-                    <svg class="rgt-btn-white-icon-svg" width="12" height="12" viewBox="0 0 12 12" fill="#FFF">
-                      <use xlink:href="#rgt-btn-white-icon-svg"></use>
-                    </svg>
-                  </i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- if want to use only ImgSLider instead fancy ,use this class "have-no-fancy" into "instead-fancy-of-ImgSlider   " -->
-        <div class="ovo-mobile-vedeo-fancy-slider-cntlr  show-sm">
-          <div class="ovo-mobile-vedeo-fancy-slider-inner  ovomblfvSlider">
-            <div class="ovo-mfvs-item">
-              <ul class="reset-list  clearfix">
-                <li>
-                  <div class="fl-fancy-module  ovo-fancy-module">
-                    <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
-                      <div class="ovo-fancy-module-img   instead-fancy-of-ImgSlider   ">
-                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg);">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
-                        </div>
-                        <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
-                        <span class="fl-video-play-icon-cntlr">
-                          <i>
-                            <svg class="play-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="#fff">
-                              <use xlink:href="#ov-vedeo-play-icon-svg"></use> 
-                            </svg>
-                          </i>
-                        </span>
-                      </div>
-                      <div class="ovo-fancy-module-item-des">
-                        <h3 class="ofmi-heading mHc1"><a href="#">LOREM IPSUM</a></h3>
-                        <div class="ovo-fancy-modl-item-para">
-                          <p class="mHc2">Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                        </div>
-                        <div class="fl-pro-grd-btn">
-                          <a class="fl-read-more-btn" href="#">
-                            <span>READ MORE</span>
-                            <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                            <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                            </i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="ovo-mfvs-item">
-              <ul class="reset-list  clearfix">
-                <li>
-                  <div class="fl-fancy-module  ovo-fancy-module">
-                    <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
-                      <div class="ovo-fancy-module-img   instead-fancy-of-ImgSlider   ">
-                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-2.jpg);">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
-                        </div>
-                        <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
-                        <span class="fl-video-play-icon-cntlr">
-                          <i>
-                            <svg class="play-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="#fff">
-                              <use xlink:href="#ov-vedeo-play-icon-svg"></use> 
-                            </svg>
-                          </i>
-                        </span>
-                      </div>
-                      <div class="ovo-fancy-module-item-des">
-                        <h3 class="ofmi-heading mHc1"><a href="#">LOREM IPSUM</a></h3>
-                        <div class="ovo-fancy-modl-item-para">
-                          <p class="mHc2">Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                        </div>
-                        <div class="fl-pro-grd-btn">
-                          <a class="fl-read-more-btn" href="#">
-                            <span>READ MORE</span>
-                            <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                            <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                            </i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="ovo-mfvs-item">
-              <ul class="reset-list  clearfix">
-                <li>
-                  <div class="fl-fancy-module  ovo-fancy-module">
-                    <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
-                      <div class="ovo-fancy-module-img   instead-fancy-of-ImgSlider   ">
-                        <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg);">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/ov-fancy-img-1.jpg" alt="">
-                        </div>
-                        <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
-                        <span class="fl-video-play-icon-cntlr">
-                          <i>
-                            <svg class="play-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="#fff">
-                              <use xlink:href="#ov-vedeo-play-icon-svg"></use> 
-                            </svg>
-                          </i>
-                        </span>
-                      </div>
-                      <div class="ovo-fancy-module-item-des">
-                        <h3 class="ofmi-heading mHc1"><a href="#">LOREM IPSUM</a></h3>
-                        <div class="ovo-fancy-modl-item-para">
-                          <p class="mHc2">Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                        </div>
-                        <div class="fl-pro-grd-btn">
-                          <a class="fl-read-more-btn" href="#">
-                            <span>READ MORE</span>
-                            <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                            <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                            </i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -469,6 +273,9 @@ $thisID = get_the_ID();
 </section>
 
 <?php endif; endif;?>
+
+
+
 
 <section class="ovo-testimonial-slider-sec">
   <div class="container">

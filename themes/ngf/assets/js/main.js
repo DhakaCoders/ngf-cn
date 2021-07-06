@@ -519,12 +519,55 @@ if( $('.blogDetailsSlider').length ){
 
 /*start of Jahir*/
 
-if( $('.faqSlider').length ){
-    $('.faqSlider').slick({
+// if( $('.faqSlider').length ){
+//     $('.faqSlider').slick({
+//       dots: true,
+//       arrows:false,
+//       infinite: false,
+//       autoplay: false,
+//       autoplaySpeed: 4000,
+//       speed: 700,
+//       slidesToShow: 1,
+//       slidesToScroll: 1,
+      
+//     });
+// }
+if( $('.faqSlider1').length ){
+    $('.faqSlider1').slick({
       dots: true,
       arrows:false,
       infinite: false,
       autoplay: false,
+      rows: 2,
+      slidesPerRow: 1,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+          responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          infinite: false,
+          rows: 2,
+          slidesPerRow: 1,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+      
+    });
+}
+
+if( $('.faqSlider2').length ){
+    $('.faqSlider2').slick({
+      dots: true,
+      arrows:false,
+      infinite: false,
+      autoplay: false,
+      rows: 2,
+      slidesPerRow: 1,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 1,
@@ -532,18 +575,49 @@ if( $('.faqSlider').length ){
       
     });
 }
-if( $('.ovomblfvSlider').length ){
-    $('.ovomblfvSlider').slick({
-      dots: true,
-      arrows:false,
+
+
+if( $('.faqSlider2').length ){
+  $('.faqSlider2').slick({
       infinite: false,
-      autoplay: false,
+      rows: 2,
+      slidesPerRow: 3,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevNext: false,
+      arrows: false,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            infinite: false,
+            rows: 3,
+            slidesPerRow: 2,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+  });
+}
+
+if(windowWidth <=767){
+  if( $('.ovomblfvSlider').length ){
+    $('.ovomblfvSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: true,
+      arrows:false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1
     });
+  }
 }
+
+
 if( $('.werkmsgSlider').length ){
     $('.werkmsgSlider').slick({
       dots: true,
