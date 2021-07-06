@@ -110,25 +110,37 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
               <?php if( !empty($smedias['facebook_url']) ): ?>
               <div class="chk-scl-itm fb">
                 <a href="<?php echo $smedias['facebook_url']; ?>" class="overlay-link" target="_blank"></a>
-                <i class="fab fa-facebook-f"></i>
-              </div>
-              <?php endif; ?>
-              <?php if( !empty($smedias['instagram_url']) ): ?>
-              <div class="chk-scl-itm inst">
-                <a href="<?php echo $smedias['instagram_url']; ?>" class="overlay-link" target="_blank"></a>
-                <i class="fab fa-instagram"></i>
+                <i>
+                  <svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                  <use xlink:href="#facebook-icon"></use> </svg>
+                </i>
               </div>
               <?php endif; ?>
               <?php if( !empty($smedias['twitter_url']) ): ?>
               <div class="chk-scl-itm twitter">
-                <a href="<?php echo $smedias['twitter_url']; ?>" class="overlay-link" target="_blank"></a>
-                <i class="fab fa-twitter"></i>
+                <a href="<?php echo $smedias['instagram_url']; ?>" class="overlay-link" target="_blank"></a>
+                <i>
+                  <svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                  <use xlink:href="#twiter-icon"></use> </svg>
+                </i>
               </div>
               <?php endif; ?>
               <?php if( !empty($smedias['linkedin_url']) ): ?>
               <div class="chk-scl-itm linkedin">
+                <a href="<?php echo $smedias['twitter_url']; ?>" class="overlay-link" target="_blank"></a>
+                <i>
+                  <svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                  <use xlink:href="#linkden-icon"></use> </svg>
+                </i>
+              </div>
+              <?php endif; ?>
+              <?php if( !empty($smedias['instagram_url']) ): ?>
+              <div class="chk-scl-itm inst">
                 <a href="<?php echo $smedias['linkedin_url']; ?>" class="overlay-link" target="_blank"></a>
-                <i class="fab fa-linkedin-in"></i>
+                <i>
+                  <svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                  <use xlink:href="#instagram-icon"></use> </svg>
+                </i>
               </div>
               <?php endif; ?>
             </div>
