@@ -276,6 +276,27 @@ $thisID = get_the_ID();
 
 
 
+<?php
+  $showhideclient = get_field('showhideclient', $thisID);
+  if($showhideclient): 
+
+    $clientsec = get_field('clientsec', $thisID);
+    if($clientsec ):
+
+
+
+$refobj = $clientsec['referenties'];
+  if( empty($refobj) ){
+      $refobj = get_posts( array(
+        'post_type' => 'referenties',
+        'posts_per_page'=> 3,
+        'orderby' => 'date',
+        'order'=> 'desc',
+
+      ) );
+      
+  }
+?>
 
 <section class="ovo-testimonial-slider-sec">
   <div class="container">
@@ -283,54 +304,39 @@ $thisID = get_the_ID();
       <div class="col-md-12">
         <div class="ovo-testimonial-slider-cntlr">
           <div class="dfp-testimonial-module  ovo-testimonial">
-            <div class="testimonial-ctlr">
+             <div class="testimonial-ctlr">
               <div class="sec-entry-hdr">
-                <h3 class="fl-h3">client options</h3>
+                <?php if( !empty($clientsec['titel']) ) printf('<h3 class="fl-h3">%s</h3>', $clientsec['titel']); ?>
               </div>
+              <?php if($refobj){ ?>
               <div class="testimonial-grds dfpTestimonialSlider">
+                <?php 
+                  foreach( $refobj as $ref ) {
+                  global $post;
+                  $imgID = get_post_thumbnail_id($ref->ID);
+                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): ''; 
+                  $name = get_field('naam', $ref->ID);
+                ?>
                 <div class="testimonial-grd-item">
                   <div class="testimonial-grd-item-inr">
                     <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
+                      <i><?php echo $imgtag; ?></i>
                     </div>
                     <div class="testimonial-grd-item-des">
                       <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
+                        <?php echo wpautop($ref->post_excerpt); ?>
+                        <?php if( !empty($name) ) printf('<strong>%s</strong>', $name); ?>
                       </blockquote>
                     </div>
                   </div>
                 </div>
-                <div class="testimonial-grd-item">
-                  <div class="testimonial-grd-item-inr">
-                    <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
-                    </div>
-                    <div class="testimonial-grd-item-des">
-                      <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonial-grd-item">
-                  <div class="testimonial-grd-item-inr">
-                    <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
-                    </div>
-                    <div class="testimonial-grd-item-des">
-                      <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
+                <?php } ?>
               </div>
+              
               <div class="testimonial-btn">
-                <a class="fl-black-btn" href="#">other testimonials</a>
+                <a class="fl-black-btn" href="<?php echo get_link_by_page_template('page-referenties.php'); ?>"><?php _e( 'other testimonials', 'ngf' ); ?></a>
               </div>
+            <?php } ?>
             </div>
           </div>
         </div>
@@ -338,6 +344,8 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
+<?php endif; endif;?>
+
 
 <section class="faq-slider-sec">
   <span class="latest-news-bg hide-sm"><svg class="latest-nws-bg" width="484" height="727" viewBox="0 0 484 727" fill="#FFA800">
