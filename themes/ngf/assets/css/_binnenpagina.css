@@ -264,7 +264,7 @@ Gallery design
 	top: 0;
 	right: 0;
 }
-.cta-ctlr i.contact-form-info-line-bg{
+.cta-ctlr i.cta-line{
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -1354,6 +1354,9 @@ Gallery design
 	}
 	#referenties-details .bnr-grd-des p{
 		font-size: 22px;
+	}
+	.cta-title{
+		font-size: 24px!important;
 	}
 
 }

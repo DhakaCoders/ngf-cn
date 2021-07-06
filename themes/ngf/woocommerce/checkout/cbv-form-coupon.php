@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 <p class="form-row form-row-first coupon-full-width">
-	<input type="text" name="coupon_code_enter" class="input-text" placeholder="<?php esc_attr_e( 'Heb je een kortingscode?', 'woocommerce' ); ?>" id="coupon_code_enter" value="" />
+	<input type="text" name="coupon_code_enter" class="input-text" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" id="coupon_code_enter" value="" />
 </p>
 
 <p class="form-row form-row-last">

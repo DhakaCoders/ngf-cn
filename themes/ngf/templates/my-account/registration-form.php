@@ -125,6 +125,7 @@
 						<span class="woocommerce-input-wrapper">
 							<input type="text" class="input-text " name="shipping_last_name" id="shipping_last_name" placeholder="Last Name" value="<?php echo isset($_POST['shipping_last_name'])? $_POST['shipping_last_name']:'';?>">
 						</span>
+						<?php if( isset($data_reg) && array_key_exists('ship_lname', $data_reg) ){printf('<span class="error-valid error-ship_lname">%s</span>', $data_reg['ship_lname'] );}?>
 					</p>
 					<p class="form-row form-row-first shipping_postcode required-field" id="shipping_postcode_field">
 						<label for="shipping_postcode" class=""><?php esc_html_e( 'Postal code', 'woocommerce' ); ?></label>

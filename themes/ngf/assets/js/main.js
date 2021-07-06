@@ -516,34 +516,148 @@ if( $('.blogDetailsSlider').length ){
 }
 
 
+if( $('.qty1').length ){
+  $('.qty1').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
+
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
+
+}
+
+
 
 /*start of Jahir*/
-
-if( $('.faqSlider').length ){
-    $('.faqSlider').slick({
+if(windowWidth <=767){
+  if( $('.ovomblfvSlider').length ){
+    $('.ovomblfvSlider').slick({
       dots: true,
-      arrows:false,
       infinite: false,
-      autoplay: false,
+      autoplay: true,
+      arrows:false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1,
-      
+      slidesPerRow: 3,
+      responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: false,
+          rows:1,
+          slidesPerRow: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
     });
+  }
 }
-if( $('.ovomblfvSlider').length ){
-    $('.ovomblfvSlider').slick({
+
+
+if( $('.faqSlider1').length ){
+    $('.faqSlider1').slick({
       dots: true,
       arrows:false,
       infinite: false,
       autoplay: false,
+      rows: 2,
+      slidesPerRow: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplaySpeed: 4000,
+      speed: 700,    
+          responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: false,
+          rows: 3,
+          slidesPerRow: 1,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+      
+    });
+    $('.faq-slide-item').parent().addClass('ovo-faq-slider-addcls');
+}
+
+if( $('.faqSlider2').length ){
+  if(windowWidth <=639){
+    $('.faqSlider2').slick({
+      dots: true,
+      arrows:false,
+      infinite: false,
+      autoplay: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplaySpeed: 4000,
+      speed: 700,          
+    });
+  }else{
+    $('.faqSlider2').slick({
+      dots: true,
+      arrows:false,
+      infinite: false,
+      autoplay: false,
+      rows: 2,
+      slidesPerRow: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplaySpeed: 4000,
+      speed: 700,        
+    });
+    $('.faq-slide-item').parent().addClass('ovo-faq-slider-addcls');
+
+  }
+}
+
+if(windowWidth <=767){
+  if( $('.ovomblfvSlider').length ){
+    $('.ovomblfvSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: true,
+      arrows:false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1
     });
+  }
 }
+
+
 if( $('.werkmsgSlider').length ){
     $('.werkmsgSlider').slick({
       dots: true,

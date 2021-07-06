@@ -74,6 +74,10 @@ function ajax_register_save(){
                $data_reg['ship_fname'] = __('Controleer dit veld', 'woocommerce');
                $error = true;
             }
+            if( isset($_POST['shipping_last_name']) && empty($_POST['shipping_last_name']) ){
+               $data_reg['ship_lname'] = __('Controleer dit veld', 'woocommerce');
+               $error = true;
+            }
             if( isset($_POST['shipping_postcode']) && empty($_POST['shipping_postcode']) ){
                $data_reg['ship_postcode'] = __('Controleer dit veld', 'woocommerce');
                $error = true;
@@ -196,6 +200,8 @@ function ajax_register_save(){
                         if( isset($_POST['shipping_postcode']) && !empty($_POST['shipping_postcode']) ){
                             update_user_meta( $customerId, "shipping_postcode", sanitize_text_field($_POST['shipping_postcode']) );
                         }
+                    }else{
+                        update_user_meta($customerId,"enable_ship_to_different", 0);
                     }
                     $user = get_user_by( 'id', $customerId );
                     if($user){
