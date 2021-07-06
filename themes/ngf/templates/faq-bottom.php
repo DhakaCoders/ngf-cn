@@ -16,53 +16,15 @@
             <h3 class="fl-h3 fssh-title">gerelateerd FAQ</h3>
           </div>
 
-          <div class="faq-slider-desktop hide-sm">
-            <div class="faq-slider faqSlider">
+          <!-- faqSlider1 start -->
+          <div class="faq-slider-cntlr faq-slider-cntlr-1 ">
+            <div class="faq-slider faqSlider1">
 
               <div class="faq-slide-item">
                 <div class="faq-grids-cntlr">
                   <div class="faq-grid-item-col mHc">
                     <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
                       <div class="fl-pro-grd-btn">
                         <a class="fl-read-more-btn" href="#">
                           <span>READ MORE</span>
@@ -79,69 +41,7 @@
                 <div class="faq-grids-cntlr">
                   <div class="faq-grid-item-col mHc">
                     <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-slider-sm show-sm">
-            <div class="faq-slider faqSlider">
-
-              <div class="faq-slide-item">
-                <div class="faq-grids-cntlr">
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
                       <div class="fl-pro-grd-btn">
                         <a class="fl-read-more-btn" href="#">
                           <span>READ MORE</span>
@@ -158,7 +58,7 @@
                 <div class="faq-grids-cntlr">
                   <div class="faq-grid-item-col mHc">
                     <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
                       <div class="fl-pro-grd-btn">
                         <a class="fl-read-more-btn" href="#">
                           <span>READ MORE</span>
@@ -175,7 +75,75 @@
                 <div class="faq-grids-cntlr">
                   <div class="faq-grid-item-col mHc">
                     <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
                       <div class="fl-pro-grd-btn">
                         <a class="fl-read-more-btn" href="#">
                           <span>READ MORE</span>
@@ -191,6 +159,151 @@
 
             </div>
           </div>
+          <!-- faqSlider1 end -->
+
+
+          <!-- faqSlider2 start -->
+          <div class="faq-slider-cntlr faq-slider-cntlr-2  d-none">
+            <div class="faq-slider faqSlider2">
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <a href="#"><h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="#">
+                          <span>READ MORE</span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- faqSlider2 end -->
         </div>
       </div>
     </div>
