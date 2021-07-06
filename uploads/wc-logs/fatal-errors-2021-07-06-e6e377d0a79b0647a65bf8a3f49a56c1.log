@@ -1,2 +1,8 @@
 2021-07-06T16:11:09+00:00 CRITICAL syntax error, unexpected end of file in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\index.php on line 228
 
+2021-07-06T17:17:08+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\category.php on line 29
+
+2021-07-06T18:42:27+00:00 CRITICAL syntax error, unexpected '}' in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\single.php on line 33
+
+2021-07-06T18:43:06+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\single.php on line 232
+
