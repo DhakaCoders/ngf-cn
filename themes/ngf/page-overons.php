@@ -180,9 +180,9 @@ $thisID = get_the_ID();
                 <svg class="contact-from-info-rnd-bg" width="35" height="61" viewBox="0 0 35 61" fill="transparent">
                 <use xlink:href="#contact-from-info-rnd-bg"></use> </svg>
               </i>
-               <i class="contact-form-info-line-bg">
-                <svg class="contact-form-info-ln-bg" width="23" height="70" viewBox="0 0 23 70" fill="transparent">
-                <use xlink:href="#contact-from-info-line-bg"></use> </svg>
+               <i class="cta-line">
+                <svg class="cta-line-svg" width="32" height="89" viewBox="0 0 32 89" fill="transparent">
+                <use xlink:href="#cta-line-svg"></use> </svg>
               </i>
               <?php 
                   if( !empty($cta_sec['titel']) ) printf( '<h4 class="cta-title fl-h4">%s</h4>', $cta_sec['titel'] );
@@ -276,6 +276,27 @@ $thisID = get_the_ID();
 
 
 
+<?php
+  $showhideclient = get_field('showhideclient', $thisID);
+  if($showhideclient): 
+
+    $clientsec = get_field('clientsec', $thisID);
+    if($clientsec ):
+
+
+
+$refobj = $clientsec['referenties'];
+  if( empty($refobj) ){
+      $refobj = get_posts( array(
+        'post_type' => 'referenties',
+        'posts_per_page'=> 3,
+        'orderby' => 'date',
+        'order'=> 'desc',
+
+      ) );
+      
+  }
+?>
 
 <section class="ovo-testimonial-slider-sec">
   <div class="container">
@@ -283,54 +304,39 @@ $thisID = get_the_ID();
       <div class="col-md-12">
         <div class="ovo-testimonial-slider-cntlr">
           <div class="dfp-testimonial-module  ovo-testimonial">
-            <div class="testimonial-ctlr">
+             <div class="testimonial-ctlr">
               <div class="sec-entry-hdr">
-                <h3 class="fl-h3">client options</h3>
+                <?php if( !empty($clientsec['titel']) ) printf('<h3 class="fl-h3">%s</h3>', $clientsec['titel']); ?>
               </div>
+              <?php if($refobj){ ?>
               <div class="testimonial-grds dfpTestimonialSlider">
+                <?php 
+                  foreach( $refobj as $ref ) {
+                  global $post;
+                  $imgID = get_post_thumbnail_id($ref->ID);
+                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): ''; 
+                  $name = get_field('naam', $ref->ID);
+                ?>
                 <div class="testimonial-grd-item">
                   <div class="testimonial-grd-item-inr">
                     <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
+                      <i><?php echo $imgtag; ?></i>
                     </div>
                     <div class="testimonial-grd-item-des">
                       <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
+                        <?php echo wpautop($ref->post_excerpt); ?>
+                        <?php if( !empty($name) ) printf('<strong>%s</strong>', $name); ?>
                       </blockquote>
                     </div>
                   </div>
                 </div>
-                <div class="testimonial-grd-item">
-                  <div class="testimonial-grd-item-inr">
-                    <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
-                    </div>
-                    <div class="testimonial-grd-item-des">
-                      <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonial-grd-item">
-                  <div class="testimonial-grd-item-inr">
-                    <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
-                    </div>
-                    <div class="testimonial-grd-item-des">
-                      <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
+                <?php } ?>
               </div>
+              
               <div class="testimonial-btn">
-                <a class="fl-black-btn" href="#">other testimonials</a>
+                <a class="fl-black-btn" href="<?php echo get_link_by_page_template('page-referenties.php'); ?>"><?php _e( 'other testimonials', 'ngf' ); ?></a>
               </div>
+            <?php } ?>
             </div>
           </div>
         </div>
@@ -338,204 +344,9 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
+<?php endif; endif;?>
 
-<section class="faq-slider-sec">
-  <span class="latest-news-bg hide-sm"><svg class="latest-nws-bg" width="484" height="727" viewBox="0 0 484 727" fill="#FFA800">
-      <use xlink:href="#latest-nws-bg"></use> </svg>
-  </span>
-  <span class="latest-news-bg latest-nws-xs-bg show-sm">
-    <svg class="latest-news-xs-bg" width="146" height="598" viewBox="0 0 146 598" fill="#FFA800">
-      <use xlink:href="#latest-news-xs-bg"></use>
-    </svg>
-  </span>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="faq-slider-sec-inner">
-          <div class="sec-entry-hdr faq-slider-sec-hdr">
-            <h3 class="fl-h3 fssh-title">gerelateerd FAQ</h3>
-          </div>
-
-          <div class="faq-slider-desktop hide-sm">
-            <div class="faq-slider faqSlider">
-
-              <div class="faq-slide-item">
-                <div class="faq-grids-cntlr">
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="faq-slide-item">
-                <div class="faq-grids-cntlr">
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-slider-sm show-sm">
-            <div class="faq-slider faqSlider">
-
-              <div class="faq-slide-item">
-                <div class="faq-grids-cntlr">
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="faq-slide-item">
-                <div class="faq-grids-cntlr">
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="faq-slide-item">
-                <div class="faq-grids-cntlr">
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <a href="#"><h4 class="fl-h4 fgi-title mHc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4></a>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('templates/faq', 'bottom'); ?>
 
 <?php get_footer();?>

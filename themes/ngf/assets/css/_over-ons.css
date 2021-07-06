@@ -284,6 +284,7 @@ span.fl-video-play-icon-cntlr{
 }
 .ovo-cta-mobile {
     background: #fff;
+    padding-top: 30px;
 }
 
 
@@ -607,7 +608,8 @@ span.fl-video-play-icon-cntlr{
 }
 @media(max-width: 991px){
     .ovo-two-grds-des-module-sec {
-        padding-top: 90px;
+        padding-top: 70px;
+        padding-bottom: 60px;
     }
     .ovo-grds-des-lft p {
         font-size: 20px;
@@ -620,7 +622,6 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-full-width-bg-des-cntlr p {
         font-size: 22px;
-        line-height: 31px;
     }
     .fl-fancy-inline-bg-img {
         min-height: 300px;
@@ -637,10 +638,25 @@ span.fl-video-play-icon-cntlr{
     .ovo-fgi-title{
         font-size: 19px!important;
     }
+    .ovo-full-width-bg-des {
+        padding: 80px 0;
+    }
+    .ovo-fancy-vedeo-items-sec {
+        padding-top: 55px;
+    }
+    .ovo-testimonial-slider-sec {
+        padding-top: 50px;
+    }
+
+
 
 
 }
 @media(max-width: 767px){
+    .ovo-two-grds-des-module-sec {
+        padding-top: 40px;
+        padding-bottom: 35px;
+    }
     .ovo-grds-des-lft, .ovo-grds-des-rgt{
         max-width: 100%;
     }
@@ -648,11 +664,7 @@ span.fl-video-play-icon-cntlr{
         height: 420px;
     }
     .ovo-full-width-bg-des-cntlr p {
-        font-size: 20px;
-        line-height: 27px;
-    }
-    .ovo-cta-module-mobile {
-        padding-bottom: 30px;
+        font-size: 18px;
     }
     .ovo-grds-des-rgt {
         padding-left: 0;
@@ -711,16 +723,22 @@ span.fl-video-play-icon-cntlr{
     .ovo-testimonial-grd-item-des blockquote{
         padding: 0 20px;
     }
+    .ovo-full-width-bg-des {
+        padding: 55px 0;
+    }
+    .ovo-fancy-vedeo-items-sec {
+        padding-top: 35px;
+    }
+    .ovo-fancy-module-inr {
+        max-width: 400px;
+        margin: 0 auto;
+    }
 
 
 
 
 }
 @media(max-width: 575px){
-    .ovo-two-grds-des-module-sec {
-        padding-top: 50px;
-        padding-bottom: 55px;
-    }
     .ovo-full-width-img-sec {
         height: 240px;
     }
@@ -737,7 +755,6 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-full-width-bg-des-cntlr p {
         font-size: 18px;
-        line-height: 25px;
     }
     .fl-fancy-inline-bg-img {
         min-height: 240px;
