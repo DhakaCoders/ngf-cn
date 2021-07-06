@@ -625,7 +625,7 @@ if( $('.faqSlider2').length ){
       speed: 700,          
     });
   }else{
-      $('.faqSlider2').slick({
+    $('.faqSlider2').slick({
       dots: true,
       arrows:false,
       infinite: false,
@@ -640,9 +640,6 @@ if( $('.faqSlider2').length ){
     $('.faq-slide-item').parent().addClass('ovo-faq-slider-addcls');
 
   }
-
-
-
 }
 
 if(windowWidth <=767){

@@ -731,6 +731,10 @@ span.fl-video-play-icon-cntlr{
     .ovo-fancy-vedeo-items-sec {
         padding-top: 35px;
     }
+    .ovo-fancy-module-inr {
+        max-width: 400px;
+        margin: 0 auto;
+    }
 
 
 
