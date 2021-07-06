@@ -539,25 +539,26 @@ if( $('.faqSlider1').length ){
       infinite: false,
       autoplay: false,
       rows: 2,
-      slidesPerRow: 1,
-      autoplaySpeed: 4000,
-      speed: 700,
+      slidesPerRow: 2,
       slidesToShow: 1,
       slidesToScroll: 1,
+      autoplaySpeed: 4000,
+      speed: 700,    
           responsive: [
       {
-        breakpoint: 767,
+        breakpoint: 768,
         settings: {
           infinite: false,
-          rows: 2,
+          rows: 3,
           slidesPerRow: 1,
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         }
       }
     ]
       
     });
+    $('.faq-slide-item').parent().addClass('a');
 }
 
 if( $('.faqSlider2').length ){

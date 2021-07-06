@@ -302,7 +302,14 @@ span.fl-video-play-icon-cntlr{
     margin-bottom: 0;
 }
 
-
+.a .faq-slide-item .faq-grids-cntlr{
+    display: flex;
+    margin: initial;
+}
+.a .faq-slide-item .faq-grids-cntlr .faq-grid-item-col{
+    width: 100%;
+    padding-bottom: 40px;
+}
 
 
 
