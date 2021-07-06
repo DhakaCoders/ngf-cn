@@ -752,6 +752,12 @@ body.woocommerce-checkout del span.amount bdi span.woocommerce-Price-currencySym
 }
 
 
+body.woocommerce-page span.total-price-prefix {
+    display: block;
+    font-size: 12px;
+    color: #9B9B9B;
+    line-height: 24px;
+}
 
 /*responsive */
 @media (max-width: 1699px) {

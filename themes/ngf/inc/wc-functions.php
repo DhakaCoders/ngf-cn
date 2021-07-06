@@ -619,57 +619,24 @@ function selected_variation_price_replace_variable_price_range(){
     endif;
 }
 
-function add_order_number_start_setting( $settings ) {
-
-  $updated_settings = array();
-
-  foreach ( $settings as $section ) {
-
-    // at the bottom of the General Options section
-    if ( isset( $section['id'] ) && 'general_options' == $section['id'] &&
-       isset( $section['type'] ) && 'sectionend' == $section['type'] ) {
-
-    $updated_settings[] = array(
-        'name'     => __( 'VAT suffix', 'woocommerce' ),
-        'desc_tip' => __( 'This option will return vat text after spacific price.', 'woocommerce' ),
-        'id'       => 'woocommerce_vat_suffix',
-        'type'     => 'text'
-      );
-    }
-
-    $updated_settings[] = $section;
-  }
-  return $updated_settings;
-}
-add_filter( 'woocommerce_general_settings', 'add_order_number_start_setting' );
-
 //add_filter( 'woocommerce_get_price_html', 'kd_custom_price_message' );
-//add_filter( 'woocommerce_cart_item_subtotal', 'kd_custom_price_message' );  
+//add_filter( 'woocommerce_cart_item_subtotal', 'kd_custom_price_message' );
+add_filter( 'woocommerce_cart_item_price', 'kd_custom_price_message' );
 //add_filter( 'woocommerce_cart_subtotal', 'kd_custom_price_message' );  
 //add_filter( 'woocommerce_cart_total', 'kd_custom_price_message' ); 
 
 function kd_custom_price_message( $price ) {
-    $vat_text = get_option('woocommerce_vat_suffix');
+    $vat_text = get_option('woocommerce_price_display_suffix');
     if( !empty($vat_text) ){
         $afterPriceSymbol = '<span class="woocommerce-price-suffix">'.__($vat_text, 'ngf').'</span>';
         $price = $price . $afterPriceSymbol;
     }
     return $price;
 }
-function wc_price_custom_suffix( ) {
-    $vat_text = get_option('woocommerce_vat_suffix');
-    $afterPriceSymbol = '';
-    if( !empty($vat_text) ){
-        $afterPriceSymbol = '<span class="woocommerce-price-suffix">'.__($vat_text, 'ngf').'</span>';
-    }
-    echo $afterPriceSymbol;
-}
-add_action('cart_item_custom_suffix', 'wc_price_custom_suffix');
-add_action('loop_item_custom_suffix', 'wc_price_custom_suffix');
 add_action('total_amount_prefix', 'total_amount_custom_prefix');
 
 function total_amount_custom_prefix(){
-    $total_price_prefix = '<span class="total-price-prefix">'.__('Inclusief btw', 'ngf').'</span>';
+    $total_price_prefix = '<span class="total-price-prefix">'.__('including btw', 'ngf').'</span>';
     echo $total_price_prefix;
 }
 
