@@ -35,7 +35,6 @@ if( empty($faqobj) ){
       <div class="col-md-12">
         <div class="faq-slider-sec-inner">
           <div class="sec-entry-hdr faq-slider-sec-hdr">
-           <!--  <h3 class="fl-h3 fssh-title">gerelateerd FAQ</h3> -->
             <?php if( !empty($faqsec['titel']) ) printf('<h3 class="fl-h3 fssh-title">%s</h3>', $faqsec['titel']); ?>
           </div>
 
@@ -46,7 +45,8 @@ if( empty($faqobj) ){
               <?php 
                 foreach( $faqobj as $faq ) {
                 global $post;
-                $name = get_field('naam', $faq->ID);
+                printr($faq);
+                $name = get_field('title', $faq->ID);
               ?>
               <div class="faq-slide-item">
                 <div class="faq-grids-cntlr">
