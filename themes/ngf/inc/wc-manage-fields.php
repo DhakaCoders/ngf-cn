@@ -200,6 +200,8 @@ function ajax_register_save(){
                         if( isset($_POST['shipping_postcode']) && !empty($_POST['shipping_postcode']) ){
                             update_user_meta( $customerId, "shipping_postcode", sanitize_text_field($_POST['shipping_postcode']) );
                         }
+                    }else{
+                        update_user_meta($customerId,"enable_ship_to_different", 0);
                     }
                     $user = get_user_by( 'id', $customerId );
                     if($user){

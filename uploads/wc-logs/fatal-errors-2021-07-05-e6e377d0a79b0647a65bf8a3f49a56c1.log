@@ -7,3 +7,9 @@ Stack trace:
 #4 {main}
   thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\page-overons.php on line 205
 
+2021-07-05T18:10:50+00:00 CRITICAL syntax error, unexpected ',' in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\inc\wc-functions.php on line 647
+
+2021-07-05T18:11:50+00:00 CRITICAL syntax error, unexpected ',' in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\inc\wc-functions.php on line 647
+
+2021-07-05T18:12:16+00:00 CRITICAL syntax error, unexpected ',' in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\inc\wc-functions.php on line 647
+

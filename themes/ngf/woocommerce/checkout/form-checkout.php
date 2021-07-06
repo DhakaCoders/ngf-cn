@@ -23,7 +23,7 @@ if( is_user_logged_in() ){
 	$enable_different_address = get_user_meta(get_current_user_id()
 , 'enable_ship_to_different', true);
 	$enable_different_address = isset($enable_different_address)?$enable_different_address:0;
-	if($enable_different_address){
+	if( ! $enable_different_address ){
 		?>
 		<script> 
 			(function($) {
