@@ -35,26 +35,25 @@ if( empty($faqobj) ){
       <div class="col-md-12">
         <div class="faq-slider-sec-inner">
           <div class="sec-entry-hdr faq-slider-sec-hdr">
-           <!--  <h3 class="fl-h3 fssh-title">gerelateerd FAQ</h3> -->
             <?php if( !empty($faqsec['titel']) ) printf('<h3 class="fl-h3 fssh-title">%s</h3>', $faqsec['titel']); ?>
           </div>
 
-          <!-- faqSlider1 start -->
+          <!-- faqSlider1 start  fox xs 3 items-->
           <?php if($faqobj){ ?>
           <div class="faq-slider-cntlr faq-slider-cntlr-1 ">
             <div class="faq-slider faqSlider1">
               <?php 
                 foreach( $faqobj as $faq ) {
                 global $post;
-                $name = get_field('naam', $faq->ID);
+                $title = $faq->post_title;
               ?>
               <div class="faq-slide-item">
                 <div class="faq-grids-cntlr">
                   <div class="faq-grid-item-col mHc">
                     <div class="faq-grid-item mHc1">
-<!--                       <?php if( !empty($name) ):?> -->
-                      <h4 class="fl-h4 fgi-title ovo-fgi-title mHc2"><a href="<?php the_permalink(); ?>"><?php  echo $name; ?></a></h4>
-                     <!--  <?php endif; ?> -->
+                      <?php if( !empty($name) ):?>
+                      <h4 class="fl-h4 fgi-title ovo-fgi-title mHc2"><a href="<?php the_permalink(); ?>"><?php  echo $title; ?></a></h4>
+                      <?php endif; ?>
                       <div class="fl-pro-grd-btn">
                         <a class="fl-read-more-btn" href="<?php the_permalink(); ?>">
                           <span>READ MORE</span>
@@ -75,17 +74,24 @@ if( empty($faqobj) ){
           <!-- faqSlider1 end -->
 
 
-          <!-- faqSlider2 start -->
-          <div class="faq-slider-cntlr faq-slider-cntlr-2  d-none">
+          <!-- faqSlider2 start :   for xs 1 item-->
+          <?php if($faqobj){ ?>
+          <div class="faq-slider-cntlr faq-slider-cntlr-2 d-none">
             <div class="faq-slider faqSlider2">
-
+              <?php 
+                foreach( $faqobj as $faq ) {
+                global $post;
+                $title = $faq->post_title;
+              ?>
               <div class="faq-slide-item">
                 <div class="faq-grids-cntlr">
                   <div class="faq-grid-item-col mHc">
                     <div class="faq-grid-item mHc1">
-                      <h4 class="fl-h4 fgi-title  ovo-fgi-title mHc2"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a></h4>
+                      <?php if( !empty($name) ):?>
+                      <h4 class="fl-h4 fgi-title ovo-fgi-title mHc2"><a href="<?php the_permalink(); ?>"><?php  echo $title; ?></a></h4>
+                      <?php endif; ?>
                       <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="#">
+                        <a class="fl-read-more-btn" href="<?php the_permalink(); ?>">
                           <span>READ MORE</span>
                           <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
                           <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
@@ -96,9 +102,11 @@ if( empty($faqobj) ){
                   </div>
                 </div>
               </div>
+              <?php } ?>
 
             </div>
           </div>
+          <?php } ?>
           <!-- faqSlider2 end -->
         </div>
       </div>
