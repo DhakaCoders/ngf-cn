@@ -554,22 +554,6 @@ if( $('.qty1').length ){
 
 
 /*start of Jahir*/
-
-// if( $('.faqSlider').length ){
-//     $('.faqSlider').slick({
-//       dots: true,
-//       arrows:false,
-//       infinite: false,
-//       autoplay: false,
-//       autoplaySpeed: 4000,
-//       speed: 700,
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-      
-//     });
-// }
-
-
 if(windowWidth <=767){
   if( $('.ovomblfvSlider').length ){
     $('.ovomblfvSlider').slick({
@@ -629,45 +613,36 @@ if( $('.faqSlider1').length ){
 }
 
 if( $('.faqSlider2').length ){
+  if(windowWidth <=639){
     $('.faqSlider2').slick({
       dots: true,
       arrows:false,
       infinite: false,
       autoplay: false,
-      rows: 2,
-      slidesPerRow: 1,
+      slidesToShow: 1,
+      slidesToScroll: 1,
       autoplaySpeed: 4000,
-      speed: 700,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      
+      speed: 700,          
     });
-}
-
-
-if( $('.faqSlider2').length ){
-  $('.faqSlider2').slick({
+  }else{
+      $('.faqSlider2').slick({
+      dots: true,
+      arrows:false,
       infinite: false,
+      autoplay: false,
       rows: 2,
-      slidesPerRow: 3,
+      slidesPerRow: 2,
       slidesToShow: 1,
       slidesToScroll: 1,
-      prevNext: false,
-      arrows: false,
-      dots: false,
-      responsive: [
-        {
-          breakpoint: 1199,
-          settings: {
-            infinite: false,
-            rows: 3,
-            slidesPerRow: 2,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        }
-      ]
-  });
+      autoplaySpeed: 4000,
+      speed: 700,        
+    });
+    $('.faq-slide-item').parent().addClass('ovo-faq-slider-addcls');
+
+  }
+
+
+
 }
 
 if(windowWidth <=767){
