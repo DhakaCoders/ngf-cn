@@ -516,8 +516,8 @@ if( $('.blogDetailsSlider').length ){
 }
 
 
-if( $('.qty').length ){
-  $('.qty').each(function() {
+if( $('.qty1').length ){
+  $('.qty1').each(function() {
     var spinner = $(this),
       input = spinner.find('input[type="number"]'),
       btnUp = spinner.find('.plus'),
