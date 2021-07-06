@@ -85,19 +85,19 @@ $("#confirm_password").bind('blur keyup change click', function(){
 });
 
 /* Checkout field show/hide */
-if ($("#billing_order_type_Zakelijk").is(":checked")) {
+if ($("#billing_order_type_Business").is(":checked")) {
     $('#billing_company_field').addClass('show-company');
     $('#vat_number_field').addClass('show-vat_number');
     $('#billing_reference_field').addClass('show-reference');
 }
-$("#billing_order_type_Zakelijk").on('change', function(){
+$("#billing_order_type_Business").on('change', function(){
     if ($(this).is(":checked")) {
         $('#billing_company_field').addClass('show-company');
         $('#vat_number_field').addClass('show-vat_number');
         $('#billing_reference_field').addClass('show-reference');
     }
 });
-$("#billing_order_type_Particulier").on('change', function(){
+$("#billing_order_type_Individual").on('change', function(){
     if ($(this).is(":checked")) {
         $('#billing_company_field').removeClass('show-company');
         $('#vat_number_field').removeClass('show-vat_number');
@@ -162,14 +162,24 @@ $('.register-nextstep form p.form-row.required-field input,.woocommerce-edit-acc
         $(this).parents('p.form-row').removeClass('hasError');
     }
 });
-$('#review_form form input, #review_form form textarea').blur(function(){
-    if( $(this).val().length === 0 ) {
-        $(this).parent('p').addClass('hasError');
+
+
+if($('#ship-to-different-address-checkbox').not(':checked').length){
+    $('body.woocommerce-checkout').find('.cbv_shipping_address').show();
+    $('#cbv_defferent_shipping').prop('checked', true);
+}else{
+    $('body.woocommerce-checkout').find('.cbv_shipping_address').hide();
+    $('#cbv_defferent_shipping').prop('checked', false);
+}
+$('#ship-to-different-address-checkbox').on('click', function() {
+    if( $(this).is(':checked') ){
+        $('body.woocommerce-checkout').find('.cbv_shipping_address').hide();
+        $('#cbv_defferent_shipping').prop('checked', false);
     }else{
-        $(this).parent('p').removeClass('hasError');
+        $('body.woocommerce-checkout').find('.cbv_shipping_address').show();
+        $('#cbv_defferent_shipping').prop('checked', true);
     }
 });
-
 })(jQuery);
 jQuery( function($){
      /*global wc_single_product_params, wc_add_to_cart_variation_params*/

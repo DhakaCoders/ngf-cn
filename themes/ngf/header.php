@@ -217,27 +217,29 @@
 
 
   </svg>
-  
+<?php 
+  $topbartekst = get_field('topbartekst', 'options');
+  $logoObj = get_field('hdlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+  $smedias = get_field('social_media', 'options')
+?>  
+<?php if( is_front_page() && $topbartekst ): ?>
 <section class="home-messege">
 <div class="container">
   <div class="row">
     <div class="col-md-12">
       <div class="home-messege-inr">
-        <p><strong>08/06/2021:</strong>Wij zijn gesloten van 08/06/2021 tot en met 22/06/2021</p>
+        <?php if( !empty($topbartekst) ) echo wpautop( $topbartekst  ); ?>
       </div>
     </div>
   </div>
 </div>
 </section>
-<?php 
-$logoObj = get_field('hdlogo', 'options');
-if( is_array($logoObj) ){
-  $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
-}else{
-  $logo_tag = '';
-}
-$smedias = get_field('social_media', 'options')
-?> 
+<?php endif; ?>
 <div class="bdoverlay"></div>
 <header class="header">
   <span class="hdr-white-skew"></span>
@@ -301,36 +303,28 @@ $smedias = get_field('social_media', 'options')
           </div>
           <div class="hdr-lft hide-md">
             <nav class="main-nav">
-              <ul class="reset-list clearfix">
-                <li class="current-menu-item"><a href="#">Webshop</a></li>
-                <li class="menu-item-has-children">
-                  <a href="#">Online coaching</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">sub menu</a></li>
-                    <li><a href="#">sub menu</a></li>
-                    <li><a href="#">sub menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Werkwijze</a></li>
-                <li><a href="#">Transformaties</a></li>
-              </ul>
+              <?php 
+                $menuOptions = array( 
+                    'theme_location' => 'cbv_main_menu1', 
+                    'menu_class' => 'reset-list clearfix',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $menuOptions ); 
+              ?>
             </nav>
           </div>
           <div class="hdr-rgt">
             <nav class="main-nav hide-md">
-              <ul class="reset-list clearfix">
-                <li><a href="#">Over ons</a></li>
-                <li class="menu-item-has-children">
-                  <a href="#">Blog</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">sub menu</a></li>
-                    <li><a href="#">sub menu</a></li>
-                    <li><a href="#">sub menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">CONTACT</a></li>
-              </ul>
+              <?php 
+                $menuOptions = array( 
+                    'theme_location' => 'cbv_main_menu2', 
+                    'menu_class' => 'reset-list clearfix',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $menuOptions ); 
+              ?>
             </nav>
             <div class="hdr-icons-cntlr">
               <div class="hdr-user hide-md">
@@ -341,12 +335,18 @@ $smedias = get_field('social_media', 'options')
                 </a>
               </div>
               <div class="hdr-cart">
-                <a href="#">
+                <a href="<?php echo wc_get_cart_url(); ?>">
                   <i><svg class="cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
                     <use xlink:href="#cart-icon"></use> </svg>
                   </i>
-                  <span class="cart-number">99</span>
-                  <strong class="cart-title show-md">CART</strong>
+                  <?php 
+                      if( WC()->cart->get_cart_contents_count() > 0 ){
+                        echo sprintf ( '<span class="cart-number">%d</span>', WC()->cart->get_cart_contents_count() );
+                      }else{
+                        echo sprintf ( '<span class="cart-number">%d</span>', 0 );
+                      }  
+                  ?>
+                  <strong class="cart-title show-md"><?php _e('CART', 'ngf');?></strong>
                 </a>
               </div>
             </div>
@@ -369,7 +369,7 @@ $smedias = get_field('social_media', 'options')
                 </i>
               </div>
               
-              <strong class="hamburger-title">MENU</strong>
+              <strong class="hamburger-title"><?php _e('MENU', 'ngf');?></strong>
             </div>
           </div>
         </div>
@@ -395,12 +395,18 @@ $smedias = get_field('social_media', 'options')
     <div class="hdr-rgt">
       <div class="hdr-icons-cntlr">
         <div class="hdr-cart">
-          <a href="#">
+          <a href="<?php echo wc_get_cart_url(); ?>">
             <i><svg class="cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="#FFA800">
               <use xlink:href="#cart-icon"></use> </svg>
             </i>
-            <span class="cart-number">99</span>
-            <strong class="cart-title show-md">CART</strong>
+            <?php 
+                if( WC()->cart->get_cart_contents_count() > 0 ){
+                  echo sprintf ( '<span class="cart-number">%d</span>', WC()->cart->get_cart_contents_count() );
+                }else{
+                  echo sprintf ( '<span class="cart-number">%d</span>', 0 );
+                }  
+            ?>
+            <strong class="cart-title show-md"><?php _e('CART', 'ngf');?></strong>
           </a>
         </div>
       </div>
@@ -417,7 +423,7 @@ $smedias = get_field('social_media', 'options')
               <use xlink:href="#cross-icon"></use> </svg>
             </i>
           </div>
-          <strong class="hamburger-title">MENU</strong>
+          <strong class="hamburger-title"><?php _e('MENU', 'ngf');?></strong>
         </div>
     </div>
   </div>
@@ -425,29 +431,15 @@ $smedias = get_field('social_media', 'options')
   <div class="xs-menu-cntlr">
     <div class="xs-menu">
       <nav class="main-nav">
-        <ul class="reset-list clearfix">
-          <li class="current-menu-item"><a href="#">Webshop</a></li>
-          <li class="menu-item-has-children">
-            <a href="#">Online coaching</a>
-            <ul class="sub-menu">
-              <li><a href="#">sub menu</a></li>
-              <li><a href="#">sub menu</a></li>
-              <li><a href="#">sub menu</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Werkwijze</a></li>
-          <li><a href="#">Transformaties</a></li>
-          <li><a href="#">Over ons</a></li>
-          <li class="menu-item-has-children">
-            <a href="#">Blog</a>
-            <ul class="sub-menu">
-              <li><a href="#">sub menu</a></li>
-              <li><a href="#">sub menu</a></li>
-              <li><a href="#">sub menu</a></li>
-            </ul>
-          </li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
+        <?php 
+          $menuOptions = array( 
+              'theme_location' => 'cbv_mobile_main_menu', 
+              'menu_class' => 'reset-list clearfix',
+              'container' => '',
+              'container_class' => ''
+            );
+          wp_nav_menu( $menuOptions ); 
+        ?>
       </nav>
     </div>
 
@@ -468,55 +460,64 @@ $smedias = get_field('social_media', 'options')
     </div>
     <div class="fl-search-cntlr">
       <div class="fl-secrh">
-        <form action="">
-          <input type="text" placeholder="Zoeken">
+        <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <input type="text" placeholder="Zoeken" name="s" value="<?php echo get_search_query(); ?>">
           <button>
             <i>
               <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="#C5C6C7">
               <use xlink:href="#search-icon"></use> </svg>
             </i>
           </button>
+          <input type="hidden" name="post_type" value="product" />
         </form>
       </div>
     </div>
     <div class="xs-hdr-sociala">
       <ul class="reset-list">
-        <li>
-          <a target="_blank" href="#">
-            <i><svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
-              <use xlink:href="#facebook-icon"></use> </svg>
-            </i>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="#">
-            <i><svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
-              <use xlink:href="#twiter-icon"></use> </svg>
-            </i>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="#">
-            <i><svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
-              <use xlink:href="#linkden-icon"></use> </svg>
-            </i>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="#">
-            <i><svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
-              <use xlink:href="#instagram-icon"></use> </svg>
-            </i>
-          </a>
-        </li>
+      <?php if( !empty($smedias['facebook_url']) ): ?>
+      <li>
+        <a target="_blank" href="<?php echo $smedias['facebook_url']; ?>">
+          <i><svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+            <use xlink:href="#facebook-icon"></use> </svg>
+          </i>
+        </a>
+      </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['twitter_url']) ): ?>
+      <li>
+        <a target="_blank" href="<?php echo $smedias['twitter_url']; ?>">
+          <i><svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+            <use xlink:href="#twiter-icon"></use> </svg>
+          </i>
+        </a>
+      </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['linkedin_url']) ): ?>
+      <li>
+        <a target="_blank" href="<?php echo $smedias['linkedin_url']; ?>">
+          <i><svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+            <use xlink:href="#linkden-icon"></use> </svg>
+          </i>
+        </a>
+      </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['instagram_url']) ): ?>
+      <li>
+        <a target="_blank" href="<?php echo $smedias['instagram_url']; ?>">
+          <i><svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+            <use xlink:href="#instagram-icon"></use> </svg>
+          </i>
+        </a>
+      </li>
+      <?php endif; ?>
       </ul>
     </div>
     <div class="xs-hdr-btn-cntlr">
       <div class="xs-hdr-btn">
-        <a class="" href="#">MY ACCOUNT</a>
+        <a class="" href="#"><?php _e('MY ACCOUNT', 'ngf');?></a>
       </div>
       <div class="xs-hdr-btn xs-hdr-btn-2">
-        <a class="" href="#">CONTACT</a>
+        <a class="" href="<?php echo esc_url( home_url('contact') ); ?>"><?php _e('CONTACT', 'ngf');?></a>
       </div>
     </div>
   </div>
