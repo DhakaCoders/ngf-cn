@@ -52,19 +52,7 @@
             <?php endif; ?>
 
             <div class="breadcrumb-cntlr hide-sm">
-              <ul class="reset-list clearfix">
-                <li>
-                  <a href="#">
-                    <span class="item">Home</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"><span>Binnenpagina</span></a>
-                </li>
-                <li class="active">
-                  <span>Binnenpagina</span>
-                </li>
-              </ul>
+              <?php cbv_both_breadcrump(); ?>
             </div>
 
             <div class="ftr-top-col-cnlr clearfix">
