@@ -276,11 +276,14 @@ body.woocommerce-checkout .custom-checkout-order-review table.shop_table th{
 body.woocommerce-cart .cart_totals table.shop_table td,
 body.woocommerce-checkout .custom-checkout-order-review table.shop_table td{
 	padding: 0 0 12px 0!important;
+	border-top: none;
 }
 body.woocommerce-cart .cart_totals .woocommerce-Price-amount bdi,
 body.woocommerce-checkout .custom-checkout-order-review .woocommerce-Price-amount bdi,
 body.woocommerce-cart .cart_totals tbody tr.tax-rate td span.woocommerce-Price-amount,
-body.woocommerce-cart .cart_totals tbody tr.tax-rate td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol{
+body.woocommerce-cart .cart_totals tbody tr.tax-rate td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
+body.woocommerce-checkout .custom-checkout-order-review tfoot tr.tax-rate td span.woocommerce-Price-amount,
+body.woocommerce-checkout .custom-checkout-order-review tfoot tr.tax-rate td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol{
 	font-weight: 500;
 	color: #000;
 	font-family: 'Roboto', sans-serif;
