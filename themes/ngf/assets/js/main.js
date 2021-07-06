@@ -532,6 +532,37 @@ if( $('.blogDetailsSlider').length ){
       
 //     });
 // }
+
+
+if(windowWidth <=767){
+  if( $('.ovomblfvSlider').length ){
+    $('.ovomblfvSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: true,
+      arrows:false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      slidesPerRow: 3,
+      responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: false,
+          rows:1,
+          slidesPerRow: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+    });
+  }
+}
+
+
 if( $('.faqSlider1').length ){
     $('.faqSlider1').slick({
       dots: true,
@@ -552,13 +583,13 @@ if( $('.faqSlider1').length ){
           rows: 3,
           slidesPerRow: 1,
           slidesToShow: 1,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         }
       }
     ]
       
     });
-    $('.faq-slide-item').parent().addClass('a');
+    $('.faq-slide-item').parent().addClass('ovo-faq-slider-addcls');
 }
 
 if( $('.faqSlider2').length ){
