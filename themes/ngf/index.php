@@ -38,7 +38,7 @@ $terms = get_terms( 'category', array(
       <div class="col-md-12">         
         <div class="blog-grids-cntrl">
           <div class="blog-grid-items">
-            <?php if(have_posts()): ?>
+            <?php if(  have_posts() ): ?>
             <ul class="clearfix reset-list">
               <?php 
                   while(have_posts()): the_post(); 
@@ -97,8 +97,8 @@ $terms = get_terms( 'category', array(
                 echo paginate_links( array(
                   'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
                   'type'      => 'list',
-                  'prev_text' => __('←'),
-                  'next_text' => __('→'),
+                  'prev_text' => __(''),
+                  'next_text' => __(''),
                   'format'    => '?paged=%#%',
                   'current'   => $current,
                   'total'     => $wp_query->max_num_pages

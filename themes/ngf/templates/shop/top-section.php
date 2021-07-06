@@ -11,7 +11,7 @@ $terms = get_terms( 'product_cat', array(
         <div class="sec-hdr-cntrl">
           <div class="sec-hdr-lft">
             <div class="sec-header">
-              <h1 class="fl-h1 sec-title">PRODUCTEN</h1>
+              <h1 class="fl-h1 sec-title"><?php _e( 'PRODUCTEN', 'ngf' ); ?></h1>
             </div>
             <?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){ ?>
             <div class="fl-grid-category">
