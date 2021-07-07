@@ -55,7 +55,8 @@ body.single-product .pro-cart-btn button:hover svg{
 }
 
 /*  -------------------------- All Wc label Design ------------------------------- */
-.woocommerce form .form-row label{
+.woocommerce form .form-row label,
+body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label{
     line-height: 1.4;
     font-size: 16px;
     margin-bottom: 8px;
