@@ -2,5 +2,9 @@
 
 2021-07-07T06:15:44+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\wp-includes\Requests\Transport\cURL.php on line 163
 
+<<<<<<< HEAD
+2021-07-07T06:48:20+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\wp-includes\Requests\Transport\cURL.php on line 163
+=======
 2021-07-07T10:08:06+00:00 CRITICAL syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\page-werkwijze.php on line 341
+>>>>>>> 2c3035021a517ccae28b7412e1bf3be61859f815
 
