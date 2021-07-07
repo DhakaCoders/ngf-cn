@@ -413,6 +413,10 @@ span.fl-video-play-icon-cntlr{
     .ovo-testimonial{
         padding-bottom: 90px;
     }
+    .ovo-abs-line-four{
+        top: 116px;
+        right: -27px;
+    }
 
 
 }
@@ -505,9 +509,6 @@ span.fl-video-play-icon-cntlr{
     .fancy-vedeo-items-sec-cntlr  .fl-fancy-module-col {
         padding-bottom: 55px;
     }
-    .ovo-fancy-modl-item-para {
-        margin-bottom: 15px;
-    }
     .ovo-testimonial{
         padding-bottom: 80px;
     }
@@ -567,8 +568,8 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-abs-round-one {
         border: 3px solid#fea700;
-        right: 64PX;
-        top: 1px;
+        right: 60PX;
+        top: 3px;
         height: 12px;
         width: 12px;
     }
@@ -647,6 +648,9 @@ span.fl-video-play-icon-cntlr{
     .ovo-testimonial-slider-sec {
         padding-top: 50px;
     }
+    .faq-slider-sec {
+        padding-top: 80px;
+    }
 
 
 
@@ -654,8 +658,8 @@ span.fl-video-play-icon-cntlr{
 }
 @media(max-width: 767px){
     .ovo-two-grds-des-module-sec {
-        padding-top: 40px;
-        padding-bottom: 35px;
+        padding-top: 45px;
+        padding-bottom: 38px;
     }
     .ovo-grds-des-lft, .ovo-grds-des-rgt{
         max-width: 100%;
@@ -683,6 +687,7 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-grds-des-lft p {
         font-size: 18px;
+        margin-bottom: 30px;
     }
     .ovo-abs-line-one {
         width: 831.36px;
@@ -716,6 +721,7 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-fgi-title{
         font-size: 18px!important;
+        padding-bottom: 25px!important;
     }
     .faq-slider-sec-hdr .fssh-title{
         font-size: 24px!important;
@@ -733,6 +739,47 @@ span.fl-video-play-icon-cntlr{
         max-width: 400px;
         margin: 0 auto;
     }
+    .fancy-vedeo-items-sec-cntlr {
+        padding-bottom: 35px;
+    }
+    .fl-fancy-module.ovo-fancy-module {
+        margin-bottom: 30px;
+    }
+    .fancy-vedeo-items-sec-cntlr  .fl-fancy-module-col {
+        padding-bottom: 0;
+    }
+    .ovomblfvSlider {
+        margin-bottom: 0!important;
+    }
+    .ovo-testimonial-slider-sec {
+        padding-top: 10px;
+    }
+    .faq-slider-sec {
+        padding-top: 60px;
+    }
+    .faqSlider1 {
+        margin-bottom: 20px!important;
+    }
+    .ovo-faq-slider-addcls .faq-slide-item .faq-grids-cntlr .faq-grid-item-col {
+        padding-bottom: 24px;
+    }
+    .ovo-fancy-module-item-des {
+        padding: 20px 10px 0 10px;
+    }
+    .ofmi-heading {
+        margin-bottom: 25px;
+    }
+    .faq-slider-sec-hdr .fssh-title{
+        margin-bottom: 15px!important;
+    }
+    .faq-slider-cntlr .faqSlider1 ul.slick-dots{
+        margin-top: 10px!important;
+    }
+    .ovo-faq-grid-item{
+        padding: 35px 30px 30px!important;
+    }
+
+
 
 
 
@@ -772,7 +819,14 @@ span.fl-video-play-icon-cntlr{
     .ovo-grid-item-col .faq-grid-item {
         padding: 28px 16px 21px 15px;
     }
-    
+    .ovo-latest-nws-xs-bg {
+        top: -14px!important;
+        left: -22px!important;
+    }
+    .ovo-fgi-title {
+        font-size: 16px!important;
+        padding-bottom: 20px!important;
+    }
 
 
 
