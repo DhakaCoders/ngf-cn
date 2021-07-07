@@ -60,3 +60,73 @@ Stack trace:
 #5 {main}
   thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
 
+2021-07-07T16:47:08+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
+2021-07-07T16:47:28+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
+2021-07-07T16:48:03+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
+2021-07-07T16:52:47+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
+2021-07-07T16:54:28+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
+2021-07-07T16:56:29+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
+2021-07-07T16:56:39+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
