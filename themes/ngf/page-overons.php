@@ -344,6 +344,6 @@ $refobj = $clientsec['referenties'];
 <?php endif; endif;?>
 
 
-<?php get_template_part('templates/faq', 'bottom'); ?>
+<?php get_template_part('templates/faq', 'bottom1'); ?>
 
 <?php get_footer();?>
