@@ -276,12 +276,25 @@ body.woocommerce-checkout .custom-checkout-order-review table.shop_table th{
 body.woocommerce-cart .cart_totals table.shop_table td,
 body.woocommerce-checkout .custom-checkout-order-review table.shop_table td{
 	padding: 0 0 12px 0!important;
+	border-top: none;
 }
 body.woocommerce-cart .cart_totals .woocommerce-Price-amount bdi,
-body.woocommerce-checkout .custom-checkout-order-review .woocommerce-Price-amount bdi{
+body.woocommerce-checkout .custom-checkout-order-review .woocommerce-Price-amount bdi,
+body.woocommerce-cart .cart_totals tbody tr.tax-rate td span.woocommerce-Price-amount,
+body.woocommerce-cart .cart_totals tbody tr.tax-rate td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
+body.woocommerce-checkout .custom-checkout-order-review tfoot tr.tax-rate td span.woocommerce-Price-amount,
+body.woocommerce-checkout .custom-checkout-order-review tfoot tr.tax-rate td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol{
 	font-weight: 500;
 	color: #000;
 	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+body.woocommerce-cart .cart_totals .woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol,
+body.woocommerce-checkout .custom-checkout-order-review .woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol{
+	font-weight: 500;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 body.woocommerce-cart .cart_totals table tr.order-total .woocommerce-Price-amount bdi{
 	font-weight: 700!important;
@@ -447,7 +460,7 @@ body.woocommerce-cart.woocommerce-page .product-name a{
 	font-size: 24px;
 	font-weight: 700;
 	text-decoration: none;
-	color: #2C113E;
+	color: #000;
 	text-transform: capitalize;
 	display: inline-block;
 	vertical-align: baseline;
@@ -726,7 +739,7 @@ body.woocommerce-cart .popup-bottom-btn a:hover,
 body.woocommerce-cart .cart-btn-qty .quantity.qty span.plus:hover, 
 body.woocommerce-cart .cart-btn-qty .quantity.qty span:hover, 
 body.woocommerce-cart .contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button:hover{
-	background-color: #D61D1D!important;
+	background-color: #000!important;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button:hover{
 	background-color: #FFA800!important;
@@ -746,12 +759,17 @@ body.woocommerce-checkout ins span.amount bdi,
 body.woocommerce-checkout ins span.amount bdi span.woocommerce-Price-currencySymbol, 
 body.woocommerce-checkout del span.amount bdi, 
 body.woocommerce-checkout del span.amount bdi span.woocommerce-Price-currencySymbol{
-	font-weight: 500;
-	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	margin-right: 5px!important;
 }
 
 
+body.woocommerce-page span.total-price-prefix {
+    display: block;
+    font-size: 12px;
+    color: #9B9B9B;
+    line-height: 24px;
+}
 
 /*responsive */
 @media (max-width: 1699px) {

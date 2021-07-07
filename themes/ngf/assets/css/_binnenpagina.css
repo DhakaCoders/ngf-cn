@@ -507,14 +507,11 @@ Gallery design
 .testimonial-grd-item-img i{
 	display: inline-block;
 	vertical-align: baseline;
-	/*height: 120px;
-	width: 120px;*/
+	max-width: 120px;
 	margin-bottom: 30px;
 }
 .testimonial-grd-item-img i img{
 	border-radius: 100%;
-	/*height: 100%;
-	width: 100%;*/
 }
 .testimonial-grd-item-des{
 	max-width: 845px;
@@ -526,6 +523,7 @@ Gallery design
 	font-size: 30px;
 	letter-spacing: -0.02em;
 	font-weight: 200;
+	margin-bottom: 25px;
 }
 .testimonial-grd-item-des blockquote p{
 	line-height: 1.2;

@@ -40,8 +40,9 @@ if( !function_exists('cbv_theme_setup') ){
         ) );
 
         register_nav_menus( array(
-            'cbv_top_menu' => __( 'Topmenu', THEME_NAME ),
-            'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
+            'cbv_main_menu1' => __( 'Hoofdmenu 1', THEME_NAME ),
+            'cbv_main_menu2' => __( 'Hoofdmenu 2', THEME_NAME ),
+            'cbv_mobile_main_menu' => __( 'Mobiel Hoofdmenu', THEME_NAME ),
             'cbv_fta_menu' => __( 'Footer Menu 1', THEME_NAME ),
             'cbv_ftb_menu' => __( 'Footer Menu 2', THEME_NAME ),
             'cbv_copyright_menu' => __( 'Copyright Menu', THEME_NAME ),
@@ -133,6 +134,13 @@ function my_wp_nav_menu_objects( $items, $args ) {
     return $items;
 }
 
+function has_banner(){
+    if( is_front_page()){
+        return true;
+    }
+    return false;
+}
+
 function custom_body_classes($classes){
     // the list of WordPress global browser checks
     // https://codex.wordpress.org/Global_Variables#Browser_Detection_Booleans
@@ -141,6 +149,10 @@ function custom_body_classes($classes){
     $classes[] = join(' ', array_filter($browsers, function ($browser) {
         return $GLOBALS[$browser];
     }));
+
+    if( has_banner() ){
+        $classes[]='has-banner';
+    }
 
     if( is_front_page() ){
         $classes[]='home';

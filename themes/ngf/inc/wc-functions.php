@@ -383,9 +383,9 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
                 'Totaal',
                 'Bedrag',
                 'ApPly',
-                'Heb je een kortingscode?',
+                'Have a discount code?',
                 'ApPly',
-                'Heb je een kortingscode?'
+                'Have a discount code?'
             ),
             $translated
         );
@@ -618,7 +618,27 @@ function selected_variation_price_replace_variable_price_range(){
     <?php
     endif;
 }
-include_once(THEME_DIR .'/inc/wc-manage-fields.php');
+
+//add_filter( 'woocommerce_get_price_html', 'kd_custom_price_message' );
+//add_filter( 'woocommerce_cart_item_subtotal', 'kd_custom_price_message' );
+add_filter( 'woocommerce_cart_item_price', 'kd_custom_price_message' );
+//add_filter( 'woocommerce_cart_subtotal', 'kd_custom_price_message' );  
+//add_filter( 'woocommerce_cart_total', 'kd_custom_price_message' ); 
+
+function kd_custom_price_message( $price ) {
+    $vat_text = get_option('woocommerce_price_display_suffix');
+    if( !empty($vat_text) ){
+        $afterPriceSymbol = '<span class="woocommerce-price-suffix">'.__($vat_text, 'ngf').'</span>';
+        $price = $price . $afterPriceSymbol;
+    }
+    return $price;
+}
+add_action('total_amount_prefix', 'total_amount_custom_prefix');
+
+function total_amount_custom_prefix(){
+    $total_price_prefix = '<span class="total-price-prefix">'.__('including btw', 'ngf').'</span>';
+    echo $total_price_prefix;
+}
 
 /* Custom conditional tag*/
 
@@ -639,3 +659,4 @@ function is_wc_template(){
     }
     return false;
 }
+include_once(THEME_DIR .'/inc/wc-manage-fields.php');
