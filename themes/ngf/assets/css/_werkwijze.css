@@ -122,10 +122,17 @@ body.werk-bdff.sky-btm-bg-cntlr {
 }
 .werk-testimonial-slider-sec{
 	padding-top: 95px;
+	padding-bottom: 40px;
 }
 .werkj-testimonial{
 	margin-bottom: 0;
 	margin-top: 0;
+}
+ol.werk-ol {
+    padding-bottom: 15px;
+}
+.ovo-text-module p:first-child {
+    margin-bottom: 20px;
 }
 
 
@@ -326,6 +333,12 @@ s
 	}
 	.werk-grid-des {
 	    padding: 0 10px;
+	}
+	.ovo-text-module p:first-child {
+	    margin-bottom: 15px;
+	}
+	.werk-text-module-ul{
+		margin-bottom: 5px;
 	}
 
 
