@@ -105,7 +105,7 @@ add_action( 'admin_footer', 'wpmu_role_based_style', 99 );
 function cbv_table( $table, $title =''){
   if ( ! empty ( $table ) ) {
     echo '<div class="dfp-tbl-wrap">';
-    if( !empty($title) ) printf('<h3>%s</h3>', $title);
+    if( !empty($title) ) printf('<h5>%s</h5>', $title);
     echo '<div class="table-dsc" data-aos="fade-up" data-aos-delay="200">
     <table>';
     if ( ! empty( $table['caption'] ) ) {
@@ -197,10 +197,55 @@ function get_title_by_page_template( $pagetemplate ){
   return $post_title;
 }
 
-
-function input_zero_befor_number($number){
-  if( $number < 10 ){
-    return '0'.$number;
+function shop_placeholder($format = 'src'){
+  $placehoder = get_field('placeholder', 'options');
+  if( !empty($placehoder) ){
+      if( $format == 'src' ){
+        $placeholder = !empty($placehoder['shop'])? cbv_get_image_src($placehoder['shop']):'';
+      }else{
+        $placeholder = !empty($placehoder['shop'])? cbv_get_image_tag($placehoder['shop']):'';
+      }
+      return $placeholder;
   }
-  return $number;
+  return '';
+
+}
+function nieuws_placeholder($format = 'src'){
+  $placehoder = get_field('placeholder', 'options');
+  if( !empty($placehoder) ){
+      if( $format == 'src' ){
+        $placeholder = !empty($placehoder['nieuws'])? cbv_get_image_src($placehoder['nieuws']):'';
+      }else{
+        $placeholder = !empty($placehoder['nieuws'])? cbv_get_image_tag($placehoder['nieuws']):'';
+      }
+      return $placeholder;
+  }
+  return '';
+
+}
+function coaching_placeholder($format = 'src'){
+  $placehoder = get_field('placeholder', 'options');
+  if( !empty($placehoder) ){
+      if( $format == 'src' ){
+        $placeholder = !empty($placehoder['coaching'])? cbv_get_image_src($placehoder['coaching']):'';
+      }else{
+        $placeholder = !empty($placehoder['coaching'])? cbv_get_image_tag($placehoder['coaching']):'';
+      }
+      return $placeholder;
+  }
+  return '';
+
+}
+function referenties_placeholder($format = 'src'){
+  $placehoder = get_field('placeholder', 'options');
+  if( !empty($placehoder) ){
+      if( $format == 'src' ){
+        $placeholder = !empty($placehoder['referenties'])? cbv_get_image_src($placehoder['referenties']):'';
+      }else{
+        $placeholder = !empty($placehoder['referenties'])? cbv_get_image_tag($placehoder['referenties']):'';
+      }
+      return $placeholder;
+  }
+  return '';
+
 }

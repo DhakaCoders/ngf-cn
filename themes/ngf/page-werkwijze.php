@@ -188,7 +188,7 @@ $thisID = get_the_ID();
           ?>
           <div class="werk-grids-cntlr">
 
-            <div class="werkmsgSlider">
+            <div class="werk-grids-slider-cntlr werkmsgSlider">
               <?php 
               $i = 1;
               foreach( $steps as $step ): 
