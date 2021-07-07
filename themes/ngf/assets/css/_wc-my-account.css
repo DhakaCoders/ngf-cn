@@ -41,6 +41,15 @@ body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#b
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_address_1_field{
     padding-right: 12px!important;
 }
+body.woocommerce-account .woocommerce form .form-row-first .error-valid,
+body.woocommerce-account .woocommerce-page form .form-row-first .error-valid,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-first .error-valid,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_first_name_field .error-valid,
+body.woocommerce-checkout .woocommerce-shipping-fields .form-row-first .error-valid,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_postcode_field .error-valid,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_address_1_field .error-valid{
+    right: 14px;
+}
 body.woocommerce-account .woocommerce form .form-row-last, 
 body.woocommerce-account .woocommerce-page form .form-row-last,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-last,
@@ -1144,7 +1153,7 @@ body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5 {
     font-size: 24px;
     color: #ffffff;
     font-weight: 600;
-    margin-bottom: 7px;
+    margin-bottom: 4px;
     line-height: 1.25;
 }
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc ins span,
@@ -1263,8 +1272,8 @@ body.woocommerce-orders .orders-crtl .contact-info a.order-contact-btn:after{
     content: none;
 }
 body.woocommerce-orders .faq-accordion-wrp ul li .orders-crtl{
-    padding-top: 22px;
-    padding-bottom: 28px;
+    padding-top: 25px;
+    padding-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
     background: #131313;
@@ -1984,9 +1993,9 @@ body .wc-template-crtl .success-msg {
     body.account-login-page #login_register #customer_login .u-column2{
         padding-right:100px;
     }
-    body.woocommerce-orders .myac-pro-grd-item .myac-pro-grd-item-inr{
+    /*body.woocommerce-orders .myac-pro-grd-item .myac-pro-grd-item-inr{
         padding-right: 20px;
-    }
+    }*/
 
     body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img{
         margin-right: 20px;
