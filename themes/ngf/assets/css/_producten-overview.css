@@ -34,6 +34,9 @@
     color: #9B9B9B;
     opacity: 1;
 }
+.archive .fl-secrh form button{
+    margin-top: -1px;
+}
 /* == sec-heading design end== */
 
 /* == product-page design start == */

@@ -128,6 +128,13 @@ span.single-price-total{
 .single-product .quantity{
 	display: none;
 }
+.single-product span.amount bdi, 
+.single-product span.amount bdi span.woocommerce-Price-currencySymbol, 
+.single-product ins span.amount bdi, .single-product ins span.amount bdi span.woocommerce-Price-currencySymbol, 
+.single-product del span.amount bdi, 
+.single-product del span.amount bdi span.woocommerce-Price-currencySymbol{
+	font-size: 30px;
+}
 .single-product .price-quentity-ctrl{
 	padding-bottom: 28px;
 }
@@ -238,9 +245,6 @@ span.single-price-total{
 }
 .single-product .dfp-testimonial-module{
 	margin-bottom: 100px;
-}
-.single-product .sec-entry-hdr h3{
-	margin-bottom: 30px;
 }
 .single-product .testimonial-ctlr .slick-slider ul.slick-dots{
 	bottom: -9px;
@@ -375,7 +379,7 @@ body.woocommerce-cart .product-quantity .quantity{
 	z-index: 1;
 }
 .single-product .related-product-sec-cntlr .sec-entry-hdr h3{
-	margin-bottom: 42px;
+	margin-bottom: 44px;
 }
 .single-product .related-product-sec-grids{
 	margin: 0 -12px;
@@ -671,6 +675,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.single-product .related-product-sec .latest-news-bg{
 		bottom: -130px;
 	}
+	.single-product .related-product-sec-cntlr .sec-entry-hdr h3{
+		margin-bottom: 37px;
+	}
 }
 
 @media (max-width: 1599px){
@@ -723,6 +730,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.single-product .dfp-testimonial-module{
 		margin-bottom: 80px;	
+	}
+	.single-product .related-product-sec-cntlr .sec-entry-hdr h3{
+		margin-bottom: 30px;
 	}
 }
 @media(max-width: 1399px){
@@ -818,6 +828,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.single-product .dfp-testimonial-module{
 		margin-bottom: 70px;	
+	}
+	.single-product .related-product-sec-cntlr .sec-entry-hdr h3{
+		margin-bottom: 23px;
 	}
 }
 
@@ -1029,6 +1042,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.single-product .related-product-sec .latest-news-bg{
 		bottom: -110px;
 	}
+	.single-product .related-product-sec-cntlr .sec-entry-hdr h3{
+		margin-bottom: 20px;
+	}
 
 }
 
@@ -1166,6 +1182,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.single-product .related-product-sec .latest-news-bg{
 		bottom: -80px;
+	}
+	.single-product .related-product-sec-cntlr .sec-entry-hdr h3{
+		margin-bottom: 15px;
 	}
 }
 
@@ -1423,5 +1442,11 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.single-product .white-sky-bg {
     	top: -194px;
+	}
+	.related-product-sec{
+		padding-top: 35px;
+	}
+	.single-product .related-product-sec .latest-news-bg{
+		bottom: 300px;
 	}
 }
