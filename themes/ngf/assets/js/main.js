@@ -371,7 +371,7 @@ if( $('li.menu-item-has-children > a').length ){
  });
 }
 
-if(windowWidth <=768){
+if(windowWidth <=767){
   if( $('.clientLogoSlider').length ){
     $('.clientLogoSlider').slick({
       dots: false,

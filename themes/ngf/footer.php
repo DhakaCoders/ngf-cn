@@ -44,7 +44,7 @@
               <?php foreach( $ftgalerij as $ftgalID ): ?>
               <div class="client-logo-item">
                 <div class="client-logo">
-                  <?php echo cbv_get_image_tag($ftgalID); ?>
+                  <a target="_blank" href="#"><?php echo cbv_get_image_tag($ftgalID); ?></a>
                 </div>
               </div>
               <?php endforeach; ?>

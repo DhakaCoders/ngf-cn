@@ -6,6 +6,8 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
 $terms = get_terms( 'category', array(
   'hide_empty' => false,
 ) );
+$queried_object = get_queried_object();
+$current_id = $queried_object->term_id;
 ?>
 <section class="sec-heading">
   <div class="container">
@@ -17,12 +19,12 @@ $terms = get_terms( 'category', array(
         <?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){ ?>
         <div class="fl-grid-category">
           <ul class="clearfix reset-list">
-            <li class="active"><a href="<?php echo get_permalink($thisID); ?>"><?php _e( 'alle', 'ngf' ); ?></a></li>
+            <li><a href="<?php echo get_permalink($thisID); ?>"><?php _e( 'alle', 'ngf' ); ?></a></li>
             <?php 
               $i = 1; foreach ( $terms as $term ) { 
               if($term->slug !='uncategorized'):
             ?>
-            <li><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
+            <li<?php echo ($term->term_id == $current_id)?' class="active"':'';?>><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
             <?php endif; $i++; } ?>
           </ul>
         </div> 

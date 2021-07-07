@@ -134,6 +134,13 @@ function my_wp_nav_menu_objects( $items, $args ) {
     return $items;
 }
 
+function has_banner(){
+    if( is_front_page()){
+        return true;
+    }
+    return false;
+}
+
 function custom_body_classes($classes){
     // the list of WordPress global browser checks
     // https://codex.wordpress.org/Global_Variables#Browser_Detection_Booleans
@@ -142,6 +149,10 @@ function custom_body_classes($classes){
     $classes[] = join(' ', array_filter($browsers, function ($browser) {
         return $GLOBALS[$browser];
     }));
+
+    if( has_banner() ){
+        $classes[]='has-banner';
+    }
 
     if( is_front_page() ){
         $classes[]='home';
