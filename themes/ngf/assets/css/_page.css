@@ -339,7 +339,7 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding-top: 60px;
+	padding-top: 0;
 }
 .page-404-btn a {
     height: 50px;
