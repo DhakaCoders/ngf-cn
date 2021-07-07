@@ -676,9 +676,6 @@ span.fl-video-play-icon-cntlr{
     .ovo-grids-cntlr{
        justify-content: center;
     }
-    .ovo-full-width-img-sec img{
-        display: block;
-    }
     .ovo-abs-round-three, .ovo-abs-line-four{
         display: none;
     }
@@ -812,9 +809,6 @@ span.fl-video-play-icon-cntlr{
     .ovo-grds-text-module p {
         line-height: 1.8;
         margin-bottom: 10px;
-    }
-    .ovo-full-width-img-sec {
-        height: 240px;
     }
     .ovo-grid-item-col .faq-grid-item {
         padding: 28px 16px 21px 15px;
