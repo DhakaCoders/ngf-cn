@@ -8,3 +8,5 @@
 2021-07-07T10:08:06+00:00 CRITICAL syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\page-werkwijze.php on line 341
 >>>>>>> 2c3035021a517ccae28b7412e1bf3be61859f815
 
+2021-07-07T13:36:45+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\page-werkwijze.php on line 132
+

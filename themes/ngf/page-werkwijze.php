@@ -73,10 +73,13 @@ $thisID = get_the_ID();
 <?php
   $showhideintro = get_field('showhideintro', $thisID);
   if($showhideintro): 
-  $intro = get_field('intro_sec', $thisID);
-    if($intro ):
 ?>
 
+
+<?php
+  $block_1 = get_field('block_1', $thisID);
+    if($block_1 ):
+ ?>
 <div class="ovo-two-grds-des-module-sec  werk-two-grds-sec">
   <div class="container">
     <div class="row">
@@ -84,18 +87,12 @@ $thisID = get_the_ID();
         <div class="ovo-two-grds-des-module-cntlr  block-1255">
           <div class="ovo-grds-des-lft">
             <div class="hide-sm">
-              <p>We are <strong>dedicated</strong> and <strong>committed</strong> to support our clients in attaining their personal <strong>potential!</strong></p>
+               <?php if( !empty($block_1['titel']) ) printf( '<p>%s</p>', $block_1['titel'] ); ?>
             </div>
           </div>
           <div class="ovo-grds-des-rgt">
             <div class="dfp-text-module clearfix">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed.</p>
-              <ol>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Aliquet purus viverra massa.</li>
-                <li>Ut ut nullam tellus.</li>
-              </ol>
-              <p>Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate.</p>
+              <?php if( !empty($block_1['beschrijving']) ) echo wpautop( $block_1['beschrijving'] ); ?>
             </div>
           </div>
         </div>
@@ -103,8 +100,13 @@ $thisID = get_the_ID();
     </div>
   </div>
 </div>
+<?php endif;?>
 
 
+<?php
+  $block_2 = get_field('block_2', $thisID);
+    if($block_2 ):
+ ?>
 <div class="ovo-two-grds-des-module-sec  werk-one-grds-sec">
   <div class="container">
     <div class="row">
@@ -112,18 +114,12 @@ $thisID = get_the_ID();
         <div class="ovo-two-grds-des-module-cntlr  block-1255">
           <div class="ovo-grds-des-lft">
             <div class="show-sm">
-              <p>We are <strong>dedicated</strong> and <strong>committed</strong> to support our clients in attaining their personal <strong>potential!</strong></p>
+              <?php if( !empty($block_2['titel']) ) printf( '<p>%s</p>', $block_2['titel'] ); ?>
             </div>
           </div>
           <div class="ovo-grds-des-rgt">
             <div class="dfp-text-module  ovo-text-module clearfix">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed. </p>
-              <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Suspendisse faucibus.</li>
-                <li>Tortor orci turpis nunc.</li>
-              </ul>
-              <p>Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate.</p>
+              <?php if( !empty($block_2['beschrijving']) ) echo wpautop( $block_2['beschrijving'] ); ?>
           </div>
           </div>
         </div>
@@ -131,160 +127,125 @@ $thisID = get_the_ID();
     </div>
   </div>
 </div>
-
 <?php endif; endif;?>
 
+
+
+
 <div class="ovo-full-width-img-dsc-module-sec">
-  <section class="ovo-full-width-img-sec  inline-bg"  style="background-image: url(<?php echo THEME_URI; ?>/assets/images/werk-full-inline-bg-img.jpg);">
-    <img src="<?php echo THEME_URI; ?>/assets/images/ov-full-width-img.jpg" alt="">  
-    <div class="ovo-abs-round">
-      <span class="ovo-abs-round-two"></span>
-      <span class="ovo-abs-round-one"></span>
-    </div>
-    <div class="ovo-full-width-bg-des-heading hide-sm">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="ovo-full-width-bg-heading-inner">
-                <h2 class="ovo-full-width-bg-heading  fl-h1-80">Integer laoreet  <br> enim  vitae  dolor <br> sagittis id.</h2>
-                <span class="ovo-abs-round-three"></span>
-                <span class="ovo-abs-line-four"></span>
+  <?php 
+    $showhideafbeelding = get_field('showhideafbeelding', $thisID);
+    if($showhideafbeelding): 
+  ?>
+  <div>
+    <?php $afbeelding_blok = get_field('afbeelding_blok', $thisID);
+      if($afbeelding_blok ):
+        $afbeelding_blok_poster = !empty($afbeelding_blok['afbeelding'])? cbv_get_image_src( $afbeelding_blok['afbeelding'], 'full' ): '';
+     ?>
+    <section class="ovo-full-width-img-sec  inline-bg"  style="background-image: url(<?php echo $afbeelding_blok_poster?>);">
+      <img src="<?php echo $afbeelding_blok_poster?>" alt=""> 
+      <div class="ovo-abs-round">
+        <span class="ovo-abs-round-two"></span>
+        <span class="ovo-abs-round-one"></span>
+      </div>
+      <div class="ovo-full-width-bg-des-heading hide-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="ovo-full-width-bg-heading-inner">
+                  <?php if( !empty($afbeelding_blok['titel']) ) printf( '<h2 class="ovo-full-width-bg-heading fl-h1-80">%s</h2>', $afbeelding_blok['titel'] ); ?>
+                  <span class="ovo-abs-round-three"></span>
+                  <span class="ovo-abs-line-four"></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+     <?php endif;?>
+  </div>
+    <?php endif;?>
 </div>
+
+
+<?php
+  $showhidesteps = get_field('showhidesteps', $thisID);
+  if($showhidesteps): 
+  $steps_sec = get_field('steps_sec', $thisID);
+    if($steps_sec ):
+?>
 
 <section class="werk-steps-grid-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="werk-steps-grid-sec-cntlr">
-          <h3 class="fl-h3 step-heading">STEPS</h3>
-          <div class="werk-grids-cntlr hide-sm">
-            <ul class="clearfix reset-list">
-              <li>
-                <div class="werk-grid-item  mHc4">
-                  <div class="werk-inline-bg">
-                    <div class="werk-stp-ibg">
-                      <div class="werk-grid-inline-bg  inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/werk-grid-img-1.jpg);">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/werk-grid-img-1.jpg" alt="">    
-                      </div>
-                    </div>
-                    
-                    <span class="abs-numbering">1</span>
-                  </div>
-                  
-                  <div class="werk-grid-des  mHc1">
-                    <h4 class="fl-h3  werk-grid-itm-heading  mHc2">Lorem ipsum</h4>
-                    <p>Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="werk-grid-item  mHc4">
-                  <div class="werk-inline-bg">
-                    <div class="werk-stp-ibg">
-                      <div class="werk-grid-inline-bg  inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/werk-grid-img-2.jpg);">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/werk-grid-img-2.jpg" alt="">    
-                      </div>
-                    </div>
-                    
-                    <span class="abs-numbering">2</span>
-                  </div>
-                  
-                  <div class="werk-grid-des  mHc1">
-                    <h4 class="fl-h3  werk-grid-itm-heading  mHc2">Lorem ipsum</h4>
-                    <p>Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="werk-grid-item  mHc4">
-                  <div class="werk-inline-bg">
-                    <div class="werk-stp-ibg">
-                      <div class="werk-grid-inline-bg  inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/werk-grid-img-3.jpg);">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/werk-grid-img-3.jpg" alt="">    
-                      </div>
-                    </div>
-                    
-                    <span class="abs-numbering">3</span>
-                  </div>
-                  
-                  <div class="werk-grid-des  mHc1">
-                    <h4 class="fl-h3  werk-grid-itm-heading  mHc2">Lorem ipsum</h4>
-                    <p>Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="werk-mbl-stp-grid-slider-cntlr show-sm">
-            <div class="werkmsgSlider">
-              <div class="werk-mgs-slide-item">
-                <div class="werk-grid-item  mHc4">
-                    <div class="werk-inline-bg">
-                      <div class="werk-stp-ibg">
-                        <div class="werk-grid-inline-bg  inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/werk-grid-img-1.jpg);">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/werk-grid-img-1.jpg" alt="">    
-                        </div>
-                      </div>
-                      
-                      <span class="abs-numbering">1</span>
-                    </div>
-                    
-                    <div class="werk-grid-des  mHc1">
-                      <h4 class="fl-h3  werk-grid-itm-heading  mHc2">Lorem ipsum</h4>
-                      <p>Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="werk-mgs-slide-item">
-                <div class="werk-grid-item  mHc4">
-                    <div class="werk-inline-bg">
-                      <div class="werk-stp-ibg">
-                        <div class="werk-grid-inline-bg  inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/werk-grid-img-2.jpg);">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/werk-grid-img-1.jpg" alt="">    
-                        </div>
-                      </div>
-                      
-                      <span class="abs-numbering">2</span>
-                    </div>
-                    
-                    <div class="werk-grid-des  mHc1">
-                      <h4 class="fl-h3  werk-grid-itm-heading  mHc2">Lorem ipsum</h4>
-                      <p>Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                    </div>
-                  </div>
-              </div>
+          <?php if( !empty($steps_sec['titel']) ) printf( '<h3 class="fl-h3 step-heading">%s</h3>', $steps_sec['titel'] ); ?>
 
+          <?php 
+           $steps = $steps_sec['steps'];
+            if($steps):
+          ?>
+          <div class="werk-grids-cntlr">
+
+            <div class="werkmsgSlider">
+              <?php 
+              $i = 1;
+              foreach( $steps as $step ): 
+                  $step_poster = !empty($step['afbeelding'])? cbv_get_image_src( $step['afbeelding'], 'full' ): '';
+              ?>
               <div class="werk-mgs-slide-item">
                 <div class="werk-grid-item  mHc4">
-                    <div class="werk-inline-bg">
-                      <div class="werk-stp-ibg">
-                        <div class="werk-grid-inline-bg  inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/werk-grid-img-1.jpg);">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/werk-grid-img-1.jpg" alt="">    
-                        </div>
+                  <div class="werk-inline-bg">
+                    <div class="werk-stp-ibg">
+                      <div class="werk-grid-inline-bg  inline-bg" style="background-image: url(<?php echo $step_poster; ?>);">
+                        <img src="<?php echo $step_poster; ?>" alt="">    
                       </div>
-                      
-                      <span class="abs-numbering">3</span>
                     </div>
-                    
-                    <div class="werk-grid-des  mHc1">
-                      <h4 class="fl-h3  werk-grid-itm-heading  mHc2">Lorem ipsum</h4>
-                      <p>Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                    </div>
+                    <span class="abs-numbering"><?php echo $i++ ?></span>
                   </div>
+                  
+                  <div class="werk-grid-des  mHc1">
+                    <?php if( !empty($step['titel']) ) printf( '<h4 class="fl-h3 werk-grid-itm-heading mHc2">%s</h4>', $step['titel'] ); ?>
+                    <?php if( !empty($step['beschrijving']) ) echo wpautop($step['beschrijving']); ?>
+                  </div>
+                </div>
               </div>
+              <?php endforeach; ?>
             </div>
           </div>
+          <?php endif ?>
+
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; endif;?>
+
+
+
+<?php
+  $showhideclient = get_field('showhideclient', $thisID);
+  if($showhideclient): 
+
+    $clientsec = get_field('clientsec', $thisID);
+    if($clientsec ):
+
+
+
+$refobj = $clientsec['referenties'];
+  if( empty($refobj) ){
+      $refobj = get_posts( array(
+        'post_type' => 'referenties',
+        'posts_per_page'=> 3,
+        'orderby' => 'date',
+        'order'=> 'desc',
+
+      ) );
+      
+  }
+?>
 
 <section class="ovo-testimonial-slider-sec">
   <div class="container">
@@ -292,54 +253,39 @@ $thisID = get_the_ID();
       <div class="col-md-12">
         <div class="ovo-testimonial-slider-cntlr">
           <div class="dfp-testimonial-module  ovo-testimonial">
-            <div class="testimonial-ctlr">
+             <div class="testimonial-ctlr">
               <div class="sec-entry-hdr">
-                <h3 class="fl-h3">client options</h3>
+                <?php if( !empty($clientsec['titel']) ) printf('<h3 class="fl-h3">%s</h3>', $clientsec['titel']); ?>
               </div>
+              <?php if($refobj){ ?>
               <div class="testimonial-grds dfpTestimonialSlider">
+                <?php 
+                  foreach( $refobj as $ref ) {
+                  global $post;
+                  $imgID = get_post_thumbnail_id($ref->ID);
+                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): ''; 
+                  $name = get_field('naam', $ref->ID);
+                ?>
                 <div class="testimonial-grd-item">
                   <div class="testimonial-grd-item-inr">
                     <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
+                      <i><?php echo $imgtag; ?></i>
                     </div>
                     <div class="testimonial-grd-item-des">
                       <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
+                        <?php echo wpautop($ref->post_excerpt); ?>
+                        <?php if( !empty($name) ) printf('<strong>%s</strong>', $name); ?>
                       </blockquote>
                     </div>
                   </div>
                 </div>
-                <div class="testimonial-grd-item">
-                  <div class="testimonial-grd-item-inr">
-                    <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
-                    </div>
-                    <div class="testimonial-grd-item-des">
-                      <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonial-grd-item">
-                  <div class="testimonial-grd-item-inr">
-                    <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-013.jpg"></i>
-                    </div>
-                    <div class="testimonial-grd-item-des">
-                      <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
+                <?php } ?>
               </div>
+              
               <div class="testimonial-btn">
-                <a class="fl-black-btn" href="#">other testimonials</a>
+                <a class="fl-black-btn" href="<?php echo get_link_by_page_template('page-referenties.php'); ?>"><?php _e( 'other testimonials', 'ngf' ); ?></a>
               </div>
+            <?php } ?>
             </div>
           </div>
         </div>
@@ -347,6 +293,7 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
+<?php endif; endif;?>
 
 
 <?php get_footer(); ?>
