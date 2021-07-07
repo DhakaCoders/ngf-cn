@@ -6,15 +6,12 @@
   }else{
     $logo_tag = '';
   }
-  $address = get_field('address', 'options');
-  $gmurl = get_field('url', 'options');
+
   $telefoon = get_field('telefoon', 'options');
   $email = get_field('emailadres', 'options');
-  $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
   $smedias = get_field('social_media', 'options');
   $clientlogos = get_field('ft_clientlogos', 'options');
   $copyright_text = get_field('copyright_text', 'options');
-  $usps = get_field('usps', 'options');
 ?>
 <footer class="footer-wrp">
   <span class="ftr-white-skew"></span>
