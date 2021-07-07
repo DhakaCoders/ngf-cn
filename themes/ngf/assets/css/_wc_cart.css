@@ -288,6 +288,7 @@ body.woocommerce-checkout .custom-checkout-order-review tfoot tr.tax-rate td spa
 	color: #000;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
+	margin-right: 0!important;
 }
 body.woocommerce-cart .cart_totals .woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol,
 body.woocommerce-checkout .custom-checkout-order-review .woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol{
