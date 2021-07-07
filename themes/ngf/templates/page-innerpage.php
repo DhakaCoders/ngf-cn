@@ -145,7 +145,7 @@ $intro_title = get_the_title($thisID);
           <?php 
               foreach( $nieuwsobj as $hnieuws ) :
               $imgID = get_post_thumbnail_id($hnieuws->ID);
-              $imgsrc = !empty($imgID)? cbv_get_image_src($imgID): ''; 
+              $imgsrc = !empty($imgID)? cbv_get_image_src($imgID): nieuws_placeholder(); 
           ?>
           <div class="dfp-grd-item">
             <div class="blog-grid-item">                
@@ -203,7 +203,7 @@ $intro_title = get_the_title($thisID);
                   foreach( $refobj as $ref ) {
                   global $post;
                   $imgID = get_post_thumbnail_id($ref->ID);
-                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): ''; 
+                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): coaching_placeholder('tag'); 
                   $name = get_field('naam', $ref->ID);
                 ?>
                 <div class="testimonial-grd-item">
