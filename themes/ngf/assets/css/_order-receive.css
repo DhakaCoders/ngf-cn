@@ -209,34 +209,13 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	-webkit-transition: all 0.5s;
 }
 .chk-scl-itm i{
-	color: #fff;
-	width: 24px;
-	height: 24px;
-	background: #909BA5;
-	border-radius: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	transition: all .5s;
-	-ms-transition: all .5s;
-	-webkit-transition: all .5s;
+	display: inline-block;
+	vertical-align: baseline;
 }
-.chk-scl-itm:hover i{
-	background: #EE3E15;
+.chk-scl-itm:hover svg{
+	fill: #FFA800;
 }
-.chk-scl-itm i svg{
-	transition: all .5s;
-	-ms-transition: all .5s;
-	-webkit-transition: all .5s;
-}
-.chk-scl-itm:hover i svg{
-	fill: #EE3E15;
-	transition: all .5s;
-	-ms-transition: all .5s;
-	-webkit-transition: all .5s;
-	
-}
+
 .chk-scl-itm span{
 	color: #fff;
 	text-transform: capitalize;

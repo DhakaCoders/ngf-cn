@@ -170,6 +170,8 @@ function custom_body_classes($classes){
         $classes[]='sky-btm-bg-cntlr sky-top-bg-cntlr';
     }elseif( is_single() && 'coaching' == get_post_type() ){
         $classes[]='sky-btm-bg-cntlr sky-top-bg-cntlr';
+    }elseif( is_page_template('page-werkwijze.php')  ){
+        $classes[]='werk-bdff has-banner sky-btm-bg-cntlr';
     }
     return $classes;
 }

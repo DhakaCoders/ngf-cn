@@ -72,42 +72,6 @@ if( empty($faqobj) ){
           </div>
           <?php } ?>
           <!-- faqSlider1 end -->
-
-
-          <!-- faqSlider2 start :   for xs 1 item-->
-          <?php if($faqobj){ ?>
-          <div class="faq-slider-cntlr faq-slider-cntlr-2 d-none">
-            <div class="faq-slider faqSlider2">
-              <?php 
-                foreach( $faqobj as $faq ) {
-                global $post;
-                $title = $faq->post_title;
-              ?>
-              <div class="faq-slide-item">
-                <div class="faq-grids-cntlr">
-                  <div class="faq-grid-item-col mHc">
-                    <div class="faq-grid-item mHc1">
-                      <?php if( !empty($name) ):?>
-                      <h4 class="fl-h4 fgi-title ovo-fgi-title mHc2"><a href="<?php the_permalink(); ?>"><?php  echo $title; ?></a></h4>
-                      <?php endif; ?>
-                      <div class="fl-pro-grd-btn">
-                        <a class="fl-read-more-btn" href="<?php the_permalink(); ?>">
-                          <span>READ MORE</span>
-                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <?php } ?>
-
-            </div>
-          </div>
-          <?php } ?>
-          <!-- faqSlider2 end -->
         </div>
       </div>
     </div>

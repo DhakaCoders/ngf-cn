@@ -111,7 +111,7 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
               <div class="chk-scl-itm fb">
                 <a href="<?php echo $smedias['facebook_url']; ?>" class="overlay-link" target="_blank"></a>
                 <i>
-                  <svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                  <svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
                   <use xlink:href="#facebook-icon"></use> </svg>
                 </i>
               </div>
@@ -120,7 +120,7 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
               <div class="chk-scl-itm twitter">
                 <a href="<?php echo $smedias['instagram_url']; ?>" class="overlay-link" target="_blank"></a>
                 <i>
-                  <svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                  <svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
                   <use xlink:href="#twiter-icon"></use> </svg>
                 </i>
               </div>
@@ -129,7 +129,7 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
               <div class="chk-scl-itm linkedin">
                 <a href="<?php echo $smedias['twitter_url']; ?>" class="overlay-link" target="_blank"></a>
                 <i>
-                  <svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                  <svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
                   <use xlink:href="#linkden-icon"></use> </svg>
                 </i>
               </div>
@@ -138,7 +138,7 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
               <div class="chk-scl-itm inst">
                 <a href="<?php echo $smedias['linkedin_url']; ?>" class="overlay-link" target="_blank"></a>
                 <i>
-                  <svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                  <svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#000">
                   <use xlink:href="#instagram-icon"></use> </svg>
                 </i>
               </div>

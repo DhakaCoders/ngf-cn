@@ -115,7 +115,6 @@ ol li::before {
 	color: #FFA800;
 	font-weight: 600;
 	text-align: center;
-	font-size: 16px;
 	line-height: 16px;
 	text-align: center;
 	position: absolute;
@@ -1356,6 +1355,9 @@ Gallery design
 	.cta-title{
 		font-size: 24px!important;
 	}
+	.testimonial-grds{
+		padding-bottom: 0;
+	}
 
 }
 
@@ -1430,7 +1432,7 @@ Gallery design
 	}
 	
 	.cta-ctlr {
-	    padding: 48px 20px 40px;
+	    padding: 48px 20px;
 	}
 	.gallery-icon-img {
 	    height: 200px;
