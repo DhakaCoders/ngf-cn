@@ -52,7 +52,7 @@ $thisID = get_the_ID();
   if($ovbanner):
     $ovbannerposter = !empty($ovbanner['afbeelding'])? cbv_get_image_src( $ovbanner['afbeelding'], 'full' ): '';
 ?>
-  <div class="page-bnr-bg inline-bg" style="background: url('<?php echo $ovbannerposter; ?>'');"></div>
+  <div class="page-bnr-bg inline-bg" style="background: url('<?php echo $ovbannerposter; ?>');"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -68,6 +68,14 @@ $thisID = get_the_ID();
   </div>
   <?php endif; ?>
 </section>
+
+
+<?php
+  $showhideintro = get_field('showhideintro', $thisID);
+  if($showhideintro): 
+  $intro = get_field('intro_sec', $thisID);
+    if($intro ):
+?>
 
 <div class="ovo-two-grds-des-module-sec  werk-two-grds-sec">
   <div class="container">
@@ -122,6 +130,8 @@ $thisID = get_the_ID();
     </div>
   </div>
 </div>
+
+<?php endif; endif;?>
 
 <div class="ovo-full-width-img-dsc-module-sec">
   <section class="ovo-full-width-img-sec  inline-bg"  style="background-image: url(<?php echo THEME_URI; ?>/assets/images/werk-full-inline-bg-img.jpg);">
