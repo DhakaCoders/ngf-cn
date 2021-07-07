@@ -1072,6 +1072,11 @@ body.woocommerce-account .account-page-title h1{
     padding-bottom: 25px;
     margin-bottom: 70px;
 }
+body.loggedin-deshboard-crtl .account-page-title h1{
+    border-bottom: none;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+}
 .woocommerce-account .woocommerce-EditAccountForm legend{
     font-weight: 700;
     color: #fff;
