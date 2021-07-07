@@ -554,6 +554,7 @@ if( $('.qty1').length ){
 
 
 /*start of Jahir*/
+
 if(windowWidth <=767){
   if( $('.ovomblfvSlider').length ){
     $('.ovomblfvSlider').slick({
@@ -582,6 +583,34 @@ if(windowWidth <=767){
   }
 }
 
+
+if(windowWidth <=767){
+  if( $('.werkmsgSlider').length ){
+    $('.werkmsgSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: true,
+      arrows:false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      slidesPerRow: 3,
+      responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: false,
+          rows:1,
+          slidesPerRow: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+    });
+  }
+}
 
 if( $('.faqSlider1').length ){
     $('.faqSlider1').slick({
@@ -658,18 +687,6 @@ if(windowWidth <=767){
 }
 
 
-if( $('.werkmsgSlider').length ){
-    $('.werkmsgSlider').slick({
-      dots: true,
-      arrows:false,
-      infinite: false,
-      autoplay: false,
-      autoplaySpeed: 4000,
-      speed: 700,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    });
-}
 if( $('.mobileImgSlider').length ){
     $('.mobileImgSlider').slick({
       dots: true,

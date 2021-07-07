@@ -486,7 +486,7 @@
   </div>
 </div>
 
-<section class="page-banner d-none">
+<section class="page-banner">
   <span class="page-bnr-skew"></span>
   <span class="hdr-circle-icon"></span>
   <span class="hdr-lft-line-icon">
@@ -555,8 +555,9 @@
           </div>
           <div class="ovo-grds-des-rgt">
             <div class="dfp-text-module clearfix">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed.</p>
-              <ol>
+              <p class="hide-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed.</p>
+              <p class="show-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis nam sit ultrices fermentum tincidunt.</p>
+              <ol class="werk-ol">
                 <li>Lorem ipsum dolor sit amet.</li>
                 <li>Aliquet purus viverra massa.</li>
                 <li>Ut ut nullam tellus.</li>
@@ -583,7 +584,7 @@
           <div class="ovo-grds-des-rgt">
             <div class="dfp-text-module  ovo-text-module clearfix">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed. </p>
-              <ul>
+              <ul class="werk-text-module-ul">
                 <li>Lorem ipsum dolor sit amet.</li>
                 <li>Suspendisse faucibus.</li>
                 <li>Tortor orci turpis nunc.</li>
@@ -629,9 +630,11 @@
       <div class="col-md-12">
         <div class="werk-steps-grid-sec-cntlr">
           <h3 class="fl-h3 step-heading">STEPS</h3>
-          <div class="werk-grids-cntlr hide-sm">
-            <ul class="clearfix reset-list">
-              <li>
+
+          <div class="werk-grids-cntlr">
+            <div class="werk-grids-slider-cntlr  werkmsgSlider">
+
+              <div class="werk-mgs-slide-item">
                 <div class="werk-grid-item  mHc4">
                   <div class="werk-inline-bg">
                     <div class="werk-stp-ibg">
@@ -648,8 +651,9 @@
                     <p>Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
                   </div>
                 </div>
-              </li>
-              <li>
+              </div>
+
+              <div class="werk-mgs-slide-item">
                 <div class="werk-grid-item  mHc4">
                   <div class="werk-inline-bg">
                     <div class="werk-stp-ibg">
@@ -666,8 +670,9 @@
                     <p>Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
                   </div>
                 </div>
-              </li>
-              <li>
+              </div>
+
+              <div class="werk-mgs-slide-item">
                 <div class="werk-grid-item  mHc4">
                   <div class="werk-inline-bg">
                     <div class="werk-stp-ibg">
@@ -684,10 +689,12 @@
                     <p>Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
                   </div>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-          <div class="werk-mbl-stp-grid-slider-cntlr show-sm">
+
+          <!-- werk-mbl-stp-grid-slider-cntlr start -->
+          <div class="werk-mbl-stp-grid-slider-cntlr  d-none">
             <div class="werkmsgSlider">
               <div class="werk-mgs-slide-item">
                 <div class="werk-grid-item  mHc4">
@@ -725,7 +732,6 @@
                     </div>
                   </div>
               </div>
-
               <div class="werk-mgs-slide-item">
                 <div class="werk-grid-item  mHc4">
                     <div class="werk-inline-bg">
@@ -746,6 +752,7 @@
               </div>
             </div>
           </div>
+          <!-- werk-mbl-stp-grid-slider-cntlr end -->
         </div>
       </div>
     </div>
@@ -814,7 +821,7 @@
   </div>
 </section>
 
-<footer class="footer-wrp d-none">
+<footer class="footer-wrp ">
   <span class="ftr-white-skew"></span>
   <span class="ftr-right-angle-line hide-sm">
     <i>

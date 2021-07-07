@@ -8,3 +8,55 @@
 2021-07-07T10:08:06+00:00 CRITICAL syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\page-werkwijze.php on line 341
 >>>>>>> 2c3035021a517ccae28b7412e1bf3be61859f815
 
+2021-07-07T13:36:45+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\page-werkwijze.php on line 132
+
+2021-07-07T15:43:25+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
+2021-07-07T15:43:54+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
+2021-07-07T15:44:08+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
+2021-07-07T15:45:38+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
+2021-07-07T16:42:46+00:00 CRITICAL Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php:107
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php(107): array_merge(Import: Array, Export: Array, System Info: Array)
+#1 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(292): WPForms_Tools->init('')
+#2 D:\xampp\htdocs\projects\2021\ngf\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 D:\xampp\htdocs\projects\2021\ngf\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\projects\2021\ngf\wp-admin\admin.php(175): do_action('admin_init')
+#5 {main}
+  thrown in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-tools.php on line 107
+
