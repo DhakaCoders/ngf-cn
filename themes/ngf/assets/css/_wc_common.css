@@ -471,7 +471,7 @@ body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .selecti
 }
 .woocommerce-notices-wrapper .woocommerce-error,
 .woocommerce .woocommerce-error{
-	padding-left: 45px!important;
+	padding-left: 58px!important;
 	position: relative;
 }
 
@@ -480,6 +480,10 @@ body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .selecti
 .woocommerce .woocommerce-message::before {
     top: 6px;
     left: 16px;
+    content: ""!important;
+    background-image: url('../images/alert-icon.svg');
+    width: 24px;
+    height: 24px;
 }
 .woocommerce .woocommerce-info,
 .woocommerce .woocommerce-error,

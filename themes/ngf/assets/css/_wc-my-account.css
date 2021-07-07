@@ -184,8 +184,9 @@ body.woocommerce-checkout .woocommerce textarea{
     border-radius:0px!important;
     color:#909BA5;
 }
-.woocommerce form .form-row.woocommerce-invalid .select2-container, .woocommerce form .form-row.woocommerce-invalid input.input-text, .woocommerce form .form-row.woocommerce-invalid select{
-    border-color: #D61D1D;
+.woocommerce-invalid input,
+.hasError input{
+    border-color: #D61D1D!important;
 }
 body.woocommerce-edit-account .woocommerce input[type="text"],
 body.woocommerce-edit-account .woocommerce input[type="email"],
@@ -1325,6 +1326,9 @@ body.woocommerce-orders .customer-order-details .fl-pagi-cntlr {
 
 
 /* ----------------------- Wc Shopping Cart ---------------------------- */
+body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul.cart_list {
+    margin: 0 -10px;
+} 
 body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-item {
     margin-bottom: 20px;
     border-radius: 3px;
@@ -1332,6 +1336,8 @@ body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-it
     width: 50%;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-item .mcart-item-inner{
     background-color: #131313;
@@ -1426,6 +1432,19 @@ body.loggedin-winkelmandje-crtl .myaccount-cart-crtl .woocommerce-mini-cart + p 
 body.woocommerce-account.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr{
     margin-bottom: 100px;
 }
+body.loggedin-winkelmandje-crtl .mcart-item-inner a.remove_from_cart_button{
+    color: #D61D1D!important;
+}
+body.loggedin-winkelmandje-crtl .mcart-item-inner a.remove_from_cart_button:hover{
+    background-color: #D61D1D!important;
+    color: #fff!important;
+}
+body.loggedin-winkelmandje-crtl .quantity{
+    padding-top: 5px;
+}
+body.loggedin-winkelmandje-crtl .woocommerce-price-suffix{
+    margin-left: 4px;
+}
 
 
 
@@ -1439,9 +1458,11 @@ body.woocommerce-checkout .checkout-terms{
 body.woocommerce-checkout .checkout-terms span.required{
     display: none;
 }
-body.woocommerce-checkout  .payment-method-crtl .woocommerce-additional-fields.extra-info,
-body.woocommerce-checkout .payment-method-crtl{
+body.woocommerce-checkout  .payment-method-crtl .woocommerce-additional-fields.extra-info{
     padding-top: 47px;
+}
+body.woocommerce-checkout .payment-method-crtl{
+    padding-top: 68px;
 }
 body.woocommerce-checkout  .payment-method-crtl .woocommerce-additional-fields.extra-info{
     display: none;
