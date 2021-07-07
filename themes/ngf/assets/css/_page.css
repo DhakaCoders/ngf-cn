@@ -312,7 +312,7 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	padding-bottom: 20px;
 }
 .page-404-dsc-wrp p{
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
 .page-404-dsc-wrp ul{
 	display: table;
@@ -339,7 +339,7 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding-top: 0;
+	padding-top: 20px;
 }
 .page-404-btn a {
     height: 50px;
