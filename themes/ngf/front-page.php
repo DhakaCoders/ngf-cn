@@ -162,7 +162,7 @@ if( empty($planfobj) ){
 	            global $post, $product;
 	            $short_desc1 = get_field('short_desc_1', $product->get_id());
 	            $pimgID = get_post_thumbnail_id($product->get_id());
-            	$pimgsrc = !empty($pimgID)? cbv_get_image_src($pimgID): ''; 
+            	$pimgsrc = !empty($pimgID)? cbv_get_image_src($pimgID): shop_placeholder(); 
 	        ?>
             <div class="plans-grid-slider-item">
               <div class="blog-grid-item plans-grid-item">
@@ -244,7 +244,7 @@ if( empty($nieuwsfobj) ){
 	        <?php 
 	            foreach( $nieuwsfobj as $hnieuws ) :
 	            $imgID = get_post_thumbnail_id($hnieuws->ID);
-            	$imgsrc = !empty($imgID)? cbv_get_image_src($imgID): ''; 
+            	$imgsrc = !empty($imgID)? cbv_get_image_src($imgID): nieuws_placeholder(); 
 	        ?>
             <div class="latest-news-grid-slider-item">
               <div class="blog-grid-item latest-news-grid-item latest-news-grid-item">
@@ -313,7 +313,7 @@ if( empty($clientobj) ){
 	        <?php 
 	            foreach( $clientobj as $client ) :
 	            $imgID = get_post_thumbnail_id($client->ID);
-            	$imgtag = !empty($imgID)? cbv_get_image_tag($imgID): ''; 
+            	$imgtag = !empty($imgID)? cbv_get_image_tag($imgID): coaching_placeholder('tag'); 
             	$name = get_field('naam', $client->ID);
 	        ?>
             <div class="testimonial-grd-item">
