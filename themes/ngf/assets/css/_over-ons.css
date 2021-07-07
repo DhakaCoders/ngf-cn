@@ -46,13 +46,13 @@
 	position: relative;
     height: 750px;
 }
-.ovo-full-width-img-fmbl {
+/*.ovo-full-width-img-fmbl {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-}
+}*/
 .ovo-full-width-bg-heading-inner {
     position: relative;
     display: inline-block;
@@ -373,7 +373,7 @@ span.fl-video-play-icon-cntlr{
         padding-bottom: 90px;
     }
     .ovo-full-width-img-sec {
-        height: 700px;
+        height: 650px;
     }
     .fancy-vedeo-items-sec-cntlr{
         padding-bottom: 10px;
@@ -431,7 +431,7 @@ span.fl-video-play-icon-cntlr{
         margin-bottom: 10px;
     }
     .ovo-full-width-img-sec {
-        height:650px;
+        height:550px;
     }
     .ovo-full-width-bg-des {
         padding: 115px 0;
@@ -531,7 +531,7 @@ span.fl-video-play-icon-cntlr{
         margin-bottom: 8px;
     }
     .ovo-full-width-img-sec {
-        height: 600px;
+        height: 450px;
     }
     .ovo-full-width-bg-des-cntlr p {
         font-size: 26px;
@@ -616,7 +616,7 @@ span.fl-video-play-icon-cntlr{
         font-size: 20px;
     }
     .ovo-full-width-img-sec {
-        height: 550px;
+        height: 350px;
     }
     .ovo-full-width-bg-des {
         /*padding-bottom: 25px;*/
@@ -665,7 +665,7 @@ span.fl-video-play-icon-cntlr{
         max-width: 100%;
     }
     .ovo-full-width-img-sec {
-        height: 420px;
+        height: 240px;
     }
     .ovo-full-width-bg-des-cntlr p {
         font-size: 18px;
@@ -675,9 +675,6 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-grids-cntlr{
        justify-content: center;
-    }
-    .ovo-full-width-img-sec img{
-        display: block;
     }
     .ovo-abs-round-three, .ovo-abs-line-four{
         display: none;
@@ -768,7 +765,7 @@ span.fl-video-play-icon-cntlr{
     }
     .ofmi-heading {
         margin-bottom: 25px;
-    }
+    }sss
     .faq-slider-sec-hdr .fssh-title{
         margin-bottom: 15px!important;
     }
@@ -786,9 +783,6 @@ span.fl-video-play-icon-cntlr{
 
 }
 @media(max-width: 575px){
-    .ovo-full-width-img-sec {
-        height: 240px;
-    }
     .ovo-grids-cntlr .ovo-grid-item-col{
      o  width: 100%;
     }
@@ -812,9 +806,6 @@ span.fl-video-play-icon-cntlr{
     .ovo-grds-text-module p {
         line-height: 1.8;
         margin-bottom: 10px;
-    }
-    .ovo-full-width-img-sec {
-        height: 240px;
     }
     .ovo-grid-item-col .faq-grid-item {
         padding: 28px 16px 21px 15px;

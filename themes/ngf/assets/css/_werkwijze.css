@@ -137,7 +137,6 @@ body.werk-bdff.sky-btm-bg-cntlr {
 @media (max-width: 1699px){
 	.werk-one-grds-sec {
 	    padding-top: 75px;
-	    padding-bottom: 60px;
 	}
 	.werk-steps-grid-sec {
 	    padding-top: 90px;
@@ -155,6 +154,9 @@ body.werk-bdff.sky-btm-bg-cntlr {
 	}
 	.werk-grid-des p{
 		line-height: 1.7;
+	}
+	.werk-two-grds-sec {
+	    padding: 85px 0;
 	}
 
 }
@@ -176,6 +178,22 @@ body.werk-bdff.sky-btm-bg-cntlr {
 	.werk-grid-des p{
 		line-height: 1.6;
 	}
+	.werk-two-grds-sec {
+	    padding: 75px 0;
+	}
+	.werk-one-grds-sec {
+	    padding-top: 65px;
+	}
+	.werk-inline-bg {
+	    margin-bottom: 50px;
+	}
+	.werk-steps-grid-sec-cntlr {
+	    padding-bottom: 75px;
+	}
+	.werk-testimonial-slider-sec {
+	    padding-top: 75px;
+	}
+
 
 
 
@@ -186,6 +204,9 @@ body.werk-bdff.sky-btm-bg-cntlr {
 @media(max-width: 1199px){
 	.werk-inline-bg {
 	    margin-bottom: 40px;
+	}
+	.werk-two-grds-sec {
+	    padding: 65px 0;
 	}
 
 }
