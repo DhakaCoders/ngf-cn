@@ -2,3 +2,15 @@
 
 2021-07-07T06:15:44+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\wp-includes\Requests\Transport\cURL.php on line 163
 
+2021-07-07T07:02:57+00:00 CRITICAL syntax error, unexpected 'printf' (T_STRING) in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\templates\customer-review.php on line 26
+
+2021-07-07T07:03:26+00:00 CRITICAL syntax error, unexpected '$client' (T_VARIABLE), expecting ',' or ';' in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\templates\customer-review.php on line 26
+
+2021-07-07T12:40:15+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\templates\page-innerpage.php on line 171
+
+2021-07-07T14:27:59+00:00 CRITICAL syntax error, unexpected 'get_row_layout' (T_STRING) in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\templates\page-innerpage.php on line 13
+
+2021-07-07T14:50:31+00:00 CRITICAL syntax error, unexpected '}' in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\templates\page-innerpage.php on line 35
+
+2021-07-07T14:53:06+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\templates\page-innerpage.php on line 279
+

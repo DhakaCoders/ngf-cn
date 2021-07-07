@@ -12,7 +12,7 @@
   $email = get_field('emailadres', 'options');
   $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
   $smedias = get_field('social_media', 'options');
-  $ftgalerij = get_field('ft_galerij', 'options');
+  $clientlogos = get_field('ft_clientlogos', 'options');
   $copyright_text = get_field('copyright_text', 'options');
   $usps = get_field('usps', 'options');
 ?>
@@ -39,12 +39,16 @@
                 <?php echo $logo_tag; ?>
               </a>
             </div>
-            <?php if( $ftgalerij ): ?>
+            <?php if( $clientlogos ): ?>
             <div class="client-logo-cntlr clientLogoSlider">
-              <?php foreach( $ftgalerij as $ftgalID ): ?>
+              <?php foreach( $clientlogos as $logo ): ?>
               <div class="client-logo-item">
                 <div class="client-logo">
-                  <a target="_blank" href="#"><?php echo cbv_get_image_tag($ftgalID); ?></a>
+                  <?php 
+                    if( !empty($logo['knop']) ) printf('<a target="_blank" href="%s">', $logo['knop']); 
+                    if( !empty($logo['logo']) ) echo cbv_get_image_tag($logo['logo']); 
+                    if( !empty($logo['knop']) ) printf('%s', '</a>'); 
+                  ?>
                 </div>
               </div>
               <?php endforeach; ?>

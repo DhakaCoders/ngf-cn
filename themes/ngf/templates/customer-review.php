@@ -1,3 +1,20 @@
+<?php 
+  global $product;
+  $client = get_field('clientoptions', $product->get_id());
+  if(!empty($client)):
+  $refobj = $client['selectclients'];
+  if( empty($refobj) ){
+      $refobj = get_posts( array(
+        'post_type' => 'referenties',
+        'posts_per_page'=> 3,
+        'orderby' => 'date',
+        'order'=> 'desc',
+
+      ) );
+      
+  }
+?>
+<?php if($refobj){ ?>
 <section class="pro-single-testimonial-slider-sec white-bg">
   <div class="container">
     <div class="row">
@@ -6,51 +23,33 @@
           <div class="dfp-testimonial-module  pro-single-testimonial">
             <div class="testimonial-ctlr">
               <div class="sec-entry-hdr">
-                <h3 class="fl-h3">client options</h3>
+                <h3 class="fl-h3"><?php echo !empty($client['titel'])? $client['titel']:__('client options', 'ngf'); ?></h3>
               </div>
               <div class="testimonial-grds dfpTestimonialSlider">
+                <?php 
+                  foreach( $refobj as $ref ) {
+                  global $post;
+                  $imgID = get_post_thumbnail_id($ref->ID);
+                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): ''; 
+                  $name = get_field('naam', $ref->ID);
+                ?>
                 <div class="testimonial-grd-item">
                   <div class="testimonial-grd-item-inr  home-testimonial-grd-item-inr">
                     <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?><?php echo THEME_URI; ?>/assets/images//testimonial-img-01.svg"></i>
+                      <i><?php echo $imgtag; ?></i>
                     </div>
                     <div class="testimonial-grd-item-des">
                       <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
+                        <?php echo wpautop($ref->post_excerpt); ?>
+                        <?php if( !empty($name) ) printf('<strong>%s</strong>', $name); ?>
                       </blockquote>
                     </div>
                   </div>
                 </div>
-                <div class="testimonial-grd-item">
-                  <div class="testimonial-grd-item-inr  ovo-testimonial-grd-item-inr">
-                    <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?><?php echo THEME_URI; ?>/assets/images//testimonial-img-01.svg"></i>
-                    </div>
-                    <div class="testimonial-grd-item-des">
-                      <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonial-grd-item">
-                  <div class="testimonial-grd-item-inr  ovo-testimonial-grd-item-inr">
-                    <div class="testimonial-grd-item-img">
-                      <i><img src="<?php echo THEME_URI; ?><?php echo THEME_URI; ?>/assets/images//testimonial-img-01.svg"></i>
-                    </div>
-                    <div class="testimonial-grd-item-des">
-                      <blockquote>
-                        <p><em>in lacus, quam blandit at morbi dolor erat. ipsum neque et pulvinar felis. porttitor quam sit varius quisque lacus, maecenas as et tellue.</em></p>
-                        <strong>mark s.</strong>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
+                <?php } ?>
               </div>
               <div class="testimonial-btn">
-                <a class="fl-black-btn" href="#">other testimonials</a>
+                <a class="fl-black-btn" href="<?php echo get_link_by_page_template('page-referenties.php'); ?>"><?php _e( 'other testimonials', 'ngf' ); ?></a>
               </div>
             </div>
           </div>
@@ -59,7 +58,8 @@
     </div>
   </div>
 </section>
-
+<?php } ?>
+<?php endif; ?>
 
 
 <section class="related-product-sec" style="display:none">

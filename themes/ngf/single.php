@@ -9,7 +9,9 @@ $intro_title = get_the_title();
     <?php if( have_rows('inhoud') ){ ?>
 
     <div class="dfp-promo-module clearfix">
-      <?php while ( have_rows('inhoud') ) : the_row();  ?>
+      <?php 
+        while ( have_rows('inhoud') ) : the_row();  
+      ?>
         <?php 
           if( get_row_layout() == 'afbeelding' ){ 
           $fcafbeelding = get_sub_field('fc_afbeeldingen');
@@ -246,7 +248,29 @@ $intro_title = get_the_title();
   </article>
 </section>
 
+<?php 
+  $samterms = get_the_terms(get_the_ID(), 'category');
+  $slugs = array();
+  if( !empty($samterms) ){
+    foreach( $samterms as $samterm ){
+      $slugs[] = $samterm->slug;
+    }
+    $pQuery = new WP_Query(array(
+    'post_type' => 'post',
+    'posts_per_page'=> 3,
+    'orderby' => 'date',
+    'order'=> 'asc',
+    'tax_query' => array(
+      array(
+        'taxonomy' => 'category',
+          'field'    => 'slug',
+          'terms'    => $slugs,
+      )
+    )
 
+  ));
+?>
+<?php if( $pQuery->have_posts() ): ?>
 <section class="blog-details-related-sec">
   <span class="latest-news-bg hide-sm"><svg class="latest-nws-bg" width="484" height="727" viewBox="0 0 484 727" fill="#FFA800">
       <use xlink:href="#latest-nws-bg"></use> </svg>
@@ -263,25 +287,31 @@ $intro_title = get_the_title();
       <div class="col-md-12">
         <div class="blog-details-related-sec-inr">
           <div class="sec-entry-hdr">
-            <h3 class="fl-h3">gerelateerd nieuws</h3>
+            <h3 class="fl-h3"><?php _e( 'gerelateerd nieuws', 'ngf' ); ?></h3>
           </div>
           <div class="blog-details-grds blogDetailsSlider clearfix">
+            <?php 
+              while(have_posts()): the_post(); 
+              global $post;
+              $imgID = get_post_thumbnail_id(get_the_ID());
+              $imgsrc = !empty($imgID)? cbv_get_image_src($imgID): '';
+            ?>
             <div class="blogDetialsSlideItem">
               <div class="blog-grid-item">                  
                 <div class="blog-grid-img">                    
-                  <a href="#" class="overlay-link"></a>
-                  <div class="bgi-img inline-bg" style="background-image: url('assets/images/bdr-img-01.jpg');">                  
+                  <a href="<?php the_permalink(); ?>" class="overlay-link"></a>
+                  <div class="bgi-img inline-bg" style="background-image: url('<?php echo $imgsrc; ?>');">                  
                   </div>
                 </div>  
                 <div class="blog-grid-des mHc">
                   <div class="blog-grid-des-inner">
-                    <h4 class="fl-h4 bgi-title mHc1"><a href="#">Pellentesque tempus posuere urna tortor, sed. Lobortis.</a></h4>                      
+                    <h4 class="fl-h4 bgi-title mHc1"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>                      
                     <div class="bgi-des mHc2">
-                      <p>Est in risus tempus egestas ut vitae lorem. Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
+                      <?php the_excerpt(); ?>
                     </div>  
                     <div class="fl-pro-grd-btn fl-btn-absolute">
-                      <a class="fl-read-more-btn" href="#">
-                        <span>READ MORE</span>
+                      <a class="fl-read-more-btn" href="<?php the_permalink(); ?>">
+                        <span><?php _e( 'READ MORE', 'ngf' ); ?></span>
                         <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
                         <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
                         </i>
@@ -291,85 +321,12 @@ $intro_title = get_the_title();
                 </div>  
               </div>
             </div>
-            <div class="blogDetialsSlideItem">
-              <div class="blog-grid-item">                  
-                <div class="blog-grid-img">                    
-                  <a href="#" class="overlay-link"></a>
-                  <div class="bgi-img inline-bg" style="background-image: url('assets/images/bdr-img-02.jpg');">                  
-                  </div>
-                </div>  
-                <div class="blog-grid-des mHc">
-                  <div class="blog-grid-des-inner">
-                    <h4 class="fl-h4 bgi-title mHc1"><a href="#">Pellentesque tempus posuere urna tortor, sed. Lobortis.</a></h4>                      
-                    <div class="bgi-des mHc2">
-                      <p>Est in risus tempus egestas ut vitae lorem. Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                    </div>  
-                    <div class="fl-pro-grd-btn fl-btn-absolute">
-                      <a class="fl-read-more-btn" href="#">
-                        <span>READ MORE</span>
-                        <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                        <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                        </i>
-                      </a>
-                    </div>
-                  </div>                                         
-                </div>  
-              </div>
-            </div>
-            <div class="blogDetialsSlideItem">
-              <div class="blog-grid-item">                  
-                <div class="blog-grid-img">                    
-                  <a href="#" class="overlay-link"></a>
-                  <div class="bgi-img inline-bg" style="background-image: url('assets/images/bdr-img-03.jpg');">                  
-                  </div>
-                </div>  
-                <div class="blog-grid-des mHc">
-                  <div class="blog-grid-des-inner">
-                    <h4 class="fl-h4 bgi-title mHc1"><a href="#">Pellentesque tempus posuere urna tortor, sed. Lobortis.</a></h4>                      
-                    <div class="bgi-des mHc2">
-                      <p>Est in risus tempus egestas ut vitae lorem. Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                    </div>  
-                    <div class="fl-pro-grd-btn fl-btn-absolute">
-                      <a class="fl-read-more-btn" href="#">
-                        <span>READ MORE</span>
-                        <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                        <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                        </i>
-                      </a>
-                    </div>
-                  </div>                                         
-                </div>  
-              </div>
-            </div>
-            <div class="blogDetialsSlideItem">
-              <div class="blog-grid-item">                  
-                <div class="blog-grid-img">                    
-                  <a href="#" class="overlay-link"></a>
-                  <div class="bgi-img inline-bg" style="background-image: url('assets/images/bdr-img-01.jpg');">                  
-                  </div>
-                </div>  
-                <div class="blog-grid-des mHc">
-                  <div class="blog-grid-des-inner">
-                    <h4 class="fl-h4 bgi-title mHc1"><a href="#">Pellentesque tempus posuere urna tortor, sed. Lobortis.</a></h4>                      
-                    <div class="bgi-des mHc2">
-                      <p>Est in risus tempus egestas ut vitae lorem. Vel et elementum ultrices mauris dui auctor elit tellus vel. Nec donec a.</p>
-                    </div>  
-                    <div class="fl-pro-grd-btn fl-btn-absolute">
-                      <a class="fl-read-more-btn" href="#">
-                        <span>READ MORE</span>
-                        <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                        <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                        </i>
-                      </a>
-                    </div>
-                  </div>                                         
-                </div>  
-              </div>
-            </div>
+            <?php endwhile; ?>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; wp_reset_postdata(); } ?>
 <?php get_footer(); ?>
