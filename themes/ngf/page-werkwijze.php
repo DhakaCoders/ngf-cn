@@ -46,7 +46,13 @@ $thisID = get_the_ID();
       </li>
     </ul>
   </div>
-  <div class="page-bnr-bg inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/has-transparent-bnr-img-002.jpg');"></div>
+  <?php  
+  $ovbanner = get_field('bannersec', $thisID);
+  $page_title = !empty($ovbanner['titel']) ? $ovbanner['titel'] : get_the_title();
+  if($ovbanner):
+    $ovbannerposter = !empty($ovbanner['afbeelding'])? cbv_get_image_src( $ovbanner['afbeelding'], 'full' ): '';
+?>
+  <div class="page-bnr-bg inline-bg" style="background: url('<?php echo $ovbannerposter; ?>'');"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -54,12 +60,13 @@ $thisID = get_the_ID();
           <div class="page-bnr-desc">
             <span class="pg-bnr-desc-line"></span>
             <span class="pg-bnr-desc-circle"></span>
-            <h1 class="fl-h1-80 pg-bnr-title">Eu ac urna<br> vel, sagittis<br> enim Quis.</h1>
+            <?php if( !empty($page_title) ) printf( '<h1 class="fl-h1-80 pg-bnr-title">%s</h1>', $page_title ); ?>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <?php endif; ?>
 </section>
 
 <div class="ovo-two-grds-des-module-sec  werk-two-grds-sec">
