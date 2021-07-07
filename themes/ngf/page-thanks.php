@@ -5,6 +5,7 @@
 get_header(); 
 $thisID = get_the_ID(); 
 $intro = get_field('introsec', $thisID);
+if( $intro ):
 $page_title = !empty($intro['titel']) ? $intro['titel'] : '';
 $afbeelding1 = !empty($intro['afbeelding_1']) ? cbv_get_image_src($intro['afbeelding_1']) : '';
 $afbeelding2 = !empty($intro['afbeelding_2']) ? cbv_get_image_src($intro['afbeelding_2']) : '';
@@ -29,7 +30,7 @@ $afbeelding2 = !empty($intro['afbeelding_2']) ? cbv_get_image_src($intro['afbeel
       <div class="col-md-12">
         <div class="thank-you-muscle-icon show-sm">
           <i>
-            <img src="<?php echo $afbeelding2; ?>" alt="">
+            <img src="<?php echo $afbeelding2; ?>" alt="<?php echo $page_title; ?>">
           </i>
         </div>
         <div class="thank-you-entry-header">
@@ -46,11 +47,12 @@ $afbeelding2 = !empty($intro['afbeelding_2']) ? cbv_get_image_src($intro['afbeel
             <?php if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] ); ?>
           </div>
           <div class="thank-you-btn">
-            <a class="fl-black-btn" href="<?php echo esc_url(home_url('/')); ?>">HOME</a>
+            <a class="fl-black-btn" href="<?php echo esc_url(home_url('/')); ?>"><?php _e( 'HOME', 'ngf' ); ?></a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
 <?php get_footer(); ?>
