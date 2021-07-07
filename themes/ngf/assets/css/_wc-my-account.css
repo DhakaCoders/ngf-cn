@@ -1333,11 +1333,14 @@ body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-it
     margin-bottom: 20px;
     border-radius: 3px;
     float: left;
-    width: 50%;
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 0;
     padding-bottom: 0;
+}
+body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_button{
+    margin-bottom: 10px;
 }
 body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-item .mcart-item-inner{
     background-color: #131313;
@@ -1349,6 +1352,33 @@ body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-it
 body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li:before{
     content: none;
 }
+.item-cnt {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item-cnt-left, .item-cnt-right {
+    width: 50%;
+}
+.item-cnt-title {
+    padding: 15px 0;
+}
+.item-cnt-title a{
+    text-decoration: none;
+}
+.item-cnt-title a span.cart-product-name:hover{
+    color: #FFA800!important;
+}
+.item-cnt-title a span.cart-product-name, .item-cnt-title span.cart-product-name {
+    font-size: 22px;
+    margin-bottom: 3px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #fff;
+    transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;
+}
 body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-navigation{
     max-width:34%!important;
     width: 100%;
@@ -1356,9 +1386,6 @@ body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyA
 body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
     max-width:66%;
     width:100%;
-}
-body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_button{
-    margin-bottom: 10px;
 }
 body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_button + a{
     font-weight: 700;
@@ -1394,7 +1421,7 @@ body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr{
     align-items: flex-start;
 }
 body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a:not(:last-child){
-    margin-right: 20px;
+    margin-right: 20px!important;
 }
 body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons {
     display: flex;
@@ -1433,19 +1460,30 @@ body.woocommerce-account.loggedin-winkelmandje-crtl .woocommerce-account-grds-cn
     margin-bottom: 100px;
 }
 body.loggedin-winkelmandje-crtl .mcart-item-inner a.remove_from_cart_button{
-    color: #D61D1D!important;
+    color: #ffa800!important;
 }
 body.loggedin-winkelmandje-crtl .mcart-item-inner a.remove_from_cart_button:hover{
-    background-color: #D61D1D!important;
+    background-color: #ffa800!important;
     color: #fff!important;
 }
 body.loggedin-winkelmandje-crtl .quantity{
-    padding-top: 5px;
+    padding-top: 7px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+body.loggedin-winkelmandje-crtl .quantity span.amount{
+    padding-left: 4px;
 }
 body.loggedin-winkelmandje-crtl .woocommerce-price-suffix{
     margin-left: 4px;
 }
-
+.item-cnt-right img {
+    width: auto!important;
+    max-width: 150px;
+}
+body.loggedin-winkelmandje-crtl .buttons a.button{
+    padding: 10px 15px;
+}
 
 
 
@@ -3192,6 +3230,16 @@ body .wc-template-crtl .success-msg {
     body.woocommerce-checkout .checkout-terms > .validate-required{
         margin-bottom: 20px!important;
     }
+    body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul.cart_list{
+        margin: 0;
+    }
+    body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-item{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .item-cnt-title a span.cart-product-name, .item-cnt-title span.cart-product-name{
+        font-size: 20px;
+    }
 }
 @media(max-width: 659px){
     
@@ -3308,6 +3356,30 @@ body .wc-template-crtl .success-msg {
      #billing_order_type_field span label, #billing_salutation_field span label{
         font-size:12px;
     }
+
+    /* ------------ wc shopping cart ---------------------- */
+    .item-cnt-right{
+        order: 1;
+        width: 35%;
+    }
+    .item-cnt-left{
+        order: 2;
+        padding-left: 15px;
+        width: 65%;
+    }
+    .woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img{
+        margin-left: 0;
+        float: left;
+    }
+    .item-cnt-title a span.cart-product-name, .item-cnt-title span.cart-product-name{
+        font-size: 18px;
+    }
+    .item-cnt-right img{
+        max-width: 130px!important;
+    }
+    body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-item .mcart-item-inner{
+        padding: 15px;
+    }
 }
 @media(max-width:479px){
     /* ------------------- woocommerce-cart -------------------*/
@@ -3327,12 +3399,20 @@ body .wc-template-crtl .success-msg {
    
     p.woocommerce-mini-cart__buttons.buttons a{
         width: 50%!important;
+        min-width: initial;
     }
     /* ---------------------- backbutton ------------------------*/
     .back-to-dashboard-btn {
         width: 100%;
         min-width:initial;
     }
+    .item-cnt-right img{
+        max-width: 110px!important;
+    }
+    .item-cnt-title{
+        padding: 10px 0 10px;
+    }
+
 }
 @media(max-width:359px){
     body.woocommerce-account .woocommerce .u-column1 h4, 
@@ -3341,6 +3421,15 @@ body .wc-template-crtl .success-msg {
     body.woocommerce-account .register-top-title h3, 
     body.woocommerce-checkout .checkout-page-title h1{
         font-size: 32px;
+    }
+    .item-cnt-right img{
+        max-width: 90px!important;
+    }
+    .item-cnt {
+        align-items: flex-start;
+    }
+    .item-cnt-title{
+        padding: 0 0 10px;
     }
 }
 
