@@ -1356,6 +1356,9 @@ Gallery design
 	.cta-title{
 		font-size: 24px!important;
 	}
+	.testimonial-grds{
+		padding-bottom: 0;
+	}
 
 }
 
@@ -1430,7 +1433,7 @@ Gallery design
 	}
 	
 	.cta-ctlr {
-	    padding: 48px 20px 40px;
+	    padding: 48px 20px;
 	}
 	.gallery-icon-img {
 	    height: 200px;

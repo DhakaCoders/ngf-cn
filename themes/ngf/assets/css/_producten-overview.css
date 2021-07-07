@@ -1,5 +1,5 @@
 /* == sec-heading design start == */
-.post-type-archive-product .wc-template-crtl{
+.archive  .wc-template-crtl{
     margin-top: 0!important;
 }
 .sec-hdr-cntrl{
@@ -33,6 +33,9 @@
     font-size: 16px;
     color: #9B9B9B;
     opacity: 1;
+}
+.archive .fl-secrh form button{
+    margin-top: -1px;
 }
 /* == sec-heading design end== */
 

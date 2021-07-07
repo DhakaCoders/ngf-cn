@@ -92,7 +92,7 @@ get_header();
             </div>
             <div class="hm-bnr-desc-btn-cntlr">
               <?php 
-				$hbknop_1 = $hbanner['knop_1'];
+				        $hbknop_1 = $hbanner['knop_1'];
                 if( is_array( $hbknop_1 ) &&  !empty( $hbknop_1['url'] ) ){
                     printf('<div class="hm-bnr-desc-btns"><a  class="hm-bnr-desc-btn" href="%s" target="%s"><span class="btn-animation"><span>%s</span><i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12" fill="#FFA800">
                       <use xlink:href="#dip-yellow-right-arrow"></use> </svg></i></span></a></div>', $hbknop_1['url'], $hbknop_1['target'], $hbknop_1['title']); 
@@ -193,7 +193,7 @@ if( empty($planfobj) ){
                 </div>  
               </div>
             </div>
-			<?php endforeach; wp_reset_postdata(); ?> 
+			    <?php endforeach; wp_reset_postdata(); ?> 
           </div>
           <div class="plans-button">
               <a class="fl-black-btn" href="<?php echo wc_get_page_permalink( 'shop' ); ?>"><?php _e( 'VIEW ALL PLANS', 'ngf' ); ?></a>

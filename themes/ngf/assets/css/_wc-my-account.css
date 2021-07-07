@@ -175,6 +175,9 @@ body.woocommerce-checkout .woocommerce textarea{
     border-radius:0px!important;
     color:#909BA5;
 }
+.woocommerce form .form-row.woocommerce-invalid .select2-container, .woocommerce form .form-row.woocommerce-invalid input.input-text, .woocommerce form .form-row.woocommerce-invalid select{
+    border-color: #D61D1D;
+}
 body.woocommerce-edit-account .woocommerce input[type="text"],
 body.woocommerce-edit-account .woocommerce input[type="email"],
 body.woocommerce-edit-account .woocommerce input[type="tel"],
@@ -197,12 +200,19 @@ body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper label{
 body.woocommerce-edit-account .woocommerce form .form-row label{
     color:#fff;
 }
+/*body.hide-account-title .woocommerce form .form-row label{
+    margin-bottom: 2px;
+}*/
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 
 
 /*  ----------------------- checkbox-desigh -----------------------------  */
+input[type=checkbox], input[type=radio]{   
+   display: none;
+}
+
 .same-as-shipping-address input,
 /*.login-info p > input,
 .woocommerce-form .form-row .woocommerce-form__label-for-checkbox input,*/
@@ -220,7 +230,8 @@ body.woocommerce-edit-account .woocommerce form .form-row label{
     height: 100%;
 }
 .checkbox-custom,
-.woocommerce-form__label-for-checkbox span:before{
+.woocommerce-form__label-for-checkbox span:before,
+#ship-to-different-address span:before{
     width: 18px;
     height: 18px;
     border:1px solid #BFBFBF;
@@ -234,7 +245,8 @@ body.woocommerce-edit-account .woocommerce form .form-row label{
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
 }
-.woocommerce-form__label-for-checkbox span:before{
+.woocommerce-form__label-for-checkbox span:before,
+#ship-to-different-address span:before{
     content:"";
     top:2px;
 }
@@ -243,7 +255,8 @@ body.woocommerce-edit-account .woocommerce form .form-row label{
     margin-top:-1px;
 }
 .checkbox-custom:after,
-.woocommerce-form__label-for-checkbox span:after{
+.woocommerce-form__label-for-checkbox span:after,
+#ship-to-different-address span:after{
     background: url(../images/checkbox-tick-img.svg);
     position: absolute;
     width: 12px;
@@ -260,7 +273,8 @@ body.woocommerce-edit-account .woocommerce form .form-row label{
     -webkit-transform: translate(-50% ,-50%);
     margin-top:-1px;
 }
-.woocommerce-form__label-for-checkbox span:after{
+.woocommerce-form__label-for-checkbox span:after,
+#ship-to-different-address span:after{
     left: 3px;
     top: 6px;
 }
@@ -271,13 +285,15 @@ body.woocommerce-edit-account .woocommerce form .form-row label{
 .same-as-shipping-address input[type=checkbox]:checked ~ .checkbox-custom:after,
 #billing_personal_recom input#personal_recom:checked ~ .checkbox-custom:after,
 #billing_acttion_insp input#acttion_insp:checked ~ .checkbox-custom:after,
-.woocommerce-form__label-for-checkbox input[type=checkbox]:checked + span:after{
+.woocommerce-form__label-for-checkbox input[type=checkbox]:checked + span:after,
+#ship-to-different-address input:checked ~ span:after{
     content: "";
 }
 .same-as-shipping-address input[type=checkbox]:checked ~ .checkbox-custom,
 #billing_personal_recom input#personal_recom:checked ~ .checkbox-custom,
 #billing_acttion_insp input#acttion_insp:checked ~ .checkbox-custom,
-.woocommerce-form__label-for-checkbox input:checked + span:before{
+.woocommerce-form__label-for-checkbox input:checked + span:before,
+#ship-to-different-address input:checked ~ span:before{
     background: #FFA800;
     border-color:#FFA800;
 }
@@ -637,8 +653,8 @@ body.woocommerce-checkout .woocommerce-additional-fields h3{
     margin-bottom:35px;
 }
 body.hide-account-title.woocommerce-account .register-title h3{
-    padding-bottom: 13px!important;
-    margin-bottom: 18px;
+    padding-bottom: 10px!important;
+    margin-bottom: 15px;
 }
 body.hide-account-title .login-info #billing_email_field{
     border-top: 1px solid #ECE9E9;
@@ -723,6 +739,7 @@ body.hide-account-title .login-info h3{
     margin-top:65px;
     border:none;
     padding-bottom:0!important;
+    margin-bottom:10px!important;
 }
 body.woocommerce-account .register-btn button[type="submit"]{
     margin-top: 23px;
@@ -1460,8 +1477,17 @@ body.woocommerce-checkout .custom-checkout-order-review .coupon-full-width #coup
     -ms-transform: rotate(-180deg);
     -webkit-transform: rotate(-180deg);
 }
-
-
+body.woocommerce-page .woocommerce-error{
+    background-color: #D61D1D;
+}
+body.woocommerce-page .woocommerce-error li{
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.woocommerce-error
 
 
 
@@ -1612,7 +1638,8 @@ body.woocommerce-checkout .checkout-terms +button + p {
     text-align: center;
 }
 span.woocommerce-terms-and-conditions-checkbox-text,
-span.woocommerce-terms-and-conditions-checkbox-text > a{
+span.woocommerce-terms-and-conditions-checkbox-text > a,
+#ship-to-different-address span{
     font-weight: 300;
     color: #9B9B9B;
     letter-spacing: -0.02em;
@@ -1647,7 +1674,11 @@ body .woocommerce-checkout .woocommerce-form__label{
     display:inline-flex!important;
     position: relative;  
 }
-body .woocommerce-checkout .woocommerce-form__label span{
+body .woocommerce-checkout .woocommerce-shipping-fields #ship-to-different-address label{
+    display: block!important;
+}
+body .woocommerce-checkout .woocommerce-form__label span,
+#ship-to-different-address span{
     padding-left:28px;
     position: relative;
 }
