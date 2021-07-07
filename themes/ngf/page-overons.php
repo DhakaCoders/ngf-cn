@@ -112,8 +112,6 @@ $thisID = get_the_ID();
      ?>
     <section class="ovo-full-width-img-sec inline-bg"  style="background-image: url(<?php echo $afbeelding_blok_poster?>);">
       <img src="<?php echo $afbeelding_blok_poster?>" alt="">
-      <!-- <div class="ovo-full-width-img-fmbl  inline-bg  show-sm" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ovo-mbl-full-bg.jpg);"></div> -->
-          
       <div class="ovo-abs-round">
         <span class="ovo-abs-round-two"></span>
         <span class="ovo-abs-round-one"></span>
