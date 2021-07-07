@@ -156,6 +156,9 @@ body.werk-bdff.sky-btm-bg-cntlr {
 	.werk-grid-des p{
 		line-height: 1.7;
 	}
+	.werk-two-grds-sec {
+	    padding: 85px 0;
+	}
 
 }
 @media (max-width: 1499px){
@@ -176,6 +179,23 @@ body.werk-bdff.sky-btm-bg-cntlr {
 	.werk-grid-des p{
 		line-height: 1.6;
 	}
+	.werk-two-grds-sec {
+	    padding: 75px 0;
+	}
+	.werk-one-grds-sec {
+	    padding-top: 65px;
+	    padding-bottom: 55px;
+	}
+	.werk-inline-bg {
+	    margin-bottom: 50px;
+	}
+	.werk-steps-grid-sec-cntlr {
+	    padding-bottom: 75px;
+	}
+	.werk-testimonial-slider-sec {
+	    padding-top: 75px;
+	}
+	
 
 
 
