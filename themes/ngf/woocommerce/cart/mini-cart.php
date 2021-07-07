@@ -23,7 +23,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 
 <?php if ( ! WC()->cart->is_empty() ) : ?>
 
-	<ul class="woocommerce-mini-cart cart_list product_list_widget clearfix">
+	<ul class="woocommerce-mini-cart cart_list product_list_widget <?php echo esc_attr( $args['list_class'] ); ?> clearfix">
 		<?php
 		do_action( 'woocommerce_before_mini_cart_contents' );
 
@@ -53,16 +53,28 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 						$cart_item_key
 					);
 					?>
-					<?php if ( empty( $product_permalink ) ) : ?>
-						<?php echo $thumbnail . '<span class="cart-product-name">'.$product_name.'</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-					<?php else : ?>
-						<a href="<?php echo esc_url( $product_permalink ); ?>">
-							<?php echo $thumbnail . '<span class="cart-product-name">'.$product_name.'</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-						</a>
-					<?php endif; ?>
-					<?php echo wc_get_formatted_cart_item_data( $cart_item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-					<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+					<div class="item-cnt clearfix">
+					    <div class="item-cnt-left">
+					    <div class="item-cnt-title">
+    					<?php if ( empty( $product_permalink ) ) : ?>
+    						<?php echo '<span class="cart-product-name">'.$product_name.'</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+    					<?php else : ?>
+    						<a href="<?php echo esc_url( $product_permalink ); ?>">
+    							<?php echo '<span class="cart-product-name">'.$product_name.'</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+    						</a>
+    					<?php endif; ?>
+    					<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+    					</div>
+    					<div class="if-item-variations">
+    					    <?php echo wc_get_formatted_cart_item_data( $cart_item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+    					</div>
+					    </div>
+					    <div class="item-cnt-right">
+					        <?php echo $thumbnail; ?>
+					    </div>
 					</div>
+					<?php //echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				    </div>
 				</li>
 				<?php
 			}
@@ -90,9 +102,31 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 	<?php do_action( 'woocommerce_widget_shopping_cart_after_buttons' ); ?>
 
 <?php else : ?>
-
-	<p class="woocommerce-mini-cart__empty-message"><?php esc_html_e( 'No products in the cart.', 'woocommerce' ); ?></p>
-
+    <div class="empty-cart-on-account">
+    <?php 
+        echo '<div class="cart-is-emtpy">';
+        echo '<div class="cie-icon"><img src="'.THEME_URI.'/assets/images/bag-icon.svg"/></div>';
+        echo '<strong>'.__('your <br> Shopping cart is empty', 'ballonvaren').'</strong>';
+        echo '<p>'.__('Je hebt geen artikelen in je winkelwagen.', 'ballonvaren').'</p>';
+    echo '</div>';
+    ?>
+	<p class="return-to-shop">
+		<a class="button wc-backward cart-empty-btn-1" href="<?php echo get_link_by_page_template('page-coaching.php'); ?>"><?php _e( 'COACHING', 'woocommerce' ); ?></a>
+		<a class="button wc-backward cart-empty-btn-2" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
+			<?php
+				/**
+				 * Filter "Return To Shop" text.
+				 *
+				 * @since 4.6.0
+				 * @param string $default_text Default text.
+				 */
+				echo esc_html( apply_filters( 'woocommerce_return_to_shop_text', __( 'Return to shop', 'woocommerce' ) ) );
+			?>
+		</a>
+		
+	</p>
+	<p class="woocommerce-mini-cart__empty-message" style="display: none;"><?php esc_html_e( 'No products in the cart.', 'woocommerce' ); ?></p>
+    </div>
 <?php endif; ?>
 
 <?php do_action( 'woocommerce_after_mini_cart' ); ?>
