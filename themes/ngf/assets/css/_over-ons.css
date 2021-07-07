@@ -46,13 +46,13 @@
 	position: relative;
     height: 750px;
 }
-.ovo-full-width-img-fmbl {
+/*.ovo-full-width-img-fmbl {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-}
+}*/
 .ovo-full-width-bg-heading-inner {
     position: relative;
     display: inline-block;
