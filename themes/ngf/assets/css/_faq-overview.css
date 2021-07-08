@@ -27,8 +27,13 @@
 	-moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
 	-webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
 }
+.fl-grid-tag-cntlr {
+    display: flex;
+    flex-wrap: wrap;
+}
 .faq-grid-item .fl-grid-tag{
 	padding-bottom: 15px;
+    margin-right: 10px;
 }
 .faq-grid-sec{
 	padding-bottom: 16px;
