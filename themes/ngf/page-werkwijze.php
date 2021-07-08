@@ -5,7 +5,12 @@ get_header();
 $thisID = get_the_ID();
 $smedias = get_field('social_media', 'options');
 ?>
-
+<?php  
+  $ovbanner = get_field('bannersec', $thisID);
+  if($ovbanner):
+    $page_title = !empty($ovbanner['titel']) ? $ovbanner['titel'] : get_the_title();
+    $ovbannerposter = !empty($ovbanner['afbeelding'])? cbv_get_image_src( $ovbanner['afbeelding'], 'full' ): '';
+?>
 <section class="page-banner">
   <span class="page-bnr-skew"></span>
   <span class="hdr-circle-icon"></span>
@@ -55,12 +60,6 @@ $smedias = get_field('social_media', 'options');
       <?php endif; ?>
     </ul>
   </div>
-  <?php  
-  $ovbanner = get_field('bannersec', $thisID);
-  $page_title = !empty($ovbanner['titel']) ? $ovbanner['titel'] : get_the_title();
-  if($ovbanner):
-    $ovbannerposter = !empty($ovbanner['afbeelding'])? cbv_get_image_src( $ovbanner['afbeelding'], 'full' ): '';
-?>
   <div class="page-bnr-bg inline-bg" style="background: url('<?php echo $ovbannerposter; ?>');"></div>
   <div class="container">
     <div class="row">
@@ -75,9 +74,8 @@ $smedias = get_field('social_media', 'options');
       </div>
     </div>
   </div>
-  <?php endif; ?>
 </section>
-
+<?php endif; ?>
 
 <?php
   $showhideintro = get_field('showhideintro', $thisID);
@@ -137,9 +135,6 @@ $smedias = get_field('social_media', 'options');
   </div>
 </div>
 <?php endif; endif;?>
-
-
-
 
 <div class="ovo-full-width-img-dsc-module-sec">
   <?php 
@@ -211,7 +206,7 @@ $smedias = get_field('social_media', 'options');
                         <img src="<?php echo $step_poster; ?>" alt="">    
                       </div>
                     </div>
-                    <span class="abs-numbering"><?php echo $i++ ?></span>
+                    <span class="abs-numbering"><?php echo $i; ?></span>
                   </div>
                   
                   <div class="werk-grid-des  mHc1">
@@ -220,7 +215,7 @@ $smedias = get_field('social_media', 'options');
                   </div>
                 </div>
               </div>
-              <?php endforeach; ?>
+              <?php $i++; endforeach; ?>
             </div>
           </div>
           <?php endif ?>
@@ -237,13 +232,9 @@ $smedias = get_field('social_media', 'options');
 <?php
   $showhideclient = get_field('showhideclient', $thisID);
   if($showhideclient): 
-
-    $clientsec = get_field('clientsec', $thisID);
-    if($clientsec ):
-
-
-
-$refobj = $clientsec['referenties'];
+  $clientsec = get_field('clientsec', $thisID);
+  if($clientsec ):
+  $refobj = $clientsec['referenties'];
   if( empty($refobj) ){
       $refobj = get_posts( array(
         'post_type' => 'referenties',
@@ -272,7 +263,7 @@ $refobj = $clientsec['referenties'];
                   foreach( $refobj as $ref ) {
                   global $post;
                   $imgID = get_post_thumbnail_id($ref->ID);
-                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): ''; 
+                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): referenties_placeholder('tag'); 
                   $name = get_field('naam', $ref->ID);
                 ?>
                 <div class="testimonial-grd-item">

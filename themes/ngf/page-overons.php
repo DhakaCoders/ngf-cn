@@ -3,9 +3,12 @@
 
 get_header();
 $thisID = get_the_ID();
-$smedias = get_field('social_media', 'options');
+$smedias = get_field('social_media', 'options'); 
+$ovbanner = get_field('bannersec', $thisID);
+$page_title = !empty($ovbanner['titel']) ? $ovbanner['titel'] : get_the_title();
+if($ovbanner):
+  $ovbannerposter = !empty($ovbanner['afbeelding'])? cbv_get_image_src( $ovbanner['afbeelding'], 'full' ): '';
 ?>
-
 <section class="page-banner page-bnr-no-skew">
   <span class="hdr-circle-icon hide-sm"></span>
   <span class="hdr-lft-line-icon">
@@ -54,13 +57,6 @@ $smedias = get_field('social_media', 'options');
       <?php endif; ?>
     </ul>
   </div>
-
-<?php  
-  $ovbanner = get_field('bannersec', $thisID);
-  $page_title = !empty($ovbanner['titel']) ? $ovbanner['titel'] : get_the_title();
-  if($ovbanner):
-    $ovbannerposter = !empty($ovbanner['afbeelding'])? cbv_get_image_src( $ovbanner['afbeelding'], 'full' ): '';
-?>
   <div class="page-bnr-bg inline-bg" style="background: url('<?php echo $ovbannerposter; ?>');"></div>
   <div class="container">
     <div class="row">
@@ -75,9 +71,8 @@ $smedias = get_field('social_media', 'options');
       </div>
     </div>
   </div>
-<?php endif; ?>
 </section>
-
+<?php endif; ?>
 <?php
   $showhideintro = get_field('showhideintro', $thisID);
   if($showhideintro): 
@@ -321,7 +316,7 @@ $refobj = $clientsec['referenties'];
                   foreach( $refobj as $ref ) {
                   global $post;
                   $imgID = get_post_thumbnail_id($ref->ID);
-                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): ''; 
+                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): referenties_placeholder('tag'); 
                   $name = get_field('naam', $ref->ID);
                 ?>
                 <div class="testimonial-grd-item">
