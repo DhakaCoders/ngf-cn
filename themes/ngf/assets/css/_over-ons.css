@@ -139,9 +139,9 @@ span.ovo-abs-round-three {
     flex-wrap: wrap;
     margin: 0 -10px;
 }
-.fancy-vedeo-items-sec-cntlr   .fl-fancy-module-col{
-    max-width: 50%;
-    width: 100%;
+.fl-fancy-module-col{
+    max-width: initial;
+    width: 50%;
     padding-bottom: 75px;
     padding-left: 10px;
     padding-right: 10px;
@@ -312,7 +312,11 @@ span.fl-video-play-icon-cntlr{
     width: 100%;
     padding-bottom: 40px;
 }
-
+.ovomblfvSlider{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
 
 
 
