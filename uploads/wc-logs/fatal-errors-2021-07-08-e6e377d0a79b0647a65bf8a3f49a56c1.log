@@ -18,3 +18,5 @@
 
 2021-07-08T13:54:13+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\wp-admin\includes\deprecated.php on line 20
 
+2021-07-08T16:45:01+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\footer.php on line 1
+
