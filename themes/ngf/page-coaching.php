@@ -6,6 +6,7 @@ get_header();
 $thisID = get_the_ID(); 
 $intro = get_field('intro', $thisID);
 $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title();
+$no_results = get_field('no_results', 'options');
 ?>
 <section class="coaching-sec">
   <div class="container">
@@ -79,8 +80,8 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title();
                   'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
                   'type'      => 'list',
                   'prev_next' => true,
-                  'prev_text' => __('←'),
-                  'next_text' => __('→'),
+                  'prev_text' => __(''),
+                  'next_text' => __(''),
                   'format'    => '?paged=%#%',
                   'current'   => $current,
                   'total'     => $query->max_num_pages
@@ -91,7 +92,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title();
           <?php endif; ?> 
           <?php else: ?>
             <div class="blog-grid-items">
-              <div class="notfound"><?php _e( 'Geen resultaat', 'ngf' ); ?>.</div>
+              <div class="notfound"><?php echo !empty($no_results)? $no_results: __('Geen resultaat', 'ngf'); ?></div>
             </div>
           <?php endif; wp_reset_postdata(); ?>
         </div>
