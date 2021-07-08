@@ -47,11 +47,17 @@ $current_id = $queried_object->term_id;
           $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
           $query = new WP_Query(array(
             'post_type' => 'referenties',
-            'posts_per_page'=> 4,
+            'posts_per_page'=> PERPAGE_REFERENTIES,
             'orderby' => 'date',
             'order'=> 'desc',
-            'paged'=>$paged
-
+            'paged'=>$paged,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'referenties_cat',
+                    'field'    => 'term_id',
+                    'terms'    => array( $current_id )
+                ),
+            )
           ));
           if( $query->have_posts() ):
           ?>    

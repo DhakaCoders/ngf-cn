@@ -37,11 +37,17 @@ $current_id = $queried_object->term_id;
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $query = new WP_Query(array(
           'post_type' => 'faqs',
-          'posts_per_page'=> 10,
+          'posts_per_page'=> PERPAGE_FAQ,
           'orderby' => 'date',
           'order'=> 'desc',
-          'paged'=>$paged
-
+          'paged'=>$paged,
+          'tax_query' => array(
+              array(
+                  'taxonomy' => 'faq_cat',
+                  'field'    => 'term_id',
+                  'terms'    => array( $current_id )
+              ),
+          )
         ));
         if( $query->have_posts() ):
         ?> 

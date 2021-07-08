@@ -7,6 +7,8 @@ defined( 'THEME_DIR' ) or define( 'THEME_DIR', get_template_directory() );
 defined( 'THEME_URI' ) or define( 'THEME_URI', get_template_directory_uri() );
 
 defined( 'HOMEID' ) or define( 'HOMEID', get_option('page_on_front') );
+defined( 'PERPAGE_REFERENTIES ' ) or define( 'PERPAGE_REFERENTIES', 4 );
+defined( 'PERPAGE_FAQ ' ) or define( 'PERPAGE_FAQ', 10 );
 
 /**
 Theme Setup->>
@@ -194,8 +196,14 @@ if( !function_exists('cbv_custom_both_breadcrump')){
 }
 
 function custom_post_type_query($query) {
-if( $query->is_main_query() && !is_admin()){
-        
+    if (!is_admin() && $query->is_main_query()){
+        if(is_tax('referenties_cat')){
+          $query->set('posts_per_page', PERPAGE_REFERENTIES);
+
+        }
+        if(is_tax('faq_cat')){
+          $query->set('posts_per_page', PERPAGE_FAQ);
+        }
     }
     return $query;
 }

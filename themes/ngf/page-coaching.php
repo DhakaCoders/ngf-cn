@@ -6,7 +6,6 @@ get_header();
 $thisID = get_the_ID(); 
 $intro = get_field('intro', $thisID);
 $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title();
-$no_results = get_field('no_results', 'options');
 ?>
 <section class="coaching-sec">
   <div class="container">
@@ -92,6 +91,7 @@ $no_results = get_field('no_results', 'options');
           <?php endif; ?> 
           <?php else: ?>
             <div class="blog-grid-items">
+              <?php $no_results = get_field('no_results', 'options'); ?>
               <div class="notfound"><?php echo !empty($no_results)? $no_results: __('Geen resultaat', 'ngf'); ?></div>
             </div>
           <?php endif; wp_reset_postdata(); ?>
