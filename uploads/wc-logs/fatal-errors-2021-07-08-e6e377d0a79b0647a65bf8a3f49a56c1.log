@@ -20,3 +20,5 @@
 
 2021-07-08T16:45:01+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\themes\ngf\footer.php on line 1
 
+2021-07-08T18:48:20+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\wp-includes\wp-db.php on line 2056
+
