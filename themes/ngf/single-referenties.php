@@ -87,8 +87,8 @@ $name = get_field('naam', $thisID);
               <use xlink:href="#contact-from-info-rnd-bg"></use> </svg>
             </i>
              <i class="cta-line">
-              <svg class="contact-form-info-ln-bg" width="23" height="70" viewBox="0 0 23 70" fill="transparent">
-              <use xlink:href="#contact-from-info-line-bg"></use> </svg>
+              <svg class="cta-line-svg" width="32" height="89" viewBox="0 0 32 89" fill="transparent">
+              <use xlink:href="#cta-line-svg"></use> </svg>
             </i>
             <?php 
               if( !empty($fc_titel) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $fc_titel);

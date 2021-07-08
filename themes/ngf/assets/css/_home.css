@@ -390,6 +390,9 @@
 		padding-bottom: 20px;
 		margin-bottom: 30px;
 	}
+	.home-banner-cntlr{
+		padding-left: 30px;
+	}
 }
 @media(max-width: 1199px){
 	.home-banner-cntlr{
@@ -572,6 +575,7 @@
 		width: 33px;
 		height: 2px;
 	}
+	
 
 }
 @media(max-width: 575px){
