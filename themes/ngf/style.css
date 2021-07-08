@@ -13,3 +13,7 @@ Text Domain: ngf
 
 @import url('assets/css/main.css');
 
+.page-body-cntlr{
+	overflow: hidden;
+}
+
