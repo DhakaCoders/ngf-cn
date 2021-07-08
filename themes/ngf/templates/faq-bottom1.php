@@ -45,15 +45,12 @@ if( empty($faqobj) ){
               <?php 
                 foreach( $faqobj as $faq ) {
                 global $post;
-                $title = $faq->post_title;
               ?>
               <div class="faq-slide-item">
                 <div class="faq-grids-cntlr">
                   <div class="faq-grid-item-col mHc">
                     <div class="faq-grid-item mHc1">
-                      <?php if( !empty($name) ):?>
-                      <h4 class="fl-h4 fgi-title ovo-fgi-title mHc2"><a href="<?php the_permalink(); ?>"><?php  echo $title; ?></a></h4>
-                      <?php endif; ?>
+                      <h4 class="fl-h4 fgi-title ovo-fgi-title mHc2"><a href="<?php the_permalink(); ?>"><?php echo get_the_title($faq->ID); ?></a></h4>
                       <div class="fl-pro-grd-btn">
                         <a class="fl-read-more-btn" href="<?php the_permalink(); ?>">
                           <span>READ MORE</span>
