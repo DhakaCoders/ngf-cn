@@ -32,6 +32,10 @@
 
 
     <!-- start of Noyon -->
+     <symbol id="plans-sec-circle-xs-bg" width="80" height="91" viewBox="0 0 80 91" xmlns="http://www.w3.org/2000/svg">
+      <path d="M89 50.5C89 67.3447 75.3447 81 58.5 81C41.6553 81 28 67.3447 28 50.5C28 33.6553 41.6553 20 58.5 20C75.3447 20 89 33.6553 89 50.5Z" stroke="#FFA800" stroke-width="20"/>
+      <circle cx="6" cy="6" r="4.5" stroke="#FFA800" stroke-width="3"/>
+    </symbol>
     <symbol id="cross-icon" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0)">
         <path d="M2.82404 31.4295L0.56507 29.1698L29.1706 0.572392L31.4296 2.832L2.82404 31.4295Z"  stroke="black" stroke-width="0.8"/>
