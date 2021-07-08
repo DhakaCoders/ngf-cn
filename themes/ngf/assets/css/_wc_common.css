@@ -193,7 +193,8 @@ a.xoo-cp-btn-vc.xcp-btn:hover{
 }
 .woocommerce-message,
 .woocommerce-info {
-    border-top-color: #3f3f3f;
+    border-top-color: #D61D1D;
+    background-color: #D61D1D;
 }
 .woocommerce-message::before,
 .woocommerce-info::before{
@@ -489,11 +490,16 @@ body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .selecti
 .woocommerce .woocommerce-error,
 .woocommerce .woocommerce-notices-wrapper ul,
 .woocommerce .woocommerce-message {
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 45px;
     padding-right: 20px;
     font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+.woocommerce .showlogin{
+	color: #fff;
 }
 .woocommerce .woocommerce-info span,
 .woocommerce .woocommerce-error span,
