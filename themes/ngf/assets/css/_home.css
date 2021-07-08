@@ -270,6 +270,10 @@
 	color: #FFA800;
 }
 
+.plan-circle-bg .plans-sec-circle-xs-bg{
+		display: none;
+	}
+
 /*responsive*/
 @media(max-width: 1799px){
 	
@@ -575,9 +579,17 @@
 		width: 33px;
 		height: 2px;
 	}
-	
+
 
 }
-@media(max-width: 575px){
-	
+@media(max-width: 359px){
+	.plans-sec-cntlr .plan-circle-bg{
+		right: -20px!important;
+	}
+	.plan-circle-bg .plans-sec-circle-bg{
+		display: none;
+	}
+	.plan-circle-bg .plans-sec-circle-xs-bg{
+		display: block;
+	}
 }

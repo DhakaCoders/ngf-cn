@@ -60,6 +60,7 @@ $current_id = $queried_object->term_id;
           <div class="faq-grid-item-col">
             <div class="faq-grid-item mHc">
               <div class="faq-grid-item-inr">
+                <div class="fl-grid-tag-cntlr">
               	<?php 
               	if ( ! empty( $categories ) && ! is_wp_error( $categories ) ){ 
               		foreach( $categories as $category ) {
@@ -68,6 +69,7 @@ $current_id = $queried_object->term_id;
                   <a href="<?php echo esc_url( get_term_link( $category ) ); ?>"><span><?php echo $category->name; ?></span></a>
                 </div>
                 <?php } } ?>
+                </div>
                 <h4 class="fl-h4 fgi-title mHc1"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                 <div class="fl-pro-grd-btn fl-btn-absolute">
                   <a class="fl-read-more-btn" href="<?php the_permalink(); ?>">
