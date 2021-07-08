@@ -34,7 +34,7 @@ if ( apply_filters( 'woocommerce_checkout_show_terms', true ) && function_exists
 					?>
 					<?php esc_html_e( 'I accept the', 'woocommerce' ); ?> <a href="<?php echo esc_url(home_url('term')); ?>" target="_blank"><?php esc_html_e( 'general terms and conditions', 'woocommerce' ); ?></a>
 						
-					</span>&nbsp;<span class="required">*</span>
+					</span><span class="required">*</span>
 				</label>
 				<input type="hidden" name="terms-field" value="1" />
 			</p>
