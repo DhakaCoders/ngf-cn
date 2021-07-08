@@ -93,9 +93,9 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
                 <svg class="contact-from-info-rnd-bg" width="35" height="61" viewBox="0 0 35 61" fill="transparent">
                 <use xlink:href="#contact-from-info-rnd-bg"></use> </svg>
               </i>
-               <i class="contact-form-info-line-bg">
-                <svg class="contact-form-info-ln-bg" width="23" height="70" viewBox="0 0 23 70" fill="transparent">
-                <use xlink:href="#contact-from-info-line-bg"></use> </svg>
+               <i class="cta-line">
+                <svg class="cta-line-svg" width="32" height="89" viewBox="0 0 32 89" fill="transparent">
+                <use xlink:href="#cta-line-svg"></use> </svg>
               </i>
               <?php 
                 if( !empty($fc_titel) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $fc_titel);
@@ -179,67 +179,98 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
   </article>
 </section>
 <?php 
+
+$showhidefaq = get_field('showhidefaq', $thisID);
+if($showhidefaq):
+$faqcats = get_the_terms($thisID, 'faq_cat');
 $sec_faqs = get_field('sec_faqs', $thisID);
 $faqfobj = $sec_faqs['selecteer_faqs'];
 if( empty($faqfobj) ){
+  if( !empty($faqcats) ){
+    foreach( $faqcats as $faqcat ){
+      $slugs[] = $faqcat->slug;
+    }
     $faqfobj = get_posts( array(
       'post_type' => 'faqs',
       'posts_per_page'=> 8,
       'post__not_in' => array($thisID),
       'orderby' => 'date',
       'order'=> 'desc',
+      'tax_query' => array(
+        array(
+          'taxonomy' => 'faq_cat',
+            'field'    => 'slug',
+            'terms'    => $slugs,
+        )
+      )
 
     ) );
+  }else{
+      $faqfobj = get_posts( array(
+      'post_type' => 'faqs',
+      'posts_per_page'=> 8,
+      'post__not_in' => array($thisID),
+      'orderby' => 'date',
+      'order'=> 'desc'
+    ) );
+  }
 }
 
 if($faqfobj):
 ?>
-<section class="ovo-faq-slider-sec">
-  <span class="ovo-abs-line-one"></span>
-  <span class="ovo-abs-line-two"></span>
-  <span class="ovo-abs-line-three"></span>
+<section class="faq-slider-sec">
+  <span class="latest-news-bg hide-sm"><svg class="latest-nws-bg" width="484" height="727" viewBox="0 0 484 727" fill="#FFA800">
+      <use xlink:href="#latest-nws-bg"></use> </svg>
+  </span>
+  <span class="latest-news-bg latest-nws-xs-bg show-sm">
+    <svg class="latest-news-xs-bg" width="146" height="598" viewBox="0 0 146 598" fill="#FFA800">
+      <use xlink:href="#latest-news-xs-bg"></use>
+    </svg>
+  </span>
+
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="ovo-faq-slider-cntlr">
-          <div class="ovo-faq-slider-entry-heading">
-            <h3 class="ovo-faq-slider-heading"><?php echo !empty($sec_faqs['titel'])? $sec_faqs['titel']:__('gerelateerd FAQ', 'ngf');?></h3>
+        <div class="faq-slider-sec-inner">
+          <div class="sec-entry-hdr faq-slider-sec-hdr">
+            <h3 class="fl-h3 fssh-title"><?php echo !empty($sec_faqs['titel'])?$sec_faqs['titel']:__('GERELATEERD FAQ', 'ngf'); ?></h3>
           </div>
-          <div class="ovo-faq-slider faqSlider">
+          <!-- faqSlider2 start :   for xs 1 item-->
+          <?php if($faqfobj){ ?>
+          <div class="faq-slider-cntlr faq-slider-cntlr-2">
+            <div class="faq-slider faqSlider2">
               <?php 
-                $count = 1;
-                foreach( $faqfobj as $faqs ) : setup_postdata($faqs);
+                foreach( $faqfobj as $faq ) {
                 global $post;
-                  if ($count%4 == 1)
-                  {  
-                       echo '<div class="faq-slide-item"><div class="faq-grids-cntlr ovo-grids-cntlr">';
-                  }
               ?>
-                <div class="faq-grid-item-col  ovo-grid-item-col">
-                  <div class="faq-grid-item mHc">
-                    <h4 class="fl-h4 fgi-title mHc1"><?php the_title(); ?></h4>
-                    <div class="fl-pro-grd-btn">
-                      <a class="fl-read-more-btn" href="<?php the_permalink(); ?>">
-                        <span><?php _e( 'READ MORE', 'ngf' ); ?></span>
-                        <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
-                        <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
-                        </i>
-                      </a>
+              <div class="faq-slide-item">
+                <div class="faq-grids-cntlr">
+                  <div class="faq-grid-item-col mHc">
+                    <div class="faq-grid-item mHc1">
+                      <h4 class="fl-h4 fgi-title ovo-fgi-title mHc2"><a href="<?php the_permalink($faq->ID); ?>"><?php echo get_the_title($faq->ID); ?></a></h4>
+                      <div class="fl-pro-grd-btn">
+                        <a class="fl-read-more-btn" href="<?php the_permalink($faq->ID); ?>">
+                          <span><?php _e( 'READ MORE', 'ngf' ); ?></span>
+                          <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                          <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                          </i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <?php 
-                  if ($count%4 == 0)
-                  {
-                      echo "</div></div>";
-                  }
-                  $count++;
-                ?>
-              <?php endforeach; if ($count%4 != 1) echo "</div></div>";wp_reset_postdata(); ?>
+              </div>
+              <?php } ?>
+
+            </div>
+          </div>
+          <?php } ?>
+          <!-- faqSlider2 end -->
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
 <?php endif; ?>
 <?php get_footer(); ?>

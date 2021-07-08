@@ -258,6 +258,7 @@ $intro_title = get_the_title();
     $pQuery = new WP_Query(array(
     'post_type' => 'post',
     'posts_per_page'=> 3,
+    'post__not_in' => array(get_the_ID()),
     'orderby' => 'date',
     'order'=> 'asc',
     'tax_query' => array(
