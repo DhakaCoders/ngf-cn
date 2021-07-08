@@ -222,6 +222,9 @@ body.woocommerce-edit-account .woocommerce form .form-row label{
 input[type=checkbox], input[type=radio]{   
    display: none;
 }
+.hide-account-title input[type="checkbox"], input[type="radio"]{
+    display: block;
+}
 
 .same-as-shipping-address input,
 /*.login-info p > input,
