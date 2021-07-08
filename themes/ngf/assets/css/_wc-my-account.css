@@ -2290,12 +2290,9 @@ body .wc-template-crtl .success-msg {
 
     .checkout-page-title{
         padding-top: 40px;
-        border-bottom: none;
+        padding-bottom: 40px;
     }
-    .checkout-page-title .checkoutpt-left{
-        border-bottom: 2px solid #ECF1F4;
-        margin-bottom: 30px;
-    }
+    
     body.woocommerce-checkout .checkout-page-title .checkoutpt-right{
         padding-bottom: 0;
     }
@@ -3059,7 +3056,8 @@ body .wc-template-crtl .success-msg {
     body.woocommerce-checkout .checkout-page-title {
         margin-bottom: 0px;
         padding-bottom: 30px;
-        padding-top: 40px;
+        padding-top: 45px;
+        border-bottom: none;
     }
     body.woocommerce-checkout .default-page-con h3{
         font-size: 16px;
@@ -3116,6 +3114,7 @@ body .wc-template-crtl .success-msg {
         margin-bottom: 15px;
         padding-bottom: 12px;
         margin-top: 25px;
+        text-transform: uppercase;
     }
     body.woocommerce-checkout .checkout-terms +button + p{
         display: none;
@@ -3239,6 +3238,10 @@ body .wc-template-crtl .success-msg {
     }
     .item-cnt-title a span.cart-product-name, .item-cnt-title span.cart-product-name{
         font-size: 20px;
+    }
+    .checkout-page-title .checkoutpt-left{
+        border-bottom: 2px solid #ECF1F4;
+        margin-bottom: 30px;
     }
 }
 @media(max-width: 659px){
