@@ -124,7 +124,7 @@ body.woocommerce-order-received .checkout-page-title{
 	    padding: 0px 60px;
 	}
 	body.woocommerce-order-received .checkout-top-sec{
-		padding-top: 38px!important;
+		padding-top: 20px!important;
 	}
 	body.woocommerce-order-received .thank-you-section{
 	    padding-top: 30px;
@@ -167,5 +167,8 @@ body.woocommerce-order-received .checkout-page-title{
 	.thank-you-section {
 	    padding-top: 35px;
 	    padding-bottom: 32px;
+	}
+	body.woocommerce-order-received .checkout-top-sec {
+	    padding-top: 0!important;
 	}
 }
