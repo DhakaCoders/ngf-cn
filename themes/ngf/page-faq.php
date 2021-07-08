@@ -64,7 +64,7 @@ $terms = get_terms( 'faq_cat', array(
                   <a href="<?php echo esc_url( get_term_link( $category ) ); ?>"><span><?php echo $category->name; ?></span></a>
                 </div>
                 <?php } } ?>
-                <div>
+                </div>
                 <h4 class="fl-h4 fgi-title mHc1"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                 <div class="fl-pro-grd-btn fl-btn-absolute">
                   <a class="fl-read-more-btn" href="<?php the_permalink(); ?>">
