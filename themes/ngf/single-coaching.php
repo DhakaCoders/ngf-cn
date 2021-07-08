@@ -88,7 +88,7 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
                 <svg class="contact-from-info-rnd-bg" width="35" height="61" viewBox="0 0 35 61" fill="transparent">
                 <use xlink:href="#contact-from-info-rnd-bg"></use> </svg>
               </i>
-               <i class="contact-form-info-line-bg">
+               <i class="cta-line">
                 <svg class="contact-form-info-ln-bg" width="23" height="70" viewBox="0 0 23 70" fill="transparent">
                 <use xlink:href="#contact-from-info-line-bg"></use> </svg>
               </i>
