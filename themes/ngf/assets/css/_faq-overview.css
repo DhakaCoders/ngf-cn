@@ -35,6 +35,16 @@
 	padding-bottom: 15px;
     margin-right: 10px;
 }
+.faq-grid-item .fl-grid-tag span{
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.faq-grid-item .fl-grid-tag span:hover{
+    background-color: #000000;
+}
 .faq-grid-sec{
 	padding-bottom: 16px;
 }
