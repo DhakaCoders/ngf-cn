@@ -4,8 +4,6 @@
 get_header();
 $thisID = get_the_ID();
 ?>
-
-
 <?php  
   $extraformbanner = get_field('bannersec', $thisID);
   if($extraformbanner):

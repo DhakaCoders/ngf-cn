@@ -12,7 +12,7 @@ $faqobj = $faqsec['selecteer_faq'];
 if( empty($faqobj) ){
     $faqobj = get_posts( array(
       'post_type' => 'faqs',
-      'posts_per_page'=> 4,
+      'posts_per_page'=> 8,
       'orderby' => 'date',
       'order'=> 'desc',
     ) );

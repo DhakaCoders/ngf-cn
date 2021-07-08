@@ -232,7 +232,7 @@
   }else{
     $logo_tag = '';
   }
-  $smedias = get_field('social_media', 'options')
+  $smedias = get_field('social_media', 'options');
 ?>  
 <?php if( is_front_page() && $topbartekst ): ?>
 <section class="home-messege">

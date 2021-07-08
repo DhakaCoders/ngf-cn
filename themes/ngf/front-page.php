@@ -6,7 +6,7 @@ get_header();
   if($hbanner):
     $deskbanner = !empty($hbanner['afbeelding'])? cbv_get_image_src( $hbanner['afbeelding'] ): '';
     $mbbanner = !empty($hbanner['mobiel_afbeelding'])? cbv_get_image_src( $hbanner['mobiel_afbeelding'] ): '';
-    $topbartekst = get_field('topbartekst', 'options');
+    $smedias = get_field('social_media', 'options');
 ?>
 <section class="home-banner">
 

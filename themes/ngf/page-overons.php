@@ -3,6 +3,7 @@
 
 get_header();
 $thisID = get_the_ID();
+$smedias = get_field('social_media', 'options');
 ?>
 
 <section class="page-banner page-bnr-no-skew">
@@ -15,34 +16,42 @@ $thisID = get_the_ID();
   </span>
   <div class="hdr-socials hide-sm">
     <ul class="reset-list">
+      <?php if( !empty($smedias['facebook_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['facebook_url']; ?>">
           <i><svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#facebook-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['twitter_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['twitter_url']; ?>">
           <i><svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#twiter-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['linkedin_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['linkedin_url']; ?>">
           <i><svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#linkden-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['instagram_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['instagram_url']; ?>">
           <i><svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#instagram-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
     </ul>
   </div>
 
@@ -214,13 +223,14 @@ $thisID = get_the_ID();
             <?php 
               foreach( $video_bloks as $video_blok ): 
                 $video_blok_poster = !empty($video_blok['afbeelding'])? cbv_get_image_src( $video_blok['afbeelding'], 'full' ): '';
+                $video_blok_postertag = !empty($video_blok['afbeelding'])? cbv_get_image_tag( $video_blok['afbeelding'], 'full' ): '';
             ?>
             <div class="fl-fancy-module-col">
               <div class="fl-fancy-module ovo-fancy-module">
-                <div class="fl-fancy-module-inr  ovo-fancy-module-inr">
-                  <div class="ovo-fancy-module-img  instead-fancy-to-Img ">
+                <div class="fl-fancy-module-inr ovo-fancy-module-inr">
+                  <div class="ovo-fancy-module-img instead-fancy-to-Img ">
                     <div class="fl-fancy-inline-bg-img inline-bg" style="background-image: url(<?php echo $video_blok_poster; ?>);">
-                      <img src="<?php echo $video_blok_poster; ?>" alt="">
+                      <?php echo $video_blok_postertag; ?>
                     </div>
                     <?php  
                       if($video_blok['video_url']): 
@@ -249,7 +259,7 @@ $thisID = get_the_ID();
                     ?>
                     <div class="fl-pro-grd-btn">
                       <a class="fl-read-more-btn" target="_blank" href="<?php echo esc_url( $vbknop ); ?>">
-                        <span>READ MORE</span>
+                        <span><?php _e('READ MORE', 'ngf');?></span>
                         <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
                         <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
                         </i>

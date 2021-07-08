@@ -3,6 +3,7 @@
 
 get_header();
 $thisID = get_the_ID();
+$smedias = get_field('social_media', 'options');
 ?>
 
 <section class="page-banner">
@@ -16,34 +17,42 @@ $thisID = get_the_ID();
   </span>
   <div class="hdr-socials">
     <ul class="reset-list">
+      <?php if( !empty($smedias['facebook_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['facebook_url']; ?>">
           <i><svg class="facebook-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#facebook-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['twitter_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['twitter_url']; ?>">
           <i><svg class="twiter-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#twiter-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['linkedin_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['linkedin_url']; ?>">
           <i><svg class="linkden-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#linkden-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
+      <?php if( !empty($smedias['instagram_url']) ): ?>
       <li>
-        <a target="_blank" href="#">
+        <a target="_blank" href="<?php echo $smedias['instagram_url']; ?>">
           <i><svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
             <use xlink:href="#instagram-icon"></use> </svg>
           </i>
         </a>
       </li>
+      <?php endif; ?>
     </ul>
   </div>
   <?php  
@@ -87,7 +96,7 @@ $thisID = get_the_ID();
         <div class="ovo-two-grds-des-module-cntlr  block-1255">
           <div class="ovo-grds-des-lft">
             <div class="hide-sm">
-               <?php if( !empty($block_1['titel']) ) printf( '<p>%s</p>', $block_1['titel'] ); ?>
+               <?php if( !empty($block_1['Koptekst']) ) printf( '<p>%s</p>', $block_1['Koptekst'] ); ?>
             </div>
           </div>
           <div class="ovo-grds-des-rgt">
@@ -114,7 +123,7 @@ $thisID = get_the_ID();
         <div class="ovo-two-grds-des-module-cntlr  block-1255">
           <div class="ovo-grds-des-lft">
             <div class="show-sm">
-              <?php if( !empty($block_2['titel']) ) printf( '<p>%s</p>', $block_2['titel'] ); ?>
+              <?php if( !empty($block_2['Koptekst']) ) printf( '<p>%s</p>', $block_2['Koptekst'] ); ?>
             </div>
           </div>
           <div class="ovo-grds-des-rgt">
