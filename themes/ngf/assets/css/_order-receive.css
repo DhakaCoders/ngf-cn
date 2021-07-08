@@ -327,6 +327,16 @@ body.woocommerce-order-received .sec-header .sec-title{
 	.chk-acc-tp-cntrl {
 	    padding-bottom: 20px;
 	}
+	body.woocommerce-order-received .checkout-page-title{
+		padding-top: 40px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #ECF1F4;
+	}
+	body.woocommerce-order-received .checkout-page-title .checkoutpt-left {
+	    border-bottom: none;
+	    margin-bottom: 0;
+	    padding-bottom: 0;
+	}
 }
 
 @media (max-width: 767px) {
@@ -387,6 +397,14 @@ body.woocommerce-order-received .sec-header .sec-title{
 	}
 	.srv-fea-img{
 		height: 340px;
+	}
+	body.woocommerce-order-received .checkout-page-title .checkoutpt-left {
+	    border-bottom: 2px solid #ECF1F4;;
+	    margin-bottom: 30px;
+	    padding-bottom: 20px;
+	}
+	body.woocommerce-order-received .checkout-page-title{
+		border-bottom: none;
 	}
 
 }
