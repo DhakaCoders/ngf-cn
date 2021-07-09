@@ -56,6 +56,9 @@
 .ref-ov-grd-title{
 	text-transform: uppercase;
 }
+.ref-ov-grd-title a{
+	text-decoration: none;
+}
 .ropgd{
 	padding-bottom: 22px;
 }
