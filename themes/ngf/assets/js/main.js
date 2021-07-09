@@ -359,12 +359,12 @@ if( $('.relatedProGrdsSlider').length ){
 /*start of Monirul Islam*/
 
 if( $('.hamburger-cntlr').length ){
-  $('.hamburger-cntlr').click(function(){
+  $('.hamburger-cntlr').on("click", function(){
     $('body').toggleClass('allWork');
   });
 }
 if( $('li.menu-item-has-children > a').length ){
-  $('li.menu-item-has-children > a').click(function(e){
+  $('li.menu-item-has-children > a').on("click", function(e){
    event.preventDefault();
    $(this).next().slideToggle(300);
    $(this).parent().toggleClass('sub-menu-arrow');

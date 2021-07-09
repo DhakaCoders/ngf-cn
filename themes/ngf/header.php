@@ -380,6 +380,12 @@
                   <use xlink:href="#hamburger-icon"></use> </svg>
                 </i>
               </div>
+              <div class="cross-icon">
+                <i>
+                  <svg class="cross-icon" width="32" height="32" viewBox="0 0 32 32" fill="#FFA800">
+                  <use xlink:href="#cross-icon"></use> </svg>
+                </i>
+              </div>
               
               <strong class="hamburger-title"><?php _e('MENU', 'ngf');?></strong>
             </div>
