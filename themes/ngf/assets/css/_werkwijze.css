@@ -50,15 +50,17 @@ span.werk-abs-img-two {
 }
 .werk-stp-ibg {
     overflow: hidden;
+    height: 294px;
 }
 .werk-grid-inline-bg img{
 	display: none;
 }
 .werk-grid-inline-bg{
-	min-height: 294px;
 	transition: all .5s;
 	-ms-transition: all .5s;
 	-webkit-transition: all .5s;
+	width: 100%;
+	height: 100%;
 }
 .werk-inline-bg:hover .werk-grid-inline-bg{
 	transform: scale(1.1);
@@ -92,7 +94,6 @@ span.werk-abs-img-two {
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	color: #000000;
-	margin-bottom: 15px;
 }
 .werk-testimonial{
 	margin-top: 0;
@@ -114,9 +115,6 @@ body.werk-bdff .footer-wrp .ftr-white-skew {
 body.werk-bdff.sky-btm-bg-cntlr {
     background: rgb(255 255 255 / 20%);
 }
-.dn{
-	/*display: none!important;*/
-}
 .werk-grid-itm-heading a{
 	text-decoration: none;
 }
@@ -135,7 +133,7 @@ ol.werk-ol {
     margin-bottom: 20px;
 }
 .ovo-text-module p:last-of-type{
-	margin-bottom: 0;
+	margin-bottom: 0!important;
 }
 
 
@@ -175,8 +173,8 @@ ol.werk-ol {
 	.werk-steps-grid-sec {
 	    padding-top: 80px;
 	}
-	.werk-grid-inline-bg {
-    	min-height: 250px;
+	.werk-stp-ibg {
+    	height: 250px;
 	}
 	.abs-numbering {
 	    font-size: 25px;
@@ -184,7 +182,7 @@ ol.werk-ol {
 	    height: 55px;
 	}
 	.werk-grid-inline-bg img{
-		min-height: 250px;
+	   height: 250px;
 	}
 	.werk-grid-des p{
 		line-height: 1.6;
@@ -246,17 +244,14 @@ ol.werk-ol {
 	    height: 50px;
 	    bottom: -10px;
 	}
-	.werk-grid-inline-bg {
-	    min-height: 240px;
+	.werk-stp-ibg {
+	    height: 240px;
 	}
 	.werk-steps-grid-sec-cntlr {
 	    padding-bottom: 0;
 	}
 	.werk-grid-inline-bg img{
-	    min-height: 240px;
-	}
-	.werk-grid-itm-heading{
-		margin-bottom: 20px;
+	    height: 240px;
 	}
 	.werk-two-grds-sec {
 	    padding: 40px 0;
@@ -273,11 +268,6 @@ ol.werk-ol {
 	.werk-inline-bg {
 	    margin-bottom: 35px;
 	}
-
-
-
-
-s
 
 
 }
@@ -306,9 +296,6 @@ s
 		font-size: 18px;
 		line-height: 26px;
 	}
-	.werk-two-grds-sec{
-		padding-bottom: 0;
-	}
 	.werk-grid-itm-heading{
 		font-size: 24px!important;
 	}
@@ -320,7 +307,7 @@ s
 	    margin: 0 auto;
 	}
 	.werk-steps-grid-sec {
-	    padding-top: 40px;
+	    padding-top: 35px;
 	}
 	.step-heading{
 		margin-bottom: 32px;
@@ -343,8 +330,8 @@ s
 	.werk-text-module-ul{
 		margin-bottom: 5px;
 	}
-	.werk-one-grds-sec {
-	    padding-top: 35px;
+	.werk-one-grds-sec{
+		padding-top: 0;
 	}
 
 

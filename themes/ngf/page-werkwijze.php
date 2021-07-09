@@ -98,7 +98,7 @@ $smedias = get_field('social_media', 'options');
             </div>
           </div>
           <div class="ovo-grds-des-rgt">
-            <div class="dfp-text-module clearfix">
+            <div class="dfp-text-module ovo-text-module clearfix">
               <?php if( !empty($block_1['beschrijving']) ) echo wpautop( $block_1['beschrijving'] ); ?>
             </div>
           </div>
@@ -247,12 +247,12 @@ $smedias = get_field('social_media', 'options');
   }
 ?>
 
-<section class="ovo-testimonial-slider-sec">
+<section class="ovo-testimonial-slider-sec werk-testimonial-slider-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="ovo-testimonial-slider-cntlr">
-          <div class="dfp-testimonial-module  ovo-testimonial">
+          <div class="dfp-testimonial-module  werkj-testimonial">
              <div class="testimonial-ctlr">
               <div class="sec-entry-hdr">
                 <?php if( !empty($clientsec['titel']) ) printf('<h3 class="fl-h3">%s</h3>', $clientsec['titel']); ?>

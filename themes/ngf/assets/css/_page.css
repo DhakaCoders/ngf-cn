@@ -394,6 +394,9 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	.page-entry-header h1{
 		padding-top: 7px;
 	}
+	.page-entry-header{
+		margin-top: -10px;
+	}
 }
 
 @media (max-width: 1499px) {
@@ -458,7 +461,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding-left: 120px;
 	}
 	.page-entry-header{
-		padding-top: 10px;
+		padding-top: 20px;
+	}
+	.page-entry-header{
+		margin-top: 0;
 	}
 }
 
