@@ -278,7 +278,6 @@ if( $('.contact-form-wrp').length ){
 }
 
 
-
 if( $('.wpforms-error').length ){
   $('.wpforms-error').on('click', function(){
     $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
@@ -291,10 +290,6 @@ $(".type-order-format .woocommerce-input-wrapper span").each(function(){
 $(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,#billing_personal_recom .woocommerce-input-wrapper,#billing_acttion_insp .woocommerce-input-wrapper").each(function(){
       $(this).append('<div class="checkbox-custom"></div>')
 });
-
-/*$('.fl-select-cntlr select').addClass('selectpicker');*/
-
- $('.fl-select-cntlr select').select2();
 
 /*start of Sabbir Hossain*/
 
@@ -364,12 +359,12 @@ if( $('.relatedProGrdsSlider').length ){
 /*start of Monirul Islam*/
 
 if( $('.hamburger-cntlr').length ){
-  $('.hamburger-cntlr').on("click", function(){
+  $('.hamburger-cntlr').click(function(){
     $('body').toggleClass('allWork');
   });
 }
 if( $('li.menu-item-has-children > a').length ){
-  $('li.menu-item-has-children > a').on("click", function(e){
+  $('li.menu-item-has-children > a').click(function(e){
    event.preventDefault();
    $(this).next().slideToggle(300);
    $(this).parent().toggleClass('sub-menu-arrow');
