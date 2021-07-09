@@ -13,14 +13,14 @@ $smedias = get_field('social_media', 'options');
 ?>
 <section class="page-banner">
   <span class="page-bnr-skew"></span>
-  <span class="hdr-circle-icon"></span>
-  <span class="hdr-lft-line-icon">
+  <span class="hdr-circle-icon hide-sm"></span>
+  <span class="hdr-lft-line-icon hide-sm">
     <i>
       <svg class="hdr-line-icon" width="58" height="95" viewBox="0 0 58 95" fill="#FFA800">
       <use xlink:href="#hdr-line-icon"></use> </svg>
     </i>
   </span>
-  <div class="hdr-socials">
+  <div class="hdr-socials hide-sm">
     <ul class="reset-list">
       <?php if( !empty($smedias['facebook_url']) ): ?>
       <li>
@@ -66,8 +66,8 @@ $smedias = get_field('social_media', 'options');
       <div class="col-md-12">
         <div class="page-bnr-desc-cntlr">
           <div class="page-bnr-desc">
-            <span class="pg-bnr-desc-line"></span>
-            <span class="pg-bnr-desc-circle"></span>
+            <span class="pg-bnr-desc-line hide-sm"></span>
+            <span class="pg-bnr-desc-circle hide-sm"></span>
             <?php if( !empty($page_title) ) printf( '<h1 class="fl-h1-80 pg-bnr-title">%s</h1>', $page_title ); ?>
           </div>
         </div>
