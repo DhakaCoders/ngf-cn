@@ -617,7 +617,7 @@ boek-je-form-sec-wrp
 
 }
 
-
+/*select 2 fix */
 .contact-form-sec-wrp .fl-select-cntlr .select2-container--default .select2-selection--single .select2-selection__arrow b{
     margin-left: 0!important;
 }
@@ -639,6 +639,9 @@ boek-je-form-sec-wrp
 }
 .contact-form-sec-wrp .fl-select-cntlr .select2-container--default .select2-selection--single .select2-selection__arrow b{
     position: static;    
+}
+.contact-form-sec-wrp .fl-select-cntlr div.wpforms-container-full .wpforms-form .wpforms-field{
+    overflow-x: initial!important;
 }
 /*
 ---------------------
