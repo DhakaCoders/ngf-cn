@@ -317,6 +317,9 @@ span.fl-video-play-icon-cntlr{
     flex-wrap: wrap;
     display: flex;
 }
+.ovo-grds-text-module p:last-of-type{
+    margin-bottom: 0;
+}
 
 
 
