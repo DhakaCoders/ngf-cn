@@ -15,26 +15,28 @@
     float: left;
     padding-right: 109px;
 }
-.contact-form-lft .error-msg{
+/*.contact-form-lft .error-msg{
     display: none;
-}
-.error-msg{
-	background: #D61D1D;
-    padding: 30px 18px;
-    margin-bottom: 40px;
+}*/
+.error-msg,.woocommerce-info{
+	background: #D61D1D!important;
+    padding: 30px 18px!important;
+    margin-bottom: 40px!important;
+    padding-left: 58px!important;
+    position: relative;
 }
 .error-msg span {
     color: #fff;
     margin-bottom: 0;
-    padding-left: 42px;
-    position: relative;
+    padding-left: 0;
 }
-.error-msg span i{
+.error-msg span i,
+.woocommerce-info:before{
 	display: inline-block;
 	vertical-align: baseline;
 	position: absolute;
-	left: 0;
-	top: 50%;
+	left: 20px!important;
+	top: 50%!important;
 	transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -928,6 +930,10 @@ boek-je-form-sec-wrp
     }
     .contact-form-sec-wrp .fl-select-cntlr .select2-container--default .select2-selection--single .select2-selection__arrow{
         right: 15px;
+    }
+    .error-msg span i,
+    .woocommerce-info:before{
+        left: 15px!important;
     }
 }
 
