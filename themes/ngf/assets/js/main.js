@@ -293,8 +293,9 @@ $(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,#bi
 });
 
 /*$('.fl-select-cntlr select').addClass('selectpicker');*/
-
+if( $('.fl-select-cntlr').length ){
  $('.fl-select-cntlr select').select2();
+}
 
 /*start of Sabbir Hossain*/
 
