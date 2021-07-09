@@ -329,13 +329,7 @@
 }
 
 /*responsive*/
-@media(max-width: 1699px){
-    
-}
 @media(max-width: 1599px){
-    
-}
-@media(max-width: 1499px){
     .ftr-white-skew{
         border-top: 190px solid #fff;
     }
@@ -552,9 +546,6 @@
         height: 92px;
         top: -66px;
     }
-    
-}
-@media(max-width: 575px){
     
 }
 @media(max-width: 479px){
