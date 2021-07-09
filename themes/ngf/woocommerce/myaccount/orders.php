@@ -22,7 +22,7 @@ if(! empty($_GET['pageno']) && is_numeric($_GET['pageno']) ){
 }else{
     $paged = 1;
 }
-$posts_per_page = 2;
+$posts_per_page = 4;
 
 $all_orders = get_posts(
 apply_filters(
@@ -121,9 +121,11 @@ if ( $customer_orders ) :
                       	echo $cart_title; 
                     ?>
                     </h5>
+                    <?php if( !empty($product->get_short_description()) ): ?>
                     <div class="order-comment">
-                      <p>Volutpat sagittis, consequat nibh.</p>
+                      <?php echo wpautop($product->get_short_description()); ?>
                     </div>
+                    <?php endif; ?>
                   <?php 
                   if ($formatted_meta_data) :
                   echo '<div class="formateted-meta"><ul>';

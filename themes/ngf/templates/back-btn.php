@@ -16,14 +16,36 @@
 
   if( (is_account_page() && !is_user_logged_in() && isset($_GET['action'])) || (is_account_page() && is_user_logged_in()) ){
   	$cURL = wc_get_cart_url();
-		echo '<div class="back-to-dashboard-btn-cntlr">
+  	$acc_URL = wc_get_account_endpoint_url('');
+		echo '<div class="back-to-dashboard-btn-cntlr hide-sm">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="back-to-dashboard-btn"><a class="backshop-cart" href="'.$cURL.'">'.__( 'Back to SHOPPING CART', 'woocommerce' ).'</a></div>
+						<div class="back-to-dashboard-btn"><a class="backshop-cart" href="'.esc_url($cURL).'">'.__( 'Back to SHOPPING CART', 'woocommerce' ).'</a></div>
 					</div>	
 				</div>
 			</div>
 		</div>';
+		if( (strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false || is_wc_endpoint_url( 'orders' ) || is_wc_endpoint_url( 'edit-account' ) ) && is_account_page() && is_user_logged_in()  ){
+			echo '<div class="back-to-dashboard-btn-cntlr show-sm">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="back-to-dashboard-btn"><a class="backshop-cart" href="'.esc_url($acc_URL).'">'.__( 'Back to Dashboard', 'woocommerce' ).'</a></div>
+					</div>	
+					</div>
+				</div>
+			</div>';
+		}else{
+			echo '<div class="back-to-dashboard-btn-cntlr show-sm">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="back-to-dashboard-btn"><a class="backshop-cart" href="'.esc_url(home_url('/')).'">'.__( 'Back to Natural Grinders', 'woocommerce' ).'</a></div>
+					</div>	
+				</div>
+				</div>
+			</div>';
+		}
   }
 ?>
