@@ -22,7 +22,7 @@ if(! empty($_GET['pageno']) && is_numeric($_GET['pageno']) ){
 }else{
     $paged = 1;
 }
-$posts_per_page = 3;
+$posts_per_page = 2;
 
 $all_orders = get_posts(
 apply_filters(
@@ -164,9 +164,9 @@ if ( $customer_orders ) :
         echo '<ul class="reset-list page-numbers">';
 
         if($paged > 1){
-            echo '<li><a class="prev page-numbers" href="?pageno=1">←</a></li>';
+            echo '<li><a class="prev page-numbers" href="?pageno=1"></a></li>';
         }else{
-            echo '<li><span>←</span></li>';
+            echo '<li><span></span></li>';
         }
 
         for($p = 1; $p <= $num_pages; $p++){
@@ -178,9 +178,9 @@ if ( $customer_orders ) :
         }
 
         if($paged < $num_pages){
-            echo '<li><a class="next page-numbers" href="?pageno='.$num_pages.'">→</a></li>';
+            echo '<li><a class="next page-numbers" href="?pageno='.$num_pages.'"></a></li>';
         }else{
-            echo '<li><span>→</span></li>';
+            echo '<li><span></span></li>';
         }
 
         echo '</ul>';
