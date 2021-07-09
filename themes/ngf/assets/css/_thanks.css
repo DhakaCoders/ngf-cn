@@ -66,10 +66,6 @@
     }
 
 }
-@media (max-width: 1499px){
-
-    
-}
 @media (max-width: 1399px){
     .thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
         height: 500px;
@@ -126,7 +122,7 @@
         padding-bottom: 32px;
     }
     .thank-you-des-border{
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
 
@@ -156,10 +152,6 @@
     .thank-you-des{
         padding-top: 40px;
     }
-
-}
-@media (max-width: 359px){
-
 
 }
 
