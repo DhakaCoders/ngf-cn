@@ -215,7 +215,7 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
     }
 }
 
-@media (max-width: 1499px) {
+@media (max-width: 1599px) {
     .product-page{
         padding-top: 80px;
     }
@@ -317,12 +317,4 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
         font-size: 18px;
         line-height: 1.6;
     }    
-}
-
-@media (max-width: 479px) {
-    
-}
-
-@media (max-width: 375px) {
-    
 }
