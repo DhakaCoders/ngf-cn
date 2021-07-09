@@ -94,7 +94,6 @@ span.werk-abs-img-two {
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	color: #000000;
-	padding-bottom: 15px;
 }
 .werk-testimonial{
 	margin-top: 0;
@@ -115,9 +114,6 @@ body.werk-bdff .footer-wrp .ftr-white-skew {
 }
 body.werk-bdff.sky-btm-bg-cntlr {
     background: rgb(255 255 255 / 20%);
-}
-.dn{
-	/*display: none!important;*/
 }
 .werk-grid-itm-heading a{
 	text-decoration: none;
@@ -256,9 +252,6 @@ ol.werk-ol {
 	}
 	.werk-grid-inline-bg img{
 	    height: 240px;
-	}
-	.werk-grid-itm-heading{
-		padding-bottom: 20px;
 	}
 	.werk-two-grds-sec {
 	    padding: 40px 0;
