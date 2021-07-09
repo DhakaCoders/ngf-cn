@@ -466,6 +466,9 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	.page-entry-header{
 		margin-top: 0;
 	}
+	.page-bnr-skew{
+		border-top: 210px solid #000;
+	}
 }
 
 @media (max-width: 1199px) {
@@ -542,6 +545,9 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		bottom: 70px;
 		right: -58px;
 	}
+	.page-bnr-skew{
+		border-top: 180px solid #000;
+	}
 }
 
 @media (max-width: 767px) {
@@ -577,6 +583,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	}
 	.page-404-dsc-wrp span{
 		font-size: 20px;
+	}
+	.page-bnr-skew{
+		border-top: 140px solid #000;
+		top: -1px;
 	}
 }
 
