@@ -66,6 +66,7 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/slick.php' );
    // include_once( THEME_DIR . '/enq-scripts/swiper.php' );
     include_once( THEME_DIR . '/enq-scripts/matchheight.php' );
+    include_once( THEME_DIR . '/enq-scripts/select2.php' );
     //include_once( THEME_DIR . '/enq-scripts/animate.php' );
     //if( !is_front_page() ) include_once( THEME_DIR . '/enq-scripts/jqueryui.php' );
     include_once( THEME_DIR . '/enq-scripts/theme.default.php' );
