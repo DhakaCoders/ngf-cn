@@ -1173,7 +1173,6 @@ body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc span{
 body.woocommerce-orders .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content .customer-order-details .fl-pagination-ctlr{
     padding-top:64px;
     padding-bottom:0!important;
-    display: none;
 }
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc ins span p:last-child, 
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc ins span bdi p:last-child, 
