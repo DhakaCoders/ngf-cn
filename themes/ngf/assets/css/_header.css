@@ -4,7 +4,7 @@
 }
 .hdr-circle-icon{
 	position: absolute;
-	bottom: -27px;
+	bottom: -33px;
 	left: 142px;
 	margin-left: -45px;
 	height: 112px;
@@ -653,6 +653,11 @@ body.allWork {
 }
 
 /*responsive*/
+@media(min-width: 2000px){
+	.hdr-white-skew{
+		bottom: -1px;
+	}
+}
 @media(max-width: 1799px){
 	nav.main-nav > ul{
 		margin: 0 -10px;
@@ -676,11 +681,14 @@ body.allWork {
 	
 }
 @media(max-width: 1499px){
+	.hdr-circle-icon{
+		bottom: -22px;
+	}
 	.hdr-white-skew{
 		border-bottom: 200px solid #fff;
 	}
 	.header-cntlr{
-		padding-bottom: 250px;
+		padding-bottom: 280px;
 	}
 	.hdr-logo{
 		margin-left: 20px;

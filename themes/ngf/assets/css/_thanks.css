@@ -57,15 +57,18 @@
     }
 
 }
-
-@media (max-width: 1499px){
-
+@media (max-width: 1599px){
     .thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
         height: 550px;
     }
     .thank-you-bnnr-cntlr .bnr-bg-overly-module {
         margin-bottom: 75px;
     }
+
+}
+@media (max-width: 1499px){
+
+    
 }
 @media (max-width: 1399px){
     .thank-you-bnnr-cntlr .bnr-bg-560 .bnr-bg-overly{
@@ -123,7 +126,7 @@
         padding-bottom: 32px;
     }
     .thank-you-des-border{
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
 
