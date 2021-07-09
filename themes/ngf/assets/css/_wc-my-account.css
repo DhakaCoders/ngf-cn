@@ -3271,9 +3271,7 @@ body .wc-template-crtl .success-msg {
         margin-bottom: 10px;
     }
 }
-@media(max-width: 659px){
-    
-}
+
 @media(max-width:575px){
     body.woocommerce-checkout .checkout-page-title h1{
         font-size: 30px;
