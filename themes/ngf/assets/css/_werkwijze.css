@@ -94,7 +94,7 @@ span.werk-abs-img-two {
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	color: #000000;
-	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
 .werk-testimonial{
 	margin-top: 0;
@@ -258,7 +258,7 @@ ol.werk-ol {
 	    height: 240px;
 	}
 	.werk-grid-itm-heading{
-		margin-bottom: 20px;
+		padding-bottom: 20px;
 	}
 	.werk-two-grds-sec {
 	    padding: 40px 0;
