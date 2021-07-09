@@ -652,9 +652,6 @@ span.fl-video-play-icon-cntlr{
     .ovo-testimonial {
         padding-bottom: 60px;
     }
-    .faq-slider-sec-hdr .fssh-title{
-        /*margin-bottom: 30px!important;*/
-    }
     .ovo-fgi-title{
         font-size: 19px!important;
     }
@@ -745,6 +742,7 @@ span.fl-video-play-icon-cntlr{
     }
     .faq-slider-sec-hdr .fssh-title{
         font-size: 24px!important;
+        margin-bottom: 16px!important;
     }
     .ovo-testimonial-grd-item-des blockquote{
         padding: 0 20px;
@@ -837,11 +835,6 @@ span.fl-video-play-icon-cntlr{
         top: -14px!important;
         left: -22px!important;
     }
-    .ovo-fgi-title {
-        font-size: 16px!important;
-        padding-bottom: 20px!important;
-    }
-
 
 
 }

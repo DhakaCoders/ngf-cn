@@ -31,7 +31,7 @@ span.werk-abs-img-two {
     margin-bottom: 0;
 }
 .ovo-text-module p:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 0!important;
 }
 .werk-grids-cntlr .werk-grids-slider-cntlr {
 	display: flex;
@@ -133,6 +133,9 @@ ol.werk-ol {
 }
 .ovo-text-module p:first-child {
     margin-bottom: 20px;
+}
+.ovo-text-module p:last-of-type{
+	margin-bottom: 0;
 }
 
 
