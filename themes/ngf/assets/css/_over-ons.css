@@ -447,7 +447,7 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-full-width-bg-des-cntlr p {
         line-height: 1.3;
-        font-size: 28px;
+        font-size: 27px;
     }
     .ovo-fancy-module-img {
         height: 380px;
@@ -521,6 +521,9 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-testimonial{
         padding-bottom: 80px;
+    }
+    .ovo-full-width-bg-des-cntlr {
+        max-width: 785px;
     }
 
 }
