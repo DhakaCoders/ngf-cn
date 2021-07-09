@@ -1760,6 +1760,9 @@ span.woocommerce-terms-and-conditions-checkbox-text > a,
     letter-spacing: -0.02em;
     font-size: 14px;
 }
+span.woocommerce-terms-and-conditions-checkbox-text > a:hover{
+    color: #ffa800;
+}
 body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] {
     background: #1DB4B2!important;
     border-color: #1DB4B2!important;
