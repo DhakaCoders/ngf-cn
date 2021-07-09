@@ -416,6 +416,12 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	.fl-pagination-ctlr ul li{
 		padding: 0 17px;
 	}
+	.woocommerce-orders .fl-pagination-ctlr ul li a{
+		color: #fff;
+	}
+	.woocommerce-orders .fl-pagination-ctlr ul li a:hover{
+		color: #FFA800;
+	}
 	.fl-pagination-ctlr ul li a, .fl-pagination-ctlr ul li span{
 		font-size: 17px;
 	}
