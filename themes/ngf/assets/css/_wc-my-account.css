@@ -196,6 +196,46 @@ body.woocommerce-edit-account .woocommerce textarea{
     border: 1px solid rgba(231, 234, 236, 0.1);
     font-size:14px;
 }
+body.woocommerce-edit-account .woocommerce input[type="text"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce input[type="email"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce input[type="tel"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce input[type="password"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce textarea::-webkit-input-placeholder{
+    font-size:14px;
+    letter-spacing: -0.02em;
+    color: #909BA5;
+    font-weight: 300;
+}
+body.woocommerce-edit-account .woocommerce input[type="text"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce input[type="email"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce input[type="tel"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce input[type="password"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce textarea::-moz-placeholder{
+    font-size:14px;
+    letter-spacing: -0.02em;
+    color: #909BA5;
+    font-weight: 300;
+}
+body.woocommerce-edit-account .woocommerce input[type="text"]:-ms-input-placeholder,
+body.woocommerce-edit-account .woocommerce input[type="email"]:-ms-input-placeholder,
+body.woocommerce-edit-account .woocommerce input[type="tel"],
+body.woocommerce-edit-account .woocommerce input[type="password"]:-ms-input-placeholder,
+body.woocommerce-edit-account .woocommerce textarea:-ms-input-placeholder{
+    font-size:14px;
+    letter-spacing: -0.02em;
+    color: #909BA5;
+    font-weight: 300;
+}
+body.woocommerce-edit-account .woocommerce input[type="text"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce input[type="email"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce input[type="tel"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce input[type="password"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce textarea{
+    font-size:14px;
+    letter-spacing: -0.02em;
+    color: #909BA5;
+    font-weight: 300;
+}
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
@@ -1173,7 +1213,6 @@ body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc span{
 body.woocommerce-orders .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content .customer-order-details .fl-pagination-ctlr{
     padding-top:64px;
     padding-bottom:0!important;
-    display: none;
 }
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc ins span p:last-child, 
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc ins span bdi p:last-child, 
@@ -1963,11 +2002,13 @@ body.woocommerce-checkout section.checkout-top-sec{
 }
 
 body .wc-template-crtl .success-msg {
-    background: #FFA800;
+    background: #D61D1D;
     padding: 12px 17px;
     margin-bottom: 28px;
 }
-
+.woocommerce-edit-account .success-msg span i{
+    padding-right: 15px;
+}
 /* --------------------------------------- RESPONSIVE --------------------------------------------------*/
 
 @media(max-width:1799px){
@@ -2001,9 +2042,6 @@ body .wc-template-crtl .success-msg {
         font-size:28px;
     }
     /* ----------backbutton -------------------- */
-    body.woocommerce-page .wc-template-crtl{
-        margin-top:-110px;
-    }
     body.hide-account-title .page-grd-sec-wrp, 
     body.loggedin-deshboard-crtl .page-grd-sec-wrp, 
     body.woocommerce-edit-account .page-grd-sec-wrp, 
@@ -2064,6 +2102,13 @@ body .wc-template-crtl .success-msg {
     }
 
 }
+
+@media(max-width: 1499px) {
+    body.woocommerce-page .wc-template-crtl{
+        margin-top:-110px;
+    }    
+}
+
 @media(max-width:1399px){
     /* ------------------- register login --------------------- */
     body.account-login-page #login_register #customer_login .u-column2{
@@ -2831,6 +2876,7 @@ body .wc-template-crtl .success-msg {
     .woocommerce-cart .woocommerce .cart-is-emtpy .cie-icon {
         margin-bottom: 25px;
     }
+
     /* ------------------ account order -------------------*/
     body.woocommerce-orders .woocommerce-account-grds-cntlr{
         padding-top:0px;
@@ -2998,7 +3044,41 @@ body .wc-template-crtl .success-msg {
     body.woocommerce-edit-account.woocommerce-account .woocommerce-EditAccountForm legend{
         margin-bottom: 20px;
     }
-
+    body.woocommerce-edit-account .woocommerce input[type="text"],
+    body.woocommerce-edit-account .woocommerce input[type="email"],
+    body.woocommerce-edit-account .woocommerce input[type="tel"],
+    body.woocommerce-edit-account .woocommerce input[type="password"],
+    body.woocommerce-edit-account .woocommerce textarea{
+        color: #fff;
+    }
+    body.woocommerce-edit-account .woocommerce input[type="text"]::-webkit-input-placeholder,
+    body.woocommerce-edit-account .woocommerce input[type="email"]::-webkit-input-placeholder,
+    body.woocommerce-edit-account .woocommerce input[type="tel"]::-webkit-input-placeholder,
+    body.woocommerce-edit-account .woocommerce input[type="password"]::-webkit-input-placeholder,
+    body.woocommerce-edit-account .woocommerce textarea::-webkit-input-placeholder{
+        color: #fff;
+    }
+    body.woocommerce-edit-account .woocommerce input[type="text"]::-moz-placeholder,
+    body.woocommerce-edit-account .woocommerce input[type="email"]::-moz-placeholder,
+    body.woocommerce-edit-account .woocommerce input[type="tel"]::-moz-placeholder,
+    body.woocommerce-edit-account .woocommerce input[type="password"]::-moz-placeholder,
+    body.woocommerce-edit-account .woocommerce textarea::-moz-placeholder{
+        color: #fff;
+    }
+    body.woocommerce-edit-account .woocommerce input[type="text"]:-ms-input-placeholder,
+    body.woocommerce-edit-account .woocommerce input[type="email"]:-ms-input-placeholder,
+    body.woocommerce-edit-account .woocommerce input[type="tel"],
+    body.woocommerce-edit-account .woocommerce input[type="password"]:-ms-input-placeholder,
+    body.woocommerce-edit-account .woocommerce textarea:-ms-input-placeholder{
+        color: #fff;
+    }
+    body.woocommerce-edit-account .woocommerce input[type="text"]:-moz-placeholder,
+    body.woocommerce-edit-account .woocommerce input[type="email"]:-moz-placeholder,
+    body.woocommerce-edit-account .woocommerce input[type="tel"]:-moz-placeholder,
+    body.woocommerce-edit-account .woocommerce input[type="password"]:-moz-placeholder,
+    body.woocommerce-edit-account .woocommerce textarea{
+        color: #fff;
+    }
 
 
     /* ---------------------- woocommerce-MyAccount-content --------------------------*/
