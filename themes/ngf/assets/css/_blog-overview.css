@@ -69,7 +69,7 @@
 	}
 }
 
-@media (max-width: 1499px) {
+@media (max-width: 1599px) {
 	.blog-page-sec{
 		padding-top: 62px;
 	}
@@ -153,16 +153,4 @@
 	.blog .fl-pagination-blog-cntrl{
 		padding-bottom: 28px;
 	}
-}
-
-@media (max-width: 479px) {
-	
-}
-
-@media (max-width: 375px) {
-	
-}
-
-@media (max-width: 1699px) {
-	
 }

@@ -46,7 +46,7 @@ $terms = get_terms( 'referenties_cat', array(
           $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
           $query = new WP_Query(array(
             'post_type' => 'referenties',
-            'posts_per_page'=> 4,
+            'posts_per_page'=> PERPAGE_REFERENTIES,
             'orderby' => 'date',
             'order'=> 'desc',
             'paged'=>$paged
@@ -71,7 +71,7 @@ $terms = get_terms( 'referenties_cat', array(
                     <?php echo $imgtag; ?>
                   </i>
                   <div class="ref-ov-page-grid-des mHc1">
-                    <h3 class="fl-h3 ref-ov-grd-title"><?php the_title(); ?></h3>
+                    <h3 class="fl-h3 ref-ov-grd-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h3>
                     <div class="ropgd mHc2">
                       <?php the_excerpt(); ?>
                     </div>
@@ -114,7 +114,8 @@ $terms = get_terms( 'referenties_cat', array(
           <?php endif; ?>
           <?php else: ?>
           	<div class="col-md-12">
-          		<div class="notfound"><?php _e( 'Geen resultaat', 'ngf' ); ?>.</div>
+          		<?php $no_results = get_field('no_results', 'options'); ?>
+              <div class="notfound"><?php echo !empty($no_results)? $no_results: __('Geen resultaat', 'ngf'); ?></div>
           	</div>
           <?php endif; wp_reset_postdata(); ?>
 		</div>

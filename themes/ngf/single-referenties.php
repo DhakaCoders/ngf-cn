@@ -2,7 +2,7 @@
 get_header(); 
 $thisID = get_the_ID();
 $imgID = get_post_thumbnail_id($thisID);
-$imgtag = !empty($imgID)? cbv_get_image_tag($imgID): '';
+$imgtag = !empty($imgID)? cbv_get_image_tag($imgID): referenties_placeholder('tag');
 $name = get_field('naam', $thisID);
 ?>
 <section class="innerpage-con-wrap" id="referenties-details">

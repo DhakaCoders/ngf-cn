@@ -2,6 +2,7 @@
 get_header(); 
 $thisID = get_the_ID();
 $categories = get_the_terms( get_the_ID(), 'faq_cat' );
+$posttitle = get_the_title();
 ?>
 <section class="innerpage-con-wrap" id="faq-details">
   <article class="default-page-con">
@@ -17,7 +18,19 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
                 </i>
               </a>
             </div>
-            <strong class="dfp-promo-module-dtitle fl-h1"><?php the_title(); ?></strong>
+            <?php 
+              if( have_rows('inhoud_faq') ){ 
+               $i = 1; 
+                while ( have_rows('inhoud_faq') ) : the_row(); 
+                  if( $i == 1 && get_row_layout() == 'introductietekst' ){ 
+                    $fctitle = get_sub_field('fc_titel');
+                    $posttitle = $fctitle;
+                  } 
+                  $i++; 
+                endwhile;
+              }
+            ?>
+            <?php if( !empty($posttitle) ){ printf('<strong class="dfp-promo-module-dtitle fl-h1">%s</strong>', $posttitle); } ?>
           </div>
           <?php 
             if ( ! empty( $categories ) && ! is_wp_error( $categories ) ){ 
@@ -32,8 +45,7 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
     </div>
     <?php if( have_rows('inhoud_faq') ){ ?>
     <?php while ( have_rows('inhoud_faq') ) : the_row();  ?>
-      <?php 
-      if( get_row_layout() == 'koptekst' ){ 
+      <?php if( get_row_layout() == 'koptekst' ){ 
         $fc_tekst = get_sub_field('fc_tekst');
       ?>
       <div class="block-850">
@@ -108,6 +120,55 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
             </div>
           </div>
         </div>
+       <?php }elseif( get_row_layout() == 'nieuws' ){ 
+          $nieuwsobj = get_sub_field('select_nieuws');
+          if( empty($nieuwsobj) ){
+              $nieuwsobj = get_posts( array(
+                'post_type' => 'post',
+                'posts_per_page'=> 2,
+                'orderby' => 'date',
+                'order'=> 'desc',
+
+              ) );  
+          }
+      ?>
+      <?php if($nieuwsobj): ?>
+      <div class="block-850">
+        <div class="dfp-grd-module dfpBlogSlider clearfix">
+          <?php 
+              foreach( $nieuwsobj as $hnieuws ) :
+              $imgID = get_post_thumbnail_id($hnieuws->ID);
+              $imgsrc = !empty($imgID)? cbv_get_image_src($imgID): nieuws_placeholder(); 
+          ?>
+          <div class="dfp-grd-item">
+            <div class="blog-grid-item">                
+              <div class="blog-grid-img">                    
+                <a href="<?php echo get_permalink( $hnieuws->ID ); ?>" class="overlay-link"></a>
+                <div class="bgi-img inline-bg" style="background-image: url('<?php echo $imgsrc; ?>');">                  
+                </div>
+              </div>  
+              <div class="blog-grid-des mHc">
+                <div class="blog-grid-des-inner">                                     
+                  <h4 class="fl-h4 bgi-title mHc1"><a href="<?php echo get_permalink( $hnieuws->ID ); ?>"><?php echo get_the_title($hnieuws->ID); ?></a></h4>                      
+                  <div class="bgi-des mHc2">
+                   <?php echo get_the_excerpt($hnieuws->ID); ?>
+                  </div>    
+                  <div class="fl-pro-grd-btn fl-btn-absolute">
+                    <a class="fl-read-more-btn" href="<?php echo get_permalink( $hnieuws->ID ); ?>">
+                      <span><?php _e( 'READ MORE', 'ngf' ); ?></span>
+                      <i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12">
+                      <use xlink:href="#dip-yellow-right-arrow"></use> </svg>
+                      </i>
+                    </a>
+                  </div>
+                </div>   
+              </div>    
+            </div> 
+          </div>
+          <?php endforeach; ?> 
+        </div>
+      </div>
+      <?php endif; ?>
         <?php }elseif( get_row_layout() == 'referenties' ){ 
           $fc_titel = get_sub_field('fc_titel');
           $refobj = get_sub_field('select_referenties');
@@ -135,7 +196,7 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
                   foreach( $refobj as $ref ) {
                   global $post;
                   $imgID = get_post_thumbnail_id($ref->ID);
-                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): ''; 
+                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): referenties_placeholder('tag'); 
                   $name = get_field('naam', $ref->ID);
                 ?>
                 <div class="testimonial-grd-item">

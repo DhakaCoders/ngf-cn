@@ -38,7 +38,7 @@ $terms = get_terms( 'faq_cat', array(
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $query = new WP_Query(array(
           'post_type' => 'faqs',
-          'posts_per_page'=> 10,
+          'posts_per_page'=> PERPAGE_FAQ,
           'orderby' => 'date',
           'order'=> 'desc',
           'paged'=>$paged
@@ -100,7 +100,8 @@ $terms = get_terms( 'faq_cat', array(
         <?php endif; ?>
         <?php else: ?>
         	<div class="col-md-12">
-        		<div class="notfound"><?php _e( 'Geen resultaat', 'ngf' ); ?>.</div>
+             <?php $no_results = get_field('no_results', 'options'); ?>
+              <div class="notfound"><?php echo !empty($no_results)? $no_results: __('Geen resultaat', 'ngf'); ?></div>
         	</div>
         <?php endif; wp_reset_postdata(); ?>
     </div>

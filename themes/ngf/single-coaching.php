@@ -7,28 +7,54 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
   <article class="default-page-con">
     <div class="block-1285">
       <div class="dfp-promo-module clearfix">
+        <?php 
+          $autoTitle = true;
+          if( have_rows('inhoud_faq') ){
+          while ( have_rows('inhoud_faq') ) : the_row();  
+        ?>
+        <?php 
+          if( get_row_layout() == 'top_afbeelding' ){ 
+          $fcafbeelding = get_sub_field('fc_afbeelding');
+          $affbeelding_src = !empty($fcafbeelding)?cbv_get_image_src($fcafbeelding):'';
+        ?>
         <div class="bnr-bg-overly-module bnr-bg-249">
           <div class="container">
             <div class="row">
               <div class="col-md-12">
                 <div class="bnr-bg-overly-cntlr">
-                  <div class="bnr-bg-overly inline-bg" style="background:url(<?php echo THEME_URI; ?>/assets/images/bnr-bg-overly4x.jpg)"></div>
+                  <div class="bnr-bg-overly inline-bg" style="background:url(<?php echo $affbeelding_src; ?>)"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <?php  
+        }elseif( get_row_layout() == 'introductietekst' ){ 
+          $autoTitle = false;
+        } ?>
+       <?php endwhile; } ?>
+        <?php if($autoTitle){ ?>
         <div class="block-850">
           <div class="dfp-promo-module-des">
-            <strong class="dfp-promo-module-title fl-h1"><?php the_title(); ?></strong>
+            <?php printf('<strong class="dfp-promo-module-title fl-h1">%s</strong>', get_the_title()); ?>
           </div>
         </div>
+        <?php } ?>
       </div>
     </div>
     <?php if( have_rows('inhoud_faq') ){ ?>
     <?php while ( have_rows('inhoud_faq') ) : the_row();  ?>
       <?php 
-      if( get_row_layout() == 'koptekst' ){ 
+        if( get_row_layout() == 'introductietekst' ){ 
+        $fctitle = get_sub_field('fc_titel');
+      ?>
+      <div class="block-850">
+        <div class="dfp-promo-module-des">
+          <?php if( !empty($fctitle) ) printf('<strong class="dfp-promo-module-title fl-h1">%s</strong>', $fctitle); ?>
+        </div>
+      </div>
+      <?php 
+        }elseif( get_row_layout() == 'koptekst' ){ 
         $fc_tekst = get_sub_field('fc_tekst');
       ?>
       <div class="block-850">
@@ -116,7 +142,6 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
               ) );
               
           }
-
         ?>
         <div class="block-850">
           <div class="dfp-testimonial-module">
@@ -130,7 +155,7 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
                   foreach( $refobj as $ref ) {
                   global $post;
                   $imgID = get_post_thumbnail_id($ref->ID);
-                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): ''; 
+                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): referenties_placeholder('tag'); 
                   $name = get_field('naam', $ref->ID);
                 ?>
                 <div class="testimonial-grd-item">

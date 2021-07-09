@@ -126,12 +126,12 @@
 .line-animate{
 	-webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 @keyframes fadeInDown {
     0% { margin-right: -100%; }
@@ -315,7 +315,7 @@
 		top: 172px;
 	}
 }
-@media(max-width: 1499px){
+@media(max-width: 1599px){
 	.hm-bnr-title.pg-bnr-title.fl-h1-80{
 		font-size: 60px;
 	}

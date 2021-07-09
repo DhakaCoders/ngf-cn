@@ -1,7 +1,7 @@
 
 .ovo-two-grds-des-module-sec{
-	padding-top: 135px;
-	padding-bottom: 105px;
+	padding-top: 140px;
+	padding-bottom: 125px;
 }
 .ovo-two-grds-des-module-cntlr{
 	display: flex;
@@ -36,6 +36,7 @@
 .ovo-grds-des-lft strong {
     display: inline-block;
 }
+
 .ovo-full-width-bg-des-heading {
     position: absolute;
     left: 0;
@@ -111,6 +112,7 @@ span.ovo-abs-round-three {
 }
 .ovo-full-width-bg-des{
     padding: 145px 0;
+    background-color: #fbfbfb!important;
 }
 .block-850{
 	max-width: 850px;
@@ -137,7 +139,6 @@ span.ovo-abs-round-three {
 .fancy-vedeo-items-sec-cntlr  {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px;
 }
 .fl-fancy-module-col{
     max-width: initial;
@@ -147,7 +148,8 @@ span.ovo-abs-round-three {
     padding-right: 10px;
 }
 .fl-fancy-inline-bg-img{
-	min-height: 450px;
+	height: 100%;
+    width: 100%;
 }
 .ovo-fancy-module-item-des {
     text-align: center;
@@ -168,6 +170,7 @@ span.ovo-abs-round-three {
 .ovo-fancy-module-img{
 	position: relative;
 	overflow: hidden;
+    height: 450px;
 }
 .fl-fancy-inline-bg-img{
 	transition: all .5s;
@@ -317,18 +320,24 @@ span.fl-video-play-icon-cntlr{
     flex-wrap: wrap;
     display: flex;
 }
-
+.ovo-grds-text-module p:last-of-type{
+    margin-bottom: 0;
+}
+.ovo-cta-module-mobile{
+    padding-top: 30px;
+    background-color: #fff;
+}
 
 
 
 
 @media (max-width: 1699px){
     .ovo-grds-des-lft p{
-        font-size: 25px;
+        font-size: 24px;
         line-height: 1.5;
     }
     .ovo-grds-des-lft{
-        padding-right: 20px;
+        padding-right: 10px;
     }
     .ovo-grds-des-rgt{
         padding-left: 55px;
@@ -340,8 +349,8 @@ span.fl-video-play-icon-cntlr{
         font-size: 29px;
         line-height: 1.4;
     }
-    .fl-fancy-inline-bg-img {
-        min-height: 420px;
+    .ovo-fancy-module-img {
+        height: 420px;
     }
     .ovo-fancy-modl-item-para {
         margin-bottom: 30px;
@@ -374,7 +383,7 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-two-grds-des-module-sec {
         padding-top: 120px;
-        padding-bottom: 90px;
+        padding-bottom: 110px;
     }
     .ovo-full-width-img-sec {
         height: 650px;
@@ -425,9 +434,9 @@ span.fl-video-play-icon-cntlr{
 
 }
 
-@media (max-width: 1499px) {
+@media (max-width: 1599px) {
     .ovo-grds-des-lft p {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 1.4;
     }
     .ovo-grds-text-module p{
@@ -442,10 +451,10 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-full-width-bg-des-cntlr p {
         line-height: 1.3;
-        font-size: 28px;
+        font-size: 27px;
     }
-    .fl-fancy-inline-bg-img {
-        min-height: 380px;
+    .ovo-fancy-module-img {
+        height: 380px;
     }
     .ofmi-heading {
         margin-bottom: 10px;
@@ -480,6 +489,7 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-two-grds-des-module-sec {
         padding-top: 110px;
+        padding-bottom: 100px;
     }
     span.fl-video-play-icon-cntlr i svg{
         height: 60px;
@@ -495,7 +505,7 @@ span.fl-video-play-icon-cntlr{
     .ovo-abs-round-two {
         height: 85px;
         width: 85px;
-        border: 21px solid#fea700;
+        border: 20px solid#fea700;
     }
     .ovo-fancy-vedeo-items-sec {
         padding-top: 75px;
@@ -516,8 +526,16 @@ span.fl-video-play-icon-cntlr{
     .ovo-testimonial{
         padding-bottom: 80px;
     }
+    .ovo-full-width-bg-des-cntlr {
+        max-width: 785px;
+    }
 
 }
+
+
+
+
+
 
 @media(max-width: 1299px){
 
@@ -528,7 +546,7 @@ span.fl-video-play-icon-cntlr{
         line-height: 1.3;
     }
     .ovo-grds-des-rgt {
-        padding-left: 40px;
+        padding-left: 60px;
     }
     .ovo-grds-text-module p {
         line-height: 1.5;
@@ -540,8 +558,8 @@ span.fl-video-play-icon-cntlr{
     .ovo-full-width-bg-des-cntlr p {
         font-size: 26px;
     }
-    .fl-fancy-inline-bg-img {
-        min-height: 340px;
+    .ovo-fancy-module-img {
+        height: 340px;
     }
     .ovo-fancy-module-item-des {
         padding: 20px 20px 0 20px;
@@ -557,8 +575,8 @@ span.fl-video-play-icon-cntlr{
         width: 50px;
     }
     .ovo-abs-round-two {
-        height: 81px;
-        width: 81px;
+        height: 82px;
+        width: 82px;
         border: 21px solid#fea700;
         right: -30px;
     }
@@ -583,7 +601,7 @@ span.fl-video-play-icon-cntlr{
     }
     .ovo-two-grds-des-module-sec {
         padding-top: 100px;
-        padding-bottom: 80px;
+        padding-bottom: 90px;
     }
     .ovo-full-width-bg-des {
         padding: 100px 0;
@@ -622,23 +640,17 @@ span.fl-video-play-icon-cntlr{
     .ovo-full-width-img-sec {
         height: 350px;
     }
-    .ovo-full-width-bg-des {
-        /*padding-bottom: 25px;*/
-    }
     .ovo-full-width-bg-des-cntlr p {
         font-size: 22px;
     }
-    .fl-fancy-inline-bg-img {
-        min-height: 300px;
+    .ovo-fancy-module-img {
+        height: 300px;
     }
     .ovo-abs-round{
-        top: -39px;
+        top: -37px;
     }
     .ovo-testimonial {
         padding-bottom: 60px;
-    }
-    .faq-slider-sec-hdr .fssh-title{
-        /*margin-bottom: 30px!important;*/
     }
     .ovo-fgi-title{
         font-size: 19px!important;
@@ -655,6 +667,10 @@ span.fl-video-play-icon-cntlr{
     .faq-slider-sec {
         padding-top: 80px;
     }
+    .ovo-grds-des-rgt {
+        padding-left: 40px;
+    }
+
 
 
 
@@ -663,7 +679,7 @@ span.fl-video-play-icon-cntlr{
 @media(max-width: 767px){
     .ovo-two-grds-des-module-sec {
         padding-top: 45px;
-        padding-bottom: 38px;
+        padding-bottom: 35px;
     }
     .ovo-grds-des-lft, .ovo-grds-des-rgt{
         max-width: 100%;
@@ -726,6 +742,7 @@ span.fl-video-play-icon-cntlr{
     }
     .faq-slider-sec-hdr .fssh-title{
         font-size: 24px!important;
+        margin-bottom: 16px!important;
     }
     .ovo-testimonial-grd-item-des blockquote{
         padding: 0 20px;
@@ -788,7 +805,7 @@ span.fl-video-play-icon-cntlr{
 }
 @media(max-width: 575px){
     .ovo-grids-cntlr .ovo-grid-item-col{
-     o  width: 100%;
+      width: 100%;
     }
 
 
@@ -801,8 +818,8 @@ span.fl-video-play-icon-cntlr{
     .ovo-full-width-bg-des-cntlr p {
         font-size: 18px;
     }
-    .fl-fancy-inline-bg-img {
-        min-height: 240px;
+    .ovo-fancy-module-img {
+        height: 240px;
     }
 
 }
@@ -818,11 +835,6 @@ span.fl-video-play-icon-cntlr{
         top: -14px!important;
         left: -22px!important;
     }
-    .ovo-fgi-title {
-        font-size: 16px!important;
-        padding-bottom: 20px!important;
-    }
-
 
 
 }

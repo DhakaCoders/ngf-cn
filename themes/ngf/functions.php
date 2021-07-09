@@ -7,6 +7,8 @@ defined( 'THEME_DIR' ) or define( 'THEME_DIR', get_template_directory() );
 defined( 'THEME_URI' ) or define( 'THEME_URI', get_template_directory_uri() );
 
 defined( 'HOMEID' ) or define( 'HOMEID', get_option('page_on_front') );
+defined( 'PERPAGE_REFERENTIES ' ) or define( 'PERPAGE_REFERENTIES', 4 );
+defined( 'PERPAGE_FAQ ' ) or define( 'PERPAGE_FAQ', 10 );
 
 /**
 Theme Setup->>
@@ -64,6 +66,7 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/slick.php' );
    // include_once( THEME_DIR . '/enq-scripts/swiper.php' );
     include_once( THEME_DIR . '/enq-scripts/matchheight.php' );
+    include_once( THEME_DIR . '/enq-scripts/select2.php' );
     //include_once( THEME_DIR . '/enq-scripts/animate.php' );
     //if( !is_front_page() ) include_once( THEME_DIR . '/enq-scripts/jqueryui.php' );
     include_once( THEME_DIR . '/enq-scripts/theme.default.php' );
@@ -194,8 +197,14 @@ if( !function_exists('cbv_custom_both_breadcrump')){
 }
 
 function custom_post_type_query($query) {
-if( $query->is_main_query() && !is_admin()){
-        
+    if (!is_admin() && $query->is_main_query()){
+        if(is_tax('referenties_cat')){
+          $query->set('posts_per_page', PERPAGE_REFERENTIES);
+
+        }
+        if(is_tax('faq_cat')){
+          $query->set('posts_per_page', PERPAGE_FAQ);
+        }
     }
     return $query;
 }

@@ -4,7 +4,7 @@
 }
 .hdr-circle-icon{
 	position: absolute;
-	bottom: -27px;
+	bottom: -33px;
 	left: 142px;
 	margin-left: -45px;
 	height: 112px;
@@ -521,6 +521,9 @@ body.allWork {
 .allWork .hamburger-icon{
 	display: none;
 }	
+.cross-icon{
+	display: none;
+}
 .allWork .cross-icon{
 	display: block;
 }
@@ -653,6 +656,11 @@ body.allWork {
 }
 
 /*responsive*/
+@media(min-width: 2000px){
+	.hdr-white-skew{
+		bottom: -1px;
+	}
+}
 @media(max-width: 1799px){
 	nav.main-nav > ul{
 		margin: 0 -10px;
@@ -667,20 +675,16 @@ body.allWork {
 		left: 120px;
 	}
 }
-@media(max-width: 1699px){
-	/*.hdr-circle-icon{
-		margin-left: -45px;
-	}*/
-}
 @media(max-width: 1599px){
 	
-}
-@media(max-width: 1499px){
+	.hdr-circle-icon{
+		bottom: -22px;
+	}
 	.hdr-white-skew{
 		border-bottom: 200px solid #fff;
 	}
 	.header-cntlr{
-		padding-bottom: 250px;
+		padding-bottom: 280px;
 	}
 	.hdr-logo{
 		margin-left: 20px;
@@ -737,7 +741,8 @@ body.allWork {
 		height: 80px;
 		width: 80px;
 		border: 12px solid #FFA800;
-		left: 120px;
+		left: 29px;
+		margin-left: 0;
 	}
 	.hdr-socials ul{
 		margin: -7px 0;
@@ -754,7 +759,7 @@ body.allWork {
 		height: 70px;
 		width: 70px;
 		border: 9px solid #FFA800;
-		left: 80px;
+		
 	}
 }
 @media(max-width: 1299px){
@@ -917,6 +922,9 @@ body.allWork {
 		font-size: 14px;
 		color: #000;
 		text-transform: uppercase;
+	}
+	.hdr-logo{
+		z-index: 4;
 	}
 	nav.main-nav > ul > li > a{
 		position: relative;

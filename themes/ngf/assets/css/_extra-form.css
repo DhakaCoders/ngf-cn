@@ -1,3 +1,9 @@
+
+
+.fl-form-wrp .wpforms-container-full{
+    margin-bottom: 0;
+}
+
 .fl-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input::placeholder,
 .fl-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field textarea::placeholder{
     color:#909BA5!important;
@@ -73,9 +79,9 @@
         padding-bottom: 40px;
     }
 }
-@media(max-width:1499px){
+@media(max-width:1599px){
     .bnr-bg-overly-module{
-        margin-top: -200px;
+        margin-top: -230px;
         margin-bottom: 40px;
     }
 }
@@ -88,6 +94,9 @@
     }
     .fl-form-block-des-cntlr{
         padding-bottom: 32px;
+    }
+    .fl-form-sec-wrp .fl-form-block{
+        max-width: 100%;
     }
 }
 @media(max-width:767px){
