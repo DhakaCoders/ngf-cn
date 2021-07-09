@@ -214,6 +214,7 @@ if($ovbanner):
     <div class="row">
       <div class="col-md-12">
         <div class="fancy-vedeo-items-sec-cntlr ovomblfvSlider">
+          <!-- <div class="ovomblfvSlider"> -->
             <?php 
               foreach( $video_bloks as $video_blok ): 
                 $video_blok_poster = !empty($video_blok['afbeelding'])? cbv_get_image_src( $video_blok['afbeelding'], 'full' ): '';
@@ -266,6 +267,7 @@ if($ovbanner):
               </div>
             </div>
             <?php endforeach; ?>
+          <!-- </div> -->
         </div>
       </div>
     </div>
