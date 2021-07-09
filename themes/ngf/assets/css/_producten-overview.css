@@ -308,6 +308,9 @@ del span.amount bdi:after{
     .fl-pro-grd-des{
         padding: 25px 23px 35px;
     }
+    .fl-product-grd .fl-pro-grd-des .fl-pro-grd-price{
+        padding-bottom: 20px;
+    }
     span.amount bdi, span.amount bdi span.woocommerce-Price-currencySymbol, 
     ins span.amount bdi, ins span.amount bdi span.woocommerce-Price-currencySymbol, 
     del span.amount bdi, del span.amount bdi span.woocommerce-Price-currencySymbol {
