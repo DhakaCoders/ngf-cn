@@ -95,6 +95,9 @@
     .fl-form-block-des-cntlr{
         padding-bottom: 32px;
     }
+    .fl-form-sec-wrp .fl-form-block{
+        max-width: 100%;
+    }
 }
 @media(max-width:767px){
     .bnr-bg-249 .bnr-bg-overly {
