@@ -738,7 +738,8 @@ body.allWork {
 		height: 80px;
 		width: 80px;
 		border: 12px solid #FFA800;
-		left: 120px;
+		left: 29px;
+		margin-left: 0;
 	}
 	.hdr-socials ul{
 		margin: -7px 0;
@@ -755,7 +756,7 @@ body.allWork {
 		height: 70px;
 		width: 70px;
 		border: 9px solid #FFA800;
-		left: 80px;
+		
 	}
 }
 @media(max-width: 1299px){
