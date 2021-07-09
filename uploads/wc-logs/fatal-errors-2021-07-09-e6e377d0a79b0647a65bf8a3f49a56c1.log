@@ -10,3 +10,11 @@
 
 2021-07-09T12:23:00+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\pro\includes\templates\class-donation.php on line 8
 
+2021-07-09T14:08:27+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\advanced-custom-fields-pro\includes\fields\class-acf-field-time_picker.php on line 3
+
+2021-07-09T14:08:28+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\advanced-custom-fields-pro\pro\fields\class-acf-field-repeater.php on line 3
+
+2021-07-09T14:08:28+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\advanced-custom-fields-pro\pro\fields\class-acf-field-repeater.php on line 3
+
+2021-07-09T14:08:28+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\advanced-custom-fields-pro\pro\fields\class-acf-field-repeater.php on line 3
+
