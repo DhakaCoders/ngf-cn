@@ -8,13 +8,16 @@
     $seller_condition = get_field('product_condition', $product->get_id());
     $thumbID = get_post_thumbnail_id($product->get_id());
     $gridsrc = cbv_get_image_src( $thumbID, 'pgrid' );
-    if( empty($thumbID) ) $gridsrc = THEME_URI.'/assets/images/dft-catlog.png';
+    if( empty($thumbID) ) $gridsrc = shop_placeholder();
     $short_desc1 = get_field('short_desc_1', $product->get_id());
     $short_desc2 = get_field('short_desc_2', $product->get_id());
     $terms = get_the_terms( $product->get_id(), 'product_cat' );
 ?>
 <div class="fl-product-grd mHc">
-<?php if( !empty($seller_condition) ) printf('<div class="fl-pro-tag"><span>%s</span></div>', $seller_condition);?>
+<?php 
+if( !empty($seller_condition) ) printf('<div class="fl-pro-tag"><span>%s</span></div>', $seller_condition);
+  wc_get_template_part('loop/sale','flash');
+?>
 <div class="fl-product-grd-inr">
   <div class="fl-pro-grd-img-cntlr">
     <a href="<?php echo get_permalink( $product->get_id()); ?>" class="overlay-link"></a>

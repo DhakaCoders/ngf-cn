@@ -95,7 +95,7 @@ add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
 function new_loop_shop_per_page( $cols ) {
   // $cols contains the current number of products per page based on the value stored on Options –> Reading
   // Return the number of products you wanna show per page.
-  $cols = 6;
+  $cols = 3;
   return $cols;
 }
 
@@ -544,7 +544,18 @@ function cbv__change_cart_table_price_display( $price, $values, $cart_item_key )
     }
     return $price;
 }
+function custom_pre_get_posts_query( $q ) {
+    if ( ! $q->is_main_query() ) return;
+    if ( ! $q->is_post_type_archive() ) return;
 
+    if ( ! is_admin() ) {
+        $q->set( 'orderby', 'menu_order' );
+        $q->set( 'order', 'asc' );
+    }
+    
+    
+}
+add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' ); 
 add_action( 'woocommerce_cart_calculate_fees','add_custom_surcharge', 10, 1 );
 function add_custom_surcharge( $cart ) {
     if ( is_admin() && ! defined( 'DOING_AJAX' ) )

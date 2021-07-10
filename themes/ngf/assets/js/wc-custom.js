@@ -23,13 +23,13 @@ var html = '<p class="form-row form-row-wide" id="billing_company_field">' +
       '<p class="form-row form-row-wide" id="billing_btw_nummer_field">' +
         '<label for="billing_reference" class="">Reference</label>' +
         '<span class="woocommerce-input-wrapper">' +
-          '<input type="text" class="input-text " name="billing_reference" id="billing_reference" placeholder="Reference" required>' +
+          '<input type="text" class="input-text " name="billing_reference" id="billing_reference" placeholder="Reference">' +
         '</span>' +
       '</p>'+
       '<p class="form-row form-row-wide" id="billing_btw_nummer_field">' +
         '<label for="billing_btw_nummer" class="">BTW number</label>' +
         '<span class="woocommerce-input-wrapper">' +
-          '<input type="text" class="input-text " name="billing_btw_nummer" id="billing_btw_nummer" placeholder="Bijv. BE0848 629 779" required>' +
+          '<input type="text" class="input-text " name="billing_btw_nummer" id="billing_btw_nummer" placeholder="Bijv. BE0848 629 779">' +
         '</span>' +
       '</p>';
 
