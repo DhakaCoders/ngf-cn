@@ -11,6 +11,9 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 .woocommerce-order-received .checkout-cntrl .checkout-hdr h3{
 	border-bottom: none!important;
 }
+.woocommerce-order-received .checkout-cntrl .checkout-hdr .chkout-title span{
+	display: block;
+}
 /*.woocommerce-order-received .checkout-cntrl{
 	margin: 0 -20px;
 }*/
@@ -42,7 +45,8 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
-	width: 26%;
+	max-width: 336px;
+	width: 100%;
 	height: 2px;
 	background: #EFF4F7;
 }
