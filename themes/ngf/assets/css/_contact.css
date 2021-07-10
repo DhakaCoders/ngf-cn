@@ -24,7 +24,7 @@
 .woocommerce .woocommerce-error::before, 
 .woocommerce .woocommerce-info::before, 
 .woocommerce .woocommerce-message::before {
-    top: 25px;
+    top: 23px;
     left: 16px;
     content: ""!important;
     background-image: url('../images/alert-icon.svg');
