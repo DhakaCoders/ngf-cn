@@ -4,3 +4,7 @@
 
 2021-07-10T18:25:23+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\june\ngf\ngf-cn\plugins\woocommerce\vendor\automattic\jetpack-constants\src\class-constants.php on line 25
 
+2021-07-10T19:44:06+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\june\ngf\wp-admin\includes\media.php on line 16
+
+2021-07-10T19:44:06+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\june\ngf\wp-admin\includes\media.php on line 16
+
