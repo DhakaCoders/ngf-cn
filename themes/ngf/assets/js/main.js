@@ -358,16 +358,15 @@ $(window).resize(function(){
   }
 });
 
-$(window).resize(function(){
+
   if (windowWidth <= 767) {
-    $('.ftr-top-col h6').on('click', function(){
+    $('.ftr-top-col h6').click(function(){
       $(this).toggleClass('active');
       $(this).parent().siblings().find('h6').removeClass('active');
       $(this).parent().find('.ftr-top-col-menu').slideToggle(300);
       $(this).parent().siblings().find('.ftr-top-col-menu').slideUp(300);
     });
   }
-});
 
 
 $(".hdr-white-skew").css('border-left-width', windowWidth);
