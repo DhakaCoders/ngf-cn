@@ -171,6 +171,8 @@ body.woocommerce-cart .woocommerce a.remove{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+	position: relative;
+	top: -1px;
 }
  body.woocommerce-cart .woocommerce a.remove:hover{
 	background: url(../images/delete-hover3.svg);
@@ -1057,6 +1059,7 @@ body.woocommerce-page span.total-price-prefix {
 	    left: auto;
 	    right: 0;
 	    z-index: 10!important;
+	    top: auto!important;
 	}
 	body.woocommerce-cart .woocommerce a.remove{
 		margin-left: 0;

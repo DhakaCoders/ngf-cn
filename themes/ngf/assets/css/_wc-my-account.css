@@ -2162,6 +2162,9 @@ body.hide-account-title .woocommerce form .form-row .optional{
     body.woocommerce-checkout .checkout-page-title h1 {
         font-size: 36px;
     }
+    body.woocommerce-account .account-page-title h1{
+        padding-top: 20px;
+    }
     body.woocommerce-account .register-btn button[type="submit"]{
         padding: 15px 15px!important;
     }
@@ -2171,6 +2174,7 @@ body.hide-account-title .woocommerce form .form-row .optional{
     body.woocommerce-account .page-title h1{
         margin-bottom:50px;
     }
+
     #billing_personal_recom .woocommerce-input-wrapper .checkbox-custom, 
     #billing_acttion_insp .woocommerce-input-wrapper .checkbox-custom{
         margin-top: 0px;
@@ -2342,6 +2346,9 @@ body.hide-account-title .woocommerce form .form-row .optional{
     }
     body.loggedin-deshboard-crtl .page-grd-sec-wrp{
         padding-bottom:70px;
+    }
+    body.woocommerce-account .account-page-title h1{
+        padding-top: 0;
     }
     /* -----------------------  checkout page -----------------------*/
     body.woocommerce-checkout #customer_details .col-2{
@@ -3095,7 +3102,9 @@ body.hide-account-title .woocommerce form .form-row .optional{
     body.woocommerce-edit-account .woocommerce textarea{
         color: #fff;
     }
-
+    body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm fieldset:first-of-type p + P.woocommerce-form-row--last label {
+        display: none;
+    }
 
     /* ---------------------- woocommerce-MyAccount-content --------------------------*/
     

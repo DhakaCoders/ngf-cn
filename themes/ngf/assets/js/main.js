@@ -165,8 +165,6 @@ if( $('.responsive-slider').length ){
 
 
 
-/*start of Niaz Morshad*/
-
 
 if( $('.plansGrdsSlider').length ){
     $('.plansGrdsSlider').slick({
@@ -263,7 +261,6 @@ if( $('#pa_fitness-type').length ){
  $('#pa_fitness-type').select2();
 }
 
-/*start of Sabbir Hossain*/
 
 if( $('.main-img-crtl').length ){
    $('.main-img-crtl').slick({
@@ -327,9 +324,6 @@ if( $('.relatedProGrdsSlider').length ){
 
 
 
-
-/*start of Monirul Islam*/
-
   if( $('.hamburger-cntlr').length ){
     $('.hamburger-cntlr').click(function(){
       $('body').toggleClass('allWork');
@@ -385,8 +379,6 @@ $(window).resize(function() {
 
 
 
-
-/*start of Shariful Islam*/
 
 if( $('.dfpTestimonialSlider').length ){
     $('.dfpTestimonialSlider').slick({
@@ -511,8 +503,6 @@ if( $('.qty1').length ){
 }
 
 
-
-/*start of Jahir*/
 
   if(windowWidth <=767){
     if( $('.ovomblfvSlider').length ){
@@ -642,13 +632,6 @@ if( $('.faqSlider1').length ){
       });
     }
   }
-
-
-
-
-/*start of Momin*/
-
-
 
 
 /*$('.relatedProGrdsSlider').each(function() {
