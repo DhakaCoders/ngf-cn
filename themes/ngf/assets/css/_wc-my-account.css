@@ -1967,7 +1967,9 @@ body .wc-template-crtl .success-msg {
     padding: 12px 17px;
     margin-bottom: 28px;
 }
-
+body.hide-account-title .woocommerce form .form-row .optional{
+    visibility: hidden;
+}
 /* --------------------------------------- RESPONSIVE --------------------------------------------------*/
 
 @media(max-width:1799px){
