@@ -667,10 +667,10 @@ if( $('.faqSlider1').length ){
     }
 });*/
 
-var relatedProGrdsSliderCount = $('.dfpTestimonialSlider ul.slick-dots').children().length;
+/*var relatedProGrdsSliderCount = $('.dfpTestimonialSlider ul.slick-dots').children().length;
 if (relatedProGrdsSliderCount = 1) {
       $('.dfpTestimonialSlider ul.slick-dots').addClass('tt');
 }
-
+*/
 
 })(jQuery);
