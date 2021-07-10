@@ -523,6 +523,8 @@ Gallery design
 	letter-spacing: -0.02em;
 	font-weight: 200;
 	margin-bottom: 25px;
+	padding-left: 0;
+	border-left: none;
 }
 .testimonial-grd-item-des blockquote p{
 	line-height: 1.2;
@@ -536,6 +538,11 @@ Gallery design
 .testimonial-grd-item-des blockquote strong{
 	font-size: 16px;
 	text-transform: capitalize;
+}
+
+blockquote{
+	padding-left: 20px;
+	border-left: 4px solid #FFA800;
 }
 
 .dfpTestimonialSlider .testimonial-grd-item,
