@@ -289,7 +289,6 @@ del span.amount bdi:after{
         margin: 0 -8px!important;
     }
     .fl-products-cntlr > ul.products > li{
-        width: 50%!important;
         padding: 0 8px 48px!important;
     }  
 }
