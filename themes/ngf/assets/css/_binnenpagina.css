@@ -527,6 +527,7 @@ Gallery design
 .testimonial-grd-item-des blockquote p{
 	line-height: 1.2;
 	margin-bottom: 15px;
+	font-style: italic;
 }
 .testimonial-grd-item-des blockquote em{
 	font-style: italic;
