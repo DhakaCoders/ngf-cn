@@ -26,6 +26,7 @@ get_header( 'shop' );
     <div class="row">
       <div class="col-md-12">
         <div class="fl-product clearfix">
+        <span id="show_error" style="display:none"></span>
         <div class="wc-product-title show-sm">
         	<h1><?php echo get_the_title(); ?></h1>
         </div>

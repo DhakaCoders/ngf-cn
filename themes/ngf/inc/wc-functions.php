@@ -370,13 +370,14 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
                 'Apply coupon',
                 'Coupon code',
                 'Waardebon toepassen',
-                'Couponcode'
+                'Couponcode',
+                'Overzicht'
             ),
             array( 
                 'Order now', 
                 'PRODUCTEN', 
                 'Persoonlijke gegevens', 
-                'Overzicht', 
+                'Overview', 
                 'Afrekenen',
                 'Extra Info',
                 'Subtotaal',
@@ -385,7 +386,8 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
                 'ApPly',
                 'Have a discount code?',
                 'ApPly',
-                'Have a discount code?'
+                'Have a discount code?',
+                'Overview'
             ),
             $translated
         );
