@@ -1036,7 +1036,7 @@ blockquote{
 		padding-top: 85px;
 	}
 	#referenties-details .dfp-promo-module {
-	    margin-top: -130px;
+	    margin-top: -90px;
 	}
 	#referenties-details .bnr-grd-des p{
 		font-size: 26px;
@@ -1153,6 +1153,7 @@ blockquote{
 	}
 	#referenties-details .bnr-grd-img i{
 		margin-right: 40px;
+		max-width: 200px;
 	}
 	#referenties-details .bnr-grd-des{
 		width: 100%;
@@ -1385,7 +1386,9 @@ blockquote{
 	.testimonial-grds{
 		padding-bottom: 0;
 	}
-
+	#referenties-details .bnr-grd-des p{
+		margin-bottom: 30px;
+	}
 }
 
 
@@ -1564,7 +1567,9 @@ blockquote{
 	#referenties-details .bnr-grd-des p{
 		font-size: 20px;
 	}
-
+	#referenties-details .bnr-grd-img i{
+		max-width: 150px;
+	}
 }
 
 
@@ -1612,6 +1617,7 @@ blockquote{
 	#referenties-details .bnr-grd-des p{
 		font-size: 18px;
 	}
+
 	
 }
 
