@@ -31,13 +31,6 @@ defined( 'ABSPATH' ) || exit;
 			<td data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>"><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
 
-		<?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
-			<tr class="cart-discount coupon-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
-				<th><?php wc_cart_totals_coupon_label( $coupon ); ?></th>
-				<td data-title="<?php echo esc_attr( wc_cart_totals_coupon_label( $coupon, false ) ); ?>"><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
-			</tr>
-		<?php endforeach; ?>
-
 		<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
 
 			<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
@@ -91,7 +84,12 @@ defined( 'ABSPATH' ) || exit;
 			}
 		}
 		?>
-
+		<?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
+			<tr class="cart-discount coupon-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
+				<th><?php wc_cart_totals_coupon_label( $coupon ); ?></th>
+				<td data-title="<?php echo esc_attr( wc_cart_totals_coupon_label( $coupon, false ) ); ?>"><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
+			</tr>
+		<?php endforeach; ?>
 		<?php 
 		do_action( 'woocommerce_cart_totals_before_order_total' ); 		
 		?>

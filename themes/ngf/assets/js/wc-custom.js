@@ -197,15 +197,9 @@ jQuery( function($){
             if ( $( this ).is('.wc-variation-is-unavailable') ) {
                 $('#show_error').show();
                 $('#show_error').html(msgHtmlFormat(wc_add_to_cart_variation_params.i18n_unavailable_text));
-                $('html, body').animate({
-                  scrollTop: $('.header-inr').offset().top
-                }, 500);
             }else if ( $( this ).is('.wc-variation-selection-needed') ) {
                 $('#show_error').show();
                 $('#show_error').html(msgHtmlFormat(wc_add_to_cart_variation_params.i18n_make_a_selection_text));
-                $('html, body').animate({
-                  scrollTop: $('.header-inr').offset().top
-                }, 500);
               /*setTimeout(function () {
                 $('#show_error').hide();
               }, 3000);*/

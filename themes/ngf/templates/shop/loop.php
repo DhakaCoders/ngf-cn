@@ -21,7 +21,7 @@ if( !empty($seller_condition) ) printf('<div class="fl-pro-tag"><span>%s</span><
 <div class="fl-product-grd-inr">
   <div class="fl-pro-grd-img-cntlr">
     <a href="<?php echo get_permalink( $product->get_id()); ?>" class="overlay-link"></a>
-    <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo  $gridsrc; ?>');"></div>
+    <div class="fl-pro-grid-img inline-bg" style="background-image: url('<?php echo $gridsrc; ?>');"></div>
   </div>
   <div class="fl-pro-grd-des mHc1">
     <h4 class="fl-h4 fl-pro-grd-title mHc2"><a href="<?php echo get_permalink( $product->get_id()); ?>"><?php echo get_the_title(); ?></a></h4>
