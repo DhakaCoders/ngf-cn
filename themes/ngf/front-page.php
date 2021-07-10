@@ -323,7 +323,7 @@ if( empty($clientobj) ){
                 </div>
                 <div class="testimonial-grd-item-des">
                   <blockquote>
-                    <p><?php echo get_the_excerpt($client->ID); ?></p>
+                    <p><em><?php echo get_the_excerpt($client->ID); ?></em> </p>
                     <?php if( !empty($name) ) printf('<strong>%s</strong>', $name); ?>
                   </blockquote>
                 </div>
