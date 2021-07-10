@@ -259,6 +259,10 @@ if( $('.fl-select-cntlr').length ){
  $('.fl-select-cntlr select').select2();
 }
 
+if( $('#pa_fitness-type').length ){
+ $('#pa_fitness-type').select2();
+}
+
 /*start of Sabbir Hossain*/
 
 if( $('.main-img-crtl').length ){
