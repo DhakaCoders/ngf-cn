@@ -544,6 +544,15 @@ body.woocommerce-account .woocommerce button[type=submit],
 body.woocommerce-account .woocommerce button[type=button]{
     line-height: 1;
 }
+body.account-login-page .woocommerce-form p.form-row{
+    display: flex;
+    flex-direction: column;
+}
+body.account-login-page .form-row button.woocommerce-form-login__submit[type=submit]{
+    max-width: 220px!important;
+    width: 100%;
+    margin-top: 2px;
+}
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
@@ -605,9 +614,6 @@ body.account-login-page #login_register #customer_login .u-column2{
 }
 body.account-login-page #login_register #customer_login .u-column1 h4 + div{
     padding-bottom: 15px;
-}
-body.account-login-page #login_register #customer_login .u-column1 .woocommerce-form-login__rememberme{
-    display: none!important;
 }
 body.account-login-page #customer_login .u-column1.col-1 > h2, 
 body.account-login-page #customer_login .u-column2.col-2 > h2{
@@ -3369,6 +3375,9 @@ body.hide-account-title .woocommerce form .form-row .optional{
     body.woocommerce-account .woocommerce button[type=submit], 
     body.woocommerce-account .woocommerce button[type=button]{
         width:100%!important;
+    }
+    body.account-login-page .form-row button.woocommerce-form-login__submit[type="submit"]{
+        max-width: 100%!important;
     }
     body.woocommerce-account #customer_login .u-column1.col-1 > h2, 
     body.woocommerce-account #customer_login .u-column2.col-2 > h2{

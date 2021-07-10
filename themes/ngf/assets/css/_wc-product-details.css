@@ -534,22 +534,25 @@ span.onsale{
 	position: absolute;
     background: #FFA800!important;
     color: #fff!important;
-    padding: 7px 11px;
     text-transform: uppercase;
-    font-size: 12px!important;
+    font-size: 13px!important;
     line-height: 1!important;
-    font-weight: 700!important;
+    font-weight: 500!important;
+    letter-spacing: -0.02em;
     z-index: 11;
     left: 15px!important;
     top: 15px!important;
     border-radius: 0!important;
-    padding: 7px 11px!important;
+    padding: 12px 10px 11px!important;
     margin: 0!important;
     min-height: auto!important;
-
 }
-body.home span.onsale,
-body.post-type-archive span.onsale{
+.post-type-archive span.onsale{
+	left: initial!important;
+	right: 15px!important;
+	top: 10px!important;
+}
+body.home span.onsale{
     left: 15px!important;
     right: initial!important;
 }
