@@ -151,9 +151,6 @@
         padding-top:90px;
         padding-bottom:90px;
     }
-  /*  .latest-news-bg{
-        bottom:200px;
-    }*/
     
     .latest-news-bg {
         left: -35px;
@@ -266,9 +263,7 @@
     .latest-news-grid-slider-item .blog-grid-item{
         box-shadow:none;
     }
-    .latest-news-bg{
-        top:  20px;
-    }
+
 }
 @media(max-width:575px){
     .home-slogan-cntlr p{
