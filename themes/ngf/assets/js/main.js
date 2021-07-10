@@ -392,7 +392,7 @@ $(window).resize(function() {
   $(".page-bnr-skew").css('border-right-width', window2Width);
   $(".hm-bnr-skew").css('border-left-width', window2Width);
 
-});
+}
 
 
 
