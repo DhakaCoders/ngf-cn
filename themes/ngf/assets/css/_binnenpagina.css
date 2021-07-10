@@ -749,6 +749,7 @@ blockquote{
 	font-weight: 200;
 	margin-bottom: 15px;
 	line-height: 1.2;
+	font-style: italic;
 }
 
 #referenties-details .dfp-promo-module{
@@ -922,6 +923,10 @@ blockquote{
 	}
 	#faq-details .dfp-promo-module{
 		margin-top: -110px;
+	}
+
+	#referenties-details .dfp-promo-module {
+	    margin-top: -170px;
 	}
 
 }
