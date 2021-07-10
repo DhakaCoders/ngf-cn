@@ -652,26 +652,35 @@ boek-je-form-sec-wrp
 }
 
 /*select 2 fix */
-.contact-form-sec-wrp .fl-select-cntlr .select2-container--default .select2-selection--single .select2-selection__arrow b{
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #909BA5;
+}
+.contact-form-sec-wrp .fl-select-cntlr .select2-container--default .select2-selection--single .select2-selection__arrow b,
+#billing_country_field .select2-container--default .select2-selection--single .select2-selection__arrow b{
     margin-left: 0!important;
 }
-.contact-form-sec-wrp .fl-select-cntlr .select2.select2-container{
+.contact-form-sec-wrp .fl-select-cntlr .select2.select2-container,
+#billing_country_field .select2.select2-container{
     width: 100%!important;
 }
-.contact-form-sec-wrp .fl-select-cntlr .select2-selection{
+.contact-form-sec-wrp .fl-select-cntlr .select2-selection,
+#billing_country_field .select2-selection{
     position: relative!important;
     padding: 14px 15px;
 }
-.contact-form-sec-wrp .fl-select-cntlr .select2-selection span.select2-selection__rendered{
+.contact-form-sec-wrp .fl-select-cntlr .select2-selection span.select2-selection__rendered,
+#billing_country_field .select2-selection span.select2-selection__rendered{
     padding-left: 0;
 }
-.contact-form-sec-wrp .fl-select-cntlr .select2-container--default .select2-selection--single .select2-selection__arrow{
+.contact-form-sec-wrp .fl-select-cntlr .select2-container--default .select2-selection--single .select2-selection__arrow,
+#billing_country_field .select2-container--default .select2-selection--single .select2-selection__arrow{
     right: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.contact-form-sec-wrp .fl-select-cntlr .select2-container--default .select2-selection--single .select2-selection__arrow b{
+.contact-form-sec-wrp .fl-select-cntlr .select2-container--default .select2-selection--single .select2-selection__arrow b,
+#billing_country_field .select2-container--default .select2-selection--single .select2-selection__arrow b{
     position: static;    
 }
 .contact-form-sec-wrp .fl-select-cntlr div.wpforms-container-full .wpforms-form .wpforms-field{

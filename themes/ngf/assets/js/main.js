@@ -260,6 +260,10 @@ if( $('.fl-select-cntlr').length ){
 if( $('#pa_fitness-type').length ){
  $('#pa_fitness-type').select2();
 }
+if( $('#billing_country').length ){
+ $('#billing_country').select2();
+}
+
 
 
 if( $('.main-img-crtl').length ){
