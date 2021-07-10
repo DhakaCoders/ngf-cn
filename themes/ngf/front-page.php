@@ -28,7 +28,7 @@ get_header();
 
   <span class="hm-bnr-skew"></span>
   <span class="hdr-circle-icon hide-sm"></span>
-  <span class="hdr-lft-line-icon">
+  <span class="hdr-lft-line-icon hide-sm">
     <i>
       <svg class="hdr-line-icon" width="58" height="95" viewBox="0 0 58 95" fill="#FFA800">
       <use xlink:href="#hdr-line-icon"></use> </svg>

@@ -970,6 +970,7 @@ body.allWork {
 		height: 20px;
 		width: 20px;
 	}
+
 }
 @media(max-width: 767px){
 	.header-cntlr {
@@ -978,6 +979,9 @@ body.allWork {
 	}
 	.hdr-white-skew {
 		border-bottom: 120px solid #fff;
+	}
+	.hdr-lft-line-icon{
+		display: none;
 	}
 
 }
