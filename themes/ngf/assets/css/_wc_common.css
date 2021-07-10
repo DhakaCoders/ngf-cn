@@ -54,6 +54,14 @@ body.single-product .pro-cart-btn button:hover svg{
 	fill: #F3BF00!important;
 }
 
+.woocommerce .woocommerce-notices-wrapper .woocommerce-message .button{
+	    background: #FFA800!important;
+	    border-color: #FFA800!important;
+}
+.woocommerce .woocommerce-notices-wrapper .woocommerce-message .button: hover{
+	    background: transparent!important;
+	    border-color: #FFA800!important;
+}
 /*  -------------------------- All Wc label Design ------------------------------- */
 .woocommerce form .form-row label,
 body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label{
@@ -562,6 +570,7 @@ input.select2-search__field{
 }
 .woocommerce-notices-wrapper{
 	margin-bottom: 25px;
+	margin-top: 15px;
 }
 .u-columns.woocommerce-Addresses.addresses{
 	display: block;
