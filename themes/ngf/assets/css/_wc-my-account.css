@@ -714,6 +714,9 @@ body.hide-account-title .login-info #billing_email_field{
     border-top: 1px solid #ECE9E9;
     padding-top:35px!important;
 }
+body.hide-account-title .login-info #billing_email_field span.error-valid{
+    top: 35px;
+}
 body.hide-account-title .personal-info h3{
     margin-bottom:31px;
     margin-top: 60px;
@@ -2877,6 +2880,11 @@ body.hide-account-title .woocommerce form .form-row .optional{
     body.woocommerce-account.login-register .woocommerce form .form-row{
         margin-bottom: 15px;
     }
+
+    body.woocommerce-account .woocommerce form .form-row-first .error-valid{
+        right: 0!important;
+    }
+
     /* ------------------- woocommerce-cart -------------------*/
     .woocommerce-cart .woocommerce .cart-is-emtpy strong{
         font-size:32px;
