@@ -326,18 +326,20 @@ if( $('.relatedProGrdsSlider').length ){
 
 /*start of Monirul Islam*/
 
-if( $('.hamburger-cntlr').length ){
-  $('.hamburger-cntlr').click(function(){
-    $('body').toggleClass('allWork');
-  });
-}
-if( $('li.menu-item-has-children > a').length ){
-  $('li.menu-item-has-children > a').click(function(e){
-   event.preventDefault();
-   $(this).next().slideToggle(300);
-   $(this).parent().toggleClass('sub-menu-arrow');
- });
-}
+$(window).resize(function(){
+  if( $('.hamburger-cntlr').length ){
+    $('.hamburger-cntlr').click(function(){
+      $('body').toggleClass('allWork');
+    });
+  }
+  if( $('li.menu-item-has-children > a').length ){
+    $('li.menu-item-has-children > a').click(function(e){
+     event.preventDefault();
+     $(this).next().slideToggle(300);
+     $(this).parent().toggleClass('sub-menu-arrow');
+   });
+  }
+});
 
 $(window).resize(function(){
   if(windowWidth <=767){
@@ -354,7 +356,7 @@ $(window).resize(function(){
       });
     }
   }
-}
+});
 
 $(window).resize(function(){
   if (windowWidth <= 767) {
@@ -365,8 +367,7 @@ $(window).resize(function(){
       $(this).parent().siblings().find('.ftr-top-col-menu').slideUp(300);
     });
   }
-}
-
+});
 
 
 $(".hdr-white-skew").css('border-left-width', windowWidth);
@@ -433,24 +434,22 @@ if( $('.blogDetailsSlider').length ){
     });
 }
 
-
+$(window).resize(function() { 
  if (windowWidth <= 639) {
-  
-    if( $('.dfpBlogSlider').length ){
-        $('.dfpBlogSlider').slick({
-          dots: true,
-          infinite: false,
-          autoplay: false,
-          arrows: false,
-          autoplaySpeed: 4000,
-          speed: 700,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        });
-    }
-
- }
-
+  if( $('.dfpBlogSlider').length ){
+    $('.dfpBlogSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: false,
+      arrows: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+  }
+}
+});
 
 
  if( $('.referntiesDetailsSlider').length ){
@@ -518,62 +517,65 @@ if( $('.qty1').length ){
 
 /*start of Jahir*/
 
-if(windowWidth <=767){
-  if( $('.ovomblfvSlider').length ){
-    $('.ovomblfvSlider').slick({
-      dots: true,
-      infinite: false,
-      autoplay: true,
-      arrows:false,
-      autoplaySpeed: 4000,
-      speed: 700,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      slidesPerRow: 3,
-      responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          infinite: false,
-          rows:1,
-          slidesPerRow: 2,
-          slidesToShow: 1,
-          slidesToScroll: 1,
+$(window).resize(function() { 
+  if(windowWidth <=767){
+    if( $('.ovomblfvSlider').length ){
+      $('.ovomblfvSlider').slick({
+        dots: true,
+        infinite: false,
+        autoplay: true,
+        arrows:false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        slidesPerRow: 3,
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            infinite: false,
+            rows:1,
+            slidesPerRow: 2,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
         }
-      }
-    ]
-    });
+        ]
+      });
+    }
   }
-}
+});
 
-
-if(windowWidth <=767){
-  if( $('.werkmsgSlider').length ){
-    $('.werkmsgSlider').slick({
-      dots: true,
-      infinite: false,
-      autoplay: true,
-      arrows:false,
-      autoplaySpeed: 4000,
-      speed: 700,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      slidesPerRow: 3,
-      responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          infinite: false,
-          rows:1,
-          slidesPerRow: 2,
-          slidesToShow: 1,
-          slidesToScroll: 1,
+$(window).resize(function() { 
+  if(windowWidth <=767){
+    if( $('.werkmsgSlider').length ){
+      $('.werkmsgSlider').slick({
+        dots: true,
+        infinite: false,
+        autoplay: true,
+        arrows:false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        slidesPerRow: 3,
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            infinite: false,
+            rows:1,
+            slidesPerRow: 2,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
         }
-      }
-    ]
-    });
+        ]
+      });
+    }
   }
-}
+});
 
 if( $('.faqSlider1').length ){
     $('.faqSlider1').slick({
@@ -603,51 +605,54 @@ if( $('.faqSlider1').length ){
     });
     $('.faq-slide-item').parent().addClass('ovo-faq-slider-addcls');
 }
+$(window).resize(function() { 
+  if( $('.faqSlider2').length ){
+    if(windowWidth <=639){
+      $('.faqSlider2').slick({
+        dots: true,
+        arrows:false,
+        infinite: false,
+        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 4000,
+        speed: 700,          
+      });
+    }else{
+      $('.faqSlider2').slick({
+        dots: true,
+        arrows:false,
+        infinite: false,
+        autoplay: false,
+        rows: 2,
+        slidesPerRow: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 4000,
+        speed: 700,        
+      });
+      $('.faq-slide-item').parent().addClass('ovo-faq-slider-addcls');
 
-if( $('.faqSlider2').length ){
-  if(windowWidth <=639){
-    $('.faqSlider2').slick({
-      dots: true,
-      arrows:false,
-      infinite: false,
-      autoplay: false,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplaySpeed: 4000,
-      speed: 700,          
-    });
-  }else{
-    $('.faqSlider2').slick({
-      dots: true,
-      arrows:false,
-      infinite: false,
-      autoplay: false,
-      rows: 2,
-      slidesPerRow: 2,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplaySpeed: 4000,
-      speed: 700,        
-    });
-    $('.faq-slide-item').parent().addClass('ovo-faq-slider-addcls');
-
+    }
   }
-}
+});
 
-if(windowWidth <=767){
-  if( $('.ovomblfvSlider').length ){
-    $('.ovomblfvSlider').slick({
-      dots: false,
-      infinite: false,
-      autoplay: true,
-      arrows:false,
-      autoplaySpeed: 4000,
-      speed: 700,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    });
+$(window).resize(function() { 
+  if(windowWidth <=767){
+    if( $('.ovomblfvSlider').length ){
+      $('.ovomblfvSlider').slick({
+        dots: false,
+        infinite: false,
+        autoplay: true,
+        arrows:false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
   }
-}
+});
 
 
 
