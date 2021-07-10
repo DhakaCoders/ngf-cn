@@ -694,7 +694,7 @@ span.fl-video-play-icon-cntlr{
 @media(max-width: 767px){
     .ovo-two-grds-des-module-sec {
         padding-top: 45px;
-        padding-bottom: 35px;
+        padding-bottom: 45px;
     }
     .ovo-grds-des-lft, .ovo-grds-des-rgt{
         width: 100%;
@@ -801,7 +801,7 @@ span.fl-video-play-icon-cntlr{
     }
     .ofmi-heading {
         margin-bottom: 25px;
-    }sss
+    }
     .faq-slider-sec-hdr .fssh-title{
         margin-bottom: 15px!important;
     }
