@@ -833,6 +833,10 @@ blockquote{
 #faq-details.innerpage-con-wrap{
 	margin-top: 0;
 }
+#faq-details .dfp-promo-module-dtitle{
+	margin-bottom: 12px;
+	display: block;
+}
 
 #faq-details .dfp-cat-date{
 	margin-bottom: 50px;
