@@ -63,7 +63,7 @@ $attachment_ids = $product->get_gallery_image_ids();
 	            echo '</div>';
 			} else {
 				echo '<div class="woocommerce-product-gallery__image--placeholder">';
-				echo sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+				echo sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( shop_placeholder() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
 				echo '</div>';
 			}
 			if ( $attachment_ids && $product->get_image_id() ) {

@@ -327,7 +327,7 @@
             </nav>
             <div class="hdr-icons-cntlr">
               <div class="hdr-user hide-md">
-                <a href="#">
+                <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
                   <i><svg class="user-icon" width="24" height="25" viewBox="0 0 24 25" fill="#FFA800">
                     <use xlink:href="#user-icon"></use> </svg>
                   </i>
@@ -519,7 +519,7 @@
     </div>
     <div class="xs-hdr-btn-cntlr">
       <div class="xs-hdr-btn">
-        <a class="" href="#"><?php _e('MY ACCOUNT', 'ngf');?></a>
+        <a class="" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><?php _e('MY ACCOUNT', 'ngf');?></a>
       </div>
       <div class="xs-hdr-btn xs-hdr-btn-2">
         <a class="" href="<?php echo esc_url( home_url('contact') ); ?>"><?php _e('CONTACT', 'ngf');?></a>

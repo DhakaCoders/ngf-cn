@@ -249,3 +249,8 @@ function referenties_placeholder($format = 'src'){
   return '';
 
 }
+
+function bv_get_current_year(){
+    return date('Y');
+}
+add_shortcode( 'cyear', 'bv_get_current_year' );

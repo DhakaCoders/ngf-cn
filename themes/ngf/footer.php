@@ -169,7 +169,7 @@
           </div>
 
           <div class="ftr-developed-by">
-            <p>Website laten maken door <a target="_blank" href="#">conversal</a></p>
+            <p>Website laten maken door <a target="_blank" href="https://www.conversal.be/">conversal</a></p>
           </div>
         </div>
       </div>

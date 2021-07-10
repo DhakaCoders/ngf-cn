@@ -63,12 +63,15 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
           <div class="chk-acc">
           	<?php if($blok1 = $thankyou['blok_1']): ?>
             <div class="chk-acc-tp-cntrl">
+              
               <div class="chk-acc-tp">
+                <?php if( !empty($blok1['knop']) ) echo '<a href="'.$blok1['knop'].'" target="_blank">'; ?>
                 <img src="<?php echo THEME_URI; ?>/assets/images/srv&cont.svg" alt="">
-			<?php 
+			         <?php 
                   	if( !empty($blok1['titel']) ) printf('<h4 class="fl-h4 chk-tp-title">%s</h4>', $blok1['titel']); 
                   	if( !empty($blok1['beschrijving']) ) echo wpautop($blok1['beschrijving']); 
                 ?>
+                <?php if( !empty($blok1['knop']) ) echo '</a>'; ?>
               </div>
             </div>  
             <?php endif; ?>
@@ -83,11 +86,13 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
                 <use xlink:href="#contact-from-info-line-bg"></use> </svg>
               </i>
               <div class="chk-acc-btm">
+                <?php if( !empty($blok2['knop']) ) echo '<a href="'.$blok2['knop'].'" target="_blank">'; ?>
                 <img src="<?php echo THEME_URI; ?>/assets/images/srv&cont-2.svg" alt="">
                 <?php 
                   	if( !empty($blok2['titel']) ) printf('<h4 class="fl-h4 chk-btm-title">%s</h4>', $blok2['titel']); 
                   	if( !empty($blok2['beschrijving']) ) echo wpautop($blok2['beschrijving']); 
                 ?>
+                <?php if( !empty($blok2['knop']) ) echo '</a>'; ?>
               </div>
             </div> 
             <?php endif; ?> 

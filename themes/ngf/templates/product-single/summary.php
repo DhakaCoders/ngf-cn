@@ -15,13 +15,16 @@
             <?php
               $checkout_url = WC()->cart->get_checkout_url(); 
               if( $product->is_type( 'simple' ) ){ 
+                echo wc_get_stock_html( $product ); // WPCS: XSS ok.
+                if( $product->is_in_stock() ):
             ?>
-            <form class="cart" action="<?php echo $checkout_url; ?>" method="post" enctype="multipart/form-data">
-              <div class="quantity" style="display: none;">
-                  <input type="number"name="quantity" value="1">
-              </div>
-              <button type="submit" name="add-to-cart" value="<?php echo $product->get_id(); ?>" class="single_add_to_cart_button button alt"><?php esc_html_e( 'BUY NOW', 'woocommerce' ); ?></button>
-            </form>
+                <form class="cart" action="<?php echo $checkout_url; ?>" method="post" enctype="multipart/form-data">
+                  <div class="quantity" style="display: none;">
+                      <input type="number"name="quantity" value="1">
+                  </div>
+                  <button type="submit" name="add-to-cart" value="<?php echo $product->get_id(); ?>" class="single_add_to_cart_button button alt"><?php esc_html_e( 'BUY NOW', 'woocommerce' ); ?></button>
+                </form>
+                <?php endif; ?>
             <?php }else{ woocommerce_template_single_add_to_cart(); } ?>
 
         </div>

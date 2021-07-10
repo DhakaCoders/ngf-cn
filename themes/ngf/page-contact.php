@@ -27,7 +27,7 @@ $form = get_field('formsec', $thisID);
           <span>
             <i><svg class="error-msg-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
             <use xlink:href="#error-msg-icon-svg"></use> </svg></i>
-            Oh snap! Het formulier lijkt niet correct!</span>
+            <?php _e('Oh snap! The form is incorrect!', 'ngf'); ?></span>
         </div>
         <div class="contact-form-wrp clearfix">
           <div class="wpforms-container">

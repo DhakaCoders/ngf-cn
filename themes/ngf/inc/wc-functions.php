@@ -102,11 +102,15 @@ function new_loop_shop_per_page( $cols ) {
 
 add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
 function jk_related_products_args( $args ) {
-$args['posts_per_page'] = 9; // 4 related products
+$args['posts_per_page'] = 4; // 4 related products
 return $args;
 }
 
-
+add_filter( 'woocommerce_register_post_type_product', 'wc_modify_product_post_type' );
+function wc_modify_product_post_type( $args ) {
+     $args['supports'][] = 'revisions';
+     return $args;
+}
 
 // change a number of the breadcrumb defaults.
 add_filter( 'woocommerce_breadcrumb_defaults', 'cbv_woocommerce_breadcrumbs' );
@@ -143,34 +147,11 @@ if (!function_exists('add_custom_box_product_summary')) {
     }
 }
 
-//add_action('woocommerce_before_add_to_cart_quantity', 'cbv_start_div_single_price', 99);
-function cbv_start_div_single_price(){
-    echo '<div class="cartbtn-wrap clearfix"><strong>Aantal</strong><div class="cart-btn-qty">';
-    echo '<div class="quantity qty"><span class="minus">-</span>';
-}
-//add_action('woocommerce_after_add_to_cart_quantity', 'cbv_get_single_price');
-function cbv_get_single_price(){
-    global $product;
-    echo '<span class="plus">+</span></div>';
-    echo '</div></div>';
-    echo '<div class="qty-price-wrap">';
-    echo '<div class="price-pre-title">Totaal prijs (incl. btw) </div>';
-    echo '<span class="single-price-total">';
-    echo $product->get_price_html();
-    echo '</span>';
-    echo '</div>';
-    echo '<div class="cart-top-text"><p>Wij contacteren jou binnen 24 uur</p></div>';
-}
-
-
 // Change 'add to cart' text on single product page (only for product ID 386)
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'bryce_id_add_to_cart_text' );
 function bryce_id_add_to_cart_text( $default ) {
     global $product;
     switch ( $product->get_type() ) {
-      case "pw-gift-card" :
-          $label  = __('Reserveer uw vlucht', 'woocommerce');
-      break;
       default :
           $label  = __('BUY NOW', 'woocommerce');
       break;
@@ -208,28 +189,6 @@ function misha_adv_product_options(){
         )
     ));
     echo '</div>';
-    $style = 'display:none';
-    if( isset($_GET['post']) && isset($_GET['action']) && $_GET['action'] == 'edit' ){
-        $v_product = get_product( $_GET['post'] );
-        if($v_product->is_type( 'pw-gift-card' )){
-          $style = 'display:block';  
-        }
-    }
-
-    echo '<div class="options_group" id="giftcard-manage" style="'.$style.'">';
- 
-    // Radio Buttons field
-    woocommerce_wp_radio( array(
-        'id'            => '_package_type',
-        'value'   => get_post_meta( get_the_ID(), '_package_type', true ),
-        'label'         => __('Gift Package Type'),
-        'options'       => array(
-            'single_pack'       => __('Single Pack'),
-            'duo_pack'       => __('Duo Pack'),
-            'family_fack'       => __('Family Pack'),
-        )
-    ) );
-    echo '</div>';
  
 }
 
@@ -239,7 +198,6 @@ function misha_save_fields( $id, $post ){
     //if( !empty( $_POST['super_product'] ) ) {
         update_post_meta( $id, 'product_min_qty', $_POST['product_min_qty'] );
         update_post_meta( $id, 'product_max_qty', $_POST['product_max_qty'] );
-        update_post_meta( $id, '_package_type', $_POST['_package_type'] );
     //} else {
     //  delete_post_meta( $id, 'super_product' );
     //}
@@ -438,8 +396,8 @@ add_action( 'woocommerce_cart_is_empty', 'woo_if_cart_empty' );
 function woo_if_cart_empty(){
     echo '<div class="cart-is-emtpy">';
         echo '<div class="cie-icon"><img src="'.THEME_URI.'/assets/images/bag-icon.svg"/></div>';
-        echo '<strong>'.__('your <br> Shopping cart is empty', 'ballonvaren').'</strong>';
-        echo '<p>'.__('Je hebt geen artikelen in je winkelwagen.', 'ballonvaren').'</p>';
+        echo '<strong>'.__('your <br> Shopping cart is empty', 'ngf').'</strong>';
+        echo '<p>'.__('Je hebt geen artikelen in je winkelwagen.', 'ngf').'</p>';
     echo '</div>';
 }
 
@@ -569,7 +527,7 @@ function add_custom_surcharge( $cart ) {
     if ( in_array( WC()->customer->get_shipping_state(), $state ) ) {
        
     }
-     $cart->add_fee( 'Extra diensten', $surcharge, true );
+     $cart->add_fee( 'Extra services', $surcharge, true );
 }
 
 
