@@ -1517,6 +1517,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
     	top: 10px!important;
     	left: 101%!important
 	}
+	.single-product .select2-container{
+		width: 100%!important;
+	}
 }
 
 @media (max-width: 375px) {
