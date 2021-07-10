@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-2021-07-10T09:28:40+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\woocommerce\i18n\countries.php on line 17
-=======
-2021-07-10T05:22:57+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\wp-includes\Requests\Transport\cURL.php on line 441
->>>>>>> cafae68d81fbba0570e0d63d31b578b961ac72b4
-
