@@ -5,7 +5,6 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
 ?>
 <section class="innerpage-con-wrap" id="coaching-details">
   <article class="default-page-con">
-    <div class="block-1285">
       <div class="dfp-promo-module clearfix">
         <?php 
           $autoTitle = true;
@@ -41,7 +40,6 @@ $categories = get_the_terms( get_the_ID(), 'faq_cat' );
         </div>
         <?php } ?>
       </div>
-    </div>
     <?php if( have_rows('inhoud_faq') ){ ?>
     <?php while ( have_rows('inhoud_faq') ) : the_row();  ?>
       <?php 
