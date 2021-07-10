@@ -164,14 +164,14 @@ function custom_body_classes($classes){
     }elseif( is_page_template('page-overons.php') ){
         $classes[]='has-banner sky-btm-bg-cntlr';
     }elseif( is_single() && 'faqs' == get_post_type() ){
-        $classes[]='sky-btm-bg-cntlr sky-top-bg-cntlr';
+        $classes[]='sky-btm-bg-cntlr';
     }elseif( is_single() ){
-        $classes[]='sky-btm-bg-cntlr sky-top-bg-cntlr';
+        $classes[]='sky-btm-bg-cntlr';
     }
     elseif( is_page_template('page-referenties.php') || is_tax('referenties_cat') ){
         $classes[]='sky-top-bg-cntlr';
     }elseif( is_single() && 'referenties' == get_post_type() ){
-        $classes[]='sky-btm-bg-cntlr sky-top-bg-cntlr';
+        $classes[]='sky-btm-bg-cntlr';
     }elseif( is_single() && 'coaching' == get_post_type() ){
         $classes[]='sky-btm-bg-cntlr sky-top-bg-cntlr';
     }elseif( is_page_template('page-werkwijze.php')  ){
