@@ -942,6 +942,9 @@ blockquote{
 	#referenties-details .dfp-promo-module {
 	    margin-top: -170px;
 	}
+	.testimonial-grd-item-des{
+		max-width: 710px;
+	}
 
 }
 @media(max-width: 1499px){
