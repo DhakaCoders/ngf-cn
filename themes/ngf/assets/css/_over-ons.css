@@ -222,6 +222,7 @@ span.fl-video-play-icon-cntlr{
     padding-top: 120px;
     position: relative;
     z-index: 2;
+    background: #fafafb;
 }
 .ovo-abs-line-one {
     position: absolute;
