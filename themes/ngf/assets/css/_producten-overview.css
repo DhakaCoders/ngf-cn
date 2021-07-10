@@ -264,6 +264,9 @@ del span.amount bdi:after{
     .fl-black-btn{
         min-width: 222px;
     }
+    .fl-products-cntlr > ul.products > li{
+        width: 50%!important;
+    }
 }
 
 @media (max-width: 767px) {
