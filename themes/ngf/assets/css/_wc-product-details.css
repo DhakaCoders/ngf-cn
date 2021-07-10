@@ -147,6 +147,9 @@ span.single-price-total{
 .single-product .quantity{
 	display: none!important;
 }
+.single-product .select2-container .select2-selection--single .select2-selection__rendered{
+	padding-left: 15px;
+}
 /* == varition end == */
 
 
@@ -257,6 +260,7 @@ span.single-price-total{
 }
 .single-product .dfp-testimonial-module{
 	margin-bottom: 100px;
+	margin-top: 0;
 }
 .single-product .testimonial-ctlr .slick-slider ul.slick-dots{
 	bottom: -9px;
@@ -394,6 +398,7 @@ body.woocommerce-cart .product-quantity .quantity{
 	position: relative;
 	padding-top: 100px;
 	padding-bottom: 92px;
+	background-color: #fafafb;
 }
 .single-product .related-product-sec .latest-news-bg{
 	bottom: -146px;
@@ -1495,7 +1500,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		padding: 0 5px;
 	}
 	body.single-product div.product form.cart .button, .review-btn a.revw-btn {
-    	min-width: 290px!important;
+    	min-width: 274px!important;
     	width: 100%;
 	}
 	.review-btn a.revw-btn{

@@ -1,2 +1,6 @@
 2021-07-10T15:07:33+00:00 CRITICAL syntax error, unexpected '/', expecting end of file in E:\host\htdocs\2021\06\ngf\ngf-cn\themes\ngf\woocommerce\cart\cart-totals.php on line 108
 
+2021-07-10T18:25:23+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\june\ngf\ngf-cn\plugins\woocommerce\vendor\automattic\jetpack-constants\src\class-constants.php on line 25
+
+2021-07-10T18:25:23+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\june\ngf\ngf-cn\plugins\woocommerce\vendor\automattic\jetpack-constants\src\class-constants.php on line 25
+
