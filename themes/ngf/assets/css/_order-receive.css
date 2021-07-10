@@ -436,6 +436,7 @@ body.woocommerce-order-received .sec-header .sec-title{
 		width: 100%;
 	}
 	.checkout-hdr .chkout-title:after{
+		max-width: 100%;
 		width: 100%;
 	}
 	.srv-fea-img{
