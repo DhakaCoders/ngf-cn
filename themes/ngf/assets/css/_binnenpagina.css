@@ -598,6 +598,10 @@ blockquote{
 
 /*blog details*/
 
+/*body.sky-btm-bg-cntlr #blog-details{
+	background: #fff;
+}*/
+
 .blog-details-related-sec{
 	background: #fafafb;
 	padding-top: 115px;
