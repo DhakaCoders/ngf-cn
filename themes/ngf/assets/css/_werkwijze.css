@@ -169,7 +169,7 @@ ol.werk-ol {
 	}
 
 }
-@media (max-width: 1499px){
+@media (max-width: 1599px){
 	.werk-steps-grid-sec {
 	    padding-top: 80px;
 	}
@@ -322,12 +322,12 @@ ol.werk-ol {
 	    padding-top: 35px;
 	}
 	.werk-grid-des {
-	    padding: 0 10px;
+	    padding: 0 30px;
 	}
 	.ovo-text-module p:first-child {
 	    margin-bottom: 15px;
 	}
-	.werk-text-module-ul{
+	.ovo-grds-text-module ul{
 		margin-bottom: 5px;
 	}
 	.werk-one-grds-sec{
@@ -338,7 +338,9 @@ ol.werk-ol {
 
 }
 @media(max-width: 575px){
-
+	.werk-grid-des {
+	    padding: 0 10px;
+	}
 
 }
 @media(max-width: 479px){

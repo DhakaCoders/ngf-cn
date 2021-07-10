@@ -98,7 +98,7 @@ $smedias = get_field('social_media', 'options');
             </div>
           </div>
           <div class="ovo-grds-des-rgt">
-            <div class="dfp-text-module ovo-text-module clearfix">
+            <div class="dfp-text-module ovo-grds-text-module clearfix">
               <?php if( !empty($block_1['beschrijving']) ) echo wpautop( $block_1['beschrijving'] ); ?>
             </div>
           </div>
@@ -125,7 +125,7 @@ $smedias = get_field('social_media', 'options');
             </div>
           </div>
           <div class="ovo-grds-des-rgt">
-            <div class="dfp-text-module  ovo-text-module clearfix">
+            <div class="dfp-text-module  ovo-grds-text-module clearfix">
               <?php if( !empty($block_2['beschrijving']) ) echo wpautop( $block_2['beschrijving'] ); ?>
           </div>
           </div>

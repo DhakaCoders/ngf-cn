@@ -1,5 +1,7 @@
 (function($) {
-
+setTimeout(function(){ 
+    $('body.hide-account-title.check-shipping-box form input#is_shipping_address').trigger('click');
+}, 1000);
 $("#register_next").prop("disabled",true);
 $("#reg_email").bind('blur keyup change click', function(){
   if(isValidEmailAddress($(this).val())){

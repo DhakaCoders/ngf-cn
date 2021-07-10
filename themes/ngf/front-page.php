@@ -94,12 +94,12 @@ get_header();
               <?php 
 				        $hbknop_1 = $hbanner['knop_1'];
                 if( is_array( $hbknop_1 ) &&  !empty( $hbknop_1['url'] ) ){
-                    printf('<div class="hm-bnr-desc-btns"><a  class="hm-bnr-desc-btn" href="%s" target="%s"><span class="btn-animation"><span>%s</span><i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12" fill="#FFA800">
+                    printf('<div class="hm-bnr-desc-btns"><a  class="hm-bnr-desc-btn" href="%s" target="%s"><span class="btn-animation btn-animation1"><span>%s</span><i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12" fill="#FFA800">
                       <use xlink:href="#dip-yellow-right-arrow"></use> </svg></i></span></a></div>', $hbknop_1['url'], $hbknop_1['target'], $hbknop_1['title']); 
                 }
                 $hbknop_2 = $hbanner['knop_2'];
                 if( is_array( $hbknop_2 ) &&  !empty( $hbknop_2['url'] ) ){
-                    printf('<div class="hm-bnr-desc-btns"><a  class="hm-bnr-desc-btn" href="%s" target="%s"><span class="btn-animation"><span>%s</span><i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12" fill="#FFA800">
+                    printf('<div class="hm-bnr-desc-btns"><a  class="hm-bnr-desc-btn" href="%s" target="%s"><span class="btn-animation btn-animation2"><span>%s</span><i><svg class="dip-yellow-right-arrow" width="12" height="12" viewBox="0 0 12 12" fill="#FFA800">
                       <use xlink:href="#dip-yellow-right-arrow"></use> </svg></i></span></a></div>', $hbknop_2['url'], $hbknop_2['target'], $hbknop_2['title']); 
                 }
               ?>
@@ -323,7 +323,7 @@ if( empty($clientobj) ){
                 </div>
                 <div class="testimonial-grd-item-des">
                   <blockquote>
-                    <p><?php echo get_the_excerpt($client->ID); ?></p>
+                    <p><em><?php echo get_the_excerpt($client->ID); ?></em> </p>
                     <?php if( !empty($name) ) printf('<strong>%s</strong>', $name); ?>
                   </blockquote>
                 </div>
