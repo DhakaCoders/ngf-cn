@@ -118,9 +118,6 @@ body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label{
 	min-height: 52px;
 	min-width: 180px;
 }
-.woocommerce-error{
-	border-top-color: #EE3E15;
-}
 #shipping_method li:after,
 .woo-variation-swatches-stylesheet-enabled .variable-items-wrapper li:after{
 	content: none;
@@ -475,31 +472,11 @@ body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .selecti
 	padding-left: 58px!important;
 	position: relative;
 }
-
-.woocommerce .woocommerce-error::before, 
-.woocommerce .woocommerce-info::before, 
-.woocommerce .woocommerce-message::before {
-    top: 8px;
-    left: 16px;
-    content: ""!important;
-    background-image: url('../images/alert-icon.svg');
-    width: 24px;
-    height: 24px;
-}
-.woocommerce .woocommerce-info,
-.woocommerce .woocommerce-error,
-.woocommerce .woocommerce-notices-wrapper ul,
-.woocommerce .woocommerce-message {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 45px;
-    padding-right: 20px;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 300;
-}
 .woocommerce .showlogin{
 	color: #fff;
+}
+.woocommerce .showlogin:hover{
+	color: #ffa800;
 }
 .woocommerce .woocommerce-info span,
 .woocommerce .woocommerce-error span,

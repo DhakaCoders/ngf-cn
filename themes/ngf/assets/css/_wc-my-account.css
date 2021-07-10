@@ -191,8 +191,21 @@ body.woocommerce-edit-account .woocommerce input[type="email"],
 body.woocommerce-edit-account .woocommerce input[type="tel"],
 body.woocommerce-edit-account .woocommerce input[type="password"],
 body.woocommerce-edit-account .woocommerce textarea{
-    border: 1px solid rgba(231, 234, 236, 0.1);
+    border: 1px solid #ECF1F4;
     font-size:14px;
+}
+body.woocommerce-edit-account.login-register .woocommerce input[type="text"],
+body.woocommerce-edit-account.login-register .woocommerce input[type="password"]{
+    border: 1px solid #ECF1F4;
+    border-radius: 3px;
+}
+body.woocommerce-edit-account.login-register.hide-account-title input[type="text"],
+body.woocommerce-edit-account.login-register.hide-account-title input[type="email"],
+body.woocommerce-edit-account.login-register.hide-account-title input[type="tel"],
+body.woocommerce-edit-account.login-register.hide-account-title input[type="password"],
+body.woocommerce-edit-account.login-register.hide-account-title textarea{
+    border: 1px solid #F2EDE9;
+    border-radius: 6px!important;
 }
 body.woocommerce-edit-account .woocommerce input[type="text"]::-webkit-input-placeholder,
 body.woocommerce-edit-account .woocommerce input[type="email"]::-webkit-input-placeholder,
@@ -238,11 +251,12 @@ body.woocommerce-edit-account .woocommerce textarea{
 body.woocommerce-account .woocommerce form .form-row label,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label,
 body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row label,
-body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper label{
-    color:#000000;
+body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper label,
+body.woocommerce-edit-account.login-register .woocommerce form .form-row label{
+    color:#000000!important;
 }
 body.woocommerce-edit-account .woocommerce form .form-row label{
-    color:#fff;
+    color:#fff!important;
 }
 /*body.hide-account-title .woocommerce form .form-row label{
     margin-bottom: 2px;
@@ -1129,7 +1143,19 @@ body.woocommerce-edit-account .woocommerce input[type="email"],
 body.woocommerce-edit-account .woocommerce input[type="tel"], 
 body.woocommerce-edit-account .woocommerce input[type="password"], 
 body.woocommerce-edit-account .woocommerce textarea{
-    background:transparent;
+    background:transparent!important;
+}
+body.woocommerce-edit-account .woocommerce input[type="text"]::placeholder, 
+body.woocommerce-edit-account .woocommerce input[type="email"]::placeholder, 
+body.woocommerce-edit-account .woocommerce input[type="tel"]::placeholder, 
+body.woocommerce-edit-account .woocommerce input[type="password"]::placeholder{
+    background-color: transparent!important; 
+}
+body.woocommerce-edit-account.login-register .woocommerce input[type="text"]:-ms-input-placeholder, 
+body.woocommerce-edit-account.login-register .woocommerce input[type="email"]:-ms-input-placeholder, 
+body.woocommerce-edit-account.login-register .woocommerce input[type="tel"]:-ms-input-placeholder, 
+body.woocommerce-edit-account.login-register .woocommerce input[type="password"]:-ms-input-placeholder{
+  background-color: transparent!important;  
 }
 body.woocommerce-edit-account .woocommerce-EditAccountForm > p{
     text-align: right;
@@ -1695,7 +1721,9 @@ body.woocommerce-checkout .custom-checkout-order-review table tfoot,
 body.woocommerce-checkout .custom-checkout-order-review table tbody tr{
     width: 100%;
 }
-
+body.woocommerce-checkout .custom-checkout-order-review table tbody{
+    display: none;
+}
 body.woocommerce-checkout form .form-row .woocommerce-input-wrapper .description#vat_number-description:visible{
     display: none!important;
     font-size: 10px;
@@ -1977,11 +2005,11 @@ body.woocommerce-checkout section.checkout-top-sec{
     align-items: center;
 }
 
-body .wc-template-crtl .success-msg {
+/* body.woocommerce-edit-account .success-msg {
     background: #D61D1D;
     padding: 12px 17px;
     margin-bottom: 28px;
-}
+} */
 body.hide-account-title .woocommerce form .form-row .optional{
     visibility: hidden;
 }

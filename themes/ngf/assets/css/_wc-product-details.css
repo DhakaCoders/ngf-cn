@@ -532,7 +532,7 @@ body.single-product div.product form.cart .button:hover{
 }
 span.onsale{
 	position: absolute;
-    background: #fdc935!important;
+    background: #FFA800!important;
     color: #fff!important;
     padding: 7px 11px;
     text-transform: uppercase;
@@ -560,8 +560,8 @@ body.single-product .fl-product span.onsale,
 body.single-product .fl-product span.seller-flash{
 	width: 100px!important;
 	right: auto!important;
-	top: 20px!important;
-	left: 20px!important;
+	top: 10px!important;
+	left: 10px!important;
 }
 
 body.single-product .added_to_cart.wc-forward,

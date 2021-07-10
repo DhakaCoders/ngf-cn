@@ -205,6 +205,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 /*start of Niaz Morshad*/
 
+
 if( $('.plansGrdsSlider').length ){
     $('.plansGrdsSlider').slick({
       dots: true,
