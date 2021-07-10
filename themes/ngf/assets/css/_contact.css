@@ -969,7 +969,8 @@ boek-je-form-sec-wrp
     .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description p{
         text-align: center;
     }
-    .contact-form-sec-wrp .fl-select-cntlr .select2-container--default .select2-selection--single .select2-selection__arrow{
+    .contact-form-sec-wrp .fl-select-cntlr .select2-container--default .select2-selection--single .select2-selection__arrow,
+    #billing_country_field .select2-container--default .select2-selection--single .select2-selection__arrow{
         right: 15px;
     }
     .error-msg span i,
