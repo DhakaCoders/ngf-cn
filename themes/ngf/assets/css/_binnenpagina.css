@@ -317,14 +317,24 @@ Gallery design
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	margin-right: -16px;
+	line-height: 1;
 }
 .cta-btn a:hover{
 	color: #000;
 }
+.cta-btn a:hover i{
+	right: -4px;
+}
 .cta-btn a i{
 	position: absolute;
-	top: 1px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 	right: 0;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
 }
 .cta-btn a:hover svg{
 	fill: #000;
