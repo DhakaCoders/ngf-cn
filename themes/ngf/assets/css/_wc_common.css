@@ -6,7 +6,8 @@
 .woocommerce input.button,
 .woocommerce button[type=submit],
 .woocommerce-orders .orders-crtl .contact-info a.order-contact-btn,
-body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-row-last button[type=submit]{
+body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-row-last button[type=submit],
+body.account-login-page .woocommerce-form-register__submit{
 	background: #000000!important;
     text-transform: uppercase;
     border: 2px solid #000000!important;

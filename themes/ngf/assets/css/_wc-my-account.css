@@ -258,6 +258,12 @@ body.woocommerce-edit-account.login-register .woocommerce form .form-row label{
 body.woocommerce-edit-account .woocommerce form .form-row label{
     color:#fff!important;
 }
+body.woocommerce-edit-account.login-register .woocommerce-form__label-for-checkbox span::before {
+    top: 2px!important;
+}
+body.woocommerce-edit-account.login-register .woocommerce-form__label-for-checkbox span::after {
+    top: 6px!important;
+}
 /*body.hide-account-title .woocommerce form .form-row label{
     margin-bottom: 2px;
 }*/
@@ -548,10 +554,14 @@ body.account-login-page .woocommerce-form p.form-row{
     display: flex;
     flex-direction: column;
 }
-body.account-login-page .form-row button.woocommerce-form-login__submit[type=submit]{
+body.account-login-page .form-row button.woocommerce-form-login__submit[type=submit],
+body.account-login-page .woocommerce-form-register__submit{
     max-width: 220px!important;
     width: 100%;
     margin-top: 2px;
+}
+body.account-login-page .woocommerce-form-register__submit{
+    min-height: 48px!important;
 }
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -2771,7 +2781,9 @@ body.hide-account-title .woocommerce form .form-row .optional{
         margin-bottom:5px!important;
     }
 
-
+    body.account-login-page .woocommerce-form-register__submit{
+        min-height: 44px!important;
+    }
 
 
     /*  ----------------------------- my  new account  page ------------------------- */
