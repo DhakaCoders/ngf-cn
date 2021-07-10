@@ -258,6 +258,12 @@ body.woocommerce-edit-account.login-register .woocommerce form .form-row label{
 body.woocommerce-edit-account .woocommerce form .form-row label{
     color:#fff!important;
 }
+body.woocommerce-edit-account.login-register .woocommerce-form__label-for-checkbox span::before {
+    top: 2px!important;
+}
+body.woocommerce-edit-account.login-register .woocommerce-form__label-for-checkbox span::after {
+    top: 6px!important;
+}
 /*body.hide-account-title .woocommerce form .form-row label{
     margin-bottom: 2px;
 }*/
@@ -309,7 +315,7 @@ input[type=checkbox], input[type=radio]{
 .woocommerce-form__label-for-checkbox span:before,
 #ship-to-different-address span:before{
     content:"";
-    top:0px;
+    top:1px;
 }
 #ship-to-different-address label span:before{
     top: 0px;
@@ -338,7 +344,7 @@ input[type=checkbox], input[type=radio]{
 #ship-to-different-address span:after,
 #ship-to-different-address label span:after{
     left: 3px;
-    top: 4px;
+    top: 5px;
 }
 .same-as-shipping-address input[type=checkbox]:checked ~ .checkbox-custom:after,
 #billing_personal_recom input#personal_recom:checked ~ .checkbox-custom:after,
@@ -548,10 +554,14 @@ body.account-login-page .woocommerce-form p.form-row{
     display: flex;
     flex-direction: column;
 }
-body.account-login-page .form-row button.woocommerce-form-login__submit[type=submit]{
+body.account-login-page .form-row button.woocommerce-form-login__submit[type=submit],
+body.account-login-page .woocommerce-form-register__submit{
     max-width: 220px!important;
     width: 100%;
     margin-top: 2px;
+}
+body.account-login-page .woocommerce-form-register__submit{
+    min-height: 48px!important;
 }
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -713,6 +723,9 @@ body.hide-account-title.woocommerce-account .register-title h3{
 body.hide-account-title .login-info #billing_email_field{
     border-top: 1px solid #ECE9E9;
     padding-top:35px!important;
+}
+body.hide-account-title .login-info #billing_email_field span.error-valid{
+    top: 35px;
 }
 body.hide-account-title .personal-info h3{
     margin-bottom:31px;
@@ -1806,6 +1819,9 @@ body .woocommerce-checkout .woocommerce-form__label{
 body .woocommerce-checkout #ship-to-different-address{
     margin-bottom: 14px;
 }
+body .woocommerce-checkout .woocommerce-account-fields .form-row{
+    padding: 0!important;
+}
 body .woocommerce-checkout #ship-to-different-address span{
     margin-top: 6px;
 }
@@ -2159,6 +2175,9 @@ body.hide-account-title .woocommerce form .form-row .optional{
     body.woocommerce-checkout .checkout-page-title h1 {
         font-size: 36px;
     }
+    body.woocommerce-account .account-page-title h1{
+        padding-top: 20px;
+    }
     body.woocommerce-account .register-btn button[type="submit"]{
         padding: 15px 15px!important;
     }
@@ -2168,6 +2187,7 @@ body.hide-account-title .woocommerce form .form-row .optional{
     body.woocommerce-account .page-title h1{
         margin-bottom:50px;
     }
+
     #billing_personal_recom .woocommerce-input-wrapper .checkbox-custom, 
     #billing_acttion_insp .woocommerce-input-wrapper .checkbox-custom{
         margin-top: 0px;
@@ -2339,6 +2359,9 @@ body.hide-account-title .woocommerce form .form-row .optional{
     }
     body.loggedin-deshboard-crtl .page-grd-sec-wrp{
         padding-bottom:70px;
+    }
+    body.woocommerce-account .account-page-title h1{
+        padding-top: 0;
     }
     /* -----------------------  checkout page -----------------------*/
     body.woocommerce-checkout #customer_details .col-2{
@@ -2758,7 +2781,9 @@ body.hide-account-title .woocommerce form .form-row .optional{
         margin-bottom:5px!important;
     }
 
-
+    body.account-login-page .woocommerce-form-register__submit{
+        min-height: 44px!important;
+    }
 
 
     /*  ----------------------------- my  new account  page ------------------------- */
@@ -2867,6 +2892,11 @@ body.hide-account-title .woocommerce form .form-row .optional{
     body.woocommerce-account.login-register .woocommerce form .form-row{
         margin-bottom: 15px;
     }
+
+    body.woocommerce-account .woocommerce form .form-row-first .error-valid{
+        right: 0!important;
+    }
+
     /* ------------------- woocommerce-cart -------------------*/
     .woocommerce-cart .woocommerce .cart-is-emtpy strong{
         font-size:32px;
@@ -3092,7 +3122,9 @@ body.hide-account-title .woocommerce form .form-row .optional{
     body.woocommerce-edit-account .woocommerce textarea{
         color: #fff;
     }
-
+    body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm fieldset:first-of-type p + P.woocommerce-form-row--last label {
+        display: none;
+    }
 
     /* ---------------------- woocommerce-MyAccount-content --------------------------*/
     
@@ -3413,6 +3445,9 @@ body.hide-account-title .woocommerce form .form-row .optional{
     }
     body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a {
         height:35px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow b {
+        margin-left: -20px!important;
     }
     /*  ----------------------------- my account new page ------------------------- */
     .same-as-shipping-address, 

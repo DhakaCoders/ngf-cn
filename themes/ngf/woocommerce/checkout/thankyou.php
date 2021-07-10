@@ -43,7 +43,7 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
         <div class="chkout-logo">
           <img src="<?php echo THEME_URI; ?>/assets/images/checkout-logo.svg" alt="">
         </div>
-        <h3 class="fl-h2 chkout-title"><?php esc_html_e( 'Bedankt', 'woocommerce' ); ?> <span><?php echo $order->get_billing_first_name(); ?></span>.<br><?php esc_html_e( 'Je bent klaar om te vliegen!', 'woocommerce' ); ?></h3>
+        <h3 class="fl-h2 chkout-title"><?php esc_html_e( 'Bedankt', 'woocommerce' ); ?> <span><?php echo $order->get_billing_first_name(); ?>.</span><?php esc_html_e( 'Je bent klaar om te vliegen!', 'woocommerce' ); ?></h3>
         <p><?php esc_html_e( 'Een bevestigingsmail komt zodadelijk jouw richting uit.', 'woocommerce' ); ?></p>
       </div>
     <?php 
@@ -81,9 +81,9 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
                 <svg class="contact-from-info-rnd-bg" width="35" height="61" viewBox="0 0 35 61" fill="transparent">
                 <use xlink:href="#contact-from-info-rnd-bg"></use> </svg>
               </i>
-              <i class="contact-form-info-line-bg">
-                <svg class="contact-form-info-ln-bg" width="23" height="70" viewBox="0 0 23 70" fill="transparent">
-                <use xlink:href="#contact-from-info-line-bg"></use> </svg>
+              <i class="cta-line">
+                <svg class="cta-line-svg" width="32" height="89" viewBox="0 0 32 89" fill="transparent">
+                <use xlink:href="#cta-line-svg"></use> </svg>
               </i>
               <div class="chk-acc-btm">
                 <?php if( !empty($blok2['knop']) ) echo '<a href="'.$blok2['knop'].'" target="_blank">'; ?>
