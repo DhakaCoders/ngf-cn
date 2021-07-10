@@ -394,6 +394,9 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	.page-entry-header h1{
 		padding-top: 7px;
 	}
+	.page-entry-header{
+		margin-top: -10px;
+	}
 }
 
 @media (max-width: 1499px) {
@@ -415,6 +418,12 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	}
 	.fl-pagination-ctlr ul li{
 		padding: 0 17px;
+	}
+	.woocommerce-orders .fl-pagination-ctlr ul li a{
+		color: #fff;
+	}
+	.woocommerce-orders .fl-pagination-ctlr ul li a:hover{
+		color: #FFA800;
 	}
 	.fl-pagination-ctlr ul li a, .fl-pagination-ctlr ul li span{
 		font-size: 17px;
@@ -452,7 +461,13 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		padding-left: 120px;
 	}
 	.page-entry-header{
-		padding-top: 10px;
+		padding-top: 20px;
+	}
+	.page-entry-header{
+		margin-top: 0;
+	}
+	.page-bnr-skew{
+		border-top: 210px solid #000;
 	}
 }
 
@@ -530,6 +545,9 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		bottom: 70px;
 		right: -58px;
 	}
+	.page-bnr-skew{
+		border-top: 180px solid #000;
+	}
 }
 
 @media (max-width: 767px) {
@@ -565,6 +583,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	}
 	.page-404-dsc-wrp span{
 		font-size: 20px;
+	}
+	.page-bnr-skew{
+		border-top: 140px solid #000;
+		top: -1px;
 	}
 }
 

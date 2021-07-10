@@ -44,7 +44,7 @@
 
 /* == product-page design start == */
 .product-page{
-    background-color: rgba(231, 234, 236, 0.2);
+    background-color: #fafafb;
     padding-top: 100px;
     padding-bottom: 16px;
 }
@@ -191,9 +191,6 @@ del span.amount bdi:after{
 }
 /* == product-page design end == */
 
-body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
-    border-top-color: #f6f7f8;
-}
 
 /* == responsive == */
 
@@ -310,6 +307,9 @@ body.post-type-archive-product.sky-btm-bg-cntlr .footer-wrp .ftr-white-skew {
     }
     .fl-pro-grd-des{
         padding: 25px 23px 35px;
+    }
+    .fl-product-grd .fl-pro-grd-des .fl-pro-grd-price{
+        padding-bottom: 20px;
     }
     span.amount bdi, span.amount bdi span.woocommerce-Price-currencySymbol, 
     ins span.amount bdi, ins span.amount bdi span.woocommerce-Price-currencySymbol, 

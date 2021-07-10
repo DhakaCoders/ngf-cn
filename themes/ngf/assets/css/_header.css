@@ -521,6 +521,9 @@ body.allWork {
 .allWork .hamburger-icon{
 	display: none;
 }	
+.cross-icon{
+	display: none;
+}
 .allWork .cross-icon{
 	display: block;
 }

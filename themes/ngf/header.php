@@ -3,7 +3,7 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme-color" content="#EE3E15">
+  <meta name="theme-color" content="#FFA800">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
@@ -378,6 +378,12 @@
                 <i>
                   <svg class="hamburger-icon" width="32" height="32" viewBox="0 0 32 32" fill="#FFA800">
                   <use xlink:href="#hamburger-icon"></use> </svg>
+                </i>
+              </div>
+              <div class="cross-icon">
+                <i>
+                  <svg class="cross-icon" width="32" height="32" viewBox="0 0 32 32" fill="#FFA800">
+                  <use xlink:href="#cross-icon"></use> </svg>
                 </i>
               </div>
               
