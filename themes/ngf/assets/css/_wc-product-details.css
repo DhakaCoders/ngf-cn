@@ -135,6 +135,21 @@ span.single-price-total{
 .single-product .price-quentity-ctrl{
 	padding-bottom: 28px;
 }
+/* == varition == */
+.single-product .variations td.label{
+	width: 100%;
+	float: left;
+}
+.single-product .variations td.value{
+	width: 100%;
+	float: right;
+}
+.single-product .quantity{
+	display: none!important;
+}
+/* == varition end == */
+
+
 .single-product .summary-hdr-des{
 	padding-bottom: 18px;
 	border-bottom: 2px solid #EFF4F7;
@@ -218,12 +233,12 @@ span.single-price-total{
 .cartbtn-wrap > strong,
 .single-product .variations_form table.variations tbody tr td.label label{
 	font-weight: 700!important;
-	font-size: 16px;
+	font-size: 20px;
 	margin-right: 20px;
 	min-width: 128px;
 	display: inline-block;
 	vertical-align: baseline;
-	color: #2C113E;
+	color: #000;
 	text-transform: uppercase;
 }
 .meta-crtl ul li a{
