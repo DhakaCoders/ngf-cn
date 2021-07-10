@@ -146,6 +146,11 @@ del span.amount bdi, del span.amount bdi span.woocommerce-Price-currencySymbol{
 del span.amount{
     margin-right: 6px;
 }
+.fl-pro-grd-price del,
+.fl-pro-grd-price ins{
+    display: inline-block;
+    vertical-align: baseline;
+}
 del span.amount bdi:after{
     position: absolute;
     content: "";
