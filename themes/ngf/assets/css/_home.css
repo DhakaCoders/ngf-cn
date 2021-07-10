@@ -613,12 +613,8 @@
 
 }
 @media(max-width: 359px){
-	.plans-sec-cntlr .plan-circle-bg{
-		right: -20px!important;
-	}
-	.plan-circle-bg .plans-sec-circle-bg{
-		display: none;
-	}
+	
+	
 	.plan-circle-bg .plans-sec-circle-xs-bg{
 		display: block;
 	}
