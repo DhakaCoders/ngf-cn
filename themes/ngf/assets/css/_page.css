@@ -397,6 +397,15 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	.page-entry-header{
 		margin-top: -10px;
 	}
+	.pg-bnr-title.fl-h1-80{
+		font-size: 70px;
+	}
+}
+
+@media (max-width: 1499px) {
+	.page-bnr-desc-cntlr {
+	    height: 470px;
+	}
 }
 
 @media (max-width: 1499px) {
@@ -444,11 +453,10 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 	
 
 	.page-bnr-desc-cntlr{
-		height: 754px;
-		padding-bottom: 150px;
+		padding-bottom: 100px;
 	}
 	.pg-bnr-title.fl-h1-80{
-		font-size: 70px;
+		font-size: 65px;
 	}
 	.pg-bnr-desc-line{
 		right: -51px;
@@ -457,9 +465,6 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 }
 
 @media(max-width: 1299px){
-	.page-bnr-desc-cntlr{
-		padding-left: 120px;
-	}
 	.page-entry-header{
 		padding-top: 20px;
 	}
@@ -503,10 +508,6 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 		font-size: 14px;
 	}
 	/*page banner*/
-	.page-bnr-desc-cntlr{
-		height: 654px;
-		padding-bottom: 120px;
-	}
 	.pg-bnr-title.fl-h1-80{
 		font-size: 60px;
 	}
@@ -535,7 +536,6 @@ body.black-bg-cntlr .footer-wrp .ftr-white-skew{
 
 	/*page banner*/
 	.page-bnr-desc-cntlr{
-		height: 554px;
 		padding-bottom: 90px;
 	}
 	.pg-bnr-title.fl-h1-80{
