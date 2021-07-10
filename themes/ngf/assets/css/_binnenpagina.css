@@ -1227,7 +1227,7 @@ blockquote{
 		padding-top: 10px;
 	}
 	.cta-ctlr {
-	    padding: 40px 30px;
+	    padding: 48px 30px;
 	}
 	.gallery-icon-img {
 	    height: 240px;
@@ -1506,6 +1506,8 @@ blockquote{
 	.testimonial-grd-item-des blockquote{
 		font-size: 18px;
 		line-height: 1.3;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	
 	#blog-details .dfp-promo-module .bnr-bg-overly-module {
