@@ -135,7 +135,7 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	top: 0;
 	right: 0;
 }
-.chk-acc-btm-cntrl i.contact-form-info-line-bg{
+.chk-acc-btm-cntrl i.cta-line{
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -167,6 +167,7 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 .chk-tp-title, .chk-tp-title,
 .chk-btm-title{
 	margin-bottom: 8px;
+	text-transform: uppercase;
 }
 .chkout-scl-bg{
 
@@ -435,6 +436,7 @@ body.woocommerce-order-received .sec-header .sec-title{
 		width: 100%;
 	}
 	.checkout-hdr .chkout-title:after{
+		max-width: 100%;
 		width: 100%;
 	}
 	.srv-fea-img{
