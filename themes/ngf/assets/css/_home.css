@@ -70,7 +70,7 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 3px;
 	overflow: hidden;
 
 }
@@ -588,14 +588,14 @@
 	.hm-bnr-person-img{
 		left: initial;
 		right: 0;
-		bottom: 15px;
+		bottom: 42px;
 	}
 	.hm-bnr-person-img img{
 		max-width: initial;
 	}
 	.hm-bnr-circle-bg-cntlr{
 		right: -81px;
-		margin-top: -148px;
+		margin-top: -170px;
 	}
 	.hm-rgt-lg-line {
 		width: 478.45px;

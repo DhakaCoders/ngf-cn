@@ -326,7 +326,6 @@ if( $('.relatedProGrdsSlider').length ){
 
 /*start of Monirul Islam*/
 
-$(window).resize(function(){
   if( $('.hamburger-cntlr').length ){
     $('.hamburger-cntlr').click(function(){
       $('body').toggleClass('allWork');
@@ -339,9 +338,7 @@ $(window).resize(function(){
      $(this).parent().toggleClass('sub-menu-arrow');
    });
   }
-});
 
-$(window).resize(function(){
   if(windowWidth <=767){
     if( $('.clientLogoSlider').length ){
       $('.clientLogoSlider').slick({
@@ -356,7 +353,7 @@ $(window).resize(function(){
       });
     }
   }
-});
+
 
 $(window).resize(function(){
   if (windowWidth <= 767) {
@@ -434,7 +431,6 @@ if( $('.blogDetailsSlider').length ){
     });
 }
 
-$(window).resize(function() { 
  if (windowWidth <= 639) {
   if( $('.dfpBlogSlider').length ){
     $('.dfpBlogSlider').slick({
@@ -449,7 +445,6 @@ $(window).resize(function() {
     });
   }
 }
-});
 
 
  if( $('.referntiesDetailsSlider').length ){
@@ -517,7 +512,6 @@ if( $('.qty1').length ){
 
 /*start of Jahir*/
 
-$(window).resize(function() { 
   if(windowWidth <=767){
     if( $('.ovomblfvSlider').length ){
       $('.ovomblfvSlider').slick({
@@ -545,9 +539,7 @@ $(window).resize(function() {
       });
     }
   }
-});
 
-$(window).resize(function() { 
   if(windowWidth <=767){
     if( $('.werkmsgSlider').length ){
       $('.werkmsgSlider').slick({
@@ -575,7 +567,6 @@ $(window).resize(function() {
       });
     }
   }
-});
 
 if( $('.faqSlider1').length ){
     $('.faqSlider1').slick({
@@ -605,7 +596,6 @@ if( $('.faqSlider1').length ){
     });
     $('.faq-slide-item').parent().addClass('ovo-faq-slider-addcls');
 }
-$(window).resize(function() { 
   if( $('.faqSlider2').length ){
     if(windowWidth <=639){
       $('.faqSlider2').slick({
@@ -635,9 +625,7 @@ $(window).resize(function() {
 
     }
   }
-});
 
-$(window).resize(function() { 
   if(windowWidth <=767){
     if( $('.ovomblfvSlider').length ){
       $('.ovomblfvSlider').slick({
@@ -652,7 +640,6 @@ $(window).resize(function() {
       });
     }
   }
-});
 
 
 
