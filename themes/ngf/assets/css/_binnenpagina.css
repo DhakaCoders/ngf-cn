@@ -899,11 +899,6 @@ Gallery design
 
 @media(max-width: 1599px){
 	
-	
-
-}
-
-@media(max-width: 1499px){
 	.block-1440{
 		padding-left: 15px;
 		padding-right: 15px;
@@ -911,10 +906,17 @@ Gallery design
 	.default-page-con h4{
 		font-size: 24px;
 	}
-	
-	
-	
+	#faq-details .dfp-promo-module{
+		margin-top: -110px;
+	}
+
 }
+@media(max-width: 1499px){
+	#faq-details .dfp-promo-module{
+		margin-top: -91px;
+	}
+}
+
 @media(max-width: 1399px){
 	.dfp-promo-module-title{
 		margin-bottom: 25px;
@@ -1135,10 +1137,6 @@ Gallery design
 
 }
 
-
-@media(max-width: 850px){
-	
-}
 
 @media(max-width: 767px){
 	.dfp-promo-module {
