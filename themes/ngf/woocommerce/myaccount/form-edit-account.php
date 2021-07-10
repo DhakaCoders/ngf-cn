@@ -30,7 +30,7 @@ if (isset( $_POST["account_email"] ) && isset($_POST['user_id'])) {
               <span>
                 <i><svg class="error-msg-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
                 <use xlink:href="#error-msg-icon-svg"></use> </svg></i>
-                <?php esc_html_e( 'Oh snap! Het formulier lijkt niet correct!', 'woocommerce' ); ?></span>
+                <?php esc_html_e( 'Oh snap! The form is incorrect!', 'woocommerce' ); ?></span>
             </div>
     	</div>
     <?php 
@@ -41,7 +41,7 @@ if (isset( $_POST["account_email"] ) && isset($_POST['user_id'])) {
                   <span>
                     <i><svg class="error-msg-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
                     <use xlink:href="#error-msg-icon-svg"></use> </svg></i>
-                    <?php esc_html_e( 'Bijgewerkt', 'woocommerce' ); ?></span>
+                    <?php esc_html_e( 'Updated', 'woocommerce' ); ?></span>
                 </div>
         	</div>
 		<?php

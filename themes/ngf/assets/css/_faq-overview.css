@@ -59,17 +59,7 @@
 
 /*responsive-start*/
 
-@media(max-width: 1699px){
 
-
-}
-@media(max-width: 1499px){
-
-
-}
-@media(max-width: 1299px){
-
-}
 @media(max-width: 1199px){
 	.faq-grids-cntlr{
 		margin: 0 -11px;
@@ -160,9 +150,6 @@
 	.faq-grid-item-inr{
 		padding-bottom: 19px;
 	}
-}
-@media(max-width: 489px){
-
 }
 @media(max-width: 359px){
 	.faq-grid-item{

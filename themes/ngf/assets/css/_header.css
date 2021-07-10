@@ -521,6 +521,9 @@ body.allWork {
 .allWork .hamburger-icon{
 	display: none;
 }	
+.cross-icon{
+	display: none;
+}
 .allWork .cross-icon{
 	display: block;
 }
@@ -672,15 +675,8 @@ body.allWork {
 		left: 120px;
 	}
 }
-@media(max-width: 1699px){
-	/*.hdr-circle-icon{
-		margin-left: -45px;
-	}*/
-}
 @media(max-width: 1599px){
 	
-}
-@media(max-width: 1499px){
 	.hdr-circle-icon{
 		bottom: -22px;
 	}
@@ -745,7 +741,8 @@ body.allWork {
 		height: 80px;
 		width: 80px;
 		border: 12px solid #FFA800;
-		left: 120px;
+		left: 29px;
+		margin-left: 0;
 	}
 	.hdr-socials ul{
 		margin: -7px 0;
@@ -762,7 +759,7 @@ body.allWork {
 		height: 70px;
 		width: 70px;
 		border: 9px solid #FFA800;
-		left: 80px;
+		
 	}
 }
 @media(max-width: 1299px){
@@ -925,6 +922,9 @@ body.allWork {
 		font-size: 14px;
 		color: #000;
 		text-transform: uppercase;
+	}
+	.hdr-logo{
+		z-index: 4;
 	}
 	nav.main-nav > ul > li > a{
 		position: relative;

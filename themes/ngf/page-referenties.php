@@ -71,7 +71,7 @@ $terms = get_terms( 'referenties_cat', array(
                     <?php echo $imgtag; ?>
                   </i>
                   <div class="ref-ov-page-grid-des mHc1">
-                    <h3 class="fl-h3 ref-ov-grd-title"><?php the_title(); ?></h3>
+                    <h3 class="fl-h3 ref-ov-grd-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h3>
                     <div class="ropgd mHc2">
                       <?php the_excerpt(); ?>
                     </div>

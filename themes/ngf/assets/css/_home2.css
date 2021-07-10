@@ -266,6 +266,10 @@
     .latest-news-grid-slider-item .blog-grid-item{
         box-shadow:none;
     }
+    .latest-news-bg{
+        top:  20px;
+    }
+}
 @media(max-width:575px){
     .home-slogan-cntlr p{
         font-size: 18px;
