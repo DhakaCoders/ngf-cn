@@ -764,6 +764,15 @@ body.woocommerce-checkout del span.amount bdi span.woocommerce-Price-currencySym
 	margin-right: 5px!important;
 }
 
+body.woocommerce-cart .cart-table-crtl span.amount bdi, 
+body.woocommerce-cart .cart-table-crtl span.amount bdi span.woocommerce-Price-currencySymbol, 
+body.woocommerce-cart .cart-table-crtl ins span.amount bdi, 
+body.woocommerce-cart .cart-table-crtl ins span.amount bdi span.woocommerce-Price-currencySymbol, 
+body.woocommerce-cart .cart-table-crtl del span.amount bdi, 
+body.woocommerce-cart .cart-table-crtl del span.amount bdi span.woocommerce-Price-currencySymbol{
+	margin-right: 0!important;
+}
+
 
 body.woocommerce-page span.total-price-prefix {
     display: block;
