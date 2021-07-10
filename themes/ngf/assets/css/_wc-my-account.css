@@ -309,7 +309,7 @@ input[type=checkbox], input[type=radio]{
 .woocommerce-form__label-for-checkbox span:before,
 #ship-to-different-address span:before{
     content:"";
-    top:0px;
+    top:1px;
 }
 #ship-to-different-address label span:before{
     top: 0px;
@@ -338,7 +338,7 @@ input[type=checkbox], input[type=radio]{
 #ship-to-different-address span:after,
 #ship-to-different-address label span:after{
     left: 3px;
-    top: 4px;
+    top: 5px;
 }
 .same-as-shipping-address input[type=checkbox]:checked ~ .checkbox-custom:after,
 #billing_personal_recom input#personal_recom:checked ~ .checkbox-custom:after,
