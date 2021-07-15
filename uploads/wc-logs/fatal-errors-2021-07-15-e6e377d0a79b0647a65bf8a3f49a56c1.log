@@ -1,0 +1,12 @@
+2021-07-15T05:54:53+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\includes\admin\class-review.php on line 8
+
+2021-07-15T07:20:01+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\woocommerce\packages\woocommerce-blocks\src\StoreApi\Formatters.php on line 12
+
+2021-07-15T07:20:14+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\pro\includes\fields\class-file-upload.php on line 8
+
+2021-07-15T07:20:15+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AllReviews.php on line 7
+
+2021-07-15T07:20:15+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AllReviews.php on line 7
+
+2021-07-15T07:20:18+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\wp-includes\wp-db.php on line 2056
+

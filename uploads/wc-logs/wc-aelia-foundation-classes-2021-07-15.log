@@ -1,0 +1,1 @@
+[2021-07-15 05:55:27] wc-aelia-foundation-classes.ERROR: Unable to download GeoIP Database. {"GeoIP Database URL":"https://geoip.aelia.co/Geolite2-City.mmdb.gz","Error Message":"A valid URL was not provided."} {"process_id":7484}
