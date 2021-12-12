@@ -1,4 +1,0 @@
-2021-07-19T17:08:45+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\custom-post-type-ui\inc\utility.php on line 15
-
-2021-07-19T17:08:52+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\projects\2021\ngf\ngf-cn\plugins\wpforms\src\Admin\Challenge.php on line 10
-
